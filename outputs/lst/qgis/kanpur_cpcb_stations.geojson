@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "229252",
+        "name": "NSI Kalyanpur",
+        "type": "Continuous Ambient Air Quality Monitoring Station (CAAQMS)",
+        "operator": "UPPCB / CPCB",
+        "zone": "Suburban / Institutional",
+        "elevation_m": 133
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2581,
+          26.5052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "5662",
+        "name": "Nehru Nagar",
+        "type": "Continuous Ambient Air Quality Monitoring Station (CAAQMS)",
+        "operator": "UPPCB / CPCB",
+        "zone": "Dense Urban Commercial / Residential",
+        "elevation_m": 126
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.3319,
+          26.4674
+        ]
+      }
+    }
+  ]
+}
