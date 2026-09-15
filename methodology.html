@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Methodology &amp; Limitations — Signal Earth</title>
+  <meta name="description" content="Detailed documentation of calculation protocols, regulatory validity rules, sensor gaps, forecasting constraints, and remote sensing derivation across Signal Earth investigations.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="se-nav">
+    <a href="index.html" class="se-brand">
+      <span class="se-brand-name">SIGNAL EARTH</span>
+      <span class="se-brand-sub">Independent Environmental Analysis</span>
+    </a>
+
+    <ul class="se-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="investigations/kanpur.html">Kanpur</a></li>
+      <li><a href="investigations/delhi.html">Delhi</a></li>
+      <li><a href="investigations/kanpur-lst.html">Kanpur LST</a></li>
+      <li><a href="investigations/comparison.html">Comparison</a></li>
+      <li><a href="methodology.html" class="active">Methodology</a></li>
+      <li><a href="citations.html">Citations</a></li>
+      <li><a href="dispatches.html">Dispatches</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="se-nav-social">
+      <a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer" class="se-social-link">Instagram</a>
+      <a href="https://www.linkedin.com/company/signalearth/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer" class="se-social-link">LinkedIn</a>
+      <a href="https://github.com/avnish36singh-arch" target="_blank" rel="noopener noreferrer" class="se-social-link">GitHub</a>
+    </div>
+  </nav>
+
+  <main class="se-container-narrow" style="padding-top: 5rem; padding-bottom: 6rem;">
+    <span class="section-kicker">Analytical Integrity</span>
+    <h1 class="editorial-headline" style="font-size: 2.8rem; margin-bottom: 1.5rem;">Methodology &amp; Limitations</h1>
+    <p class="se-hero-dek" style="margin-bottom: 3.5rem;">
+      Environmental data analysis carries an ethical obligation of full procedural disclosure. This page documents the mathematical definitions, statutory validity thresholds, sensor hiatuses, and modeling constraints governing every investigation published on Signal Earth.
+    </p>
+
+    <!-- Section 1 -->
+    <section style="margin-bottom: 4rem;">
+      <span class="section-kicker">01 · Regulatory Formula</span>
+      <h2 class="editorial-headline" style="font-size: 1.85rem; margin-bottom: 1rem; color: #FFFFFF;">CPCB National Air Quality Index (NAQI) Mathematical Formulation</h2>
+      <p style="color: #CBD5E1; line-height: 1.8; margin-bottom: 1.25rem;">
+        The National Air Quality Index developed by the Central Pollution Control Board (CPCB, October 2014) utilizes a linear piecewise sub-index formulation. For any pollutant parameter <em>p</em> with observed 24-hour average concentration <em>C<sub>p</sub></em>, the sub-index <em>I<sub>p</sub></em> is computed as:
+      </p>
+
+      <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: 6px; padding: 1.5rem; font-family: var(--font-mono); font-size: 0.95rem; color: var(--data-cyan); margin-bottom: 1.5rem;">
+        I<sub>p</sub> = [ (I<sub>HI</sub> - I<sub>LO</sub>) / (B<sub>HI</sub> - B<sub>LO</sub>) ] &times; (C<sub>p</sub> - B<sub>LO</sub>) + I<sub>LO</sub>
+      </div>
+
+      <p style="color: #CBD5E1; line-height: 1.8; margin-bottom: 1.25rem;">
+        Where <em>B<sub>HI</sub></em> and <em>B<sub>LO</sub></em> represent the upper and lower breakpoint concentrations for the category containing <em>C<sub>p</sub></em>, and <em>I<sub>HI</sub></em> and <em>I<sub>LO</sub></em> represent the corresponding sub-index scale bounds. The composite daily AQI is determined by the maximum sub-index across all monitored criteria pollutants:
+      </p>
+
+      <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: 6px; padding: 1.25rem; font-family: var(--font-mono); font-size: 0.95rem; color: var(--data-amber); margin-bottom: 1.5rem;">
+        AQI = max(I<sub>PM2.5</sub>, I<sub>PM10</sub>, I<sub>NO2</sub>, I<sub>SO2</sub>, I<sub>CO</sub>, I<sub>O3</sub>, I<sub>NH3</sub>, I<sub>Pb</sub>)
+      </div>
+
+      <p style="color: #CBD5E1; line-height: 1.8; margin-bottom: 1.5rem;">
+        The pollutant responsible for <code>max(I<sub>p</sub>)</code> is designated as the <em>Dominant Pollutant</em> for that monitoring day.
+      </p>
+
+      <h3 style="font-size: 1.1rem; color: #FFFFFF; margin-bottom: 0.75rem;">Official CPCB NAQI Breakpoint Matrix</h3>
+      <div class="se-table-wrap">
+        <table class="se-table">
+          <thead>
+            <tr>
+              <th>AQI Category</th>
+              <th>Index Range</th>
+              <th>PM2.5 (24h)</th>
+              <th>PM10 (24h)</th>
+              <th>NO2 (24h)</th>
+              <th>NH3 (24h)</th>
+              <th>SO2 (24h)</th>
+              <th>CO (8h mg/m³)</th>
+              <th>O3 (8h)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="color: var(--aqi-good); font-weight: 600;">Good</td>
+              <td>0 – 50</td>
+              <td>0 – 30</td>
+              <td>0 – 50</td>
+              <td>0 – 40</td>
+              <td>0 – 200</td>
+              <td>0 – 40</td>
+              <td>0.0 – 1.0</td>
+              <td>0 – 50</td>
+            </tr>
+            <tr>
+              <td style="color: var(--aqi-satisfactory); font-weight: 600;">Satisfactory</td>
+              <td>51 – 100</td>
+              <td>31 – 60</td>
+              <td>51 – 100</td>
+              <td>41 – 80</td>
+              <td>201 – 400</td>
+              <td>41 – 80</td>
+              <td>1.1 – 2.0</td>
+              <td>51 – 100</td>
+            </tr>
+            <tr>
+              <td style="color: var(--aqi-moderate); font-weight: 600;">Moderate</td>
+              <td>101 – 200</td>
+              <td>61 – 90</td>
+              <td>101 – 250</td>
+              <td>81 – 180</td>
+              <td>401 – 800</td>
+              <td>81 – 380</td>
+              <td>2.1 – 10.0</td>
+              <td>101 – 168</td>
+            </tr>
+            <tr>
+              <td style="color: var(--aqi-poor); font-weight: 600;">Poor</td>
+              <td>201 – 300</td>
+              <td>91 – 120</td>
+              <td>251 – 350</td>
+              <td>181 – 280</td>
+              <td>801 – 1200</td>
+              <td>381 – 800</td>
+              <td>10.1 – 17.0</td>
+              <td>169 – 208</td>
+            </tr>
+            <tr>
+              <td style="color: var(--aqi-very-poor); font-weight: 600;">Very Poor</td>
+              <td>301 – 400</td>
+              <td>121 – 250</td>
+              <td>351 – 430</td>
+              <td>281 – 400</td>
+              <td>1201 – 1800</td>
+              <td>801 – 1600</td>
+              <td>17.1 – 34.0</td>
+              <td>209 – 748</td>
+            </tr>
+            <tr>
+              <td style="color: var(--aqi-severe); font-weight: 600;">Severe</td>
+              <td>401 – 500</td>
+              <td>250+</td>
+              <td>430+</td>
+              <td>400+</td>
+              <td>1800+</td>
+              <td>1600+</td>
+              <td>34.0+</td>
+              <td>748+</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <span style="font-size: 0.78rem; color: var(--text-muted);">Concentrations in &mu;g/m&sup3; unless noted otherwise. Source: Central Pollution Control Board (2014).</span>
+    </section>
+
+    <!-- Section 2 -->
+    <section style="margin-bottom: 4rem;">
+      <span class="section-kicker">02 · Statutory Compliance</span>
+      <h2 class="editorial-headline" style="font-size: 1.85rem; margin-bottom: 1rem; color: #FFFFFF;">The Official vs. Indicative Validity Rule</h2>
+      <p style="color: #CBD5E1; line-height: 1.8; margin-bottom: 1.25rem;">
+        Under statutory CPCB guidelines, a daily AQI value is legally and scientifically valid <strong>only</strong> when all of the following conditions are satisfied:
+      </p>
+      <ol style="padding-left: 1.5rem; color: #CBD5E1; line-height: 1.8; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+        <li>
+          <strong>Criteria Pollutant Quorum:</strong> At least <strong>three criteria pollutants</strong> must possess valid daily sub-indices.
+        </li>
+        <li>
+          <strong>Particulate Presence:</strong> At least one of the validated pollutants <strong>must</strong> be either PM<sub>2.5</sub> or PM<sub>10</sub>.
+        </li>
+        <li>
+          <strong>Temporal Completeness:</strong> Each pollutant parameter must have a minimum of <strong>16 valid hourly readings</strong> within the 24-hour observation cycle (&ge; 66.7% data completeness).
+        </li>
+      </ol>
+
+      <div style="background: rgba(239, 68, 68, 0.05); border-left: 3px solid #EF4444; padding: 1.25rem 1.5rem; margin-bottom: 1.5rem;">
+        <h4 style="color: #F87171; font-size: 0.95rem; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.05em;">Analytical Caveat &amp; Audit Finding</h4>
+        <p style="color: #CBD5E1; font-size: 0.9rem; line-height: 1.7; margin: 0;">
+          Many commercial air quality dashboards report an "AQI" whenever any single parameter (e.g. only PM<sub>2.5</sub>) is active. In our Delhi/Alipur pipeline, of 1,825 total calendar rows, <strong>1,137 days</strong> satisfy the full statutory criteria (62.3%), while <strong>688 days</strong> are partial or missing. Signal Earth partitions these into two explicit fields: <code>AQI_Official</code> (true regulatory days) and <code>AQI_Indicative</code> (single-parameter estimates). We never report an indicative value as official CPCB telemetry.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section style="margin-bottom: 4rem;">
+      <span class="section-kicker">03 · Telemetry Hiatuses</span>
+      <h2 class="editorial-headline" style="font-size: 1.85rem; margin-bottom: 1rem; color: #FFFFFF;">Sensor Gaps &amp; Data Discontinuities</h2>
+      <p style="color: #CBD5E1; line-height: 1.8; margin-bottom: 1.25rem;">
+        Continuous Ambient Air Quality Monitoring Stations (CAAQMS) are mechanical instruments operating in extreme particulate environments. They suffer laser scattering cell fouling, beta-attenuation tape depletion, optical recalibration, and statutory relocations.
+      </p>
+
+      <ul style="padding-left: 1.5rem; color: #CBD5E1; line-height: 1.8; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
+        <li>
+          <strong>Delhi / Alipur (CPCB/DPCC):</strong> A major telemetry hiatus occurred from <strong>January 20, 2019 to January 22, 2021 (732 consecutive days)</strong> where all criteria pollutants went unrecorded due to station refurbishment and multi-gas analyzer recalibration. Rather than synthesizing or interpolating across a two-year void, our pipeline treats this period as a documented data hiatus.
+        </li>
+        <li>
+          <strong>Kanpur / Kalyanpur &amp; Nehru Nagar (UPPCB/CPCB):</strong> Telemetry ingested via the OpenAQ v3 API spans July 2021 through October 2022, followed by an API stream hiatus until late 2025. Data from these stations is analyzed strictly within its verified observation windows.
+        </li>
+      </ul>
+
+      <p style="color: #CBD5E1; line-height: 1.8;">
+        <strong>Signal Earth Principle:</strong> We do not impute, synthesize, or forward-fill long-duration instrument dropouts. Data gaps are reported as missing observations on all timelines and tables.
+      </p>
+    </section>
+
+    <!-- Section 4 -->
+    <section style="margin-bottom: 4rem;">
+      <span class="section-kicker">04 · Machine Learning Evaluation</span>
+      <h2 class="editorial-headline" style="font-size: 1.85rem; margin-bottom: 1rem; color: #FFFFFF;">Forecasting Interpolation &amp; Out-of-Time Testing</h2>
+      <p style="color: #CBD5E1; line-height: 1.8; margin-bottom: 1.25rem;">
+        For time-series predictive modeling (such as our 1-day-ahead AQI Random Forest and Gradient Boosting models), continuous lag features require unbroken sequences. To maintain physical reality without hallucinating trends:
+      </p>
+
+      <ul style="padding-left: 1.5rem; color: #CBD5E1; line-height: 1.8; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+        <li>
+          <strong>2-Day Interpolation Threshold:</strong> Linear interpolation is permitted <em>strictly</em> for gaps of &le; 2 consecutive days (accounting for 94.7% of genuine operational sensor dropouts). Any gap &ge; 3 days resets the lag window.
+        </li>
+        <li>
+          <strong>Strict Out-of-Time Split:</strong> Standard random k-fold cross-validation is physically invalid for atmospheric time series because it leaks future meteorological state into past predictions. Our model was trained exclusively on observations prior to 2023 and evaluated strictly on the unobserved 2023 calendar year (Test MAE: 29.8 AQI points; R&sup2; = 0.82).
+        </li>
+      </ul>
+    </section>
+
+    <!-- Section 5 -->
+    <section style="margin-bottom: 4rem;">
+      <span class="section-kicker">05 · Source Apportionment Boundaries</span>
+      <h2 class="editorial-headline" style="font-size: 1.85rem; margin-bottom: 1rem; color: #FFFFFF;">Ratio-Based Source Diagnostics vs. Receptor Modeling</h2>
+      <p style="color: #CBD5E1; line-height: 1.8; margin-bottom: 1.25rem;">
+        Our investigations utilize stoichiometric and aerodynamic ratio metrics—specifically PM<sub>2.5</sub> / PM<sub>10</sub>, NO<sub>2</sub> / CO, and Toluene / Benzene—to characterize dominant emission regimes:
+      </p>
+
+      <div class="se-table-wrap">
+        <table class="se-table">
+          <thead>
+            <tr>
+              <th>Diagnostic Ratio</th>
+              <th>Observed Threshold</th>
+              <th>Physical / Chemical Indication</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PM2.5 / PM10 &gt; 0.65</td>
+              <td>Post-Monsoon / Winter</td>
+              <td>Combustion dominance (biomass burning, vehicular exhaust, secondary aerosols)</td>
+            </tr>
+            <tr>
+              <td>PM2.5 / PM10 &lt; 0.40</td>
+              <td>Pre-Monsoon / Summer</td>
+              <td>Mechanical crustal dust dominance (resuspended road silt, construction, dust storms)</td>
+            </tr>
+            <tr>
+              <td>Toluene / Benzene &approx; 1.5 – 2.2</td>
+              <td>Urban Corridors</td>
+              <td>Fresh tailpipe vehicular combustion emissions</td>
+            </tr>
+            <tr>
+              <td>Toluene / Benzene &gt; 3.0</td>
+              <td>Industrial Belts</td>
+              <td>Industrial solvent use, printing, chemical processing facilities</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="background: rgba(245, 158, 11, 0.05); border-left: 3px solid #F59E0B; padding: 1.25rem 1.5rem;">
+        <h4 style="color: #FBBF24; font-size: 0.95rem; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.05em;">Scientific Distinction</h4>
+        <p style="color: #CBD5E1; font-size: 0.9rem; line-height: 1.7; margin: 0;">
+          These ratios represent <strong>diagnostic screening indicators</strong>, not receptor models. Full source apportionment requires chemical speciation filters (carbonaceous aerosols, elemental ions, and trace metals) coupled with EPA Positive Matrix Factorization (PMF) or Chemical Mass Balance (CMB) modeling. We state this explicitly to distinguish ratio diagnostics from chemical mass receptor analysis.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 6 -->
+    <section>
+      <span class="section-kicker">06 · Earth Observation</span>
+      <h2 class="editorial-headline" style="font-size: 1.85rem; margin-bottom: 1rem; color: #FFFFFF;">Satellite Land Surface Temperature (LST) &amp; Reanalysis</h2>
+      <p style="color: #CBD5E1; line-height: 1.8; margin-bottom: 1.25rem;">
+        Investigation 03 evaluates thermal dynamics across Kanpur using NASA POWER (Prediction of Worldwide Energy Resources) daily meteorological reanalysis, derived from the MERRA-2 assimilation model at 0.5&deg; &times; 0.625&deg; resolution, integrated with local vector GIS modeling in QGIS:
+      </p>
+
+      <ul style="padding-left: 1.5rem; color: #CBD5E1; line-height: 1.8; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+        <li>
+          <strong>Radiant Skin Temperature (T<sub>skin</sub>):</strong> Derived from thermal infrared radiance emitted by the earth's surface layer. Unlike 2-meter ambient air temperature (T<sub>air</sub>), skin temperature responds instantaneously to solar absorption and nocturnal radiative heat loss.
+        </li>
+        <li>
+          <strong>Thermal Gradient (&Delta;T = T<sub>skin</sub> - T<sub>air</sub>):</strong> A negative thermal gradient (T<sub>skin</sub> &lt; T<sub>air</sub>) indicates intense nocturnal ground cooling, which induces thermal inversion and caps atmospheric ventilation.
+        </li>
+        <li>
+          <strong>Spatial Microclimate Buffers:</strong> Urban Heat Island (UHI) offsets and riverine cooling zones are calculated using QGIS zonal spatial buffers centered on known urban morphological zones (Central Commercial Core, Jajmau/Panki industrial corridors, IITK canopy buffer, and the Ganga floodplain).
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="se-footer">
+    <div class="se-container">
+      <div class="se-footer-inner">
+        <div style="max-width: 360px;">
+          <div style="font-weight: 700; color: #FFFFFF; letter-spacing: 0.1em; margin-bottom: 0.6rem;">SIGNAL EARTH</div>
+          <p style="line-height: 1.6;">Independent analysis of publicly available environmental monitoring data — CPCB, UPPCB, and open satellite records — with full source code and citations.</p>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Investigations</h5>
+          <ul>
+            <li><a href="investigations/kanpur.html">Kanpur Air Quality</a></li>
+            <li><a href="investigations/delhi.html">Delhi Air Quality</a></li>
+            <li><a href="investigations/kanpur-lst.html">Kanpur LST &amp; GIS</a></li>
+            <li><a href="investigations/comparison.html">Cross-City Comparison</a></li>
+            <li><a href="dispatches.html">Research Dispatches</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Documentation</h5>
+          <ul>
+            <li><a href="methodology.html">Methodology &amp; Limits</a></li>
+            <li><a href="citations.html">Data Sources &amp; Citations</a></li>
+            <li><a href="about.html">About &amp; Standards</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Contact &amp; Profiles</h5>
+          <ul>
+            <li><a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer">Instagram (@signalearthhq)</a></li>
+            <li><a href="https://www.linkedin.com/company/signalearth/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer">LinkedIn (Signal Earth)</a></li>
+            <li><a href="contact.html">Contact Information</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="se-footer-bottom">
+        <span>Signal Earth &middot; Maintained by Avnish Singh &middot; HBTU Kanpur</span>
+        <span>Data: CPCB, UPPCB, DPCC, NASA &middot; MIT License</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

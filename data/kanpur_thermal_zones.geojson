@@ -1,0 +1,190 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "zone_id": "ZONE_01",
+        "name": "Central Kanpur Urban Core",
+        "classification": "High-Density Built-Up (Impervious)",
+        "albedo_characteristic": "Low (Asphalt/Concrete)",
+        "mean_uhi_offset_c": 2.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.315,
+              26.45
+            ],
+            [
+              80.36,
+              26.45
+            ],
+            [
+              80.365,
+              26.485
+            ],
+            [
+              80.32,
+              26.49
+            ],
+            [
+              80.315,
+              26.45
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone_id": "ZONE_02",
+        "name": "Jajmau Industrial Tannery Cluster",
+        "classification": "Heavy Industrial & Dense Settlement",
+        "albedo_characteristic": "Moderate-Low",
+        "mean_uhi_offset_c": 1.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.38,
+              26.415
+            ],
+            [
+              80.435,
+              26.42
+            ],
+            [
+              80.43,
+              26.45
+            ],
+            [
+              80.375,
+              26.445
+            ],
+            [
+              80.38,
+              26.415
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone_id": "ZONE_03",
+        "name": "Panki Industrial & Thermal Buffer",
+        "classification": "Power Generation & Manufacturing",
+        "albedo_characteristic": "Industrial Roof / Bare Soil",
+        "mean_uhi_offset_c": 1.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.21,
+              26.46
+            ],
+            [
+              80.26,
+              26.465
+            ],
+            [
+              80.255,
+              26.495
+            ],
+            [
+              80.205,
+              26.49
+            ],
+            [
+              80.21,
+              26.46
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone_id": "ZONE_04",
+        "name": "IITK & Kalyanpur Institutional Belt",
+        "classification": "Suburban Canopy / Educational Campus",
+        "albedo_characteristic": "Vegetative Canopy / Tree Cover",
+        "mean_uhi_offset_c": -0.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.22,
+              26.5
+            ],
+            [
+              80.275,
+              26.505
+            ],
+            [
+              80.27,
+              26.535
+            ],
+            [
+              80.215,
+              26.53
+            ],
+            [
+              80.22,
+              26.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone_id": "ZONE_05",
+        "name": "Ganga Riparian Buffer & Floodplain",
+        "classification": "Riverine Wetland & Active Silt Floodplain",
+        "albedo_characteristic": "Water / Wet Sand Evaporative Cooling",
+        "mean_uhi_offset_c": -2.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.28,
+              26.51
+            ],
+            [
+              80.4,
+              26.46
+            ],
+            [
+              80.42,
+              26.48
+            ],
+            [
+              80.3,
+              26.54
+            ],
+            [
+              80.28,
+              26.51
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

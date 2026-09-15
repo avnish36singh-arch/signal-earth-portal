@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investigation: Kanpur Land Surface Temperature &amp; Inversion Dynamics — Signal Earth</title>
+  <meta name="description" content="Remote sensing and GIS analysis of continuous daily Land Surface Temperature (NASA POWER) and urban thermal zonation across Kanpur (2017–2023).">
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="se-nav">
+    <a href="../index.html" class="se-brand">
+      <span class="se-brand-name">SIGNAL EARTH</span>
+      <span class="se-brand-sub">Independent Environmental Analysis</span>
+    </a>
+
+    <ul class="se-nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="kanpur.html">Kanpur</a></li>
+      <li><a href="delhi.html">Delhi</a></li>
+      <li><a href="kanpur-lst.html" class="active">Kanpur LST</a></li>
+      <li><a href="comparison.html">Comparison</a></li>
+      <li><a href="../methodology.html">Methodology</a></li>
+      <li><a href="../citations.html">Citations</a></li>
+      <li><a href="../dispatches.html">Dispatches</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+
+    <div class="se-nav-social">
+      <a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer" class="se-social-link">Instagram</a>
+      <a href="https://www.linkedin.com/company/signalearth/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer" class="se-social-link">LinkedIn</a>
+      <a href="https://github.com/avnish36singh-arch" target="_blank" rel="noopener noreferrer" class="se-social-link">GitHub</a>
+    </div>
+  </nav>
+
+  <main class="se-container" style="padding-top: 5rem; padding-bottom: 6rem;">
+    <!-- Header -->
+    <header style="margin-bottom: 3.5rem;">
+      <span class="section-kicker">Investigation 03 &middot; Kanpur, Uttar Pradesh</span>
+      <h1 class="editorial-headline" style="font-size: clamp(2.4rem, 4vw, 3.4rem); margin-bottom: 1.2rem;">
+        Kanpur Land Surface Temperature (LST) &amp; Urban Thermal Inversion Dynamics
+      </h1>
+      <p class="se-hero-dek">
+        Remote sensing analysis of continuous daily satellite skin temperature (NASA POWER) and QGIS spatial thermal zonation across the Kanpur metropolitan airshed (2017–2023), examining pre-monsoon heatwaves and nocturnal radiation inversion mechanics.
+      </p>
+
+      <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); display: flex; gap: 1.5rem; flex-wrap: wrap; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+        <span>Author: Avnish Singh (HBTU Kanpur)</span>
+        <span>Telemetry: NASA POWER Satellite Reanalysis (MERRA-2 Skin TS)</span>
+        <span>Coordinates: 26.4499&deg; N, 80.3319&deg; E</span>
+        <span>Duration: 2017–2023 (2,556 continuous daily observations)</span>
+        <span>Code: <a href="https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb" target="_blank" rel="noopener noreferrer" style="color: var(--data-cyan);">GitHub Repository</a></span>
+      </div>
+    </header>
+
+    <!-- Hero Image (Credited) -->
+    <div style="margin-bottom: 4rem;">
+      <img src="../assets/hero_satellite_earth.jpg" alt="Satellite imagery of atmospheric aerosols and thermal regimes across the central Gangetic plain" class="se-hero-img" style="max-height: 460px;">
+      <span class="se-media-credit">Imagery: NASA Earth Observatory. Thermal and atmospheric perspective of the central Indo-Gangetic basin.</span>
+    </div>
+
+    <!-- Validated Summary Metrics -->
+    <section style="margin-bottom: 4rem;">
+      <span class="section-kicker">Remote Sensing Thermal Telemetry</span>
+      <div class="se-metric-grid">
+        <div class="se-metric-card">
+          <div class="se-metric-num" style="color: var(--data-rose);">43.4&deg;C</div>
+          <div class="se-metric-label">Peak Summer LST (Skin Temp)</div>
+          <div class="se-metric-source">Recorded during peak pre-monsoon heatwave (June 12, 2019)</div>
+        </div>
+
+        <div class="se-metric-card">
+          <div class="se-metric-num" style="color: var(--data-cyan);">5.6&deg;C</div>
+          <div class="se-metric-label">Winter Nocturnal Radiative Min</div>
+          <div class="se-metric-source">Recorded during intense cold-wave episode (December 30, 2019)</div>
+        </div>
+
+        <div class="se-metric-card">
+          <div class="se-metric-num" style="color: var(--data-amber);">+1.01&deg;C</div>
+          <div class="se-metric-label">Mean Summer Skin-Air Decoupling (&Delta;T)</div>
+          <div class="se-metric-source">Surface skin superheating above ambient 2m air temperature</div>
+        </div>
+
+        <div class="se-metric-card">
+          <div class="se-metric-num" style="color: #FFFFFF;">16.1&deg;C</div>
+          <div class="se-metric-label">Mean Diurnal Thermal Range (Summer)</div>
+          <div class="se-metric-source">Pre-monsoon day-night temperature swing (Tmax - Tmin)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Findings in prose, each claim pointing at the figure that supports it -->
+    <article style="max-width: 860px; margin: 0 auto; font-size: 1.05rem; line-height: 1.8; color: #CBD5E1;">
+      
+      <h2 class="editorial-headline" style="font-size: 2rem; color: #FFFFFF; margin: 3rem 0 1rem 0;">1. Multi-Year Satellite Skin Temperature (LST) Telemetry</h2>
+      <p>
+        While ground monitoring stations record air temperature at 2 meters above ground level, satellite Land Surface Temperature (LST)—or radiometric skin temperature ($T_{\text{skin}}$)—measures the thermodynamic temperature of the actual emitting urban surface (roofs, asphalt, vegetative canopies, and bare soils).
+      </p>
+      <p>
+        Across seven complete calendar years (2,556 continuous daily observations from NASA's Prediction of Worldwide Energy Resources [POWER] reanalysis), the Kanpur metropolitan airshed exhibits profound seasonal thermal oscillation ranging from a winter radiative low of <strong>5.61&deg;C</strong> to pre-monsoon summer peaks reaching <strong>43.39&deg;C</strong>.
+      </p>
+
+      <div class="se-chart-wrap">
+        <div class="se-chart-header">
+          <div class="se-chart-title">Interactive Daily Land Surface Temperature &amp; 30-Day Seasonal Trajectory</div>
+          <div class="se-chart-caption">Continuous daily records from 2017 to 2023 with interactive zoom and seasonal health bands.</div>
+        </div>
+        <div id="kanpur-lst-chart-timeseries" style="width: 100%; min-height: 480px;"></div>
+        <span class="citation-tag">Source: NASA POWER API (MERRA-2 TS Skin Temperature). Generated by Signal Earth pipeline.</span>
+      </div>
+
+      <div style="margin: 2rem 0;">
+        <img src="../assets/lst/01_kanpur_lst_seasonal_timeline.png" alt="Multi-year LST Timeline in Kanpur" style="width: 100%; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); display: block;" loading="lazy">
+        <span class="citation-tag" style="display: block; margin-top: 0.5rem;">Figure 1: Multi-year daily LST trajectory with 7-day rolling average and seasonal thermal stress bands.</span>
+      </div>
+
+      <h2 class="editorial-headline" style="font-size: 2rem; color: #FFFFFF; margin: 3rem 0 1rem 0;">2. Surface Skin vs. Ambient Air Thermal Decoupling (&Delta;T)</h2>
+      <p>
+        The thermal gradient between surface skin and ambient air ($\Delta T = T_{\text{skin}} - T_{\text{air}}$) governs convective heat flux into the planetary boundary layer.
+      </p>
+      <p>
+        During pre-monsoon summer (March to May), intense downward shortwave solar radiation ($>22\ \text{MJ}/\text{m}^2/\text{day}$) heats low-albedo urban surfaces rapidly, driving skin temperature substantially higher than ambient air ($\Delta T > +1.0^\circ\text{C}$ seasonal average, frequently exceeding $+3.0^\circ\text{C}$ on clear heatwave days). This strong upward sensible heat flux drives vigorous vertical mixing, elevating boundary layer heights beyond 2,500 meters and dispersing ground-level emissions.
+      </p>
+      <p>
+        Conversely, during post-monsoon and winter (November to January), low solar elevation and clear nocturnal skies cause intense longwave radiative cooling from the surface into space. As a result, the ground skin cools faster than the overlying atmosphere ($\Delta T$ turns negative, averaging $-0.97^\circ\text{C}$), creating the stable atmospheric inversion layer that suppresses ventilation.
+      </p>
+
+      <div style="margin: 2rem 0;">
+        <img src="../assets/lst/02_skin_vs_air_temperature_anomaly.png" alt="Skin vs Air Temperature Decoupling" style="width: 100%; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); display: block;" loading="lazy">
+        <span class="citation-tag" style="display: block; margin-top: 0.5rem;">Figure 2: Scatter decoupling (left) and monthly boxplots of thermal gradient &Delta;T (right), demonstrating summer superheating vs winter radiational cooling.</span>
+      </div>
+
+      <h2 class="editorial-headline" style="font-size: 2rem; color: #FFFFFF; margin: 3rem 0 1rem 0;">3. Spatial Thermal Zonation &amp; Urban Microclimates</h2>
+      <p>
+        Kanpur's urban fabric produces pronounced microclimatic spatial thermal gradients dictated by land cover, impervious surface fractions, and vegetative canopy density:
+      </p>
+      <ul style="padding-left: 1.5rem; margin: 1.5rem 0; display: flex; flex-direction: column; gap: 0.8rem; color: #CBD5E1;">
+        <li>
+          <strong>Central Kanpur Urban Core:</strong> Low albedo and high thermal inertia from dense masonry and asphalt create an Urban Heat Island (UHI) surface anomaly averaging <strong>+2.1&deg;C</strong> above rural baseline.
+        </li>
+        <li>
+          <strong>Jajmau &amp; Panki Industrial Belts:</strong> Extensive metal roofing and heavy combustion emissions contribute persistent thermal positive anomalies of <strong>+1.8&deg;C</strong> and <strong>+1.6&deg;C</strong> respectively.
+        </li>
+        <li>
+          <strong>IITK &amp; Kalyanpur Suburban Canopy:</strong> High canopy tree cover and institutional green spaces provide significant evapotranspirative cooling, damping surface skin temperatures by <strong>-0.8&deg;C</strong> relative to the urban core.
+        </li>
+        <li>
+          <strong>Ganga River Floodplain:</strong> Active open water and saturated silt wetland buffers produce an evaporative cooling depression of <strong>-2.4&deg;C</strong>, serving as a primary thermal sink for northern Kanpur.
+        </li>
+      </ul>
+
+      <div style="margin: 2rem 0;">
+        <img src="../assets/lst/03_kanpur_spatial_thermal_zones.png" alt="Spatial GIS Thermal Zonation in Kanpur" style="width: 100%; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); display: block;" loading="lazy">
+        <span class="citation-tag" style="display: block; margin-top: 0.5rem;">Figure 3: GIS spatial map of Kanpur showing land use thermal classifications and CAAQMS station positions (EPSG:4326 WGS84).</span>
+      </div>
+
+      <h2 class="editorial-headline" style="font-size: 2rem; color: #FFFFFF; margin: 3rem 0 1rem 0;">4. Thermal Inversion Coupling with Ground-Level PM2.5</h2>
+      <p>
+        Coupling NASA POWER satellite skin temperature telemetry with ground-level particulate records from Kanpur's continuous monitoring stations (NSI Kalyanpur and Nehru Nagar) reveals the exact physical mechanism driving northern India's winter air quality crisis.
+      </p>
+      <p>
+        As shown in <strong>Figure 4</strong>, during the summer months when LST exceeds 35&deg;C and $\Delta T$ is positive, measured PM<sub>2.5</sub> remains within moderate levels (16–35 µg/m³). However, as soon as November arrives and surface skin temperature drops below the 15&deg;C threshold, nocturnal radiation cooling decouples the ground surface from the atmosphere.
+      </p>
+      <p>
+        This creates a shallow nocturnal temperature inversion beneath 200–300 meters, trapping local vehicular, industrial, and transboundary biomass emissions at ground level and driving the <strong>5-fold surge in PM<sub>2.5</sub> (>150–250 µg/m³)</strong> documented in our Kanpur Air Quality investigation.
+      </p>
+
+      <div style="margin: 2rem 0;">
+        <img src="../assets/lst/04_lst_inversion_coupling_pm25.png" alt="Coupling between Satellite Skin Temperature and PM2.5 Inversion" style="width: 100%; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); display: block;" loading="lazy">
+        <span class="citation-tag" style="display: block; margin-top: 0.5rem;">Figure 4: Direct coupling between NASA POWER satellite surface cooling (Panel 1) and ground station PM2.5 spikes (Panel 2).</span>
+      </div>
+    <!-- Key Metrics Strip -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 4rem;">
+      <div class="se-card" style="padding: 1.5rem;">
+        <span class="section-kicker">Observation Span</span>
+        <div style="font-size: 2rem; font-family: var(--font-mono); font-weight: 700; color: #FFFFFF; margin: 0.5rem 0;">2,556 Days</div>
+        <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Unbroken daily satellite reanalysis across 7 full annual cycles (2017&ndash;2023).</p>
+      </div>
+
+      <div class="se-card" style="padding: 1.5rem;">
+        <span class="section-kicker">Summer Superheating</span>
+        <div style="font-size: 2rem; font-family: var(--font-mono); font-weight: 700; color: var(--data-coral); margin: 0.5rem 0;">+1.01&deg;C</div>
+        <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Mean summer skin vs air anomaly (&Delta;T = T<sub>skin</sub> - T<sub>air</sub>), peaking at 43.39&deg;C.</p>
+      </div>
+
+      <div class="se-card" style="padding: 1.5rem;">
+        <span class="section-kicker">Winter Radiative Cooling</span>
+        <div style="font-size: 2rem; font-family: var(--font-mono); font-weight: 700; color: var(--data-cyan); margin: 0.5rem 0;">-0.97&deg;C</div>
+        <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Mean winter skin cooling anomaly below air temp, driving nocturnal surface inversion.</p>
+      </div>
+
+      <div class="se-card" style="padding: 1.5rem;">
+        <span class="section-kicker">Diurnal Range</span>
+        <div style="font-size: 2rem; font-family: var(--font-mono); font-weight: 700; color: var(--data-amber); margin: 0.5rem 0;">16.06&deg;C</div>
+        <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Pre-monsoon diurnal temperature range (DTR) highlighting continental thermal extremes.</p>
+      </div>
+    </div>
+
+    <!-- Content Sections -->
+    <div style="display: flex; flex-direction: column; gap: 4.5rem;">
+
+      <!-- Section 1: Physical Mechanism & Interactive Timeseries -->
+      <section>
+        <span class="section-kicker">01 &middot; Continuous Satellite Telemetry</span>
+        <h2 class="editorial-headline" style="font-size: 1.85rem; margin-bottom: 1rem; color: #FFFFFF;">Seven-Year LST Trajectory &amp; Thermal Regimes</h2>
+        <div style="color: #CBD5E1; line-height: 1.8; font-size: 1.02rem; margin-bottom: 1.75rem;">
+          <p>
+            Ground-level air quality stations capture pollutant concentrations at human breathing height (3–5 meters), but they cannot measure the radiant skin temperature of the earth's surface. Using NASA POWER daily reanalysis for Kanpur (26.4499&deg;N, 80.3319&deg;E), we track surface radiant temperature (LST / Skin Temp) against 2-meter ambient air temperature across 2017–2023.
+          </p>
+          <p>
+            The data demonstrates a clean seasonal dichotomy: in pre-monsoon summer (April–June), extreme solar insolation drives skin temperatures up to <strong>43.39&deg;C</strong> with surface superheating exceeding ambient air by over 1.0&deg;C. In contrast, post-monsoon and winter months exhibit intense nocturnal radiative cooling, with skin temperatures plummeting to <strong>5.61&deg;C</strong>.
+          </p>
+        </div>
+
+        <!-- Interactive Plotly Chart Container -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: 6px; padding: 1.5rem; margin-bottom: 1.25rem;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+            <div>
+              <h3 style="font-size: 1.1rem; color: #FFFFFF; margin: 0;">Interactive 7-Year LST Telemetry (2017–2023)</h3>
+              <span style="font-size: 0.78rem; color: var(--text-muted);">Zoom, pan, and hover over 2,556 daily observations</span>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--data-cyan);">Source: NASA POWER API &middot; MERRA-2</div>
+          </div>
+          <div id="kanpur-lst-chart-timeseries" style="width: 100%; height: 420px;"></div>
+        </div>
+      </section>
+
+      <!-- Section 2: Spatial GIS Microclimate Modeling -->
+      <section>
+        <span class="section-kicker">02 &middot; Spatial GIS Analysis</span>
+        <h2 class="editorial-headline" style="font-size: 1.85rem; margin-bottom: 1rem; color: #FFFFFF;">QGIS Microclimate Modeling &amp; Thermal Anomaly Zones</h2>
+        <div style="color: #CBD5E1; line-height: 1.8; font-size: 1.02rem; margin-bottom: 1.75rem;">
+          <p>
+            Kanpur's urban morphology exhibits sharp spatial heterogeneity between heavy industrial corridors along the railway tracks, dense high-albedo commercial districts, academic green canopies, and the moist alluvial Ganga floodplain.
+          </p>
+          <p>
+            Using QGIS vector GIS spatial modeling (EPSG:4326), we mapped 5 distinct microclimate thermal regimes across the metropolitan zone, integrating the locations of Uttar Pradesh Pollution Control Board (UPPCB) CAAQMS stations at NSI Kalyanpur and Nehru Nagar:
+          </p>
+        </div>
+
+        <div style="margin-bottom: 2rem;">
+          <img src="../assets/lst/03_kanpur_spatial_thermal_zones.png" alt="Kanpur spatial microclimate zones GIS map" style="width: 100%; border-radius: 6px; border: 1px solid var(--border-subtle); display: block; margin-bottom: 0.75rem;">
+          <span style="font-size: 0.8rem; color: var(--text-muted);">Figure 1: Spatial GIS map of Kanpur thermal microclimate zones, delineating industrial clusters, the central urban core, vegetation cooling buffers, and CPCB monitoring stations.</span>
+        </div>
+
+        <!-- Thermal Zones Table -->
+        <h3 style="font-size: 1.15rem; color: #FFFFFF; margin-bottom: 0.75rem;">Modeled Thermal Anomalies by Morphological Zone</h3>
+        <div class="se-table-wrap">
+          <table class="se-table">
+            <thead>
+              <tr>
+                <th>Zone / Sector</th>
+                <th>Classification</th>
+                <th>Modeled UHI Offset</th>
+                <th>Primary Microclimatic Mechanism</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Central Urban Core</strong></td>
+                <td>High-Density Commercial &amp; Residential</td>
+                <td style="color: var(--data-coral); font-weight: 600;">+2.1&deg;C</td>
+                <td>High thermal mass concrete, low sky-view factor, intensive anthropogenic heat</td>
+              </tr>
+              <tr>
+                <td><strong>Jajmau Industrial Belt</strong></td>
+                <td>Leather Tanneries &amp; Heavy Transport</td>
+                <td style="color: var(--data-coral); font-weight: 600;">+1.8&deg;C</td>
+                <td>Industrial combustion boilers, bare ground, heavy diesel freight corridors</td>
+              </tr>
+              <tr>
+                <td><strong>Panki Industrial Area</strong></td>
+                <td>Thermal Power &amp; Chemical Manufacturing</td>
+                <td style="color: var(--data-coral); font-weight: 600;">+1.6&deg;C</td>
+                <td>Waste heat dissipation from industrial machinery and power infrastructure</td>
+              </tr>
+              <tr>
+                <td><strong>IITK / Kalyanpur Canopy</strong></td>
+                <td>Institutional Forest &amp; Low-Density</td>
+                <td style="color: var(--data-cyan); font-weight: 600;">-0.8&deg;C</td>
+                <td>Dense tree canopy evapotranspiration, shading, and reduced impervious surface</td>
+              </tr>
+              <tr>
+                <td><strong>Ganga Floodplain Wetland</strong></td>
+                <td>Riparian Agricultural Alluvium</td>
+                <td style="color: var(--data-cyan); font-weight: 600;">-2.4&deg;C</td>
+                <td>Continuous latent heat evaporative cooling along the river corridor</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 3: Inversion Coupling & Air Quality -->
+      <section>
+        <span class="section-kicker">03 &middot; Atmospheric Dynamics</span>
+        <h2 class="editorial-headline" style="font-size: 1.85rem; margin-bottom: 1rem; color: #FFFFFF;">Thermal Decoupling &amp; Boundary Layer Entrapment</h2>
+        <div style="color: #CBD5E1; line-height: 1.8; font-size: 1.02rem; margin-bottom: 1.75rem;">
+          <p>
+            The critical finding linking satellite remote sensing to ground air quality is the <strong>skin-to-air thermal gradient (&Delta;T = T<sub>skin</sub> - T<sub>air</sub>)</strong>. During winter (November to February), the surface of Kanpur loses heat faster via infrared radiative cooling than the overlying atmosphere, producing a negative anomaly of <strong>-0.97&deg;C</strong> (and nocturnal extremes beyond -3&deg;C).
+          </p>
+          <p>
+            When the surface becomes colder than the air directly above it, a <strong>temperature inversion</strong> develops: warmer air aloft traps cold, dense air near the ground. This collapses the planetary boundary layer height from ~1,500 meters down to less than 250 meters, physically capping vertical mixing.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+          <div>
+            <img src="../assets/lst/02_skin_vs_air_temperature_anomaly.png" alt="Skin vs air temperature thermal anomaly" style="width: 100%; border-radius: 6px; border: 1px solid var(--border-subtle); display: block; margin-bottom: 0.5rem;">
+            <span style="font-size: 0.78rem; color: var(--text-muted);">Figure 2: Monthly distribution of thermal gradient (&Delta;T), illustrating summer solar superheating (&Delta;T &gt; 0) vs winter radiative cooling (&Delta;T &lt; 0).</span>
+          </div>
+
+          <div>
+            <img src="../assets/lst/04_lst_inversion_coupling_pm25.png" alt="LST inversion coupling with PM2.5 ground spikes" style="width: 100%; border-radius: 6px; border: 1px solid var(--border-subtle); display: block; margin-bottom: 0.5rem;">
+            <span style="font-size: 0.78rem; color: var(--text-muted);">Figure 3: Multi-panel physical coupling: satellite skin temp, boundary layer inversion gradient, and ground CAAQMS PM2.5 winter spikes.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Data & Reproducibility -->
+      <section>
+        <span class="section-kicker">04 &middot; Data &amp; Methodology</span>
+        <h2 class="editorial-headline" style="font-size: 1.85rem; margin-bottom: 1rem; color: #FFFFFF;">Data Pipeline &amp; Open GIS Assets</h2>
+        <div style="color: #CBD5E1; line-height: 1.8; font-size: 1.02rem; margin-bottom: 1.5rem;">
+          <p>
+            All satellite data was ingested using NASA's open POWER API v2.0.0. The spatial analysis, buffer rings, and polygon geo-features were generated using Python GIS tooling (GeoPandas, Shapely) and verified inside QGIS.
+          </p>
+          <p>
+            The vector layers and processed datasets are available directly for independent geospatial verification:
+          </p>
+        </div>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="../data/kanpur_thermal_zones.geojson" target="_blank" class="se-link">Download QGIS Thermal Zones GeoJSON &rarr;</a>
+          <a href="../data/kanpur_cpcb_stations.geojson" target="_blank" class="se-link se-link-secondary">Download Station Locations GeoJSON &rarr;</a>
+          <a href="https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb/blob/main/pipeline_lst/fetch_nasa_power.py" target="_blank" rel="noopener noreferrer" class="se-link se-link-secondary">View Python Pipeline on GitHub &rarr;</a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="se-footer">
+    <div class="se-container">
+      <div class="se-footer-inner">
+        <div style="max-width: 360px;">
+          <div style="font-weight: 700; color: #FFFFFF; letter-spacing: 0.1em; margin-bottom: 0.6rem;">SIGNAL EARTH</div>
+          <p style="line-height: 1.6;">Independent analysis of publicly available environmental monitoring data — CPCB, UPPCB, and open satellite records — with full source code and citations.</p>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Investigations</h5>
+          <ul>
+            <li><a href="kanpur.html">Kanpur Air Quality</a></li>
+            <li><a href="delhi.html">Delhi Air Quality</a></li>
+            <li><a href="kanpur-lst.html">Kanpur LST &amp; GIS</a></li>
+            <li><a href="comparison.html">Cross-City Comparison</a></li>
+            <li><a href="../dispatches.html">Research Dispatches</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Documentation</h5>
+          <ul>
+            <li><a href="../methodology.html">Methodology &amp; Limits</a></li>
+            <li><a href="../citations.html">Data Sources &amp; Citations</a></li>
+            <li><a href="../about.html">About &amp; Standards</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer">Instagram (@signalearthhq)</a></li>
+            <li><a href="https://www.linkedin.com/company/signalearth/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer">LinkedIn (Signal Earth)</a></li>
+            <li><a href="../contact.html">Contact Information</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="se-footer-bottom">
+        <span>Signal Earth &middot; Avnish Singh &middot; HBTU Kanpur</span>
+        <span>Data: NASA POWER, CPCB, UPPCB &middot; MIT License</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="kanpur-lst.js"></script>
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investigation: Kanpur Air Quality Analysis — Signal Earth</title>
+  <meta name="description" content="Empirical analysis of PM2.5 and PM10 trends, seasonal patterns, and weather correlations across two Kanpur monitoring stations (NSI Kalyanpur and Nehru Nagar) using CPCB/UPPCB data via OpenAQ.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="se-nav">
+    <a href="../index.html" class="se-brand">
+      <span class="se-brand-name">SIGNAL EARTH</span>
+      <span class="se-brand-sub">Independent Environmental Analysis</span>
+    </a>
+
+    <ul class="se-nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="kanpur.html" class="active">Kanpur</a></li>
+      <li><a href="delhi.html">Delhi</a></li>
+      <li><a href="kanpur-lst.html">Kanpur LST</a></li>
+      <li><a href="comparison.html">Comparison</a></li>
+      <li><a href="../methodology.html">Methodology</a></li>
+      <li><a href="../citations.html">Citations</a></li>
+      <li><a href="../dispatches.html">Dispatches</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+
+    <div class="se-nav-social">
+      <a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer" class="se-social-link">Instagram</a>
+      <a href="https://www.linkedin.com/company/signalearth/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer" class="se-social-link">LinkedIn</a>
+      <a href="https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur" target="_blank" rel="noopener noreferrer" class="se-social-link">GitHub</a>
+    </div>
+  </nav>
+
+  <main class="se-container" style="padding-top: 5rem; padding-bottom: 6rem;">
+    <!-- Header -->
+    <header style="margin-bottom: 3.5rem;">
+      <span class="section-kicker">Investigation 01 &middot; Kanpur, Uttar Pradesh</span>
+      <h1 class="editorial-headline" style="font-size: clamp(2.4rem, 4vw, 3.4rem); margin-bottom: 1.2rem;">
+        Kanpur Air Quality Analysis: PM<sub>2.5</sub> &amp; PM<sub>10</sub> Dynamics at Two Continuous Monitoring Stations
+      </h1>
+      <p class="se-hero-dek">
+        Analysis of particulate trends, seasonal cycles, and weather correlations across two monitoring stations in Kanpur using continuous CPCB/UPPCB records retrieved via the OpenAQ API.
+      </p>
+
+      <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); display: flex; gap: 1.5rem; flex-wrap: wrap; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+        <span>Author: Avnish Singh (HBTU Kanpur)</span>
+        <span>Data: CPCB / UPPCB via OpenAQ v3 API</span>
+        <span>Stations: NSI Kalyanpur (229252), Nehru Nagar (5662)</span>
+        <span>Code: <a href="https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur" target="_blank" rel="noopener noreferrer" style="color: var(--data-cyan);">GitHub Repository</a></span>
+      </div>
+    </header>
+
+    <!-- Hero Image (Credited) -->
+    <div style="margin-bottom: 4rem;">
+      <img src="../assets/hero_satellite_earth.jpg" alt="NASA Earth observation over the Gangetic Basin showing regional winter atmospheric inversion" class="se-hero-img" style="max-height: 460px;">
+      <span class="se-media-credit">Imagery: NASA Earth Observatory. Topographical and atmospheric perspective of the central Indo-Gangetic Basin.</span>
+    </div>
+
+    <!-- Summary Stats (Direct from actual pipeline output) -->
+    <section style="margin-bottom: 4rem;">
+      <span class="section-kicker">Validated Summary Metrics</span>
+      <div class="se-metric-grid">
+        <div class="se-metric-card">
+          <div class="se-metric-num" style="color: var(--data-rose);">~5&times;</div>
+          <div class="se-metric-label">Seasonal Surge Factor</div>
+          <div class="se-metric-source">Nov PM2.5 (~90–95 µg/m³) vs Aug low (~16–22 µg/m³) at both stations</div>
+        </div>
+
+        <div class="se-metric-card">
+          <div class="se-metric-num" style="color: var(--data-amber);">9–10 PM</div>
+          <div class="se-metric-label">Diurnal Peak (IST)</div>
+          <div class="se-metric-source">Evening boundary layer collapse following post-sunset thermal inversion</div>
+        </div>
+
+        <div class="se-metric-card">
+          <div class="se-metric-num" style="color: var(--data-cyan);">-0.36</div>
+          <div class="se-metric-label">Wind Speed Correlation (r)</div>
+          <div class="se-metric-source">r = -0.28 to -0.36 confirming convective and advective dispersion</div>
+        </div>
+
+        <div class="se-metric-card">
+          <div class="se-metric-num" style="color: #FFFFFF;">~6%</div>
+          <div class="se-metric-label">Poor / Very Poor Days</div>
+          <div class="se-metric-source">Fraction of monitored days falling in Poor or Very Poor CPCB categories</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explicit Caveat Box -->
+    <div class="se-caveat-box">
+      <div class="se-caveat-title">Data Coverage &amp; Limitation Notice</div>
+      <p class="se-caveat-text">
+        Both Kanpur stations exhibit a genuine historical reporting gap from roughly <strong>November 2022 to February 2025</strong> (~2.3 years), reflecting an actual absence of reported telemetry during that interval rather than a collection defect. Data is analyzed in two discrete observation windows: Window 1 (July 2021 – October 2022) and Window 2 (February 2025 – August 2026). In all monthly charts, data across both windows is pooled by calendar month to provide seasonal representation. Additionally, wind-speed sensor availability was interrupted for portions of the monitored timeframe, limiting continuous multi-year ventilation index computation.
+      </p>
+    </div>
+
+    <!-- Findings in prose, each claim pointing at the figure that supports it -->
+    <article style="max-width: 860px; margin: 0 auto; font-size: 1.05rem; line-height: 1.8; color: #CBD5E1;">
+      
+      <h2 class="editorial-headline" style="font-size: 2rem; color: #FFFFFF; margin: 3rem 0 1rem 0;">1. Multi-Year Timeseries &amp; The Reporting Gap</h2>
+      <p>
+        The continuous particulate records from both NSI Kalyanpur (Station ID: 229252) and Nehru Nagar (Station ID: 5662) show recurring severe winter peaks, with PM<sub>2.5</sub> exceeding the National Ambient Air Quality Standard (NAAQS) 24-hour limit of 60 µg/m³ during post-monsoon and winter seasons.
+      </p>
+      
+      <div class="se-chart-wrap">
+        <div class="se-chart-header">
+          <div class="se-chart-title">Figure 1: Multi-Year Daily PM2.5 &amp; PM10 Timeseries (Kanpur)</div>
+          <div class="se-chart-caption">Daily mean concentrations across NSI Kalyanpur and Nehru Nagar, explicitly showing the 2022–2025 reporting gap without artificial bridging.</div>
+        </div>
+        <img src="../assets/kanpur/01_timeseries.png" alt="Multi-year Timeseries of Kanpur PM2.5 and PM10" class="se-chart-img">
+        <span class="citation-tag">Source: CPCB / UPPCB telemetry via OpenAQ v3 API</span>
+      </div>
+
+      <h2 class="editorial-headline" style="font-size: 2rem; color: #FFFFFF; margin: 3rem 0 1rem 0;">2. Monthly Seasonality: The Five-Fold November Surge</h2>
+      <p>
+        As illustrated in <strong>Figure 2</strong>, particulate levels follow a stark seasonal cycle. The lowest concentrations occur during the monsoon month of August, where frequent precipitation washout and high atmospheric boundary layers keep monthly average PM<sub>2.5</sub> between 16.4 µg/m³ and 22.1 µg/m³. In contrast, November PM<sub>2.5</sub> averages climb to 90.2–94.8 µg/m³—representing a roughly five-fold multiplication over the summer baseline at both stations independently.
+      </p>
+
+      <div class="se-chart-wrap">
+        <div class="se-chart-header">
+          <div class="se-chart-title">Figure 2: Monthly Seasonal PM2.5 &amp; PM10 Progression</div>
+          <div class="se-chart-caption">Pooled calendar-month means showing the synchronized autumn surge across both monitoring sites.</div>
+        </div>
+        <img src="../assets/kanpur/02_monthly_seasonal.png" alt="Monthly Seasonal Cycle in Kanpur" class="se-chart-img">
+        <span class="citation-tag">Source: 02_monthly_seasonal.png generated from daily_aggregated.csv</span>
+      </div>
+
+      <h2 class="editorial-headline" style="font-size: 2rem; color: #FFFFFF; margin: 3rem 0 1rem 0;">3. Air Quality Index Category Breakdown</h2>
+      <p>
+        Evaluating compliance under the CPCB National Air Quality Index framework (<strong>Figure 3</strong>), approximately 6% of valid monitored station days crossed into the "Poor" (AQI 201–300) or "Very Poor" (AQI 301–400) categories. Moderate and satisfactory days dominate during the monsoon and pre-monsoon periods, but are almost entirely absent in November and December.
+      </p>
+
+      <div class="se-chart-wrap">
+        <div class="se-chart-header">
+          <div class="se-chart-title">Figure 3: AQI Category Frequency Distribution</div>
+          <div class="se-chart-caption">Proportion of days categorized under CPCB NAQI bands at NSI Kalyanpur and Nehru Nagar.</div>
+        </div>
+        <img src="../assets/kanpur/03_aqi_breakdown.png" alt="AQI Breakdown in Kanpur" class="se-chart-img">
+        <span class="citation-tag">Source: 03_aqi_breakdown.png</span>
+      </div>
+
+      <h2 class="editorial-headline" style="font-size: 2rem; color: #FFFFFF; margin: 3rem 0 1rem 0;">4. Diurnal 24-Hour Cycle &amp; Boundary Layer Dynamics</h2>
+      <p>
+        Hourly diurnal profiling (<strong>Figure 4</strong>) demonstrates that particulate concentrations are heavily governed by atmospheric boundary layer height. PM<sub>2.5</sub> reaches its daily minimum in mid-afternoon (~3:00–4:00 PM IST), when solar radiation drives maximum convective vertical mixing. Following sunset, radiative ground cooling creates a shallow surface inversion layer, trapping localized vehicular and domestic combustion emissions and driving peak concentrations between 9:00 PM and 10:00 PM IST.
+      </p>
+
+      <div class="se-chart-wrap">
+        <div class="se-chart-header">
+          <div class="se-chart-title">Figure 4: 24-Hour Diurnal PM2.5 Progression</div>
+          <div class="se-chart-caption">Hourly means illustrating the daytime convective trough and evening inversion spike.</div>
+        </div>
+        <img src="../assets/kanpur/04_diurnal.png" alt="Diurnal Pattern in Kanpur" class="se-chart-img">
+        <span class="citation-tag">Source: diurnal_pattern.csv</span>
+      </div>
+
+      <h2 class="editorial-headline" style="font-size: 2rem; color: #FFFFFF; margin: 3rem 0 1rem 0;">5. Meteorological Correlations &amp; Upwind Directionality</h2>
+      <p>
+        Statistical correlation analysis (<strong>Figure 5 &amp; Figure 6</strong>) confirms that PM<sub>2.5</sub> is negatively correlated with wind speed (r = -0.28 to -0.36) and temperature (r = -0.27 to -0.39). Stagnant, cold conditions systematically prevent horizontal ventilation and vertical dispersion.
+      </p>
+      <p>
+        Furthermore, directional wind rose analysis (<strong>Figure 7</strong>) indicates that both stations independently register their highest mean particulate concentrations when wind advects from the northern sector—highlighting transboundary regional transport along the Indo-Gangetic corridor.
+      </p>
+
+      <div class="se-chart-wrap">
+        <div class="se-chart-header">
+          <div class="se-chart-title">Figure 5: Meteorological Correlation Heatmap</div>
+          <div class="se-chart-caption">Pearson correlation coefficients between criteria pollutants and ambient meteorological parameters.</div>
+        </div>
+        <img src="../assets/kanpur/05_correlation_heatmap.png" alt="Meteorological Correlation Heatmap" class="se-chart-img">
+        <span class="citation-tag">Source: 05_correlation_heatmap.png</span>
+      </div>
+
+      <div class="se-chart-wrap">
+        <div class="se-chart-header">
+          <div class="se-chart-title">Figure 6: Scatter Relationships Against Temperature &amp; Wind Speed</div>
+          <div class="se-chart-caption">Inverse non-linear dispersion curves confirming that calm and cold atmospheric states drive peak exposures.</div>
+        </div>
+        <img src="../assets/kanpur/06_scatter_weather.png" alt="Weather Scatter" class="se-chart-img">
+        <span class="citation-tag">Source: 06_scatter_weather.png</span>
+      </div>
+
+      <div class="se-chart-wrap">
+        <div class="se-chart-header">
+          <div class="se-chart-title">Figure 7: Directional Wind Rose &amp; Upwind Pollution Sectors</div>
+          <div class="se-chart-caption">Polar mean concentrations across 16 cardinal directions showing the prominent northern transport corridor.</div>
+        </div>
+        <img src="../assets/kanpur/07_wind_rose.png" alt="Wind Rose Analysis in Kanpur" class="se-chart-img">
+        <span class="citation-tag">Source: 07_wind_rose.png</span>
+      </div>
+
+      <!-- Methodology & Source Code Link -->
+      <div style="margin-top: 4rem; padding: 2.5rem; background: var(--bg-surface); border: 1px solid var(--border-subtle);">
+        <span class="section-kicker">Reproducibility &amp; Data Access</span>
+        <h3 class="editorial-headline" style="font-size: 1.6rem; margin-bottom: 0.75rem; color: #FFFFFF;">Inspect Methodology and Source Code</h3>
+        <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.65;">
+          The complete data collection script, gap cleaning routine, weather merge process, and figure generation notebooks are hosted publicly on GitHub.
+        </p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur" target="_blank" rel="noopener noreferrer" class="se-link" style="font-size: 0.9rem;">
+    <!-- Content Sections -->
+    <div style="display: flex; flex-direction: column; gap: 4rem;">
+
+      <!-- Section 1: Overview -->
+      <section>
+        <span class="section-kicker">01 &middot; Executive Summary</span>
+        <h2 class="editorial-headline" style="font-size: 1.8rem; margin-bottom: 1rem;">The Atmospheric Baseline</h2>
+        <div class="se-report-content" style="color: #CBD5E1; line-height: 1.8; font-size: 1.05rem;">
+          <p>
+            Kanpur, situated in the heart of the Indo-Gangetic Plain, experiences severe seasonal shifts in ambient particulate matter concentrations. Analysis of continuous telemetry from the NSI Kalyanpur and Nehru Nagar stations confirms that particulate loading is heavily modulated by seasonal meteorological patterns.
+          </p>
+          <p>
+            During the winter months (November to January), ground-level PM<sub>2.5</sub> concentrations surge dramatically, frequently exceeding the national 24-hour standard of 60 &micro;g/m&sup3; by a factor of 4 to 5. Conversely, during the southwest monsoon (July to September), wet deposition significantly clears the ambient column, bringing particulate concentrations to their annual minimums.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 2: Visualizations -->
+      <section>
+        <span class="section-kicker">02 &middot; Primary Evidence</span>
+        <h2 class="editorial-headline" style="font-size: 1.8rem; margin-bottom: 1.5rem;">Analytical Visualizations</h2>
+
+        <div style="display: flex; flex-direction: column; gap: 3rem;">
+          <!-- Figure 1 -->
+          <div>
+            <h3 style="font-size: 1.2rem; color: #FFFFFF; margin-bottom: 0.75rem;">Figure 1: Particulate Matter Time Series &amp; Regulatory Thresholds</h3>
+            <img src="../assets/kanpur/01_timeseries.png" alt="Kanpur PM2.5 and PM10 Time Series" style="width: 100%; border-radius: 4px; border: 1px solid var(--border-subtle); display: block; margin-bottom: 0.5rem;" loading="lazy">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Daily average concentrations of PM2.5 and PM10 across both monitoring stations, highlighting sustained winter exceedances above NAAQS limits.</span>
+          </div>
+
+          <!-- Figure 2 -->
+          <div>
+            <h3 style="font-size: 1.2rem; color: #FFFFFF; margin-bottom: 0.75rem;">Figure 2: Monthly Average Trends &amp; Seasonal Multipliers</h3>
+            <img src="../assets/kanpur/02_monthly.png" alt="Kanpur Monthly Average Trends" style="width: 100%; border-radius: 4px; border: 1px solid var(--border-subtle); display: block; margin-bottom: 0.5rem;" loading="lazy">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Monthly mean particulate concentrations illustrating the five-fold jump between monsoon baseline and winter peak.</span>
+          </div>
+
+          <!-- Figure 3 -->
+          <div>
+            <h3 style="font-size: 1.2rem; color: #FFFFFF; margin-bottom: 0.75rem;">Figure 3: Station Comparison (NSI Kalyanpur vs. Nehru Nagar)</h3>
+            <img src="../assets/kanpur/03_station_comparison.png" alt="Kanpur Station Comparison" style="width: 100%; border-radius: 4px; border: 1px solid var(--border-subtle); display: block; margin-bottom: 0.5rem;" loading="lazy">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Side-by-side distribution comparison showing variations driven by localized micro-environments and proximity to major roadways.</span>
+          </div>
+
+          <!-- Figure 4 -->
+          <div>
+            <h3 style="font-size: 1.2rem; color: #FFFFFF; margin-bottom: 0.75rem;">Figure 4: Weather Correlations &amp; Inversion Drivers</h3>
+            <img src="../assets/kanpur/04_weather_correlation.png" alt="Kanpur Weather Correlations" style="width: 100%; border-radius: 4px; border: 1px solid var(--border-subtle); display: block; margin-bottom: 0.5rem;" loading="lazy">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Correlation heatmap demonstrating strong negative association between boundary-layer temperature, wind speed, and particulate accumulation.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Data Pipeline & Integrity -->
+      <section>
+        <span class="section-kicker">03 &middot; Data Integrity &amp; Transparency</span>
+        <h2 class="editorial-headline" style="font-size: 1.8rem; margin-bottom: 1rem;">Pipeline Integrity &amp; Missing Intervals</h2>
+        <div class="se-report-content" style="color: #CBD5E1; line-height: 1.8; font-size: 1.05rem;">
+          <p>
+            The telemetry presented here was pulled directly from the OpenAQ v3 API, reflecting public feeds from CPCB and UPPCB. Monitoring gaps exist between late 2022 and early 2025 due to station sensor maintenance and OpenAQ ingestion interruptions.
+          </p>
+          <p>
+            In keeping with Signal Earth's commitment to methodological honesty, no interpolation or synthetic values were used to bridge these multi-year gaps. The analysis treats each continuous monitoring period independently to prevent artificial smoothing of the seasonal cycles.
+          </p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="se-footer">
+    <div class="se-container">
+      <div class="se-footer-inner">
+        <div style="max-width: 360px;">
+          <div style="font-weight: 700; color: #FFFFFF; letter-spacing: 0.1em; margin-bottom: 0.6rem;">SIGNAL EARTH</div>
+          <p style="line-height: 1.6;">Independent analysis of publicly available environmental monitoring data — CPCB, UPPCB, and open satellite records — with full source code and citations.</p>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Investigations</h5>
+          <ul>
+            <li><a href="kanpur.html">Kanpur Air Quality</a></li>
+            <li><a href="delhi.html">Delhi Air Quality</a></li>
+            <li><a href="kanpur-lst.html">Kanpur LST &amp; GIS</a></li>
+            <li><a href="comparison.html">Cross-City Comparison</a></li>
+            <li><a href="../dispatches.html">Research Dispatches</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Documentation</h5>
+          <ul>
+            <li><a href="../methodology.html">Methodology &amp; Limits</a></li>
+            <li><a href="../citations.html">Data Sources &amp; Citations</a></li>
+            <li><a href="../about.html">About &amp; Standards</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer">Instagram (@signalearthhq)</a></li>
+            <li><a href="https://www.linkedin.com/company/signalearth/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer">LinkedIn (Signal Earth)</a></li>
+            <li><a href="../contact.html">Contact Information</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="se-footer-bottom">
+        <span>Signal Earth &middot; Avnish Singh &middot; HBTU Kanpur</span>
+        <span>Data: CPCB, UPPCB, NASA &middot; MIT License</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

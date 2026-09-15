@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signal Earth — Independent Environmental Data &amp; Analysis</title>
+  <meta name="description" content="Signal Earth publishes independent analysis of publicly available environmental monitoring data — CPCB, UPPCB, and open satellite records — with full source code and citations.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="se-nav">
+    <a href="index.html" class="se-brand">
+      <span class="se-brand-name">SIGNAL EARTH</span>
+      <span class="se-brand-sub">Independent Environmental Analysis</span>
+    </a>
+
+    <ul class="se-nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="investigations/kanpur.html">Kanpur</a></li>
+      <li><a href="investigations/delhi.html">Delhi</a></li>
+      <li><a href="investigations/kanpur-lst.html">Kanpur LST</a></li>
+      <li><a href="investigations/comparison.html">Comparison</a></li>
+      <li><a href="methodology.html">Methodology</a></li>
+      <li><a href="citations.html">Citations</a></li>
+      <li><a href="dispatches.html">Dispatches</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="se-nav-social">
+      <a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer" class="se-social-link">Instagram</a>
+      <a href="https://www.linkedin.com/company/signalearth/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer" class="se-social-link">LinkedIn</a>
+      <a href="https://github.com/avnish36singh-arch" target="_blank" rel="noopener noreferrer" class="se-social-link">GitHub</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <header class="se-hero se-container">
+      <span class="section-kicker">Observational Telemetry &amp; Remote Sensing</span>
+      <h1 class="se-hero-lede">Continuous ambient air-quality telemetry &amp; earth observation across North India.</h1>
+      <p class="se-hero-dek">Signal Earth publishes independent analysis of publicly available environmental monitoring data — CPCB, UPPCB, and NASA satellite reanalysis records — with full source code and citations.</p>
+
+      <div class="se-hero-media">
+        <img src="assets/satellite_earth_dark.jpg" alt="NASA nocturnal satellite observation over the Indo-Gangetic Basin" class="se-hero-img">
+        <span class="se-media-credit">Imagery: NASA Earth Observatory. Nocturnal satellite observation over the northern Indo-Gangetic basin.</span>
+      </div>
+    </header>
+
+    <!-- Investigations Section -->
+    <section class="se-section se-container">
+      <span class="section-kicker">Active Investigations</span>
+      <h2 class="editorial-headline" style="font-size: 2rem; margin-bottom: 0.5rem;">Station-Level &amp; Satellite Remote Sensing Analyses</h2>
+      <p style="color: var(--text-secondary); max-width: 680px;">Multi-year evaluations of particulate dynamics, meteorological correlation, regulatory compliance, and thermal skin decoupling derived directly from verified ground and satellite feeds.</p>
+
+      <div class="se-investigations-grid">
+        <!-- Kanpur Card -->
+        <article class="se-card">
+          <div class="se-card-status">INVESTIGATION 01 · KANPUR, UP</div>
+          <img src="assets/kanpur/01_timeseries.png" alt="Kanpur air quality analysis time series" style="width: 100%; height: 190px; object-fit: cover; border-radius: 4px; margin-bottom: 1.25rem; border: 1px solid var(--border-subtle); display: block;" loading="lazy">
+          <h3 class="se-card-title"><a href="investigations/kanpur.html">Spatial Particulate Dynamics &amp; Seasonal Multipliers in Kanpur</a></h3>
+          <p class="se-card-dek">A comparative analysis of hourly PM2.5 and PM10 telemetry across NSI Kalyanpur and Nehru Nagar monitoring stations using CPCB/UPPCB records from OpenAQ, examining the five-fold winter surge, nocturnal boundary layer collapse, and weather correlations.</p>
+          <div class="se-card-meta">
+            <span>Stations: NSI Kalyanpur, Nehru Nagar</span>
+            <span>Agency: UPPCB / CPCB via OpenAQ</span>
+          </div>
+          <div class="se-card-links">
+            <a href="investigations/kanpur.html" class="se-link">Read the analysis &rarr;</a>
+            <a href="https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur" target="_blank" rel="noopener noreferrer" class="se-link se-link-secondary">View source code &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Delhi Card -->
+        <article class="se-card">
+          <div class="se-card-status">INVESTIGATION 02 · DELHI NCR</div>
+          <img src="assets/delhi/01_aqi_time_series.png" alt="Delhi air quality index multi-year telemetry" style="width: 100%; height: 190px; object-fit: cover; border-radius: 4px; margin-bottom: 1.25rem; border: 1px solid var(--border-subtle); display: block;" loading="lazy">
+          <h3 class="se-card-title"><a href="investigations/delhi.html">Multi-Year Regulatory NAQI Computation &amp; Inversion Dynamics at Alipur</a></h3>
+          <p class="se-card-dek">Evaluation of continuous ambient telemetry at Delhi's northern entry corridor across 2017–2023, computing regulatory CPCB National Air Quality Sub-Indices from raw pollutant parameters and documenting post-monsoon entrapment patterns.</p>
+          <div class="se-card-meta">
+            <span>Station: Alipur (DPCC / CPCB)</span>
+            <span>Agency: Central Pollution Control Board</span>
+          </div>
+          <div class="se-card-links">
+            <a href="investigations/delhi.html" class="se-link">Read the analysis &rarr;</a>
+            <a href="https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb" target="_blank" rel="noopener noreferrer" class="se-link se-link-secondary">View source code &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Kanpur LST Card -->
+        <article class="se-card">
+          <div class="se-card-status">INVESTIGATION 03 · SATELLITE EO &amp; GIS</div>
+          <img src="assets/lst/03_kanpur_spatial_thermal_zones.png" alt="Kanpur thermal microclimate zones GIS map" style="width: 100%; height: 190px; object-fit: cover; border-radius: 4px; margin-bottom: 1.25rem; border: 1px solid var(--border-subtle); display: block;" loading="lazy">
+          <h3 class="se-card-title"><a href="investigations/kanpur-lst.html">Land Surface Temperature &amp; Urban Inversion Dynamics in Kanpur</a></h3>
+          <p class="se-card-dek">Integration of 2,556 daily NASA POWER satellite reanalysis observations (2017–2023) with QGIS spatial microclimate modeling, evaluating radiant skin vs ambient air thermal decoupling (&Delta;T = -0.97&deg;C) and nocturnal ground inversion trapping.</p>
+          <div class="se-card-meta">
+            <span>Sensors: NASA MERRA-2, UPPCB CAAQMS</span>
+            <span>Spatial Model: QGIS Vector Microclimate</span>
+          </div>
+          <div class="se-card-links">
+            <a href="investigations/kanpur-lst.html" class="se-link">Read the analysis &rarr;</a>
+            <a href="https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur" target="_blank" rel="noopener noreferrer" class="se-link se-link-secondary">View source code &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Cross-City Comparison Feature -->
+    <section class="se-section se-container" style="padding-top: 0;">
+      <div class="se-card" style="padding: 2.5rem; border-color: rgba(6, 182, 212, 0.3); background: linear-gradient(180deg, rgba(6, 182, 212, 0.03) 0%, rgba(10, 11, 13, 0.95) 100%);">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+          <span class="section-kicker" style="color: var(--data-cyan); margin: 0;">CROSS-CITY COMPARATIVE SYNTHESIS</span>
+          <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">DELHI NCR vs. KANPUR BASIN</span>
+        </div>
+        <h3 class="editorial-headline" style="font-size: 1.75rem; margin-bottom: 0.85rem; color: #FFFFFF;">
+          <a href="investigations/comparison.html" style="color: inherit; text-decoration: none;">Airshed Dynamics: Upper vs. Central Indo-Gangetic Basin</a>
+        </h3>
+        <p class="se-card-dek" style="margin-bottom: 1.5rem; max-width: 820px;">
+          Direct side-by-side evaluation of 3,450 combined monitoring records across Delhi (Alipur) and Kanpur (Kalyanpur/Nehru Nagar). Comparing seasonal multipliers (5.75&times; vs. 3.56&times;), fine-particulate ratios (0.67 vs 0.57), and the contrast between regional agricultural smoke advection and riverine nocturnal inversion entrapment.
+        </p>
+        <div>
+          <a href="investigations/comparison.html" class="se-link">View cross-city comparison &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Dispatch -->
+    <section class="se-section se-container">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2rem;">
+        <div>
+          <span class="section-kicker">External Research</span>
+          <h2 class="editorial-headline" style="font-size: 2rem;">Latest Dispatch</h2>
+        </div>
+        <a href="dispatches.html" class="se-link">View all dispatches &rarr;</a>
+      </div>
+
+      <article class="se-card" style="padding: 2.5rem;">
+        <span class="section-kicker" style="color: var(--data-cyan);">DISPATCH · MARCH 2024</span>
+        <h3 class="se-card-title" style="font-size: 1.6rem; margin-bottom: 0.75rem;">
+          <a href="dispatches.html#dispatch-1">CPCB National Clean Air Programme (NCAP): Regional Airshed Modeling Requirements</a>
+        </h3>
+        <p class="se-card-dek" style="margin-bottom: 1.25rem;">
+          Independent assessment by atmospheric research consortiums evaluates NCAP target attainment across 131 non-attainment cities. Analysis demonstrates that municipal boundaries cover less than 15% of the total airshed area responsible for ground-level particulate mass in the Indo-Gangetic basin during winter inversions.
+        </p>
+        <div class="se-dispatch-source">
+          Source: <a href="https://cpcb.nic.in" target="_blank" rel="noopener noreferrer">Central Pollution Control Board / NCAP Review Portal (2024)</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="se-footer">
+    <div class="se-container">
+      <div class="se-footer-inner">
+        <div style="max-width: 360px;">
+          <div style="font-weight: 700; color: #FFFFFF; letter-spacing: 0.1em; margin-bottom: 0.6rem;">SIGNAL EARTH</div>
+          <p style="line-height: 1.6;">Independent analysis of publicly available environmental monitoring data — CPCB, UPPCB, and open satellite records — with full source code and citations.</p>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Investigations</h5>
+          <ul>
+            <li><a href="investigations/kanpur.html">Kanpur Air Quality</a></li>
+            <li><a href="investigations/delhi.html">Delhi Air Quality</a></li>
+            <li><a href="investigations/kanpur-lst.html">Kanpur LST &amp; GIS</a></li>
+            <li><a href="investigations/comparison.html">Cross-City Comparison</a></li>
+            <li><a href="dispatches.html">Research Dispatches</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Documentation</h5>
+          <ul>
+            <li><a href="methodology.html">Methodology &amp; Limits</a></li>
+            <li><a href="citations.html">Data Sources &amp; Citations</a></li>
+            <li><a href="about.html">About &amp; Standards</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Contact &amp; Profiles</h5>
+          <ul>
+            <li><a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer">Instagram (@signalearthhq)</a></li>
+            <li><a href="https://www.linkedin.com/company/signalearth/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer">LinkedIn (Signal Earth)</a></li>
+            <li><a href="contact.html">Contact Information</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="se-footer-bottom">
+        <span>Signal Earth &middot; Maintained by Avnish Singh &middot; HBTU Kanpur</span>
+        <span>Data: CPCB, UPPCB, DPCC, NASA &middot; MIT License</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

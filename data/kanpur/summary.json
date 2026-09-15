@@ -1,0 +1,438 @@
+{
+  "monthly": [
+    {
+      "location_name": "NSI Kalyanpur",
+      "month": 1,
+      "pm25": 58.1,
+      "pm10": 134.6
+    },
+    {
+      "location_name": "NSI Kalyanpur",
+      "month": 2,
+      "pm25": 47.9,
+      "pm10": 113.3
+    },
+    {
+      "location_name": "NSI Kalyanpur",
+      "month": 3,
+      "pm25": 43.9,
+      "pm10": 107.4
+    },
+    {
+      "location_name": "NSI Kalyanpur",
+      "month": 4,
+      "pm25": 40.3,
+      "pm10": 113.4
+    },
+    {
+      "location_name": "NSI Kalyanpur",
+      "month": 5,
+      "pm25": 35.9,
+      "pm10": 94.6
+    },
+    {
+      "location_name": "NSI Kalyanpur",
+      "month": 6,
+      "pm25": 36.5,
+      "pm10": 96.1
+    },
+    {
+      "location_name": "NSI Kalyanpur",
+      "month": 7,
+      "pm25": 17.4,
+      "pm10": 43.3
+    },
+    {
+      "location_name": "NSI Kalyanpur",
+      "month": 8,
+      "pm25": 16.1,
+      "pm10": 39.9
+    },
+    {
+      "location_name": "NSI Kalyanpur",
+      "month": 9,
+      "pm25": 22.7,
+      "pm10": 48.5
+    },
+    {
+      "location_name": "NSI Kalyanpur",
+      "month": 10,
+      "pm25": 47.8,
+      "pm10": 83.6
+    },
+    {
+      "location_name": "NSI Kalyanpur",
+      "month": 11,
+      "pm25": 94.8,
+      "pm10": 161.4
+    },
+    {
+      "location_name": "NSI Kalyanpur",
+      "month": 12,
+      "pm25": 70.8,
+      "pm10": 149.7
+    },
+    {
+      "location_name": "Nehru Nagar",
+      "month": 1,
+      "pm25": 73.3,
+      "pm10": 139.0
+    },
+    {
+      "location_name": "Nehru Nagar",
+      "month": 2,
+      "pm25": 54.9,
+      "pm10": 83.6
+    },
+    {
+      "location_name": "Nehru Nagar",
+      "month": 3,
+      "pm25": 46.0,
+      "pm10": 74.7
+    },
+    {
+      "location_name": "Nehru Nagar",
+      "month": 4,
+      "pm25": 58.1,
+      "pm10": 102.8
+    },
+    {
+      "location_name": "Nehru Nagar",
+      "month": 5,
+      "pm25": 44.1,
+      "pm10": 82.1
+    },
+    {
+      "location_name": "Nehru Nagar",
+      "month": 6,
+      "pm25": 35.0,
+      "pm10": 67.7
+    },
+    {
+      "location_name": "Nehru Nagar",
+      "month": 7,
+      "pm25": 23.4,
+      "pm10": 40.0
+    },
+    {
+      "location_name": "Nehru Nagar",
+      "month": 8,
+      "pm25": 22.7,
+      "pm10": 34.8
+    },
+    {
+      "location_name": "Nehru Nagar",
+      "month": 9,
+      "pm25": 34.8,
+      "pm10": 51.5
+    },
+    {
+      "location_name": "Nehru Nagar",
+      "month": 10,
+      "pm25": 62.1,
+      "pm10": 116.0
+    },
+    {
+      "location_name": "Nehru Nagar",
+      "month": 11,
+      "pm25": 84.9,
+      "pm10": 201.0
+    },
+    {
+      "location_name": "Nehru Nagar",
+      "month": 12,
+      "pm25": 66.7,
+      "pm10": 141.6
+    }
+  ],
+  "diurnal": [
+    {
+      "hour": 0,
+      "pm25": 54.49375990939977,
+      "pm10": 115.05884311512416,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 1,
+      "pm25": 52.32110633727175,
+      "pm10": 109.8984705882353,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 2,
+      "pm25": 50.28866382070438,
+      "pm10": 101.67335812964932,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 3,
+      "pm25": 49.99933759318424,
+      "pm10": 97.47045599151645,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 4,
+      "pm25": 48.93341039236479,
+      "pm10": 95.30091341077085,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 5,
+      "pm25": 48.07226375908618,
+      "pm10": 94.32705699481863,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 6,
+      "pm25": 48.520819251336896,
+      "pm10": 96.1220895522388,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 7,
+      "pm25": 51.79899253731343,
+      "pm10": 103.7253397027601,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 8,
+      "pm25": 51.53400968783638,
+      "pm10": 104.7554694533762,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 9,
+      "pm25": 47.17621592148309,
+      "pm10": 100.24935939196526,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 10,
+      "pm25": 41.91097714907508,
+      "pm10": 94.3813542795233,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 11,
+      "pm25": 37.178452250274425,
+      "pm10": 86.03980284775466,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 12,
+      "pm25": 34.26227421109902,
+      "pm10": 82.67035752979416,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 13,
+      "pm25": 31.4723764832794,
+      "pm10": 79.4025059076262,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 14,
+      "pm25": 29.55369323144105,
+      "pm10": 77.84940217391303,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 15,
+      "pm25": 28.42423204419889,
+      "pm10": 76.47518151815181,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 16,
+      "pm25": 28.358725555555555,
+      "pm10": 75.97422566371681,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 17,
+      "pm25": 30.464763754045308,
+      "pm10": 80.86267741935484,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 18,
+      "pm25": 36.15014300960512,
+      "pm10": 92.30236170212766,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 19,
+      "pm25": 43.77042385516507,
+      "pm10": 105.47572186836518,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 20,
+      "pm25": 49.34428901098901,
+      "pm10": 113.94589813800656,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 21,
+      "pm25": 51.71103336921421,
+      "pm10": 116.36948497854075,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 22,
+      "pm25": 53.45492299465241,
+      "pm10": 117.86481876332624,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 23,
+      "pm25": 54.30515577342048,
+      "pm10": 118.28097719869707,
+      "location_name": "NSI Kalyanpur"
+    },
+    {
+      "hour": 0,
+      "pm25": 53.670842824601365,
+      "pm10": 120.25251396648044,
+      "location_name": "Nehru Nagar"
+    },
+    {
+      "hour": 1,
+      "pm25": 51.87650727650728,
+      "pm10": 106.99303931987248,
+      "location_name": "Nehru Nagar"
+    },
+    {
+      "hour": 2,
+      "pm25": 47.90929313929314,
+      "pm10": 97.003462749213,
+      "location_name": "Nehru Nagar"
+    },
+    {
+      "hour": 3,
+      "pm25": 45.23858024691358,
+      "pm10": 92.35031185031184,
+      "location_name": "Nehru Nagar"
+    },
+    {
+      "hour": 4,
+      "pm25": 44.545550935550935,
+      "pm10": 91.287875,
+      "location_name": "Nehru Nagar"
+    },
+    {
+      "hour": 5,
+      "pm25": 46.226694214876034,
+      "pm10": 94.25276907001044,
+      "location_name": "Nehru Nagar"
+    },
+    {
+      "hour": 6,
+      "pm25": 49.741255230125525,
+      "pm10": 105.20412698412696,
+      "location_name": "Nehru Nagar"
+    },
+    {
+      "hour": 7,
+      "pm25": 52.07292531120332,
+      "pm10": 114.66517894736842,
+      "location_name": "Nehru Nagar"
+    },
+    {
+      "hour": 8,
+      "pm25": 51.34863157894736,
+      "pm10": 111.59442060085836,
+      "location_name": "Nehru Nagar"
+    },
+    {
+      "hour": 9,
+      "pm25": 47.87296680497926,
+      "pm10": 105.945183982684,
+      "location_name": "Nehru Nagar"
+    },
+    {
+      "hour": 10,
+      "pm25": 46.2630625,
+      "pm10": 95.99651162790698,
+      "location_name": "Nehru Nagar"
+    },
+    {
+      "hour": 11,
+      "pm25": 42.17300420168067,
+      "pm10": 87.40940919037199,
+      "location_name": "Nehru Nagar"
+    },
+    {
+      "hour": 12,
+      "pm25": 37.60749464668094,
+      "pm10": 79.77893873085338,
+      "location_name": "Nehru Nagar"
+    },
+    {
+      "hour": 13,
+      "pm25": 34.900682302771855,
+      "pm10": 74.17929978118163,
+      "location_name": "Nehru Nagar"
+    },
+    {
+      "hour": 14,
+      "pm25": 32.86680434782608,
+      "pm10": 72.63558888888889,
+      "location_name": "Nehru Nagar"
+    },
+    {
+      "hour": 15,
+      "pm25": 31.62554112554113,
+      "pm10": 71.3243956043956,
+      "location_name": "Nehru Nagar"
+    },
+    {
+      "hour": 16,
+      "pm25": 35.62194690265486,
+      "pm10": 73.33266666666665,
+      "location_name": "Nehru Nagar"
+    },
+    {
+      "hour": 17,
+      "pm25": 37.248936170212765,
+      "pm10": 82.57271241830065,
+      "location_name": "Nehru Nagar"
+    },
+    {
+      "hour": 18,
+      "pm25": 41.04090336134454,
+      "pm10": 98.96850215517242,
+      "location_name": "Nehru Nagar"
+    },
+    {
+      "hour": 19,
+      "pm25": 49.56865979381443,
+      "pm10": 121.5362473347548,
+      "location_name": "Nehru Nagar"
+    },
+    {
+      "hour": 20,
+      "pm25": 58.75524312896406,
+      "pm10": 140.91480519480518,
+      "location_name": "Nehru Nagar"
+    },
+    {
+      "hour": 21,
+      "pm25": 63.12774327122153,
+      "pm10": 144.7875534188034,
+      "location_name": "Nehru Nagar"
+    },
+    {
+      "hour": 22,
+      "pm25": 63.069545454545455,
+      "pm10": 140.26673751328374,
+      "location_name": "Nehru Nagar"
+    },
+    {
+      "hour": 23,
+      "pm25": 60.530103305785126,
+      "pm10": 133.66684378320934,
+      "location_name": "Nehru Nagar"
+    }
+  ]
+}
