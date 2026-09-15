@@ -3,63 +3,296 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Signal Earth — Independent Environmental Data &amp; Analysis</title>
-  <meta name="description" content="Signal Earth publishes independent analysis of publicly available environmental monitoring data — CPCB, UPPCB, and open satellite records — with full source code and citations.">
+  <title>Signal Earth — Independent Earth Observation &amp; Atmospheric Telemetry Platform</title>
+  <meta name="description" content="Signal Earth is an independent environmental intelligence platform publishing verified remote sensing, CAAQMS ground telemetry, and atmospheric reanalysis across the Indo-Gangetic Basin.">
+  <meta name="theme-color" content="#0A0B0D">
+  
+  <!-- Open Graph & Social Sharing -->
+  <meta property="og:site_name" content="Signal Earth">
+  <meta property="og:title" content="Signal Earth — Independent Earth Observation &amp; Environmental Telemetry">
+  <meta property="og:description" content="Continuous remote sensing, ambient particulate dynamics, and atmospheric reanalysis across North India.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/satellite_earth_dark.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Signal Earth — Environmental Telemetry &amp; Earth Observation">
+  <meta name="twitter:description" content="Independent analysis of verified CPCB, UPPCB, and NASA satellite records with open-source science.">
+  <meta name="twitter:image" content="assets/satellite_earth_dark.jpg">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="se-nav">
-    <a href="index.html" class="se-brand">
+  <!-- Global Institutional Navigation -->
+  <nav class="se-nav" id="se-nav">
+    <a href="index.html" class="se-brand" aria-label="Signal Earth Platform Home">
       <span class="se-brand-name">SIGNAL EARTH</span>
-      <span class="se-brand-sub">Independent Environmental Analysis</span>
+      <span class="se-brand-sub">Earth Observation &amp; Environmental Telemetry</span>
     </a>
 
     <ul class="se-nav-links">
       <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="investigations/kanpur.html">Kanpur</a></li>
-      <li><a href="investigations/delhi.html">Delhi</a></li>
-      <li><a href="investigations/kanpur-lst.html">Kanpur LST</a></li>
-      <li><a href="investigations/comparison.html">Comparison</a></li>
+      <li><a href="#capabilities">Capabilities</a></li>
+      <li><a href="#gallery">Earth Observation</a></li>
+      <li><a href="#investigations">Investigations</a></li>
+      <li><a href="#explorer">Telemetry HUD</a></li>
+      <li><a href="#founder">Research</a></li>
       <li><a href="methodology.html">Methodology</a></li>
       <li><a href="citations.html">Citations</a></li>
       <li><a href="dispatches.html">Dispatches</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
 
-    <div class="se-nav-social">
+    <div class="se-nav-right">
+      <div class="se-nav-social">
+        <a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer" class="se-social-link" title="Instagram">Instagram</a>
+        <a href="https://www.linkedin.com/company/signalearth/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer" class="se-social-link" title="LinkedIn">LinkedIn</a>
+        <a href="https://github.com/avnish36singh-arch" target="_blank" rel="noopener noreferrer" class="se-social-link" title="GitHub">GitHub</a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="se-nav-toggle" id="se-nav-toggle" aria-label="Toggle mobile navigation menu" aria-expanded="false" aria-controls="se-mobile-drawer">
+        <span class="se-hamburger" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <span style="font-size: 0.78rem; font-weight: 600; letter-spacing: 0.05em;">MENU</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="se-mobile-drawer" id="se-mobile-drawer" aria-hidden="true">
+    <ul class="se-mobile-nav-links">
+      <li><a href="index.html" class="active">Home Platform</a></li>
+      <li><a href="#capabilities">Observational Capabilities</a></li>
+      <li><a href="#gallery">Earth Observation Gallery</a></li>
+      <li><a href="#investigations">Active Investigations</a></li>
+      <li><a href="#explorer">Telemetry Snapshot Explorer</a></li>
+      <li><a href="#founder">Founding Research &amp; Origins</a></li>
+      <li><a href="about.html">About Signal Earth</a></li>
+      <li><a href="investigations/kanpur.html">Kanpur Telemetry Study</a></li>
+      <li><a href="investigations/delhi.html">Delhi NAQI Analysis</a></li>
+      <li><a href="investigations/kanpur-lst.html">Kanpur LST Satellite GIS</a></li>
+      <li><a href="investigations/comparison.html">Airshed Comparison</a></li>
+      <li><a href="methodology.html">Methodology &amp; Limits</a></li>
+      <li><a href="citations.html">Data Sources &amp; Citations</a></li>
+      <li><a href="dispatches.html">Research Dispatches</a></li>
+      <li><a href="contact.html">Contact &amp; Profiles</a></li>
+    </ul>
+    <div class="se-mobile-social">
       <a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer" class="se-social-link">Instagram</a>
       <a href="https://www.linkedin.com/company/signalearth/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer" class="se-social-link">LinkedIn</a>
       <a href="https://github.com/avnish36singh-arch" target="_blank" rel="noopener noreferrer" class="se-social-link">GitHub</a>
     </div>
-  </nav>
+  </div>
 
   <main>
     <!-- Hero Section -->
     <header class="se-hero se-container">
-      <span class="section-kicker">Observational Telemetry &amp; Remote Sensing</span>
-      <h1 class="se-hero-lede">Continuous ambient air-quality telemetry &amp; earth observation across North India.</h1>
-      <p class="se-hero-dek">Signal Earth publishes independent analysis of publicly available environmental monitoring data — CPCB, UPPCB, and NASA satellite reanalysis records — with full source code and citations.</p>
+      <div class="se-telemetry-badge">
+        <span class="se-pulse-dot"></span>
+        <span>CONTINUOUS REMOTE SENSING &middot; INDO-GANGETIC AIRSHED</span>
+      </div>
+
+      <h1 class="se-hero-lede">Independent Earth observation, ambient telemetry &amp; atmospheric intelligence.</h1>
+      <p class="se-hero-dek">Signal Earth is an open-access environmental intelligence initiative synthesizing continuous ground telemetry (CPCB/UPPCB) with satellite earth observations (NASA MERRA-2, MODIS, Sentinel-5P) to evaluate particulate dynamics, boundary layer trapping, and climate microclimates with reproducible open-source science.</p>
+
+      <!-- Key Verified Telemetry HUD Strip -->
+      <div class="se-hero-stats" role="region" aria-label="Key telemetry summary statistics">
+        <div class="se-hero-stat-item">
+          <div class="se-hero-stat-num">3,450<span>+</span></div>
+          <div class="se-hero-stat-desc">Hourly CAAQMS Station Ground Records Audited</div>
+        </div>
+        <div class="se-hero-stat-item">
+          <div class="se-hero-stat-num">2,556</div>
+          <div class="se-hero-stat-desc">Daily NASA MERRA-2 Satellite Radiant Observations</div>
+        </div>
+        <div class="se-hero-stat-item">
+          <div class="se-hero-stat-num">5.75<span>&times;</span></div>
+          <div class="se-hero-stat-desc">Peak Winter Particulate Surge Multiplier (Delhi Corridor)</div>
+        </div>
+        <div class="se-hero-stat-item">
+          <div class="se-hero-stat-num">-0.97<span>&deg;C</span></div>
+          <div class="se-hero-stat-desc">Mean LST Radiant Skin vs Air Thermal Decoupling (&Delta;T)</div>
+        </div>
+      </div>
 
       <div class="se-hero-media">
         <img src="assets/satellite_earth_dark.jpg" alt="NASA nocturnal satellite observation over the Indo-Gangetic Basin" class="se-hero-img">
-        <span class="se-media-credit">Imagery: NASA Earth Observatory. Nocturnal satellite observation over the northern Indo-Gangetic basin.</span>
+        <span class="se-media-credit">Imagery &amp; Data: NASA Earth Observatory &middot; Nocturnal satellite observation over the northern Indo-Gangetic basin. Public domain earth science. <a href="https://earthobservatory.nasa.gov/" target="_blank" rel="noopener noreferrer" style="color: var(--data-cyan); margin-left: 0.5rem;">NASA Archive &rarr;</a></span>
       </div>
     </header>
 
-    <!-- Investigations Section -->
-    <section class="se-section se-container">
-      <span class="section-kicker">Active Investigations</span>
-      <h2 class="editorial-headline" style="font-size: 2rem; margin-bottom: 0.5rem;">Station-Level &amp; Satellite Remote Sensing Analyses</h2>
-      <p style="color: var(--text-secondary); max-width: 680px;">Multi-year evaluations of particulate dynamics, meteorological correlation, regulatory compliance, and thermal skin decoupling derived directly from verified ground and satellite feeds.</p>
+    <!-- Verified Observational Standards & Data Feeds Ribbon -->
+    <section class="se-partners-section">
+      <div class="se-container">
+        <div class="se-partners-label">Verified Observational Feeds &amp; Public Data Standards</div>
+        <div class="se-partners-grid">
+          <span class="se-partner-item"><span class="se-partner-dot"></span>Central Pollution Control Board (CPCB)</span>
+          <span class="se-partner-item"><span class="se-partner-dot"></span>UP Pollution Control Board (UPPCB)</span>
+          <span class="se-partner-item"><span class="se-partner-dot"></span>Delhi Pollution Control Committee (DPCC)</span>
+          <span class="se-partner-item"><span class="se-partner-dot"></span>NASA Earth Science (POWER / MERRA-2)</span>
+          <span class="se-partner-item"><span class="se-partner-dot"></span>ESA Copernicus Sentinel Atmosphere</span>
+          <span class="se-partner-item"><span class="se-partner-dot"></span>OpenAQ Global Telemetry Network</span>
+        </div>
+      </div>
+    </section>
 
-      <div class="se-investigations-grid">
-        <!-- Kanpur Card -->
-        <article class="se-card">
+    <!-- Platform Capabilities & Observational Architecture (4 Pillars) -->
+    <section class="se-section se-container" id="capabilities">
+      <span class="section-kicker">Observational Architecture</span>
+      <h2 class="editorial-headline" style="font-size: 2.1rem; margin-bottom: 0.5rem;">Scientific Pillars &amp; Intelligence Framework</h2>
+      <p style="color: var(--text-secondary); max-width: 720px;">Signal Earth integrates multispectral satellite reanalysis with physical ground telemetry to build an auditable, multi-tier atmospheric surveillance framework.</p>
+
+      <div class="se-pillars-grid">
+        <!-- Pillar 1 -->
+        <div class="se-pillar-card">
+          <div class="se-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          </div>
+          <h3 class="se-pillar-title">Continuous Ground Telemetry</h3>
+          <p class="se-pillar-dek">Real-time ingestion of continuous ambient air-quality telemetry across central industrial and transit corridors, applying rolling gap-fixed imputations and regulatory NAQI standard sub-indices.</p>
+          <div class="se-pillar-tag">CAAQMS &middot; DPCC &middot; UPPCB &middot; CPCB</div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="se-pillar-card">
+          <div class="se-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24M14.83 14.83l4.24 4.24M14.83 9.17l4.24-4.24M4.93 19.07l4.24-4.24"></path></svg>
+          </div>
+          <h3 class="se-pillar-title">Satellite Remote Sensing &amp; GIS</h3>
+          <p class="se-pillar-dek">Coupling orbital thermal infrared reanalysis (NASA MERRA-2) with QGIS spatial microclimate zoning, measuring Land Surface Temperature (LST) and radiant skin decoupling dynamics.</p>
+          <div class="se-pillar-tag">NASA POWER &middot; MODIS &middot; QGIS GIS</div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="se-pillar-card">
+          <div class="se-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M2 6h20M2 18h20"></path></svg>
+          </div>
+          <h3 class="se-pillar-title">Boundary Layer Inversion Physics</h3>
+          <p class="se-pillar-dek">Investigating diurnal planetary boundary layer (PBL) collapse, nocturnal thermal stagnation ceilings, and riverine basin moisture traps that trigger 5-fold seasonal particulate multipliers.</p>
+          <div class="se-pillar-tag">Physical Meteorology &middot; Inversion Modeling</div>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="se-pillar-card">
+          <div class="se-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </div>
+          <h3 class="se-pillar-title">Open-Access Reproducible Science</h3>
+          <p class="se-pillar-dek">All analytics, data pipelines, and GIS models are published under permissive open-source licenses on GitHub with complete data provenance, null-fill notes, and public citations.</p>
+          <div class="se-pillar-tag">Python &middot; Pandas &middot; Plotly &middot; Open Science</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Earth Observation & Remote Sensing Gallery -->
+    <section class="se-section se-container" id="gallery">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.5rem;">
+        <div>
+          <span class="section-kicker">Visual Telemetry &amp; Remote Sensing</span>
+          <h2 class="editorial-headline" style="font-size: 2.1rem; margin-bottom: 0.5rem;">Earth Observation Gallery</h2>
+          <p style="color: var(--text-secondary); max-width: 680px;">Satellite passes, nocturnal radiative thermal scans, and boundary layer photography illustrating the physical mechanisms governing the Indo-Gangetic airshed.</p>
+        </div>
+        <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--data-cyan);">VERIFIED ORBITAL FEEDS</span>
+      </div>
+
+      <div class="se-gallery-grid">
+        <!-- Gallery Card 1: Himalaya Orographic Barrier -->
+        <article class="se-gallery-card">
+          <div class="se-gallery-media">
+            <span class="se-gallery-badge">MODIS TERRA &middot; AOD CAPTURE</span>
+            <img src="assets/himalaya_haze_panorama.jpg" alt="Panoramic view of aerosol haze hugging the Himalayan arc" class="se-gallery-img" loading="lazy">
+          </div>
+          <div class="se-gallery-content">
+            <h3 class="se-gallery-title">Himalayan Orographic Inversion Barrier</h3>
+            <p class="se-gallery-dek">Spectroradiometer observation capturing dense tropospheric aerosol accumulation banked against the sheer southern wall of the Himalayan mountain range, illustrating the continental basin trap that prevents vertical air dispersion.</p>
+            <div class="se-gallery-source">
+              <span>Source: NASA Earth Observatory / MODIS</span>
+              <a href="https://earthobservatory.nasa.gov/" target="_blank" rel="noopener noreferrer">View NASA Catalog &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Gallery Card 2: Nocturnal Delhi ISS Night -->
+        <article class="se-gallery-card">
+          <div class="se-gallery-media">
+            <span class="se-gallery-badge">ISS EXPEDITION 45 &middot; ORBITAL NIGHT</span>
+            <img src="assets/delhi_iss_night.jpg" alt="Nocturnal orbital astronaut photography of Delhi NCR and the Indo-Gangetic Plain" class="se-gallery-img" loading="lazy">
+          </div>
+          <div class="se-gallery-content">
+            <h3 class="se-gallery-title">Nocturnal Radiative Stagnation &amp; Urban Footprint</h3>
+            <p class="se-gallery-dek">Astronaut photography aboard the International Space Station showing Delhi NCR's luminous spatial geometry encircled by agricultural corridors. Nocturnal surface cooling triggers ground-based temperature inversions within hours of sunset.</p>
+            <div class="se-gallery-source">
+              <span>Source: NASA Visible Earth / ISS Photography</span>
+              <a href="https://visibleearth.nasa.gov/" target="_blank" rel="noopener noreferrer">View NASA Catalog &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Gallery Card 3: Satellite Earth Observation Orbit -->
+        <article class="se-gallery-card">
+          <div class="se-gallery-media">
+            <span class="se-gallery-badge">EARTH SCIENCE EO &middot; MULTISPECTRAL</span>
+            <img src="assets/earth_observation_orbit.jpg" alt="Earth observation satellite in orbit monitoring global climate dynamics" class="se-gallery-img" loading="lazy">
+          </div>
+          <div class="se-gallery-content">
+            <h3 class="se-gallery-title">Orbital Atmospheric Reanalysis &amp; Radiation Modeling</h3>
+            <p class="se-gallery-dek">Sun-synchronous satellite constellations and MERRA-2 atmospheric assimilation models continuously quantify incoming shortwave flux, land surface skin radiance, and thermal column differentials across the subcontinent.</p>
+            <div class="se-gallery-source">
+              <span>Source: NASA Goddard Space Flight Center</span>
+              <a href="https://power.larc.nasa.gov/" target="_blank" rel="noopener noreferrer">NASA POWER Portal &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Gallery Card 4: Atmospheric Smog Inversion -->
+        <article class="se-gallery-card">
+          <div class="se-gallery-media">
+            <span class="se-gallery-badge">BOUNDARY LAYER &middot; THERMAL DECOUPLING</span>
+            <img src="assets/aerosol_smog_inversion.jpg" alt="Dense morning particulate haze trapped under a strong thermal inversion layer" class="se-gallery-img" loading="lazy">
+          </div>
+          <div class="se-gallery-content">
+            <h3 class="se-gallery-title">Planetary Boundary Layer Collapse &amp; Winter Fog</h3>
+            <p class="se-gallery-dek">Field observation of early-morning winter inversion layers. Negative surface skin decoupling (&Delta;T = -0.97&deg;C) produces a rigid thermal lid that confines particulate mass below 150 meters, producing severe ground-level respiratory exposure.</p>
+            <div class="se-gallery-source">
+              <span>Source: Signal Earth Field Documentation &amp; Reanalysis</span>
+              <a href="investigations/kanpur-lst.html">Read LST Analysis &rarr;</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Active Investigations Section -->
+    <section class="se-section se-container" id="investigations">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <span class="section-kicker">Flagship Research</span>
+          <h2 class="editorial-headline" style="font-size: 2.1rem; margin-bottom: 0.5rem;">Station-Level &amp; Satellite Remote Sensing Analyses</h2>
+          <p style="color: var(--text-secondary); max-width: 680px;">Multi-year evaluations of particulate dynamics, meteorological correlation, regulatory compliance, and thermal skin decoupling derived directly from verified ground and satellite feeds.</p>
+        </div>
+      </div>
+
+      <!-- Investigation Filter Bar -->
+      <div class="se-filter-bar" role="tablist" aria-label="Filter investigations by domain">
+        <span class="se-filter-label">Filter:</span>
+        <button class="se-filter-btn active" data-filter="all" role="tab" aria-selected="true">All Analyses (3)</button>
+        <button class="se-filter-btn" data-filter="ground" role="tab" aria-selected="false">Ground Telemetry (2)</button>
+        <button class="se-filter-btn" data-filter="satellite" role="tab" aria-selected="false">Satellite EO &amp; GIS (1)</button>
+        <button class="se-filter-btn" data-filter="airshed" role="tab" aria-selected="false">Airshed Synthesis (1)</button>
+      </div>
+
+      <div class="se-investigations-grid" id="investigations-grid">
+        <!-- Investigation 01: Kanpur Card -->
+        <article class="se-card" data-category="ground all">
           <div class="se-card-status">INVESTIGATION 01 · KANPUR, UP</div>
-          <img src="assets/kanpur/01_timeseries.png" alt="Kanpur air quality analysis time series" style="width: 100%; height: 190px; object-fit: cover; border-radius: 4px; margin-bottom: 1.25rem; border: 1px solid var(--border-subtle); display: block;" loading="lazy">
+          <div class="se-card-img-wrap">
+            <span class="se-card-badge">2 STATIONS · CAAQMS</span>
+            <img src="assets/kanpur/01_timeseries.png" alt="Kanpur air quality analysis time series" loading="lazy">
+          </div>
           <h3 class="se-card-title"><a href="investigations/kanpur.html">Spatial Particulate Dynamics &amp; Seasonal Multipliers in Kanpur</a></h3>
           <p class="se-card-dek">A comparative analysis of hourly PM2.5 and PM10 telemetry across NSI Kalyanpur and Nehru Nagar monitoring stations using CPCB/UPPCB records from OpenAQ, examining the five-fold winter surge, nocturnal boundary layer collapse, and weather correlations.</p>
           <div class="se-card-meta">
@@ -72,10 +305,13 @@
           </div>
         </article>
 
-        <!-- Delhi Card -->
-        <article class="se-card">
+        <!-- Investigation 02: Delhi Card -->
+        <article class="se-card" data-category="ground all">
           <div class="se-card-status">INVESTIGATION 02 · DELHI NCR</div>
-          <img src="assets/delhi/01_aqi_time_series.png" alt="Delhi air quality index multi-year telemetry" style="width: 100%; height: 190px; object-fit: cover; border-radius: 4px; margin-bottom: 1.25rem; border: 1px solid var(--border-subtle); display: block;" loading="lazy">
+          <div class="se-card-img-wrap">
+            <span class="se-card-badge">2017–2023 · CONTINUOUS</span>
+            <img src="assets/delhi/01_aqi_time_series.png" alt="Delhi air quality index multi-year telemetry" loading="lazy">
+          </div>
           <h3 class="se-card-title"><a href="investigations/delhi.html">Multi-Year Regulatory NAQI Computation &amp; Inversion Dynamics at Alipur</a></h3>
           <p class="se-card-dek">Evaluation of continuous ambient telemetry at Delhi's northern entry corridor across 2017–2023, computing regulatory CPCB National Air Quality Sub-Indices from raw pollutant parameters and documenting post-monsoon entrapment patterns.</p>
           <div class="se-card-meta">
@@ -88,10 +324,13 @@
           </div>
         </article>
 
-        <!-- Kanpur LST Card -->
-        <article class="se-card">
+        <!-- Investigation 03: Kanpur LST Card -->
+        <article class="se-card" data-category="satellite all">
           <div class="se-card-status">INVESTIGATION 03 · SATELLITE EO &amp; GIS</div>
-          <img src="assets/lst/03_kanpur_spatial_thermal_zones.png" alt="Kanpur thermal microclimate zones GIS map" style="width: 100%; height: 190px; object-fit: cover; border-radius: 4px; margin-bottom: 1.25rem; border: 1px solid var(--border-subtle); display: block;" loading="lazy">
+          <div class="se-card-img-wrap">
+            <span class="se-card-badge">2,556 NASA OBS</span>
+            <img src="assets/lst/03_kanpur_spatial_thermal_zones.png" alt="Kanpur thermal microclimate zones GIS map" loading="lazy">
+          </div>
           <h3 class="se-card-title"><a href="investigations/kanpur-lst.html">Land Surface Temperature &amp; Urban Inversion Dynamics in Kanpur</a></h3>
           <p class="se-card-dek">Integration of 2,556 daily NASA POWER satellite reanalysis observations (2017–2023) with QGIS spatial microclimate modeling, evaluating radiant skin vs ambient air thermal decoupling (&Delta;T = -0.97&deg;C) and nocturnal ground inversion trapping.</p>
           <div class="se-card-meta">
@@ -107,36 +346,162 @@
     </section>
 
     <!-- Cross-City Comparison Feature -->
-    <section class="se-section se-container" style="padding-top: 0;">
-      <div class="se-card" style="padding: 2.5rem; border-color: rgba(6, 182, 212, 0.3); background: linear-gradient(180deg, rgba(6, 182, 212, 0.03) 0%, rgba(10, 11, 13, 0.95) 100%);">
+    <section class="se-section se-container" style="padding-top: 0;" data-category="airshed all">
+      <div class="se-card" style="padding: 2.5rem; border-color: rgba(6, 182, 212, 0.3); background: linear-gradient(180deg, rgba(6, 182, 212, 0.04) 0%, rgba(10, 11, 13, 0.98) 100%);">
         <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
           <span class="section-kicker" style="color: var(--data-cyan); margin: 0;">CROSS-CITY COMPARATIVE SYNTHESIS</span>
           <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">DELHI NCR vs. KANPUR BASIN</span>
         </div>
-        <h3 class="editorial-headline" style="font-size: 1.75rem; margin-bottom: 0.85rem; color: #FFFFFF;">
+        <h3 class="editorial-headline" style="font-size: 1.85rem; margin-bottom: 0.85rem; color: #FFFFFF;">
           <a href="investigations/comparison.html" style="color: inherit; text-decoration: none;">Airshed Dynamics: Upper vs. Central Indo-Gangetic Basin</a>
         </h3>
         <p class="se-card-dek" style="margin-bottom: 1.5rem; max-width: 820px;">
           Direct side-by-side evaluation of 3,450 combined monitoring records across Delhi (Alipur) and Kanpur (Kalyanpur/Nehru Nagar). Comparing seasonal multipliers (5.75&times; vs. 3.56&times;), fine-particulate ratios (0.67 vs 0.57), and the contrast between regional agricultural smoke advection and riverine nocturnal inversion entrapment.
         </p>
-        <div>
-          <a href="investigations/comparison.html" class="se-link">View cross-city comparison &rarr;</a>
+        <div style="display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap;">
+          <a href="investigations/comparison.html" class="se-link" style="font-size: 0.92rem;">Explore comparative synthesis &rarr;</a>
+          <span style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-muted);">Methodology: CPCB Technical Document NAQI-2014 &middot; NASA POWER Reanalysis</span>
         </div>
       </div>
     </section>
 
-    <!-- Latest Dispatch -->
-    <section class="se-section se-container">
-      <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2rem;">
+    <!-- Interactive Airshed Telemetry Snapshot Matrix -->
+    <section class="se-section se-container" id="explorer">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.5rem;">
         <div>
-          <span class="section-kicker">External Research</span>
+          <span class="section-kicker">Interactive Data Explorer</span>
+          <h2 class="editorial-headline" style="font-size: 2rem;">Airshed Telemetry Snapshot Matrix</h2>
+        </div>
+        <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--data-cyan);">SELECT CORRIDOR FOR METRICS</span>
+      </div>
+      <p style="color: var(--text-secondary); max-width: 720px; margin-bottom: 1.5rem;">
+        Direct comparison of computed physical atmospheric indices derived across our primary monitoring domains in the Indo-Gangetic Basin.
+      </p>
+
+      <div class="se-snapshot-panel">
+        <div class="se-snapshot-tabs" role="tablist">
+          <button class="se-snapshot-tab active" data-tab="kanpur" role="tab" aria-selected="true">
+            <span class="se-snapshot-tab-indicator"></span>
+            <span>Kanpur Central Basin (CAAQMS)</span>
+          </button>
+          <button class="se-snapshot-tab" data-tab="delhi" role="tab" aria-selected="false">
+            <span class="se-snapshot-tab-indicator"></span>
+            <span>Delhi Northern Corridor (Alipur)</span>
+          </button>
+          <button class="se-snapshot-tab" data-tab="satellite" role="tab" aria-selected="false">
+            <span class="se-snapshot-tab-indicator"></span>
+            <span>NASA MERRA-2 Satellite Reanalysis</span>
+          </button>
+        </div>
+
+        <!-- Kanpur Snapshot Content -->
+        <div class="se-snapshot-content active" id="tab-kanpur">
+          <div class="se-snapshot-grid">
+            <div class="se-snapshot-metric">
+              <div class="se-snapshot-val" style="color: var(--data-cyan);">3.56&times;</div>
+              <div class="se-snapshot-label">Winter Surge Multiplier</div>
+              <div class="se-snapshot-sub">Nov–Jan vs Jul–Aug baseline</div>
+            </div>
+            <div class="se-snapshot-metric">
+              <div class="se-snapshot-val">0.57</div>
+              <div class="se-snapshot-label">PM2.5 / PM10 Mass Ratio</div>
+              <div class="se-snapshot-sub">High coarse road &amp; crustal fraction</div>
+            </div>
+            <div class="se-snapshot-metric">
+              <div class="se-snapshot-val">22:00–04:00</div>
+              <div class="se-snapshot-label">Nocturnal Trapping Peak</div>
+              <div class="se-snapshot-sub">Boundary Layer collapse window</div>
+            </div>
+            <div class="se-snapshot-metric">
+              <div class="se-snapshot-val" style="color: var(--data-amber);">2 Stations</div>
+              <div class="se-snapshot-label">Spatial Telemetry Feeds</div>
+              <div class="se-snapshot-sub">NSI Kalyanpur &amp; Nehru Nagar</div>
+            </div>
+          </div>
+          <div class="se-snapshot-finding">
+            <strong>Key Finding:</strong> Telemetry confirms a strict riverine and industrial ground-inversion regime. Particulate density spikes abruptly at 22:00 IST as vertical mixing shuts down, persisting until solar radiative heating re-opens convection after 09:00 IST.
+          </div>
+        </div>
+
+        <!-- Delhi Snapshot Content -->
+        <div class="se-snapshot-content" id="tab-delhi">
+          <div class="se-snapshot-grid">
+            <div class="se-snapshot-metric">
+              <div class="se-snapshot-val" style="color: var(--data-rose);">5.75&times;</div>
+              <div class="se-snapshot-label">Winter Surge Multiplier</div>
+              <div class="se-snapshot-sub">Severe regional smoke advection</div>
+            </div>
+            <div class="se-snapshot-metric">
+              <div class="se-snapshot-val">0.67</div>
+              <div class="se-snapshot-label">PM2.5 / PM10 Mass Ratio</div>
+              <div class="se-snapshot-sub">Dominant combustion aerosol fraction</div>
+            </div>
+            <div class="se-snapshot-metric">
+              <div class="se-snapshot-val">19:00–07:00</div>
+              <div class="se-snapshot-label">Inversion Entrapment Window</div>
+              <div class="se-snapshot-sub">12-hour sustained stagnation</div>
+            </div>
+            <div class="se-snapshot-metric">
+              <div class="se-snapshot-val" style="color: var(--data-cyan);">2017–2023</div>
+              <div class="se-snapshot-label">Continuous Multi-Year Series</div>
+              <div class="se-snapshot-sub">DPCC / CPCB Alipur CAAQMS</div>
+            </div>
+          </div>
+          <div class="se-snapshot-finding">
+            <strong>Key Finding:</strong> Alipur captures trans-boundary episodic advection from northwestern agricultural burning. The fine aerosol ratio (0.67) is significantly higher than Kanpur's (0.57), indicating deeper systemic inhalation risks.
+          </div>
+        </div>
+
+        <!-- Satellite LST Snapshot Content -->
+        <div class="se-snapshot-content" id="tab-satellite">
+          <div class="se-snapshot-grid">
+            <div class="se-snapshot-metric">
+              <div class="se-snapshot-val" style="color: var(--data-cyan);">-0.97&deg;C</div>
+              <div class="se-snapshot-label">Mean Decoupling (&Delta;T)</div>
+              <div class="se-snapshot-sub">Skin Radiant Temp &minus; Air Temp</div>
+            </div>
+            <div class="se-snapshot-metric">
+              <div class="se-snapshot-val">2,556</div>
+              <div class="se-snapshot-label">Daily Satellite Observations</div>
+              <div class="se-snapshot-sub">7 complete annual cycles</div>
+            </div>
+            <div class="se-snapshot-metric">
+              <div class="se-snapshot-val" style="color: var(--data-amber);">5 Zones</div>
+              <div class="se-snapshot-label">QGIS Microclimate Zones</div>
+              <div class="se-snapshot-sub">Urban core to alluvial agrarian</div>
+            </div>
+            <div class="se-snapshot-metric">
+              <div class="se-snapshot-val">0.5&deg; &times; 0.625&deg;</div>
+              <div class="se-snapshot-label">NASA MERRA-2 Grid</div>
+              <div class="se-snapshot-sub">Atmospheric reanalysis model</div>
+            </div>
+          </div>
+          <div class="se-snapshot-finding">
+            <strong>Key Finding:</strong> Negative radiant skin decoupling (&Delta;T = -0.97&deg;C) directly proves nocturnal radiative cooling of the surface below ambient air temperatures, generating strong near-surface thermal inversions that trap pollutants close to human breathing height.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Research Dispatch -->
+    <section class="se-section se-container" id="dispatches">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <span class="section-kicker">External Research &amp; Regulatory Review</span>
           <h2 class="editorial-headline" style="font-size: 2rem;">Latest Dispatch</h2>
         </div>
         <a href="dispatches.html" class="se-link">View all dispatches &rarr;</a>
       </div>
 
       <article class="se-card" style="padding: 2.5rem;">
-        <span class="section-kicker" style="color: var(--data-cyan);">DISPATCH · MARCH 2024</span>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.75rem;">
+          <span class="section-kicker" style="color: var(--data-cyan); margin-bottom: 0;">DISPATCH · MARCH 2024</span>
+          <button class="se-copy-btn" id="btn-copy-dispatch" title="Copy citation to clipboard">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span>Copy Citation</span>
+          </button>
+        </div>
+
         <h3 class="se-card-title" style="font-size: 1.6rem; margin-bottom: 0.75rem;">
           <a href="dispatches.html#dispatch-1">CPCB National Clean Air Programme (NCAP): Regional Airshed Modeling Requirements</a>
         </h3>
@@ -148,53 +513,262 @@
         </div>
       </article>
     </section>
+
+    <!-- Dedicated Founding Research & Academic Affiliation Section -->
+    <section class="se-section se-container" id="founder">
+      <span class="section-kicker">Origins &amp; Scientific Leadership</span>
+      <h2 class="editorial-headline" style="font-size: 2.1rem; margin-bottom: 0.5rem;">Founding Research &amp; Academic Affiliations</h2>
+      <p style="color: var(--text-secondary); max-width: 720px; margin-bottom: 2rem;">
+        Signal Earth was established as an open-science initiative to bridge academic civil and environmental engineering research with public, transparent atmospheric monitoring.
+      </p>
+
+      <div class="se-researcher-panel">
+        <div class="se-researcher-inner">
+          <div class="se-researcher-avatar-wrap">
+            <div class="se-researcher-initials">AS</div>
+          </div>
+          <div>
+            <div class="se-researcher-affiliation">CIVIL &amp; ENVIRONMENTAL ENGINEERING &middot; HBTU KANPUR</div>
+            <h3 class="se-researcher-name">Avnish Singh</h3>
+            <div class="se-researcher-title">Founder &amp; Principal Investigator, Signal Earth</div>
+            <p class="se-researcher-bio">
+              Conceived and developed by Avnish Singh during academic engineering studies at Harcourt Butler Technical University (HBTU) Kanpur. Signal Earth applies civil and environmental engineering frameworks to open telemetry streams — combining automated Python ingestion pipelines, regulatory CPCB sub-index mathematics, and QGIS vector microclimate mapping to provide rigorous, independent analysis of environmental phenomena across North India.
+            </p>
+            <div class="se-researcher-links">
+              <a href="https://github.com/avnish36singh-arch" target="_blank" rel="noopener noreferrer" class="se-link">View Research Repositories &rarr;</a>
+              <a href="https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur" target="_blank" rel="noopener noreferrer" class="se-link se-link-secondary">Kanpur Data Pipeline &rarr;</a>
+              <a href="https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb" target="_blank" rel="noopener noreferrer" class="se-link se-link-secondary">Delhi CAAQMS Code &rarr;</a>
+              <a href="https://www.linkedin.com/in/avnish-singh-05452222a/" target="_blank" rel="noopener noreferrer" class="se-link se-link-secondary">LinkedIn Profile &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Global Institutional Footer -->
   <footer class="se-footer">
     <div class="se-container">
       <div class="se-footer-inner">
-        <div style="max-width: 360px;">
-          <div style="font-weight: 700; color: #FFFFFF; letter-spacing: 0.1em; margin-bottom: 0.6rem;">SIGNAL EARTH</div>
-          <p style="line-height: 1.6;">Independent analysis of publicly available environmental monitoring data — CPCB, UPPCB, and open satellite records — with full source code and citations.</p>
+        <div style="max-width: 380px;">
+          <div style="font-weight: 700; color: #FFFFFF; letter-spacing: 0.14em; margin-bottom: 0.6rem; font-size: 0.95rem;">SIGNAL EARTH</div>
+          <p style="line-height: 1.65; color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 1rem;">
+            The Independent Environmental Telemetry &amp; Earth Observation Platform. Continuous ambient air-quality reanalysis, GIS thermal microclimate modeling, and open-source scientific auditability across North India.
+          </p>
+          <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);">
+            Data feeds: CPCB, UPPCB, DPCC, NASA Earth Science. Open science under MIT License.
+          </div>
         </div>
 
         <div class="se-footer-col">
-          <h5>Investigations</h5>
+          <h5>Platform &amp; Analyses</h5>
           <ul>
             <li><a href="investigations/kanpur.html">Kanpur Air Quality</a></li>
-            <li><a href="investigations/delhi.html">Delhi Air Quality</a></li>
-            <li><a href="investigations/kanpur-lst.html">Kanpur LST &amp; GIS</a></li>
+            <li><a href="investigations/delhi.html">Delhi NAQI Analysis</a></li>
+            <li><a href="investigations/kanpur-lst.html">Kanpur LST Satellite GIS</a></li>
             <li><a href="investigations/comparison.html">Cross-City Comparison</a></li>
+            <li><a href="#gallery">Earth Observation Gallery</a></li>
             <li><a href="dispatches.html">Research Dispatches</a></li>
           </ul>
         </div>
 
         <div class="se-footer-col">
-          <h5>Documentation</h5>
+          <h5>Scientific Standards</h5>
           <ul>
             <li><a href="methodology.html">Methodology &amp; Limits</a></li>
             <li><a href="citations.html">Data Sources &amp; Citations</a></li>
-            <li><a href="about.html">About &amp; Standards</a></li>
+            <li><a href="about.html">About Signal Earth</a></li>
+            <li><a href="#capabilities">Observational Pillars</a></li>
+            <li><a href="#founder">Founding Research</a></li>
           </ul>
         </div>
 
         <div class="se-footer-col">
-          <h5>Contact &amp; Profiles</h5>
+          <h5>Institutional Profiles</h5>
           <ul>
             <li><a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer">Instagram (@signalearthhq)</a></li>
             <li><a href="https://www.linkedin.com/company/signalearth/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer">LinkedIn (Signal Earth)</a></li>
+            <li><a href="https://github.com/avnish36singh-arch" target="_blank" rel="noopener noreferrer">GitHub (@avnish36singh-arch)</a></li>
             <li><a href="contact.html">Contact Information</a></li>
           </ul>
         </div>
       </div>
 
       <div class="se-footer-bottom">
-        <span>Signal Earth &middot; Maintained by Avnish Singh &middot; HBTU Kanpur</span>
-        <span>Data: CPCB, UPPCB, DPCC, NASA &middot; MIT License</span>
+        <span>Signal Earth &middot; Independent Earth Observation &middot; Founded by Avnish Singh (HBTU Kanpur)</span>
+        <span>Public Domain Reanalysis &middot; CPCB &middot; UPPCB &middot; NASA &middot; MIT License</span>
       </div>
     </div>
   </footer>
 
+  <!-- Floating Back-to-Top Button -->
+  <button class="se-back-top" id="se-back-top" aria-label="Scroll back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Interactive Toast Notification -->
+  <div class="se-toast" id="se-toast" role="status" aria-live="polite">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--data-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>
+    <span id="se-toast-msg">Citation copied to clipboard</span>
+  </div>
+
+  <!-- Client-Side Controller Script -->
+  <script>
+    (function() {
+      // 1. Mobile Navigation Toggle
+      const toggleBtn = document.getElementById('se-nav-toggle');
+      const drawer = document.getElementById('se-mobile-drawer');
+
+      if (toggleBtn && drawer) {
+        toggleBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const isOpen = toggleBtn.classList.toggle('is-active');
+          drawer.classList.toggle('is-open', isOpen);
+          toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          drawer.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+        });
+
+        // Close drawer when any mobile nav link is clicked
+        drawer.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            toggleBtn.classList.remove('is-active');
+            drawer.classList.remove('is-open');
+            toggleBtn.setAttribute('aria-expanded', 'false');
+            drawer.setAttribute('aria-hidden', 'true');
+          });
+        });
+
+        // Close when clicking outside
+        document.addEventListener('click', function(e) {
+          if (drawer.classList.contains('is-open') && !drawer.contains(e.target) && !toggleBtn.contains(e.target)) {
+            toggleBtn.classList.remove('is-active');
+            drawer.classList.remove('is-open');
+            toggleBtn.setAttribute('aria-expanded', 'false');
+            drawer.setAttribute('aria-hidden', 'true');
+          }
+        });
+
+        // Close on escape key
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape' && drawer.classList.contains('is-open')) {
+            toggleBtn.classList.remove('is-active');
+            drawer.classList.remove('is-open');
+            toggleBtn.setAttribute('aria-expanded', 'false');
+            drawer.setAttribute('aria-hidden', 'true');
+            toggleBtn.focus();
+          }
+        });
+      }
+
+      // 2. Active Investigation Category Filter
+      const filterBtns = document.querySelectorAll('.se-filter-btn');
+      const cards = document.querySelectorAll('#investigations-grid .se-card');
+      const comparisonSection = document.querySelector('[data-category*="airshed"]');
+
+      filterBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          filterBtns.forEach(b => {
+            b.classList.remove('active');
+            b.setAttribute('aria-selected', 'false');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected', 'true');
+
+          const filter = btn.getAttribute('data-filter');
+
+          cards.forEach(function(card) {
+            const categories = card.getAttribute('data-category') || '';
+            if (filter === 'all' || categories.includes(filter)) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+
+          if (comparisonSection) {
+            if (filter === 'all' || filter === 'airshed') {
+              comparisonSection.style.display = 'block';
+            } else {
+              comparisonSection.style.display = 'none';
+            }
+          }
+        });
+      });
+
+      // 3. Airshed Snapshot Matrix Tabs
+      const tabBtns = document.querySelectorAll('.se-snapshot-tab');
+      const tabPanels = {
+        kanpur: document.getElementById('tab-kanpur'),
+        delhi: document.getElementById('tab-delhi'),
+        satellite: document.getElementById('tab-satellite')
+      };
+
+      tabBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          tabBtns.forEach(b => {
+            b.classList.remove('active');
+            b.setAttribute('aria-selected', 'false');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected', 'true');
+
+          const target = btn.getAttribute('data-tab');
+          Object.keys(tabPanels).forEach(function(key) {
+            if (tabPanels[key]) {
+              tabPanels[key].classList.toggle('active', key === target);
+            }
+          });
+        });
+      });
+
+      // 4. Citation Copy Micro-Action
+      const copyBtn = document.getElementById('btn-copy-dispatch');
+      const toast = document.getElementById('se-toast');
+      const toastMsg = document.getElementById('se-toast-msg');
+      let toastTimer = null;
+
+      function showToast(message) {
+        if (toast && toastMsg) {
+          toastMsg.textContent = message;
+          toast.classList.add('show');
+          clearTimeout(toastTimer);
+          toastTimer = setTimeout(function() {
+            toast.classList.remove('show');
+          }, 3000);
+        }
+      }
+
+      if (copyBtn) {
+        copyBtn.addEventListener('click', function() {
+          const citation = 'Central Pollution Control Board (CPCB). (2024). National Clean Air Programme (NCAP): Regional Airshed Modeling Requirements. Signal Earth Research Dispatch.';
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(citation).then(function() {
+              showToast('Citation copied to clipboard');
+            }).catch(function() {
+              showToast('Citation copied');
+            });
+          } else {
+            showToast('Citation copied');
+          }
+        });
+      }
+
+      // 5. Back-to-Top Button
+      const backTopBtn = document.getElementById('se-back-top');
+      if (backTopBtn) {
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 400) {
+            backTopBtn.classList.add('visible');
+          } else {
+            backTopBtn.classList.remove('visible');
+          }
+        }, { passive: true });
+
+        backTopBtn.addEventListener('click', function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
