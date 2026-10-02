@@ -36,18 +36,18 @@
     </nav>
   </header>
 
-  <main id="main" class="se-container-narrow" style="padding-top: 5rem; padding-bottom: 6rem; text-align: left;">
+  <main id="main" class="se-container-narrow se-404-main">
     <span class="section-kicker">Error 404</span>
-    <h1 class="editorial-headline" style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem;">
+    <h1 class="editorial-headline se-headline-clamp">
       Page Not Found
     </h1>
-    <p class="se-hero-dek" style="margin-bottom: 2rem;">
+    <p class="se-hero-dek se-card-desc">
       The requested URL does not match any archived document, analysis, or resource in this portfolio.
     </p>
 
-    <div style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 1.5rem; margin-bottom: 2.5rem; max-width: 600px;">
-      <h2 style="font-size: 1.1rem; margin-bottom: 0.75rem; color: var(--text-primary);">Available Portfolio Sections</h2>
-      <ul style="line-height: 1.8; color: var(--text-secondary); padding-left: 1.25rem;">
+    <div class="se-404-box">
+      <h2 class="se-card-title">Available Portfolio Sections</h2>
+      <ul class="se-list-bullet-simple">
         <li><a href="index.html" class="se-link">Index: Research Overview and NAQI Calculator</a></li>
         <li><a href="investigations/kanpur.html" class="se-link">Investigation 01: Kanpur Particulate Dynamics</a></li>
         <li><a href="investigations/delhi.html" class="se-link">Investigation 02: Delhi Five-Year NAQI Analysis</a></li>
@@ -58,7 +58,7 @@
       </ul>
     </div>
 
-    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+    <p class="se-card-desc">
       If you followed an external link or believe a document was moved without redirection, please review the <a href="corrections.html" class="se-link">Corrections Log</a> or open an issue on the <a href="https://github.com/avnish36singh-arch/signal-earth-portal/issues" target="_blank" rel="noopener noreferrer" class="se-link">GitHub repository</a>.
     </p>
   </main>
@@ -67,9 +67,9 @@
   <footer class="se-footer">
     <div class="se-container">
       <div class="se-footer-inner">
-        <div style="max-width: 320px;">
-          <div style="font-weight: 700; color: #FFFFFF; letter-spacing: 0.1em; margin-bottom: 0.4rem; text-transform: uppercase;">Signal Earth</div>
-          <p style="line-height: 1.6; color: var(--text-inverse-muted); font-size: 0.85rem;">
+        <div class="se-footer-brand-col">
+          <div class="se-footer-brand-title">Signal Earth</div>
+          <p class="se-footer-brand-desc">
             Student research portfolio analyzing archived environmental monitoring data from CPCB, UPPCB, and NASA POWER reanalysis.
           </p>
         </div>
@@ -122,8 +122,8 @@
       </div>
 
       <div class="se-footer-bottom">
-        <div>Site design and analyses by Avnish Singh, Civil Engineering, HBTU Kanpur. Code under MIT License.</div>
-        <div>Page updated: October 2026. Content strictly reflects public monitoring records.</div>
+        <div>Maintained by: Avnish Singh</div>
+        <div>Page last updated: October 2026</div>
       </div>
     </div>
   </footer>

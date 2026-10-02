@@ -1,7 +1,7 @@
 /* ==========================================================================
    SIGNAL EARTH : DELHI ANALYSIS CONTROLLER
    Archived CPCB Daily Data at Alipur (2017 to 2023)
-   Shows documented 732-day gap (2019 to 2020) without artificial interpolation
+   Shows documented 731-day gap (2019 to 2020) without artificial interpolation
    ========================================================================== */
 
 const LIGHT_LAYOUT = {
@@ -106,7 +106,7 @@ function renderDelhiTimeseries(data) {
         y: 200,
         xref: 'x',
         yref: 'y',
-        text: '2019 to 2020 Monitoring Pause (732 Days Unrecorded)',
+        text: '2019 to 2020 Monitoring Pause (731 Days Unrecorded)',
         showarrow: false,
         font: { size: 10, color: '#4B5563' },
         bgcolor: '#F3F4F0',

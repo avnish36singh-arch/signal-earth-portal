@@ -26,8 +26,8 @@ This site is an independent student portfolio, not an operational monitoring pla
 
 2. Delhi Five-Year NAQI Analysis (`investigations/delhi.html`)
    - Analyzes 1,825 daily records from Alipur, Delhi (2017 to 2023).
-   - Documents an operational monitoring gap of 732 days (January 1, 2019 to December 31, 2020) where the station was inactive.
-   - Evaluates 1,137 official days meeting the CPCB minimum reporting quorum (3 pollutants including at least one PM parameter).
+   - Documents an operational monitoring gap of 731 days (January 1, 2019 to December 31, 2020) where the station was inactive.
+   - Evaluates 1,137 official days meeting the CPCB minimum reporting quorum (3 pollutants including at least one PM parameter; 1,133 valid PM2.5 daily records).
 
 3. Kanpur Surface Skin Temperature and Boundary Coupling (`investigations/kanpur-lst.html`)
    - Utilizes NASA POWER (GMAO MERRA-2) daily reanalysis skin temperature (TS) and 2-meter air temperature (T2M) over a single 0.5° × 0.625° grid box (~55 × 60 km) covering Kanpur.

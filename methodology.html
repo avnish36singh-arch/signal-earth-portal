@@ -40,10 +40,10 @@
     </nav>
   </header>
 
-  <main id="main" class="se-container-narrow" style="padding-top: 3rem; padding-bottom: 4rem;">
-    <header style="margin-bottom: 2.5rem;">
+  <main id="main" class="se-container-narrow se-container-py">
+    <header class="se-header-mb">
       <span class="section-kicker">Analytical Framework</span>
-      <h1 class="editorial-headline" style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 0.75rem;">
+      <h1 class="editorial-headline se-headline-clamp">
         Methodology and Limitations
       </h1>
       <p class="se-hero-dek">
@@ -52,30 +52,30 @@
     </header>
 
     <!-- Section 1: CPCB NAQI Formula -->
-    <section id="naqi-formula" style="margin-bottom: 3.5rem;">
+    <section id="naqi-formula" class="se-content-section">
       <span class="section-kicker">01 : Regulatory Formula</span>
-      <h2 class="editorial-headline" style="font-size: 1.5rem; margin-bottom: 0.75rem;">CPCB National Air Quality Index (NAQI) Mathematical Formulation</h2>
-      <p style="color: var(--text-secondary); line-height: 1.65; font-size: 0.95rem; margin-bottom: 1rem;">
+      <h2 class="editorial-headline se-content-h2">CPCB National Air Quality Index (NAQI) Mathematical Formulation</h2>
+      <p class="se-content-p">
         The National Air Quality Index developed by the Central Pollution Control Board (CPCB, October 2014) utilizes a linear piecewise sub-index formulation. For any pollutant parameter <em>p</em> with observed 24-hour average concentration <em>C<sub>p</sub></em>, the sub-index <em>I<sub>p</sub></em> is computed as:
       </p>
 
-      <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); padding: 1.25rem; font-family: var(--font-mono); font-size: 0.9rem; color: var(--text-primary); margin-bottom: 1rem;">
+      <div class="se-math-box">
         I<sub>p</sub> = [ (I<sub>HI</sub> - I<sub>LO</sub>) / (B<sub>HI</sub> - B<sub>LO</sub>) ] * (C<sub>p</sub> - B<sub>LO</sub>) + I<sub>LO</sub>
       </div>
 
-      <p style="color: var(--text-secondary); line-height: 1.65; font-size: 0.95rem; margin-bottom: 1rem;">
+      <p class="se-content-p">
         Where <em>B<sub>HI</sub></em> and <em>B<sub>LO</sub></em> represent the upper and lower breakpoint concentrations for the category containing <em>C<sub>p</sub></em>, and <em>I<sub>HI</sub></em> and <em>I<sub>LO</sub></em> represent the corresponding sub-index scale bounds. The composite daily AQI is determined by the maximum sub-index across all monitored criteria pollutants:
       </p>
 
-      <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); padding: 1.25rem; font-family: var(--font-mono); font-size: 0.9rem; color: var(--accent-slate); margin-bottom: 1.25rem;">
+      <div class="se-math-box-slate">
         AQI = max(I<sub>PM2.5</sub>, I<sub>PM10</sub>, I<sub>NO2</sub>, I<sub>SO2</sub>, I<sub>CO</sub>, I<sub>O3</sub>, I<sub>NH3</sub>, I<sub>Pb</sub>)
       </div>
 
-      <p style="color: var(--text-secondary); line-height: 1.65; font-size: 0.95rem; margin-bottom: 1.5rem;">
+      <p class="se-content-p-lead">
         The pollutant responsible for <code>max(I<sub>p</sub>)</code> is designated as the Dominant Pollutant for that monitoring day.
       </p>
 
-      <h3 style="font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0.5rem;">Official CPCB NAQI Breakpoint Matrix</h3>
+      <h3 class="se-content-h3">Official CPCB NAQI Breakpoint Matrix</h3>
       <div class="se-table-wrap">
         <table class="se-table">
           <thead>
@@ -93,7 +93,7 @@
           </thead>
           <tbody>
             <tr>
-              <td style="color: #16A34A; font-weight: 600;">Good</td>
+              <td class="se-aqi-good">Good</td>
               <td>0 to 50</td>
               <td>0 to 30</td>
               <td>0 to 50</td>
@@ -104,7 +104,7 @@
               <td>0 to 50</td>
             </tr>
             <tr>
-              <td style="color: #65A30D; font-weight: 600;">Satisfactory</td>
+              <td class="se-aqi-satisfactory">Satisfactory</td>
               <td>51 to 100</td>
               <td>31 to 60</td>
               <td>51 to 100</td>
@@ -115,7 +115,7 @@
               <td>51 to 100</td>
             </tr>
             <tr>
-              <td style="color: #D97706; font-weight: 600;">Moderate</td>
+              <td class="se-aqi-moderate">Moderate</td>
               <td>101 to 200</td>
               <td>61 to 90</td>
               <td>101 to 250</td>
@@ -126,7 +126,7 @@
               <td>101 to 168</td>
             </tr>
             <tr>
-              <td style="color: #EA580C; font-weight: 600;">Poor</td>
+              <td class="se-aqi-poor">Poor</td>
               <td>201 to 300</td>
               <td>91 to 120</td>
               <td>251 to 350</td>
@@ -137,7 +137,7 @@
               <td>169 to 208</td>
             </tr>
             <tr>
-              <td style="color: #DC2626; font-weight: 600;">Very Poor</td>
+              <td class="se-aqi-very-poor">Very Poor</td>
               <td>301 to 400</td>
               <td>121 to 250</td>
               <td>351 to 430</td>
@@ -148,7 +148,7 @@
               <td>209 to 748</td>
             </tr>
             <tr>
-              <td style="color: #991B1B; font-weight: 600;">Severe</td>
+              <td class="se-aqi-severe">Severe</td>
               <td>401 to 500</td>
               <td>250+</td>
               <td>430+</td>
@@ -165,13 +165,13 @@
     </section>
 
     <!-- Section 2: Statutory Compliance Rules -->
-    <section id="statutory-rules" style="margin-bottom: 3.5rem;">
+    <section id="statutory-rules" class="se-content-section">
       <span class="section-kicker">02 : Statutory Compliance</span>
-      <h2 class="editorial-headline" style="font-size: 1.5rem; margin-bottom: 0.75rem;">Official versus Indicative Validity Rules</h2>
-      <p style="color: var(--text-secondary); line-height: 1.65; font-size: 0.95rem; margin-bottom: 1rem;">
+      <h2 class="editorial-headline se-content-h2">Official versus Indicative Validity Rules</h2>
+      <p class="se-content-p">
         Under statutory CPCB guidelines, a daily AQI score is officially valid only when all of the following conditions are satisfied:
       </p>
-      <ol style="padding-left: 1.25rem; color: var(--text-secondary); line-height: 1.65; font-size: 0.95rem; margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem;">
+      <ol class="se-list-ordered-desc">
         <li>
           <strong>Criteria Pollutant Quorum:</strong> At least <strong>three criteria pollutants</strong> must have valid daily sub-indices.
         </li>
@@ -192,36 +192,36 @@
     </section>
 
     <!-- Section 3: Reporting Hiatuses -->
-    <section id="hiatuses" style="margin-bottom: 3.5rem;">
+    <section id="hiatuses" class="se-content-section">
       <span class="section-kicker">03 : Reporting Hiatuses</span>
-      <h2 class="editorial-headline" style="font-size: 1.5rem; margin-bottom: 0.75rem;">Instrument Drops and Missing Intervals</h2>
-      <p style="color: var(--text-secondary); line-height: 1.65; font-size: 0.95rem; margin-bottom: 1rem;">
+      <h2 class="editorial-headline se-content-h2">Instrument Drops and Missing Intervals</h2>
+      <p class="se-content-p">
         Continuous Ambient Air Quality Monitoring Stations (CAAQMS) are mechanical instruments operating in high particulate concentrations. They experience beta-attenuation tape depletion, optical recalibration, and sensor outages:
       </p>
 
-      <ul style="padding-left: 1.25rem; color: var(--text-secondary); line-height: 1.65; font-size: 0.95rem; margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 0.75rem;">
+      <ul class="se-list-bullet-desc">
         <li>
-          <strong>Delhi / Alipur (CPCB/DPCC Site 204):</strong> An operational hiatus occurred from <strong>January 1, 2019 to December 31, 2020 (732 consecutive days)</strong> where criteria pollutants went unrecorded due to station refurbishment. Rather than interpolating across a two-year void, our pipeline preserves this interval as missing data.
+          <strong>Delhi / Alipur (CPCB/DPCC Site 204):</strong> An operational hiatus occurred from <strong>January 1, 2019 to December 31, 2020 (731 consecutive days)</strong> where criteria pollutants went unrecorded due to station refurbishment. Rather than interpolating across a two-year void, our pipeline preserves this interval as missing data.
         </li>
         <li>
           <strong>Kanpur / Kalyanpur and Nehru Nagar (UPPCB/CPCB):</strong> Observations ingested via OpenAQ v3 span July 2021 through October 2022, followed by an unmonitored hiatus until early 2025. Data from these stations is analyzed strictly within its verified observation windows.
         </li>
       </ul>
 
-      <p style="color: var(--text-secondary); line-height: 1.65; font-size: 0.95rem;">
+      <p class="se-content-p-tight">
         <strong>Signal Earth Principle:</strong> We do not impute or forward-fill long-duration instrument dropouts. Data gaps are reported as missing observations on all timelines and tables.
       </p>
     </section>
 
     <!-- Section 4: Machine Learning Evaluation -->
-    <section id="ml-evaluation" style="margin-bottom: 3.5rem;">
+    <section id="ml-evaluation" class="se-content-section">
       <span class="section-kicker">04 : Machine Learning Evaluation</span>
-      <h2 class="editorial-headline" style="font-size: 1.5rem; margin-bottom: 0.75rem;">Chronological Testing Splits</h2>
-      <p style="color: var(--text-secondary); line-height: 1.65; font-size: 0.95rem; margin-bottom: 1rem;">
+      <h2 class="editorial-headline se-content-h2">Chronological Testing Splits</h2>
+      <p class="se-content-p">
         For day-ahead AQI time-series predictive modeling:
       </p>
 
-      <ul style="padding-left: 1.25rem; color: var(--text-secondary); line-height: 1.65; font-size: 0.95rem; display: flex; flex-direction: column; gap: 0.75rem;">
+      <ul class="se-list-bullet-desc-sm">
         <li>
           <strong>Short-Gap Interpolation:</strong> Linear interpolation is permitted strictly for short gaps of 1 to 2 consecutive days. Gaps of 3 or more days reset the lag sequence window.
         </li>
@@ -232,10 +232,10 @@
     </section>
 
     <!-- Section 5: Ratio-Based Diagnostics -->
-    <section id="ratio-limits" style="margin-bottom: 3.5rem;">
+    <section id="ratio-limits" class="se-content-section">
       <span class="section-kicker">05 : Ratio-Based Diagnostics</span>
-      <h2 class="editorial-headline" style="font-size: 1.5rem; margin-bottom: 0.75rem;">Diagnostic Screening Ratios versus Chemical Receptor Models</h2>
-      <p style="color: var(--text-secondary); line-height: 1.65; font-size: 0.95rem; margin-bottom: 1rem;">
+      <h2 class="editorial-headline se-content-h2">Diagnostic Screening Ratios versus Chemical Receptor Models</h2>
+      <p class="se-content-p">
         Our investigations utilize aerodynamic and volatile tracer ratio metrics to characterize screening regimes:
       </p>
 
@@ -282,14 +282,14 @@
     </section>
 
     <!-- Section 6: Model Reanalysis Parameters -->
-    <section id="reanalysis-grid" style="margin-bottom: 3.5rem;">
+    <section id="reanalysis-grid" class="se-content-section">
       <span class="section-kicker">06 : Model Reanalysis Parameters</span>
-      <h2 class="editorial-headline" style="font-size: 1.5rem; margin-bottom: 0.75rem;">NASA POWER / MERRA-2 Reanalysis Skin Temperature</h2>
-      <p style="color: var(--text-secondary); line-height: 1.65; font-size: 0.95rem; margin-bottom: 1rem;">
+      <h2 class="editorial-headline se-content-h2">NASA POWER / MERRA-2 Reanalysis Skin Temperature</h2>
+      <p class="se-content-p">
         Analysis 03 evaluates thermal records across the Kanpur grid cell using daily reanalysis data from the NASA POWER project, derived from the MERRA-2 assimilation model:
       </p>
 
-      <ul style="padding-left: 1.25rem; color: var(--text-secondary); line-height: 1.65; font-size: 0.95rem; display: flex; flex-direction: column; gap: 0.75rem;">
+      <ul class="se-list-bullet-desc-sm">
         <li>
           <strong>Reanalysis Skin Temperature (TS):</strong> Derived from numerical weather reanalysis assimilation on a 0.5° latitude by 0.625° longitude grid (approximately 55 by 60 km). It represents model skin temperature, not satellite radiometer observation and not satellite LST.
         </li>
@@ -297,25 +297,25 @@
           <strong>Winter Daily Mean Difference (Delta T = TS - T2M):</strong> A negative winter daily mean difference (TS &lt; T2M, averaging -0.97°C) indicates daily aggregate surface cooling. It does not establish the depth of a nocturnal ground inversion, which requires testing hourly night profiles.
         </li>
         <li>
-          <strong>Planned Spatial Zoning:</strong> <span class="todo-marker">TODO[ME]: Spatial thermal zoning</span> High-resolution intra-urban thermal zoning requires satellite thermal sensor imagery (Landsat 8/9 Collection 2 Level 2 at 30 m or MODIS MOD11A1 at 1 km, cloud-masked, with documented zonal means and dates). This analysis is planned and not yet completed.
+          <strong>Planned Spatial Zoning:</strong> High-resolution intra-urban thermal zoning requires satellite thermal sensor imagery (Landsat 8/9 Collection 2 Level 2 Thermal Infrared Sensor at 100 m native, resampled to 30 m, or MODIS MOD11A1 at 1 km, cloud-masked, with documented zonal means and acquisition dates). This analysis is planned and not yet completed.
         </li>
       </ul>
     </section>
 
     <!-- Section 7: Temperature Inversion Physics -->
-    <section id="inversion" style="margin-bottom: 3.5rem;">
+    <section id="inversion" class="se-content-section">
       <span class="section-kicker">07 : Boundary Layer Physics</span>
-      <h2 class="editorial-headline" style="font-size: 1.5rem; margin-bottom: 0.75rem;">Temperature Inversion Mechanics and Surface-Air Temperature Coupling</h2>
-      <p style="color: var(--text-secondary); line-height: 1.65; font-size: 0.95rem; margin-bottom: 1rem;">
+      <h2 class="editorial-headline se-content-h2">Temperature Inversion Mechanics and Surface-Air Temperature Coupling</h2>
+      <p class="se-content-p">
         The sharp winter surge in particulate concentrations across the Indo-Gangetic Plain is primarily an atmospheric ventilation problem rather than an emissions surge alone. While seasonal crop residue fires and heating fires add particulate mass, hazardous ground levels occur because the planetary boundary layer collapses vertically.
       </p>
 
-      <div style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 1.5rem; margin-bottom: 1.25rem;">
-        <h3 style="font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0.6rem;">The Physical Mechanism of Nocturnal Inversion</h3>
-        <p style="color: var(--text-secondary); line-height: 1.65; font-size: 0.93rem; margin-bottom: 0.75rem;">
+      <div class="se-inversion-box">
+        <h3 class="se-inversion-h3">The Physical Mechanism of Nocturnal Inversion</h3>
+        <p class="se-inversion-p-lead">
           Under normal daytime conditions, sunlight warms the soil and asphalt. The ground heats the air in contact with it, and because warm air is less dense than the cooler air above, it rises in buoyant convective plumes that carry pollutants several kilometers into the free troposphere.
         </p>
-        <p style="color: var(--text-secondary); line-height: 1.65; font-size: 0.93rem; margin: 0;">
+        <p class="se-inversion-p-end">
           Between November and January, northern India experiences calm winds (often below 1.5 meters per second) and dry, cloudless skies under regional anticyclonic high pressure. After sunset, the alluvial soil radiates heat into space through longwave infrared emission. The ground cools faster than the air column above, producing a temperature inversion where air temperature increases with height within the lowest 100 to 300 meters. The buoyant stability of this cold ground layer prevents vertical air movement, capping the city beneath an effective thermal ceiling.
         </p>
       </div>
@@ -323,7 +323,7 @@
       <div class="se-caveat-box">
         <div class="se-caveat-title">Observation vs Mechanism in Our Analysis</div>
         <p class="se-caveat-text">
-          In Analysis 03, we document a moderate negative correlation (Pearson r = -0.455) between daily surface skin temperature and ground PM2.5 in Kanpur during the true 308-day overlap window. While this statistical association reflects seasonal cooling and reduced ventilation volume, daily mean reanalysis values cannot measure the vertical temperature gradient (dT/dz) or the exact height of the nocturnal inversion cap. Measuring inversion depth directly requires radiosonde sounding profiles or continuous lidar/ceilometer backscatter measurements.
+          In Analysis 03, we document a moderate negative correlation (Pearson r = -0.455) between daily surface skin temperature and ground PM2.5 in Kanpur during the 308-day temporal overlap window. Crucially, this statistical correlation is dominated by shared seasonality: co-occurring winter planetary boundary layer collapse, light regional winds, and biomass burning coincide with minimum surface skin temperatures. Furthermore, because consecutive daily atmospheric records exhibit substantial autocorrelation, these n = 308 daily observations must not be reported or interpreted as independent statistical samples. Moreover, daily mean reanalysis values cannot measure the vertical temperature gradient (dT/dz) or the exact height of the nocturnal inversion cap. Measuring inversion depth directly requires radiosonde sounding profiles or continuous lidar/ceilometer backscatter measurements.
         </p>
       </div>
     </section>
@@ -334,9 +334,9 @@
   <footer class="se-footer">
     <div class="se-container">
       <div class="se-footer-inner">
-        <div style="max-width: 320px;">
-          <div style="font-weight: 700; color: #FFFFFF; letter-spacing: 0.1em; margin-bottom: 0.4rem; text-transform: uppercase;">Signal Earth</div>
-          <p style="line-height: 1.6; color: var(--text-inverse-muted); font-size: 0.85rem;">
+        <div class="se-footer-brand-col">
+          <div class="se-footer-brand-title">Signal Earth</div>
+          <p class="se-footer-brand-desc">
             Student research portfolio analyzing archived environmental monitoring data from CPCB, UPPCB, and NASA POWER reanalysis.
           </p>
         </div>
@@ -389,8 +389,8 @@
       </div>
 
       <div class="se-footer-bottom">
-        <div>Site design and analyses by Avnish Singh, Civil Engineering, HBTU Kanpur. Code under MIT License.</div>
-        <div>Page updated: October 2026. Content strictly reflects public monitoring records.</div>
+        <div>Maintained by: Avnish Singh</div>
+        <div>Page last updated: October 2026</div>
       </div>
     </div>
   </footer>

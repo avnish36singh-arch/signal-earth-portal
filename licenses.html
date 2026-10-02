@@ -40,10 +40,10 @@
     </nav>
   </header>
 
-  <main id="main" class="se-container-narrow" style="padding-top: 3rem; padding-bottom: 4rem;">
-    <header style="margin-bottom: 2.5rem;">
+  <main id="main" class="se-container-narrow se-container-py">
+    <header class="se-header-mb">
       <span class="section-kicker">Legal and Attribution</span>
-      <h1 class="editorial-headline" style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 0.75rem;">
+      <h1 class="editorial-headline se-headline-clamp">
         Licenses and Terms
       </h1>
       <p class="se-hero-dek">
@@ -51,16 +51,16 @@
       </p>
     </header>
 
-    <div style="display: flex; flex-direction: column; gap: 2.5rem; line-height: 1.7; color: var(--text-primary); font-size: 0.95rem;">
+    <div class="se-legal-stack">
 
       <section>
         <span class="section-kicker">01 : Software Code License</span>
-        <h2 class="editorial-headline" style="font-size: 1.35rem; margin-bottom: 0.75rem;">MIT License</h2>
-        <p style="margin-bottom: 1rem;">
+        <h2 class="editorial-headline se-card-title">MIT License</h2>
+        <p class="se-content-p">
           All software code developed for Signal Earth, including data extraction scripts, Python analytical pipelines, QGIS processing routines, and website front-end markup, is licensed under the MIT License:
         </p>
 
-        <pre style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 1.25rem; font-size: 0.85rem; line-height: 1.6; overflow-x: auto; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; color: var(--text-primary);">MIT License
+        <pre class="se-code-license-pre">MIT License
 
 Copyright (c) 2026 Avnish Singh (avnish36singh-arch)
 
@@ -85,25 +85,25 @@ SOFTWARE.</pre>
 
       <section>
         <span class="section-kicker">02 : Editorial and Graphical Content</span>
-        <h2 class="editorial-headline" style="font-size: 1.35rem; margin-bottom: 0.75rem;">Creative Commons Attribution 4.0 International</h2>
-        <p style="margin-bottom: 0.75rem;">
-          Except where otherwise noted, analytical text, generated charts, and structured reports authored for Signal Earth are distributed under the Creative Commons Attribution 4.0 International license (CC BY 4.0) [TODO[ME]: confirm preferred license CC BY 4.0 versus CC BY-NC 4.0 with academic advisor].
+        <h2 class="editorial-headline se-card-title">Creative Commons Attribution 4.0 International</h2>
+        <p class="se-content-p">
+          Except where otherwise noted, analytical text, generated charts, and structured reports authored for Signal Earth are distributed under the Creative Commons Attribution 4.0 International license (CC BY 4.0).
         </p>
-        <p style="margin-bottom: 0.75rem;">
+        <p class="se-content-p">
           Under CC BY 4.0, you are free to share (copy and redistribute the material in any medium or format) and adapt (remix, transform, and build upon the material for any purpose), provided you give appropriate credit, provide a link to the license, and indicate if changes were made.
         </p>
-        <p>
+        <p class="se-content-p-tight">
           Recommended citation format:
         </p>
-        <blockquote style="margin: 0.75rem 0; padding: 0.75rem 1rem; border-left: 3px solid var(--accent); background: var(--bg-surface); font-size: 0.88rem; font-style: normal;">
+        <blockquote class="se-quote-license">
           Singh, A. (2026). Signal Earth: Public Environmental Data Investigations. Harcourt Butler Technical University, Kanpur. https://avnish36singh-arch.github.io/signal-earth-portal/
         </blockquote>
       </section>
 
       <section>
         <span class="section-kicker">03 : Third-Party Data Attribution</span>
-        <h2 class="editorial-headline" style="font-size: 1.35rem; margin-bottom: 0.75rem;">Data Custodians and Terms</h2>
-        <p style="margin-bottom: 1rem;">
+        <h2 class="editorial-headline se-card-title">Data Custodians and Terms</h2>
+        <p class="se-content-p">
           Signal Earth relies on publicly archived environmental data. Users reusing these datasets must abide by the terms of the original custodial organizations:
         </p>
 
@@ -121,8 +121,8 @@ SOFTWARE.</pre>
               <tr>
                 <td><strong>Ground Station Air Quality</strong></td>
                 <td>Central Pollution Control Board (CPCB), UPPCB, DPCC via OpenAQ</td>
-                <td>OpenAQ Open Data Policy (CC BY 4.0) / Government of India National Data Sharing and Accessibility Policy (NDSAP)</td>
-                <td>Academic, public information, and research use with attribution to original monitoring agencies.</td>
+                <td>CPCB Public Monitoring & Open Information Terms (Open access for academic and public research with mandatory agency attribution) / OpenAQ Data Platform Terms (CC BY 4.0 for API platform aggregation; individual station streams governed by origin statutory provider terms)</td>
+                <td>Academic, public information, and research use with attribution to original monitoring agencies and OpenAQ data platform.</td>
               </tr>
               <tr>
                 <td><strong>Surface Skin Temperature Reanalysis</strong></td>
@@ -143,8 +143,8 @@ SOFTWARE.</pre>
 
       <section>
         <span class="section-kicker">04 : Non-Endorsement</span>
-        <h2 class="editorial-headline" style="font-size: 1.35rem; margin-bottom: 0.75rem;">Agency Relationship</h2>
-        <p>
+        <h2 class="editorial-headline se-card-title">Agency Relationship</h2>
+        <p class="se-content-p-tight">
           Signal Earth is an independent student academic initiative. Neither the Central Pollution Control Board (CPCB), the Uttar Pradesh Pollution Control Board (UPPCB), the Delhi Pollution Control Committee (DPCC), the National Aeronautics and Space Administration (NASA), nor Harcourt Butler Technical University (HBTU) endorse, verify, or assume responsibility for the specific analytical methods, interpretations, or conclusions published on this site.
         </p>
       </section>
@@ -156,9 +156,9 @@ SOFTWARE.</pre>
   <footer class="se-footer">
     <div class="se-container">
       <div class="se-footer-inner">
-        <div style="max-width: 320px;">
-          <div style="font-weight: 700; color: #FFFFFF; letter-spacing: 0.1em; margin-bottom: 0.4rem; text-transform: uppercase;">Signal Earth</div>
-          <p style="line-height: 1.6; color: var(--text-inverse-muted); font-size: 0.85rem;">
+        <div class="se-footer-brand-col">
+          <div class="se-footer-brand-title">Signal Earth</div>
+          <p class="se-footer-brand-desc">
             Student research portfolio analyzing archived environmental monitoring data from CPCB, UPPCB, and NASA POWER reanalysis.
           </p>
         </div>
@@ -211,8 +211,8 @@ SOFTWARE.</pre>
       </div>
 
       <div class="se-footer-bottom">
-        <div>Site design and analyses by Avnish Singh, Civil Engineering, HBTU Kanpur. Code under MIT License.</div>
-        <div>Page updated: October 2026. Content strictly reflects public monitoring records.</div>
+        <div>Maintained by: Avnish Singh</div>
+        <div>Page last updated: October 2026</div>
       </div>
     </div>
   </footer>

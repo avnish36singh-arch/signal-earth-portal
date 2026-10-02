@@ -40,10 +40,10 @@
     </nav>
   </header>
 
-  <main id="main" class="se-container-narrow" style="padding-top: 3rem; padding-bottom: 4rem;">
-    <header style="margin-bottom: 2.5rem;">
+  <main id="main" class="se-container-narrow se-container-py">
+    <header class="se-header-mb">
       <span class="section-kicker">Provenance and Repositories</span>
-      <h1 class="editorial-headline" style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 0.75rem;">
+      <h1 class="editorial-headline se-headline-clamp">
         Data and Code
       </h1>
       <p class="se-hero-dek">
@@ -52,10 +52,10 @@
     </header>
 
     <!-- Monitoring Station Registry -->
-    <section style="margin-bottom: 3.5rem;">
+    <section class="se-content-section">
       <span class="section-kicker">01 : Ground Station Registry</span>
-      <h2 class="editorial-headline" style="font-size: 1.5rem; margin-bottom: 0.75rem;">Continuous Air Quality Monitoring Stations</h2>
-      <p style="color: var(--text-secondary); line-height: 1.65; font-size: 0.95rem; margin-bottom: 1rem;">
+      <h2 class="editorial-headline se-content-h2">Continuous Air Quality Monitoring Stations</h2>
+      <p class="se-content-p">
         Continuous Ambient Air Quality Monitoring Stations (CAAQMS) utilized across our investigations operate under the statutory oversight of the Central Pollution Control Board (CPCB) and respective State Pollution Control Boards:
       </p>
 
@@ -78,7 +78,7 @@
               <td>Delhi Pollution Control Committee (DPCC) / CPCB</td>
               <td>28.7972°N, 77.1321°E</td>
               <td>216 m</td>
-              <td>2017 to 2023 (1,825 recorded daily rows; 1,137 official valid days; 732-day gap)</td>
+              <td>2017 to 2023 (1,825 recorded daily rows; 1,137 official valid days; 1,133 valid PM2.5 daily records; 731-day operational hiatus)</td>
             </tr>
             <tr>
               <td><strong>NSI Kalyanpur, Kanpur</strong></td>
@@ -86,7 +86,7 @@
               <td>Uttar Pradesh Pollution Control Board (UPPCB)</td>
               <td>26.5183°N, 80.2458°E</td>
               <td>126 m</td>
-              <td>Jul 2021 to Oct 2022 and Feb 2025 to Aug 2026 (pooled 1,628 station-days with Nehru Nagar)</td>
+              <td>Jul 2021 to Oct 2022 and Feb 2025 to Aug 2026 (n = 815 daily records; pooled 1,628 station-days with Nehru Nagar)</td>
             </tr>
             <tr>
               <td><strong>Nehru Nagar, Kanpur</strong></td>
@@ -94,7 +94,7 @@
               <td>Uttar Pradesh Pollution Control Board (UPPCB)</td>
               <td>26.4712°N, 80.3160°E</td>
               <td>124 m</td>
-              <td>Jul 2021 to Oct 2022 and Feb 2025 to Aug 2026 (pooled 1,628 station-days with Kalyanpur)</td>
+              <td>Sep 2021 to Oct 2022 and Feb 2025 to Aug 2026 (n = 813 daily records; pooled 1,628 station-days with Kalyanpur)</td>
             </tr>
           </tbody>
         </table>
@@ -102,32 +102,32 @@
     </section>
 
     <!-- Model Reanalysis Registry -->
-    <section style="margin-bottom: 3.5rem;">
+    <section class="se-content-section">
       <span class="section-kicker">02 : Reanalysis Data</span>
-      <h2 class="editorial-headline" style="font-size: 1.5rem; margin-bottom: 0.75rem;">NASA POWER / MERRA-2 Reanalysis Parameters</h2>
-      <p style="color: var(--text-secondary); line-height: 1.65; font-size: 0.95rem; margin-bottom: 1rem;">
+      <h2 class="editorial-headline se-content-h2">NASA POWER / MERRA-2 Reanalysis Parameters</h2>
+      <p class="se-content-p">
         Surface temperature and energy balance parameters used in Analysis 03 are retrieved from the NASA POWER API:
       </p>
 
-      <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 1.25rem; margin-bottom: 1.5rem;">
-        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.4rem;">NASA POWER (Prediction of Worldwide Energy Resources)</h3>
-        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 0.75rem;">
+      <div class="se-card-panel">
+        <h3 class="se-card-title">NASA POWER (Prediction of Worldwide Energy Resources)</h3>
+        <p class="se-card-desc">
           Daily reanalysis parameters derived from the MERRA-2 assimilation model on a 0.5° latitude by 0.625° longitude grid cell (~55 by 60 km). Parameters include Earth Skin Temperature (<code>TS</code>), 2-Meter Air Temperature (<code>T2M</code>), Relative Humidity (<code>RH2M</code>), Surface Wind Speed (<code>WS2M</code>), and All-Sky Solar Insolation (<code>ALLSKY_SFC_SW_DWN</code>).
         </p>
-        <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-slate);">
+        <div class="se-card-meta">
           Bounding Point: 26.4499°N, 80.3319°E : Total: 2,556 daily model rows (2017 to 2023)
         </div>
       </div>
     </section>
 
     <!-- Geographic Vector Files -->
-    <section style="margin-bottom: 3.5rem;">
+    <section class="se-content-section">
       <span class="section-kicker">03 : GIS Vector Layers</span>
-      <h2 class="editorial-headline" style="font-size: 1.5rem; margin-bottom: 0.75rem;">Geographic Vector Files</h2>
-      <p style="color: var(--text-secondary); line-height: 1.65; font-size: 0.95rem; margin-bottom: 1rem;">
+      <h2 class="editorial-headline se-content-h2">Geographic Vector Files</h2>
+      <p class="se-content-p">
         The project repository includes GeoJSON files delineating conceptual morphological zones and monitoring station coordinates in EPSG:4326 (WGS 84):
       </p>
-      <ul style="padding-left: 1.25rem; font-size: 0.92rem; line-height: 1.65; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.5rem;">
+      <ul class="se-list-bullet-desc">
         <li>
           <a href="data/kanpur_thermal_zones.geojson" target="_blank" class="se-link">kanpur_thermal_zones.geojson</a> : Outlines of five urban morphological zones in Kanpur (built-up core, industrial belts, academic institutional canopy, and river floodplain), without temperature offsets.
         </li>
@@ -138,33 +138,41 @@
     </section>
 
     <!-- Source Code Repositories -->
-    <section style="margin-bottom: 3.5rem;">
+    <section class="se-content-section">
       <span class="section-kicker">04 : Open Source Code</span>
-      <h2 class="editorial-headline" style="font-size: 1.5rem; margin-bottom: 0.75rem;">Code Repositories (MIT License)</h2>
-      <p style="color: var(--text-secondary); line-height: 1.65; font-size: 0.95rem; margin-bottom: 1rem;">
+      <h2 class="editorial-headline se-content-h2">Code Repositories (MIT License)</h2>
+      <p class="se-content-p">
         All code written for this portfolio is licensed under the open-source MIT License. Readers and researchers may inspect every line of computation and audit processing routines on GitHub:
       </p>
 
-      <div style="display: flex; flex-direction: column; gap: 1rem;">
-        <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 1.25rem;">
-          <h3 style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.35rem;">Delhi Analysis Pipeline</h3>
-          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+      <div class="se-card-stack">
+        <div class="se-card-panel">
+          <h3 class="se-card-title">Delhi Analysis Pipeline</h3>
+          <p class="se-card-desc">
             Python pipeline parsing CPCB Alipur station records, computing regulatory sub-indices, feature engineering, and evaluating 1-day-ahead Random Forest models.
           </p>
           <a href="https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb" target="_blank" rel="noopener noreferrer" class="se-link">github.com/avnish36singh-arch/delhi-air_qaulity_cpcb</a>
         </div>
 
-        <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 1.25rem;">
-          <h3 style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.35rem;">Kanpur Air Quality and Reanalysis Pipeline</h3>
-          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+        <div class="se-card-panel">
+          <h3 class="se-card-title">Kanpur Air Quality and Reanalysis Pipeline</h3>
+          <p class="se-card-desc">
             OpenAQ data retrieval for Kalyanpur and Nehru Nagar, NASA POWER API data fetching, and overlap correlation scripts.
           </p>
           <a href="https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur" target="_blank" rel="noopener noreferrer" class="se-link">github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur</a>
         </div>
 
-        <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 1.25rem;">
-          <h3 style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.35rem;">Signal Earth Portal Web Repository</h3>
-          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+        <div class="se-card-panel">
+          <h3 class="se-card-title">Kanpur LST Thermal GIS Analysis</h3>
+          <p class="se-card-desc">
+            GIS vector processing, thermal morphological zoning, Landsat surface temperature methodology scripts, and MERRA-2 skin temperature correlation notebooks.
+          </p>
+          <a href="https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS" target="_blank" rel="noopener noreferrer" class="se-link">github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS</a>
+        </div>
+
+        <div class="se-card-panel">
+          <h3 class="se-card-title">Signal Earth Portal Web Repository</h3>
+          <p class="se-card-desc">
             Static HTML, CSS, JavaScript, and data feeds for this web portfolio.
           </p>
           <a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer" class="se-link">github.com/avnish36singh-arch/signal-earth-portal</a>
@@ -175,8 +183,8 @@
     <!-- Data Terms and Citations -->
     <section>
       <span class="section-kicker">05 : Statutory and Scientific Citations</span>
-      <h2 class="editorial-headline" style="font-size: 1.5rem; margin-bottom: 0.75rem;">References and Terms</h2>
-      <ol style="padding-left: 1.25rem; font-size: 0.9rem; line-height: 1.65; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.75rem;">
+      <h2 class="editorial-headline se-content-h2">References and Terms</h2>
+      <ol class="se-list-bullet-numbered">
         <li>
           <strong>Central Pollution Control Board (2014):</strong> <em>National Air Quality Index (NAQI)</em>. Ministry of Environment, Forest and Climate Change (MoEFCC), Government of India, New Delhi. Document detailing sub-index piecewise interpolation and validity rules.
         </li>
@@ -184,7 +192,7 @@
           <strong>Central Pollution Control Board (2009):</strong> <em>National Ambient Air Quality Standards (NAAQS)</em>. The Gazette of India, Extraordinary, Part III, Section 4. Standard 24-hour limits: PM2.5 (60 µg/m³) and PM10 (100 µg/m³).
         </li>
         <li>
-          <strong>OpenAQ Community (2024):</strong> <em>OpenAQ Global Air Quality Data Platform</em>. Available at <a href="https://openaq.org" target="_blank" rel="noopener noreferrer" class="se-link">openaq.org</a>. Ingested under Creative Commons Attribution 4.0 International (CC BY 4.0).
+          <strong>OpenAQ Community (2024):</strong> <em>OpenAQ Global Air Quality Data Platform</em>. Available at <a href="https://openaq.org" target="_blank" rel="noopener noreferrer" class="se-link">openaq.org</a>. Data aggregated via OpenAQ is subject to origin data provider terms (e.g. CPCB/UPPCB statutory open terms), while OpenAQ platform metadata and programmatic API access are shared under CC BY 4.0.
         </li>
         <li>
           <strong>NASA POWER Project:</strong> Prediction of Worldwide Energy Resources, NASA Langley Research Center. MERRA-2 assimilation model parameters accessible under NASA Open Data Policy.
@@ -200,9 +208,9 @@
   <footer class="se-footer">
     <div class="se-container">
       <div class="se-footer-inner">
-        <div style="max-width: 320px;">
-          <div style="font-weight: 700; color: #FFFFFF; letter-spacing: 0.1em; margin-bottom: 0.4rem; text-transform: uppercase;">Signal Earth</div>
-          <p style="line-height: 1.6; color: var(--text-inverse-muted); font-size: 0.85rem;">
+        <div class="se-footer-brand-col">
+          <div class="se-footer-brand-title">Signal Earth</div>
+          <p class="se-footer-brand-desc">
             Student research portfolio analyzing archived environmental monitoring data from CPCB, UPPCB, and NASA POWER reanalysis.
           </p>
         </div>
@@ -255,8 +263,8 @@
       </div>
 
       <div class="se-footer-bottom">
-        <div>Site design and analyses by Avnish Singh, Civil Engineering, HBTU Kanpur. Code under MIT License.</div>
-        <div>Page updated: October 2026. Content strictly reflects public monitoring records.</div>
+        <div>Maintained by: Avnish Singh</div>
+        <div>Page last updated: October 2026</div>
       </div>
     </div>
   </footer>

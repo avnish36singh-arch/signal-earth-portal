@@ -43,25 +43,25 @@
 
   <main id="main">
     <!-- Hero Block with Figure Header -->
-    <div style="background: var(--bg-alt); border-bottom: 1px solid var(--border-color); padding: 2.5rem 0;">
+    <div class="se-investigation-hero">
       <div class="se-container-narrow">
         <span class="section-kicker">Analysis 01 : Ground Air Quality</span>
-        <h1 class="editorial-headline" style="font-size: clamp(1.85rem, 3.5vw, 2.6rem); margin-bottom: 0.75rem;">
+        <h1 class="editorial-headline se-investigation-title">
           Particulate Dynamics and Seasonal Multipliers in Kanpur
         </h1>
 
-        <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 1.25rem; margin-bottom: 1.25rem;">
+        <div class="se-investigation-meta">
           <span>By <strong>Avnish Singh</strong>, Undergraduate in Civil Engineering, HBTU Kanpur</span>
           <span>Last updated: October 2026</span>
           <span>Reading time: 8 min read</span>
         </div>
 
         <!-- 3-Sentence Summary -->
-        <div style="background: var(--bg-surface); border-left: 3px solid var(--accent); padding: 1rem 1.25rem; font-size: 0.95rem; line-height: 1.65; color: var(--text-primary); margin-bottom: 1.5rem;">
-          This investigation analyzes ambient particulate records (PM2.5 and PM10) from two monitoring stations in Kanpur across two discrete observation windows between July 2021 and August 2026. November PM2.5 concentrations reached approximately five times the monsoon baseline, driven by shallow nocturnal boundary layer conditions and post-harvest regional emissions. An unmonitored operational gap of approximately 2.3 years separates the two reporting periods, meaning findings evaluate specific seasonal windows rather than an unbroken multi-year sequence.
+        <div class="se-summary-box">
+          This investigation analyzes ambient particulate records (PM2.5 and PM10) from two monitoring stations in Kanpur across two discrete observation windows between July 2021 and August 2026 (NSI Kalyanpur n = 815, Nehru Nagar n = 813; pooled = 1,628 station-days). Window 1 (2021 to 2022) exhibited a 4.99-fold winter-to-monsoon multiplier (Nov/Aug ratio 6.19x), while Window 2 (2025 to 2026) showed a 2.76-fold multiplier (Nov/Aug ratio 4.00x), averaging 3.25x across pooled months (4.76x peak ratio). An unmonitored operational gap of approximately 2.3 years separates the two reporting periods, meaning findings evaluate specific seasonal windows rather than an unbroken multi-year sequence.
         </div>
 
-        <div class="se-card-img-wrap" style="border: 1px solid var(--border-color);">
+        <div class="se-card-img-wrap se-img-bordered">
           <img src="../assets/kanpur/01_timeseries.png" alt="Timeseries of daily mean PM2.5 and PM10 across NSI Kalyanpur and Nehru Nagar in Kanpur showing the 2022 to 2025 monitoring hiatus" width="900" height="450" fetchpriority="high">
         </div>
         <div class="se-image-credit">
@@ -71,45 +71,45 @@
     </div>
 
     <!-- Main Content Body -->
-    <div class="se-container-narrow" style="padding-top: 3rem; padding-bottom: 4rem;">
+    <div class="se-container-narrow se-page-content">
 
       <!-- Data Coverage and Limitation Notice -->
-      <section style="background: #FFFBEB; border: 1px solid #FDE68A; padding: 1.25rem; border-radius: var(--radius-sm); margin-bottom: 2.5rem;">
-        <h2 style="font-size: 0.95rem; font-weight: 700; color: #92400E; margin-bottom: 0.4rem; text-transform: uppercase; font-family: var(--font-mono);">Data Coverage and Gap Notice</h2>
-        <p style="font-size: 0.88rem; color: #78350F; line-height: 1.6; margin: 0;">
-          Both Kanpur stations exhibit an unmonitored historical reporting gap from roughly <strong>November 2022 to February 2025 (approximately 2.3 years)</strong>, reflecting an absence of reported data in the public repository during that interval. The records are analyzed in two discrete observation windows: Window 1 (July 2021 to October 2022, about one winter) and Window 2 (February 2025 to August 2026). In monthly charts, records across both windows are pooled by calendar month. Wind sensor availability was interrupted for portions of the monitored timeframe. No synthetic interpolation was used across the multi-year hiatus.
+      <section class="se-alert-warning">
+        <h2 class="se-alert-warning-title">Data Coverage and Gap Notice</h2>
+        <p class="se-alert-warning-text">
+          Both Kanpur stations exhibit an unmonitored historical reporting gap from roughly <strong>November 2022 to February 2025 (approximately 2.3 years)</strong>, reflecting an absence of reported data in the public repository during that interval. The records are analyzed in two discrete observation windows: Window 1 (July 2021 to October 2022) and Window 2 (February 2025 to August 2026). In total, observations encompass 1,628 station-days: NSI Kalyanpur (Site 229252) has <strong>n = 815 station-days</strong>, and Nehru Nagar (Site 5662) has <strong>n = 813 station-days</strong>. In monthly charts, records across both windows are pooled by calendar month. Wind sensor availability was interrupted for portions of the monitored timeframe. No synthetic interpolation was used across the multi-year hiatus.
         </p>
       </section>
 
       <!-- Section 1 -->
-      <section style="margin-bottom: 3rem;">
+      <section class="se-investigation-section">
         <span class="section-kicker">01 : Timeseries Analysis</span>
-        <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Multi-Year Timeseries and the Reporting Gap</h2>
-        <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
-          Particulate records from NSI Kalyanpur (Site 229252) and Nehru Nagar (Site 5662) show recurring winter peaks, with PM2.5 frequently exceeding the National Ambient Air Quality Standard (NAAQS) 24-hour permissible limit of 60 µg/m³. The monitoring sequence contains an operational gap of 2.3 years between late 2022 and early 2025, during which public archives contain no observations.
+        <h2 class="editorial-headline se-section-heading">Multi-Year Timeseries and the Reporting Gap</h2>
+        <p class="se-section-intro">
+          Particulate records from NSI Kalyanpur (Site 229252, n = 815) and Nehru Nagar (Site 5662, n = 813) show recurring winter peaks, with PM2.5 frequently exceeding the National Ambient Air Quality Standard (NAAQS) 24-hour permissible limit of 60 µg/m³. The monitoring sequence contains an operational gap of 2.3 years between late 2022 and early 2025, during which public archives contain no observations.
         </p>
 
         <div class="se-figure">
           <div class="se-figure-header">
             <div class="se-figure-title">Figure 1: Daily Mean PM2.5 and PM10 Timeseries across Kanpur Stations</div>
-            <div class="se-figure-meta">Data Source: CPCB / UPPCB via OpenAQ v3 | Period: Jul 2021 to Aug 2026 | n = 1,628 station-days | Units: µg/m³</div>
+            <div class="se-figure-meta">Data Source: CPCB / UPPCB via OpenAQ v3 | Period: Jul 2021 to Aug 2026 | n = 1,628 station-days (Kalyanpur 815, Nehru Nagar 813) | Units: µg/m³</div>
           </div>
           <img src="../assets/kanpur/01_timeseries.png" alt="Timeseries of Kanpur daily PM2.5 and PM10 concentrations from July 2021 to August 2026 showing the gap between late 2022 and early 2025" class="se-figure-img" width="900" height="450" loading="lazy">
           <div class="se-figure-caption">
             <strong>Caption:</strong> Daily average concentrations of PM2.5 and PM10 across NSI Kalyanpur and Nehru Nagar, explicitly showing the 2022 to 2025 reporting hiatus. This figure does not show observations during the unmonitored interval.
           </div>
-          <div class="se-image-credit" style="padding: 0.4rem 1.25rem 0.6rem 1.25rem; background: var(--bg-surface);">
+          <div class="se-image-credit se-figure-credit-surface">
             Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026. <a href="../credits.html">Credits entry</a>.
           </div>
         </div>
       </section>
 
       <!-- Section 2 -->
-      <section style="margin-bottom: 3rem;">
+      <section class="se-investigation-section">
         <span class="section-kicker">02 : Seasonal Cycle</span>
-        <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Monthly Seasonality: The Autumn Surge</h2>
-        <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
-          Particulate concentrations follow a distinct seasonal cycle. The lowest monthly averages occur during the monsoon month of August, when precipitation washout and active vertical mixing keep monthly average PM2.5 between 16.4 µg/m³ and 22.1 µg/m³. In contrast, November PM2.5 averages climb to 90.2 to 94.8 µg/m³, representing approximately a five-fold multiplication over the monsoon baseline at both stations independently.
+        <h2 class="editorial-headline se-section-heading">Monthly Seasonality: The Autumn Surge</h2>
+        <p class="se-section-intro">
+          Particulate concentrations follow a distinct seasonal cycle. The lowest monthly averages occur during the monsoon month of August, when precipitation washout and active vertical mixing keep monthly average PM2.5 between 16.4 µg/m³ and 22.1 µg/m³. In contrast, November PM2.5 averages climb to 90.2 to 94.8 µg/m³. Evaluating both observation windows individually: Window 1 (2021 to 2022) displays a 4.99x winter-to-monsoon multiplier (Nov/Aug ratio 6.19x), whereas Window 2 (2025 to 2026) displays a 2.76x multiplier (Nov/Aug ratio 4.00x). In pooled monthly aggregations, the winter-to-monsoon mean ratio is 3.25x (with a peak November-to-August ratio of 4.76x).
         </p>
 
         <div class="se-figure">
@@ -121,17 +121,17 @@
           <div class="se-figure-caption">
             <strong>Caption:</strong> Pooled calendar-month means showing the autumn surge across both monitoring sites. This figure pools data across discrete windows and does not represent an unbroken multi-year sequence.
           </div>
-          <div class="se-image-credit" style="padding: 0.4rem 1.25rem 0.6rem 1.25rem; background: var(--bg-surface);">
+          <div class="se-image-credit se-figure-credit-surface">
             Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026. <a href="../credits.html">Credits entry</a>.
           </div>
         </div>
       </section>
 
       <!-- Section 3 -->
-      <section style="margin-bottom: 3rem;">
+      <section class="se-investigation-section">
         <span class="section-kicker">03 : Statutory AQI Categories</span>
-        <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Air Quality Index Category Breakdown</h2>
-        <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
+        <h2 class="editorial-headline se-section-heading">Air Quality Index Category Breakdown</h2>
+        <p class="se-section-intro">
           Evaluating records under the CPCB National Air Quality Index framework, approximately 6% of valid monitored station days crossed into the Poor (AQI 201 to 300) or Very Poor (AQI 301 to 400) categories. Moderate and satisfactory days appear during monsoon and pre-monsoon periods, but diminish in November and December.
         </p>
 
@@ -144,18 +144,18 @@
           <div class="se-figure-caption">
             <strong>Caption:</strong> Proportion of monitored station-days falling into each CPCB NAQI category. This figure evaluates historical station records and does not provide real-time air quality advice.
           </div>
-          <div class="se-image-credit" style="padding: 0.4rem 1.25rem 0.6rem 1.25rem; background: var(--bg-surface);">
+          <div class="se-image-credit se-figure-credit-surface">
             Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026. <a href="../credits.html">Credits entry</a>.
           </div>
         </div>
       </section>
 
       <!-- Section 4 -->
-      <section style="margin-bottom: 3rem;">
+      <section class="se-investigation-section">
         <span class="section-kicker">04 : Diurnal Cycles</span>
-        <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Diurnal Cycles and the Traffic Signature</h2>
-        <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
-          Hourly particulate concentrations exhibit two daily peaks: a morning rush-hour peak between 08:00 and 09:00 IST and an evening peak between 20:00 and 22:00 IST. The evening peak is amplified by nocturnal surface cooling, which restricts vertical dilution and traps vehicular emissions near the surface.
+        <h2 class="editorial-headline se-section-heading">Diurnal Cycles and the Traffic Signature</h2>
+        <p class="se-section-intro">
+          Hourly particulate concentrations reveal two distinct diurnal peaks based on station monitoring data: a morning peak between 07:00 and 09:00 IST (~52 µg/m³ PM2.5) coinciding with morning commercial activity, and an extended evening peak between 20:00 and 23:00 IST reaching 63.1 µg/m³ at Nehru Nagar and 54.3 µg/m³ at Kalyanpur. In contrast, concentrations drop to a convective minimum during the afternoon between 14:00 and 16:00 IST (28.4 to 31.6 µg/m³). The nocturnal peak is amplified by ground radiative cooling, which restricts vertical ventilation and compresses emissions near the surface.
         </p>
 
         <div class="se-figure">
@@ -165,19 +165,19 @@
           </div>
           <img src="../assets/kanpur/04_diurnal.png" alt="24-hour diurnal profile of PM2.5 and PM10 in Kanpur showing morning and evening traffic peaks" class="se-figure-img" width="900" height="450" loading="lazy">
           <div class="se-figure-caption">
-            <strong>Caption:</strong> Mean hourly concentrations illustrating morning and evening peaks. This figure reflects aggregate hourly averages and does not isolate individual vehicle fleet contributions.
+            <strong>Caption:</strong> Mean hourly concentrations illustrating morning (07:00 to 09:00 IST) and evening (20:00 to 23:00 IST) peaks. This figure reflects aggregate hourly averages and does not isolate individual vehicle fleet contributions.
           </div>
-          <div class="se-image-credit" style="padding: 0.4rem 1.25rem 0.6rem 1.25rem; background: var(--bg-surface);">
+          <div class="se-image-credit se-figure-credit-surface">
             Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026. <a href="../credits.html">Credits entry</a>.
           </div>
         </div>
       </section>
 
       <!-- Section 5 -->
-      <section style="margin-bottom: 3rem;">
+      <section class="se-investigation-section">
         <span class="section-kicker">05 : Correlation Matrix</span>
-        <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Pollutant and Weather Correlation Structure</h2>
-        <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
+        <h2 class="editorial-headline se-section-heading">Pollutant and Weather Correlation Structure</h2>
+        <p class="se-section-intro">
           A correlation matrix of monitored parameters indicates a strong positive association between PM2.5 and PM10 (Pearson r = 0.82 to 0.88), indicating co-emission or shared meteorological trapping mechanisms. Inverse correlations with ambient temperature and wind speed reflect the dispersing effect of daytime convective ventilation.
         </p>
 
@@ -190,17 +190,17 @@
           <div class="se-figure-caption">
             <strong>Caption:</strong> Heatmap of Pearson correlation coefficients. Correlation indicates statistical co-variation and does not prove direct chemical causation.
           </div>
-          <div class="se-image-credit" style="padding: 0.4rem 1.25rem 0.6rem 1.25rem; background: var(--bg-surface);">
+          <div class="se-image-credit se-figure-credit-surface">
             Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026. <a href="../credits.html">Credits entry</a>.
           </div>
         </div>
       </section>
 
       <!-- Section 6 -->
-      <section style="margin-bottom: 3rem;">
+      <section class="se-investigation-section">
         <span class="section-kicker">06 : Meteorological Regimes</span>
-        <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Bivariate Scatter Regressions: Weather Regimes</h2>
-        <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
+        <h2 class="editorial-headline se-section-heading">Bivariate Scatter Regressions: Weather Regimes</h2>
+        <p class="se-section-intro">
           Plotting particulate concentrations against concurrent temperature and wind speed confirms that elevated particulate episodes cluster at low wind speeds (calm conditions below 1.5 m/s) and during cooler seasonal intervals, where boundary-layer ventilation is suppressed.
         </p>
 
@@ -213,17 +213,17 @@
           <div class="se-figure-caption">
             <strong>Caption:</strong> Bivariate scatter plots showing inverse associations with temperature and wind speed. This figure does not model non-linear chemical secondary aerosol formation.
           </div>
-          <div class="se-image-credit" style="padding: 0.4rem 1.25rem 0.6rem 1.25rem; background: var(--bg-surface);">
+          <div class="se-image-credit se-figure-credit-surface">
             Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026. <a href="../credits.html">Credits entry</a>.
           </div>
         </div>
       </section>
 
       <!-- Section 7 -->
-      <section style="margin-bottom: 3.5rem;">
+      <section class="se-investigation-section-last">
         <span class="section-kicker">07 : Directional Transport</span>
-        <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Directional Wind Rose and Upwind Sectors</h2>
-        <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
+        <h2 class="editorial-headline se-section-heading">Directional Wind Rose and Upwind Sectors</h2>
+        <p class="se-section-intro">
           Polar wind rose analysis partitions particulate concentrations across 16 cardinal wind directions during monitored days with valid wind sensors. Northwesterly and westerly winds, characteristic of post-monsoon synoptic flows across the Indo-Gangetic corridor, show elevated mean particulate loadings compared to southeasterly flows.
         </p>
 
@@ -236,7 +236,7 @@
           <div class="se-figure-caption">
             <strong>Caption:</strong> Mean particulate concentrations across 16 cardinal directions. This figure indicates directional transport correlation and does not constitute a chemical mass receptor model (PMF).
           </div>
-          <div class="se-image-credit" style="padding: 0.4rem 1.25rem 0.6rem 1.25rem; background: var(--bg-surface);">
+          <div class="se-image-credit se-figure-credit-surface">
             Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026. <a href="../credits.html">Credits entry</a>.
           </div>
         </div>
@@ -245,49 +245,49 @@
       <!-- Required Editorial End Sections (NASA / Nat Geo Standard) -->
 
       <!-- 1. What this cannot show -->
-      <section style="background: var(--bg-alt); border: 1px solid var(--border-color); padding: 1.5rem; margin-bottom: 2rem;">
+      <section class="se-panel-alt">
         <span class="section-kicker">Analytical Boundaries</span>
-        <h2 class="editorial-headline" style="font-size: 1.25rem; margin-bottom: 0.5rem;">What This Cannot Show</h2>
-        <ul style="padding-left: 1.25rem; font-size: 0.9rem; line-height: 1.65; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.5rem;">
-          <li>This analysis evaluates two fixed monitoring locations (Kalyanpur and Nehru Nagar) and cannot establish uniform exposure across all Kanpur neighborhoods.</li>
+        <h2 class="editorial-headline se-panel-heading">What This Cannot Show</h2>
+        <ul class="se-list-spaced">
+          <li>This analysis evaluates two fixed monitoring locations (Kalyanpur, n = 815 station-days; Nehru Nagar, n = 813 station-days) and cannot establish uniform exposure across all Kanpur neighborhoods.</li>
           <li>It cannot provide continuous multi-year trends due to the 2.3-year unmonitored hiatus between November 2022 and February 2025.</li>
           <li>Ratio diagnostics and wind roses indicate directional correlations, but cannot quantify the exact percentage contribution of specific local versus regional emission sources without chemical speciated filter analysis.</li>
         </ul>
       </section>
 
       <!-- 2. Data and code -->
-      <section style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 1.5rem; margin-bottom: 2rem;">
+      <section class="se-panel-box">
         <span class="section-kicker">Reproducibility</span>
-        <h2 class="editorial-headline" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Data and Code</h2>
-        <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
+        <h2 class="editorial-headline se-panel-heading">Data and Code</h2>
+        <p class="se-lead-paragraph">
           All raw data ingestion routines, gap-handling scripts, and Matplotlib plotting routines are open source under the MIT License:
         </p>
-        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <div class="se-btn-group">
           <a href="https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur" target="_blank" rel="noopener noreferrer" class="se-btn">View repository on GitHub</a>
           <a href="../data.html" class="se-btn se-btn-outline">Station registry and records</a>
         </div>
       </section>
 
       <!-- 3. Cite this page -->
-      <section style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 1.5rem; margin-bottom: 2rem;">
+      <section class="se-panel-box">
         <span class="section-kicker">Citation</span>
-        <h2 class="editorial-headline" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Cite This Page</h2>
-        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+        <h2 class="editorial-headline se-panel-heading">Cite This Page</h2>
+        <p class="se-lead-paragraph-sm">
           Recommended academic citation format:
         </p>
-        <blockquote style="margin: 0; padding: 0.75rem 1rem; border-left: 3px solid var(--accent); background: var(--bg-alt); font-size: 0.85rem; font-family: var(--font-mono); font-style: normal; color: var(--text-primary); line-height: 1.5;">
+        <blockquote class="se-quote-citation">
           Singh, A. (2026). Particulate Dynamics and Seasonal Multipliers in Kanpur. Signal Earth: Public Environmental Data Investigations. https://avnish36singh-arch.github.io/signal-earth-portal/investigations/kanpur.html
         </blockquote>
       </section>
 
       <!-- 4. Report a problem -->
-      <section style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 1.5rem;">
+      <section class="se-panel-box-last">
         <span class="section-kicker">Feedback and Corrections</span>
-        <h2 class="editorial-headline" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Report a Problem</h2>
-        <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
+        <h2 class="editorial-headline se-panel-heading">Report a Problem</h2>
+        <p class="se-lead-paragraph">
           If you detect a calculation error, a data provenance discrepancy, or an unsupported claim, please open an issue in the public repository or consult the corrections log:
         </p>
-        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <div class="se-btn-group">
           <a href="https://github.com/avnish36singh-arch/signal-earth-portal/issues" target="_blank" rel="noopener noreferrer" class="se-link">Open GitHub issue</a>
           <a href="../corrections.html" class="se-link se-link-secondary">View Corrections Log</a>
         </div>
@@ -300,9 +300,9 @@
   <footer class="se-footer">
     <div class="se-container">
       <div class="se-footer-inner">
-        <div style="max-width: 320px;">
-          <div style="font-weight: 700; color: #FFFFFF; letter-spacing: 0.1em; margin-bottom: 0.4rem; text-transform: uppercase;">Signal Earth</div>
-          <p style="line-height: 1.6; color: var(--text-inverse-muted); font-size: 0.85rem;">
+        <div class="se-footer-brand-col">
+          <div class="se-footer-brand-title">Signal Earth</div>
+          <p class="se-footer-brand-desc">
             Student research portfolio analyzing archived environmental monitoring data from CPCB, UPPCB, and NASA POWER reanalysis.
           </p>
         </div>
@@ -355,8 +355,8 @@
       </div>
 
       <div class="se-footer-bottom">
-        <div>Site design and analyses by Avnish Singh, Civil Engineering, HBTU Kanpur. Code under MIT License.</div>
-        <div>Page updated: October 2026. Content strictly reflects public monitoring records.</div>
+        <div>Maintained by: Avnish Singh</div>
+        <div>Page last updated: October 2026</div>
       </div>
     </div>
   </footer>

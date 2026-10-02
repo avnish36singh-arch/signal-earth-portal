@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How CPCB Computes the AQI | Explained | Signal Earth</title>
+  <meta name="description" content="Detailed explanation of Central Pollution Control Board (CPCB) NAQI mathematical formulas, sub-index piecewise interpolation, and quorum rules.">
+  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/explained/cpcb-naqi.html">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta property="og:title" content="How CPCB Computes the AQI | Signal Earth Explained">
+  <meta property="og:description" content="The piecewise linear formulas, sub-indices, and quorum requirements of India's National Air Quality Index.">
+  <meta property="og:url" content="https://avnish36singh-arch.github.io/signal-earth-portal/explained/cpcb-naqi.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://avnish36singh-arch.github.io/signal-earth-portal/assets/delhi/04_dominant_pollutants.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header>
+    <nav class="se-nav" aria-label="Main Navigation">
+      <div class="se-nav-inner">
+        <a href="../index.html" class="se-brand">
+          <span class="se-brand-name">Signal Earth</span>
+          <span class="se-brand-sub">Environmental Data Portfolio</span>
+        </a>
+
+        <ul class="se-nav-links">
+          <li><a href="../index.html#analyses">Analyses</a></li>
+          <li><a href="../index.html#explained" class="active">Explained</a></li>
+          <li><a href="../methodology.html">Methodology</a></li>
+          <li><a href="../data.html">Data and code</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="se-container-narrow se-page-content">
+    <header class="se-article-header">
+      <span class="section-kicker">Explained : Regulatory Science</span>
+      <h1 class="editorial-headline se-article-title">
+        How CPCB Computes the AQI, and Why One Pollutant Governs the Day
+      </h1>
+      <p class="se-hero-dek">
+        Piecewise linear equations, pollutant dominance, and completeness standards behind India's National Air Quality Index.
+      </p>
+    </header>
+
+    <div class="se-prose">
+      <!-- TODO[ME] author rewrite -->
+      <p>
+        Weather apps frequently present the Air Quality Index as if it were a general average of local pollution. In India, it is nothing of the kind. Established by the Central Pollution Control Board in October 2014, the National Air Quality Index (NAQI) uses piecewise linear formulas to convert raw concentrations of up to eight criteria pollutants into normalized sub-indices between 0 and 500.
+      </p>
+
+      <p>
+        The final daily score is not an average. It is simply the single highest sub-index recorded among all measured pollutants. Whichever pollutant produces that worst number becomes the dominant pollutant, and its value becomes the official headline AQI for the station. Across the Indo-Gangetic Plain, that dominant pollutant is almost always fine particulate matter (PM2.5). In our analysis of 1,137 official monitoring days at Delhi Alipur, PM2.5 dictated the final AQI on 1,005 days (88.4 percent of all valid records). The other seven criteria pollutants rarely determine the headline score in winter.
+      </p>
+
+      <p>
+        Furthermore, CPCB enforces a strict completeness rule: an official statutory AQI requires valid readings for at least three criteria pollutants, one of which must be particulate matter (either PM2.5 or PM10), with each pollutant having at least 16 hourly samples in the 24-hour cycle. If a station loses PM2.5 readings for nine hours during an instrument failure or power outage, no official AQI can be published for that day, regardless of what the gaseous sensors recorded.
+      </p>
+
+      <div class="se-figure">
+        <div class="se-figure-header">
+          <div class="se-figure-title">Figure 1: Dominant Criteria Pollutants Across 1,137 Official Days at Delhi Alipur</div>
+          <div class="se-figure-meta">Data Source: CPCB / DPCC Site 204 | Period: 2017 to 2023 | Valid Quorum: n = 1,137 days</div>
+        </div>
+        <img src="../assets/delhi/04_dominant_pollutants.png" alt="Bar chart showing PM2.5 as the dominant pollutant on 88.4 percent of official monitoring days at Delhi Alipur" class="se-figure-img" width="900" height="450" loading="lazy">
+        <div class="se-figure-caption">
+          <strong>Caption:</strong> Frequency of dominant criteria pollutants at Alipur. PM2.5 was the dominant sub-index on 1,005 days (88.4%), coarse particulate PM10 on 127 days (11.2%), and NO2 on 5 days (0.4%).
+        </div>
+        <div class="se-image-credit">
+          Image: Avnish Singh, using CPCB / DPCC records, October 2026. <a href="../credits.html">Credits entry</a>.
+        </div>
+      </div>
+
+      <div class="se-note-box">
+        <h4 class="se-note-title">Mathematical Formula for Sub-Index Calculation</h4>
+        <p class="se-note-text">
+          For each criteria pollutant <em>p</em> with 24-hour average concentration <em>C<sub>p</sub></em>, the sub-index <em>I<sub>p</sub></em> is calculated within its breakpoint interval [<em>B<sub>LO</sub></em>, <em>B<sub>HI</sub></em>] by the piecewise equation:
+        </p>
+        <div class="se-code-callout">
+          I_p = [ (I_HI - I_LO) / (B_HI - B_LO) ] * (C_p - B_LO) + I_LO
+        </div>
+        <p class="se-note-text">
+          The headline NAQI is then given strictly by: <strong>NAQI = max(I_1, I_2, ..., I_k)</strong>, provided at least 3 pollutants are present with at least one PM parameter.
+        </p>
+      </div>
+
+      <div class="se-related-links">
+        <h4 class="se-related-title">Related Investigations and Methodology</h4>
+        <ul>
+          <li><a href="../investigations/delhi.html" class="se-link">Investigation 02: Delhi Five-Year NAQI Analysis</a></li>
+          <li><a href="../methodology.html#naqi-formula" class="se-link">Methodology: CPCB Breakpoint Tables and Complete Quorum Algorithm</a></li>
+          <li><a href="temperature-inversion.html" class="se-link">Explained: What a Temperature Inversion Is</a></li>
+          <li><a href="weather-reanalysis.html" class="se-link">Explained: What Weather Reanalysis Is and What Coarse Grid Cells Cannot See</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="se-footer">
+    <div class="se-container">
+      <div class="se-footer-inner">
+        <div class="se-footer-brand-col">
+          <div class="se-footer-brand-title">Signal Earth</div>
+          <p class="se-footer-brand-desc">
+            Student research portfolio analyzing archived environmental monitoring data from CPCB, UPPCB, and NASA POWER reanalysis.
+          </p>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Analyses</h5>
+          <ul>
+            <li><a href="../investigations/kanpur.html">Kanpur Particulate Dynamics</a></li>
+            <li><a href="../investigations/delhi.html">Delhi NAQI Analysis</a></li>
+            <li><a href="../investigations/kanpur-lst.html">Kanpur Reanalysis Temperature</a></li>
+            <li><a href="../investigations/comparison.html">Regional Airshed Comparison</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Method and Data</h5>
+          <ul>
+            <li><a href="../index.html#explained">Explained Pieces</a></li>
+            <li><a href="../methodology.html">Methodology and Limits</a></li>
+            <li><a href="../data.html">Data and Code</a></li>
+            <li><a href="../about.html">About Signal Earth</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms of Use</a></li>
+            <li><a href="../licenses.html">Licenses and Terms</a></li>
+            <li><a href="../credits.html">Image Credits</a></li>
+            <li><a href="../corrections.html">Corrections Log</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/company/signalearth/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="../contact.html">Contact Information</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="se-footer-disclaimer">
+        Signal Earth is an independent student project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, National Geographic or any agency named on this site.
+      </div>
+
+      <div class="se-footer-bottom">
+        <div>Maintained by: Avnish Singh</div>
+        <div>Page last updated: October 2026</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

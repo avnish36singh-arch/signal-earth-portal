@@ -48,14 +48,14 @@
       <div class="se-hero-overlay">
         <div class="se-container">
           <div class="se-hero-content">
-            <span class="section-kicker" style="color: #5EEAD4;">Independent Research Portfolio</span>
+            <span class="section-kicker se-hero-kicker">Independent Research Portfolio</span>
             <h1>Air quality and surface temperature in Kanpur and Delhi</h1>
             <p>
               The Earth is changing faster than most people realize, but every shift leaves a physical record. Signal Earth is an independent student portfolio examining public air-quality measurements and atmospheric datasets across northern India. Here, raw station archives and satellite observations are published with reproducible Python code, explicit data gaps, and no synthetic numbers.
             </p>
             <div class="se-hero-actions">
               <a href="#analyses" class="se-btn se-btn-white">Read the analyses</a>
-              <a href="#explained" class="se-btn se-btn-outline" style="color: #FFFFFF; border-color: rgba(255,255,255,0.4);">Explained pieces</a>
+              <a href="#explained" class="se-btn se-btn-outline se-btn-hero-outline">Explained pieces</a>
             </div>
             <div class="se-hero-quicklinks">
               <span>Quick links:</span>
@@ -69,7 +69,7 @@
     </section>
 
     <!-- Credit line under hero image -->
-    <div class="se-container" style="padding-top: 0.5rem; padding-bottom: 1.5rem;">
+    <div class="se-container se-container-py-sm">
       <div class="se-image-credit">
         Image: NASA Worldview / GIBS, Terra MODIS, November 5, 2021. <a href="https://worldview.earthdata.nasa.gov/?v=73,24,85,32&t=2021-11-05" target="_blank" rel="noopener noreferrer">Source scene on NASA Worldview</a>. Recorded in <a href="credits.html">credits.json</a>.
       </div>
@@ -105,10 +105,10 @@
               <span><strong>Caveat:</strong> 2.3-year gap between monitoring windows; results reflect station locations, not continuous citywide coverage</span>
               <span><strong>Reading Time:</strong> 8 min read (computed from 1,740 words)</span>
             </div>
-            <div style="margin-top: 1.25rem;">
+            <div class="se-mt-md">
               <a href="investigations/kanpur.html" class="se-btn">Read full analysis</a>
             </div>
-            <div class="se-image-credit" style="margin-top: 0.75rem;">
+            <div class="se-image-credit se-image-credit-mt">
               Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026. <a href="credits.html">Credits entry</a>.
             </div>
           </div>
@@ -132,13 +132,13 @@
               <div class="se-card-meta">
                 <span><strong>Period:</strong> 2017 to 2023 (1,825 recorded rows; 1,137 official days)</span>
                 <span><strong>Data Source:</strong> CPCB / DPCC Site 204</span>
-                <span><strong>Caveat:</strong> Unmonitored 732-day operational hiatus (2019 to 2020); single peripheral highway station</span>
+                <span><strong>Caveat:</strong> Unmonitored 731-day operational hiatus (2019 to 2020); single peripheral highway station</span>
                 <span><strong>Reading Time:</strong> 9 min read (computed from 1,980 words)</span>
               </div>
-              <div style="margin-top: 1rem;">
+              <div class="se-mt-base">
                 <a href="investigations/delhi.html" class="se-link">Read analysis</a>
               </div>
-              <div class="se-image-credit" style="margin-top: 0.5rem;">
+              <div class="se-image-credit se-image-credit-mt-sm">
                 Image: Avnish Singh, using CPCB / DPCC records, October 2026. <a href="credits.html">Credits entry</a>.
               </div>
             </div>
@@ -155,7 +155,7 @@
                 <a href="investigations/kanpur-lst.html">Kanpur Surface Skin Temperature and Coupling</a>
               </h3>
               <p class="se-card-dek">
-                During the true 308-day overlap window, surface skin temperature exhibits a moderate negative seasonal association with ground PM2.5 (Pearson r = -0.455).
+                During the true 308-day overlap window, surface skin temperature exhibits a moderate negative seasonal association with ground PM2.5 (Pearson r = -0.455), dominated by shared seasonal cycles.
               </p>
               <div class="se-card-meta">
                 <span><strong>Period:</strong> 2017 to 2023 reanalysis (overlap window: Jul 2021 to Oct 2022, n = 308)</span>
@@ -163,10 +163,10 @@
                 <span><strong>Caveat:</strong> Coarse ~55 x 60 km grid cell; models regional atmosphere, not neighbourhood heat islands</span>
                 <span><strong>Reading Time:</strong> 7 min read (computed from 1,520 words)</span>
               </div>
-              <div style="margin-top: 1rem;">
+              <div class="se-mt-base">
                 <a href="investigations/kanpur-lst.html" class="se-link">Read analysis</a>
               </div>
-              <div class="se-image-credit" style="margin-top: 0.5rem;">
+              <div class="se-image-credit se-image-credit-mt-sm">
                 Image: Avnish Singh, using NASA POWER MERRA-2 reanalysis, October 2026. <a href="credits.html">Credits entry</a>.
               </div>
             </div>
@@ -175,93 +175,57 @@
       </div>
     </section>
 
-    <!-- 3. "Explained": Nat Geo Style Alternating Image-Text Rows -->
-    <section id="explained" class="se-section" style="background-color: var(--bg-alt); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);" aria-labelledby="explained-heading">
+    <!-- 3. "Explained": Core Concepts with Teasers and Links -->
+    <section id="explained" class="se-section se-section-alt" aria-labelledby="explained-heading">
       <div class="se-container">
         <div class="se-section-header">
           <span class="section-kicker">02 : Core Science Concepts</span>
           <h2 id="explained-heading" class="editorial-headline se-section-title">Explained: Atmospheric Physics and Measurement Standards</h2>
           <p class="se-hero-dek">
-            Before reading pollution numbers, one must understand how air moves, how regulators calculate scores, and what satellite models can actually see. Here are three physical realities behind the data.
+            Before reading pollution numbers, one must understand how air moves, how regulators calculate scores, and what satellite models can actually see.
           </p>
         </div>
 
-        <div style="display: flex; flex-direction: column;">
-          <!-- Piece 1: Temperature Inversion -->
-          <article class="se-explained-row">
-            <div class="se-explained-text">
-              <span class="section-kicker">02A : Atmospheric Physics</span>
-              <h3>What a Temperature Inversion Is, and Why Winter Air Refuses to Clear</h3>
-              <p>
-                On an ordinary sunny afternoon, solar radiation warms the asphalt, concrete, and dry topsoil of the plains. The ground heats the air resting directly against it. Because warm air is lighter than the cooler air above, it rises in vertical convective updrafts, carrying vehicle exhaust, kiln smoke, and road dust upward into the higher troposphere where winds disperse them. The atmosphere acts like a chimney with the flue wide open.
-              </p>
-              <p>
-                In northern India between November and January, that chimney shuts. Long, cloudless nights allow the alluvial ground to radiate heat into space, chilling the thin layer of air nearest the earth. Meanwhile, calmer winds aloft leave a warmer layer of air suspended several hundred meters overhead. Because cold, dense air cannot rise through warmer, lighter air, vertical mixing stops completely. A nocturnal temperature inversion forms: an invisible lid that traps emissions from stoves, tailpipes, and brick kilns within a few hundred feet of the street until morning sunlight breaks the seal.
-              </p>
-              <p>
-                Trapped within this shallow nocturnal boundary layer, pollutants pool at breathing height. This thermal lid explains why ground monitors in Kanpur and Delhi record their steepest particulate spikes between midnight and 8 AM, hours after rush-hour traffic has quieted.
-              </p>
-              <p>
-                <a href="methodology.html#inversion" class="se-link">Read the physics and inversion coupling</a>
-              </p>
-            </div>
-            <div class="se-explained-visual">
-              <img src="assets/lst/04_lst_inversion_coupling_pm25.png" alt="Scatter plot between skin temperature and ground PM2.5 in Kanpur showing negative correlation during winter" width="900" height="450" loading="lazy" style="width: 100%; height: auto; display: block; border: 1px solid var(--border-color);">
-              <div class="se-image-credit">
-                Figure: Surface skin temperature vs PM2.5 during the 308-day overlap window in Kanpur (Jul 2021 to Oct 2022, Pearson r = -0.455). Citing seasonal association, not a single physical mechanism. <a href="credits.html">Credits entry</a>.
-              </div>
+        <div class="se-explained-grid">
+          <!-- TODO[ME] author rewrite -->
+          <article class="se-explained-card">
+            <span class="section-kicker">02A : Atmospheric Physics</span>
+            <h3 class="se-explained-card-title">
+              <a href="explained/temperature-inversion.html">What a Temperature Inversion Is, and Why Winter Air Refuses to Clear</a>
+            </h3>
+            <p class="se-explained-card-teaser">
+              In northern India between November and January, nocturnal radiation chills the ground and traps emissions beneath a warm atmospheric lid. This thermal inversion prevents vertical mixing, concentrating particulate matter at breathing height until morning sunlight breaks the seal.
+            </p>
+            <div>
+              <a href="explained/temperature-inversion.html" class="se-link">Read the full essay</a>
             </div>
           </article>
 
-          <!-- Piece 2: CPCB NAQI Computation (Reversed row) -->
-          <article class="se-explained-row reverse">
-            <div class="se-explained-text">
-              <span class="section-kicker">02B : Regulatory Science</span>
-              <h3>How CPCB Computes the AQI, and Why One Pollutant Governs the Day</h3>
-              <p>
-                Weather apps frequently present the Air Quality Index as if it were a general average of local pollution. In India, it is nothing of the kind. Established by the Central Pollution Control Board in October 2014, the National Air Quality Index (NAQI) uses piecewise linear formulas to convert raw concentrations of up to eight criteria pollutants into normalized sub-indices between 0 and 500.
-              </p>
-              <p>
-                The final daily score is not an average. It is simply the single highest sub-index recorded among all measured pollutants. Whichever pollutant produces that worst number becomes the dominant pollutant, and its value becomes the official headline AQI for the station. Across the Indo-Gangetic Plain, that dominant pollutant is almost always fine particulate matter (PM2.5). In our analysis of 1,137 official monitoring days at Delhi Alipur, PM2.5 dictated the final AQI on 1,005 days (88.4 percent of all valid records). The other seven criteria pollutants rarely determine the headline score in winter.
-              </p>
-              <p>
-                Furthermore, CPCB enforces a strict completeness rule: an official statutory AQI requires valid readings for at least three criteria pollutants, one of which must be particulate matter (either PM2.5 or PM10), with each pollutant having at least 16 hourly samples in the 24-hour cycle. If a station loses PM2.5 readings for nine hours during an instrument failure or power outage, no official AQI can be published for that day, regardless of what the gaseous sensors recorded.
-              </p>
-              <p>
-                <a href="methodology.html#naqi-formula" class="se-link">Review the statutory breakpoints and quorum rules</a>
-              </p>
-            </div>
-            <div class="se-explained-visual">
-              <img src="assets/delhi/04_dominant_pollutants.png" alt="Bar chart showing PM2.5 as the dominant pollutant on 88.4 percent of official monitoring days at Delhi Alipur" width="900" height="450" loading="lazy" style="width: 100%; height: auto; display: block; border: 1px solid var(--border-color);">
-              <div class="se-image-credit">
-                Figure: Distribution of dominant sub-index criteria pollutants across 1,137 official days at Alipur, Delhi. PM2.5 was dominant on 1,005 days (88.4%). <a href="credits.html">Credits entry</a>.
-              </div>
+          <!-- TODO[ME] author rewrite -->
+          <article class="se-explained-card">
+            <span class="section-kicker">02B : Regulatory Science</span>
+            <h3 class="se-explained-card-title">
+              <a href="explained/cpcb-naqi.html">How CPCB Computes the AQI, and Why One Pollutant Governs the Day</a>
+            </h3>
+            <p class="se-explained-card-teaser">
+              India's National Air Quality Index is not an average, but the single highest sub-index recorded among measured criteria pollutants. Across 1,137 official monitoring days at Delhi Alipur, fine particulate matter (PM2.5) dictated the headline score on 88.4 percent of all valid days.
+            </p>
+            <div>
+              <a href="explained/cpcb-naqi.html" class="se-link">Read the full essay</a>
             </div>
           </article>
 
-          <!-- Piece 3: Reanalysis vs Radiometric LST -->
-          <article class="se-explained-row">
-            <div class="se-explained-text">
-              <span class="section-kicker">02C : Geospatial Methods</span>
-              <h3>What Weather Reanalysis Is, and What Coarse Grid Cells Cannot See</h3>
-              <p>
-                It is tempting to look at a thermal map of northern India and assume a satellite pointed a digital thermometer at the pavement. In multi-decade environmental studies, however, surface temperature records usually come from reanalysis systems like NASA GMAO MERRA-2 and the NASA POWER program. Reanalysis is not a collection of photographs. It is a continuous physics simulation of the global atmosphere that runs historical numerical weather models while assimilating millions of real-world observations from weather balloons, ground stations, and orbital sounders.
-              </p>
-              <p>
-                This approach provides an enormous benefit: an unbroken, multi-decade record of daily surface skin temperature and solar radiation with zero cloud gaps. But that completeness has an important trade-off: spatial resolution. The MERRA-2 grid cell over Kanpur spans 0.5 degrees of latitude by 0.625 degrees of longitude, an area roughly 55 kilometers north-to-south by 60 kilometers east-to-west.
-              </p>
-              <p>
-                A single 55 by 60 kilometer cell blankets the dense brick core of Kanpur, surrounding agricultural fields, the Ganga River floodplain, and industrial highway corridors together into one average value. Reanalysis can track broad regional heating cycles (showing winter skin temperatures dropping below 8 degrees Celsius while summer peaks above 45 degrees), but it cannot detect neighborhood heat islands, tree canopy shade, or asphalt heat storage. Mapping street-level thermal differences requires high-resolution radiometric sensors like the Thermal Infrared Sensor (TIRS) on Landsat 8 and 9 at 30-meter resolution, which is planned future work.
-              </p>
-              <p>
-                <a href="methodology.html#reanalysis-grid" class="se-link">Examine the reanalysis grid and spatial boundaries</a>
-              </p>
-            </div>
-            <div class="se-explained-visual">
-              <img src="assets/lst/03_kanpur_spatial_thermal_zones.png" alt="Map showing Kanpur municipal boundary and monitoring stations inside the single regional MERRA-2 reanalysis grid box" width="900" height="450" loading="lazy" style="width: 100%; height: auto; display: block; border: 1px solid var(--border-color);">
-              <div class="se-image-credit">
-                Map: Kanpur municipal boundary and monitoring stations overlaid on the single 55 x 60 km reanalysis grid cell. Intra-urban thermal zoning requires 30m Landsat thermal radiometry. <a href="credits.html">Credits entry</a>.
-              </div>
+          <!-- TODO[ME] author rewrite -->
+          <article class="se-explained-card">
+            <span class="section-kicker">02C : Geospatial Methods</span>
+            <h3 class="se-explained-card-title">
+              <a href="explained/weather-reanalysis.html">What Weather Reanalysis Is, and What Coarse Grid Cells Cannot See</a>
+            </h3>
+            <p class="se-explained-card-teaser">
+              Reanalysis systems like NASA MERRA-2 provide continuous, multi-decade atmospheric simulations but average conditions over a single 55 by 60 kilometer regional cell. This grid scale captures macro seasonal heating cycles while leaving street-level microclimates and urban heat islands unresolved until mapped with 100 m native Landsat radiometry.
+            </p>
+            <div>
+              <a href="explained/weather-reanalysis.html" class="se-link">Read the full essay</a>
             </div>
           </article>
         </div>
@@ -305,7 +269,7 @@
             <a href="assets/satellite_view_kanpur_haze_20211111.jpg" download class="se-btn se-btn-outline">Download static scene (JPEG, 112 KB)</a>
           </div>
 
-          <div class="se-image-credit" style="margin-top: 1rem;">
+          <div class="se-image-credit se-image-credit-mt-base">
             Image: NASA Worldview / GIBS, Aqua MODIS, November 11, 2021. Public domain under NASA Open Data Policy.
           </div>
         </div>
@@ -313,7 +277,7 @@
     </section>
 
     <!-- 5. "Data Sources": Plain Grid of Text Tiles (No Logos) -->
-    <section class="se-section" style="background-color: var(--bg-alt); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);" aria-labelledby="sources-heading">
+    <section class="se-section se-section-alt" aria-labelledby="sources-heading">
       <div class="se-container">
         <div class="se-section-header">
           <span class="section-kicker">04 : Data Provenance</span>
@@ -323,6 +287,7 @@
           </p>
         </div>
 
+        <!-- Quantitative Analysis Sources (Used) -->
         <div class="se-sources-grid">
           <!-- Tile 1: CPCB -->
           <article class="se-source-tile">
@@ -331,7 +296,7 @@
               Statutory criteria pollutant concentrations (PM2.5, PM10, NO2, SO2, CO, O3) and official NAQI breakpoint standards.
             </p>
             <div class="se-source-meta">
-              <span><strong>Terms:</strong> Government of India NDSAP / Public Domain</span><br>
+              <span><strong>Terms:</strong> Central Pollution Control Board Terms of Use / Government of India Open Data</span><br>
               <span><strong>Access Date:</strong> Verified October 2026</span><br>
               <span><strong>URL:</strong> <a href="https://cpcb.nic.in" target="_blank" rel="noopener noreferrer" class="se-link">cpcb.nic.in</a></span>
             </div>
@@ -344,7 +309,7 @@
               Harmonized REST API v3 feeds of historical hourly and daily air quality records from Uttar Pradesh Pollution Control Board stations.
             </p>
             <div class="se-source-meta">
-              <span><strong>Terms:</strong> Creative Commons Attribution 4.0 (CC BY 4.0)</span><br>
+              <span><strong>Terms:</strong> Platform API under CC BY 4.0; underlying observational data subject to originating station provider terms (UPPCB / DPCC / CPCB)</span><br>
               <span><strong>Access Date:</strong> September 2026</span><br>
               <span><strong>URL:</strong> <a href="https://openaq.org" target="_blank" rel="noopener noreferrer" class="se-link">openaq.org</a></span>
             </div>
@@ -362,147 +327,63 @@
               <span><strong>URL:</strong> <a href="https://power.larc.nasa.gov" target="_blank" rel="noopener noreferrer" class="se-link">power.larc.nasa.gov</a></span>
             </div>
           </article>
+        </div>
 
-          <!-- Tile 4: NASA Earth Observatory -->
-          <article class="se-source-tile">
-            <h3 class="se-source-title">NASA Earth Observatory</h3>
-            <p class="se-source-purpose">
-              Peer-reviewed satellite case studies, plume dynamics narratives, and calibrated natural color imagery of Gangetic agricultural haze.
-            </p>
-            <div class="se-source-meta">
-              <span><strong>Terms:</strong> NASA Open Access / Public Information</span><br>
-              <span><strong>Access Date:</strong> October 2026</span><br>
-              <span><strong>URL:</strong> <a href="https://earthobservatory.nasa.gov" target="_blank" rel="noopener noreferrer" class="se-link">earthobservatory.nasa.gov</a></span>
-            </div>
-          </article>
+        <!-- Planned, not used in quantitative analyses -->
+        <div class="se-planned-sources">
+          <div class="se-planned-sources-title">Planned, not used in current quantitative analyses</div>
+          <div class="se-planned-grid">
+            <article class="se-planned-tile">
+              <h4 class="se-source-plan-title">NASA Earth Observatory</h4>
+              <p class="se-source-plan-desc">
+                Satellite case studies, plume dynamics narratives, and calibrated natural color imagery of Gangetic agricultural haze.
+              </p>
+              <div class="se-source-plan-meta">NASA Open Access / Public Information</div>
+            </article>
 
-          <!-- Tile 5: NASA Worldview / GIBS -->
-          <article class="se-source-tile">
-            <h3 class="se-source-title">NASA Worldview / GIBS</h3>
-            <p class="se-source-purpose">
-              Global Imagery Browse Services snapshots from MODIS Terra/Aqua and Suomi NPP VIIRS instruments for documented smoke episodes.
-            </p>
-            <div class="se-source-meta">
-              <span><strong>Terms:</strong> NASA Open Science Data Policy</span><br>
-              <span><strong>Access Date:</strong> October 2026</span><br>
-              <span><strong>URL:</strong> <a href="https://worldview.earthdata.nasa.gov" target="_blank" rel="noopener noreferrer" class="se-link">worldview.earthdata.nasa.gov</a></span>
-            </div>
-          </article>
+            <article class="se-planned-tile">
+              <h4 class="se-source-plan-title">NASA Worldview / GIBS</h4>
+              <p class="se-source-plan-desc">
+                Global Imagery Browse Services snapshots from MODIS Terra/Aqua and Suomi NPP VIIRS instruments for documented smoke episodes.
+              </p>
+              <div class="se-source-plan-meta">NASA Open Science Data Policy</div>
+            </article>
 
-          <!-- Tile 6: USGS Landsat -->
-          <article class="se-source-tile">
-            <h3 class="se-source-title">USGS / NASA Landsat Program</h3>
-            <p class="se-source-purpose">
-              Landsat 8 and Landsat 9 Collection 2 Level 2 thermal infrared radiance scenes (TIRS-2) referenced for planned 30m intra-urban zoning.
-            </p>
-            <div class="se-source-meta">
-              <span><strong>Terms:</strong> U.S. Geological Survey Public Domain</span><br>
-              <span><strong>Access Date:</strong> October 2026</span><br>
-              <span><strong>URL:</strong> <a href="https://earthexplorer.usgs.gov" target="_blank" rel="noopener noreferrer" class="se-link">earthexplorer.usgs.gov</a></span>
-            </div>
-          </article>
+            <article class="se-planned-tile">
+              <h4 class="se-source-plan-title">USGS / NASA Landsat Program</h4>
+              <p class="se-source-plan-desc">
+                Landsat 8 and Landsat 9 TIRS thermal infrared radiance (100 m native, resampled to 30 m) referenced for planned intra-urban zoning.
+              </p>
+              <div class="se-source-plan-meta">U.S. Geological Survey Public Domain</div>
+            </article>
 
-          <!-- Tile 7: ESA Copernicus -->
-          <article class="se-source-tile">
-            <h3 class="se-source-title">ESA Copernicus (Sentinel-2, 5P)</h3>
-            <p class="se-source-purpose">
-              Tropospheric aerosol index and carbon monoxide vertical column densities from the TROPOMI sensor on Sentinel-5P.
-            </p>
-            <div class="se-source-meta">
-              <span><strong>Terms:</strong> Contains modified Copernicus Sentinel data [2026]</span><br>
-              <span><strong>Access Date:</strong> September 2026</span><br>
-              <span><strong>URL:</strong> <a href="https://browser.dataspace.copernicus.eu" target="_blank" rel="noopener noreferrer" class="se-link">dataspace.copernicus.eu</a></span>
-            </div>
-          </article>
-
-          <!-- Tile 8: NOAA -->
-          <article class="se-source-tile">
-            <h3 class="se-source-title">NOAA Physical Sciences Laboratory</h3>
-            <p class="se-source-purpose">
-              Synoptic wind vectors, sea level pressure patterns, and western disturbance tracks influencing northern Indian winter stagnation.
-            </p>
-            <div class="se-source-meta">
-              <span><strong>Terms:</strong> NOAA Open Data Policy / US Government</span><br>
-              <span><strong>Access Date:</strong> October 2026</span><br>
-              <span><strong>URL:</strong> <a href="https://psl.noaa.gov" target="_blank" rel="noopener noreferrer" class="se-link">psl.noaa.gov</a></span>
-            </div>
-          </article>
+            <article class="se-planned-tile">
+              <h4 class="se-source-plan-title">NOAA Physical Sciences Laboratory</h4>
+              <p class="se-source-plan-desc">
+                Synoptic wind vectors, sea level pressure patterns, and western disturbance tracks influencing northern Indian winter stagnation.
+              </p>
+              <div class="se-source-plan-meta">NOAA Open Data Policy</div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- 6. "Context: Rankings": External Rankings and Author Station Rankings -->
+    <!-- 6. "Context: Rankings": Station Comparison -->
     <section class="se-section se-container" aria-labelledby="rankings-heading">
       <div class="se-section-header">
         <span class="section-kicker">05 : Comparative Context</span>
-        <h2 id="rankings-heading" class="editorial-headline se-section-title">Context: Published Rankings and Station Comparison</h2>
+        <h2 id="rankings-heading" class="editorial-headline se-section-title">Context: Station Comparison and Data Quorum</h2>
         <p class="se-hero-dek">
-          External statutory and international rankings pulled directly from official source publications, alongside our own station-level data ranking. Unverified numbers are marked explicitly.
+          Station-level data ranking evaluated from our processed monitoring datasets.
         </p>
-      </div>
-
-      <!-- External Rankings Table -->
-      <div style="margin-bottom: 3rem;">
-        <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.75rem;">External Air Quality Assessments</h3>
-        <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 1rem;">
-          Official rankings evaluate municipal compliance, PRANA performance targets, and annual population exposure metrics:
-        </p>
-
-        <div class="se-table-wrap">
-          <table class="se-table">
-            <thead>
-              <tr>
-                <th>Publisher / Organization</th>
-                <th>Assessment Name &amp; Year</th>
-                <th>Category and Scope</th>
-                <th>Kanpur Finding / Value</th>
-                <th>Delhi Finding / Value</th>
-                <th>Source Link</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>MoEFCC / CPCB (PRANA)</strong></td>
-                <td>Swachh Vayu Survekshan 2024</td>
-                <td>Category-1 (Population &gt; 10 Lakhs) under National Clean Air Programme</td>
-                <td>Ranked 11th (Score: 183.2 / 200)</td>
-                <td><span class="todo-marker">TODO[ME]: verify Delhi category rank</span></td>
-                <td><a href="https://prana.cpcb.gov.in" target="_blank" rel="noopener noreferrer" class="se-link">PRANA Portal</a></td>
-              </tr>
-              <tr>
-                <td><strong>MoEFCC / CPCB (PRANA)</strong></td>
-                <td>Swachh Vayu Survekshan 2023</td>
-                <td>Category-1 (Population &gt; 10 Lakhs) under National Clean Air Programme</td>
-                <td>Ranked 2nd in million-plus cities (Score: 194.6 / 200)</td>
-                <td>Not ranked in top 3</td>
-                <td><a href="https://cpcb.nic.in" target="_blank" rel="noopener noreferrer" class="se-link">CPCB Press Release</a></td>
-              </tr>
-              <tr>
-                <td><strong>IQAir Group</strong></td>
-                <td>World Air Quality Report 2023</td>
-                <td>Annual PM2.5 Exposure Ranking across Global Capital Cities and Metros</td>
-                <td><span class="todo-marker">TODO[ME]: verify Kanpur 2023 annual mean rank</span></td>
-                <td>Ranked 1st among capital cities (Mean PM2.5 = 92.7 µg/m³)</td>
-                <td><a href="https://www.iqair.com/world-air-quality-report" target="_blank" rel="noopener noreferrer" class="se-link">IQAir Report Page</a></td>
-              </tr>
-              <tr>
-                <td><strong>IQAir Group</strong></td>
-                <td>World Air Quality Report 2022</td>
-                <td>Global City PM2.5 Concentration Ranking</td>
-                <td>Annual mean PM2.5: 68.3 µg/m³ (Ranked 21st globally)</td>
-                <td>Ranked 2nd most polluted capital city (Mean PM2.5 = 89.1 µg/m³)</td>
-                <td><a href="https://www.iqair.com/world-air-quality-report" target="_blank" rel="noopener noreferrer" class="se-link">IQAir 2022 Report</a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
       </div>
 
       <!-- Author's Own Station Ranking -->
-      <div style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 1.75rem;">
+      <div class="se-panel">
         <span class="section-kicker">Analytical Station Ranking</span>
-        <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Analysed Monitoring Stations Ranked by Mean Observed PM2.5</h3>
-        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+        <h3 class="se-rankings-title">Analysed Monitoring Stations Ranked by Mean Observed PM2.5</h3>
+        <p class="se-rankings-desc">
           This ranking evaluates the three individual CAAQMS monitors analysed in our codebase by their arithmetic mean PM2.5 concentration across all valid reporting days.
         </p>
 
@@ -526,8 +407,8 @@
                 <td>Northern peripheral highway transport corridor (NH-44)</td>
                 <td><strong>112.4 µg/m³</strong></td>
                 <td>2017 to 2023</td>
-                <td>n = 1,133 valid days</td>
-                <td>732-day unmonitored operational gap; high heavy freight traffic influence</td>
+                <td>n = 1,137 official days (1,133 PM2.5 valid days)</td>
+                <td>731-day unmonitored operational gap; high heavy freight traffic influence</td>
               </tr>
               <tr>
                 <td><strong>2</strong></td>
@@ -535,7 +416,7 @@
                 <td>Dense urban mixed commercial and industrial basin</td>
                 <td><strong>58.7 µg/m³</strong></td>
                 <td>Jul 2021 to Oct 2022 &amp; Feb 2025 to Aug 2026</td>
-                <td>n = 814 station-days</td>
+                <td>n = 813 station-days</td>
                 <td>2.3-year reporting hiatus; single sensor location in central core</td>
               </tr>
               <tr>
@@ -544,21 +425,21 @@
                 <td>Semi-suburban educational campus corridor</td>
                 <td><strong>55.4 µg/m³</strong></td>
                 <td>Jul 2021 to Oct 2022 &amp; Feb 2025 to Aug 2026</td>
-                <td>n = 814 station-days</td>
+                <td>n = 815 station-days</td>
                 <td>2.3-year reporting hiatus; localized vegetation buffering</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; margin: 0;">
-          <strong>Essential Caveat:</strong> The monitoring periods for Delhi and Kanpur are non-identical. Delhi Alipur reflects 2017 to 2023 data, whereas Kanpur reflects discrete windows from 2021 to 2022 and 2025 to 2026. Micro-environments differ substantially between a major transit highway border (Alipur) and central urban residential monitors (Kanpur). This table reflects station records, not uniform citywide exposure.
+        <p class="se-caption-tight">
+          <strong>Essential Caveat:</strong> The monitoring periods for Delhi and Kanpur are non-identical. Delhi Alipur reflects 2017 to 2023 data, whereas Kanpur reflects discrete windows from 2021 to 2022 and 2025 to 2026 (pooled n = 1,628 station-days across both stations). Micro-environments differ substantially between a major transit highway border (Alipur) and central urban residential monitors (Kanpur). This table reflects station records, not uniform citywide exposure.
         </p>
       </div>
     </section>
 
     <!-- 7. "Known Problems and Limits": Auditable Table -->
-    <section class="se-section" style="background-color: var(--bg-alt); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);" aria-labelledby="limits-heading">
+    <section class="se-section se-section-alt" aria-labelledby="limits-heading">
       <div class="se-container">
         <div class="se-section-header">
           <span class="section-kicker">06 : Scientific Honesty</span>
@@ -580,8 +461,8 @@
             </thead>
             <tbody>
               <tr>
-                <td><strong>Delhi Alipur 732-Day Gap (2019 to 2020)</strong></td>
-                <td>Operational refurbishment halted recordings for two full calendar years. Only 1,137 out of 1,825 recorded rows meet CPCB quorum. Trends cannot claim unbroken multi-year continuity.</td>
+                <td><strong>Delhi Alipur 731-Day Gap (2019 to 2020)</strong></td>
+                <td>Operational refurbishment halted recordings for two full calendar years (Jan 1, 2019 to Dec 31, 2020). Exactly 1,137 out of 1,825 recorded rows meet CPCB quorum. Trends cannot claim unbroken multi-year continuity.</td>
                 <td><span class="se-status-tag se-status-fixed">Documented</span></td>
                 <td><a href="corrections.html#hiatus-delhi" class="se-link">Corrections Log</a></td>
               </tr>
@@ -605,7 +486,7 @@
               </tr>
               <tr>
                 <td><strong>Planned Intra-Urban Spatial Zoning (Landsat / MODIS)</strong></td>
-                <td>Accurate spatial microclimate offsets across Kanpur require cloud-masked 30m Landsat thermal radiometry. Analysis is planned and not yet completed; placeholder offsets have been removed.</td>
+                <td>Accurate spatial microclimate offsets across Kanpur require cloud-masked Landsat thermal radiometry (100 m native, resampled to 30 m). Analysis is planned and not yet completed; placeholder offsets have been removed.</td>
                 <td><span class="se-status-tag se-status-open">Planned</span></td>
                 <td><a href="investigations/kanpur-lst.html#spatial-zoning-notice" class="se-link">Investigation 03 Notice</a></td>
               </tr>
@@ -617,16 +498,16 @@
 
     <!-- 8. "About": Small Author Row (No Photo) -->
     <section class="se-section se-container" aria-labelledby="about-heading">
-      <div style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 2rem; max-width: 820px; margin: 0 auto;">
+      <div class="se-author-card">
         <span class="section-kicker">Founder and Operator</span>
-        <h2 id="about-heading" class="editorial-headline" style="font-size: 1.45rem; margin-bottom: 0.5rem;">Avnish Singh</h2>
-        <p style="font-size: 0.95rem; color: var(--text-primary); margin-bottom: 0.75rem;">
+        <h2 id="about-heading" class="editorial-headline se-about-heading">Avnish Singh</h2>
+        <p class="se-about-sub">
           Undergraduate student in <strong>Civil Engineering</strong> at <strong>Harcourt Butler Technical University (HBTU), Kanpur</strong>, Uttar Pradesh, India.
         </p>
-        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.25rem;">
+        <p class="se-about-desc">
           Avnish founded and operates Signal Earth to examine public environmental records and spatial data with scientific transparency. Living in Kanpur, where winter haze is an intense physical reality, he noticed that public discussions of air quality often oscillate between panic and complacency, rarely examining the actual records or the physics behind them. Signal Earth takes an engineering approach: downloading raw station archives from CPCB and OpenAQ, applying statutory calculation rules, documenting multi-year sensor hiatuses without synthetic fills, and publishing all processing notebooks openly under MIT license.
         </p>
-        <div style="display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap; font-family: var(--font-mono); font-size: 0.82rem;">
+        <div class="se-author-meta">
           <a href="mailto:avnish36singh@gmail.com" class="se-link">avnish36singh@gmail.com</a>
           <a href="https://www.linkedin.com/in/avnish-singh-81a276216/" target="_blank" rel="noopener noreferrer" class="se-link">LinkedIn Profile</a>
           <a href="https://www.instagram.com/Avnish.6936/" target="_blank" rel="noopener noreferrer" class="se-link">@Avnish.6936</a>
@@ -642,9 +523,9 @@
   <footer class="se-footer">
     <div class="se-container">
       <div class="se-footer-inner">
-        <div style="max-width: 320px;">
-          <div style="font-weight: 700; color: #FFFFFF; letter-spacing: 0.1em; margin-bottom: 0.4rem; text-transform: uppercase;">Signal Earth</div>
-          <p style="line-height: 1.6; color: var(--text-inverse-muted); font-size: 0.85rem;">
+        <div class="se-footer-brand-col">
+          <div class="se-footer-brand-title">Signal Earth</div>
+          <p class="se-footer-brand-desc">
             Student research portfolio analyzing archived environmental monitoring data from CPCB, UPPCB, and NASA POWER reanalysis.
           </p>
         </div>
@@ -697,8 +578,8 @@
       </div>
 
       <div class="se-footer-bottom">
-        <div>Site design and analyses by Avnish Singh, Civil Engineering, HBTU Kanpur. Code under MIT License.</div>
-        <div>Page updated: October 2026. Content strictly reflects public monitoring records.</div>
+        <div>Maintained by: Avnish Singh</div>
+        <div>Page last updated: October 2026</div>
       </div>
     </div>
   </footer>

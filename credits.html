@@ -39,10 +39,10 @@
     </nav>
   </header>
 
-  <main id="main" class="se-container-narrow" style="padding-top: 3rem; padding-bottom: 4rem;">
-    <header style="margin-bottom: 2.5rem;">
+  <main id="main" class="se-container-narrow se-container-py">
+    <header class="se-header-mb">
       <span class="section-kicker">Provenance and Attribution</span>
-      <h1 class="editorial-headline" style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 0.75rem;">
+      <h1 class="editorial-headline se-headline-clamp">
         Image Credits and Sources
       </h1>
       <p class="se-hero-dek">
@@ -51,14 +51,14 @@
     </header>
 
     <!-- Satellite Imagery Section -->
-    <section style="margin-bottom: 3rem;">
+    <section class="se-content-section">
       <span class="section-kicker">01 : Satellite Imagery and Remote Sensing</span>
-      <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 1rem;">Earth Observation Data</h2>
+      <h2 class="editorial-headline se-content-h2">Earth Observation Data</h2>
 
-      <div style="display: flex; flex-direction: column; gap: 1.75rem;">
-        <article style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 1.25rem;">
-          <h3 style="font-size: 1.1rem; margin-bottom: 0.4rem; color: var(--text-primary);">Indo-Gangetic Plain Smoke and Atmospheric Haze</h3>
-          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+      <div class="se-card-stack">
+        <article class="se-card-panel">
+          <h3 class="se-card-title">Indo-Gangetic Plain Smoke and Atmospheric Haze</h3>
+          <p class="se-card-desc">
             <strong>File:</strong> <code>assets/hero_indo_gangetic_smoke_20211105.jpg</code><br>
             <strong>Acquisition Date:</strong> November 5, 2021<br>
             <strong>Sensor:</strong> MODIS on NASA Terra Satellite (Corrected Reflectance True Color)<br>
@@ -66,14 +66,14 @@
             <strong>License:</strong> NASA Open Data Policy (Public domain for educational and scientific research)<br>
             <strong>Source URL:</strong> <a href="https://worldview.earthdata.nasa.gov/?v=73,24,85,32&t=2021-11-05" target="_blank" rel="noopener noreferrer" class="se-link">NASA Worldview Scene Explorer</a>
           </p>
-          <div style="font-size: 0.82rem; font-family: var(--font-mono); color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 0.5rem; margin-top: 0.5rem;">
+          <div class="se-card-meta">
             Credit: Image: NASA Worldview / GIBS, Terra MODIS, November 5, 2021
           </div>
         </article>
 
-        <article style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 1.25rem;">
-          <h3 style="font-size: 1.1rem; margin-bottom: 0.4rem; color: var(--text-primary);">Ganga Valley Winter Haze over Kanpur and Central Uttar Pradesh</h3>
-          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+        <article class="se-card-panel">
+          <h3 class="se-card-title">Ganga Valley Winter Haze over Kanpur and Central Uttar Pradesh</h3>
+          <p class="se-card-desc">
             <strong>File:</strong> <code>assets/satellite_view_kanpur_haze_20211111.jpg</code><br>
             <strong>Acquisition Date:</strong> November 11, 2021<br>
             <strong>Sensor:</strong> MODIS on NASA Aqua Satellite (Corrected Reflectance True Color)<br>
@@ -81,7 +81,7 @@
             <strong>License:</strong> NASA Open Data Policy (Public domain for educational and scientific research)<br>
             <strong>Source URL:</strong> <a href="https://worldview.earthdata.nasa.gov/?v=78,25,83,28&t=2021-11-11" target="_blank" rel="noopener noreferrer" class="se-link">NASA Worldview Scene Explorer</a>
           </p>
-          <div style="font-size: 0.82rem; font-family: var(--font-mono); color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 0.5rem; margin-top: 0.5rem;">
+          <div class="se-card-meta">
             Credit: Image: NASA Worldview / GIBS, Aqua MODIS, November 11, 2021
           </div>
         </article>
@@ -89,11 +89,11 @@
     </section>
 
     <!-- Code-Generated Analytical Charts Section -->
-    <section style="margin-bottom: 3rem;">
+    <section class="se-content-section">
       <span class="section-kicker">02 : Original Research Figures</span>
-      <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 1rem;">Analytical Charts and Spatial Visualizations</h2>
+      <h2 class="editorial-headline se-content-h2">Analytical Charts and Spatial Visualizations</h2>
 
-      <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+      <p class="se-content-p">
         All charts, scatter plots, seasonal timelines, and diurnal cycles published on this website were authored by <strong>Avnish Singh</strong> using open source Python pipelines (Pandas, Matplotlib, Seaborn) and QGIS. They are distributed under the Creative Commons Attribution 4.0 International license (CC BY 4.0).
       </p>
 
@@ -132,12 +132,12 @@
     </section>
 
     <!-- Attribution Guidelines -->
-    <section style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 1.5rem;">
-      <h3 style="font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0.5rem;">Citing Imagery from Signal Earth</h3>
-      <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.75rem;">
+    <section class="se-panel-box">
+      <h3 class="se-card-title">Citing Imagery from Signal Earth</h3>
+      <p class="se-card-desc">
         When reusing original charts or composite figures from this portfolio, provide attribution in accordance with CC BY 4.0:
       </p>
-      <blockquote style="margin: 0.5rem 0; padding: 0.75rem 1rem; border-left: 3px solid var(--accent); background: var(--bg-page); font-size: 0.85rem; font-style: normal;">
+      <blockquote class="se-quote-license">
         Singh, A. (2026). Signal Earth: Public Environmental Data Investigations. Harcourt Butler Technical University, Kanpur. Image: [Figure Title], Data: [CPCB / NASA POWER].
       </blockquote>
     </section>
@@ -147,9 +147,9 @@
   <footer class="se-footer">
     <div class="se-container">
       <div class="se-footer-inner">
-        <div style="max-width: 320px;">
-          <div style="font-weight: 700; color: #FFFFFF; letter-spacing: 0.1em; margin-bottom: 0.4rem; text-transform: uppercase;">Signal Earth</div>
-          <p style="line-height: 1.6; color: var(--text-inverse-muted); font-size: 0.85rem;">
+        <div class="se-footer-brand-col">
+          <div class="se-footer-brand-title">Signal Earth</div>
+          <p class="se-footer-brand-desc">
             Student research portfolio analyzing archived environmental monitoring data from CPCB, UPPCB, and NASA POWER reanalysis.
           </p>
         </div>
@@ -202,8 +202,8 @@
       </div>
 
       <div class="se-footer-bottom">
-        <div>Site design and analyses by Avnish Singh, Civil Engineering, HBTU Kanpur. Code under MIT License.</div>
-        <div>Page updated: October 2026. Content strictly reflects public monitoring records.</div>
+        <div>Maintained by: Avnish Singh</div>
+        <div>Page last updated: October 2026</div>
       </div>
     </div>
   </footer>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What a Temperature Inversion Is | Explained | Signal Earth</title>
+  <meta name="description" content="Physical mechanics of nocturnal thermal inversions in the Indo-Gangetic Plain and why winter air traps particulate pollution near the surface.">
+  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/explained/temperature-inversion.html">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta property="og:title" content="What a Temperature Inversion Is | Signal Earth Explained">
+  <meta property="og:description" content="Physical mechanics of nocturnal thermal inversions in the Indo-Gangetic Plain.">
+  <meta property="og:url" content="https://avnish36singh-arch.github.io/signal-earth-portal/explained/temperature-inversion.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://avnish36singh-arch.github.io/signal-earth-portal/assets/lst/04_lst_inversion_coupling_pm25.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header>
+    <nav class="se-nav" aria-label="Main Navigation">
+      <div class="se-nav-inner">
+        <a href="../index.html" class="se-brand">
+          <span class="se-brand-name">Signal Earth</span>
+          <span class="se-brand-sub">Environmental Data Portfolio</span>
+        </a>
+
+        <ul class="se-nav-links">
+          <li><a href="../index.html#analyses">Analyses</a></li>
+          <li><a href="../index.html#explained" class="active">Explained</a></li>
+          <li><a href="../methodology.html">Methodology</a></li>
+          <li><a href="../data.html">Data and code</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="se-container-narrow se-page-content">
+    <header class="se-article-header">
+      <span class="section-kicker">Explained : Atmospheric Physics</span>
+      <h1 class="editorial-headline se-article-title">
+        What a Temperature Inversion Is, and Why Winter Air Refuses to Clear
+      </h1>
+      <p class="se-hero-dek">
+        The atmospheric thermodynamics behind winter stagnation across the Indo-Gangetic Plain.
+      </p>
+    </header>
+
+    <div class="se-prose">
+      <!-- TODO[ME] author rewrite -->
+      <p>
+        On an ordinary sunny afternoon, solar radiation warms the asphalt, concrete, and dry topsoil of the plains. The ground heats the air resting directly against it. Because warm air is lighter than the cooler air above, it rises in vertical convective updrafts, carrying vehicle exhaust, kiln smoke, and road dust upward into the higher troposphere where winds disperse them. The atmosphere acts like a chimney with the flue wide open.
+      </p>
+
+      <p>
+        In northern India between November and January, that chimney shuts. Long, cloudless nights allow the alluvial ground to radiate heat into space, chilling the thin layer of air nearest the earth. Meanwhile, calmer winds aloft leave a warmer layer of air suspended several hundred meters overhead. Because cold, dense air cannot rise through warmer, lighter air, vertical mixing stops completely. A nocturnal temperature inversion forms: an invisible lid that traps emissions from stoves, tailpipes, and brick kilns within a few hundred feet of the street until morning sunlight breaks the seal.
+      </p>
+
+      <p>
+        Trapped within this shallow nocturnal boundary layer, pollutants pool at breathing height. This thermal lid explains why ground monitors in Kanpur and Delhi record their steepest particulate spikes between midnight and 8 AM, hours after rush-hour traffic has quieted.
+      </p>
+
+      <div class="se-figure">
+        <div class="se-figure-header">
+          <div class="se-figure-title">Figure 1: Surface Skin Temperature vs Ground PM2.5 in Kanpur</div>
+          <div class="se-figure-meta">Data Source: NASA POWER MERRA-2 and UPPCB CAAQMS | Concurrent Window: Jul 9, 2021 to Oct 16, 2022 | n = 308 daily pairs | Pearson r = -0.455</div>
+        </div>
+        <img src="../assets/lst/04_lst_inversion_coupling_pm25.png" alt="Scatter plot between skin temperature and ground PM2.5 in Kanpur showing negative correlation during winter" class="se-figure-img" width="900" height="450" loading="lazy">
+        <div class="se-figure-caption">
+          <strong>Caption:</strong> Empirical association between modeled skin temperature and ground-level PM2.5 during the 308-day concurrent monitoring window in Kanpur. This reflects shared seasonal co-trending (winter cooling coinciding with boundary layer compression) rather than isolated single-point physics.
+        </div>
+        <div class="se-image-credit">
+          Image: Avnish Singh, using NASA POWER and UPPCB records via OpenAQ, October 2026. <a href="../credits.html">Credits entry</a>.
+        </div>
+      </div>
+
+      <div class="se-note-box">
+        <h4 class="se-note-title">Methodological Note on Shared Seasonality</h4>
+        <p class="se-note-text">
+          The observed correlation between daily surface skin temperature and ground PM2.5 (Pearson r = -0.455) is dominated by shared macro-scale seasonality: winter surface cooling co-occurs with shallow boundary layer compression and dry-season regional stagnation, while summer heating coincides with vigorous convective dilution and monsoon wet deposition. Because daily atmospheric time series display strong serial autocorrelation, the 308 daily observation pairs must not be reported or interpreted as independent samples.
+        </p>
+      </div>
+
+      <div class="se-related-links">
+        <h4 class="se-related-title">Related Investigations and Methodology</h4>
+        <ul>
+          <li><a href="../investigations/kanpur-lst.html" class="se-link">Investigation 03: Kanpur Surface Skin Temperature and Atmospheric Coupling</a></li>
+          <li><a href="../methodology.html#inversion" class="se-link">Methodology: Nocturnal Inversion and Boundary Layer Dynamics</a></li>
+          <li><a href="cpcb-naqi.html" class="se-link">Explained: How CPCB Computes the National AQI</a></li>
+          <li><a href="weather-reanalysis.html" class="se-link">Explained: What Weather Reanalysis Is and What Coarse Grid Cells Cannot See</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="se-footer">
+    <div class="se-container">
+      <div class="se-footer-inner">
+        <div class="se-footer-brand-col">
+          <div class="se-footer-brand-title">Signal Earth</div>
+          <p class="se-footer-brand-desc">
+            Student research portfolio analyzing archived environmental monitoring data from CPCB, UPPCB, and NASA POWER reanalysis.
+          </p>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Analyses</h5>
+          <ul>
+            <li><a href="../investigations/kanpur.html">Kanpur Particulate Dynamics</a></li>
+            <li><a href="../investigations/delhi.html">Delhi NAQI Analysis</a></li>
+            <li><a href="../investigations/kanpur-lst.html">Kanpur Reanalysis Temperature</a></li>
+            <li><a href="../investigations/comparison.html">Regional Airshed Comparison</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Method and Data</h5>
+          <ul>
+            <li><a href="../index.html#explained">Explained Pieces</a></li>
+            <li><a href="../methodology.html">Methodology and Limits</a></li>
+            <li><a href="../data.html">Data and Code</a></li>
+            <li><a href="../about.html">About Signal Earth</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms of Use</a></li>
+            <li><a href="../licenses.html">Licenses and Terms</a></li>
+            <li><a href="../credits.html">Image Credits</a></li>
+            <li><a href="../corrections.html">Corrections Log</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/company/signalearth/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="../contact.html">Contact Information</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="se-footer-disclaimer">
+        Signal Earth is an independent student project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, National Geographic or any agency named on this site.
+      </div>
+
+      <div class="se-footer-bottom">
+        <div>Maintained by: Avnish Singh</div>
+        <div>Page last updated: October 2026</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -44,25 +44,25 @@
 
   <main id="main">
     <!-- Hero Block with Figure Header -->
-    <div style="background: var(--bg-alt); border-bottom: 1px solid var(--border-color); padding: 2.5rem 0;">
+    <div class="se-investigation-hero">
       <div class="se-container-narrow">
         <span class="section-kicker">Analysis 02 : Multi-Year Observation</span>
-        <h1 class="editorial-headline" style="font-size: clamp(1.85rem, 3.5vw, 2.6rem); margin-bottom: 0.75rem;">
+        <h1 class="editorial-headline se-investigation-title">
           Delhi Five-Year NAQI Analysis and Seasonal Atmospheric Regimes
         </h1>
 
-        <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 1.25rem; margin-bottom: 1.25rem;">
+        <div class="se-investigation-meta">
           <span>By <strong>Avnish Singh</strong>, Undergraduate in Civil Engineering, HBTU Kanpur</span>
           <span>Last updated: October 2026</span>
           <span>Reading time: 9 min read</span>
         </div>
 
         <!-- 3-Sentence Summary -->
-        <div style="background: var(--bg-surface); border-left: 3px solid var(--accent); padding: 1rem 1.25rem; font-size: 0.95rem; line-height: 1.65; color: var(--text-primary); margin-bottom: 1.5rem;">
-          This investigation analyzes 1,825 daily records from the Alipur continuous monitoring station on Delhi's northern peripheral boundary between 2017 and 2023. An operational refurbishment created an unmonitored gap of 732 days across 2019 and 2020, leaving 1,137 days that satisfy the Central Pollution Control Board quorum requirements for official AQI calculation. PM2.5 was the dominant pollutant driving the daily index on 88.4% of valid days, with winter concentrations escalating to 5.75 times the monsoon baseline under temperature inversion and regional smoke transport.
+        <div class="se-summary-box">
+          This investigation analyzes 1,825 daily records from the Alipur continuous monitoring station on Delhi's northern peripheral boundary between 2017 and 2023. An operational refurbishment created an unmonitored gap of 731 days across 2019 and 2020, leaving 1,137 days that satisfy the Central Pollution Control Board quorum requirements for official AQI calculation (1,133 days with valid PM2.5 daily observations). PM2.5 was the dominant pollutant driving the daily index on 88.4% of valid days, with winter concentrations escalating to 5.75 times the monsoon baseline under temperature inversion and regional smoke transport.
         </div>
 
-        <div class="se-card-img-wrap" style="border: 1px solid var(--border-color);">
+        <div class="se-card-img-wrap se-img-bordered">
           <img src="../assets/delhi/03_seasonal_aqi_dynamics.png" alt="Seasonal AQI and particulate progression at Delhi Alipur showing steep November escalation" width="900" height="450" fetchpriority="high">
         </div>
         <div class="se-image-credit">
@@ -72,22 +72,22 @@
     </div>
 
     <!-- Main Content Body -->
-    <div class="se-container-narrow" style="padding-top: 3rem; padding-bottom: 4rem;">
+    <div class="se-container-narrow se-page-content">
 
       <!-- Data Accounting Notice -->
-      <section style="background: #FFFBEB; border: 1px solid #FDE68A; padding: 1.25rem; border-radius: var(--radius-sm); margin-bottom: 2.5rem;">
-        <h2 style="font-size: 0.95rem; font-weight: 700; color: #92400E; margin-bottom: 0.4rem; text-transform: uppercase; font-family: var(--font-mono);">Operational Hiatus and Quorum Accounting</h2>
-        <p style="font-size: 0.88rem; color: #78350F; line-height: 1.6; margin: 0;">
-          Between January 1, 2017 and December 31, 2023 (2,556 total calendar days), the Alipur station was inactive for <strong>732 consecutive days from January 1, 2019 to December 31, 2020</strong> due to station refurbishment. Across the 1,825 recorded rows, exactly 1,137 days meet the CPCB 3-pollutant + PM quorum rule, 1 day is indicative, and 687 days are partial or missing. No artificial imputation was used across the two-year gap.
+      <section class="se-alert-warning">
+        <h2 class="se-alert-warning-title">Operational Hiatus and Quorum Accounting</h2>
+        <p class="se-alert-warning-text">
+          Between January 1, 2017 and December 31, 2023 (2,556 total calendar days), the Alipur station was inactive for <strong>731 consecutive days from January 1, 2019 to December 31, 2020</strong> due to station refurbishment. Across the 1,825 recorded rows, exactly 1,137 days meet the CPCB 3-pollutant + PM quorum rule (1,133 days with valid PM2.5 observations), 1 day is indicative, and 687 days are partial or missing. No artificial imputation was used across the two-year gap.
         </p>
       </section>
 
       <!-- Section 1 -->
-      <section style="margin-bottom: 3rem;">
+      <section class="se-investigation-section">
         <span class="section-kicker">01 : Timeseries Dynamics</span>
-        <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Multi-Year National Air Quality Index Trajectory</h2>
-        <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
-          Evaluating 1,137 official days under CPCB guidelines reveals recurring November spikes reaching the Severe category (AQI &gt; 400). Annual mean PM2.5 stands at 112.4 µg/m³, exceeding the national annual ambient standard of 40 µg/m³ by a factor of 2.8.
+        <h2 class="editorial-headline se-section-heading">Multi-Year National Air Quality Index Trajectory</h2>
+        <p class="se-section-intro">
+          Evaluating 1,137 official days under CPCB guidelines reveals recurring November spikes reaching the Severe category (AQI &gt; 400). Annual mean PM2.5 stands at 112.4 µg/m³ (across 1,133 valid PM2.5 days), exceeding the national annual ambient standard of 40 µg/m³ by a factor of 2.8.
         </p>
 
         <div class="se-figure">
@@ -97,33 +97,33 @@
           </div>
           <img src="../assets/delhi/01_aqi_time_series.png" alt="Timeseries of daily CPCB NAQI at Delhi Alipur showing November spikes and the 2019 to 2020 gap" class="se-figure-img" width="900" height="450" loading="lazy">
           <div class="se-figure-caption">
-            <strong>Caption:</strong> Continuous AQI time series showing the 732-day unmonitored gap. This figure does not interpolate or bridge unrecorded days.
+            <strong>Caption:</strong> Continuous AQI time series showing the 731-day unmonitored gap. This figure does not interpolate or bridge unrecorded days.
           </div>
-          <div class="se-image-credit" style="padding: 0.4rem 1.25rem 0.6rem 1.25rem; background: var(--bg-surface);">
+          <div class="se-image-credit se-figure-credit-surface">
             Image: Avnish Singh, using CPCB / DPCC records, October 2026. <a href="../credits.html">Credits entry</a>.
           </div>
         </div>
       </section>
 
       <!-- Section 2: Interactive Plotly Chart -->
-      <section style="margin-bottom: 3rem;">
+      <section class="se-investigation-section">
         <span class="section-kicker">02 : Interactive Exploration</span>
-        <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Interactive Daily Observation Explorer</h2>
-        <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
+        <h2 class="editorial-headline se-section-heading">Interactive Daily Observation Explorer</h2>
+        <p class="se-section-intro">
           Examine daily observed pollutant concentrations and calculated sub-indices directly in your browser. Pan, zoom, and hover to view specific values.
         </p>
 
-        <div id="delhi-timeseries-plot" style="width: 100%; height: 420px; border: 1px solid var(--border-color); background: #FFFFFF; margin-bottom: 0.5rem;"></div>
-        <div class="se-image-credit" style="margin-bottom: 1.5rem;">
+        <div id="delhi-timeseries-plot" class="se-plot-container"></div>
+        <div class="se-image-credit se-image-credit-mb">
           Interactive Chart: Rendered with Plotly.js from <code>delhi_daily_gapfixed.json</code> (1,825 rows). Flat styling, no animations.
         </div>
       </section>
 
       <!-- Section 3 -->
-      <section style="margin-bottom: 3rem;">
+      <section class="se-investigation-section">
         <span class="section-kicker">03 : Seasonal Progression</span>
-        <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Seasonal Particulate Regimes and the Post-Monsoon Surge</h2>
-        <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
+        <h2 class="editorial-headline se-section-heading">Seasonal Particulate Regimes and the Post-Monsoon Surge</h2>
+        <p class="se-section-intro">
           Comparing monthly distributions confirms that particulate concentrations drop to an annual minimum during July and August (monsoon mean PM2.5 = 34.3 µg/m³), before escalating dramatically in November (winter mean PM2.5 = 197.5 µg/m³), generating a 5.75-fold seasonal surge multiplier.
         </p>
 
@@ -136,17 +136,17 @@
           <div class="se-figure-caption">
             <strong>Caption:</strong> Delhi (Alipur) seasonal particulate dynamics showing steep post-monsoon escalation in November. This figure reflects records from a single monitoring station and does not capture citywide spatial variability across Delhi.
           </div>
-          <div class="se-image-credit" style="padding: 0.4rem 1.25rem 0.6rem 1.25rem; background: var(--bg-surface);">
+          <div class="se-image-credit se-figure-credit-surface">
             Image: Avnish Singh, using CPCB / DPCC records, October 2026. <a href="../credits.html">Credits entry</a>.
           </div>
         </div>
       </section>
 
       <!-- Section 4 -->
-      <section style="margin-bottom: 3rem;">
+      <section class="se-investigation-section">
         <span class="section-kicker">04 : Dominant Criteria Pollutants</span>
-        <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Dominant Sub-Index Criteria Pollutants</h2>
-        <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
+        <h2 class="editorial-headline se-section-heading">Dominant Sub-Index Criteria Pollutants</h2>
+        <p class="se-section-intro">
           In accordance with CPCB NAQI methodology, the reported daily AQI equals the maximum sub-index among all qualifying parameters. At Alipur, fine particulate matter (PM2.5) was the dominant driver on 88.4% of all official days (1,005 out of 1,137), followed by coarse particulate matter (PM10) on 11.2% of days (127 days), and nitrogen dioxide (NO2) on 0.4% of days (5 days).
         </p>
 
@@ -159,17 +159,17 @@
           <div class="se-figure-caption">
             <strong>Caption:</strong> Relative frequency of dominant criteria pollutants determining the daily CPCB AQI. This figure demonstrates that particulate control is the overwhelming regulatory priority at this highway junction.
           </div>
-          <div class="se-image-credit" style="padding: 0.4rem 1.25rem 0.6rem 1.25rem; background: var(--bg-surface);">
+          <div class="se-image-credit se-figure-credit-surface">
             Image: Avnish Singh, using CPCB / DPCC records, October 2026. <a href="../credits.html">Credits entry</a>.
           </div>
         </div>
       </section>
 
       <!-- Section 5 -->
-      <section style="margin-bottom: 3.5rem;">
+      <section class="se-investigation-section-last">
         <span class="section-kicker">05 : Particulate Ratios and VOC Tracers</span>
-        <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Fine-to-Coarse Particulate Ratio and Vehicular VOC Tracers</h2>
-        <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
+        <h2 class="editorial-headline se-section-heading">Fine-to-Coarse Particulate Ratio and Vehicular VOC Tracers</h2>
+        <p class="se-section-intro">
           The ratio of fine-to-coarse particulate matter (PM2.5 / PM10) climbs from 0.42 during the pre-monsoon dust season to 0.67 in November, indicating the dominance of secondary aerosol formation and fine combustion products. The mean Toluene to Benzene ratio at Alipur is 2.18, characteristic of traffic and heavy commercial diesel freight along National Highway 44.
         </p>
 
@@ -182,7 +182,7 @@
           <div class="se-figure-caption">
             <strong>Caption:</strong> Fine-to-coarse ratio and VOC indicators. Ratios provide screening diagnostics for combustion dominance, but do not replace chemical mass balance (CMB) receptor modeling.
           </div>
-          <div class="se-image-credit" style="padding: 0.4rem 1.25rem 0.6rem 1.25rem; background: var(--bg-surface);">
+          <div class="se-image-credit se-figure-credit-surface">
             Image: Avnish Singh, using CPCB / DPCC records, October 2026. <a href="../credits.html">Credits entry</a>.
           </div>
         </div>
@@ -191,49 +191,49 @@
       <!-- Required Editorial End Sections (NASA / Nat Geo Standard) -->
 
       <!-- 1. What this cannot show -->
-      <section style="background: var(--bg-alt); border: 1px solid var(--border-color); padding: 1.5rem; margin-bottom: 2rem;">
+      <section class="se-panel-alt">
         <span class="section-kicker">Analytical Boundaries</span>
-        <h2 class="editorial-headline" style="font-size: 1.25rem; margin-bottom: 0.5rem;">What This Cannot Show</h2>
-        <ul style="padding-left: 1.25rem; font-size: 0.9rem; line-height: 1.65; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.5rem;">
+        <h2 class="editorial-headline se-panel-heading">What This Cannot Show</h2>
+        <ul class="se-list-spaced">
           <li>This analysis is based on a single monitoring station (Site 204) at Delhi's northern peripheral boundary on National Highway 44. It cannot represent population-weighted exposure across central, southern, or eastern Delhi.</li>
-          <li>It cannot provide continuous trend metrics across 2019 and 2020 because the monitor was unoperational for 732 consecutive days during equipment overhaul.</li>
+          <li>It cannot provide continuous trend metrics across 2019 and 2020 because the monitor was unoperational for 731 consecutive days during equipment overhaul.</li>
           <li>VOC ratios (Toluene / Benzene = 2.18) provide general evidence of vehicular exhaust, but cannot quantify the precise share of regional crop stubble burning versus local Delhi traffic without isotopically resolved chemical filter analysis.</li>
         </ul>
       </section>
 
       <!-- 2. Data and code -->
-      <section style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 1.5rem; margin-bottom: 2rem;">
+      <section class="se-panel-box">
         <span class="section-kicker">Reproducibility</span>
-        <h2 class="editorial-headline" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Data and Code</h2>
-        <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
+        <h2 class="editorial-headline se-panel-heading">Data and Code</h2>
+        <p class="se-lead-paragraph">
           The Python pipeline for cleaning, sub-index piecewise interpolation, gap accounting, and machine learning forecasting is published under the MIT License:
         </p>
-        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <div class="se-btn-group">
           <a href="https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb" target="_blank" rel="noopener noreferrer" class="se-btn">View pipeline repository on GitHub</a>
           <a href="../data.html" class="se-btn se-btn-outline">Data provenance registry</a>
         </div>
       </section>
 
       <!-- 3. Cite this page -->
-      <section style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 1.5rem; margin-bottom: 2rem;">
+      <section class="se-panel-box">
         <span class="section-kicker">Citation</span>
-        <h2 class="editorial-headline" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Cite This Page</h2>
-        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+        <h2 class="editorial-headline se-panel-heading">Cite This Page</h2>
+        <p class="se-lead-paragraph-sm">
           Recommended academic citation format:
         </p>
-        <blockquote style="margin: 0; padding: 0.75rem 1rem; border-left: 3px solid var(--accent); background: var(--bg-alt); font-size: 0.85rem; font-family: var(--font-mono); font-style: normal; color: var(--text-primary); line-height: 1.5;">
+        <blockquote class="se-quote-citation">
           Singh, A. (2026). Delhi Five-Year NAQI Analysis and Seasonal Atmospheric Regimes. Signal Earth: Public Environmental Data Investigations. https://avnish36singh-arch.github.io/signal-earth-portal/investigations/delhi.html
         </blockquote>
       </section>
 
       <!-- 4. Report a problem -->
-      <section style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 1.5rem;">
+      <section class="se-panel-box-last">
         <span class="section-kicker">Feedback and Corrections</span>
-        <h2 class="editorial-headline" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Report a Problem</h2>
-        <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
+        <h2 class="editorial-headline se-panel-heading">Report a Problem</h2>
+        <p class="se-lead-paragraph">
           If you identify an error in data handling, a formula discrepancy, or an unsupported assertion, please file a ticket on GitHub:
         </p>
-        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <div class="se-btn-group">
           <a href="https://github.com/avnish36singh-arch/signal-earth-portal/issues" target="_blank" rel="noopener noreferrer" class="se-link">Open GitHub issue</a>
           <a href="../corrections.html" class="se-link se-link-secondary">View Corrections Log</a>
         </div>
@@ -246,9 +246,9 @@
   <footer class="se-footer">
     <div class="se-container">
       <div class="se-footer-inner">
-        <div style="max-width: 320px;">
-          <div style="font-weight: 700; color: #FFFFFF; letter-spacing: 0.1em; margin-bottom: 0.4rem; text-transform: uppercase;">Signal Earth</div>
-          <p style="line-height: 1.6; color: var(--text-inverse-muted); font-size: 0.85rem;">
+        <div class="se-footer-brand-col">
+          <div class="se-footer-brand-title">Signal Earth</div>
+          <p class="se-footer-brand-desc">
             Student research portfolio analyzing archived environmental monitoring data from CPCB, UPPCB, and NASA POWER reanalysis.
           </p>
         </div>
@@ -301,8 +301,8 @@
       </div>
 
       <div class="se-footer-bottom">
-        <div>Site design and analyses by Avnish Singh, Civil Engineering, HBTU Kanpur. Code under MIT License.</div>
-        <div>Page updated: October 2026. Content strictly reflects public monitoring records.</div>
+        <div>Maintained by: Avnish Singh</div>
+        <div>Page last updated: October 2026</div>
       </div>
     </div>
   </footer>

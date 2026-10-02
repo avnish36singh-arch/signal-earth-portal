@@ -44,25 +44,25 @@
 
   <main id="main">
     <!-- Hero Block with Figure Header -->
-    <div style="background: var(--bg-alt); border-bottom: 1px solid var(--border-color); padding: 2.5rem 0;">
+    <div class="se-investigation-hero">
       <div class="se-container-narrow">
-        <span class="section-kicker">Analysis 03 : Reanalysis Temperature</span>
-        <h1 class="editorial-headline" style="font-size: clamp(1.85rem, 3.5vw, 2.6rem); margin-bottom: 0.75rem;">
+        <span class="section-kicker">Analysis 03 : Thermal Reanalysis</span>
+        <h1 class="editorial-headline se-investigation-title">
           Kanpur Surface Skin Temperature and Atmospheric Coupling
         </h1>
 
-        <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 1.25rem; margin-bottom: 1.25rem;">
+        <div class="se-investigation-meta">
           <span>By <strong>Avnish Singh</strong>, Undergraduate in Civil Engineering, HBTU Kanpur</span>
           <span>Last updated: October 2026</span>
           <span>Reading time: 7 min read</span>
         </div>
 
         <!-- 3-Sentence Summary -->
-        <div style="background: var(--bg-surface); border-left: 3px solid var(--accent); padding: 1rem 1.25rem; font-size: 0.95rem; line-height: 1.65; color: var(--text-primary); margin-bottom: 1.5rem;">
-          This investigation examines daily model reanalysis skin temperature (TS) and 2-meter air temperature (T2M) over the Kanpur regional grid box (~55 x 60 km) using NASA POWER GMAO MERRA-2 records from 2017 to 2023. During the true 308-day overlap window with ground monitors (July 9, 2021 to October 16, 2022), surface skin temperature exhibits a moderate negative seasonal association with ground-level PM2.5 (Pearson r = -0.455). Because reanalysis represents a broad numerical assimilation cell, it cannot resolve intra-urban neighborhood microclimates; high-resolution spatial zoning requires 30m Landsat thermal radiometry and is planned future work.
+        <div class="se-summary-box">
+          This investigation examines daily model reanalysis skin temperature (TS) and 2-meter air temperature (T2M) over the Kanpur regional grid box (~55 x 60 km) using NASA POWER GMAO MERRA-2 records from 2017 to 2023. During the true 308-day overlap window with ground monitors (July 9, 2021 to October 16, 2022), surface skin temperature exhibits a moderate negative seasonal association with ground-level PM2.5 (Pearson r = -0.455), an empirical relationship dominated by shared macro-scale seasonality rather than direct day-to-day thermal coupling alone. Because reanalysis represents a broad numerical assimilation cell, it cannot resolve intra-urban neighborhood microclimates; high-resolution spatial zoning requires Landsat thermal radiometry (100 m native, resampled to 30 m) and is planned future work.
         </div>
 
-        <div class="se-card-img-wrap" style="border: 1px solid var(--border-color);">
+        <div class="se-card-img-wrap se-img-bordered">
           <img src="../assets/lst/01_kanpur_lst_seasonal_timeline.png" alt="Timeline of NASA POWER MERRA-2 daily skin temperature versus 2m air temperature over Kanpur from 2017 to 2023" width="900" height="450" fetchpriority="high">
         </div>
         <div class="se-image-credit">
@@ -72,22 +72,22 @@
     </div>
 
     <!-- Main Content Body -->
-    <div class="se-container-narrow" style="padding-top: 3rem; padding-bottom: 4rem;">
+    <div class="se-container-narrow se-page-content">
 
       <!-- Methodological Clarification Notice -->
-      <section style="background: #FFFBEB; border: 1px solid #FDE68A; padding: 1.25rem; border-radius: var(--radius-sm); margin-bottom: 2.5rem;">
-        <h2 style="font-size: 0.95rem; font-weight: 700; color: #92400E; margin-bottom: 0.4rem; text-transform: uppercase; font-family: var(--font-mono);">Model Reanalysis vs. Satellite Radiometry</h2>
-        <p style="font-size: 0.88rem; color: #78350F; line-height: 1.6; margin: 0;">
-          The thermal data used in this investigation is <strong>GMAO MERRA-2 numerical model reanalysis</strong> from NASA POWER, evaluated across a single 0.5° latitude by 0.625° longitude regional grid cell (~55 x 60 km). It represents modeled skin temperature averaged over the entire grid square, not direct radiometric thermal infrared measurements from high-resolution satellite radiometers (such as Landsat 8/9 TIRS at 30 m or MODIS at 1 km).
+      <section class="se-alert-warning">
+        <h2 class="se-alert-warning-title">Model Reanalysis vs. Satellite Radiometry</h2>
+        <p class="se-alert-warning-text">
+          The thermal data used in this investigation is <strong>GMAO MERRA-2 numerical model reanalysis</strong> from NASA POWER, evaluated across a single 0.5° latitude by 0.625° longitude regional grid cell (~55 x 60 km). It represents modeled skin temperature averaged over the entire grid square, not direct radiometric thermal infrared measurements from high-resolution satellite radiometers (such as Landsat 8/9 TIRS at 100 m native, resampled to 30 m, or MODIS at 1 km).
         </p>
       </section>
 
       <!-- Section 1 -->
-      <section style="margin-bottom: 3rem;">
+      <section class="se-investigation-section">
         <span class="section-kicker">01 : Multi-Year Trajectory</span>
-        <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Seven-Year Reanalysis Skin Temperature Trajectory</h2>
-        <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
-          Across 2,556 daily reanalysis records (2017 to 2023), modeled skin temperature ranges from an annual low of 6.8°C during peak winter to 45.4°C during pre-monsoon heat extremes. The annual mean skin temperature is 27.2°C, compared to an annual mean 2-meter air temperature of 25.8°C.
+        <h2 class="editorial-headline se-section-heading">Seven-Year Reanalysis Skin Temperature Trajectory</h2>
+        <p class="se-section-intro">
+          Across 2,556 daily reanalysis records (2017 to 2023), modeled skin temperature ranges from an annual low of 6.8°C during peak winter to 43.39°C during pre-monsoon heat extremes. The annual mean skin temperature is 27.2°C, compared to an annual mean 2-meter air temperature of 25.8°C.
         </p>
 
         <div class="se-figure">
@@ -99,31 +99,31 @@
           <div class="se-figure-caption">
             <strong>Caption:</strong> Continuous daily timeseries of modeled skin temperature and 2m air temperature over the Kanpur regional grid box. This figure reflects regional grid assimilation and cannot detect intra-urban neighborhood microclimates.
           </div>
-          <div class="se-image-credit" style="padding: 0.4rem 1.25rem 0.6rem 1.25rem; background: var(--bg-surface);">
+          <div class="se-image-credit se-figure-credit-surface">
             Image: Avnish Singh, using NASA POWER MERRA-2 reanalysis, October 2026. <a href="../credits.html">Credits entry</a>.
           </div>
         </div>
       </section>
 
       <!-- Section 2: Interactive Plotly Chart -->
-      <section style="margin-bottom: 3rem;">
+      <section class="se-investigation-section">
         <span class="section-kicker">02 : Interactive Explorer</span>
-        <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Interactive Thermal Series Explorer</h2>
-        <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
+        <h2 class="editorial-headline se-section-heading">Interactive Thermal Series Explorer</h2>
+        <p class="se-section-intro">
           Examine the seasonal difference between skin temperature and 2m air temperature across the 2,556 daily records. Hover over lines to view exact daily model estimates.
         </p>
 
-        <div id="kanpur-lst-plot" style="width: 100%; height: 420px; border: 1px solid var(--border-color); background: #FFFFFF; margin-bottom: 0.5rem;"></div>
-        <div class="se-image-credit" style="margin-bottom: 1.5rem;">
+        <div id="kanpur-lst-plot" class="se-plot-container"></div>
+        <div class="se-image-credit se-image-credit-mb">
           Interactive Chart: Rendered with Plotly.js from <code>kanpur_lst_daily.json</code> (2,556 rows). Flat styling, no animations.
         </div>
       </section>
 
       <!-- Section 3 -->
-      <section style="margin-bottom: 3rem;">
+      <section class="se-investigation-section">
         <span class="section-kicker">03 : Thermal Decoupling</span>
-        <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Skin-to-Air Temperature Differences Across Seasons</h2>
-        <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
+        <h2 class="editorial-headline se-section-heading">Skin-to-Air Temperature Differences Across Seasons</h2>
+        <p class="se-section-intro">
           Computing the daily difference (Skin Temperature minus 2m Air Temperature) reveals clear seasonal behavior. In summer and pre-monsoon months, intense radiative heating causes the surface to average +2.4°C warmer than ambient air. In winter, strong surface radiative cooling depresses daily average skin temperatures to -1.8°C relative to 2m air.
         </p>
 
@@ -136,17 +136,17 @@
           <div class="se-figure-caption">
             <strong>Caption:</strong> Daily mean skin-air difference across seasons. A negative daily-mean difference reflects winter surface cooling, but testing nocturnal inversion requires hourly nighttime profile data.
           </div>
-          <div class="se-image-credit" style="padding: 0.4rem 1.25rem 0.6rem 1.25rem; background: var(--bg-surface);">
+          <div class="se-image-credit se-figure-credit-surface">
             Image: Avnish Singh, using NASA POWER MERRA-2 reanalysis, October 2026. <a href="../credits.html">Credits entry</a>.
           </div>
         </div>
       </section>
 
       <!-- Section 4 -->
-      <section style="margin-bottom: 3rem;">
+      <section class="se-investigation-section">
         <span class="section-kicker">04 : Spatial Scale and Limits</span>
-        <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Spatial Grid Box and Urban Context</h2>
-        <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
+        <h2 class="editorial-headline se-section-heading">Spatial Grid Box and Urban Context</h2>
+        <p class="se-section-intro">
           The spatial footprint of the MERRA-2 grid cell (26.5°N, 80.25°E) spans 0.5 degrees of latitude and 0.625 degrees of longitude. As shown in the QGIS cartographic overlay, this single calculation cell encompasses the entire Kanpur municipal boundary, suburban educational zones (Kalyanpur), industrial clusters, and surrounding agricultural tracts.
         </p>
 
@@ -157,39 +157,46 @@
           </div>
           <img src="../assets/lst/03_kanpur_spatial_thermal_zones.png" alt="Map showing Kanpur municipal boundary and monitoring stations inside the single regional MERRA-2 reanalysis grid box" class="se-figure-img" width="900" height="450" loading="lazy">
           <div class="se-figure-caption">
-            <strong>Caption:</strong> Kanpur urban municipal boundary overlaid on the single 55 x 60 km reanalysis cell. High-resolution intra-urban thermal zoning requires 30m Landsat thermal radiometry and is planned future work.
+            <strong>Caption:</strong> Kanpur urban municipal boundary overlaid on the single 55 x 60 km reanalysis cell. High-resolution intra-urban thermal zoning requires Landsat thermal radiometry (100 m native, resampled to 30 m) and is planned future work.
           </div>
-          <div class="se-image-credit" style="padding: 0.4rem 1.25rem 0.6rem 1.25rem; background: var(--bg-surface);">
+          <div class="se-image-credit se-figure-credit-surface">
             Image: Avnish Singh, OpenStreetMap contributors, October 2026. <a href="../credits.html">Credits entry</a>.
           </div>
         </div>
 
-        <div id="spatial-zoning-notice" style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 1.25rem; margin-top: 1.25rem;">
-          <h3 style="font-size: 1rem; color: var(--text-primary); margin-bottom: 0.35rem;">Status of Spatial Microclimate Offsets</h3>
-          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
-            <span class="todo-marker">TODO[ME]: Spatial thermal zoning derivation</span> Fabricated intra-urban temperature offsets have been deleted from this portal. Deriving genuine microclimate gradients requires cloud-masked 30m Landsat 8/9 Level 2 thermal radiance data, paired with in-situ micro-loggers. This GIS analysis is planned and not yet completed.
+        <div id="spatial-zoning-notice" class="se-card-panel">
+          <h3 class="se-subheading-h3-mono">Status of Spatial Microclimate Offsets</h3>
+          <p class="se-text-xs-secondary-zero">
+            Fabricated intra-urban temperature offsets have been deleted from this portal. Deriving genuine microclimate gradients requires cloud-masked Landsat 8/9 Level 2 thermal radiance data (100 m native, resampled to 30 m), paired with in-situ micro-loggers. This GIS analysis is planned and not yet completed.
           </p>
         </div>
       </section>
 
       <!-- Section 5 -->
-      <section style="margin-bottom: 3.5rem;">
+      <section class="se-investigation-section-last">
         <span class="section-kicker">05 : Empirical Overlap Coupling</span>
-        <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Temperature and PM2.5 Association in the Overlap Window</h2>
-        <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
+        <h2 class="editorial-headline se-section-heading">Temperature and PM2.5 Association in the Overlap Window</h2>
+        <p class="se-section-intro">
           Evaluating Kanpur ground-station PM2.5 strictly against reanalysis skin temperature during the true concurrent window (July 9, 2021 to October 16, 2022; n = 308 daily pairs) reveals an empirical negative correlation of <strong>Pearson r = -0.455 (p &lt; 0.001)</strong>. Particulate loadings rise sharply when skin temperatures fall below 20°C.
         </p>
+
+        <div class="se-note-box">
+          <div class="se-note-title">Methodological Note: Shared Seasonality and Sample Independence</div>
+          <p class="se-note-text">
+            The empirical negative correlation (Pearson r = -0.455) between daily skin temperature and ground PM2.5 during the 308-day concurrent window is heavily dominated by shared macro-scale seasonality rather than direct, independent day-to-day thermal coupling alone. In northern India, winter surface cooling coincides with shallow boundary layers, calm surface winds, and widespread post-harvest biomass burning, whereas summer heat coincides with deep convective mixing and monsoon precipitation washout. Because consecutive daily atmospheric time series display substantial temporal autocorrelation, the 308 concurrent pairs must not be reported as independent, identically distributed samples.
+          </p>
+        </div>
 
         <div class="se-figure">
           <div class="se-figure-header">
             <div class="se-figure-title">Figure 4: Concurrent Coupling: Surface Skin Temperature versus PM2.5</div>
-            <div class="se-figure-meta">Data Source: NASA POWER MERRA-2 and UPPCB CAAQMS | Period: Jul 9, 2021 to Oct 16, 2022 | n = 308 | Pearson r = -0.455</div>
+            <div class="se-figure-meta">Data Source: NASA POWER MERRA-2 and UPPCB CAAQMS | Period: Jul 9, 2021 to Oct 16, 2022 | n = 308 pairs (seasonally coupled) | Pearson r = -0.455</div>
           </div>
           <img src="../assets/lst/04_lst_inversion_coupling_pm25.png" alt="Scatter regression between skin temperature and ground PM2.5 in Kanpur showing negative correlation" class="se-figure-img" width="900" height="450" loading="lazy">
           <div class="se-figure-caption">
             <strong>Caption:</strong> Scatter regression restricted strictly to the verified 308-day concurrent monitoring window. This figure demonstrates empirical seasonal association and does not isolate boundary-layer physics from emission source variations.
           </div>
-          <div class="se-image-credit" style="padding: 0.4rem 1.25rem 0.6rem 1.25rem; background: var(--bg-surface);">
+          <div class="se-image-credit se-figure-credit-surface">
             Image: Avnish Singh, NASA POWER and UPPCB records, October 2026. <a href="../credits.html">Credits entry</a>.
           </div>
         </div>
@@ -198,10 +205,10 @@
       <!-- Required Editorial End Sections (NASA / Nat Geo Standard) -->
 
       <!-- 1. What this cannot show -->
-      <section style="background: var(--bg-alt); border: 1px solid var(--border-color); padding: 1.5rem; margin-bottom: 2rem;">
+      <section class="se-panel-alt">
         <span class="section-kicker">Analytical Boundaries</span>
-        <h2 class="editorial-headline" style="font-size: 1.25rem; margin-bottom: 0.5rem;">What This Cannot Show</h2>
-        <ul style="padding-left: 1.25rem; font-size: 0.9rem; line-height: 1.65; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.5rem;">
+        <h2 class="editorial-headline se-panel-heading">What This Cannot Show</h2>
+        <ul class="se-list-spaced">
           <li>This analysis uses coarse model reanalysis (~55 x 60 km) and cannot show street-level thermal gradients, urban park cooling effects, or industrial corridor heat signatures within Kanpur.</li>
           <li>It cannot prove that surface cooling directly caused high particulate concentrations; cooling co-occurs with autumn crop residue burning, increased domestic heating, and decreased boundary-layer height.</li>
           <li>Daily mean differences cannot verify nocturnal thermal inversion strength; that requires vertical sounding radiosonde profiles or hourly nighttime air temperature towers.</li>
@@ -209,38 +216,38 @@
       </section>
 
       <!-- 2. Data and code -->
-      <section style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 1.5rem; margin-bottom: 2rem;">
+      <section class="se-panel-box">
         <span class="section-kicker">Reproducibility</span>
-        <h2 class="editorial-headline" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Data and Code</h2>
-        <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
+        <h2 class="editorial-headline se-panel-heading">Data and Code</h2>
+        <p class="se-lead-paragraph">
           The spatial QGIS workflow and reanalysis processing notebooks are open source on GitHub:
         </p>
-        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <div class="se-btn-group">
           <a href="https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS" target="_blank" rel="noopener noreferrer" class="se-btn">View GIS repository on GitHub</a>
           <a href="../data.html" class="se-btn se-btn-outline">Reanalysis registry and links</a>
         </div>
       </section>
 
       <!-- 3. Cite this page -->
-      <section style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 1.5rem; margin-bottom: 2rem;">
+      <section class="se-panel-box">
         <span class="section-kicker">Citation</span>
-        <h2 class="editorial-headline" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Cite This Page</h2>
-        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+        <h2 class="editorial-headline se-panel-heading">Cite This Page</h2>
+        <p class="se-lead-paragraph-sm">
           Recommended academic citation format:
         </p>
-        <blockquote style="margin: 0; padding: 0.75rem 1rem; border-left: 3px solid var(--accent); background: var(--bg-alt); font-size: 0.85rem; font-family: var(--font-mono); font-style: normal; color: var(--text-primary); line-height: 1.5;">
+        <blockquote class="se-quote-citation">
           Singh, A. (2026). Kanpur Surface Skin Temperature and Atmospheric Coupling. Signal Earth: Public Environmental Data Investigations. https://avnish36singh-arch.github.io/signal-earth-portal/investigations/kanpur-lst.html
         </blockquote>
       </section>
 
       <!-- 4. Report a problem -->
-      <section style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 1.5rem;">
+      <section class="se-panel-box-last">
         <span class="section-kicker">Feedback and Corrections</span>
-        <h2 class="editorial-headline" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Report a Problem</h2>
-        <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
+        <h2 class="editorial-headline se-panel-heading">Report a Problem</h2>
+        <p class="se-lead-paragraph">
           If you spot a spatial calculation error, a reanalysis parameter misstatement, or an unsupported conclusion, please open an issue on GitHub:
         </p>
-        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <div class="se-btn-group">
           <a href="https://github.com/avnish36singh-arch/signal-earth-portal/issues" target="_blank" rel="noopener noreferrer" class="se-link">Open GitHub issue</a>
           <a href="../corrections.html" class="se-link se-link-secondary">View Corrections Log</a>
         </div>
@@ -253,9 +260,9 @@
   <footer class="se-footer">
     <div class="se-container">
       <div class="se-footer-inner">
-        <div style="max-width: 320px;">
-          <div style="font-weight: 700; color: #FFFFFF; letter-spacing: 0.1em; margin-bottom: 0.4rem; text-transform: uppercase;">Signal Earth</div>
-          <p style="line-height: 1.6; color: var(--text-inverse-muted); font-size: 0.85rem;">
+        <div class="se-footer-brand-col">
+          <div class="se-footer-brand-title">Signal Earth</div>
+          <p class="se-footer-brand-desc">
             Student research portfolio analyzing archived environmental monitoring data from CPCB, UPPCB, and NASA POWER reanalysis.
           </p>
         </div>
@@ -308,8 +315,8 @@
       </div>
 
       <div class="se-footer-bottom">
-        <div>Site design and analyses by Avnish Singh, Civil Engineering, HBTU Kanpur. Code under MIT License.</div>
-        <div>Page updated: October 2026. Content strictly reflects public monitoring records.</div>
+        <div>Maintained by: Avnish Singh</div>
+        <div>Page last updated: October 2026</div>
       </div>
     </div>
   </footer>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Weather Reanalysis Is | Explained | Signal Earth</title>
+  <meta name="description" content="Understanding numerical atmospheric reanalysis models like NASA MERRA-2 and their spatial resolution limits compared to satellite radiometers like Landsat TIRS.">
+  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/explained/weather-reanalysis.html">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta property="og:title" content="What Weather Reanalysis Is | Signal Earth Explained">
+  <meta property="og:description" content="Numerical atmospheric reanalysis versus satellite radiometry over urban basins.">
+  <meta property="og:url" content="https://avnish36singh-arch.github.io/signal-earth-portal/explained/weather-reanalysis.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://avnish36singh-arch.github.io/signal-earth-portal/assets/lst/03_kanpur_spatial_thermal_zones.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header>
+    <nav class="se-nav" aria-label="Main Navigation">
+      <div class="se-nav-inner">
+        <a href="../index.html" class="se-brand">
+          <span class="se-brand-name">Signal Earth</span>
+          <span class="se-brand-sub">Environmental Data Portfolio</span>
+        </a>
+
+        <ul class="se-nav-links">
+          <li><a href="../index.html#analyses">Analyses</a></li>
+          <li><a href="../index.html#explained" class="active">Explained</a></li>
+          <li><a href="../methodology.html">Methodology</a></li>
+          <li><a href="../data.html">Data and code</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="se-container-narrow se-page-content">
+    <header class="se-article-header">
+      <span class="section-kicker">Explained : Geospatial Methods</span>
+      <h1 class="editorial-headline se-article-title">
+        What Weather Reanalysis Is, and What Coarse Grid Cells Cannot See
+      </h1>
+      <p class="se-hero-dek">
+        The difference between global numerical atmospheric simulations and high-resolution satellite radiometry.
+      </p>
+    </header>
+
+    <div class="se-prose">
+      <!-- TODO[ME] author rewrite -->
+      <p>
+        It is tempting to look at a thermal map of northern India and assume a satellite pointed a digital thermometer at the pavement. In multi-decade environmental studies, however, surface temperature records usually come from reanalysis systems like NASA GMAO MERRA-2 and the NASA POWER program. Reanalysis is not a collection of photographs. It is a continuous physics simulation of the global atmosphere that runs historical numerical weather models while assimilating millions of real-world observations from weather balloons, ground stations, and orbital sounders.
+      </p>
+
+      <p>
+        This approach provides an enormous benefit: an unbroken, multi-decade record of daily surface skin temperature and solar radiation with zero cloud gaps. But that completeness has an important trade-off: spatial resolution. The MERRA-2 grid cell over Kanpur spans 0.5 degrees of latitude by 0.625 degrees of longitude, an area roughly 55 kilometers north-to-south by 60 kilometers east-to-west.
+      </p>
+
+      <p>
+        A single 55 by 60 kilometer cell blankets the dense brick core of Kanpur, surrounding agricultural fields, the Ganga River floodplain, and industrial highway corridors together into one average value. Reanalysis can track broad regional heating cycles (showing winter skin temperatures dropping below 8 degrees Celsius while summer peaks at 43.39 degrees), but it cannot detect neighborhood heat islands, tree canopy shade, or asphalt heat storage. Mapping street-level thermal differences requires high-resolution radiometric sensors like the Thermal Infrared Sensor (TIRS) on Landsat 8 and 9 at 100 m native, resampled to 30 m, which is planned future work.
+      </p>
+
+      <div class="se-figure">
+        <div class="se-figure-header">
+          <div class="se-figure-title">Figure 1: Kanpur Urban Boundary Inside the 55 x 60 km MERRA-2 Grid Box</div>
+          <div class="se-figure-meta">Data Source: NASA POWER MERRA-2 Grid Box (26.4499°N, 80.3319°E) and Survey of India Municipal Vector</div>
+        </div>
+        <img src="../assets/lst/03_kanpur_spatial_thermal_zones.png" alt="Map showing Kanpur municipal boundary and monitoring stations inside the single regional MERRA-2 reanalysis grid box" class="se-figure-img" width="900" height="450" loading="lazy">
+        <div class="se-figure-caption">
+          <strong>Caption:</strong> The single 0.5° x 0.625° reanalysis grid cell overlaid on the Kanpur municipal limits and monitoring stations. Internal spatial temperature offsets have been deleted until verified by 100 m native Landsat TIRS radiometry.
+        </div>
+        <div class="se-image-credit">
+          Image: Avnish Singh, using NASA POWER and QGIS spatial layers, October 2026. <a href="../credits.html">Credits entry</a>.
+        </div>
+      </div>
+
+      <div class="se-note-box">
+        <h4 class="se-note-title">Sensors Comparison: Reanalysis vs Radiometers</h4>
+        <p class="se-note-text">
+          <strong>NASA MERRA-2 / POWER:</strong> ~55 x 60 km grid, daily continuous time series from 1981 to present, zero missing days due to clouds, assimilated assimilation model output.<br>
+          <strong>Landsat 8/9 TIRS:</strong> 100 m native, resampled to 30 m spatial resolution, 16-day orbital revisit cycle, subject to cloud-masking and haze attenuation.
+        </p>
+      </div>
+
+      <div class="se-related-links">
+        <h4 class="se-related-title">Related Investigations and Methodology</h4>
+        <ul>
+          <li><a href="../investigations/kanpur-lst.html" class="se-link">Investigation 03: Kanpur Surface Skin Temperature and Atmospheric Coupling</a></li>
+          <li><a href="../methodology.html#reanalysis-grid" class="se-link">Methodology: NASA POWER Reanalysis Grid and Analytical Limits</a></li>
+          <li><a href="temperature-inversion.html" class="se-link">Explained: What a Temperature Inversion Is</a></li>
+          <li><a href="cpcb-naqi.html" class="se-link">Explained: How CPCB Computes the National AQI</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="se-footer">
+    <div class="se-container">
+      <div class="se-footer-inner">
+        <div class="se-footer-brand-col">
+          <div class="se-footer-brand-title">Signal Earth</div>
+          <p class="se-footer-brand-desc">
+            Student research portfolio analyzing archived environmental monitoring data from CPCB, UPPCB, and NASA POWER reanalysis.
+          </p>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Analyses</h5>
+          <ul>
+            <li><a href="../investigations/kanpur.html">Kanpur Particulate Dynamics</a></li>
+            <li><a href="../investigations/delhi.html">Delhi NAQI Analysis</a></li>
+            <li><a href="../investigations/kanpur-lst.html">Kanpur Reanalysis Temperature</a></li>
+            <li><a href="../investigations/comparison.html">Regional Airshed Comparison</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Method and Data</h5>
+          <ul>
+            <li><a href="../index.html#explained">Explained Pieces</a></li>
+            <li><a href="../methodology.html">Methodology and Limits</a></li>
+            <li><a href="../data.html">Data and Code</a></li>
+            <li><a href="../about.html">About Signal Earth</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms of Use</a></li>
+            <li><a href="../licenses.html">Licenses and Terms</a></li>
+            <li><a href="../credits.html">Image Credits</a></li>
+            <li><a href="../corrections.html">Corrections Log</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/company/signalearth/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="../contact.html">Contact Information</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="se-footer-disclaimer">
+        Signal Earth is an independent student project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, National Geographic or any agency named on this site.
+      </div>
+
+      <div class="se-footer-bottom">
+        <div>Maintained by: Avnish Singh</div>
+        <div>Page last updated: October 2026</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
