@@ -66,8 +66,7 @@ KANPUR_ZONES_GEO = {
                 "zone_id": "ZONE_01",
                 "name": "Central Kanpur Urban Core",
                 "classification": "High-Density Built-Up (Impervious)",
-                "albedo_characteristic": "Low (Asphalt/Concrete)",
-                "mean_uhi_offset_c": 2.1
+                "albedo_characteristic": "Low (Asphalt/Concrete)"
             },
             "geometry": {
                 "type": "Polygon",
@@ -83,8 +82,7 @@ KANPUR_ZONES_GEO = {
                 "zone_id": "ZONE_02",
                 "name": "Jajmau Industrial Tannery Cluster",
                 "classification": "Heavy Industrial & Dense Settlement",
-                "albedo_characteristic": "Moderate-Low",
-                "mean_uhi_offset_c": 1.8
+                "albedo_characteristic": "Moderate-Low"
             },
             "geometry": {
                 "type": "Polygon",
@@ -98,10 +96,9 @@ KANPUR_ZONES_GEO = {
             "type": "Feature",
             "properties": {
                 "zone_id": "ZONE_03",
-                "name": "Panki Industrial & Thermal Buffer",
+                "name": "Panki Industrial Area",
                 "classification": "Power Generation & Manufacturing",
-                "albedo_characteristic": "Industrial Roof / Bare Soil",
-                "mean_uhi_offset_c": 1.6
+                "albedo_characteristic": "Industrial Roof / Bare Soil"
             },
             "geometry": {
                 "type": "Polygon",
@@ -117,8 +114,7 @@ KANPUR_ZONES_GEO = {
                 "zone_id": "ZONE_04",
                 "name": "IITK & Kalyanpur Institutional Belt",
                 "classification": "Suburban Canopy / Educational Campus",
-                "albedo_characteristic": "Vegetative Canopy / Tree Cover",
-                "mean_uhi_offset_c": -0.8
+                "albedo_characteristic": "Vegetative Canopy / Tree Cover"
             },
             "geometry": {
                 "type": "Polygon",
@@ -134,8 +130,7 @@ KANPUR_ZONES_GEO = {
                 "zone_id": "ZONE_05",
                 "name": "Ganga Riparian Buffer & Floodplain",
                 "classification": "Riverine Wetland & Active Silt Floodplain",
-                "albedo_characteristic": "Water / Wet Sand Evaporative Cooling",
-                "mean_uhi_offset_c": -2.4
+                "albedo_characteristic": "Water / Wet Sand Evaporative Cooling"
             },
             "geometry": {
                 "type": "Polygon",
@@ -238,7 +233,7 @@ def plot_02_skin_vs_air_anomaly(df, output_path):
     print(f"Saved: {output_path}")
 
 def plot_03_spatial_thermal_zones(output_path):
-    """Figure 3: Spatial GIS Map of Kanpur Urban Thermal Zonation and Monitoring Stations."""
+    """Figure 3: Spatial GIS Map of Kanpur Urban Morphological Outlines and Monitoring Stations."""
     fig, ax = plt.subplots(figsize=(11, 9), dpi=300)
     
     # Map layout bounds (approx Kanpur metropolitan canvas)
@@ -246,11 +241,11 @@ def plot_03_spatial_thermal_zones(output_path):
     ax.set_ylim(26.39, 26.56)
     
     zone_colors = {
-        "ZONE_01": ("#EF4444", "Central Urban Core (+2.1°C UHI)"),
-        "ZONE_02": ("#DC2626", "Jajmau Industrial (+1.8°C UHI)"),
-        "ZONE_03": ("#F97316", "Panki Manufacturing (+1.6°C UHI)"),
-        "ZONE_04": ("#10B981", "IITK Institutional Canopy (-0.8°C Buffer)"),
-        "ZONE_05": ("#06B6D4", "Ganga Riparian Wetland (-2.4°C Cooling)")
+        "ZONE_01": ("#EF4444", "Central Urban Core (High-Density Built-Up)"),
+        "ZONE_02": ("#DC2626", "Jajmau Industrial Tannery Cluster"),
+        "ZONE_03": ("#F97316", "Panki Industrial Area"),
+        "ZONE_04": ("#10B981", "IITK & Kalyanpur Institutional Belt"),
+        "ZONE_05": ("#06B6D4", "Ganga Riparian Buffer & Floodplain")
     }
     
     # Plot Polygons
@@ -273,7 +268,7 @@ def plot_03_spatial_thermal_zones(output_path):
         pt = feat["geometry"]["coordinates"]
         name = feat["properties"]["name"]
         ax.scatter(pt[0], pt[1], color='#4338CA', s=140, edgecolor='white', linewidth=2.2, zorder=5)
-        ax.text(pt[0], pt[1] + 0.007, f"★ {name}\n(CPCB/UPPCB)", fontsize=9, fontweight='bold', color='#1E1B4B', ha='center',
+        ax.text(pt[0], pt[1] + 0.007, f"{name}\n(CPCB/UPPCB)", fontsize=9, fontweight='bold', color='#1E1B4B', ha='center',
                 bbox=dict(boxstyle="round,pad=0.25", facecolor="#EEF2FF", alpha=0.9, edgecolor="#4338CA", linewidth=1.2))
         
     # Plot Ganga River schematic line
@@ -281,9 +276,9 @@ def plot_03_spatial_thermal_zones(output_path):
     ganga_y = [26.54, 26.52, 26.49, 26.44, 26.40]
     ax.plot(ganga_x, ganga_y, color='#0284C7', linewidth=4.0, linestyle='-', alpha=0.6, label='Ganga River Corridor')
     
-    ax.set_title("Kanpur Metropolitan Spatial Thermal Zonation & Air Quality Monitoring Network", fontsize=13, fontweight='bold', pad=15)
-    ax.set_xlabel("Longitude (°E) — EPSG:4326 WGS84", fontsize=10, labelpad=8)
-    ax.set_ylabel("Latitude (°N) — EPSG:4326 WGS84", fontsize=10, labelpad=8)
+    ax.set_title("Kanpur Metropolitan Morphological Outlines & Air Quality Monitoring Network", fontsize=13, fontweight='bold', pad=15)
+    ax.set_xlabel("Longitude (°E) : EPSG:4326 WGS84", fontsize=10, labelpad=8)
+    ax.set_ylabel("Latitude (°N) : EPSG:4326 WGS84", fontsize=10, labelpad=8)
     ax.legend(loc='lower left', frameon=True, facecolor='white', framealpha=0.92, fontsize=8.5)
     
     plt.tight_layout()
@@ -292,11 +287,12 @@ def plot_03_spatial_thermal_zones(output_path):
     print(f"Saved: {output_path}")
 
 def plot_04_lst_inversion_pm25_coupling(df_power, kanpur_aq_csv, output_path):
-    """Figure 4: Coupling between Satellite Surface Cooling and Station-Level PM2.5 Inversion."""
+    """Figure 4: Overlap Analysis: MERRA-2 Skin Temperature vs Ground Station PM2.5 (July 2021 to October 2022)."""
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(15, 9), sharex=True, dpi=300)
     
-    # Load and aggregate Kanpur station air quality
+    # Load and aggregate Kanpur station air quality restricted strictly to Window 1 overlap
     df_aq = pd.read_csv(kanpur_aq_csv)
+    df_aq = df_aq[df_aq['window'].str.contains('Window 1', na=False)].copy()
     df_aq['Date_dt'] = pd.to_datetime(df_aq['date'])
     daily_pm = df_aq.groupby('Date_dt')[['pm25', 'pm10']].mean().reset_index()
     
@@ -305,18 +301,17 @@ def plot_04_lst_inversion_pm25_coupling(df_power, kanpur_aq_csv, output_path):
     merged = pd.merge(df_power, daily_pm, on='Date_dt', how='inner')
     merged = merged.sort_values('Date_dt')
     
-    # Panel 1: Satellite LST & Thermal Gradient
-    ax1.plot(merged['Date_dt'], merged['LST_Skin_C'], color='#F59E0B', linewidth=1.5, label='NASA POWER LST (Skin Temp, °C)')
+    # Panel 1: Reanalysis Skin Temperature
+    ax1.plot(merged['Date_dt'], merged['LST_Skin_C'], color='#F59E0B', linewidth=1.5, label='MERRA-2 Reanalysis Skin Temp (°C)')
     ax1.plot(merged['Date_dt'], merged['Air_Temp_2M_C'], color='#2563EB', linewidth=1.4, linestyle='--', label='2m Air Temp (°C)')
-    ax1.axhline(15, color='#3B82F6', linestyle=':', alpha=0.7, label='Winter Inversion Threshold (<15°C)')
     ax1.set_ylabel("Temperature (°C)", fontsize=11)
-    ax1.set_title("Thermal Inversion Mechanics: Satellite Skin Temperature vs Ground PM2.5 Entrapment in Kanpur", fontsize=13, fontweight='bold', pad=12)
-    ax1.legend(loc='upper right', frameon=True, facecolor='white', fontsize=8.5, ncol=3)
+    ax1.set_title("Kanpur Overlap Analysis: MERRA-2 Reanalysis Skin Temperature vs Ground Station PM2.5 (Jul 2021 to Oct 2022, n = 308)", fontsize=13, fontweight='bold', pad=12)
+    ax1.legend(loc='upper right', frameon=True, facecolor='white', fontsize=8.5, ncol=2)
     ax1.set_ylim(5, 48)
     
     # Panel 2: Ground-Level PM2.5 Concentration
     ax2.axhspan(60, 500, color='#EF4444', alpha=0.10, label='NAAQS Exceedance (>60 µg/m³)')
-    ax2.plot(merged['Date_dt'], merged['pm25'], color='#DC2626', linewidth=1.4, label='Station PM2.5 (NSI Kalyanpur & Nehru Nagar)')
+    ax2.plot(merged['Date_dt'], merged['pm25'], color='#DC2626', linewidth=1.4, label='Station PM2.5 Mean (Kalyanpur & Nehru Nagar)')
     pm25_30d = merged['pm25'].rolling(30, min_periods=1).mean()
     ax2.plot(merged['Date_dt'], pm25_30d, color='#7F1D1D', linewidth=2.2, label='30-Day PM2.5 Trend')
     ax2.set_ylabel("PM2.5 (µg/m³)", fontsize=11)
@@ -324,10 +319,10 @@ def plot_04_lst_inversion_pm25_coupling(df_power, kanpur_aq_csv, output_path):
     ax2.set_ylim(0, 320)
     ax2.legend(loc='upper right', frameon=True, facecolor='white', fontsize=8.5)
     
-    # Annotate winter inversion surge
-    ax2.annotate("Post-Sunset Radiative Inversion Trap\n(LST drops -> Shallow PBL -> PM2.5 Spikes)",
+    # Annotate winter seasonal association
+    ax2.annotate("Winter Correlation: Pearson r = -0.455 (n = 308)\nEmpirical association; not direct physical mechanism",
                  xy=(pd.Timestamp('2021-11-15'), 180),
-                 xytext=(pd.Timestamp('2021-07-01'), 260),
+                 xytext=(pd.Timestamp('2021-07-20'), 250),
                  arrowprops=dict(facecolor='#1E293B', shrink=0.05, width=1.5, headwidth=6),
                  fontsize=8.5, fontweight='bold', bbox=dict(boxstyle="round,pad=0.3", facecolor="#FEF2F2", edgecolor="#EF4444"))
     
@@ -342,9 +337,9 @@ def run_kanpur_lst_gis_pipeline():
     data_csv = os.path.join(project_root, "data", "lst", "kanpur_nasa_power_daily.csv")
     qgis_dir = os.path.join(project_root, "outputs", "lst", "qgis")
     plots_dir = os.path.join(project_root, "outputs", "lst", "plots")
-    web_assets_dir = os.path.join(project_root, "web", "assets", "lst")
-    web_data_dir = os.path.join(project_root, "web", "data")
-    kanpur_aq_csv = os.path.join(project_root, "web", "data", "kanpur", "daily_aggregated.csv")
+    web_assets_dir = os.path.join(project_root, "assets", "lst")
+    web_data_dir = os.path.join(project_root, "data")
+    kanpur_aq_csv = os.path.join(project_root, "data", "kanpur", "daily_aggregated.csv")
     
     os.makedirs(qgis_dir, exist_ok=True)
     os.makedirs(plots_dir, exist_ok=True)
@@ -358,7 +353,6 @@ def run_kanpur_lst_gis_pipeline():
     # 2. Export QGIS Vector Layers
     print("\n[Stage 2/5] Exporting QGIS vector GeoJSON layers...")
     export_qgis_layers(qgis_dir)
-    # Also copy geojson to web/data/ for web map visualization if desired
     with open(os.path.join(web_data_dir, "kanpur_thermal_zones.geojson"), "w") as f:
         json.dump(KANPUR_ZONES_GEO, f, indent=2)
     with open(os.path.join(web_data_dir, "kanpur_cpcb_stations.geojson"), "w") as f:
@@ -377,7 +371,7 @@ def run_kanpur_lst_gis_pipeline():
     plot_04_lst_inversion_pm25_coupling(df, kanpur_aq_csv, p4)
     
     # 4. Copy figures to web assets
-    print("\n[Stage 4/5] Synchronizing figures to web/assets/lst/...")
+    print("\n[Stage 4/5] Synchronizing figures to assets/lst/...")
     for p in [p1, p2, p3, p4]:
         fname = os.path.basename(p)
         dest = os.path.join(web_assets_dir, fname)
@@ -385,7 +379,7 @@ def run_kanpur_lst_gis_pipeline():
         shutil.copyfile(p, dest)
     print("Web assets synchronized.")
     
-    # 5. Export lightweight web JSON feed for interactive telemetry
+    # 5. Export lightweight web JSON feed
     print("\n[Stage 5/5] Exporting web-optimized daily LST JSON feed...")
     web_json = os.path.join(web_data_dir, "kanpur_lst_daily.json")
     records = []

@@ -1,103 +1,99 @@
-﻿# Signal Earth — Public Web Portal & Environmental Observatory
+# Signal Earth : Public Environmental Data Portfolio
 
-**Independent Environmental Data, Satellite Telemetry, and Atmospheric Analysis Platform**
+Student research portfolio analyzing archived ambient air-quality and reanalysis temperature data across the Indo-Gangetic Plain.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Platform: Web](https://img.shields.io/badge/Platform-Vanilla%20Web%20%2F%20Plotly.js-cyan.svg)](index.html)
-[![Standard: CPCB NAQI](https://img.shields.io/badge/Standard-CPCB%20NAQI%202014-green.svg)](https://cpcb.nic.in)
+Maintained by Avnish Singh (Harcourt Butler Technical University, Kanpur).
 
----
+Portal URL: https://avnish36singh-arch.github.io/signal-earth-portal/
 
 ## Overview
 
-**Signal Earth** is an independent, open-access public observatory and environmental dashboard delivering interactive visualizations, regulatory evaluations, and scientific dispatches across Indian atmospheric corridors. The portal harmonizes ground-station regulatory telemetry from the Central Pollution Control Board (CPCB) and Uttar Pradesh Pollution Control Board (UPPCB) with NASA POWER satellite thermal datasets.
+Signal Earth is an independent, static web portfolio that publishes analyses of public environmental monitoring records. The project examines air quality data from the Central Pollution Control Board (CPCB), Uttar Pradesh Pollution Control Board (UPPCB), and Delhi Pollution Control Committee (DPCC), alongside reanalysis skin temperature data from NASA POWER (GMAO MERRA-2).
 
-### Research Suite Repositories
-- **Delhi NCR Analysis Pipeline (Python)**: [delhi-air_qaulity_cpcb](https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb)
-- **Kanpur Air Quality Analysis**: [Air-Quality-Analysis-Kanpur](https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur)
-- **Kanpur Land Surface Temperature & QGIS Spatial Analysis**: [Kanpur-LST-Thermal-Analysis-GIS](https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS)
+This site is a static student portfolio, not an operational monitoring platform, not a government body, and not a commercial product. All analytical code is open source and reproducible.
 
----
+### Research Pipelines
 
-## Platform Features
+- Delhi NCR Analysis Pipeline (Python): [delhi-air_qaulity_cpcb](https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb)
+- Kanpur Air Quality Analysis: [Air-Quality-Analysis-Kanpur](https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur)
+- Kanpur Skin Temperature and Spatial GIS Analysis: [Kanpur-LST-Thermal-Analysis-GIS](https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS)
 
-1. **Multi-Year Delhi NCR Investigation (`investigations/delhi.html`)**
-   - 1,825 continuous daily monitoring records (2017–2023) across 24 parameters.
-   - Gap-fixed CPCB NAQI time series, sub-index breakdowns, and seasonal dynamics.
-   - Interactive Plotly.js charts with full responsive zoom, pan, and hover telemetry.
+## Published Analyses
 
-2. **Kanpur Industrial Particulate Dynamics (`investigations/kanpur.html`)**
-   - Multi-station telemetry (Nehru Nagar & Kidwai Nagar).
-   - Diurnal traffic and industrial peaks, seasonal shifts, and meteorological scatter regressions.
+1. Kanpur Particulate Dynamics (`investigations/kanpur.html`)
+   - Evaluates particulate levels (PM2.5 and PM10) from two monitoring stations (NSI Kalyanpur and Nehru Nagar) across two discrete observation windows (July 2021 to October 2022 and February 2025 to August 2026; pooled 1,628 station-days).
+   - Diurnal traffic and industrial peaks, seasonal variations, and ratio screening (PM2.5 / PM10).
 
-3. **Kanpur Land Surface Temperature (LST) & Thermal Inversion (`investigations/kanpur-lst.html`)**
-   - NASA POWER daily satellite skin temperature ($T_{\text{skin}}$) vs 2-meter air temperature ($T_{\text{2m}}$).
-   - Nocturnal surface thermal inversion and particulate trapping diagnostics.
-   - Spatial QGIS thermal buffer zones and station overlays.
+2. Delhi Five-Year NAQI Analysis (`investigations/delhi.html`)
+   - Analyzes 1,825 daily records from Alipur, Delhi (2017 to 2023).
+   - Documents an operational monitoring gap of 732 days (January 1, 2019 to December 31, 2020) where the station was inactive.
+   - Evaluates 1,137 official days meeting the CPCB minimum reporting quorum (3 pollutants including at least one PM parameter).
 
-4. **Cross-Basin Comparative Analysis (`investigations/comparison.html`)**
-   - Indo-Gangetic Plain regional air mass dynamics comparing capital megacity vs industrial riverine basin.
+3. Kanpur Surface Skin Temperature and Boundary Coupling (`investigations/kanpur-lst.html`)
+   - Utilizes NASA POWER (GMAO MERRA-2) daily reanalysis skin temperature (TS) and 2-meter air temperature (T2M) over a single 0.5° × 0.625° grid box (~55 × 60 km) covering Kanpur.
+   - Examines negative seasonal association with PM2.5 during the true overlap window (July 9, 2021 to October 16, 2022; n = 308, Pearson r = -0.455).
+   - Clarifies that coarse reanalysis data cannot resolve intra-urban heat islands; detailed spatial zoning remains planned future work.
 
-5. **Methodology, Citations, & Dispatches**
-   - Mathematical formulations of CPCB NAQI piecewise linear sub-indices.
-   - Peer-reviewed research citations and analytical briefs.
+4. Regional Airshed Comparison (`investigations/comparison.html`)
+   - Compares particulate metrics between Delhi (Alipur) and Kanpur (Kalyanpur and Nehru Nagar).
+   - Explicitly notes non-identical monitoring periods, differing station counts (single megacity peripheral station versus pooled industrial/suburban monitors), and differing data density.
 
----
+## Methodology and Limitations
 
-## Directory Structure
+- CPCB NAQI Formulation: Piecewise linear interpolation based on CPCB 2014 guidelines.
+- Ratio Filtering: Observations where PM2.5 > PM10 are physically implausible and flagged or filtered during quality control.
+- Reanalysis Resolution: NASA POWER data reflects model reanalysis at regional grid resolution, not high-resolution satellite radiometer land surface temperature.
+
+## Project Structure
 
 ```text
 signal-earth-portal/
-├── index.html                    # Observatory homepage
-├── about.html                    # Mission, scope, and principles
-├── methodology.html              # CPCB NAQI mathematical formulations
-├── citations.html                # Academic literature and data sources
-├── dispatches.html               # Analytical research articles
-├── contact.html                  # Inquiries and researcher outreach
-├── style.css                     # Editorial design system (Dark obsidian theme)
-├── investigations/               # City-specific and comparative dashboards
-│   ├── delhi.html                # Delhi interactive dashboard
-│   ├── delhi.js                  # Delhi telemetry controller & Plotly charts
-│   ├── kanpur.html               # Kanpur interactive dashboard
-│   ├── kanpur-lst.html           # Kanpur LST & thermal inversion dashboard
-│   ├── kanpur-lst.js             # LST controller & Plotly charts
-│   └── comparison.html           # Cross-city comparison interface
-├── assets/                       # High-resolution satellite imagery & charts
-│   ├── delhi/                    # Delhi analytical charts
-│   ├── kanpur/                   # Kanpur analytical charts
-│   └── lst/                      # LST satellite plots & maps
-└── data/                         # Harmonized telemetry feeds (JSON & GeoJSON)
-    ├── delhi_daily_gapfixed.json # Cleaned Delhi continuous time series
-    ├── kanpur_lst_daily.json     # Kanpur NASA POWER LST telemetry
+├── index.html                    # Portfolio homepage with NAQI calculator
+├── about.html                    # Author background and project scope
+├── methodology.html              # CPCB NAQI formula and quality control limits
+├── data.html                     # Monitoring station registry, counts, and citations
+├── contact.html                  # Contact and inquiry information
+├── privacy.html                  # Privacy policy (static hosting, zero tracking)
+├── terms.html                    # Terms of use and educational disclaimer
+├── licenses.html                 # MIT license and data attribution
+├── corrections.html              # Chronological revision and corrections log
+├── citations.html                # Redirect to data.html
+├── 404.html                      # Not found error page
+├── sitemap.xml                   # Site URL index
+├── robots.txt                    # Search crawler instructions
+├── style.css                     # Editorial journal stylesheet (light theme)
+├── investigations/
+│   ├── delhi.html                # Delhi investigation
+│   ├── delhi.js                  # Delhi Plotly.js charts
+│   ├── kanpur.html               # Kanpur particulate investigation
+│   ├── kanpur-lst.html           # Kanpur temperature and coupling investigation
+│   ├── kanpur-lst.js             # Temperature Plotly.js charts
+│   └── comparison.html           # Regional airshed comparative analysis
+├── assets/                       # Verified analytical figures and static maps
+│   ├── delhi/                    # Delhi charts
+│   ├── kanpur/                   # Kanpur charts
+│   └── lst/                      # Temperature plots and station location map
+└── data/                         # Processed observation data (JSON and GeoJSON)
+    ├── delhi_daily_gapfixed.json
+    ├── kanpur_lst_daily.json
     ├── kanpur_cpcb_stations.geojson
     ├── kanpur_thermal_zones.geojson
-    └── kanpur/                   # Aggregated statistical records
+    └── kanpur/
 ```
 
----
+## Running Locally
 
-## Local Development & Deployment
-
-### Run Locally
-Since the portal uses modern `fetch()` API calls to load local JSON and GeoJSON data, serve it using any local HTTP server:
+Because the interactive charts use JavaScript fetch requests to load local JSON files, serve the directory with a local HTTP server:
 
 ```bash
-# Using Python 3
+# Python 3
 python -m http.server 8000
-
-# Or using Node.js
-npx serve .
 ```
-Then open `http://localhost:8000` in your web browser.
 
-### Deploying to GitHub Pages
-1. Push this repository to GitHub.
-2. Go to **Settings** > **Pages**.
-3. Under **Source**, select `Deploy from a branch` -> `main` -> `/ (root)`.
-4. Click **Save**. Your site will be live at `https://<username>.github.io/<repo-name>/`.
-
----
+Then visit `http://localhost:8000` in your web browser.
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+- Software and markup: MIT License (see [LICENSE](LICENSE)).
+- Editorial text and charts: Creative Commons Attribution 4.0 International (CC BY 4.0).
+- Data: Central Pollution Control Board (CPCB), Uttar Pradesh Pollution Control Board (UPPCB), Delhi Pollution Control Committee (DPCC), and NASA POWER.

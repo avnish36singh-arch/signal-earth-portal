@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://avnish36singh-arch.github.io/signal-earth-portal/sitemap.xml

@@ -1,4 +1,4 @@
-﻿# OS metadata
+# OS metadata
 .DS_Store
 Thumbs.db
 
@@ -11,3 +11,7 @@ node_modules/
 dist/
 build/
 *.log
+
+# Scratch audit dumps
+audit_output.txt
+all_numeric_blocks.json

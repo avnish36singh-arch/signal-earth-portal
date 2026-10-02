@@ -7,8 +7,7 @@
         "zone_id": "ZONE_01",
         "name": "Central Kanpur Urban Core",
         "classification": "High-Density Built-Up (Impervious)",
-        "albedo_characteristic": "Low (Asphalt/Concrete)",
-        "mean_uhi_offset_c": 2.1
+        "albedo_characteristic": "Low (Asphalt/Concrete)"
       },
       "geometry": {
         "type": "Polygon",
@@ -44,8 +43,7 @@
         "zone_id": "ZONE_02",
         "name": "Jajmau Industrial Tannery Cluster",
         "classification": "Heavy Industrial & Dense Settlement",
-        "albedo_characteristic": "Moderate-Low",
-        "mean_uhi_offset_c": 1.8
+        "albedo_characteristic": "Moderate-Low"
       },
       "geometry": {
         "type": "Polygon",
@@ -79,10 +77,9 @@
       "type": "Feature",
       "properties": {
         "zone_id": "ZONE_03",
-        "name": "Panki Industrial & Thermal Buffer",
+        "name": "Panki Industrial Area",
         "classification": "Power Generation & Manufacturing",
-        "albedo_characteristic": "Industrial Roof / Bare Soil",
-        "mean_uhi_offset_c": 1.6
+        "albedo_characteristic": "Industrial Roof / Bare Soil"
       },
       "geometry": {
         "type": "Polygon",
@@ -118,8 +115,7 @@
         "zone_id": "ZONE_04",
         "name": "IITK & Kalyanpur Institutional Belt",
         "classification": "Suburban Canopy / Educational Campus",
-        "albedo_characteristic": "Vegetative Canopy / Tree Cover",
-        "mean_uhi_offset_c": -0.8
+        "albedo_characteristic": "Vegetative Canopy / Tree Cover"
       },
       "geometry": {
         "type": "Polygon",
@@ -155,8 +151,7 @@
         "zone_id": "ZONE_05",
         "name": "Ganga Riparian Buffer & Floodplain",
         "classification": "Riverine Wetland & Active Silt Floodplain",
-        "albedo_characteristic": "Water / Wet Sand Evaporative Cooling",
-        "mean_uhi_offset_c": -2.4
+        "albedo_characteristic": "Water / Wet Sand Evaporative Cooling"
       },
       "geometry": {
         "type": "Polygon",

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corrections Log | Signal Earth</title>
+  <meta name="description" content="Chronological record of methodological corrections, data adjustments, and errata across Signal Earth analyses.">
+  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/corrections.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:title" content="Corrections Log | Signal Earth">
+  <meta property="og:description" content="Chronological log of scientific corrections and errata on Signal Earth.">
+  <meta property="og:url" content="https://avnish36singh-arch.github.io/signal-earth-portal/corrections.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://avnish36singh-arch.github.io/signal-earth-portal/assets/delhi/01_aqi_time_series.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header>
+    <nav class="se-nav" aria-label="Main Navigation">
+      <div class="se-nav-inner">
+        <a href="index.html" class="se-brand">
+          <span class="se-brand-name">Signal Earth</span>
+          <span class="se-brand-sub">Environmental Data Portfolio</span>
+        </a>
+
+        <ul class="se-nav-links">
+          <li><a href="index.html#analyses">Analyses</a></li>
+          <li><a href="methodology.html">Methodology</a></li>
+          <li><a href="data.html">Data and code</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="se-container-narrow" style="padding-top: 3rem; padding-bottom: 4rem;">
+    <header style="margin-bottom: 2.5rem;">
+      <span class="section-kicker">Integrity and Errata</span>
+      <h1 class="editorial-headline" style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 0.75rem;">
+        Corrections Log
+      </h1>
+      <p class="se-hero-dek">
+        Public scientific work requires an open record of errors and corrections. All substantive methodological changes, data recalculations, and text corrections are documented chronologically below.
+      </p>
+    </header>
+
+    <div style="display: flex; flex-direction: column; gap: 2rem;">
+      
+      <!-- Revision October 2026 -->
+      <article style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.5rem;">
+        <span class="section-kicker">Revision : October 2026</span>
+        <h2 class="editorial-headline" style="font-size: 1.3rem; margin-bottom: 0.75rem;">Detailed Scientific and Methodological Audit</h2>
+        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
+          A full audit and refactoring of the site was performed to align all statements with genuine data boundaries and honest limitations:
+        </p>
+
+        <ul style="padding-left: 1.25rem; font-size: 0.9rem; line-height: 1.65; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.5rem;">
+          <li>
+            <strong>Reanalysis Classification (NASA POWER / MERRA-2):</strong> Corrected descriptions across all pages, citations, and metadata. Identified MERRA-2 as a numerical assimilation model reanalysis product on a 0.5° x 0.625° grid (~55 x 60 km), not an in-situ satellite observation or radiometric satellite LST. Removed "derived from thermal infrared radiance" and replaced with "model reanalysis skin temperature".
+          </li>
+          <li>
+            <strong>Kanpur Spatial Thermal Offsets:</strong> Deleted the ungrounded microclimate offset table (+2.1°C, +1.8°C, +1.6°C, -0.8°C, -2.4°C) because intra-urban gradients cannot originate from a single 55 x 60 km reanalysis cell. Replaced with an explicit notice that spatial zoning requires high-resolution satellite radiometry (Landsat / MODIS) and is planned. Stripped temperature values from the downloadable GeoJSON layer to retain only morphological zone outlines.
+          </li>
+          <li>
+            <strong>Boundary Layer Heights:</strong> Removed all unsourced boundary layer height figures (such as 150 m, 200 to 300 m, below 250 m, 1,500 to 250 m, and over 2,500 m). Described daytime convection and nocturnal surface cooling without fabricating specific height metrics.
+          </li>
+          <li>
+            <strong>Coupling Claims and Association:</strong> Restricted Kanpur temperature vs PM2.5 evaluation strictly to the true overlap period (July 9, 2021 to October 16, 2022, n = 308). Calculated exact Pearson r = -0.455. Replaced claims that cooling "proves" or represents the "exact mechanism" of pollution with explicit wording stating empirical seasonal association. Removed unsupported phrases including "inhalation risks".
+          </li>
+          <li>
+            <strong>Inversion Claims:</strong> Replaced assertions that negative daily-mean skin-minus-air differences demonstrate nocturnal inversion with the accurate description: "winter daily mean difference". Noted that testing nocturnal inversion requires hourly nocturnal profiles.
+          </li>
+          <li>
+            <strong>Coverage Disclosure:</strong> Replaced vague claims of "continuous" and "unbroken" records with exact counts. Documented Delhi Alipur's 732-day operational gap (2019 to 2020) and noted that 1,137 of 1,825 recorded rows satisfy CPCB regulatory validity. Documented Kanpur's 2.3-year reporting gap between observation windows.
+          </li>
+          <li>
+            <strong>Comparative Airshed Caveats:</strong> Added an explicit caveat box to the cross-city comparison explaining that winter surge multipliers (5.75x vs 3.56x) are derived from non-identical calendar years, differing station counts (1 vs 2), differing micro-environments (highway corridor vs urban residential), and distinct gaps.
+          </li>
+          <li>
+            <strong>Exact Row Counts:</strong> Replaced vague counts ("3,450+ hourly records") with exact dataset counts: 1,825 recorded daily rows for Delhi Alipur, 1,628 station-day daily rows for Kanpur, and 2,556 daily rows for NASA POWER.
+          </li>
+          <li>
+            <strong>Dispatches and Imagery Cleanup:</strong> Deleted the unverified research dispatch that lacked authors and DOI. Removed unverified external satellite images.
+          </li>
+          <li>
+            <strong>Design and Language Reset:</strong> Removed dark neon display styling, glassmorphism, blur, animations, transitions, and purple hues. Replaced with a light editorial design system using system fonts. Removed promotional buzzwords and changed institutional role titles to "Author" or "Maintainer".
+          </li>
+        </ul>
+      </article>
+
+      <!-- Reporting a Correction -->
+      <section style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.5rem;">
+        <h3 class="editorial-headline" style="font-size: 1.2rem; margin-bottom: 0.5rem;">Reporting an Error</h3>
+        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.75rem;">
+          If you spot a numerical error, broken link, or unsupported claim on this site, please email <a href="mailto:TODO[ME]:contact-email" class="se-link"><span class="todo-marker">TODO[ME]: contact email address</span></a> or submit an issue on the <a href="https://github.com/avnish36singh-arch/signal-earth-portal/issues" target="_blank" rel="noopener noreferrer" class="se-link">portal GitHub repository</a>. Confirmed errors are patched and logged here.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="se-footer">
+    <div class="se-container">
+      <div class="se-footer-inner">
+        <div style="max-width: 340px;">
+          <div style="font-weight: 700; color: var(--text-primary); letter-spacing: 0.08em; margin-bottom: 0.4rem; text-transform: uppercase;">Signal Earth</div>
+          <p style="line-height: 1.6; color: var(--text-secondary); font-size: 0.85rem;">
+            Student research portfolio analyzing archived environmental monitoring data from CPCB, UPPCB, and NASA POWER reanalysis.
+          </p>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Analyses</h5>
+          <ul>
+            <li><a href="investigations/kanpur.html">Kanpur Particulate Dynamics</a></li>
+            <li><a href="investigations/delhi.html">Delhi NAQI Analysis</a></li>
+            <li><a href="investigations/kanpur-lst.html">Kanpur Reanalysis Temperature</a></li>
+            <li><a href="investigations/comparison.html">Regional Airshed Comparison</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Documentation</h5>
+          <ul>
+            <li><a href="methodology.html">Methodology and Limits</a></li>
+            <li><a href="data.html">Data and Code</a></li>
+            <li><a href="about.html">About Signal Earth</a></li>
+            <li><a href="contact.html">Contact Information</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Policies and Notices</h5>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="licenses.html">Licenses and Terms</a></li>
+            <li><a href="corrections.html">Corrections Log</a></li>
+            <li><a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+            <li><a href="mailto:TODO[ME]:contact-email">Email</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="se-footer-bottom">
+        <span>Signal Earth : Maintained by Avnish Singh : HBTU Kanpur</span>
+        <span>Data: CPCB, UPPCB, DPCC, NASA POWER : Code MIT License</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
