@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Signal Earth</title>
-  <meta name="description" content="Mission, brand philosophy, and background of Signal Earth, maintained by Avnish Singh, undergraduate in Civil Engineering at HBTU Kanpur.">
+  <title>About Signal Earth | Independent Environmental Data Research</title>
+  <meta name="description" content="Mission, brand philosophy, and background of Signal Earth, an independent research portfolio maintained by Avnish Singh, undergraduate in Civil Engineering at HBTU Kanpur.">
   <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/about.html">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <meta property="og:title" content="About | Signal Earth">
-  <meta property="og:description" content="Mission, philosophy, and author background of Signal Earth.">
+  <meta property="og:title" content="About Signal Earth | Independent Environmental Data Research">
+  <meta property="og:description" content="Mission, brand philosophy, and author background of Signal Earth.">
   <meta property="og:url" content="https://avnish36singh-arch.github.io/signal-earth-portal/about.html">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="style.css">
@@ -19,6 +19,12 @@
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
 
+  <!-- Mandatory Top Affiliation Notice -->
+  <aside class="se-disclaimer-banner" aria-label="Affiliation Notice">
+    Signal Earth is an independent student project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, National Geographic or any agency named on this site.
+  </aside>
+
+  <!-- 5-Item Editorial Navigation -->
   <header>
     <nav class="se-nav" aria-label="Main Navigation">
       <div class="se-nav-inner">
@@ -29,10 +35,10 @@
 
         <ul class="se-nav-links">
           <li><a href="index.html#analyses">Analyses</a></li>
+          <li><a href="index.html#explained">Explained</a></li>
           <li><a href="methodology.html">Methodology</a></li>
           <li><a href="data.html">Data and code</a></li>
           <li><a href="about.html" class="active">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -40,108 +46,123 @@
 
   <main id="main" class="se-container-narrow" style="padding-top: 3rem; padding-bottom: 4rem;">
     <header style="margin-bottom: 2.5rem;">
-      <span class="section-kicker">Brand Identity and Scope</span>
+      <span class="section-kicker">Portfolio Overview</span>
       <h1 class="editorial-headline" style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 0.75rem;">
         About Signal Earth
       </h1>
       <p class="se-hero-dek">
-        The Earth is changing faster than most people realize. Signal Earth exists to make those changes impossible to overlook by making environmental change visible through maps, data, and science.
+        The Earth is changing faster than most people realize. Signal Earth is an independent student research portfolio dedicated to making those changes visible through maps, public data, and open science.
       </p>
     </header>
 
-    <div style="font-size: 0.95rem; line-height: 1.65; color: var(--text-secondary); display: flex; flex-direction: column; gap: 2rem;">
+    <div style="font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary); display: flex; flex-direction: column; gap: 2.5rem;">
 
-      <!-- Mission, Vision, Purpose -->
+      <!-- 01: Purpose and Origins -->
       <section>
-        <span class="section-kicker">01 : Core Purpose</span>
-        <h2 class="editorial-headline" style="font-size: 1.35rem; margin-bottom: 0.75rem; color: var(--text-primary);">Mission and Vision</h2>
-        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-          <p>
-            <strong>Mission:</strong> Making environmental change visible through maps, data, and science.
-          </p>
-          <p>
-            <strong>Vision:</strong> To increase environmental awareness by making scientific evidence, maps, satellite imagery, and environmental reports understandable and accessible to everyone.
-          </p>
-          <p>
-            <strong>Purpose:</strong> Signal Earth exists to help people notice environmental change that would otherwise go unseen. Every environmental change leaves evidence. Signal Earth helps people see it.
-          </p>
-        </div>
+        <span class="section-kicker">01 : Origins and Purpose</span>
+        <h2 class="editorial-headline" style="font-size: 1.35rem; margin-bottom: 0.75rem; color: var(--text-primary);">Why Signal Earth Exists</h2>
+        <p style="margin-bottom: 1rem;">
+          Every environmental shift leaves a physical record. When winter descends on Kanpur, the change is impossible to ignore: the air thickens, the horizon shrinks to a few hundred meters, and the smell of roadside wood fires and heavy diesel exhaust lingers late into the night. Yet the public discussion around air quality often feels disconnected from the physical phenomena occurring in the atmosphere. News coverage swings between seasonal panic in November and complete silence by February. Phone apps display color-coded scores without explaining how those numbers were calculated, whether the sensor down the road was operational, or what pollutants were actually measured.
+        </p>
+        <p>
+          Signal Earth was founded to ground these discussions in physical evidence rather than speculation. Maintained by Avnish Singh, an undergraduate student in Civil Engineering at Harcourt Butler Technical University (HBTU) in Kanpur, this portfolio parses archived government monitoring data, satellite observations, and climate reanalysis records. It is not an institution, not a live early-warning service, and not a commercial product. It is a research notebook: a place to ask precise questions about atmospheric mechanics, write reproducible Python code, and evaluate public data with engineering discipline.
+        </p>
       </section>
 
-      <!-- Brand Philosophy -->
+      <!-- 02: Brand Philosophy -->
       <section>
         <span class="section-kicker">02 : Foundational Tenets</span>
         <h2 class="editorial-headline" style="font-size: 1.35rem; margin-bottom: 0.75rem; color: var(--text-primary);">Brand Philosophy</h2>
-        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 1.25rem;">
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.95rem; color: var(--text-primary);">
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 1.5rem; margin-bottom: 1.25rem;">
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.95rem; color: var(--text-primary); margin: 0; padding: 0;">
             <li><strong>Evidence before opinion.</strong></li>
             <li><strong>Data before emotion.</strong></li>
             <li><strong>Science before speculation.</strong></li>
             <li><strong>Maps reveal what words often cannot.</strong></li>
+            <li><strong>Every environmental change leaves evidence: Signal Earth helps people see it.</strong></li>
           </ul>
         </div>
+        <p style="margin-bottom: 1rem;">
+          These principles shape every investigation published on this site:
+        </p>
+        <ul style="padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.6rem;">
+          <li>
+            <strong>Evidence before opinion:</strong> We do not publish political commentary or editorial speculation. Every curve, ratio, and correlation on this portal is derived directly from archived government monitors or international scientific programs.
+          </li>
+          <li>
+            <strong>Data before emotion:</strong> Air pollution is a major public health challenge, but alarmism rarely produces sound science. We examine atmospheric datasets with the same calm objectivity one brings to a structural load test.
+          </li>
+          <li>
+            <strong>Science before speculation:</strong> Atmospheric processes follow the laws of physics. When winter PM2.5 concentrations surge to five times their monsoon levels in Kanpur, we trace the cause to nocturnal boundary layer suppression and surface radiation cooling, not casual assumptions.
+          </li>
+          <li>
+            <strong>Maps reveal what words cannot:</strong> Spatial data provides geographic context that tables obscure. Overlaying Kanpur municipal boundaries onto a 55 by 60 kilometer reanalysis grid cell immediately illustrates the difference between regional models and street-level exposure.
+          </li>
+        </ul>
       </section>
 
-      <!-- Positioning -->
+      <!-- 03: Positioning -->
       <section>
         <span class="section-kicker">03 : Positioning</span>
         <h2 class="editorial-headline" style="font-size: 1.35rem; margin-bottom: 0.75rem; color: var(--text-primary);">Evidence Presented Visually</h2>
         <p style="margin-bottom: 0.75rem;">
-          Signal Earth is an environmental data platform that transforms satellite observations, maps, scientific research, official datasets, and environmental reports into visual stories that anyone can understand:
+          Signal Earth transforms satellite imagery, spatial maps, official datasets, and environmental reports into clear visual stories:
         </p>
-        <ul style="padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.4rem;">
+        <ul style="padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1rem;">
           <li>It is not activism.</li>
           <li>It is not environmental news.</li>
           <li>It is scientific evidence presented visually.</li>
         </ul>
-        <p style="margin-top: 0.75rem;">
-          <strong>Tone of Voice:</strong> Calm, scientific, editorial, thoughtful, objective, and story-driven. Never sensational, never preachy, never political, and never fear-mongering.
+        <p>
+          <strong>Editorial Tone:</strong> Calm, scientific, thoughtful, objective, and story-driven. Never sensational, never preachy, never political, and never fear-mongering. The numbers and satellite records speak for themselves when presented with context.
         </p>
       </section>
 
-      <!-- Standards and Limitations -->
+      <!-- 04: Research Integrity and Limitations -->
       <section>
-        <span class="section-kicker">04 : Standards and Integrity</span>
-        <h2 class="editorial-headline" style="font-size: 1.35rem; margin-bottom: 0.75rem; color: var(--text-primary);">Research Standards and Limits</h2>
-        <p style="margin-bottom: 0.75rem;">
-          Every claim published on this site is backed by peer-reviewed literature, government datasets (CPCB, UPPCB, DPCC), international scientific programs (NASA POWER / MERRA-2), or open geospatial records:
+        <span class="section-kicker">04 : Standards and Limits</span>
+        <h2 class="editorial-headline" style="font-size: 1.35rem; margin-bottom: 0.75rem; color: var(--text-primary);">Scientific Standards and Limits</h2>
+        <p style="margin-bottom: 1rem;">
+          Honest science requires disclosing what data cannot prove just as clearly as what it establishes:
         </p>
-        <ul style="padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.6rem;">
+        <ul style="padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.75rem;">
           <li>
-            <strong>Statutory Compliance:</strong> Calculations strictly adhere to CPCB 2014 NAQI piecewise linear breakpoints and reporting quorum requirements.
+            <strong>Statutory Rigor:</strong> All AQI calculations strictly follow the Central Pollution Control Board (CPCB) 2014 piecewise linear formula. We separate valid statutory days (which require three criteria pollutants, at least one particulate, and 16 hours of valid data) from single-parameter estimates.
           </li>
           <li>
-            <strong>Reanalysis Clarification:</strong> Gridded data from NASA POWER is documented as GMAO MERRA-2 numerical model reanalysis (~55 x 60 km resolution), distinguishing it from satellite radiometer surface temperature.
+            <strong>Preserving Data Hiatuses:</strong> Mechanical monitors in high-particulate environments experience filter tape runouts, calibration drift, and power outages. When Delhi Alipur experienced a 732-day operational hiatus between 2019 and 2020, we documented the two-year gap rather than manufacturing synthetic figures to smooth the graph.
           </li>
           <li>
-            <strong>Transparent Accounting:</strong> Missing observations and instrument dropouts are published without artificial synthetic imputation across long-duration gaps.
+            <strong>Model Reanalysis vs Direct Measurement:</strong> Datasets from NASA POWER and MERRA-2 provide valuable multi-decade records of daily skin temperature, but they represent numerical weather simulations on a coarse 55 by 60 kilometer grid box. They do not measure neighborhood heat islands or street-level microclimates, which require high-resolution thermal sensors like Landsat 8 and 9.
           </li>
         </ul>
       </section>
 
-      <!-- Author and Maintainer Section -->
-      <section style="padding: 1.5rem; background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-md);">
+      <!-- 05: Author and Maintainer -->
+      <section style="padding: 1.75rem; background: var(--bg-surface); border: 1px solid var(--border-color);">
         <span class="section-kicker">Author and Maintainer</span>
         <h2 class="editorial-headline" style="font-size: 1.35rem; margin-bottom: 0.5rem; color: var(--text-primary);">Avnish Singh</h2>
         <p style="font-size: 0.95rem; color: var(--text-primary); margin-bottom: 0.75rem;">
           <strong>Undergraduate student in Civil Engineering</strong> at <strong>Harcourt Butler Technical University (HBTU), Kanpur</strong>, Uttar Pradesh, India.
         </p>
-        <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
-          Avnish founded Signal Earth to examine public environmental records and spatial data. By combining civil engineering principles with GIS, remote sensing, and atmospheric datasets, this portfolio presents reproducible investigations into particulate dynamics, urban temperature regimes, and airshed characteristics across North India.
+        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.25rem;">
+          Avnish created Signal Earth to explore how civil infrastructure, urban form, and regional climate intersect across the Indo-Gangetic Plain. By combining coursework in fluid mechanics, environmental engineering, and geospatial data analysis, this portfolio investigates particulate dynamics, seasonal stagnation, and surface temperature regimes with open code and transparent data provenance.
         </p>
-        <div class="se-analysis-links">
+        <div style="display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; font-family: var(--font-mono); font-size: 0.82rem;">
           <a href="https://github.com/avnish36singh-arch" target="_blank" rel="noopener noreferrer" class="se-link">GitHub Profile</a>
+          <a href="https://www.linkedin.com/company/signalearth/" target="_blank" rel="noopener noreferrer" class="se-link">LinkedIn Page</a>
           <a href="contact.html" class="se-link se-link-secondary">Contact Information</a>
         </div>
       </section>
 
-      <!-- Open Source Repositories -->
-      <section style="padding: 1.25rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm);">
-        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.4rem;">Open Source Code Repositories</h3>
-        <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
-          All data pipelines and visualization notebooks are open source under the MIT License:
+      <!-- 06: Open Source Pipelines -->
+      <section style="padding: 1.5rem; background: var(--bg-surface); border: 1px solid var(--border-color);">
+        <span class="section-kicker">Reproducibility</span>
+        <h3 style="font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0.5rem;">Open Source Code and Data Pipelines</h3>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem;">
+          All data pipelines, validation routines, and visualization scripts are published under the open-source MIT License:
         </p>
-        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.88rem;">
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.88rem; font-family: var(--font-mono); margin: 0; padding: 0;">
           <li>Kanpur Analysis: <a href="https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur" target="_blank" rel="noopener noreferrer" class="se-link">github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur</a></li>
           <li>Delhi Analysis: <a href="https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb" target="_blank" rel="noopener noreferrer" class="se-link">github.com/avnish36singh-arch/delhi-air_qaulity_cpcb</a></li>
           <li>Portal Source: <a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer" class="se-link">github.com/avnish36singh-arch/signal-earth-portal</a></li>
@@ -151,12 +172,13 @@
     </div>
   </main>
 
+  <!-- 4-Column Editorial Footer (Black #0B0B0C) -->
   <footer class="se-footer">
     <div class="se-container">
       <div class="se-footer-inner">
-        <div style="max-width: 340px;">
-          <div style="font-weight: 700; color: var(--text-primary); letter-spacing: 0.08em; margin-bottom: 0.4rem; text-transform: uppercase;">Signal Earth</div>
-          <p style="line-height: 1.6; color: var(--text-secondary); font-size: 0.85rem;">
+        <div style="max-width: 320px;">
+          <div style="font-weight: 700; color: #FFFFFF; letter-spacing: 0.1em; margin-bottom: 0.4rem; text-transform: uppercase;">Signal Earth</div>
+          <p style="line-height: 1.6; color: var(--text-inverse-muted); font-size: 0.85rem;">
             Student research portfolio analyzing archived environmental monitoring data from CPCB, UPPCB, and NASA POWER reanalysis.
           </p>
         </div>
@@ -172,31 +194,44 @@
         </div>
 
         <div class="se-footer-col">
-          <h5>Documentation</h5>
+          <h5>Method and Data</h5>
           <ul>
+            <li><a href="index.html#explained">Explained Pieces</a></li>
             <li><a href="methodology.html">Methodology and Limits</a></li>
             <li><a href="data.html">Data and Code</a></li>
             <li><a href="about.html">About Signal Earth</a></li>
-            <li><a href="contact.html">Contact Information</a></li>
           </ul>
         </div>
 
         <div class="se-footer-col">
-          <h5>Policies and Notices</h5>
+          <h5>Legal</h5>
           <ul>
             <li><a href="privacy.html">Privacy Policy</a></li>
             <li><a href="terms.html">Terms of Use</a></li>
             <li><a href="licenses.html">Licenses and Terms</a></li>
+            <li><a href="credits.html">Image Credits</a></li>
             <li><a href="corrections.html">Corrections Log</a></li>
-            <li><a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
-            <li><a href="mailto:TODO[ME]:contact-email">Email</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/company/signalearth/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="contact.html">Contact Information</a></li>
           </ul>
         </div>
       </div>
 
+      <!-- Mandatory Affiliation Disclaimer -->
+      <div class="se-footer-disclaimer">
+        Signal Earth is an independent student project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, National Geographic or any agency named on this site.
+      </div>
+
       <div class="se-footer-bottom">
-        <span>Signal Earth : Avnish Singh, Civil Engineering, HBTU Kanpur</span>
-        <span>Data: CPCB, UPPCB, DPCC, NASA POWER : Code MIT License</span>
+        <div>Site design and analyses by Avnish Singh, Civil Engineering, HBTU Kanpur. Code under MIT License.</div>
+        <div>Page updated: October 2026. Content strictly reflects public monitoring records.</div>
       </div>
     </div>
   </footer>

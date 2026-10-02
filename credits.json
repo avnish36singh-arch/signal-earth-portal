@@ -1,0 +1,222 @@
+[
+  {
+    "file": "assets/hero_indo_gangetic_smoke_20211105.jpg",
+    "title": "Indo-Gangetic Plain Post-Monsoon Smoke and Atmospheric Haze",
+    "source_url": "https://worldview.earthdata.nasa.gov/?v=73,24,85,32&t=2021-11-05",
+    "creator": "NASA Worldview / Global Imagery Browse Services (GIBS)",
+    "date": "2021-11-05",
+    "sensor": "MODIS / Terra (Corrected Reflectance True Color)",
+    "license": "NASA Open Data Policy (Freely usable for academic and public information purposes with attribution)",
+    "credit_text": "Image: NASA Worldview / GIBS, Terra MODIS, November 5, 2021"
+  },
+  {
+    "file": "assets/satellite_view_kanpur_haze_20211111.jpg",
+    "title": "Ganga Valley Winter Haze over Kanpur and Central Uttar Pradesh",
+    "source_url": "https://worldview.earthdata.nasa.gov/?v=78,25,83,28&t=2021-11-11",
+    "creator": "NASA Worldview / Global Imagery Browse Services (GIBS)",
+    "date": "2021-11-11",
+    "sensor": "MODIS / Aqua (Corrected Reflectance True Color)",
+    "license": "NASA Open Data Policy (Freely usable for academic and public information purposes with attribution)",
+    "credit_text": "Image: NASA Worldview / GIBS, Aqua MODIS, November 11, 2021"
+  },
+  {
+    "file": "assets/delhi/01_aqi_time_series.png",
+    "title": "CPCB NAQI Multi-Year Timeline at Alipur, Delhi",
+    "source_url": "https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb",
+    "creator": "Avnish Singh",
+    "date": "2026-10-02",
+    "sensor": "CAAQMS Ground Sensor (CPCB Site 204, DPCC)",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, using CPCB / DPCC records, October 2026"
+  },
+  {
+    "file": "assets/delhi/02_correlation_matrix_24_components.png",
+    "title": "Correlation Matrix of 24 Atmospheric and Meteorological Components at Alipur",
+    "source_url": "https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb",
+    "creator": "Avnish Singh",
+    "date": "2026-10-02",
+    "sensor": "CAAQMS Ground Sensor (CPCB Site 204, DPCC)",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, using CPCB / DPCC records, October 2026"
+  },
+  {
+    "file": "assets/delhi/03_seasonal_aqi_dynamics.png",
+    "title": "Delhi Alipur Seasonal Particulate Dynamics and Post-Monsoon Surge",
+    "source_url": "https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb",
+    "creator": "Avnish Singh",
+    "date": "2026-10-02",
+    "sensor": "CAAQMS Ground Sensor (CPCB Site 204, DPCC)",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, using CPCB / DPCC records, October 2026"
+  },
+  {
+    "file": "assets/delhi/04_dominant_pollutants.png",
+    "title": "Frequency Distribution of Dominant Criteria Pollutants at Alipur",
+    "source_url": "https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb",
+    "creator": "Avnish Singh",
+    "date": "2026-10-02",
+    "sensor": "CAAQMS Ground Sensor (CPCB Site 204, DPCC)",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, using CPCB / DPCC records, October 2026"
+  },
+  {
+    "file": "assets/delhi/05_pm_and_btex_dynamics.png",
+    "title": "Fine-to-Coarse Particulate Ratio and VOC Tracers at Alipur",
+    "source_url": "https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb",
+    "creator": "Avnish Singh",
+    "date": "2026-10-02",
+    "sensor": "CAAQMS Ground Sensor (CPCB Site 204, DPCC)",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, using CPCB / DPCC records, October 2026"
+  },
+  {
+    "file": "assets/delhi/06_meteorology_impact.png",
+    "title": "Meteorological Regimes: Temperature, Relative Humidity, and Wind Velocity",
+    "source_url": "https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb",
+    "creator": "Avnish Singh",
+    "date": "2026-10-02",
+    "sensor": "CAAQMS Ground Sensor (CPCB Site 204, DPCC)",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, using CPCB / DPCC records, October 2026"
+  },
+  {
+    "file": "assets/delhi/07_monthly_aqi_heatmap.png",
+    "title": "Calendar Month and Year AQI Matrix at Alipur",
+    "source_url": "https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb",
+    "creator": "Avnish Singh",
+    "date": "2026-10-02",
+    "sensor": "CAAQMS Ground Sensor (CPCB Site 204, DPCC)",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, using CPCB / DPCC records, October 2026"
+  },
+  {
+    "file": "assets/delhi/08_forecast_evaluation.png",
+    "title": "Day-Ahead Machine Learning AQI Forecast Model Comparison",
+    "source_url": "https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb",
+    "creator": "Avnish Singh",
+    "date": "2026-10-02",
+    "sensor": "CAAQMS Ground Sensor (CPCB Site 204, DPCC)",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, using CPCB / DPCC records, October 2026"
+  },
+  {
+    "file": "assets/delhi/09_wind_rose_and_sources.png",
+    "title": "Directional Wind Rose and Upwind Transport Corridor at Alipur",
+    "source_url": "https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb",
+    "creator": "Avnish Singh",
+    "date": "2026-10-02",
+    "sensor": "CAAQMS Ground Sensor (CPCB Site 204, DPCC)",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, using CPCB / DPCC records, October 2026"
+  },
+  {
+    "file": "assets/kanpur/01_timeseries.png",
+    "title": "Daily Mean PM2.5 and PM10 Timeseries across Kanpur Stations",
+    "source_url": "https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur",
+    "creator": "Avnish Singh",
+    "date": "2026-10-02",
+    "sensor": "CAAQMS Ground Sensor (UPPCB / CPCB via OpenAQ)",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026"
+  },
+  {
+    "file": "assets/kanpur/02_monthly_seasonal.png",
+    "title": "Calendar Month PM2.5 and PM10 Progression in Kanpur",
+    "source_url": "https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur",
+    "creator": "Avnish Singh",
+    "date": "2026-10-02",
+    "sensor": "CAAQMS Ground Sensor (UPPCB / CPCB via OpenAQ)",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026"
+  },
+  {
+    "file": "assets/kanpur/03_aqi_breakdown.png",
+    "title": "CPCB NAQI Category Distribution in Kanpur",
+    "source_url": "https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur",
+    "creator": "Avnish Singh",
+    "date": "2026-10-02",
+    "sensor": "CAAQMS Ground Sensor (UPPCB / CPCB via OpenAQ)",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026"
+  },
+  {
+    "file": "assets/kanpur/04_diurnal.png",
+    "title": "Diurnal Particulate Variations across 24 Hours in Kanpur",
+    "source_url": "https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur",
+    "creator": "Avnish Singh",
+    "date": "2026-10-02",
+    "sensor": "CAAQMS Ground Sensor (UPPCB / CPCB via OpenAQ)",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026"
+  },
+  {
+    "file": "assets/kanpur/05_correlation_heatmap.png",
+    "title": "Kanpur Pollutant and Weather Correlation Matrix",
+    "source_url": "https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur",
+    "creator": "Avnish Singh",
+    "date": "2026-10-02",
+    "sensor": "CAAQMS Ground Sensor (UPPCB / CPCB via OpenAQ)",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026"
+  },
+  {
+    "file": "assets/kanpur/06_scatter_weather.png",
+    "title": "Bivariate Regressions: Temperature and Wind versus PM2.5 in Kanpur",
+    "source_url": "https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur",
+    "creator": "Avnish Singh",
+    "date": "2026-10-02",
+    "sensor": "CAAQMS Ground Sensor (UPPCB / CPCB via OpenAQ)",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026"
+  },
+  {
+    "file": "assets/kanpur/07_wind_rose.png",
+    "title": "Directional Wind Rose and Upwind Concentrations in Kanpur",
+    "source_url": "https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur",
+    "creator": "Avnish Singh",
+    "date": "2026-10-02",
+    "sensor": "CAAQMS Ground Sensor (UPPCB / CPCB via OpenAQ)",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026"
+  },
+  {
+    "file": "assets/lst/01_kanpur_lst_seasonal_timeline.png",
+    "title": "MERRA-2 Reanalysis Skin Temperature vs 2m Air Temperature Timeline",
+    "source_url": "https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS",
+    "creator": "Avnish Singh",
+    "date": "2026-10-02",
+    "sensor": "NASA POWER / GMAO MERRA-2 Atmospheric Reanalysis",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, using NASA POWER MERRA-2 reanalysis, October 2026"
+  },
+  {
+    "file": "assets/lst/02_skin_vs_air_temperature_anomaly.png",
+    "title": "Skin-Air Temperature Decoupling and Seasonal Differences",
+    "source_url": "https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS",
+    "creator": "Avnish Singh",
+    "date": "2026-10-02",
+    "sensor": "NASA POWER / GMAO MERRA-2 Atmospheric Reanalysis",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, using NASA POWER MERRA-2 reanalysis, October 2026"
+  },
+  {
+    "file": "assets/lst/03_kanpur_spatial_thermal_zones.png",
+    "title": "Kanpur Metropolitan Boundary and Station Overlays",
+    "source_url": "https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS",
+    "creator": "Avnish Singh",
+    "date": "2026-10-02",
+    "sensor": "QGIS Spatial Processing / Survey of India Boundary / OSM",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, OpenStreetMap contributors, October 2026"
+  },
+  {
+    "file": "assets/lst/04_lst_inversion_coupling_pm25.png",
+    "title": "Concurrent Coupling: Surface Skin Temperature versus PM2.5 in Overlap Window",
+    "source_url": "https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS",
+    "creator": "Avnish Singh",
+    "date": "2026-10-02",
+    "sensor": "CAAQMS Ground Monitoring paired with NASA POWER MERRA-2",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, NASA POWER and UPPCB records, October 2026"
+  }
+]

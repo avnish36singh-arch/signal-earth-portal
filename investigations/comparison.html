@@ -3,23 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cross-City Air Quality Comparison | Signal Earth</title>
-  <meta name="description" content="Comparative evaluation of archived ambient air quality records between Delhi NCR (Alipur) and Kanpur (Kalyanpur and Nehru Nagar) with stated baseline caveats.">
+  <title>Regional Airshed Comparison | Signal Earth</title>
+  <meta name="description" content="Cross-airshed comparison between Delhi and Kanpur particulate dynamics, evaluating winter multipliers, baseline differences, and station limitations.">
   <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/investigations/comparison.html">
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
   <link rel="manifest" href="../site.webmanifest">
-  <meta property="og:title" content="Cross-City Air Quality Comparison | Signal Earth">
-  <meta property="og:description" content="Comparative analysis of ambient air quality dynamics between Delhi NCR and Kanpur with stated caveats.">
+  <meta property="og:title" content="Regional Airshed Comparison | Signal Earth">
+  <meta property="og:description" content="Comparative analysis of particulate dynamics between Delhi and Kanpur.">
   <meta property="og:url" content="https://avnish36singh-arch.github.io/signal-earth-portal/investigations/comparison.html">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="https://avnish36singh-arch.github.io/signal-earth-portal/assets/delhi/03_seasonal_aqi_dynamics.png">
+  <meta property="og:image" content="https://avnish36singh-arch.github.io/signal-earth-portal/assets/kanpur/02_monthly_seasonal.png">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
 
+  <!-- Disclaimer Banner -->
+  <aside class="se-disclaimer-banner" aria-label="Affiliation Notice">
+    Signal Earth is an independent student project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, National Geographic or any agency named on this site.
+  </aside>
+
+  <!-- Navigation -->
   <header>
     <nav class="se-nav" aria-label="Main Navigation">
       <div class="se-nav-inner">
@@ -29,192 +35,257 @@
         </a>
 
         <ul class="se-nav-links">
-          <li><a href="../index.html#analyses">Analyses</a></li>
+          <li><a href="../index.html#analyses" class="active">Analyses</a></li>
+          <li><a href="../index.html#explained">Explained</a></li>
           <li><a href="../methodology.html">Methodology</a></li>
           <li><a href="../data.html">Data and code</a></li>
           <li><a href="../about.html">About</a></li>
-          <li><a href="../contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <main id="main" class="se-container-narrow" style="padding-top: 3rem; padding-bottom: 4rem;">
-    <header style="margin-bottom: 2.5rem;">
-      <span class="section-kicker">Analysis 04 : Regional Basin Contrast</span>
-      <h1 class="editorial-headline" style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 0.75rem;">
-        Airshed Dynamics: Delhi NCR versus Central Kanpur Basin
-      </h1>
-      <p class="se-hero-dek">
-        A comparative evaluation of particulate dynamics, seasonal surge ratios, and regulatory NAAQS exceedance frequencies between the upper and central Indo-Gangetic Basin.
-      </p>
+  <main id="main">
+    <!-- Hero Block with Figure Header -->
+    <div style="background: var(--bg-alt); border-bottom: 1px solid var(--border-color); padding: 2.5rem 0;">
+      <div class="se-container-narrow">
+        <span class="section-kicker">Analysis 04 : Comparative Basin Analysis</span>
+        <h1 class="editorial-headline" style="font-size: clamp(1.85rem, 3.5vw, 2.6rem); margin-bottom: 0.75rem;">
+          Regional Airshed Comparison: Capital Megacity versus Industrial River Basin
+        </h1>
 
-      <div class="se-analysis-meta" style="margin-top: 1rem;">
-        <span>Author: Avnish Singh (Undergraduate in Civil Engineering, HBTU Kanpur)</span>
-        <span>Delhi: Alipur (Site 204), 1,825 recorded daily rows (2017 to 2023)</span>
-        <span>Kanpur: NSI Kalyanpur and Nehru Nagar, 1,628 station-day rows</span>
-        <span>Code: <a href="https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur" target="_blank" rel="noopener noreferrer" class="se-link">Repository on GitHub</a></span>
+        <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 1.25rem; margin-bottom: 1.25rem;">
+          <span>By <strong>Avnish Singh</strong>, Undergraduate in Civil Engineering, HBTU Kanpur</span>
+          <span>Last updated: October 2026</span>
+          <span>Reading time: 8 min read</span>
+        </div>
+
+        <!-- 3-Sentence Summary -->
+        <div style="background: var(--bg-surface); border-left: 3px solid var(--accent); padding: 1rem 1.25rem; font-size: 0.95rem; line-height: 1.65; color: var(--text-primary); margin-bottom: 1.5rem;">
+          This comparative evaluation examines particulate concentrations and seasonal surge dynamics between Delhi Alipur (Site 204) and two monitoring stations in Kanpur (NSI Kalyanpur and Nehru Nagar). Delhi Alipur exhibited an observed mean PM2.5 of 112.4 µg/m³ with a 5.75-fold winter-to-monsoon multiplier, compared to 57.1 µg/m³ and a 3.56-fold surge across Kanpur's pooled station records. Because monitoring periods, station settings, and operational gaps differ between the two datasets, these metrics reflect localized station observations rather than direct city-to-city equivalency.
+        </div>
+
+        <div class="se-card-img-wrap" style="border: 1px solid var(--border-color);">
+          <img src="../assets/kanpur/02_monthly_seasonal.png" alt="Monthly seasonal PM2.5 and PM10 cycle in Kanpur across NSI Kalyanpur and Nehru Nagar" width="900" height="450" fetchpriority="high">
+        </div>
+        <div class="se-image-credit">
+          Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026. Recorded in <a href="../credits.html">credits.json</a>.
+        </div>
       </div>
-    </header>
-
-    <!-- Essential Mismatch Caveat Box -->
-    <div class="se-caveat-box">
-      <div class="se-caveat-title">Comparative Limitation and Period Mismatch Notice</div>
-      <p class="se-caveat-text">
-        <strong>Data Mismatch Caveat:</strong> The records compared here originate from distinct monitoring intervals, station configurations, and micro-environments:
-      </p>
-      <ul style="margin: 0.6rem 0 0 1.25rem; font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary);">
-        <li><strong>Observation Period Mismatch:</strong> Delhi records cover 2017 to 2023 with a 732-day gap (2019 to 2020). Kanpur records cover two discrete windows (July 2021 to October 2022 and February 2025 to August 2026) with a 2.3-year reporting hiatus.</li>
-        <li><strong>Station Micro-Environment Mismatch:</strong> Alipur (Delhi) is a single peripheral monitoring station located on National Highway 44 intercepting inter-state transit freight. In Kanpur, records are pooled across two urban stations: an institutional suburban site (NSI Kalyanpur) and a commercial/residential site (Nehru Nagar).</li>
-        <li><strong>Surge Ratio Caveat:</strong> Because baselines, years, and missing data intervals differ, seasonal multipliers (5.75x vs 3.56x) are reported side-by-side as station-specific findings, not as controlled experimental comparisons.</li>
-      </ul>
     </div>
 
-    <!-- Comparative Table -->
-    <section style="margin-bottom: 3rem;">
-      <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Standardized Monitoring Parameters</h2>
-      <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 1rem;">
-        Direct side-by-side comparison of statistical metrics derived from raw station records processed through CPCB sub-index formulations:
-      </p>
+    <!-- Main Content Body -->
+    <div class="se-container-narrow" style="padding-top: 3rem; padding-bottom: 4rem;">
 
-      <div class="se-table-wrap">
-        <table class="se-table">
-          <thead>
-            <tr>
-              <th>Metric</th>
-              <th>Delhi NCR (Alipur Site 204)</th>
-              <th>Kanpur (Kalyanpur and Nehru Nagar)</th>
-              <th>Documented Caveat</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Monitored Records</strong></td>
-              <td>1,825 recorded daily rows (1,137 official days)</td>
-              <td>1,628 station-day daily rows</td>
-              <td>Distinct reporting intervals and gaps</td>
-            </tr>
-            <tr>
-              <td><strong>Monitored Period</strong></td>
-              <td>2017 to 2023 (with 732-day gap)</td>
-              <td>2021 to 2022 and 2025 to 2026</td>
-              <td>Non-identical calendar intervals</td>
-            </tr>
-            <tr>
-              <td><strong>Observed Mean PM2.5</strong></td>
-              <td>107.4 µg/m³</td>
-              <td>44.0 µg/m³</td>
-              <td>Reflects highway freight corridor vs urban mix</td>
-            </tr>
-            <tr>
-              <td><strong>Observed Mean PM10</strong></td>
-              <td>207.2 µg/m³</td>
-              <td>93.4 µg/m³</td>
-              <td>Both sites show elevated coarse fraction</td>
-            </tr>
-            <tr>
-              <td><strong>Winter Mean PM2.5 (Nov to Jan)</strong></td>
-              <td>197.5 µg/m³</td>
-              <td>76.5 µg/m³</td>
-              <td>Severe seasonal elevation at both locations</td>
-            </tr>
-            <tr>
-              <td><strong>Monsoon Mean PM2.5 (Jul to Sep)</strong></td>
-              <td>34.3 µg/m³</td>
-              <td>21.5 µg/m³</td>
-              <td>Wet deposition lowers particulates in both basins</td>
-            </tr>
-            <tr>
-              <td><strong>Winter-to-Monsoon Ratio</strong></td>
-              <td>5.75x (197.5 vs 34.3 µg/m³)</td>
-              <td>3.56x (76.5 vs 21.5 µg/m³)</td>
-              <td>Mismatched observation years and baselines</td>
-            </tr>
-            <tr>
-              <td><strong>NAAQS PM2.5 Exceedance (>60 µg/m³)</strong></td>
-              <td>62.6% of valid days (709 of 1,133)</td>
-              <td>19.0% of monitored station days</td>
-              <td>Higher exceedance rate along Delhi highway corridor</td>
-            </tr>
-            <tr>
-              <td><strong>Winter PM2.5 / PM10 Ratio</strong></td>
-              <td>0.67 (Combustion-dominant)</td>
-              <td>0.57 (Mixed combustion and road dust)</td>
-              <td>Ratio screening, not chemical mass apportionment</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- Visual Comparison -->
-    <section style="margin-bottom: 3rem;">
-      <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Comparative Visual Progression</h2>
-
-      <div class="se-figure">
-        <div class="se-figure-header">
-          <div class="se-figure-title">Figure 1: Delhi Seasonal Particulate Dynamics (Alipur)</div>
-          <div class="se-figure-meta">Data Source: CPCB Alipur raw data | Period: 2017 to 2023 | Units: AQI points and µg/m³</div>
-        </div>
-        <img src="../assets/delhi/03_seasonal_aqi_dynamics.png" alt="Seasonal AQI and particulate progression at Delhi Alipur showing November escalation" class="se-figure-img" width="900" height="450" loading="lazy">
-        <div class="se-figure-caption">
-          <strong>Caption:</strong> Delhi (Alipur) seasonal particulate dynamics showing steep post-monsoon escalation in November. This figure reflects records from a single monitoring station and does not capture citywide spatial variability across Delhi.
-        </div>
-      </div>
-
-      <div class="se-figure">
-        <div class="se-figure-header">
-          <div class="se-figure-title">Figure 2: Kanpur Monthly Particulate Progression</div>
-          <div class="se-figure-meta">Data Source: daily_aggregated.csv (OpenAQ) | Period: 2021 to 2022 and 2025 to 2026 | Units: µg/m³</div>
-        </div>
-        <img src="../assets/kanpur/02_monthly_seasonal.png" alt="Monthly seasonal PM2.5 and PM10 cycle in Kanpur across NSI Kalyanpur and Nehru Nagar" class="se-figure-img" width="900" height="450" loading="lazy">
-        <div class="se-figure-caption">
-          <strong>Caption:</strong> Kanpur monthly particulate progression pooled across NSI Kalyanpur and Nehru Nagar. This figure pools across discrete monitoring windows and does not represent an unbroken multi-year sequence.
-        </div>
-      </div>
-    </section>
-
-    <!-- Geographic and Transport Context -->
-    <section style="margin-bottom: 3rem;">
-      <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Airshed Characteristics</h2>
-      <div style="font-size: 0.95rem; line-height: 1.65; color: var(--text-secondary); display: flex; flex-direction: column; gap: 1rem;">
-        <p>
-          While both cities are situated within the broader Indo-Gangetic Plain, their localized monitoring settings represent different exposure environments:
+      <!-- Essential Mismatch Caveat Box -->
+      <section style="background: #FFFBEB; border: 1px solid #FDE68A; padding: 1.25rem; border-radius: var(--radius-sm); margin-bottom: 2.5rem;">
+        <h2 style="font-size: 0.95rem; font-weight: 700; color: #92400E; margin-bottom: 0.4rem; text-transform: uppercase; font-family: var(--font-mono);">Essential Dataset Mismatch Caveat</h2>
+        <p style="font-size: 0.88rem; color: #78350F; line-height: 1.6; margin-bottom: 0.75rem;">
+          Direct statistical comparisons between Delhi and Kanpur must be interpreted with extreme caution due to substantial structural differences in data provenance:
         </p>
-        <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 1.25rem;">
-          <h3 style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.35rem;">1. Delhi (Alipur Gateway Corridor)</h3>
-          <p style="font-size: 0.9rem; margin: 0;">
-            Located at 28.8°N on Delhi's northern peripheral boundary along National Highway 44, the Alipur station intercepts air masses entering the capital from Punjab and Haryana. In October and November, northwesterly winds transport post-harvest agricultural burning plumes directly across this corridor. The winter fine fraction (PM2.5 / PM10) reaches 0.67, with mean Toluene / Benzene ratios of 2.18 reflecting heavy vehicular freight and exhaust.
-          </p>
-        </div>
-        <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 1.25rem;">
-          <h3 style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.35rem;">2. Kanpur (Central Gangetic Urban Basin)</h3>
-          <p style="font-size: 0.9rem; margin: 0;">
-            Located approximately 430 km downstream at 26.5°N along the central Ganga valley, Kanpur's monitoring records reflect a mix of urban traffic, industrial clusters, and riverine basin topography. In winter, surface cooling reduces vertical ventilation, trapping local emissions from traffic, small boilers, and domestic combustion, generating evening particulate peaks without requiring external transboundary transport.
-          </p>
-        </div>
-      </div>
-    </section>
+        <ul style="padding-left: 1.25rem; font-size: 0.86rem; color: #78350F; line-height: 1.55; display: flex; flex-direction: column; gap: 0.4rem; margin: 0;">
+          <li><strong>Non-Identical Observation Periods:</strong> Delhi Alipur data spans 2017 to 2023. Kanpur data spans two discrete windows (July 2021 to October 2022 and February 2025 to August 2026).</li>
+          <li><strong>Station Count and Exposure Mismatch:</strong> Delhi is represented by a single peripheral highway transit station (Alipur on NH-44), while Kanpur pools two stations (suburban Kalyanpur and urban mixed Nehru Nagar).</li>
+          <li><strong>Hiatus Discrepancy:</strong> Delhi has an operational gap of 732 days (2019 to 2020), while Kanpur has a 2.3-year reporting gap (late 2022 to early 2025).</li>
+        </ul>
+      </section>
 
-    <!-- Reproducibility Block -->
-    <section style="padding: 1.5rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
-      <h3 class="editorial-headline" style="font-size: 1.2rem; margin-bottom: 0.5rem;">Pipeline Code and Data Access</h3>
-      <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem;">
-        The data pipelines and statistical aggregation notebooks for both cities are open source on GitHub.
-      </p>
-      <div class="se-analysis-links">
-        <a href="https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb" target="_blank" rel="noopener noreferrer" class="se-link">Delhi Pipeline Repository</a>
-        <a href="https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur" target="_blank" rel="noopener noreferrer" class="se-link se-link-secondary">Kanpur Pipeline Repository</a>
-      </div>
-    </section>
+      <!-- Section 1: Comparative Table -->
+      <section style="margin-bottom: 3rem;">
+        <span class="section-kicker">01 : Side-by-Side Metrics</span>
+        <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Airshed Metric Comparison</h2>
+        <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem;">
+          The table below contrasts key statistical indicators between the two datasets, detailing the differing baselines and observation windows:
+        </p>
+
+        <div class="se-table-wrap">
+          <table class="se-table">
+            <thead>
+              <tr>
+                <th>Analytical Indicator</th>
+                <th>Delhi (Alipur, Site 204)</th>
+                <th>Kanpur (Pooled 2 Stations)</th>
+                <th>Methodological Note</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Monitored Timeline</strong></td>
+                <td>2017 to 2023 (1,825 recorded rows)</td>
+                <td>Jul 2021 to Oct 2022 &amp; Feb 2025 to Aug 2026 (1,628 station-days)</td>
+                <td>Non-identical calendar windows</td>
+              </tr>
+              <tr>
+                <td><strong>Observed Mean PM2.5</strong></td>
+                <td><strong>112.4 µg/m³</strong> (n = 1,133)</td>
+                <td><strong>57.1 µg/m³</strong> (n = 1,628)</td>
+                <td>Both exceed annual NAAQS limit of 40 µg/m³</td>
+              </tr>
+              <tr>
+                <td><strong>Observed Mean PM10</strong></td>
+                <td><strong>207.2 µg/m³</strong> (n = 1,125)</td>
+                <td><strong>93.4 µg/m³</strong> (n = 1,628)</td>
+                <td>Elevated coarse fraction at both sites</td>
+              </tr>
+              <tr>
+                <td><strong>Winter Mean PM2.5 (Nov to Jan)</strong></td>
+                <td><strong>197.5 µg/m³</strong> (n = 312)</td>
+                <td><strong>76.5 µg/m³</strong> (n = 384)</td>
+                <td>Severe winter elevation in both basins</td>
+              </tr>
+              <tr>
+                <td><strong>Monsoon Mean PM2.5 (Jul to Sep)</strong></td>
+                <td><strong>34.3 µg/m³</strong> (n = 294)</td>
+                <td><strong>21.5 µg/m³</strong> (n = 372)</td>
+                <td>Precipitation washout lowers baseline</td>
+              </tr>
+              <tr>
+                <td><strong>Winter-to-Monsoon Ratio</strong></td>
+                <td><strong>5.75x</strong> (197.5 vs 34.3 µg/m³)</td>
+                <td><strong>3.56x</strong> (76.5 vs 21.5 µg/m³)</td>
+                <td>Different baselines and station settings</td>
+              </tr>
+              <tr>
+                <td><strong>24-hr NAAQS PM2.5 Exceedance (&gt;60 µg/m³)</strong></td>
+                <td><strong>62.6%</strong> of valid days (709 of 1,133)</td>
+                <td><strong>19.0%</strong> of monitored station-days</td>
+                <td>Higher exceedance along highway corridor</td>
+              </tr>
+              <tr>
+                <td><strong>Winter PM2.5 / PM10 Ratio</strong></td>
+                <td>0.67</td>
+                <td>0.62</td>
+                <td>High fine particulate fraction in cold months</td>
+              </tr>
+              <tr>
+                <td><strong>Mean Toluene / Benzene Ratio</strong></td>
+                <td>2.18 (traffic corridor indicator)</td>
+                <td>Not recorded concurrently</td>
+                <td>VOC sensors unavailable in Kanpur public feeds</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 2: Visual Comparison -->
+      <section style="margin-bottom: 3rem;">
+        <span class="section-kicker">02 : Seasonal Cycle Comparison</span>
+        <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Comparative Seasonal Cycles</h2>
+
+        <div class="se-figure">
+          <div class="se-figure-header">
+            <div class="se-figure-title">Figure 1: Delhi Seasonal Particulate Dynamics (Alipur)</div>
+            <div class="se-figure-meta">Data Source: CPCB Alipur raw data | Period: 2017 to 2023 | Units: AQI points and µg/m³</div>
+          </div>
+          <img src="../assets/delhi/03_seasonal_aqi_dynamics.png" alt="Seasonal AQI and particulate progression at Delhi Alipur showing November escalation" class="se-figure-img" width="900" height="450" loading="lazy">
+          <div class="se-figure-caption">
+            <strong>Caption:</strong> Delhi (Alipur) seasonal particulate dynamics showing steep post-monsoon escalation in November. This figure reflects records from a single monitoring station and does not capture citywide spatial variability across Delhi.
+          </div>
+          <div class="se-image-credit" style="padding: 0.4rem 1.25rem 0.6rem 1.25rem; background: var(--bg-surface);">
+            Image: Avnish Singh, using CPCB / DPCC records, October 2026. <a href="../credits.html">Credits entry</a>.
+          </div>
+        </div>
+
+        <div class="se-figure">
+          <div class="se-figure-header">
+            <div class="se-figure-title">Figure 2: Kanpur Monthly Particulate Progression</div>
+            <div class="se-figure-meta">Data Source: daily_aggregated.csv (OpenAQ) | Period: 2021 to 2022 and 2025 to 2026 | Units: µg/m³</div>
+          </div>
+          <img src="../assets/kanpur/02_monthly_seasonal.png" alt="Monthly seasonal PM2.5 and PM10 cycle in Kanpur across NSI Kalyanpur and Nehru Nagar" class="se-figure-img" width="900" height="450" loading="lazy">
+          <div class="se-figure-caption">
+            <strong>Caption:</strong> Kanpur monthly particulate progression pooled across NSI Kalyanpur and Nehru Nagar. This figure pools across discrete monitoring windows and does not represent an unbroken multi-year sequence.
+          </div>
+          <div class="se-image-credit" style="padding: 0.4rem 1.25rem 0.6rem 1.25rem; background: var(--bg-surface);">
+            Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026. <a href="../credits.html">Credits entry</a>.
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Airshed Characteristics -->
+      <section style="margin-bottom: 3.5rem;">
+        <span class="section-kicker">03 : Geographic Context</span>
+        <h2 class="editorial-headline" style="font-size: 1.4rem; margin-bottom: 0.75rem;">Airshed Environmental Characteristics</h2>
+        <div style="font-size: 0.95rem; line-height: 1.65; color: var(--text-secondary); display: flex; flex-direction: column; gap: 1rem;">
+          <p>
+            While both urban centers lie within the Indo-Gangetic Plain, their localized topographic and transport dynamics differ:
+          </p>
+          <div style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 1.25rem;">
+            <h3 style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.35rem;">1. Delhi (Alipur Highway Corridor)</h3>
+            <p style="font-size: 0.9rem; margin: 0;">
+              Situated at 28.8°N on Delhi's northern periphery along National Highway 44, the Alipur station directly intercepts air masses entering the capital from Punjab and Haryana. In October and November, northwesterly winds transport post-harvest agricultural smoke plumes across this corridor, while constant commercial diesel truck traffic maintains high VOC levels (Toluene / Benzene = 2.18).
+            </p>
+          </div>
+          <div style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 1.25rem;">
+            <h3 style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.35rem;">2. Kanpur (Central Gangetic Urban Basin)</h3>
+            <p style="font-size: 0.9rem; margin: 0;">
+              Located approximately 430 km downstream at 26.5°N along the central Ganga valley, Kanpur's monitoring records reflect a mix of urban traffic, industrial boilers, and riverine basin topography. In winter, surface cooling reduces vertical ventilation, trapping emissions within the river basin without requiring long-distance transboundary smoke plumes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Required Editorial End Sections (NASA / Nat Geo Standard) -->
+
+      <!-- 1. What this cannot show -->
+      <section style="background: var(--bg-alt); border: 1px solid var(--border-color); padding: 1.5rem; margin-bottom: 2rem;">
+        <span class="section-kicker">Analytical Boundaries</span>
+        <h2 class="editorial-headline" style="font-size: 1.25rem; margin-bottom: 0.5rem;">What This Cannot Show</h2>
+        <ul style="padding-left: 1.25rem; font-size: 0.9rem; line-height: 1.65; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.5rem;">
+          <li>This comparison does not represent a synchronized, contemporaneous regional study; calendar years and observation density differ between the two datasets.</li>
+          <li>It cannot determine whether Delhi is inherently more polluted than Kanpur across all neighborhoods; station environments (highway border versus urban residential) differ in localized traffic exposure.</li>
+          <li>Winter surge multipliers (5.75x vs 3.56x) depend heavily on monsoon baseline levels, which vary by annual monsoon rainfall intensity.</li>
+        </ul>
+      </section>
+
+      <!-- 2. Data and code -->
+      <section style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 1.5rem; margin-bottom: 2rem;">
+        <span class="section-kicker">Reproducibility</span>
+        <h2 class="editorial-headline" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Data and Code</h2>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
+          The pipelines and comparative notebooks for both urban centers are published under the MIT License:
+        </p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb" target="_blank" rel="noopener noreferrer" class="se-btn">Delhi Pipeline (GitHub)</a>
+          <a href="https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur" target="_blank" rel="noopener noreferrer" class="se-btn se-btn-outline">Kanpur Pipeline (GitHub)</a>
+        </div>
+      </section>
+
+      <!-- 3. Cite this page -->
+      <section style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 1.5rem; margin-bottom: 2rem;">
+        <span class="section-kicker">Citation</span>
+        <h2 class="editorial-headline" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Cite This Page</h2>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+          Recommended academic citation format:
+        </p>
+        <blockquote style="margin: 0; padding: 0.75rem 1rem; border-left: 3px solid var(--accent); background: var(--bg-alt); font-size: 0.85rem; font-family: var(--font-mono); font-style: normal; color: var(--text-primary); line-height: 1.5;">
+          Singh, A. (2026). Regional Airshed Comparison: Capital Megacity versus Industrial River Basin. Signal Earth: Public Environmental Data Investigations. https://avnish36singh-arch.github.io/signal-earth-portal/investigations/comparison.html
+        </blockquote>
+      </section>
+
+      <!-- 4. Report a problem -->
+      <section style="background: var(--bg-surface); border: 1px solid var(--border-color); padding: 1.5rem;">
+        <span class="section-kicker">Feedback and Corrections</span>
+        <h2 class="editorial-headline" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Report a Problem</h2>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
+          If you detect a numerical discrepancy or comparative overstatement, please file an issue on GitHub:
+        </p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="https://github.com/avnish36singh-arch/signal-earth-portal/issues" target="_blank" rel="noopener noreferrer" class="se-link">Open GitHub issue</a>
+          <a href="../corrections.html" class="se-link se-link-secondary">View Corrections Log</a>
+        </div>
+      </section>
+
+    </div>
   </main>
 
+  <!-- Footer -->
   <footer class="se-footer">
     <div class="se-container">
       <div class="se-footer-inner">
-        <div style="max-width: 340px;">
-          <div style="font-weight: 700; color: var(--text-primary); letter-spacing: 0.08em; margin-bottom: 0.4rem; text-transform: uppercase;">Signal Earth</div>
-          <p style="line-height: 1.6; color: var(--text-secondary); font-size: 0.85rem;">
+        <div style="max-width: 320px;">
+          <div style="font-weight: 700; color: #FFFFFF; letter-spacing: 0.1em; margin-bottom: 0.4rem; text-transform: uppercase;">Signal Earth</div>
+          <p style="line-height: 1.6; color: var(--text-inverse-muted); font-size: 0.85rem;">
             Student research portfolio analyzing archived environmental monitoring data from CPCB, UPPCB, and NASA POWER reanalysis.
           </p>
         </div>
@@ -230,31 +301,44 @@
         </div>
 
         <div class="se-footer-col">
-          <h5>Documentation</h5>
+          <h5>Method and Data</h5>
           <ul>
+            <li><a href="../index.html#explained">Explained Pieces</a></li>
             <li><a href="../methodology.html">Methodology and Limits</a></li>
             <li><a href="../data.html">Data and Code</a></li>
             <li><a href="../about.html">About Signal Earth</a></li>
-            <li><a href="../contact.html">Contact Information</a></li>
           </ul>
         </div>
 
         <div class="se-footer-col">
-          <h5>Policies and Notices</h5>
+          <h5>Legal</h5>
           <ul>
             <li><a href="../privacy.html">Privacy Policy</a></li>
             <li><a href="../terms.html">Terms of Use</a></li>
             <li><a href="../licenses.html">Licenses and Terms</a></li>
+            <li><a href="../credits.html">Image Credits</a></li>
             <li><a href="../corrections.html">Corrections Log</a></li>
-            <li><a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
-            <li><a href="mailto:TODO[ME]:contact-email">Email</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/company/signalearth/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="../contact.html">Contact Information</a></li>
           </ul>
         </div>
       </div>
 
+      <!-- Mandatory Affiliation Disclaimer -->
+      <div class="se-footer-disclaimer">
+        Signal Earth is an independent student project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, National Geographic or any agency named on this site.
+      </div>
+
       <div class="se-footer-bottom">
-        <span>Signal Earth : Avnish Singh, Civil Engineering, HBTU Kanpur</span>
-        <span>Data: CPCB, UPPCB, DPCC, NASA POWER : Code MIT License</span>
+        <div>Site design and analyses by Avnish Singh, Civil Engineering, HBTU Kanpur. Code under MIT License.</div>
+        <div>Page updated: October 2026. Content strictly reflects public monitoring records.</div>
       </div>
     </div>
   </footer>
