@@ -1,6 +1,6 @@
 /* ==========================================================================
    SIGNAL EARTH : SCIENTIFIC EDITORIAL SYSTEM
-   Design Reference: NASA.gov and National Geographic Environment editorial layout
+   Design Reference: NASA.gov editorial layout and open scientific publication standards
    Conventions: Image-led, clear hierarchy, labelled cards, credited images, dated pages.
    Typography: Self-hosted IBM Plex Sans and IBM Plex Mono. No Google Fonts.
    Palette: Light pages (#FFFFFF / #F9FAFB), flat black (#0B0B0C) footer and hero overlay,
@@ -206,11 +206,10 @@ body {
 }
 
 .se-nav-links a {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
   text-decoration: none;
   color: var(--text-secondary);
   border-bottom: 2px solid transparent;
@@ -283,16 +282,16 @@ h1, h2, h3, h4, h5, h6 {
   text-underline-offset: 3px;
 }
 
-/* Buttons (NASA / Nat Geo Rectangular Style) */
+/* Buttons (NASA / Editorial Rectangular Style) */
 .se-btn {
   display: inline-block;
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 0.7rem 1.4rem;
+  padding: 0.65rem 1.35rem;
   border-radius: var(--radius-md);
   border: 1px solid var(--text-primary);
   background-color: var(--text-primary);
@@ -407,11 +406,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Image Credit Line */
 .se-image-credit {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
   color: var(--text-muted);
-  line-height: 1.4;
-  margin-top: 0.4rem;
+  line-height: 1.45;
+  margin-top: 0.45rem;
 }
 
 .se-image-credit a {
@@ -507,12 +506,18 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: auto;
   padding-top: 0.75rem;
   border-top: 1px solid var(--border-color);
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--text-muted);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.35rem;
+}
+
+.se-card-meta strong {
+  color: var(--text-primary);
+  font-weight: 600;
 }
 
 /* Nat Geo Style Explained Rows (Alternating Image & Text) */
@@ -2050,7 +2055,299 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5rem;
 }
 
+/* ==========================================================================
+   NASA-GRADE REFINED COMPONENTS (Portal Front-Door Redesign)
+   ========================================================================== */
+
+/* Publication Cadence & Transparency Bar */
+.se-cadence-bar {
+  background: var(--bg-alt);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.65rem 0;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.se-cadence-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.se-cadence-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.se-cadence-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #16A34A;
+  display: inline-block;
+}
+
+/* Equal-Height Analysis 3-Column Grid */
+.se-equal-analyses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.se-equal-analyses-grid .se-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.se-equal-analyses-grid .se-card-img-wrap {
+  width: 100%;
+  background: #F3F4F6;
+  position: relative;
+  overflow: hidden;
+}
+
+.se-equal-analyses-grid .se-card-img-wrap img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.se-equal-analyses-grid .se-card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1.35rem;
+}
+
+.se-equal-analyses-grid .se-card-title {
+  font-size: 1.18rem;
+  line-height: 1.35;
+  margin-bottom: 0.5rem;
+}
+
+.se-equal-analyses-grid .se-card-dek {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+}
+
+.se-equal-analyses-grid .se-card-actions {
+  margin-top: 1rem;
+}
+
+/* Dual Satellite Scene Inspector */
+.se-sat-viewer {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.se-sat-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.25rem;
+  background: var(--bg-alt);
+  border-bottom: 1px solid var(--border-color);
+  gap: 0.75rem;
+}
+
+.se-sat-tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.se-sat-tab {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.45rem 0.9rem;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.se-sat-tab.active {
+  background: var(--text-primary);
+  color: #FFFFFF;
+  border-color: var(--text-primary);
+}
+
+.se-sat-badge-note {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.se-sat-viewport {
+  position: relative;
+  background: #0B0B0C;
+  overflow: hidden;
+}
+
+.se-sat-img-frame {
+  position: relative;
+  width: 100%;
+  height: 480px;
+}
+
+.se-sat-img-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.se-sat-img-frame img.active {
+  display: block;
+}
+
+.se-sat-badge-overlay {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(11, 11, 12, 0.9);
+  color: #FFFFFF;
+  padding: 0.4rem 0.8rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-left: 3px solid var(--accent);
+}
+
+.se-sat-info-card {
+  padding: 1.5rem;
+}
+
+.se-sat-info-panel {
+  display: none;
+}
+
+.se-sat-info-panel.active {
+  display: block;
+}
+
+.se-sat-sync-callout {
+  margin-top: 1.25rem;
+  padding: 0.9rem 1.15rem;
+  background: var(--bg-alt);
+  border-left: 3px solid var(--accent);
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+/* Data, Method & Provenance Hub */
+.se-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.se-hub-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 1.35rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.se-hub-card-kicker {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.45rem;
+}
+
+.se-hub-card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.55rem;
+  line-height: 1.3;
+}
+
+.se-hub-card-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 1.1rem;
+}
+
+.se-hub-card-link {
+  margin-top: auto;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.se-hub-stats-bar {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 1.25rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.se-hub-stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.se-hub-stat-num {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+}
+
+.se-hub-stat-label {
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
 /* Responsive Media Queries */
+@media (max-width: 980px) {
+  .se-equal-analyses-grid {
+    grid-template-columns: 1fr;
+  }
+  .se-hub-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .se-sat-img-frame {
+    height: 360px;
+  }
+}
+
 @media (max-width: 900px) {
   .se-featured-grid {
     grid-template-columns: 1fr;

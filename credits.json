@@ -211,7 +211,7 @@
   },
   {
     "file": "assets/lst/04_lst_inversion_coupling_pm25.png",
-    "title": "Concurrent Coupling: Surface Skin Temperature versus PM2.5 in Overlap Window",
+    "title": "Concurrent Seasonal Association: Surface Skin Temperature versus PM2.5 in Overlap Window",
     "source_url": "https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS",
     "creator": "Avnish Singh",
     "date": "2026-10-02",
