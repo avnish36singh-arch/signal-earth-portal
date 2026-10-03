@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Station Rankings and Data Quorum | Signal Earth</title>
+  <meta name="description" content="Analytical station-level rankings and monitoring quorum evaluated across 3,256 continuous ambient monitoring station-days in Kanpur and Delhi.">
+  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/rankings.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header>
+    <nav class="se-nav" aria-label="Main Navigation">
+      <div class="se-nav-inner">
+        <a href="index.html" class="se-brand">
+          <span class="se-brand-name">Signal Earth</span>
+          <span class="se-brand-sub">Environmental Data Observatory</span>
+        </a>
+        <ul class="se-nav-links">
+          <li><a href="index.html#observe">Observe</a></li>
+          <li><a href="index.html#research">Research</a></li>
+          <li><a href="explained/index.html">Explained</a></li>
+          <li><a href="data.html">Library</a></li>
+          <li><a href="methodology.html">Build</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="se-container se-page-content" style="padding-top: 3rem; padding-bottom: 4rem;">
+    <div class="se-section-header">
+      <span class="section-kicker">Comparative Context &middot; Station Data Quorum</span>
+      <h1 class="editorial-headline se-section-title" style="font-size: 2rem;">Station Comparison and Data Quorum</h1>
+      <p class="se-hero-dek">
+        Station-level particulate ranking evaluated from verified public monitoring datasets. Preserved from the original portal documentation.
+      </p>
+    </div>
+
+    <div class="se-panel">
+      <span class="section-kicker">Analytical Station Ranking</span>
+      <h2 class="editorial-headline" style="font-size: 1.35rem; margin-top: 0.35rem; margin-bottom: 0.5rem;">Analysed Monitoring Stations Ranked by Mean Observed PM2.5</h2>
+      <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+        This ranking evaluates the three individual CAAQMS monitors analysed in our codebase by their arithmetic mean PM2.5 concentration across all valid reporting days.
+      </p>
+
+      <div class="se-table-wrap">
+        <table class="se-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Station Name &amp; ID</th>
+              <th>Setting / Environment</th>
+              <th>Observed Mean PM2.5</th>
+              <th>Observation Period</th>
+              <th>Valid Rows (n)</th>
+              <th>Key Limitation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1</strong></td>
+              <td><strong>Alipur, Delhi (Site 204)</strong></td>
+              <td>Northern peripheral highway transport corridor (NH-44)</td>
+              <td><strong>112.4 &micro;g/m&sup3;</strong></td>
+              <td>2017 to 2023</td>
+              <td>n = 1,137 official days (1,133 PM2.5 valid days)</td>
+              <td>731-day unmonitored operational gap; high heavy freight traffic influence</td>
+            </tr>
+            <tr>
+              <td><strong>2</strong></td>
+              <td><strong>Nehru Nagar, Kanpur (Site 5662)</strong></td>
+              <td>Dense urban mixed commercial and industrial basin</td>
+              <td><strong>58.7 &micro;g/m&sup3;</strong></td>
+              <td>Jul 2021 to Oct 2022 &amp; Feb 2025 to Aug 2026</td>
+              <td>n = 813 station-days</td>
+              <td>2.3-year reporting hiatus; single sensor location in central core</td>
+            </tr>
+            <tr>
+              <td><strong>3</strong></td>
+              <td><strong>NSI Kalyanpur, Kanpur (Site 229252)</strong></td>
+              <td>Semi-suburban educational campus corridor</td>
+              <td><strong>55.4 &micro;g/m&sup3;</strong></td>
+              <td>Jul 2021 to Oct 2022 &amp; Feb 2025 to Aug 2026</td>
+              <td>n = 815 station-days</td>
+              <td>2.3-year reporting hiatus; localized vegetation buffering</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="se-caption-tight" style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
+        <strong>Essential Caveat:</strong> The monitoring periods for Delhi and Kanpur are non-identical. Delhi Alipur reflects 2017 to 2023 data, whereas Kanpur reflects discrete windows from 2021 to 2022 and 2025 to 2026 (pooled n = 1,628 station-days across both stations). Micro-environments differ substantially between a major transit highway border (Alipur) and central urban residential monitors (Kanpur). This table reflects station records, not uniform citywide exposure.
+      </p>
+
+      <div style="margin-top: 1.5rem;">
+        <a href="investigations/comparison.html" class="se-btn">View Detailed Airshed Comparison &rarr;</a>
+        <a href="index.html" class="se-btn se-btn-outline" style="margin-left: 0.5rem;">Back to Homepage</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="se-footer">
+    <div class="se-container">
+      <div class="se-footer-inner">
+        <div class="se-footer-brand-col">
+          <div class="se-footer-brand-title">Signal Earth</div>
+          <p class="se-footer-brand-desc">
+            Independent student research portfolio analyzing archived environmental monitoring data from CPCB, UPPCB, DPCC, and NASA POWER reanalysis.
+          </p>
+        </div>
+        <div class="se-footer-col">
+          <h5>Analyses</h5>
+          <ul>
+            <li><a href="investigations/kanpur.html">Kanpur Particulate Dynamics</a></li>
+            <li><a href="investigations/delhi.html">Delhi NAQI Analysis</a></li>
+            <li><a href="investigations/kanpur-lst.html">Kanpur Reanalysis Temperature</a></li>
+            <li><a href="investigations/comparison.html">Regional Airshed Comparison</a></li>
+          </ul>
+        </div>
+        <div class="se-footer-col">
+          <h5>Method and Data</h5>
+          <ul>
+            <li><a href="explained/index.html">Explained Pieces</a></li>
+            <li><a href="methodology.html">Methodology &amp; Standards</a></li>
+            <li><a href="data.html">Data Registry &amp; Code</a></li>
+            <li><a href="corrections.html">Corrections Log</a></li>
+          </ul>
+        </div>
+        <div class="se-footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="licenses.html">Licenses &amp; Attribution</a></li>
+            <li><a href="credits.html">Credits</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="se-footer-disclaimer">
+        Signal Earth is an independent student research project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, UPPCB, DPCC, or any agency named on this site.
+      </div>
+      <div class="se-footer-bottom">
+        <div>Maintained by: Avnish Singh, Civil Engineering, HBTU Kanpur</div>
+        <div>Page last updated: October 2026</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Known Problems and Technical Limits | Signal Earth</title>
+  <meta name="description" content="Permanent auditable record of data gaps, operational hiatuses, and spatial constraints across the Signal Earth codebase.">
+  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/known-problems.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header>
+    <nav class="se-nav" aria-label="Main Navigation">
+      <div class="se-nav-inner">
+        <a href="index.html" class="se-brand">
+          <span class="se-brand-name">Signal Earth</span>
+          <span class="se-brand-sub">Environmental Data Observatory</span>
+        </a>
+        <ul class="se-nav-links">
+          <li><a href="index.html#observe">Observe</a></li>
+          <li><a href="index.html#research">Research</a></li>
+          <li><a href="explained/index.html">Explained</a></li>
+          <li><a href="data.html">Library</a></li>
+          <li><a href="methodology.html">Build</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="se-container se-page-content" style="padding-top: 3rem; padding-bottom: 4rem;">
+    <div class="se-section-header">
+      <span class="section-kicker">Scientific Honesty &middot; Technical Limitations</span>
+      <h1 class="editorial-headline se-section-title" style="font-size: 2rem;">Known Problems and Technical Limits</h1>
+      <p class="se-hero-dek">
+        A permanent record of data gaps, spatial constraints, and methodological limits across the Signal Earth codebase. Preserved from the original homepage.
+      </p>
+    </div>
+
+    <div class="se-panel">
+      <div class="se-table-wrap">
+        <table class="se-table">
+          <thead>
+            <tr>
+              <th>Issue / Constraint</th>
+              <th>Effect on Research Findings</th>
+              <th>Status</th>
+              <th>Documentation Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Delhi Alipur 731-Day Gap (2019 to 2020)</strong></td>
+              <td>Operational refurbishment halted recordings for two full calendar years (Jan 1, 2019 to Dec 31, 2020). Exactly 1,137 out of 1,825 recorded rows meet CPCB quorum (1,133 valid PM2.5 records). Trends cannot claim unbroken multi-year continuity.</td>
+              <td><span class="se-status-tag se-status-fixed">Documented</span></td>
+              <td><a href="corrections.html#hiatus-delhi" class="se-link">Corrections Log</a></td>
+            </tr>
+            <tr>
+              <td><strong>Kanpur 2.3-Year Hiatus (Oct 2022 to Feb 2025)</strong></td>
+              <td>Ground monitoring data is partitioned into two discrete windows (Jul 2021 to Oct 2022 and Feb 2025 to Aug 2026). Winter analyses primarily reflect 2021 to 2022 conditions.</td>
+              <td><span class="se-status-tag se-status-fixed">Documented</span></td>
+              <td><a href="corrections.html#hiatus-kanpur" class="se-link">Corrections Log</a></td>
+            </tr>
+            <tr>
+              <td><strong>NASA POWER / MERRA-2 Coarse Grid (~55 x 60 km)</strong></td>
+              <td>Skin temperature is derived from an assimilation model over a regional grid cell. It cannot resolve intra-urban microclimates, street canyons, or specific industrial pockets.</td>
+              <td><span class="se-status-tag se-status-fixed">Documented</span></td>
+              <td><a href="methodology.html#reanalysis-grid" class="se-link">Methodology Limits</a></td>
+            </tr>
+            <tr>
+              <td><strong>Particulate Ratios (PM2.5 / PM10) as Screening Only</strong></td>
+              <td>Fine-to-coarse ratios provide general qualitative indications of combustion versus mechanical dust, but cannot replace chemical mass balance (CMB) or positive matrix factorization (PMF).</td>
+              <td><span class="se-status-tag se-status-fixed">Documented</span></td>
+              <td><a href="methodology.html#ratio-limits" class="se-link">Methodology Limits</a></td>
+            </tr>
+            <tr>
+              <td><strong>Planned Intra-Urban Spatial Zoning (Landsat / MODIS)</strong></td>
+              <td>Accurate spatial microclimate offsets across Kanpur require cloud-masked Landsat thermal radiometry (100 m native, resampled to 30 m). Analysis is planned and not yet completed; placeholder offsets have been removed.</td>
+              <td><span class="se-status-tag se-status-open">Planned</span></td>
+              <td><a href="investigations/kanpur-lst.html#spatial-zoning-notice" class="se-link">Investigation 03 Notice</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="margin-top: 1.5rem;">
+        <a href="corrections.html" class="se-btn">View Full Corrections Log &rarr;</a>
+        <a href="methodology.html" class="se-btn se-btn-outline" style="margin-left: 0.5rem;">Read Methodology</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="se-footer">
+    <div class="se-container">
+      <div class="se-footer-inner">
+        <div class="se-footer-brand-col">
+          <div class="se-footer-brand-title">Signal Earth</div>
+          <p class="se-footer-brand-desc">
+            Independent student research portfolio analyzing archived environmental monitoring data from CPCB, UPPCB, DPCC, and NASA POWER reanalysis.
+          </p>
+        </div>
+        <div class="se-footer-col">
+          <h5>Analyses</h5>
+          <ul>
+            <li><a href="investigations/kanpur.html">Kanpur Particulate Dynamics</a></li>
+            <li><a href="investigations/delhi.html">Delhi NAQI Analysis</a></li>
+            <li><a href="investigations/kanpur-lst.html">Kanpur Reanalysis Temperature</a></li>
+            <li><a href="investigations/comparison.html">Regional Airshed Comparison</a></li>
+          </ul>
+        </div>
+        <div class="se-footer-col">
+          <h5>Method and Data</h5>
+          <ul>
+            <li><a href="explained/index.html">Explained Pieces</a></li>
+            <li><a href="methodology.html">Methodology &amp; Standards</a></li>
+            <li><a href="data.html">Data Registry &amp; Code</a></li>
+            <li><a href="corrections.html">Corrections Log</a></li>
+          </ul>
+        </div>
+        <div class="se-footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="licenses.html">Licenses &amp; Attribution</a></li>
+            <li><a href="credits.html">Credits</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="se-footer-disclaimer">
+        Signal Earth is an independent student research project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, UPPCB, DPCC, or any agency named on this site.
+      </div>
+      <div class="se-footer-bottom">
+        <div>Maintained by: Avnish Singh, Civil Engineering, HBTU Kanpur</div>
+        <div>Page last updated: October 2026</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

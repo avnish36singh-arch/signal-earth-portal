@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Sources and Custodians | Signal Earth</title>
+  <meta name="description" content="Detailed provenance and custodial attribution of all public environmental repositories utilized across Signal Earth.">
+  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/sources.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header>
+    <nav class="se-nav" aria-label="Main Navigation">
+      <div class="se-nav-inner">
+        <a href="index.html" class="se-brand">
+          <span class="se-brand-name">Signal Earth</span>
+          <span class="se-brand-sub">Environmental Data Observatory</span>
+        </a>
+        <ul class="se-nav-links">
+          <li><a href="index.html#observe">Observe</a></li>
+          <li><a href="index.html#research">Research</a></li>
+          <li><a href="explained/index.html">Explained</a></li>
+          <li><a href="data.html">Library</a></li>
+          <li><a href="methodology.html">Build</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="se-container se-page-content" style="padding-top: 3rem; padding-bottom: 4rem;">
+    <div class="se-section-header">
+      <span class="section-kicker">Data Provenance &middot; Public Custodians</span>
+      <h1 class="editorial-headline se-section-title" style="font-size: 2rem;">Data Sources and Custodians</h1>
+      <p class="se-hero-dek">
+        Every analysis on Signal Earth is built entirely on open, publicly accessible scientific repositories and government monitoring programs. No proprietary or paywalled data is utilized.
+      </p>
+    </div>
+
+    <!-- Quantitative Analysis Sources -->
+    <div class="se-panel">
+      <span class="section-kicker">Quantitative Repositories (Used in Codebase)</span>
+      <div class="se-sources-grid" style="margin-top: 1rem;">
+        <!-- Tile 1: CPCB -->
+        <article class="se-source-tile">
+          <h3 class="se-source-title">CPCB (Central Pollution Control Board)</h3>
+          <p class="se-source-purpose">
+            Statutory criteria pollutant concentrations (PM2.5, PM10, NO2, SO2, CO, O3) and official NAQI breakpoint standards.
+          </p>
+          <div class="se-source-meta">
+            <span><strong>Terms:</strong> Central Pollution Control Board Terms of Use / Government of India Open Data</span><br>
+            <span><strong>Access Date:</strong> Verified October 2026</span><br>
+            <span><strong>URL:</strong> <a href="https://cpcb.nic.in" target="_blank" rel="noopener noreferrer" class="se-link">cpcb.nic.in</a></span>
+          </div>
+        </article>
+
+        <!-- Tile 2: OpenAQ -->
+        <article class="se-source-tile">
+          <h3 class="se-source-title">OpenAQ Data Platform</h3>
+          <p class="se-source-purpose">
+            Harmonized REST API v3 feeds of historical hourly and daily air quality records from Uttar Pradesh Pollution Control Board stations.
+          </p>
+          <div class="se-source-meta">
+            <span><strong>Terms:</strong> Platform API under CC BY 4.0; underlying observational data subject to originating station provider terms (UPPCB / DPCC / CPCB)</span><br>
+            <span><strong>Access Date:</strong> September 2026</span><br>
+            <span><strong>URL:</strong> <a href="https://openaq.org" target="_blank" rel="noopener noreferrer" class="se-link">openaq.org</a></span>
+          </div>
+        </article>
+
+        <!-- Tile 3: NASA POWER & MERRA-2 -->
+        <article class="se-source-tile">
+          <h3 class="se-source-title">NASA POWER / GES DISC (MERRA-2)</h3>
+          <p class="se-source-purpose">
+            Daily atmospheric reanalysis skin temperature (TS) and 2-meter air temperature (T2M) over the 0.5&deg; x 0.625&deg; Kanpur grid box.
+          </p>
+          <div class="se-source-meta">
+            <span><strong>Terms:</strong> NASA Earth Science Open Data Policy</span><br>
+            <span><strong>Access Date:</strong> August 2026</span><br>
+            <span><strong>URL:</strong> <a href="https://power.larc.nasa.gov" target="_blank" rel="noopener noreferrer" class="se-link">power.larc.nasa.gov</a></span>
+          </div>
+        </article>
+      </div>
+
+      <!-- Planned Sources -->
+      <div class="se-planned-sources" style="margin-top: 2rem;">
+        <div class="se-planned-sources-title">Planned, not used in current quantitative analyses</div>
+        <div class="se-planned-grid">
+          <article class="se-planned-tile">
+            <h4 class="se-source-plan-title">NASA Earth Observatory</h4>
+            <p class="se-source-plan-desc">
+              Satellite case studies, plume dynamics narratives, and calibrated natural color imagery of Gangetic agricultural haze.
+            </p>
+            <div class="se-source-plan-meta">NASA Open Access / Public Information</div>
+          </article>
+
+          <article class="se-planned-tile">
+            <h4 class="se-source-plan-title">NASA Worldview / GIBS</h4>
+            <p class="se-source-plan-desc">
+              Global Imagery Browse Services snapshots from MODIS Terra/Aqua and Suomi NPP VIIRS instruments for documented smoke episodes.
+            </p>
+            <div class="se-source-plan-meta">NASA Open Science Data Policy</div>
+          </article>
+
+          <article class="se-planned-tile">
+            <h4 class="se-source-plan-title">USGS / NASA Landsat Program</h4>
+            <p class="se-source-plan-desc">
+              Landsat 8 and Landsat 9 TIRS thermal infrared radiance (100 m native, resampled to 30 m) referenced for planned intra-urban zoning.
+            </p>
+            <div class="se-source-plan-meta">U.S. Geological Survey Public Domain</div>
+          </article>
+
+          <article class="se-planned-tile">
+            <h4 class="se-source-plan-title">NOAA Physical Sciences Laboratory</h4>
+            <p class="se-source-plan-desc">
+              Synoptic wind vectors, sea level pressure patterns, and western disturbance tracks influencing northern Indian winter stagnation.
+            </p>
+            <div class="se-source-plan-meta">NOAA Open Data Policy</div>
+          </article>
+        </div>
+      </div>
+
+      <div style="margin-top: 1.5rem;">
+        <a href="data.html" class="se-btn">Open Full Data Registry &rarr;</a>
+        <a href="methodology.html" class="se-btn se-btn-outline" style="margin-left: 0.5rem;">View Methodology</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="se-footer">
+    <div class="se-container">
+      <div class="se-footer-inner">
+        <div class="se-footer-brand-col">
+          <div class="se-footer-brand-title">Signal Earth</div>
+          <p class="se-footer-brand-desc">
+            Independent student research portfolio analyzing archived environmental monitoring data from CPCB, UPPCB, DPCC, and NASA POWER reanalysis.
+          </p>
+        </div>
+        <div class="se-footer-col">
+          <h5>Analyses</h5>
+          <ul>
+            <li><a href="investigations/kanpur.html">Kanpur Particulate Dynamics</a></li>
+            <li><a href="investigations/delhi.html">Delhi NAQI Analysis</a></li>
+            <li><a href="investigations/kanpur-lst.html">Kanpur Reanalysis Temperature</a></li>
+            <li><a href="investigations/comparison.html">Regional Airshed Comparison</a></li>
+          </ul>
+        </div>
+        <div class="se-footer-col">
+          <h5>Method and Data</h5>
+          <ul>
+            <li><a href="explained/index.html">Explained Pieces</a></li>
+            <li><a href="methodology.html">Methodology &amp; Standards</a></li>
+            <li><a href="data.html">Data Registry &amp; Code</a></li>
+            <li><a href="corrections.html">Corrections Log</a></li>
+          </ul>
+        </div>
+        <div class="se-footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="licenses.html">Licenses &amp; Attribution</a></li>
+            <li><a href="credits.html">Credits</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="se-footer-disclaimer">
+        Signal Earth is an independent student research project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, UPPCB, DPCC, or any agency named on this site.
+      </div>
+      <div class="se-footer-bottom">
+        <div>Maintained by: Avnish Singh, Civil Engineering, HBTU Kanpur</div>
+        <div>Page last updated: October 2026</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
