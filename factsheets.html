@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fact Sheets & Media Briefs | Press Resources | Signal Earth</title>
+  <meta name="description" content="Citable reference briefs, reporting guidelines, and high-resolution publication-ready figures for journalists, educators, and science communicators covering North Indian air quality.">
+  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/factsheets.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:title" content="Fact Sheets & Media Briefs | Signal Earth">
+  <meta property="og:description" content="Citable reference briefs and open figures for journalists, educators, and science communicators.">
+  <meta property="og:url" content="https://avnish36singh-arch.github.io/signal-earth-portal/factsheets.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://avnish36singh-arch.github.io/signal-earth-portal/assets/delhi/01_aqi_time_series.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Main Navigation -->
+  <header>
+    <nav class="se-nav" aria-label="Main Navigation">
+      <div class="se-nav-inner">
+        <a href="index.html" class="se-brand">
+          <span class="se-brand-name">Signal Earth</span>
+          <span class="se-brand-sub">Environmental Data Platform</span>
+        </a>
+
+        <ul class="se-nav-links">
+          <li><a href="index.html#analyses">Analyses</a></li>
+          <li><a href="index.html#explained">Explained</a></li>
+          <li><a href="methodology.html">Methodology</a></li>
+          <li><a href="data.html">Data and code</a></li>
+          <li><a href="factsheets.html" class="active">Fact sheets</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="se-container-narrow se-container-py">
+    <header class="se-header-mb">
+      <span class="section-kicker">Press &amp; Educator Resources</span>
+      <h1 class="editorial-headline se-headline-clamp">
+        Fact Sheets &amp; Media Briefs
+      </h1>
+      <p class="se-hero-dek">
+        Citable backgrounders, reporting cheat sheets, and publication-ready figures for journalists, educators, and science communicators covering atmospheric physics and air quality across the Indo-Gangetic Plain.
+      </p>
+    </header>
+
+    <!-- Section 1: Core Reporting Briefs -->
+    <section class="se-content-section">
+      <span class="section-kicker">01 : Reporting Briefs &amp; Common Myths</span>
+      <h2 class="editorial-headline se-content-h2">Fast Reference for Science Communicators</h2>
+      <p class="se-content-p">
+        During North Indian winter pollution episodes, media coverage often repeats standard technical inaccuracies. These four briefs summarize the underlying statutory rules and physical mechanics with verified scientific citations.
+      </p>
+
+      <div class="se-card-stack">
+
+        <!-- Brief 01 -->
+        <article class="se-card-panel">
+          <span class="section-kicker">Brief 01 : Regulatory Science</span>
+          <h3 class="se-card-title">Why the National AQI Is Never an Average</h3>
+          <p class="se-content-p">
+            <strong>The Misconception:</strong> Reporting that an Air Quality Index of 400 represents a combined "average" or "composite blend" of all pollutants in the air.
+          </p>
+          <p class="se-content-p">
+            <strong>The Scientific Reality:</strong> The Central Pollution Control Board (CPCB, 2014) National Air Quality Index uses a strict <em>max-operator rule</em>. For each criteria pollutant with valid data, a piecewise linear sub-index between 0 and 500 is calculated independently. Whichever single pollutant registers the highest sub-index becomes the <strong>dominant pollutant</strong>, and its exact number becomes the official statutory score for that station:
+          </p>
+          <div class="se-code-callout">
+            Headline AQI = max(I_PM2.5, I_PM10, I_NO2, I_SO2, I_CO, I_O3, I_NH3, I_Pb)
+          </div>
+          <p class="se-content-p-tight">
+            Across 1,137 official days at Delhi Alipur, <strong>PM2.5 was the dominant pollutant on 88.4% of days</strong> (1,005 days), while PM10 governed 11.2% of days and NO2 on 0.4%. The other criteria pollutants virtually never dictate the headline score in winter.
+          </p>
+          <div class="se-meta-credit">
+            Source: CPCB NAQI Report (October 2014) &middot; <a href="explained/cpcb-naqi.html" class="se-link">Detailed Explainer</a>
+          </div>
+        </article>
+
+        <!-- Brief 02 -->
+        <article class="se-card-panel">
+          <span class="section-kicker">Brief 02 : Atmospheric Physics</span>
+          <h3 class="se-card-title">Thermal Inversion vs. Sudden Emission Spikes</h3>
+          <p class="se-content-p">
+            <strong>The Misconception:</strong> Assuming that late-night pollution spikes (midnight to 07:00 IST) mean factories or trucks are dumping massive new emissions while the city sleeps.
+          </p>
+          <p class="se-content-p">
+            <strong>The Scientific Reality:</strong> Late-night particulate escalation across the Indo-Gangetic Plain is primarily governed by <strong>nocturnal ground radiative cooling</strong>. Under clear winter skies, the ground radiates heat into space faster than the air above it, chilling the lowest atmospheric layer. Because cold air is denser than warm air, buoyant convective updrafts cease completely, forming an invisible "inversion lid":
+          </p>
+          <p class="se-content-p-tight">
+            Normal background emissions (cooking fires, overnight heavy diesel bypass traffic, smoldering biomass, brick kilns) are compressed into a shallow boundary layer only a few hundred meters deep. When the effective atmospheric volume shrinks by 80%, particulate concentrations surge 4× to 5× even if gross emission rates remain constant.
+          </p>
+          <div class="se-meta-credit">
+            Source: Boundary Layer Thermodynamics &middot; <a href="explained/temperature-inversion.html" class="se-link">Detailed Explainer</a>
+          </div>
+        </article>
+
+        <!-- Brief 03 -->
+        <article class="se-card-panel">
+          <span class="section-kicker">Brief 03 : Unit Standards</span>
+          <h3 class="se-card-title">Physical Concentration (&micro;g/m&sup3;) vs. Dimensionless AQI Points</h3>
+          <p class="se-content-p">
+            <strong>The Misconception:</strong> Writing phrases like <em>"pollution reached 450 &micro;g/m&sup3; AQI"</em> or treating concentration and index points as interchangeable.
+          </p>
+          <p class="se-content-p">
+            <strong>The Scientific Reality:</strong> Mass concentration (&micro;g/m&sup3;) is a physical measurement of particulate weight in a cubic meter of air. The AQI is a dimensionless public health category score (0 to 500) translated non-linearly through statutory breakpoints:
+          </p>
+          <div class="se-table-wrap">
+            <table class="se-table">
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>AQI Scale</th>
+                  <th>24-hr PM2.5 Range</th>
+                  <th>24-hr PM10 Range</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Good</td>
+                  <td>0 &ndash; 50</td>
+                  <td>0 &ndash; 30 &micro;g/m&sup3;</td>
+                  <td>0 &ndash; 50 &micro;g/m&sup3;</td>
+                </tr>
+                <tr>
+                  <td>Satisfactory</td>
+                  <td>51 &ndash; 100</td>
+                  <td>31 &ndash; 60 &micro;g/m&sup3; (NAAQS Standard)</td>
+                  <td>51 &ndash; 100 &micro;g/m&sup3;</td>
+                </tr>
+                <tr>
+                  <td>Moderate</td>
+                  <td>101 &ndash; 200</td>
+                  <td>61 &ndash; 90 &micro;g/m&sup3;</td>
+                  <td>101 &ndash; 250 &micro;g/m&sup3;</td>
+                </tr>
+                <tr>
+                  <td>Poor</td>
+                  <td>201 &ndash; 300</td>
+                  <td>91 &ndash; 120 &micro;g/m&sup3;</td>
+                  <td>251 &ndash; 350 &micro;g/m&sup3;</td>
+                </tr>
+                <tr>
+                  <td>Very Poor</td>
+                  <td>301 &ndash; 400</td>
+                  <td>121 &ndash; 250 &micro;g/m&sup3;</td>
+                  <td>351 &ndash; 430 &micro;g/m&sup3;</td>
+                </tr>
+                <tr>
+                  <td>Severe</td>
+                  <td>401 &ndash; 500</td>
+                  <td>250+ &micro;g/m&sup3;</td>
+                  <td>430+ &micro;g/m&sup3;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="se-content-p-tight">
+            <strong>Newsroom Rule:</strong> State either <em>"the AQI was 420"</em> (no units) or <em>"the 24-hour PM2.5 concentration was 280 &micro;g/m&sup3;"</em>. Never combine them.
+          </p>
+          <div class="se-meta-credit">
+            Source: CPCB National Ambient Air Quality Standards (2009) &middot; <a href="methodology.html#naqi-formula" class="se-link">Breakpoint Methodology</a>
+          </div>
+        </article>
+
+        <!-- Brief 04 -->
+        <article class="se-card-panel">
+          <span class="section-kicker">Brief 04 : Quality Assurance</span>
+          <h3 class="se-card-title">The 16-Hour Quorum Rule and Sensor Hiatuses</h3>
+          <p class="se-content-p">
+            <strong>The Misconception:</strong> Assuming that when an official monitoring station reports "No Data" or goes dark for weeks, government officials are hiding numbers.
+          </p>
+          <p class="se-content-p-tight">
+            <strong>The Scientific Reality:</strong> Continuous Ambient Air Quality Monitoring Stations (CAAQMS) use beta-attenuation monitors (BAM) that run mechanical filter tape. In extremely polluted winter environments, tape rolls tear, beta sources drift, or power supplies fluctuate. CPCB enforces a strict regulatory quorum: a valid statutory daily AQI requires at least <strong>16 valid hourly samples</strong> for at least <strong>three criteria pollutants</strong>, one of which must be particulate matter (PM2.5 or PM10). If a station logs only 15 hours of PM2.5 due to a calibration cycle, no statutory score can be published.
+          </p>
+          <div class="se-meta-credit">
+            Source: CPCB Data Validation Protocol &middot; <a href="data.html" class="se-link">Station Registry</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Section 2: Publication-Ready Figure Gallery -->
+    <section class="se-content-section">
+      <span class="section-kicker">02 : Downloadable Figure Gallery</span>
+      <h2 class="editorial-headline se-content-h2">High-Resolution Visuals for Articles and Presentations</h2>
+      <p class="se-content-p">
+        All figures below are published under the open Creative Commons Attribution 4.0 International license (CC BY 4.0). They are free to embed in news articles, broadcast graphics, academic research, and classroom slides with the provided citation.
+      </p>
+
+      <!-- Figure 1 -->
+      <div class="se-figure">
+        <div class="se-figure-header">
+          <div class="se-figure-title">Figure 1: Kanpur Daily Particulate Timeseries (2021&ndash;2026)</div>
+          <div class="se-figure-meta">Format: High-Res PNG | Dimensions: 900 &times; 450 px | Data: UPPCB / CPCB via OpenAQ</div>
+        </div>
+        <img src="assets/kanpur/01_timeseries.png" alt="Timeseries of daily mean PM2.5 and PM10 across NSI Kalyanpur and Nehru Nagar in Kanpur showing the 2022 to 2025 monitoring hiatus" class="se-figure-img" width="900" height="450" loading="lazy">
+        <div class="se-figure-caption">
+          <strong>Suggested Caption:</strong> Daily mean concentrations of PM2.5 and PM10 in Kanpur across NSI Kalyanpur and Nehru Nagar, highlighting seasonal winter peaks and an operational 2.3-year reporting hiatus from late 2022 to early 2025.
+        </div>
+        <div class="se-figure-header">
+          <div class="se-figure-title">Citing This Visual in Media:</div>
+          <blockquote class="se-quote-license">
+            Figure: Signal Earth &middot; Data: UPPCB / CPCB (Licensed under CC BY 4.0) &middot; URL: https://avnish36singh-arch.github.io/signal-earth-portal/
+          </blockquote>
+          <p class="se-mt-base">
+            <a href="assets/kanpur/01_timeseries.png" download="signal_earth_kanpur_timeseries.png" class="se-btn">Download High-Res PNG</a>
+            <a href="investigations/kanpur.html" class="se-btn se-btn-outline">View Full Analysis</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Figure 2 -->
+      <div class="se-figure">
+        <div class="se-figure-header">
+          <div class="se-figure-title">Figure 2: Delhi Alipur Seasonal AQI Progression (2017&ndash;2023)</div>
+          <div class="se-figure-meta">Format: High-Res PNG | Dimensions: 900 &times; 450 px | Data: CPCB / DPCC Site 204</div>
+        </div>
+        <img src="assets/delhi/03_seasonal_aqi_dynamics.png" alt="Seasonal AQI and particulate progression at Delhi Alipur showing steep November escalation" class="se-figure-img" width="900" height="450" loading="lazy">
+        <div class="se-figure-caption">
+          <strong>Suggested Caption:</strong> Monthly mean PM2.5 and AQI progression at Delhi Alipur, showing winter concentrations climbing to 5.75 times the monsoon baseline (November mean 197.5 &micro;g/m&sup3; vs July&ndash;August mean 34.3 &micro;g/m&sup3;).
+        </div>
+        <div class="se-figure-header">
+          <div class="se-figure-title">Citing This Visual in Media:</div>
+          <blockquote class="se-quote-license">
+            Figure: Signal Earth &middot; Data: CPCB / DPCC (Licensed under CC BY 4.0) &middot; URL: https://avnish36singh-arch.github.io/signal-earth-portal/
+          </blockquote>
+          <p class="se-mt-base">
+            <a href="assets/delhi/03_seasonal_aqi_dynamics.png" download="signal_earth_delhi_seasonal_progression.png" class="se-btn">Download High-Res PNG</a>
+            <a href="investigations/delhi.html" class="se-btn se-btn-outline">View Full Analysis</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Figure 3 -->
+      <div class="se-figure">
+        <div class="se-figure-header">
+          <div class="se-figure-title">Figure 3: Dominant Criteria Pollutants at Delhi Alipur (1,137 Official Days)</div>
+          <div class="se-figure-meta">Format: High-Res PNG | Dimensions: 900 &times; 450 px | Data: CPCB Statutory Records</div>
+        </div>
+        <img src="assets/delhi/04_dominant_pollutants.png" alt="Bar chart showing PM2.5 as the dominant pollutant on 88.4 percent of official monitoring days at Delhi Alipur" class="se-figure-img" width="900" height="450" loading="lazy">
+        <div class="se-figure-caption">
+          <strong>Suggested Caption:</strong> Breakdown of dominant criteria pollutants determining the official daily National AQI at Delhi Alipur: PM2.5 governed 88.4% of days, PM10 11.2%, and NO2 0.4%.
+        </div>
+        <div class="se-figure-header">
+          <div class="se-figure-title">Citing This Visual in Media:</div>
+          <blockquote class="se-quote-license">
+            Figure: Signal Earth &middot; Data: CPCB (Licensed under CC BY 4.0) &middot; URL: https://avnish36singh-arch.github.io/signal-earth-portal/
+          </blockquote>
+          <p class="se-mt-base">
+            <a href="assets/delhi/04_dominant_pollutants.png" download="signal_earth_delhi_dominant_pollutants.png" class="se-btn">Download High-Res PNG</a>
+            <a href="explained/cpcb-naqi.html" class="se-link se-link-margin">Read CPCB Formula Explainer</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Figure 4 -->
+      <div class="se-figure">
+        <div class="se-figure-header">
+          <div class="se-figure-title">Figure 4: Regional Reanalysis Grid (55 &times; 60 km) vs Kanpur City Perimeter</div>
+          <div class="se-figure-meta">Format: High-Res PNG | Dimensions: 900 &times; 450 px | Data: NASA POWER MERRA-2 &amp; Survey of India</div>
+        </div>
+        <img src="assets/lst/03_kanpur_spatial_thermal_zones.png" alt="Map showing Kanpur municipal boundary and monitoring stations inside the single regional MERRA-2 reanalysis grid box" class="se-figure-img" width="900" height="450" loading="lazy">
+        <div class="se-figure-caption">
+          <strong>Suggested Caption:</strong> The single 0.5&deg; &times; 0.625&deg; NASA MERRA-2 atmospheric reanalysis grid box overlaid on the Kanpur municipal boundary, illustrating why coarse numerical models cannot resolve neighborhood heat islands.
+        </div>
+        <div class="se-figure-header">
+          <div class="se-figure-title">Citing This Visual in Media:</div>
+          <blockquote class="se-quote-license">
+            Figure: Signal Earth &middot; Data: NASA POWER / MERRA-2 &middot; GIS: Survey of India (CC BY 4.0)
+          </blockquote>
+          <p class="se-mt-base">
+            <a href="assets/lst/03_kanpur_spatial_thermal_zones.png" download="signal_earth_reanalysis_grid_kanpur.png" class="se-btn">Download High-Res PNG</a>
+            <a href="explained/weather-reanalysis.html" class="se-btn se-btn-outline">Read Reanalysis Explainer</a>
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Section 3: Quick Reporting Checklist -->
+    <section class="se-content-section">
+      <span class="section-kicker">03 : Newsroom Verification Checklist</span>
+      <h2 class="editorial-headline se-content-h2">Common Errors to Avoid Before Publishing</h2>
+      
+      <div class="se-panel-box">
+        <ul class="se-list-bullet-clean">
+          <li>
+            <strong>Avoid Single-Monitor Overreach:</strong> A reading from a sensor situated 15 meters from an interstate highway truck terminal (like Delhi Alipur on NH44) reflects local roadside conditions plus regional air masses. Do not publish it as "the average air breathed by 30 million people across the NCR."
+          </li>
+          <li>
+            <strong>Distinguish Direct Satellite Observations from Numerical Reanalysis:</strong> NASA POWER and GMAO MERRA-2 are physics-based atmospheric model simulations, not satellite photographs or direct ground thermometers. Do not claim a reanalysis dataset measured the asphalt temperature outside someone's house.
+          </li>
+          <li>
+            <strong>Differentiate Local Stagnation from Transboundary Smoke:</strong> In October and November, northwesterly winds transport agricultural smoke plumes across the Gangetic plain. But once winter cold sets in through December and January, massive particulate spikes are driven by regional boundary layer compression and nocturnal inversions, not continued stubble burning.
+          </li>
+          <li>
+            <strong>Acknowledge Missing Historical Data:</strong> When plotting multi-year trends, clearly disclose monitoring hiatuses. Smoothing over a 2-year maintenance gap with synthetic straight lines misinforms readers about genuine historical exposure.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section 4: Media Contact & Inquiries -->
+    <section class="se-panel-box">
+      <span class="section-kicker">04 : Editorial Inquiries</span>
+      <h3 class="se-card-title">Technical Review &amp; Custom Chart Inquiries</h3>
+      <p class="se-card-desc">
+        Need verification on a specific monitoring station dataset, raw CSV exports, or high-resolution custom vector figures for print publication or classroom use? Contact the platform maintainer:
+      </p>
+      <div class="se-author-meta">
+        <div><strong>Avnish Singh</strong> &middot; Founder, Signal Earth</div>
+        <div>Email: <a href="mailto:avnish36singh@gmail.com" class="se-link">avnish36singh@gmail.com</a></div>
+        <div>LinkedIn: <a href="https://www.linkedin.com/in/avnish-singh-81a276216/" target="_blank" rel="noopener noreferrer" class="se-link">linkedin.com/in/avnish-singh-81a276216</a></div>
+        <div>Source Code &amp; Data: <a href="data.html" class="se-link">Data and Code Registry</a></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 4-Column Editorial Footer -->
+  <footer class="se-footer">
+    <div class="se-container">
+      <div class="se-footer-inner">
+        <div class="se-footer-brand-col">
+          <div class="se-footer-brand-title">Signal Earth</div>
+          <p class="se-footer-brand-desc">
+            Independent environmental research platform publishing rigorous, reproducible analyses of public air-quality and atmospheric data from CPCB, UPPCB, and NASA POWER reanalysis.
+          </p>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Analyses</h5>
+          <ul>
+            <li><a href="investigations/kanpur.html">Kanpur Particulate Dynamics</a></li>
+            <li><a href="investigations/delhi.html">Delhi NAQI Analysis</a></li>
+            <li><a href="investigations/kanpur-lst.html">Kanpur Reanalysis Temperature</a></li>
+            <li><a href="investigations/comparison.html">Regional Airshed Comparison</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Method and Data</h5>
+          <ul>
+            <li><a href="index.html#explained">Explained Pieces</a></li>
+            <li><a href="factsheets.html">Fact Sheets &amp; Media Briefs</a></li>
+            <li><a href="methodology.html">Methodology and Limits</a></li>
+            <li><a href="data.html">Data and Code</a></li>
+            <li><a href="about.html">About Signal Earth</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="licenses.html">Licenses and Terms</a></li>
+            <li><a href="credits.html">Image Credits</a></li>
+            <li><a href="corrections.html">Corrections Log</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/company/signalearth/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="contact.html">Contact Information</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mandatory Affiliation Disclaimer -->
+      <div class="se-footer-disclaimer">
+        Signal Earth is an independent research project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, DPCC, UPPCB, HBTU, or any government body named on this site.
+      </div>
+
+      <div class="se-footer-bottom">
+        <div>Maintained by: Avnish Singh</div>
+        <div>Page last updated: October 2026</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
