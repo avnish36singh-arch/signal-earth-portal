@@ -1,4 +1,4 @@
-# Intra-Urban Thermal Zoning and Urban Heat Island Intensity in Kanpur: 30m Landsat TIRS-2 Analysis
+# Intra-Urban Thermal Zoning: Landsat 8/9 TIRS-2 Spatial Detail Over Kanpur
 
 **Signal Earth &middot; Investigation 04**  
 *Satellite Earth Observation, Thermal Infrared Radiometry, and Multi-Scale Urban Heat Island Dynamics*  

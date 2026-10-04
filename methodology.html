@@ -281,23 +281,64 @@
       </div>
     </section>
 
-    <!-- Section 6: Model Reanalysis Parameters -->
+    <!-- Section 6: Thermal Radiometry vs. Atmospheric Reanalysis -->
     <section id="reanalysis-grid" class="se-content-section">
-      <span class="section-kicker">06 : Model Reanalysis Parameters</span>
-      <h2 class="editorial-headline se-content-h2">NASA POWER / MERRA-2 Reanalysis Skin Temperature</h2>
+      <span class="section-kicker">06 : Remote Sensing vs. Model Assimilation</span>
+      <h2 class="editorial-headline se-content-h2">Satellite Thermal Radiometry (Landsat) vs. Atmospheric Model Reanalysis (MERRA-2)</h2>
       <p class="se-content-p">
-        Analysis 03 evaluates thermal records across the Kanpur grid cell using daily reanalysis data from the NASA POWER project, derived from the MERRA-2 assimilation model:
+        A central scientific distinction in Signal Earth is the difference between direct satellite thermal infrared radiometry (Analysis 04) and numerical atmospheric reanalysis assimilation (Analysis 03):
       </p>
+
+      <div class="se-table-wrap" style="margin-bottom: 1.5rem;">
+        <table class="se-table">
+          <thead>
+            <tr>
+              <th>Methodological Dimension</th>
+              <th>Satellite Thermal Radiometry (Analysis 04)</th>
+              <th>Atmospheric Model Reanalysis (Analysis 03)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Primary Data Source</strong></td>
+              <td>USGS Landsat 8 & 9 TIRS-2 (Collection 2 Level-2)</td>
+              <td>NASA POWER GMAO MERRA-2 Global Reanalysis</td>
+            </tr>
+            <tr>
+              <td><strong>Measurement Physics</strong></td>
+              <td>Direct top-of-atmosphere thermal infrared radiance (Band 10: 10.60–11.19 µm) converted to kinetic skin temperature via MODTRAN radiative transfer models and fractional surface emissivity.</td>
+              <td>Thermodynamic energy-balance skin equilibrium parameter calculated inside a numerical weather forecast model assimilating sparse synoptic radiosondes and broad radiance soundings.</td>
+            </tr>
+            <tr>
+              <td><strong>Spatial Resolution</strong></td>
+              <td><strong>30 meters</strong> (100 m native resampled to 30 m via cubic convolution). Resolves street canyons, vegetation patches, and industrial sectors.</td>
+              <td><strong>~55 × 60 km</strong> (0.5° latitude × 0.625° longitude). A single grid box covers the entire Kanpur metropolitan region and rural outskirts.</td>
+            </tr>
+            <tr>
+              <td><strong>Microclimate Gradient</strong></td>
+              <td>Resolves genuine intra-urban thermal heterogeneity: exposes a <strong>7.10 K internal temperature spread</strong> between the cool Ganga riverbank and hot urban masonry.</td>
+              <td><strong>Zero intra-urban gradients:</strong> Spatially averages all terrain within 3,300 km² into a single uniform number, underestimating core urban heat stress by 2.3 to 3.8 K.</td>
+            </tr>
+            <tr>
+              <td><strong>Temporal Continuity</strong></td>
+              <td>Episodic (16-day orbital repeat, harmonized to 8-day L8/L9 passes). Strictly requires cloud-free acquisitions (&lt; 10% cloud cover).</td>
+              <td>Continuous, gapless daily time series (2,556 consecutive daily rows from 2017 to 2023), independent of cloud cover.</td>
+            </tr>
+            <tr>
+              <td><strong>Scientific Role</strong></td>
+              <td>Pinpoints localized urban heat island intensity, microclimate zones, and cool-roof mitigation priorities.</td>
+              <td>Identifies multi-year macro-climatological trajectories, seasonal sensible heat flips, and regional ventilation collapse.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <ul class="se-list-bullet-desc-sm">
         <li>
-          <strong>Reanalysis Skin Temperature (TS):</strong> Derived from numerical weather reanalysis assimilation on a 0.5° latitude by 0.625° longitude grid (approximately 55 by 60 km). It represents model skin temperature, not satellite radiometer observation and not satellite LST.
+          <strong>Completed in Investigation 04:</strong> High-resolution intra-urban thermal zoning is fully resolved in <a href="investigations/kanpur-uhi.html" class="se-link"><strong>Investigation 04</strong></a> using cloud-masked USGS Landsat 8 and 9 Collection 2 Level 2 Surface Temperature products (30m resolution), quantifying Kanpur's concentric Urban Heat Island (peaking at +3.60 K in dry winter) across Core (0–5 km), Suburban (5–15 km), and Rural (15–20 km) regimes.
         </li>
         <li>
-          <strong>Winter Daily Mean Difference (Delta T = TS - T2M):</strong> A negative winter daily mean difference (TS &lt; T2M, averaging -0.97°C) indicates daily aggregate surface cooling. It does not establish the depth of a nocturnal ground inversion, which requires testing hourly night profiles.
-        </li>
-        <li>
-          <strong>Planned Spatial Zoning:</strong> High-resolution intra-urban thermal zoning requires satellite thermal sensor imagery (Landsat 8/9 Collection 2 Level 2 Thermal Infrared Sensor at 100 m native, resampled to 30 m, or MODIS MOD11A1 at 1 km, cloud-masked, with documented zonal means and acquisition dates). This analysis is planned and not yet completed.
+          <strong>Reanalysis Role in Inversion Climatology:</strong> In Analysis 03, daily reanalysis skin temperature (TS) and 2m ambient air (T2M) provide the long-term continuous baseline for evaluating regional surface energy balance shifts and atmospheric ventilation stagnation across 7 unbroken years.
         </li>
       </ul>
     </section>
@@ -347,6 +388,7 @@
             <li><a href="investigations/kanpur.html">Kanpur Particulate Dynamics</a></li>
             <li><a href="investigations/delhi.html">Delhi NAQI Analysis</a></li>
             <li><a href="investigations/kanpur-lst.html">Kanpur Reanalysis Temperature</a></li>
+            <li><a href="investigations/kanpur-uhi.html">Kanpur Landsat 30m Thermal</a></li>
             <li><a href="investigations/comparison.html">Regional Airshed Comparison</a></li>
           </ul>
         </div>

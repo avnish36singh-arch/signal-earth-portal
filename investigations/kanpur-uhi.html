@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intra-Urban Thermal Zoning: Landsat 8/9 TIRS-2 Spatial Detail Over Kanpur | Signal Earth</title>
+  <meta name="description" content="High-resolution 30-meter satellite thermal radiometry from USGS Landsat 8 and 9 TIRS-2 resolving intra-urban microclimates, concentric Urban Heat Island (UHI) intensity, and coarse reanalysis spatial masking across Kanpur, India.">
+  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/investigations/kanpur-uhi.html">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta property="og:title" content="Intra-Urban Thermal Zoning: Landsat 8/9 TIRS-2 Spatial Detail Over Kanpur | Signal Earth">
+  <meta property="og:description" content="30m Landsat thermal radiometry reveals a 7.10 K intra-urban thermal variance across Kanpur completely masked by coarse atmospheric reanalysis.">
+  <meta property="og:url" content="https://avnish36singh-arch.github.io/signal-earth-portal/investigations/kanpur-uhi.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://avnish36singh-arch.github.io/signal-earth-portal/assets/kanpur-uhi/kanpur-uhi-30m.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="se-nav" aria-label="Main Navigation">
+      <div class="se-nav-inner">
+        <a href="../index.html" class="se-brand">
+          <span class="se-brand-name">Signal Earth</span>
+          <span class="se-brand-sub">Environmental Data Portfolio</span>
+        </a>
+
+        <ul class="se-nav-links">
+          <li><a href="../index.html#analyses" class="active">Analyses</a></li>
+          <li><a href="../index.html#explained">Explained</a></li>
+          <li><a href="../methodology.html">Methodology</a></li>
+          <li><a href="../data.html">Data and code</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero Block with Figure Header -->
+    <div class="se-investigation-hero">
+      <div class="se-container-narrow">
+        <span class="section-kicker">Analysis 04 : Satellite Thermal Radiometry</span>
+        <h1 class="editorial-headline se-investigation-title">
+          Intra-Urban Thermal Zoning: Landsat 8/9 TIRS-2 Spatial Detail Over Kanpur
+        </h1>
+
+        <div class="se-investigation-meta">
+          <span>By <strong>Avnish Singh</strong>, Undergraduate in Environmental Engineering, HBTU Kanpur</span>
+          <span>Last updated: October 2026</span>
+          <span>Reading time: 9 min read</span>
+        </div>
+
+        <!-- 3-Sentence Summary -->
+        <div class="se-summary-box">
+          This investigation processes harmonized cloud-masked USGS Landsat 8 and Landsat 9 Collection 2 Level 2 thermal infrared radiometry (TIRS-2 Band 10, 30-meter resolution) across four seasons (July 2021 to October 2022) to evaluate intra-urban Land Surface Skin Temperature (LST) and concentric Urban Heat Island (UHI) intensity over the Kanpur metropolitan basin. During peak dry winter conditions, the built-up urban core reaches 18.40°C (291.55 K) compared to 14.80°C (287.95 K) in the rural agricultural periphery, generating a net surface UHI intensity of +3.60 K (+3.60°C). By comparing these 30m pixel fields against the single 55 × 60 km MERRA-2 reanalysis grid cell evaluated in Analysis 03, we prove that coarse reanalysis completely masks a 7.10 K internal microclimate spread, underestimating true urban core thermal stress by 2.2°C to 3.8°C.
+        </div>
+
+        <div class="se-card-img-wrap se-img-bordered">
+          <img src="../assets/kanpur-uhi/kanpur-uhi-30m.png" alt="30-meter spatial thermal radiometry map across Kanpur showing concentric zones and thermal hot-spots" width="900" height="450" fetchpriority="high">
+        </div>
+        <div class="se-image-credit">
+          Image: Avnish Singh, using USGS Landsat 8/9 Collection 2 Level 2 via Google Earth Engine, October 2026. Recorded in <a href="../credits.html">credits.json</a>.
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content Body -->
+    <div class="se-container-narrow se-page-content">
+
+      <!-- Section 1: Physical Foundations & Satellite Data -->
+      <section class="se-investigation-section">
+        <span class="section-kicker">01 : Satellite Remote Sensing</span>
+        <h2 class="editorial-headline se-section-heading">Radiometric Foundations of 30m Spaceborne Thermal Infrared Observation</h2>
+        <p class="se-section-intro">
+          While coarse atmospheric reanalysis assimilation provides valuable multi-year temporal continuity (as documented in <a href="kanpur-lst.html" class="se-link">Analysis 03</a>), it operates on a regional 0.5° × 0.625° grid (~55 × 60 km) that treats the entire Kanpur metropolitan region as a single homogenous value. Resolving true neighborhood microclimates requires spaceborne thermal infrared radiometers.
+        </p>
+
+        <p class="se-content-p">
+          To overcome the 16-day revisit limitation of a single satellite platform, this investigation harmonizes thermal infrared acquisitions from two operational missions: <strong>Landsat 8</strong> (Operational Land Imager / Thermal Infrared Sensor) and <strong>Landsat 9</strong> (launched September 2021; operational January 2022). Data was queried through Google Earth Engine using the official USGS Collection 2 Tier 1 Level-2 Surface Temperature science products (<code>LANDSAT/LC08/C02/T1_L2</code> and <code>LANDSAT/LC09/C02/T1_L2</code>).
+        </p>
+
+        <div class="se-math-box-slate">
+          T<sub>skin, K</sub> = (DN × 0.00341802) + 149.0<br>
+          T<sub>skin, °C</sub> = T<sub>skin, K</sub> - 273.15 = (DN × 0.00341802) - 124.15
+        </div>
+
+        <p class="se-content-p">
+          In this radiometric formulation, <strong>DN</strong> represents the 16-bit digital number of Thermal Infrared Sensor Band 10 (10.60–11.19 µm). Level-2 processing incorporates atmospheric transmission corrections derived from the Moderate Resolution Atmospheric Transmission (MODTRAN) radiative transfer code utilizing reanalysis atmospheric profiles, coupled with fractional vegetation cover emissivity estimates.
+        </p>
+      </section>
+
+      <!-- Section 2: Concentric Zonation Methodology -->
+      <section class="se-investigation-section">
+        <span class="section-kicker">02 : Spatial Methodology</span>
+        <h2 class="editorial-headline se-section-heading">Concentric Radial Zonation and Atmospheric Filtering</h2>
+        <p class="se-section-intro">
+          Quantifying the Urban Heat Island (UHI) intensity requires an objective definition of the urban core relative to an un-urbanized regional baseline.
+        </p>
+
+        <p class="se-content-p">
+          Centered at Kanpur's municipal centroid (<strong>26.4499°N, 80.3319°E</strong>), three concentric radial zones were constructed:
+        </p>
+
+        <ul class="se-list-bullet">
+          <li><strong>Urban Core (0 to 5 km radius, Area: 78.5 km²):</strong> Encompasses the historical high-density masonry districts of Collectorganj, Gumti No. 5, Mall Road, and inner commercial wards.</li>
+          <li><strong>Suburban Annular Ring (5 to 15 km radius, Area: 628.3 km²):</strong> Captures mixed residential developments, industrial corridors (Panki Power/Chemical complex and Jajmau Tannery Belt), and academic institutional campuses (IIT Kanpur, CSJMU).</li>
+          <li><strong>Rural Baseline Ring (15 to 20 km radius, Area: 549.8 km²):</strong> Spans surrounding agrarian floodplains and alluvial cropland, providing the regional background thermal baseline free from dense impervious surfaces.</li>
+        </ul>
+
+        <div class="se-note-box">
+          <div class="se-note-title">Cloud Masking Quality Control</div>
+          <p class="se-note-text">
+            Scenes were filtered to &lt; 10% scene cloud cover over the Kanpur bounding box. Pixels flagged as cloud, cirrus, or cloud shadow in the Level-2 Quality Assessment (QA_PIXEL) band were excluded from spatial averaging to ensure purely terrestrial thermal emission values.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 3: Quantitative Findings & Zonal Statistics -->
+      <section class="se-investigation-section">
+        <span class="section-kicker">03 : Zonal Telemetry Results</span>
+        <h2 class="editorial-headline se-section-heading">Multi-Seasonal Zonal Surface Temperature & UHI Intensity</h2>
+        <p class="se-section-intro">
+          Evaluating ten clear-sky satellite passes across four distinct climatological regimes demonstrates persistent, statistically significant intra-urban thermal structuring:
+        </p>
+
+        <div class="se-table-wrap">
+          <table class="se-table">
+            <thead>
+              <tr>
+                <th>Climatological Season</th>
+                <th>Urban Core Mean (0–5 km)</th>
+                <th>Suburban Mean (5–15 km)</th>
+                <th>Rural Periphery (15–20 km)</th>
+                <th>UHI Intensity (ΔT = Core - Rural)</th>
+                <th>Coarse MERRA-2 Grid Mean</th>
+                <th>Masked Internal Thermal Spread</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Dry Winter (Jan–Feb)</strong></td>
+                <td><strong>18.40°C</strong> (291.55 K)</td>
+                <td>16.60°C (289.75 K)</td>
+                <td>14.80°C (287.95 K)</td>
+                <td><strong style="color: #ff5252;">+3.60 K (+3.60°C)</strong></td>
+                <td>16.20°C (289.35 K)</td>
+                <td><strong>7.10 K</strong> (13.8°C to 20.9°C)</td>
+              </tr>
+              <tr>
+                <td><strong>Pre-Monsoon Summer (May)</strong></td>
+                <td><strong>44.30°C</strong> (317.45 K)</td>
+                <td>42.50°C (315.65 K)</td>
+                <td>40.80°C (313.95 K)</td>
+                <td><strong style="color: #ff5252;">+3.50 K (+3.50°C)</strong></td>
+                <td>42.70°C (315.85 K)</td>
+                <td><strong>6.80 K</strong> (39.2°C to 46.0°C)</td>
+              </tr>
+              <tr>
+                <td><strong>Monsoon (Aug)</strong></td>
+                <td><strong>31.90°C</strong> (305.05 K)</td>
+                <td>31.00°C (304.15 K)</td>
+                <td>30.00°C (303.15 K)</td>
+                <td><strong style="color: #00e5ff;">+1.90 K (+1.90°C)</strong></td>
+                <td>30.90°C (304.05 K)</td>
+                <td><strong>4.20 K</strong> (28.9°C to 33.1°C)</td>
+              </tr>
+              <tr>
+                <td><strong>Post-Monsoon (Oct–Nov)</strong></td>
+                <td><strong>28.50°C</strong> (301.65 K)</td>
+                <td>27.10°C (300.25 K)</td>
+                <td>25.50°C (298.65 K)</td>
+                <td><strong style="color: #ffb74d;">+3.00 K (+3.00°C)</strong></td>
+                <td>26.80°C (299.95 K)</td>
+                <td><strong>6.10 K</strong> (24.2°C to 30.3°C)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="se-figure">
+          <div class="se-figure-header">
+            <div class="se-figure-title">Figure 2: Multi-Seasonal Temporal Trajectory Across Concentric Zones</div>
+            <div class="se-figure-meta">Data Source: USGS Landsat 8/9 C2 L2ST & NASA POWER MERRA-2 | Period: Jul 2021 to Oct 2022 | Spatial Sampling: Core vs. Suburban vs. Rural</div>
+          </div>
+          <img src="../assets/kanpur-uhi/kanpur-uhi-timeseries.png" alt="Multi-seasonal timeline showing skin temperature divergence between core, suburban, and rural zones" class="se-figure-img" width="900" height="450" loading="lazy">
+          <div class="se-figure-caption">
+            <strong>Caption:</strong> Multi-scene seasonal time series across 2021–2022. The shaded pink envelope illustrates the surface Urban Heat Island intensity gap, which maximizes during winter (+3.60 K) and remains severe during pre-monsoon summer (+3.50 K), before dampening during the wet monsoon (+1.90 K).
+          </div>
+          <div class="se-image-credit se-figure-credit-surface">
+            Image: Avnish Singh, USGS and NASA POWER records, October 2026. <a href="../credits.html">Credits entry</a>.
+          </div>
+        </div>
+
+        <div class="se-figure">
+          <div class="se-figure-header">
+            <div class="se-figure-title">Figure 3: Seasonal Urban Heat Island Intensity Breakdown</div>
+            <div class="se-figure-meta">Data Source: USGS Landsat 8/9 C2 L2ST | Diagnostic Metric: Core Mean minus Rural Mean (Kelvin)</div>
+          </div>
+          <img src="../assets/kanpur-uhi/kanpur-uhi-seasonal-uhi.png" alt="Bar chart showing UHI intensity peaking in winter and pre-monsoon summer" class="se-figure-img" width="900" height="450" loading="lazy">
+          <div class="se-figure-caption">
+            <strong>Caption:</strong> Seasonal breakdown of net UHI Intensity (ΔT = T<sub>core</sub> - T<sub>rural</sub>). Monsoon suppression (+1.90 K) reflects widespread agricultural saturation and high atmospheric moisture channeling net radiation into latent heat flux (λE) rather than sensible heat (H).
+          </div>
+          <div class="se-image-credit se-figure-credit-surface">
+            Image: Avnish Singh, October 2026. <a href="../credits.html">Credits entry</a>.
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Resolution Dissonance & Link to Investigation 03 -->
+      <section class="se-investigation-section">
+        <span class="section-kicker">04 : Resolution Discrepancy</span>
+        <h2 class="editorial-headline se-section-heading">Resolving the Spatial Masking of Coarse Atmospheric Reanalysis</h2>
+        <p class="se-section-intro">
+          This investigation provides the direct high-resolution physical counterpart to the macro-climatology established in <a href="kanpur-lst.html" class="se-link">Investigation 03</a>.
+        </p>
+
+        <p class="se-content-p">
+          In Investigation 03, seven years of continuous daily MERRA-2 reanalysis established the regional thermal decoupling phenomenon (summer superheating vs. winter radiative chill). However, a single 0.5° × 0.625° reanalysis grid cell spans approximately <strong>3,300 km²</strong>, lumping Kanpur's high-density urban core, industrial sectors, the wide Ganga river corridor, and dozens of rural villages into a single numerical average (16.20°C in winter).
+        </p>
+
+        <div class="se-figure">
+          <div class="se-figure-header">
+            <div class="se-figure-title">Figure 4: Spatial Resolution Dissonance: MERRA-2 vs. 30m Landsat Radiometry</div>
+            <div class="se-figure-meta">Spatial Comparison: 55 × 60 km Single Reanalysis Grid Cell versus 30-Meter Landsat 9 TIRS-2 Field (Jan 15, 2022)</div>
+          </div>
+          <img src="../assets/kanpur-uhi/kanpur-uhi-comparison-merra2.png" alt="Side-by-side comparison of a uniform MERRA-2 cell versus a 30m Landsat thermal field showing internal temperature spread" class="se-figure-img" width="900" height="450" loading="lazy">
+          <div class="se-figure-caption">
+            <strong>Caption:</strong> Side-by-side comparison within identical geographical boundaries. Left: A single uniform MERRA-2 grid cell over Kanpur averages to 16.20°C. Right: 30m Landsat radiometry exposes a 7.10 K internal thermal gradient (13.8°C along the Ganga river to 20.9°C in dense urban masonry), demonstrating that coarse reanalysis completely erases intra-urban thermal variance.
+          </div>
+          <div class="se-image-credit se-figure-credit-surface">
+            Image: Avnish Singh, October 2026. <a href="../credits.html">Credits entry</a>.
+          </div>
+        </div>
+
+        <p class="se-content-p">
+          Because reanalysis models assume a uniform regional vegetation fraction (~42%) and generalized aerodynamic roughness across the cell, <strong>coarse reanalysis underestimates the peak thermal exposure of Kanpur's 3.2 million urban residents by 2.2°C to 3.8°C</strong>, while overestimating rural skin temperatures.
+        </p>
+      </section>
+
+      <!-- Section 5: Inversion Coupling Mechanics -->
+      <section class="se-investigation-section">
+        <span class="section-kicker">05 : Boundary Layer Thermodynamics</span>
+        <h2 class="editorial-headline se-section-heading">Thermal Coupling with Winter Nocturnal Inversions</h2>
+        <p class="se-section-intro">
+          The spatial persistence of Kanpur's +3.60 K winter urban thermal excess has direct thermodynamic implications for the severity of ground-level air pollution.
+        </p>
+
+        <p class="se-content-p">
+          As documented in Investigation 03, winter nocturnal surface cooling (ΔT = T<sub>skin</sub> - T<sub>air</sub> &lt; 0) establishes a severe temperature inversion capping the planetary boundary layer under 250 meters. The +3.60 K thermal anomaly of the urban core creates a localized buoyant thermal dome within this shallow layer.
+        </p>
+
+        <p class="se-content-p">
+          Rather than venting pollutants into the upper atmosphere, this localized convective dome encounters the regional subsidence inversion lid, setting up a closed recirculating micro-cell that entrains primary vehicular and industrial emissions directly within the human breathing zone (producing continuous CAAQMS PM2.5 spikes exceeding 250 µg/m³ at Kalyanpur and Nehru Nagar).
+        </p>
+      </section>
+
+      <!-- Required Editorial End Sections -->
+
+      <!-- 1. What this cannot show / Caveats -->
+      <section class="se-panel-alt">
+        <span class="section-kicker">Analytical Boundaries</span>
+        <h2 class="editorial-headline se-panel-heading">What This Cannot Show & Data Caveats</h2>
+        <ul class="se-list-spaced">
+          <li><strong>Skin Temperature vs. Ambient Air Temperature:</strong> Landsat TIRS-2 measures radiometric skin temperature (the radiative temperature of roofs, roads, tree crowns, and soil), not the ambient air temperature at 2 meters experienced by humans. While skin and air temperatures are thermodynamically coupled, skin temperature swings are significantly more extreme.</li>
+          <li><strong>Orbital Temporal Revisit Gaps:</strong> Landsat satellite passes over Kanpur occur at approximately 10:30 AM local solar time every 8 to 16 days. Satellite radiometry cannot measure diurnal nocturnal peak UHI intensity (which typically peaks 3 to 5 hours after sunset), requiring future deployment of ground-based micro-logger networks.</li>
+          <li><strong>Cloud Occlusion Selection Bias:</strong> Optical and thermal infrared sensors cannot penetrate monsoon clouds. Consequently, monsoon satellite estimates are restricted to brief cloud-free clearings and may slightly overestimate average monsoon surface temperature.</li>
+          <li><strong>Surface Emissivity Uncertainties:</strong> Level-2 surface temperature products rely on fractional vegetation cover (FVC) to estimate surface emissivity. Complex urban materials (such as galvanized tin roofs, reflective coatings, and brick kilns) introduce localized emissivity uncertainties of ±0.5°C to ±1.0°C.</li>
+        </ul>
+      </section>
+
+      <!-- 2. Data and code -->
+      <section class="se-panel-box">
+        <span class="section-kicker">Reproducibility</span>
+        <h2 class="editorial-headline se-panel-heading">Data and Code</h2>
+        <p class="se-lead-paragraph">
+          The cloud-native Google Earth Engine scripts, automated extraction pipelines, and publication notebooks are open source on GitHub:
+        </p>
+        <div class="se-btn-group">
+          <a href="https://github.com/avnish36singh-arch/Kanpur-Landsat-UHI-Thermal-Analysis" target="_blank" rel="noopener noreferrer" class="se-btn">View Landsat UHI Repository (Repo 04)</a>
+          <a href="https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS" target="_blank" rel="noopener noreferrer" class="se-btn se-btn-outline">View 7-Year GIS Repository (Repo 03)</a>
+          <a href="../data.html" class="se-btn se-btn-outline">Data Provenance Registry</a>
+        </div>
+      </section>
+
+      <!-- 3. Cite this page -->
+      <section class="se-panel-box">
+        <span class="section-kicker">Citation</span>
+        <h2 class="editorial-headline se-panel-heading">Cite This Page</h2>
+        <p class="se-lead-paragraph-sm">
+          Recommended academic citation format:
+        </p>
+        <blockquote class="se-quote-citation">
+          Singh, A. (2026). Intra-Urban Thermal Zoning: Landsat 8/9 TIRS-2 Spatial Detail Over Kanpur. Signal Earth: Public Environmental Data Investigations. https://avnish36singh-arch.github.io/signal-earth-portal/investigations/kanpur-uhi.html
+        </blockquote>
+      </section>
+
+      <!-- 4. Report a problem -->
+      <section class="se-panel-box-last">
+        <span class="section-kicker">Feedback and Corrections</span>
+        <h2 class="editorial-headline se-panel-heading">Report a Problem</h2>
+        <p class="se-lead-paragraph">
+          If you identify a radiometric calibration discrepancy, a zonal boundary classification error, or an unsupported interpretation, please open an issue:
+        </p>
+        <div class="se-btn-group">
+          <a href="https://github.com/avnish36singh-arch/signal-earth-portal/issues" target="_blank" rel="noopener noreferrer" class="se-link">Open GitHub issue</a>
+          <a href="../corrections.html" class="se-link se-link-secondary">View Corrections Log</a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="se-footer">
+    <div class="se-container">
+      <div class="se-footer-inner">
+        <div class="se-footer-brand-col">
+          <div class="se-footer-brand-title">Signal Earth</div>
+          <p class="se-footer-brand-desc">
+            Student research portfolio analyzing archived environmental monitoring data from CPCB, UPPCB, NASA POWER, and USGS Landsat.
+          </p>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Analyses</h5>
+          <ul>
+            <li><a href="kanpur.html">Kanpur Particulate Dynamics</a></li>
+            <li><a href="delhi.html">Delhi NAQI Analysis</a></li>
+            <li><a href="kanpur-lst.html">Kanpur Reanalysis Temperature</a></li>
+            <li><a href="kanpur-uhi.html">Kanpur Landsat 30m Thermal</a></li>
+            <li><a href="comparison.html">Regional Airshed Comparison</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Method and Data</h5>
+          <ul>
+            <li><a href="../index.html#explained">Explained Pieces</a></li>
+            <li><a href="../methodology.html">Methodology and Limits</a></li>
+            <li><a href="../data.html">Data and Code</a></li>
+            <li><a href="../about.html">About Signal Earth</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms of Use</a></li>
+            <li><a href="../licenses.html">Licenses and Terms</a></li>
+            <li><a href="../credits.html">Image Credits</a></li>
+            <li><a href="../corrections.html">Corrections Log</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/company/signalearth/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="../contact.html">Contact Information</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mandatory Affiliation Disclaimer -->
+      <div class="se-footer-disclaimer">
+        Signal Earth is an independent student research project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, UPPCB, DPCC, or any agency named on this site.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

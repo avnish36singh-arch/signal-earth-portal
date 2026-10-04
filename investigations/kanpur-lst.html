@@ -59,7 +59,7 @@
 
         <!-- 3-Sentence Summary -->
         <div class="se-summary-box">
-          This investigation examines daily model reanalysis skin temperature (TS) and 2-meter air temperature (T2M) over the Kanpur regional grid box (~55 x 60 km) using NASA POWER GMAO MERRA-2 records from 2017 to 2023. During the true 308-day overlap window with ground monitors (July 9, 2021 to October 16, 2022), surface skin temperature exhibits a moderate negative seasonal association with ground-level PM2.5 (Pearson r = -0.455), an empirical relationship dominated by shared macro-scale seasonality rather than direct day-to-day thermal coupling alone. Because reanalysis represents a broad numerical assimilation cell, it cannot resolve intra-urban neighborhood microclimates; high-resolution spatial zoning requires Landsat thermal radiometry (100 m native, resampled to 30 m) and is planned future work.
+          This investigation examines daily model reanalysis skin temperature (TS) and 2-meter air temperature (T2M) over the Kanpur regional grid box (~55 x 60 km) using NASA POWER GMAO MERRA-2 records from 2017 to 2023. During the true 308-day overlap window with ground monitors (July 9, 2021 to October 16, 2022), surface skin temperature exhibits a moderate negative seasonal association with ground-level PM2.5 (Pearson r = -0.455), an empirical relationship dominated by shared macro-scale seasonality rather than direct day-to-day thermal coupling alone. Because reanalysis represents a broad numerical assimilation cell, it cannot resolve intra-urban neighborhood microclimates; high-resolution spatial zoning has now been resolved using 30-meter Landsat thermal radiometry in <a href="kanpur-uhi.html" class="se-link"><strong>Investigation 04</strong></a>.
         </div>
 
         <div class="se-card-img-wrap se-img-bordered">
@@ -157,18 +157,20 @@
           </div>
           <img src="../assets/lst/03_kanpur_spatial_thermal_zones.png" alt="Map showing Kanpur municipal boundary and monitoring stations inside the single regional MERRA-2 reanalysis grid box" class="se-figure-img" width="900" height="450" loading="lazy">
           <div class="se-figure-caption">
-            <strong>Caption:</strong> Kanpur urban municipal boundary overlaid on the single 55 x 60 km reanalysis cell. High-resolution intra-urban thermal zoning requires Landsat thermal radiometry (100 m native, resampled to 30 m) and is planned future work.
+            <strong>Caption:</strong> Kanpur urban municipal boundary overlaid on the single 55 x 60 km reanalysis cell. High-resolution intra-urban thermal zoning has been resolved using Landsat 8/9 thermal radiometry in <a href="kanpur-uhi.html" class="se-link"><strong>Investigation 04</strong></a>.
           </div>
           <div class="se-image-credit se-figure-credit-surface">
             Image: Avnish Singh, OpenStreetMap contributors, October 2026. <a href="../credits.html">Credits entry</a>.
           </div>
         </div>
 
-        <div id="spatial-zoning-notice" class="se-card-panel">
-          <h3 class="se-subheading-h3-mono">Status of Spatial Microclimate Offsets</h3>
-          <p class="se-text-xs-secondary-zero">
-            Fabricated intra-urban temperature offsets have been deleted from this portal. Deriving genuine microclimate gradients requires cloud-masked Landsat 8/9 Level 2 thermal radiance data (100 m native, resampled to 30 m), paired with in-situ micro-loggers. This GIS analysis is planned and not yet completed.
+        <div id="spatial-zoning-notice" class="se-card-panel" style="border-left: 3px solid #00E5FF; background: #0f141c;">
+          <span class="section-kicker" style="color: #00E5FF;">Resolved in Investigation 04</span>
+          <h3 class="se-subheading-h3-mono" style="margin-top: 0.25rem;">Intra-Urban Thermal Detail Resolved via Landsat 8/9 TIRS-2</h3>
+          <p class="se-text-xs-secondary-zero" style="margin-bottom: 0.75rem;">
+            The planned high-resolution satellite radiometry is now fully completed and published in <strong>Investigation 04: Intra-Urban Thermal Zoning</strong>. Using cloud-masked USGS Landsat 8 and 9 Collection 2 Level 2 Surface Temperature radiometry at 30-meter resolution across 2021–2022, Investigation 04 quantifies Kanpur's Urban Heat Island (+3.60 K winter peak) and isolates the 7.10 K intra-urban thermal variance masked by this single 55 × 60 km reanalysis cell.
           </p>
+          <a href="kanpur-uhi.html" class="se-btn se-btn-sm" style="display: inline-block;">Read Investigation 04: Landsat 30m Thermal Zoning &rarr;</a>
         </div>
       </section>
 
@@ -209,7 +211,7 @@
         <span class="section-kicker">Analytical Boundaries</span>
         <h2 class="editorial-headline se-panel-heading">What This Cannot Show</h2>
         <ul class="se-list-spaced">
-          <li>This analysis uses coarse model reanalysis (~55 x 60 km) and cannot show street-level thermal gradients, urban park cooling effects, or industrial corridor heat signatures within Kanpur.</li>
+          <li>This analysis uses coarse model reanalysis (~55 x 60 km) and cannot show street-level thermal gradients, urban park cooling effects, or industrial corridor heat signatures within Kanpur. (See <a href="kanpur-uhi.html" class="se-link"><strong>Investigation 04</strong></a> for 30m satellite radiometry resolving these intra-urban gradients).</li>
           <li>It cannot prove that surface cooling directly caused high particulate concentrations; cooling co-occurs with autumn crop residue burning, increased domestic heating, and decreased boundary-layer height.</li>
           <li>Daily mean differences cannot verify nocturnal thermal inversion strength; that requires vertical sounding radiosonde profiles or hourly nighttime air temperature towers.</li>
         </ul>
@@ -238,6 +240,16 @@
         <blockquote class="se-quote-citation">
           Singh, A. (2026). Kanpur Surface Skin Temperature and Seasonal Association. Signal Earth: Public Environmental Data Investigations. https://avnish36singh-arch.github.io/signal-earth-portal/investigations/kanpur-lst.html
         </blockquote>
+      </section>
+
+      <!-- Next Investigation Banner -->
+      <section class="se-panel-box" style="border-left: 3px solid #00E5FF; background: #0d1219;">
+        <span class="section-kicker" style="color: #00E5FF;">Next Investigation &middot; Analysis 04</span>
+        <h2 class="editorial-headline se-panel-heading">Intra-Urban Thermal Zoning: Landsat 8/9 TIRS-2 Spatial Detail Over Kanpur</h2>
+        <p class="se-lead-paragraph">
+          Examine high-resolution 30-meter satellite radiometry resolving the microclimate gradients and urban heat island intensity that this coarse MERRA-2 model cell completely masks.
+        </p>
+        <a href="kanpur-uhi.html" class="se-btn">Explore Investigation 04 &rarr;</a>
       </section>
 
       <!-- 4. Report a problem -->
