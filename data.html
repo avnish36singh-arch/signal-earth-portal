@@ -101,21 +101,31 @@
       </div>
     </section>
 
-    <!-- Model Reanalysis Registry -->
+    <!-- Satellite Earth Observation & Model Reanalysis Registry -->
     <section class="se-content-section">
-      <span class="section-kicker">02 : Reanalysis Data</span>
-      <h2 class="editorial-headline se-content-h2">NASA POWER / MERRA-2 Reanalysis Parameters</h2>
+      <span class="section-kicker">02 : Satellite & Reanalysis Data</span>
+      <h2 class="editorial-headline se-content-h2">Satellite Earth Observation & Reanalysis Parameters</h2>
       <p class="se-content-p">
-        Surface temperature and energy balance parameters used in Analysis 03 are retrieved from the NASA POWER API:
+        Surface skin temperature, atmospheric moisture, and radiation budget parameters used across Investigations 03 and 04:
       </p>
 
       <div class="se-card-panel">
-        <h3 class="se-card-title">NASA POWER (Prediction of Worldwide Energy Resources)</h3>
+        <h3 class="se-card-title">NASA POWER / MERRA-2 Atmospheric Reanalysis (Investigation 03)</h3>
         <p class="se-card-desc">
           Daily reanalysis parameters derived from the MERRA-2 assimilation model on a 0.5° latitude by 0.625° longitude grid cell (~55 by 60 km). Parameters include Earth Skin Temperature (<code>TS</code>), 2-Meter Air Temperature (<code>T2M</code>), Relative Humidity (<code>RH2M</code>), Surface Wind Speed (<code>WS2M</code>), and All-Sky Solar Insolation (<code>ALLSKY_SFC_SW_DWN</code>).
         </p>
         <div class="se-card-meta">
-          Bounding Point: 26.4499°N, 80.3319°E : Total: 2,556 daily model rows (2017 to 2023)
+          Bounding Point: 26.4499°N, 80.3319°E : Total: 2,556 continuous daily model rows (2017 to 2023)
+        </div>
+      </div>
+
+      <div class="se-card-panel" style="margin-top: 1rem;">
+        <h3 class="se-card-title">USGS Landsat 8 & Landsat 9 TIRS-2 Cloud Thermal Radiometry (Investigation 04)</h3>
+        <p class="se-card-desc">
+          Harmonized high-resolution (30-meter) thermal infrared radiometry from USGS Landsat Collection 2 Tier 1 Level-2 Surface Temperature products (<code>LANDSAT/LC08/C02/T1_L2</code> and <code>LANDSAT/LC09/C02/T1_L2</code>) accessed via Google Earth Engine. Calibrated via MODTRAN atmospheric profiles to evaluate concentric Urban Heat Island (UHI) intensity and intra-urban microclimate variance masked by coarse reanalysis.
+        </p>
+        <div class="se-card-meta">
+          Sensor: TIRS-2 Band 10 : Resolution: 30 m : Cloud Filter: &lt; 10% : Multi-Seasonal Cloud-Free Scenes (Jul 2021 to Oct 2022)
         </div>
       </div>
     </section>
