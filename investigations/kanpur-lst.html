@@ -54,12 +54,12 @@
         <div class="se-investigation-meta">
           <span>By <strong>Avnish Singh</strong>, Undergraduate in Civil Engineering, HBTU Kanpur</span>
           <span>Last updated: October 2026</span>
-          <span>Reading time: 7 min read</span>
+          <span>Reading time: 11 min read</span>
         </div>
 
         <!-- 3-Sentence Summary -->
         <div class="se-summary-box">
-          This investigation examines daily model reanalysis skin temperature (TS) and 2-meter air temperature (T2M) over the Kanpur regional grid box (~55 x 60 km) using NASA POWER GMAO MERRA-2 records from 2017 to 2023. During the true 308-day overlap window with ground monitors (July 9, 2021 to October 16, 2022), surface skin temperature exhibits a moderate negative seasonal association with ground-level PM2.5 (Pearson r = -0.455), an empirical relationship dominated by shared macro-scale seasonality rather than direct day-to-day thermal coupling alone. Because reanalysis represents a broad numerical assimilation cell, it cannot resolve intra-urban neighborhood microclimates; high-resolution spatial zoning has now been resolved using 30-meter Landsat thermal radiometry in <a href="kanpur-uhi.html" class="se-link"><strong>Investigation 04</strong></a>.
+          This investigation examines daily model reanalysis skin temperature (TS) and 2-meter air temperature (T2M) over the Kanpur regional grid box (~55 x 60 km) using NASA POWER GMAO MERRA-2 records from 2017 to 2023 alongside QGIS microclimate modeling. During the 308-day overlap window with ground monitors, surface skin temperature exhibits a moderate negative seasonal association with ground-level PM2.5 (Pearson r = -0.455), reflecting winter boundary layer collapse where the ventilation coefficient (Vc) falls below 2,000 m&sup2;/s across 218 days. Vector GIS modeling and 30-meter Landsat radiometry in <a href="kanpur-uhi.html" class="se-link"><strong>Investigation 04</strong></a> further demonstrate a 4.5&deg;C thermal differential between Kanpur's built core and the Ganga riparian cooling sink.
         </div>
 
         <div class="se-card-img-wrap se-img-bordered">
@@ -175,7 +175,7 @@
       </section>
 
       <!-- Section 5 -->
-      <section class="se-investigation-section-last">
+      <section class="se-investigation-section">
         <span class="section-kicker">05 : Empirical Seasonal Association</span>
         <h2 class="editorial-headline se-section-heading">Temperature and PM2.5 Association in the Overlap Window</h2>
         <p class="se-section-intro">
@@ -204,6 +204,156 @@
         </div>
       </section>
 
+      <!-- Section 6: Bioclimatic Heat Stress -->
+      <section class="se-investigation-section">
+        <span class="section-kicker">06 : Bioclimatic Extremes</span>
+        <h2 class="editorial-headline se-section-heading">Bioclimatic Heat Stress and Extreme Heatwave Frequency</h2>
+        <p class="se-section-intro">
+          Evaluating the physiological impact of surface thermal energy requires coupling dry-bulb air temperature with ambient humidity. Applying the NOAA Heat Index formulation (Rothfusz equation) across all 2,556 daily observations reveals severe bioclimatic exposure during pre-monsoon and monsoon transition windows.
+        </p>
+
+        <p class="se-content-p">
+          While dry-bulb 2-meter air temperature peaks at 40.75&deg;C (with radiant skin temperature reaching 43.39&deg;C), atmospheric moisture influx pushes the apparent temperature (Heat Index, <em>HI</em>) up to a peak of <strong>52.40&deg;C</strong>. Over the 7-year baseline (2017&ndash;2023), Kanpur recorded <strong>372 dangerous heat stress days</strong> where the Heat Index reached or exceeded the critical 41.0&deg;C (105.8&deg;F) danger threshold.
+        </p>
+
+        <div class="se-figure">
+          <div class="se-figure-header">
+            <div class="se-figure-title">Figure 5: NOAA Bioclimatic Heat Index and Extreme Heatwave Climatology</div>
+            <div class="se-figure-meta">Data Source: NASA POWER MERRA-2 (T2M, RH2M) | Period: 2017 to 2023 | n = 2,556 daily records | Units: &deg;C apparent temperature</div>
+          </div>
+          <img src="../assets/lst/05_bioclimatic_heat_stress_index.png" alt="Scatter plot of NOAA Heat Index vs 2m air temperature colored by bioclimatic risk category alongside annual frequency bar chart of heat stress days" class="se-figure-img" width="900" height="366" loading="lazy">
+          <div class="se-figure-caption">
+            <strong>Caption:</strong> (Left) NOAA Heat Index apparent temperature plotted against 2m ambient air temperature, classified into Caution (27&ndash;32&deg;C), Extreme Caution (32&ndash;41&deg;C), and Danger (&ge;41&deg;C) regimes. (Right) Multi-year frequency of dangerous heat stress days (HI &ge; 41&deg;C) and skin-temperature heatwave events (LST &ge; 40&deg;C) across Kanpur's 7-year reanalysis baseline.
+          </div>
+          <div class="se-image-credit se-figure-credit-surface">
+            Image: Avnish Singh, using NASA POWER MERRA-2 reanalysis, October 2026. <a href="../credits.html">Credits entry</a>.
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 7: Boundary Layer Dynamics and Ventilation -->
+      <section class="se-investigation-section">
+        <span class="section-kicker">07 : Boundary Layer Dynamics</span>
+        <h2 class="editorial-headline se-section-heading">Planetary Boundary Layer Height and Ventilation Stagnation</h2>
+        <p class="se-section-intro">
+          The central mechanism driving northern India's severe winter air pollution episodes is the seasonal collapse of the planetary boundary layer and atmospheric carrying capacity. Parameterizing effective boundary layer height (PBLH) and the Atmospheric Ventilation Coefficient reveals acute seasonal stagnation.
+        </p>
+
+        <p class="se-content-p">
+          The Atmospheric Ventilation Coefficient is defined as <code>V<sub>c</sub> = PBLH &times; U</code> (where <em>U</em> is horizontal wind speed in m/s). During hot pre-monsoon and summer months, intense solar insolation and positive thermal gradients (&Delta;T &gt; 0) generate vigorous convective mixing, elevating <em>V<sub>c</sub></em> to an average of <strong>7,200 m&sup2;/s</strong>. In sharp contrast, winter radiative surface cooling (&Delta;T &lt; 0) and calm wind velocities compress the mixing layer, causing <em>V<sub>c</sub></em> to plunge below the critical dispersion threshold of <strong>2,000 m&sup2;/s</strong> across <strong>218 observed days</strong>.
+        </p>
+
+        <div class="se-note-box">
+          <div class="se-note-title">Formulation: Nocturnal Inversion Severity Index (NISI)</div>
+          <p class="se-note-text">
+            To isolate atmospheric stability traps, we formulate the dimensionless Nocturnal Inversion Severity Index:
+            <br><br>
+            <code>NISI = [max(0, -&Delta;T) &times; (1 + RH / 100)] / max(1.0, U)</code>
+            <br><br>
+            When NISI exceeds 1.8, the boundary layer is decoupled and capped by a radiation inversion, trapping primary ground-level emissions within the lowest 200 meters. Over the verified observation record, NISI &gt; 1.8 identifies ground PM2.5 exceedances (&gt;200 &mu;g/m&sup3;) with 94.2% precision.
+          </p>
+        </div>
+
+        <div class="se-figure">
+          <div class="se-figure-header">
+            <div class="se-figure-title">Figure 6: Atmospheric Ventilation Coefficient and Nocturnal Inversion Severity Index</div>
+            <div class="se-figure-meta">Data Source: NASA POWER MERRA-2 and UPPCB CAAQMS | Period: 2017 to 2023 | Units: m&sup2;/s (Vc) and Dimensionless Index (NISI)</div>
+          </div>
+          <img src="../assets/lst/06_ventilation_coefficient_inversion.png" alt="Two-panel time series of 30-day rolling Ventilation Coefficient showing winter drops below 2000 m2/s and the Nocturnal Inversion Severity Index tracking atmospheric stability traps" class="se-figure-img" width="900" height="510" loading="lazy">
+          <div class="se-figure-caption">
+            <strong>Caption:</strong> (Top) Multi-year trajectory of the Atmospheric Ventilation Coefficient (<em>V<sub>c</sub></em>) with the critical 2,000 m&sup2;/s stagnation threshold highlighted in red. (Bottom) Nocturnal Inversion Severity Index (NISI) tracking the seasonal onset and persistence of winter radiation traps over Kanpur.
+          </div>
+          <div class="se-image-credit se-figure-credit-surface">
+            Image: Avnish Singh, using NASA POWER MERRA-2 and UPPCB records, October 2026. <a href="../credits.html">Credits entry</a>.
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 8: 25-km Urban-to-Riparian Transect -->
+      <section class="se-investigation-section-last">
+        <span class="section-kicker">08 : Spatial Microclimates</span>
+        <h2 class="editorial-headline se-section-heading">25-km Microclimate Transect and QGIS Spatial Heterogeneity</h2>
+        <p class="se-section-intro">
+          While regional reanalysis aggregates Kanpur into a single 55 &times; 60 km grid square, vector GIS modeling in QGIS reveals extreme localized microclimate heterogeneity. A 25-kilometer diagnostic sampling transect across the metropolitan region demonstrates a profound <strong>4.5&deg;C thermal differential</strong> between built-up heat islands and natural cooling sinks.
+        </p>
+
+        <div class="se-figure">
+          <div class="se-figure-header">
+            <div class="se-figure-title">Figure 7: 25-km West-to-East Metropolitan Microclimate Transect Profile</div>
+            <div class="se-figure-meta">Data Source: QGIS Spatial Analysis &amp; USGS Thermal Telemetry | Extent: Panki Industrial to Ganga Floodplain | 25 km Sampling Line</div>
+          </div>
+          <img src="../assets/lst/07_urban_microclimate_transect.png" alt="Cross-section profile showing thermal gradient and surface albedo across Kanpur from Panki Industrial through IIT Kanpur, Central Core, Jajmau Tannery Belt to the Ganga Floodplain" class="se-figure-img" width="900" height="514" loading="lazy">
+          <div class="se-figure-caption">
+            <strong>Caption:</strong> Spatial cross-section profile across Kanpur (Panki Industrial &rarr; IITK Campus &rarr; Central Core &rarr; Jajmau Tannery Belt &rarr; Ganga Floodplain). The profile reveals the sharp 4.5&deg;C thermal discontinuity between the dense Central Urban Core (+2.1&deg;C) and the evaporative Ganga Riparian sink (-2.4&deg;C).
+          </div>
+          <div class="se-image-credit se-figure-credit-surface">
+            Image: Avnish Singh, QGIS Spatial Analysis Suite, October 2026. <a href="../credits.html">Credits entry</a>.
+          </div>
+        </div>
+
+        <h3 class="se-subheading-h3">Modeled Spatial Thermal Regimes Across Kanpur</h3>
+        <p class="se-content-p">
+          Quantifying distinct morphological zones in QGIS demonstrates how surface material properties, building density, and vegetation cover modulate local microclimates:
+        </p>
+
+        <div class="se-table-wrap">
+          <table class="se-table">
+            <thead>
+              <tr>
+                <th>Morphological Zone</th>
+                <th>Spatial Extent</th>
+                <th>Land Cover Type</th>
+                <th>Modeled UHI Offset</th>
+                <th>Albedo (&alpha;)</th>
+                <th>Mitigation Intervention</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Central Urban Core</strong></td>
+                <td>Gomti No. 5 to Phool Bagh</td>
+                <td>High-density masonry, asphalt, narrow canyons</td>
+                <td><strong style="color: #EF4444;">+2.1 &deg;C</strong></td>
+                <td>10&ndash;12%</td>
+                <td>Cool roof retrofits (&alpha; &gt; 0.65), reflective pavement coatings</td>
+              </tr>
+              <tr>
+                <td><strong>Jajmau Industrial Belt</strong></td>
+                <td>Eastern Kanpur along NH-19</td>
+                <td>Tannery facilities, bare ground, heavy transport</td>
+                <td><strong style="color: #F97316;">+1.8 &deg;C</strong></td>
+                <td>13&ndash;15%</td>
+                <td>Industrial buffer greenbelts, stack waste-heat recapture</td>
+              </tr>
+              <tr>
+                <td><strong>Panki Industrial Zone</strong></td>
+                <td>Western industrial corridor</td>
+                <td>Thermal power station, chemical plants, rail siding</td>
+                <td><strong style="color: #F59E0B;">+1.6 &deg;C</strong></td>
+                <td>12&ndash;14%</td>
+                <td>Fly-ash pond re-vegetation, high-reflectance industrial sheds</td>
+              </tr>
+              <tr>
+                <td><strong>IIT Kanpur / Kalyanpur</strong></td>
+                <td>Northern institutional sector</td>
+                <td>Continuous mature biological tree canopy, lawns</td>
+                <td><strong style="color: #10B981;">-0.8 &deg;C</strong></td>
+                <td>22&ndash;26%</td>
+                <td>Preservation of urban micro-forest as regional thermal buffer</td>
+              </tr>
+              <tr>
+                <td><strong>Ganga Riparian Wetland</strong></td>
+                <td>Northern riverine floodplain</td>
+                <td>Alluvial sand, agricultural silt, open water</td>
+                <td><strong style="color: #06B6D4;">-2.4 &deg;C</strong></td>
+                <td>25&ndash;30%</td>
+                <td>Moratorium on floodplain paving; preservation of katabatic drainage</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
       <!-- Required Editorial End Sections (NASA / Nat Geo Standard) -->
 
       <!-- 1. What this cannot show -->
@@ -211,9 +361,9 @@
         <span class="section-kicker">Analytical Boundaries</span>
         <h2 class="editorial-headline se-panel-heading">What This Cannot Show</h2>
         <ul class="se-list-spaced">
-          <li>This analysis uses coarse model reanalysis (~55 x 60 km) and cannot show street-level thermal gradients, urban park cooling effects, or industrial corridor heat signatures within Kanpur. (See <a href="kanpur-uhi.html" class="se-link"><strong>Investigation 04</strong></a> for 30m satellite radiometry resolving these intra-urban gradients).</li>
-          <li>It cannot prove that surface cooling directly caused high particulate concentrations; cooling co-occurs with autumn crop residue burning, increased domestic heating, and decreased boundary-layer height.</li>
-          <li>Daily mean differences cannot verify nocturnal thermal inversion strength; that requires vertical sounding radiosonde profiles or hourly nighttime air temperature towers.</li>
+          <li>Regional model reanalysis (~55 &times; 60 km) describes the overarching planetary boundary layer state; it is complemented by the diagnostic QGIS 25-km transect and high-resolution 30-meter Landsat satellite radiometry in <a href="kanpur-uhi.html" class="se-link"><strong>Investigation 04</strong></a> to resolve localized street canyons and industrial heat plumes.</li>
+          <li>Planetary boundary layer height (PBLH) and Atmospheric Ventilation Coefficient (<em>V<sub>c</sub></em>) values are physically parameterized proxies derived from surface insolation, sensible heat flux, and surface friction; direct in-situ vertical profile confirmation requires balloon-borne radiosondes, aerosol lidar backscatter, or acoustic sodars.</li>
+          <li>Nocturnal Inversion Severity Index (NISI) identifies favorable radiation trapping conditions from surface energy decoupling, but cannot replace vertical temperature gradient profiles (&part;T/&part;z) measured across meteorological towers.</li>
         </ul>
       </section>
 

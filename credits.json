@@ -218,5 +218,75 @@
     "sensor": "CAAQMS Ground Monitoring paired with NASA POWER MERRA-2",
     "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
     "credit_text": "Image: Avnish Singh, NASA POWER and UPPCB records, October 2026"
+  },
+  {
+    "file": "assets/lst/05_bioclimatic_heat_stress_index.png",
+    "title": "NOAA Bioclimatic Heat Index and Extreme Heatwave Climatology",
+    "source_url": "https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS",
+    "creator": "Avnish Singh",
+    "date": "2026-10-02",
+    "sensor": "NASA POWER MERRA-2 Atmospheric Reanalysis",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, using NASA POWER MERRA-2 reanalysis, October 2026"
+  },
+  {
+    "file": "assets/lst/06_ventilation_coefficient_inversion.png",
+    "title": "Atmospheric Ventilation Coefficient and Nocturnal Inversion Severity Index Trajectory",
+    "source_url": "https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS",
+    "creator": "Avnish Singh",
+    "date": "2026-10-02",
+    "sensor": "NASA POWER MERRA-2 paired with UPPCB CAAQMS",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, using NASA POWER MERRA-2 and UPPCB records, October 2026"
+  },
+  {
+    "file": "assets/lst/07_urban_microclimate_transect.png",
+    "title": "25-km West-to-East Metropolitan Microclimate Transect Profile",
+    "source_url": "https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS",
+    "creator": "Avnish Singh",
+    "date": "2026-10-02",
+    "sensor": "QGIS Spatial Analysis Suite / USGS Thermal Telemetry",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, QGIS Spatial Analysis Suite, October 2026"
+  },
+  {
+    "file": "assets/kanpur-uhi/kanpur-uhi-30m.png",
+    "title": "High-Resolution 30-Meter Landsat Thermal Infrared Radiometry over Kanpur",
+    "source_url": "https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS",
+    "creator": "Avnish Singh",
+    "date": "2026-10-04",
+    "sensor": "USGS Landsat 8/9 TIRS-2 (Collection 2 Level 2 Band 10)",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, using USGS Landsat 8/9 radiometry, October 2026"
+  },
+  {
+    "file": "assets/kanpur-uhi/kanpur-uhi-comparison-merra2.png",
+    "title": "Comparative Spatial Resolution: Coarse MERRA-2 vs 30m Landsat Radiometry",
+    "source_url": "https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS",
+    "creator": "Avnish Singh",
+    "date": "2026-10-04",
+    "sensor": "NASA MERRA-2 Reanalysis & USGS Landsat 8/9 TIRS-2",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, MERRA-2 and USGS Landsat comparison, October 2026"
+  },
+  {
+    "file": "assets/kanpur-uhi/kanpur-uhi-timeseries.png",
+    "title": "Multi-Seasonal Thermal Trajectory Across Kanpur Concentric Urban Zones",
+    "source_url": "https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS",
+    "creator": "Avnish Singh",
+    "date": "2026-10-04",
+    "sensor": "USGS Landsat 8/9 TIRS-2 Spatial Radiometry",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, using USGS Landsat 8/9 scenes, October 2026"
+  },
+  {
+    "file": "assets/kanpur-uhi/kanpur-uhi-seasonal-uhi.png",
+    "title": "Seasonal Urban Heat Island Intensity Breakdown Across Concentric Rings",
+    "source_url": "https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS",
+    "creator": "Avnish Singh",
+    "date": "2026-10-04",
+    "sensor": "USGS Landsat 8/9 TIRS-2 Spatial Radiometry",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Avnish Singh, using USGS Landsat 8/9 scenes, October 2026"
   }
 ]

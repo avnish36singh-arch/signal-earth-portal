@@ -15,3 +15,10 @@ build/
 # Scratch audit dumps
 audit_output.txt
 all_numeric_blocks.json
+
+# Local research project clones & IDE workspaces
+Kanpur-LST-Thermal-Analysis-GIS/
+enviornment_rajivgangulaly/
+kanpur_air_quality/
+signal-earth-portal/
+*.code-workspace

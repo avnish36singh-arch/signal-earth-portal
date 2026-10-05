@@ -1,0 +1,44 @@
+{
+  "type": "FeatureCollection",
+  "name": "kanpur_microclimate_transect",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "West-to-East Microclimate Sampling Transect (25 km)",
+        "start_point": "Panki Industrial (West)",
+        "end_point": "Jajmau / Ganga Floodplain (East)",
+        "purpose": "Quantifying Thermal Discontinuity across Urban Typologies"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.21,
+            26.475
+          ],
+          [
+            80.25,
+            26.505
+          ],
+          [
+            80.29,
+            26.485
+          ],
+          [
+            80.33,
+            26.47
+          ],
+          [
+            80.37,
+            26.455
+          ],
+          [
+            80.42,
+            26.435
+          ]
+        ]
+      }
+    }
+  ]
+}

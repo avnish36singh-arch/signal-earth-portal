@@ -1,0 +1,52 @@
+{
+  "type": "FeatureCollection",
+  "name": "kanpur_ganga_riparian",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ganga River Primary Centerline",
+        "type": "Mainstem Hydrographic Drainage",
+        "cooling_effect": "Active Evaporative Cooling (-2.4\u00b0C)",
+        "length_km": 32.5
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2,
+            26.54
+          ],
+          [
+            80.24,
+            26.53
+          ],
+          [
+            80.27,
+            26.52
+          ],
+          [
+            80.31,
+            26.505
+          ],
+          [
+            80.34,
+            26.49
+          ],
+          [
+            80.38,
+            26.465
+          ],
+          [
+            80.41,
+            26.44
+          ],
+          [
+            80.45,
+            26.4
+          ]
+        ]
+      }
+    }
+  ]
+}
