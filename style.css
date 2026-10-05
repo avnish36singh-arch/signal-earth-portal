@@ -2098,11 +2098,11 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 
-/* Equal-Height Analysis 3-Column Grid */
+/* Equal-Height Analysis 2x2 Grid for 4 Analyses */
 .se-equal-analyses-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
   align-items: stretch;
 }
 
