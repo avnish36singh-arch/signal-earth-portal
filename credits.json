@@ -1,5 +1,15 @@
 [
   {
+    "file": "assets/signal_earth_hero.jpg",
+    "title": "Earth Orbital Horizon and Atmospheric Boundary",
+    "source_url": "https://earthobservatory.nasa.gov/",
+    "creator": "Signal Earth Observation Archive",
+    "date": "2026-10-12",
+    "sensor": "Earth Observation Satellite Imagery Perspective",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Signal Earth Observation Archive, October 2026"
+  },
+  {
     "file": "assets/hero_indo_gangetic_smoke_20211105.jpg",
     "title": "Indo-Gangetic Plain Post-Monsoon Smoke and Atmospheric Haze",
     "source_url": "https://worldview.earthdata.nasa.gov/?v=73,24,85,32&t=2021-11-05",

@@ -3,740 +3,343 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Signal Earth | Independent Analyses of Air Quality &amp; Surface Temperature</title>
-  <meta name="description" content="Independent analyses of air quality and surface temperature in Kanpur and Delhi. Reproducible atmospheric investigations using statutory monitoring archives and satellite observations.">
+  <title>Signal Earth | Environmental Intelligence</title>
+  <meta name="description" content="Signal Earth is an independent environmental intelligence initiative that transforms scientific research, Earth observation, and environmental data into clear, meaningful visual stories.">
   <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <meta property="og:title" content="Signal Earth | Independent Environmental Data &amp; Atmospheric Investigations">
-  <meta property="og:description" content="Independent analyses of air quality and surface temperature in Kanpur and Delhi. Open data investigations with reproducible code and explicit hiatuses.">
+  <meta property="og:title" content="Signal Earth | Environmental Intelligence">
+  <meta property="og:description" content="Making environmental change visible through maps, data, and science. Independent environmental intelligence observing a changing planet.">
   <meta property="og:url" content="https://avnish36singh-arch.github.io/signal-earth-portal/">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://avnish36singh-arch.github.io/signal-earth-portal/assets/hero_indo_gangetic_smoke_20211105.jpg">
+  <meta property="og:image" content="https://avnish36singh-arch.github.io/signal-earth-portal/assets/signal_earth_hero.jpg">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <link rel="stylesheet" href="style.css?v=20261004">
-  <!-- Plotly.js loaded strictly from cdnjs for interactive scientific timeseries visualization -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.1/plotly.min.js"></script>
+  <link rel="stylesheet" href="style.css?v=20261012">
 </head>
-<body>
+<body class="se-inst-body" id="top">
   <a href="#main" class="skip-link">Skip to content</a>
 
-  <!-- 1. Header with Wordmark, Five Links (Observe, Research, Explained, Library, Build) and About Link -->
-  <header>
-    <nav class="se-nav" aria-label="Main Navigation">
-      <div class="se-nav-inner">
-        <a href="index.html" class="se-brand" aria-label="Signal Earth Homepage">
-          <span class="se-brand-name">Signal Earth</span>
-          <span class="se-brand-sub">Environmental Data Observatory</span>
-        </a>
+  <!-- Header with Brand Wordmark, Subtitle, and Clean Institutional Navigation -->
+  <header class="se-inst-header">
+    <div class="se-inst-header-inner">
+      <a href="index.html" class="se-inst-brand" aria-label="Signal Earth Homepage">
+        <img src="assets/signal_earth_logo.jpg" alt="Signal Earth emblem" class="se-inst-logo" width="38" height="38">
+        <div class="se-inst-brand-text">
+          <span class="se-inst-brand-name">Signal Earth</span>
+          <span class="se-inst-brand-sub">Environmental Intelligence</span>
+        </div>
+      </a>
 
-        <ul class="se-nav-links">
-          <li><a href="#interactive-chart">Observe</a></li>
-          <li><a href="#analyses">Research</a></li>
-          <li><a href="explained/index.html">Explained</a></li>
-          <li><a href="data.html">Library</a></li>
-          <li><a href="methodology.html">Build</a></li>
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul id="inst-nav-links" class="se-inst-nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="#focus-areas">Focus Areas</a></li>
+          <li><a href="#approach">Our Approach</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="data.html">Library</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button type="button" id="mobile-toggle" class="se-inst-mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="inst-nav-links">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
   </header>
 
   <main id="main">
-    <!-- 2. Hero Section: One Finding Headline, Supporting Sentence, Primary Button, Strong Satellite Visual -->
-    <section class="se-hero-hub" aria-labelledby="hero-finding-heading">
-      <div class="se-container">
-        <span class="se-hero-kicker">Atmospheric Research &middot; Central Ganga Basin</span>
-        <h1 id="hero-finding-heading" class="se-hero-finding">
-          Kanpur's winter air carries roughly 2.5 to 5 times the monsoon particulate load.
+    <!-- Hero Section: Observing a Changing Planet -->
+    <section class="se-inst-hero" aria-labelledby="hero-title">
+      <div class="se-inst-hero-container">
+        <span class="se-inst-kicker">Observing a Changing Planet</span>
+        <h1 id="hero-title" class="se-inst-hero-h1">
+          The Earth is changing faster than most people realize.
         </h1>
-        <p class="se-hero-sub">
-          Independent analyses of air quality and surface temperature in Kanpur and Delhi. Station records across Kalyanpur and Nehru Nagar document winter PM2.5 averaging 2.4&times; the monsoon baseline under standard meteorological bounds (Dec&ndash;Feb vs Jun&ndash;Sep), rising to 5.1&times; during the 2021&ndash;2022 peak inversion window (Nov&ndash;Jan vs Jul&ndash;Sep). Signal Earth publishes statutory environmental datasets with reproducible Python code, explicit data gaps, and zero synthetic fills.
+        <p class="se-inst-hero-sub">
+          Making environmental change visible through maps, data, and science.
         </p>
 
-        <div class="se-hero-actions-row">
-          <a href="#analyses" class="se-btn se-btn-primary">Explore Published Analyses &darr;</a>
-          <a href="#interactive-chart" class="se-btn se-btn-outline">Open Interactive Kanpur Timeseries</a>
+        <!-- Primary Call to Action Button -->
+        <div>
+          <a href="#purpose" class="se-inst-btn-cta">
+            Discover Signal Earth
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
         </div>
 
-        <!-- Strong Satellite Observation Image -->
-        <div class="se-hero-visual">
-          <img src="assets/hero_indo_gangetic_smoke_20211105.jpg" alt="Satellite view of smoke and atmospheric haze across the Indo-Gangetic Plain and Northern India on November 5, 2021 captured by NASA Terra MODIS" width="2000" height="1000" fetchpriority="high">
-          <div class="se-hero-credit-line">
-            Image: NASA Worldview / GIBS, Terra MODIS, November 5, 2021 (Regional smoke plume during peak post-harvest agricultural burning). <a href="https://worldview.earthdata.nasa.gov/?v=73,24,85,32&amp;t=2021-11-05" target="_blank" rel="noopener noreferrer">Source scene on NASA Worldview</a> &middot; Recorded in <a href="credits.html">credits.json</a>.
+        <!-- Hero Orbital Visual -->
+        <div class="se-inst-hero-visual-wrap">
+          <img src="assets/signal_earth_hero.jpg" alt="Curved Earth horizon viewed from orbit with thin luminous atmosphere against the dark void of space" width="1920" height="1080" fetchpriority="high">
+          <div class="se-inst-credit-pill">
+            Earth Observation &middot; Global Atmospheric Limb
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- 3. Five Door Cards: One for Each Section with One-Line Description -->
-    <section class="se-doors-section" aria-labelledby="doors-heading">
-      <div class="se-container">
-        <div class="se-doors-heading-wrap">
-          <span class="section-kicker">Portal Architecture</span>
-          <h2 id="doors-heading" class="editorial-headline" style="font-size: 1.45rem; margin-top: 0.25rem;">Research Sections &amp; Data Gateways</h2>
-        </div>
-
-        <div class="se-door-cards-grid">
-          <!-- Door 1: Observe (Quiet badge for future multi-sensor layer, anchor to interactive chart) -->
-          <div id="observe" class="se-door-card se-door-card-pending">
-            <div class="se-door-header">
-              <h3 class="se-door-title">Observe</h3>
-              <span class="se-quiet-badge">Coming soon</span>
-            </div>
-            <p class="se-door-desc">
-              Interactive multi-sensor ambient telemetry and satellite Earth observation passes over the basin.
-            </p>
-            <div style="margin-top: auto;">
-              <a href="#interactive-chart" class="se-door-sublink">See Kanpur Monitor below &darr;</a>
-            </div>
-          </div>
-
-          <!-- Door 2: Research -->
-          <a id="research" href="#analyses" class="se-door-card">
-            <div class="se-door-header">
-              <h3 class="se-door-title">Research</h3>
-            </div>
-            <p class="se-door-desc">
-              In-depth quantitative investigations into particulate dynamics, NAQI mechanics, and surface skin temperature.
-            </p>
-            <span class="se-door-link">4 Analyses Published &rarr;</span>
-          </a>
-
-          <!-- Door 3: Explained -->
-          <a id="explained" href="explained/index.html" class="se-door-card">
-            <div class="se-door-header">
-              <h3 class="se-door-title">Explained</h3>
-            </div>
-            <p class="se-door-desc">
-              Physical primers on nocturnal temperature inversions, CPCB index calculations, and satellite reanalysis grid cells.
-            </p>
-            <span class="se-door-link">3 Guides Available &rarr;</span>
-          </a>
-
-          <!-- Door 4: Library -->
-          <a href="data.html" class="se-door-card">
-            <div class="se-door-header">
-              <h3 class="se-door-title">Library</h3>
-            </div>
-            <p class="se-door-desc">
-              Open public data archives, processed station time series, and custodial provenance across CPCB, UPPCB, and NASA.
-            </p>
-            <span class="se-door-link">Access Data &amp; Code &rarr;</span>
-          </a>
-
-          <!-- Door 5: Build -->
-          <a href="methodology.html" class="se-door-card">
-            <div class="se-door-header">
-              <h3 class="se-door-title">Build</h3>
-            </div>
-            <p class="se-door-desc">
-              Engineering methodology, regulatory standards, QA/QC screening filters, and open Python analytical pipelines.
-            </p>
-            <span class="se-door-link">Methodology &amp; Standards &rarr;</span>
+        <!-- Scroll Prompt Arrow -->
+        <div class="se-inst-scroll-prompt">
+          <a href="#purpose" class="se-inst-scroll-btn" aria-label="Scroll to 01 / Our Purpose">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- 4. Featured Analyses: Exactly Three Equal-Height Cards (Kanpur, Delhi, Skin Temperature) -->
-    <section id="analyses" class="se-analyses-section" aria-labelledby="featured-heading">
+    <!-- 01 / OUR PURPOSE -->
+    <section id="purpose" class="se-inst-section" aria-labelledby="purpose-heading">
       <div class="se-container">
-        <div class="se-section-header">
-          <span class="section-kicker">01 : Research Investigations</span>
-          <h2 id="featured-heading" class="editorial-headline se-section-title">Featured Analyses</h2>
-          <p class="se-hero-dek">
-            Quantitative investigations evaluating public monitoring stations and satellite reanalysis records over defined observation periods.
+        <span class="se-inst-section-num">01 / Our Purpose</span>
+        <h2 id="purpose-heading" class="se-inst-section-title">
+          Understand the planet through evidence.
+        </h2>
+        <p class="se-inst-lead-text">
+          Signal Earth is an independent environmental intelligence initiative that transforms scientific research, Earth observation, and environmental data into clear, meaningful visual stories.
+        </p>
+      </div>
+    </section>
+
+    <!-- 02 / WHAT WE EXPLORE (Focus Areas) -->
+    <section id="focus-areas" class="se-inst-section" aria-labelledby="explore-heading">
+      <div class="se-container">
+        <span class="se-inst-section-num">02 / What We Explore</span>
+        <h2 id="explore-heading" class="se-inst-section-title">
+          Core Focus Areas
+        </h2>
+        <p class="se-inst-lead-text" style="font-size: 1.05rem; color: #94A3B8;">
+          Systematic observation across the physical spheres of the planetary environment.
+        </p>
+
+        <div class="se-inst-explore-grid">
+          <!-- Card 1: Earth Observation -->
+          <article class="se-inst-explore-card">
+            <div class="se-inst-card-icon-wrap" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                <path d="M2 12h20"></path>
+              </svg>
+            </div>
+            <h3 class="se-inst-card-h3">Earth Observation</h3>
+            <p class="se-inst-card-desc">Satellite imagery and changing landscapes.</p>
+          </article>
+
+          <!-- Card 2: Environmental Data -->
+          <article class="se-inst-explore-card">
+            <div class="se-inst-card-icon-wrap" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="se-inst-card-h3">Environmental Data</h3>
+            <p class="se-inst-card-desc">Patterns, measurements, and long-term trends.</p>
+          </article>
+
+          <!-- Card 3: Scientific Research -->
+          <article class="se-inst-explore-card">
+            <div class="se-inst-card-icon-wrap" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <h3 class="se-inst-card-h3">Scientific Research</h3>
+            <p class="se-inst-card-desc">Research translated into accessible insights.</p>
+          </article>
+
+          <!-- Card 4: Maps & Visual Stories -->
+          <article class="se-inst-explore-card">
+            <div class="se-inst-card-icon-wrap" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                <line x1="8" y1="2" x2="8" y2="18"></line>
+                <line x1="16" y1="6" x2="16" y2="22"></line>
+              </svg>
+            </div>
+            <h3 class="se-inst-card-h3">Maps &amp; Visual Stories</h3>
+            <p class="se-inst-card-desc">Making complex environmental change visible.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 / OUR PRINCIPLES (Our Approach) -->
+    <section id="approach" class="se-inst-section" aria-labelledby="principles-heading">
+      <div class="se-container">
+        <span class="se-inst-section-num">03 / Our Principles</span>
+        <h2 id="principles-heading" class="se-inst-section-title">
+          Evidence before opinion. Science before speculation.
+        </h2>
+        <p class="se-inst-lead-text">
+          We believe environmental understanding begins with credible data, transparent methods, and responsible interpretation.
+        </p>
+
+        <div class="se-inst-principles-grid">
+          <!-- Principle 1: Evidence-led -->
+          <article class="se-inst-principle-card">
+            <h3 class="se-inst-principle-title">Evidence-led</h3>
+            <p class="se-inst-principle-desc">
+              Grounded in credible scientific sources and open datasets.
+            </p>
+          </article>
+
+          <!-- Principle 2: Transparent -->
+          <article class="se-inst-principle-card">
+            <h3 class="se-inst-principle-title">Transparent</h3>
+            <p class="se-inst-principle-desc">
+              Clear about sources, limitations, and uncertainty.
+            </p>
+          </article>
+
+          <!-- Principle 3: Accessible -->
+          <article class="se-inst-principle-card">
+            <h3 class="se-inst-principle-title">Accessible</h3>
+            <p class="se-inst-principle-desc">
+              Complex science communicated with clarity and context.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Institutional Quote Banner -->
+    <section class="se-inst-quote-section" aria-label="Signal Earth Motto">
+      <div class="se-container">
+        <blockquote style="margin: 0;">
+          <p class="se-inst-quote-text">
+            A clearer view of our changing planet.
           </p>
-        </div>
-
-        <div class="se-equal-analyses-grid">
-          <!-- Card 1: Kanpur Particulate Dynamics -->
-          <article class="se-card">
-            <div class="se-card-img-wrap">
-              <img src="assets/kanpur/01_timeseries.png" alt="Timeseries of daily mean PM2.5 and PM10 across NSI Kalyanpur and Nehru Nagar in Kanpur showing the 2022 to 2025 monitoring hiatus" width="900" height="450" loading="lazy">
-            </div>
-            <div class="se-card-body">
-              <span class="se-card-label">Analysis 01 &middot; Ground Station Particulates</span>
-              <h3 class="se-card-title">
-                <a href="investigations/kanpur.html">Particulate Dynamics and Seasonal Multipliers in Kanpur</a>
-              </h3>
-              <p class="se-card-dek">
-                Winter PM2.5 concentrations reached roughly 2.5 to 5 times the monsoon baseline across NSI Kalyanpur and Nehru Nagar depending on season definition (2.40&times; pooled for Dec&ndash;Feb vs Jun&ndash;Sep; up to 5.14&times; in 2021&ndash;22 for Nov&ndash;Jan vs Jul&ndash;Sep), separated by a documented 2.3-year reporting hiatus.
-              </p>
-              <div class="se-card-meta">
-                <div><strong>Period:</strong> Jul 2021 to Oct 2022 &amp; Feb 2025 to Aug 2026 (1,628 station-days)</div>
-                <div><strong>Data Source:</strong> CPCB / UPPCB via OpenAQ v3 API</div>
-              </div>
-              <div class="se-card-caveat">
-                <strong>Key Limitation:</strong> 2.3-year gap between monitoring windows; station-specific exposure rather than citywide average.
-              </div>
-              <div class="se-card-actions">
-                <a href="investigations/kanpur.html" class="se-btn">Read analysis</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 2: Delhi NAQI -->
-          <article class="se-card">
-            <div class="se-card-img-wrap">
-              <img src="assets/delhi/03_seasonal_aqi_dynamics.png" alt="Seasonal AQI and particulate progression at Delhi Alipur showing steep November escalation" width="900" height="450" loading="lazy">
-            </div>
-            <div class="se-card-body">
-              <span class="se-card-label">Analysis 02 &middot; Multi-Year Regulatory Standard</span>
-              <h3 class="se-card-title">
-                <a href="investigations/delhi.html">Delhi Five-Year NAQI and Seasonal Regimes</a>
-              </h3>
-              <p class="se-card-dek">
-                Alipur station records show winter particulate levels 5.75 times higher than monsoon averages, with PM2.5 driving the official AQI on 88.4% of valid days across six years of monitoring.
-              </p>
-              <div class="se-card-meta">
-                <div><strong>Period:</strong> 2017 to 2023 (1,825 recorded rows; 1,137 official days; 1,133 valid PM2.5 days)</div>
-                <div><strong>Data Source:</strong> CPCB / DPCC Site 204</div>
-              </div>
-              <div class="se-card-caveat">
-                <strong>Key Limitation:</strong> Unmonitored 731-day operational hiatus (2019 to 2020); peripheral highway station setting.
-              </div>
-              <div class="se-card-actions">
-                <a href="investigations/delhi.html" class="se-btn">Read analysis</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 3: Kanpur Skin Temperature & Seasonal Association -->
-          <article class="se-card">
-            <div class="se-card-img-wrap">
-              <img src="assets/lst/01_kanpur_lst_seasonal_timeline.png" alt="Timeline of NASA POWER MERRA-2 daily skin temperature versus 2m air temperature over Kanpur" width="900" height="450" loading="lazy">
-            </div>
-            <div class="se-card-body">
-              <span class="se-card-label">Analysis 03 &middot; Atmospheric Reanalysis</span>
-              <h3 class="se-card-title">
-                <a href="investigations/kanpur-lst.html">Kanpur Surface Skin Temperature and Seasonal Association</a>
-              </h3>
-              <p class="se-card-dek">
-                During the 308-day overlap window, surface skin temperature exhibits a moderate negative seasonal association with ground PM2.5 (Pearson r = -0.455), dominated by shared macro-scale seasonality rather than direct local coupling.
-              </p>
-              <div class="se-card-meta">
-                <div><strong>Period:</strong> 2017 to 2023 reanalysis (overlap window: Jul 2021 to Oct 2022, n = 308 pairs)</div>
-                <div><strong>Data Source:</strong> NASA POWER (GMAO MERRA-2 model reanalysis)</div>
-              </div>
-              <div class="se-card-caveat">
-                <strong>Key Limitation:</strong> Coarse ~55 &times; 60 km grid cell; reflects regional atmospheric state, not localized street microclimates.
-              </div>
-              <div class="se-card-actions">
-                <a href="investigations/kanpur-lst.html" class="se-btn">Read analysis</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="se-card">
-            <div class="se-card-img-wrap">
-              <img src="assets/kanpur-uhi/kanpur-uhi-30m.png" alt="30-meter Landsat thermal infrared radiometry map over Kanpur" width="900" height="450" loading="lazy">
-            </div>
-            <div class="se-card-body">
-              <span class="se-card-label">Analysis 04 &middot; Satellite Thermal Radiometry</span>
-              <h3 class="se-card-title">
-                <a href="investigations/kanpur-uhi.html">Intra-Urban Thermal Zoning: Landsat 8/9 TIRS-2 Spatial Detail Over Kanpur</a>
-              </h3>
-              <p class="se-card-dek">
-                Cloud-native 30m Landsat thermal radiometry reveals a +3.60 K winter Urban Heat Island in Kanpur's core and isolates the 7.10 K intra-urban thermal variance masked by coarse reanalysis.
-              </p>
-              <div class="se-card-meta">
-                <div><strong>Period:</strong> Jul 2021 to Oct 2022 (Multi-seasonal Landsat 8 & 9 acquisitions)</div>
-                <div><strong>Data Source:</strong> USGS Landsat Collection 2 Level 2 (TIRS-2 Band 10)</div>
-              </div>
-              <div class="se-card-caveat">
-                <strong>Key Insight:</strong> 30m pixel fields uncover neighborhood microclimates and industrial hot-spots that coarse 55 &times; 60 km reanalysis completely erases.
-              </div>
-              <div class="se-card-actions">
-                <a href="investigations/kanpur-uhi.html" class="se-btn">Read analysis</a>
-              </div>
-            </div>
-          </article>
-        </div>
+          <cite class="se-inst-quote-sub">
+            Signal Earth &middot; Independent environmental intelligence
+          </cite>
+        </blockquote>
       </div>
     </section>
 
-    <!-- 5. One Interactive Chart: Kanpur Daily PM2.5 (Season Filter, Station Toggle, Explicit Hiatus Gap) -->
-    <section id="interactive-chart" class="se-chart-section" aria-labelledby="chart-heading">
+    <!-- Dedicated Research Gateway (Dignified access to the research archive) -->
+    <section class="se-inst-gateway-wrap" aria-labelledby="gateway-heading">
       <div class="se-container">
-        <div class="se-section-header">
-          <span class="section-kicker">02 : Interactive Atmospheric Observation</span>
-          <h2 id="chart-heading" class="editorial-headline se-section-title">Kanpur Daily Observed PM2.5 (2021&ndash;2026)</h2>
-          <p class="se-hero-dek">
-            Explore daily ambient particulate concentrations across Kanpur stations with interactive season filtering and station toggling. The 2.3-year sensor hiatus is explicitly preserved as a visible discontinuous gap.
-          </p>
-        </div>
-
-        <div class="se-chart-card">
-          <!-- Control Row: Station Toggle & Season Filter -->
-          <div class="se-chart-controls">
-            <!-- Station Toggle -->
-            <div class="se-control-block">
-              <span class="se-control-label">Station:</span>
-              <div class="se-pill-group" role="radiogroup" aria-label="Monitoring Station Selector">
-                <button type="button" class="se-pill-btn active" data-station="Pooled" onclick="setChartStation('Pooled')">Pooled (Both Stations)</button>
-                <button type="button" class="se-pill-btn" data-station="NSI Kalyanpur" onclick="setChartStation('NSI Kalyanpur')">NSI Kalyanpur</button>
-                <button type="button" class="se-pill-btn" data-station="Nehru Nagar" onclick="setChartStation('Nehru Nagar')">Nehru Nagar</button>
-              </div>
-            </div>
-
-            <!-- Season Filter -->
-            <div class="se-control-block">
-              <span class="se-control-label">Season Filter:</span>
-              <div class="se-pill-group" role="radiogroup" aria-label="Seasonal Filter">
-                <button type="button" class="se-pill-btn active" data-season="All" onclick="setChartSeason('All')">All Seasons</button>
-                <button type="button" class="se-pill-btn" data-season="Winter" onclick="setChartSeason('Winter')">Winter (Dec&ndash;Feb)</button>
-                <button type="button" class="se-pill-btn" data-season="Summer" onclick="setChartSeason('Summer')">Summer (Mar&ndash;May)</button>
-                <button type="button" class="se-pill-btn" data-season="Monsoon" onclick="setChartSeason('Monsoon')">Monsoon (Jun&ndash;Sep)</button>
-                <button type="button" class="se-pill-btn" data-season="Post-Monsoon" onclick="setChartSeason('Post-Monsoon')">Post-Monsoon (Oct&ndash;Nov)</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Dynamic Statistics Row -->
-          <div class="se-chart-stats-row">
-            <div class="se-chart-stat-chip">
-              <span>Station Days (n):</span>
-              <strong id="stat-count">Loading...</strong>
-            </div>
-            <div class="se-chart-stat-chip">
-              <span>Selection Mean PM2.5:</span>
-              <strong id="stat-mean">-- &micro;g/m&sup3;</strong>
-            </div>
-            <div class="se-chart-stat-chip">
-              <span>National Standard:</span>
-              <strong style="color: #DC2626;">60 &micro;g/m&sup3; (24-hr NAAQS)</strong>
-            </div>
-          </div>
-
-          <!-- Plotly Canvas Container -->
-          <div id="kanpur-timeseries-plot" class="se-chart-plot-wrap" aria-label="Kanpur daily PM2.5 interactive timeline chart"></div>
-
-          <!-- Source & Period Caption -->
-          <div class="se-chart-caption">
-            <strong>Source &amp; Period:</strong> Continuous ambient air quality monitoring (CAAQMS) records published by CPCB / UPPCB, retrieved via OpenAQ v3 API. Observation periods: July 9, 2021 to October 16, 2022 (Window 1) and February 18, 2025 to August 9, 2026 (Window 2), totaling 1,628 station-days across NSI Kalyanpur and Nehru Nagar. The 855-day hiatus between windows is an unmonitored operational gap and is rendered without synthetic interpolation. Red dashed line indicates the 24-hour National Ambient Air Quality Standard (60 &micro;g/m&sup3;). <em>Seasonal multiplier note:</em> Under standard meteorological bounds (Winter: Dec&ndash;Feb vs Monsoon: Jun&ndash;Sep), winter particulate levels average 2.40&times; the monsoon baseline (2.93&times; in Window 1, 2.25&times; in Window 2); under peak inversion bounds (Nov&ndash;Jan vs Jul&ndash;Sep), the ratio is 3.56&times; pooled (5.14&times; in Window 1, 3.01&times; in Window 2).
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 6. Method and Honesty Strip Linking to Methodology, Data and Code, and Corrections -->
-    <section class="se-honesty-strip" aria-labelledby="honesty-heading">
-      <div class="se-container">
-        <div class="se-honesty-inner">
-          <div class="se-honesty-content">
-            <span class="section-kicker">Method &amp; Honesty</span>
-            <h2 id="honesty-heading" class="se-honesty-title">Explicit Gaps, Zero Synthetic Numbers, Open Audits</h2>
-            <p class="se-honesty-desc">
-              Signal Earth adheres to rigorous scientific transparency: missing observations are never smoothed or synthetically filled, statutory CPCB NAQI math is implemented strictly per official piecewise breakpoints, and all code and corrections are public.
+        <div class="se-inst-gateway-card">
+          <div class="se-inst-gateway-content">
+            <span class="se-inst-kicker" style="margin-bottom: 0.4rem;">Research Archive</span>
+            <h3 id="gateway-heading">Published Investigations &amp; Atmospheric Telemetry</h3>
+            <p>
+              Explore our quantitative research evaluating continuous ambient monitoring records, regulatory breakpoint formulations, and satellite thermal observations across northern India.
             </p>
           </div>
-
-          <div class="se-honesty-links">
-            <a href="methodology.html" class="se-btn se-btn-outline">Methodology &amp; Standards &rarr;</a>
-            <a href="data.html" class="se-btn se-btn-outline">Data Registry &amp; Code &rarr;</a>
-            <a href="corrections.html" class="se-btn se-btn-outline">Corrections &amp; Limits Log &rarr;</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 7. About Strip with Name, Department, One-Line Description and Links -->
-    <section class="se-about-strip" aria-labelledby="about-heading">
-      <div class="se-container">
-        <div class="se-about-box">
-          <div class="se-about-info">
-            <span class="section-kicker">Founder &amp; Research Lead</span>
-            <h2 id="about-heading" class="se-about-name">Avnish Singh</h2>
-            <div class="se-about-role">Undergraduate Student, Department of Civil Engineering &middot; Harcourt Butler Technical University (HBTU), Kanpur</div>
-            <p class="se-about-text">
-              Avnish conducts independent research analyzing public air-quality records and Earth observation satellite datasets across northern India under the Signal Earth initiative, applying engineering workflows to document physical atmospheric processes without synthetic fills.
-            </p>
-          </div>
-
-          <div class="se-about-socials">
-            <span style="font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 0.2rem;">Personal Channels:</span>
-            <a href="https://www.linkedin.com/in/avnish-singh-81a276216/" target="_blank" rel="noopener noreferrer">Avnish Singh on LinkedIn &rarr;</a>
-            <a href="https://www.instagram.com/Avnish.6936/" target="_blank" rel="noopener noreferrer">Avnish Singh on Instagram (@Avnish.6936) &rarr;</a>
-            <a href="mailto:avnish36singh@gmail.com">Email: avnish36singh@gmail.com &rarr;</a>
-            <span style="font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-top: 0.5rem; margin-bottom: 0.2rem;">Brand Channels:</span>
-            <a href="https://www.linkedin.com/company/signalearth/" target="_blank" rel="noopener noreferrer">Signal Earth on LinkedIn &rarr;</a>
-            <a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer">Signal Earth on Instagram (@signalearthhq) &rarr;</a>
-            <a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer">Signal Earth on GitHub &rarr;</a>
-            <a href="about.html" style="color: var(--text-muted); margin-top: 0.25rem;">Detailed Project Scope &rarr;</a>
+          <div class="se-inst-gateway-actions">
+            <a href="research.html" class="se-inst-btn-cta" style="padding: 0.75rem 1.6rem; font-size: 0.88rem;">
+              Explore Research
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="data.html" class="se-inst-btn-secondary">
+              Open Data Library &rarr;
+            </a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- 8. Footer with Legal and Credit Links -->
-  <footer class="se-footer">
-    <div class="se-container">
-      <div class="se-footer-inner">
-        <div class="se-footer-brand-col">
-          <div class="se-footer-brand-title">Signal Earth</div>
-          <p class="se-footer-brand-desc">
-            Independent environmental data observatory examining statutory ambient monitoring archives and satellite observations across northern India.
-          </p>
-        </div>
-
-        <div class="se-footer-col">
-          <h5>Analyses</h5>
-          <ul>
-            <li><a href="investigations/kanpur.html">Kanpur Particulate Dynamics</a></li>
-            <li><a href="investigations/delhi.html">Delhi NAQI Analysis</a></li>
-            <li><a href="investigations/kanpur-lst.html">Kanpur Reanalysis Temperature</a></li>
-            <li><a href="investigations/kanpur-uhi.html">Kanpur Landsat 30m Thermal</a></li>
-            <li><a href="investigations/comparison.html">Regional Airshed Comparison</a></li>
-            <li><a href="rankings.html">Station Rankings Table</a></li>
-          </ul>
-        </div>
-
-        <div class="se-footer-col">
-          <h5>Method &amp; Data</h5>
-          <ul>
-            <li><a href="explained/index.html">Explained Guides</a></li>
-            <li><a href="methodology.html">Methodology &amp; Standards</a></li>
-            <li><a href="data.html">Data Registry &amp; Code</a></li>
-            <li><a href="sources.html">Data Sources &amp; Custodians</a></li>
-            <li><a href="known-problems.html">Known Problems &amp; Technical Limits</a></li>
-          </ul>
-        </div>
-
-        <div class="se-footer-col">
-          <h5>Legal &amp; Audit</h5>
-          <ul>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="terms.html">Terms of Use</a></li>
-            <li><a href="licenses.html">Licenses &amp; Attribution</a></li>
-            <li><a href="credits.html">Image Credits &amp; JSON</a></li>
-            <li><a href="corrections.html">Corrections Log</a></li>
-          </ul>
-        </div>
-
-        <div class="se-footer-col">
-          <h5>Channels</h5>
-          <ul>
-            <li><a href="https://www.linkedin.com/company/signalearth/" target="_blank" rel="noopener noreferrer">Signal Earth on LinkedIn</a></li>
-            <li><a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer">Signal Earth on Instagram</a></li>
-            <li><a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer">Signal Earth on GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/avnish-singh-81a276216/" target="_blank" rel="noopener noreferrer">Avnish Singh on LinkedIn</a></li>
-            <li><a href="https://www.instagram.com/Avnish.6936/" target="_blank" rel="noopener noreferrer">Avnish Singh on Instagram</a></li>
-          </ul>
-        </div>
+  <!-- Institutional Footer -->
+  <footer class="se-inst-footer">
+    <div class="se-inst-footer-inner">
+      <!-- Brand Column -->
+      <div class="se-inst-footer-brand">
+        <h4>Signal Earth</h4>
+        <p>
+          Independent environmental intelligence platform observing planetary systems, atmospheric dynamics, and climate trends through maps, data, and science.
+        </p>
       </div>
 
-      <!-- Mandatory Affiliation Notice -->
-      <div class="se-footer-disclaimer">
-        Signal Earth is an independent environmental data project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, UPPCB, DPCC, or any government agency named on this site.
+      <!-- Navigation Column -->
+      <div class="se-inst-footer-col">
+        <h5>Platform</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Signal Earth</a></li>
+          <li><a href="#focus-areas">Focus Areas</a></li>
+          <li><a href="#approach">Our Approach</a></li>
+          <li><a href="research.html">Research Investigations</a></li>
+          <li><a href="contact.html">Contact &amp; Inquiries</a></li>
+        </ul>
       </div>
 
-      <div class="se-footer-bottom">
-        <div>Maintained by: Avnish Singh, Civil Engineering, HBTU Kanpur &middot; Code under MIT License</div>
-        <div>Page updated: October 2026 &middot; Hosted on GitHub Pages</div>
+      <!-- Methodology & Data Column -->
+      <div class="se-inst-footer-col">
+        <h5>Science &amp; Data</h5>
+        <ul>
+          <li><a href="data.html">Data Registry &amp; Code</a></li>
+          <li><a href="methodology.html">Methodology &amp; Standards</a></li>
+          <li><a href="explained/index.html">Explained Guides</a></li>
+          <li><a href="sources.html">Sources &amp; Custodians</a></li>
+          <li><a href="known-problems.html">Known Problems Log</a></li>
+        </ul>
       </div>
+
+      <!-- Governance & Attribution Column -->
+      <div class="se-inst-footer-col">
+        <h5>Governance</h5>
+        <ul>
+          <li><a href="credits.html">Image Credits &amp; Provenance</a></li>
+          <li><a href="corrections.html">Corrections &amp; Audit Log</a></li>
+          <li><a href="licenses.html">Open Licenses &amp; Code</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Mandatory Affiliation Disclaimer -->
+    <div class="se-inst-footer-disclaimer">
+      Signal Earth is an independent environmental intelligence initiative. It is not affiliated with, sponsored by, or endorsed by NASA, ESA, USGS, CPCB, UPPCB, DPCC, or any governmental agency.
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="se-inst-footer-bottom">
+      <div>Signal Earth &middot; Independent Environmental Intelligence &middot; Open Source under MIT License</div>
+      <div>Hosted on GitHub Pages &middot; Updated October 2026</div>
     </div>
   </footer>
 
-  <!-- Pre-aggregated data loaded synchronously for instant client-side rendering & local file viewing -->
-  <script src="data/kanpur/daily_pm25_chart.js?v=20261004"></script>
-  <!-- Interactive Plotly Chart Initialization & Filtering Script -->
+  <!-- Script for Mobile Menu Toggle & Smooth Anchoring -->
   <script>
     (function() {
-      var chartData = null;
-      var currentStation = 'Pooled';
-      var currentSeason = 'All';
+      var toggleBtn = document.getElementById('mobile-toggle');
+      var navLinks = document.getElementById('inst-nav-links');
 
-      var seasonColors = {
-        'Winter': '#2563EB',
-        'Summer': '#DC2626',
-        'Monsoon': '#059669',
-        'Post-Monsoon': '#D97706'
-      };
-
-      function isDarkMode() {
-        return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-      }
-
-      function updateStatsChip(points) {
-        var valid = points.filter(function(p) { return p.v !== null && !isNaN(p.v); });
-        var countEl = document.getElementById('stat-count');
-        var meanEl = document.getElementById('stat-mean');
-
-        if (countEl) countEl.textContent = valid.length.toLocaleString() + ' days';
-        if (meanEl) {
-          if (valid.length > 0) {
-            var sum = valid.reduce(function(acc, p) { return acc + p.v; }, 0);
-            var avg = (sum / valid.length).toFixed(1);
-            meanEl.textContent = avg + ' \u03BCg/m\u00B3';
-          } else {
-            meanEl.textContent = '-- \u03BCg/m\u00B3';
-          }
-        }
-      }
-
-      function renderPlot() {
-        if (!chartData || !chartData.stations || !chartData.stations[currentStation]) {
-          return;
-        }
-
-        var dark = isDarkMode();
-        var textColor = dark ? '#F9FAFB' : '#111827';
-        var mutedColor = dark ? '#9CA3AF' : '#6B7280';
-        var gridColor = dark ? '#27272A' : '#E5E7EB';
-        var cardBg = dark ? '#141518' : '#FFFFFF';
-
-        var rawPoints = chartData.stations[currentStation];
-        var displayPoints = [];
-
-        if (currentSeason === 'All') {
-          displayPoints = rawPoints;
-        } else {
-          displayPoints = rawPoints.filter(function(p) {
-            return p.s === currentSeason;
-          });
-        }
-
-        updateStatsChip(displayPoints);
-
-        var traces = [];
-
-        if (currentSeason === 'All') {
-          // Full continuous timeseries with explicit null break at hiatus
-          var xVals = [];
-          var yVals = [];
-          var hoverTexts = [];
-
-          displayPoints.forEach(function(pt) {
-            xVals.push(pt.d);
-            yVals.push(pt.v);
-            if (pt.v !== null) {
-              hoverTexts.push('Date: ' + pt.d + '<br>PM2.5: ' + pt.v.toFixed(1) + ' \u03BCg/m\u00B3<br>Season: ' + pt.s);
-            } else {
-              hoverTexts.push('Operational Hiatus');
-            }
-          });
-
-          traces.push({
-            x: xVals,
-            y: yVals,
-            mode: 'lines+markers',
-            connectgaps: false,
-            name: currentStation + ' Daily PM2.5',
-            line: {
-              color: '#B45309',
-              width: 1.5
-            },
-            marker: {
-              size: 3.5,
-              color: '#B45309',
-              opacity: 0.85
-            },
-            hoverinfo: 'text',
-            hovertext: hoverTexts
-          });
-        } else {
-          // Filtered by specific season: scatter markers with seasonal accent
-          var xVals = [];
-          var yVals = [];
-          var hoverTexts = [];
-          var activeColor = seasonColors[currentSeason] || '#B45309';
-
-          displayPoints.forEach(function(pt) {
-            if (pt.v !== null && !isNaN(pt.v)) {
-              xVals.push(pt.d);
-              yVals.push(pt.v);
-              hoverTexts.push('Date: ' + pt.d + '<br>PM2.5: ' + pt.v.toFixed(1) + ' \u03BCg/m\u00B3<br>Season: ' + pt.s);
-            }
-          });
-
-          traces.push({
-            x: xVals,
-            y: yVals,
-            mode: 'markers',
-            name: currentSeason + ' Daily Values',
-            marker: {
-              size: 5,
-              color: activeColor,
-              opacity: 0.9
-            },
-            hoverinfo: 'text',
-            hovertext: hoverTexts
-          });
-
-          // Compute seasonal mean line
-          if (yVals.length > 0) {
-            var sumVal = yVals.reduce(function(a, b) { return a + b; }, 0);
-            var meanVal = sumVal / yVals.length;
-            traces.push({
-              x: [xVals[0], xVals[xVals.length - 1]],
-              y: [meanVal, meanVal],
-              mode: 'lines',
-              name: currentSeason + ' Mean (' + meanVal.toFixed(1) + ' \u03BCg/m\u00B3)',
-              line: {
-                color: activeColor,
-                width: 2,
-                dash: 'dash'
-              },
-              hoverinfo: 'skip'
-            });
-          }
-        }
-
-        // Standard 24h NAAQS limit line (60 µg/m³)
-        var naaqsTrace = {
-          x: ['2021-07-01', '2026-08-31'],
-          y: [60, 60],
-          mode: 'lines',
-          name: 'NAAQS Standard (60 \u03BCg/m\u00B3)',
-          line: {
-            color: '#DC2626',
-            width: 1.5,
-            dash: 'dot'
-          },
-          hoverinfo: 'skip'
-        };
-        traces.unshift(naaqsTrace);
-
-        // Hiatus Shaded Region and Annotation
-        var shapes = [
-          {
-            type: 'rect',
-            xref: 'x',
-            yref: 'paper',
-            x0: '2022-10-17',
-            x1: '2025-02-17',
-            y0: 0,
-            y1: 1,
-            fillcolor: dark ? 'rgba(239, 68, 68, 0.12)' : 'rgba(239, 68, 68, 0.08)',
-            line: {
-              color: 'rgba(239, 68, 68, 0.45)',
-              width: 1,
-              dash: 'dot'
-            }
-          }
-        ];
-
-        var annotations = [
-          {
-            xref: 'x',
-            yref: 'paper',
-            x: '2023-12-01',
-            y: 0.88,
-            text: '2.3-Year Reporting Hiatus<br>(Oct 2022 – Feb 2025)',
-            showarrow: false,
-            font: {
-              family: 'IBM Plex Mono, monospace',
-              size: 11,
-              color: '#DC2626'
-            },
-            align: 'center'
-          }
-        ];
-
-        var layout = {
-          paper_bgcolor: cardBg,
-          plot_bgcolor: cardBg,
-          margin: { l: 55, r: 25, t: 25, b: 50 },
-          showlegend: true,
-          legend: {
-            orientation: 'h',
-            y: 1.14,
-            x: 0,
-            font: { family: 'IBM Plex Sans, sans-serif', size: 12, color: textColor }
-          },
-          xaxis: {
-            type: 'date',
-            range: ['2021-06-15', '2026-09-01'],
-            gridcolor: gridColor,
-            linecolor: gridColor,
-            tickcolor: gridColor,
-            tickfont: { family: 'IBM Plex Mono, monospace', size: 11, color: mutedColor }
-          },
-          yaxis: {
-            title: {
-              text: 'PM2.5 Mass Concentration (\u03BCg/m\u00B3)',
-              font: { family: 'IBM Plex Sans, sans-serif', size: 12, color: textColor }
-            },
-            range: [0, 270],
-            gridcolor: gridColor,
-            linecolor: gridColor,
-            tickcolor: gridColor,
-            tickfont: { family: 'IBM Plex Mono, monospace', size: 11, color: mutedColor }
-          },
-          shapes: shapes,
-          annotations: annotations,
-          hovermode: 'closest'
-        };
-
-        var config = {
-          responsive: true,
-          displayModeBar: true,
-          displaylogo: false,
-          modeBarButtonsToRemove: ['lasso2d', 'select2d', 'autoScale2d']
-        };
-
-        Plotly.newPlot('kanpur-timeseries-plot', traces, layout, config);
-      }
-
-      window.setChartStation = function(stationName) {
-        currentStation = stationName;
-        document.querySelectorAll('[data-station]').forEach(function(btn) {
-          if (btn.getAttribute('data-station') === stationName) {
-            btn.classList.add('active');
-          } else {
-            btn.classList.remove('active');
-          }
+      if (toggleBtn && navLinks) {
+        toggleBtn.addEventListener('click', function() {
+          var isOpen = navLinks.classList.toggle('open');
+          toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
         });
-        renderPlot();
-      };
 
-      window.setChartSeason = function(seasonName) {
-        currentSeason = seasonName;
-        document.querySelectorAll('[data-season]').forEach(function(btn) {
-          if (btn.getAttribute('data-season') === seasonName) {
-            btn.classList.add('active');
-          } else {
-            btn.classList.remove('active');
-          }
-        });
-        renderPlot();
-      };
-
-      // Listen for system theme switches
-      if (window.matchMedia) {
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function() {
-          renderPlot();
-        });
-      }
-
-      // Load dataset synchronously from window script if present, else fallback to fetch
-      if (window.SIGNAL_EARTH_KANPUR_DATA) {
-        chartData = window.SIGNAL_EARTH_KANPUR_DATA;
-        renderPlot();
-      } else {
-        fetch('data/kanpur/daily_pm25_chart.json')
-          .then(function(res) {
-            if (!res.ok) throw new Error('Data fetch failed');
-            return res.json();
-          })
-          .then(function(data) {
-            chartData = data;
-            renderPlot();
-          })
-          .catch(function(err) {
-            console.error('Error loading chart data:', err);
-            var plotEl = document.getElementById('kanpur-timeseries-plot');
-            if (plotEl) {
-              plotEl.innerHTML = '<div style="padding: 2rem; color: #DC2626; font-family: monospace;">Unable to load data/kanpur/daily_pm25_chart.json. Please ensure the data file exists.</div>';
-            }
+        // Close menu when clicking a link
+        navLinks.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            navLinks.classList.remove('open');
+            toggleBtn.setAttribute('aria-expanded', 'false');
           });
+        });
       }
     })();
   </script>
