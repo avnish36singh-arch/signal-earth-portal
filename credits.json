@@ -1,5 +1,15 @@
 [
   {
+    "file": "assets/nasa_arctic_sea_ice.jpg",
+    "title": "Arctic Sea Ice Fracturing and Open Ocean Boundary",
+    "source_url": "https://earthobservatory.nasa.gov/",
+    "creator": "Signal Earth Observation Archive",
+    "date": "2026-10-12",
+    "sensor": "High Latitude Earth Observation Satellite Perspective",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "credit_text": "Image: Signal Earth Observation Archive, October 2026"
+  },
+  {
     "file": "assets/signal_earth_hero.jpg",
     "title": "Earth Orbital Horizon and Atmospheric Boundary",
     "source_url": "https://earthobservatory.nasa.gov/",

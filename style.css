@@ -3504,3 +3504,125 @@ body.se-inst-body {
   }
 }
 
+/* Horizontal Planetary Observation Stream */
+.se-stream-section {
+  padding: 4.5rem 0 4rem;
+  background: #0B0B0C;
+  border-bottom: 1px solid #27272A;
+  overflow: hidden;
+  position: relative;
+}
+
+.se-stream-header-wrap {
+  max-width: var(--max-width);
+  margin: 0 auto 2rem;
+  padding: 0 1.25rem;
+}
+
+.se-stream-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.se-stream-container::before,
+.se-stream-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.se-stream-container::before {
+  left: 0;
+  background: linear-gradient(90deg, #0B0B0C 0%, rgba(11, 11, 12, 0) 100%);
+}
+
+.se-stream-container::after {
+  right: 0;
+  background: linear-gradient(270deg, #0B0B0C 0%, rgba(11, 11, 12, 0) 100%);
+}
+
+.se-stream-track {
+  display: flex;
+  gap: 1.35rem;
+  width: max-content;
+  animation: seStreamHorizontal 45s linear infinite !important;
+  will-change: transform;
+}
+
+.se-stream-track:hover {
+  animation-play-state: paused !important;
+}
+
+@keyframes seStreamHorizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.se-stream-item {
+  width: 350px;
+  flex-shrink: 0;
+  background: #141518;
+  border: 1px solid #27272A;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.se-stream-item:hover {
+  border-color: #52525B;
+}
+
+.se-stream-img-wrap {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: #000000;
+  position: relative;
+}
+
+.se-stream-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.se-stream-meta {
+  padding: 0.9rem 1.1rem;
+}
+
+.se-stream-meta-tag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9CA3AF;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.se-stream-meta-title {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #F9FAFB;
+  line-height: 1.35;
+  margin-bottom: 0.35rem;
+}
+
+.se-stream-meta-desc {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: #6B7280;
+  margin: 0;
+}
+
