@@ -3504,125 +3504,181 @@ body.se-inst-body {
   }
 }
 
-/* Horizontal Planetary Observation Stream */
-.se-stream-section {
-  padding: 4.5rem 0 4rem;
+/* Planetary Latitudinal Transect Slider (One at a time, arrow navigated) */
+.se-lat-slider-section {
+  padding: 4.5rem 0;
   background: #0B0B0C;
   border-bottom: 1px solid #27272A;
-  overflow: hidden;
-  position: relative;
 }
 
-.se-stream-header-wrap {
-  max-width: var(--max-width);
-  margin: 0 auto 2rem;
-  padding: 0 1.25rem;
-}
-
-.se-stream-container {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.se-stream-container::before,
-.se-stream-container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 80px;
-  z-index: 10;
-  pointer-events: none;
-}
-
-.se-stream-container::before {
-  left: 0;
-  background: linear-gradient(90deg, #0B0B0C 0%, rgba(11, 11, 12, 0) 100%);
-}
-
-.se-stream-container::after {
-  right: 0;
-  background: linear-gradient(270deg, #0B0B0C 0%, rgba(11, 11, 12, 0) 100%);
-}
-
-.se-stream-track {
+.se-lat-slider-header {
   display: flex;
-  gap: 1.35rem;
-  width: max-content;
-  animation: seStreamHorizontal 45s linear infinite !important;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.se-lat-slider-title-wrap {
+  max-width: 650px;
+}
+
+.se-lat-slider-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.se-lat-counter {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  color: #9CA3AF;
+}
+
+.se-lat-nav-btn {
+  background: #141518;
+  border: 1px solid #27272A;
+  color: #F9FAFB;
+  width: 44px;
+  height: 44px;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.se-lat-nav-btn:hover {
+  background: #27272A;
+  border-color: #52525B;
+  color: #FFFFFF;
+}
+
+.se-lat-nav-btn:focus-visible {
+  outline: 2px solid #9CA3AF;
+  outline-offset: 2px;
+}
+
+.se-lat-slider-viewport {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #27272A;
+  border-radius: 3px;
+  background: #141518;
+}
+
+.se-lat-slider-track {
+  display: flex;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
   will-change: transform;
 }
 
-.se-stream-track:hover {
-  animation-play-state: paused !important;
-}
-
-@keyframes seStreamHorizontal {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.se-stream-item {
-  width: 350px;
-  flex-shrink: 0;
-  background: #141518;
-  border: 1px solid #27272A;
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-.se-stream-item:hover {
-  border-color: #52525B;
-}
-
-.se-stream-img-wrap {
+.se-lat-slide {
+  min-width: 100%;
   width: 100%;
-  height: 200px;
-  overflow: hidden;
-  background: #000000;
-  position: relative;
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  background: #141518;
 }
 
-.se-stream-img-wrap img {
+.se-lat-slide-img-wrap {
+  position: relative;
+  background: #000000;
+  min-height: 440px;
+  overflow: hidden;
+}
+
+.se-lat-slide-img-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.se-stream-meta {
-  padding: 0.9rem 1.1rem;
+.se-lat-slide-content {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid #27272A;
 }
 
-.se-stream-meta-tag {
+.se-lat-coord-badge {
+  display: inline-block;
   font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #9CA3AF;
-  display: block;
-  margin-bottom: 0.25rem;
+  color: #F9FAFB;
+  background: #0B0B0C;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid #27272A;
+  border-radius: 2px;
+  width: fit-content;
+  margin-bottom: 1.25rem;
 }
 
-.se-stream-meta-title {
+.se-lat-slide-h3 {
+  font-family: var(--font-sans);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #F9FAFB;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.se-lat-slide-desc {
   font-family: var(--font-sans);
   font-size: 0.95rem;
-  font-weight: 600;
-  color: #F9FAFB;
-  line-height: 1.35;
-  margin-bottom: 0.35rem;
+  line-height: 1.65;
+  color: #9CA3AF;
+  margin-bottom: 1.5rem;
 }
 
-.se-stream-meta-desc {
-  font-family: var(--font-sans);
-  font-size: 0.82rem;
-  line-height: 1.5;
+.se-lat-slide-meta {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
   color: #6B7280;
-  margin: 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid #27272A;
+}
+
+.se-lat-dots {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.se-lat-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #27272A;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.se-lat-dot.active {
+  background: #F9FAFB;
+  transform: scale(1.3);
+}
+
+@media (max-width: 900px) {
+  .se-lat-slide {
+    grid-template-columns: 1fr;
+  }
+  .se-lat-slide-img-wrap {
+    min-height: 260px;
+  }
+  .se-lat-slide-content {
+    border-left: none;
+    border-top: 1px solid #27272A;
+    padding: 1.75rem;
+  }
 }
 

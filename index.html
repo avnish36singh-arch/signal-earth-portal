@@ -128,140 +128,126 @@
       </div>
     </section>
 
-    <!-- Planetary Observation Stream: Horizontally Moving Satellite Scenes -->
-    <section class="se-stream-section" aria-labelledby="stream-heading">
-      <div class="se-stream-header-wrap">
-        <span class="se-inst-section-num">Earth Observation Stream</span>
-        <h2 id="stream-heading" class="se-inst-section-title" style="margin-bottom: 0.4rem;">
-          Observing Planetary Changes
-        </h2>
-        <p class="se-inst-lead-text" style="font-size: 1rem; color: #9CA3AF;">
-          Satellite remote sensing captures, atmospheric aerosol dynamics, and cryospheric shifts across global monitoring missions.
-        </p>
-      </div>
+    <!-- Latitudinal Observation Slider: Scroll horizontally like latitudes of Earth one at a time -->
+    <section class="se-lat-slider-section" aria-labelledby="lat-slider-heading">
+      <div class="se-container">
+        <!-- Slider Header: Title and Right Arrow Navigation Controls -->
+        <div class="se-lat-slider-header">
+          <div class="se-lat-slider-title-wrap">
+            <span class="se-inst-section-num">Earth Observation &middot; Latitudinal Transect</span>
+            <h2 id="lat-slider-heading" class="se-inst-section-title" style="margin-bottom: 0.4rem;">
+              Observing Planetary Changes by Latitude
+            </h2>
+            <p class="se-inst-lead-text" style="font-size: 0.98rem; color: #9CA3AF;">
+              Traverse satellite remote sensing observations across global latitudes: from polar cryosphere melt zones to regional aerosol basins and intra-urban microclimates.
+            </p>
+          </div>
 
-      <div class="se-stream-container">
-        <div class="se-stream-track">
-          <!-- Card 1: Arctic Sea Ice -->
-          <article class="se-stream-item">
-            <div class="se-stream-img-wrap">
-              <img src="assets/nasa_arctic_sea_ice.jpg" alt="Satellite view of arctic sea ice melting and intricate fractures against dark polar ocean" width="700" height="400" loading="lazy">
-            </div>
-            <div class="se-stream-meta">
-              <span class="se-stream-meta-tag">Cryosphere Observation &middot; Polar Margin</span>
-              <h3 class="se-stream-meta-title">Arctic Sea Ice Fracture</h3>
-              <p class="se-stream-meta-desc">Fracturing sea ice sheets and summer melt margin dynamics over polar waters.</p>
-            </div>
-          </article>
+          <!-- Slide Controls at the Right -->
+          <div class="se-lat-slider-controls">
+            <span id="lat-counter" class="se-lat-counter">01 / 05</span>
+            <button type="button" id="lat-prev-btn" class="se-lat-nav-btn" aria-label="Previous latitude observation">&larr;</button>
+            <button type="button" id="lat-next-btn" class="se-lat-nav-btn" aria-label="Next latitude observation">&rarr;</button>
+          </div>
+        </div>
 
-          <!-- Card 2: Indo-Gangetic Smoke Plume -->
-          <article class="se-stream-item">
-            <div class="se-stream-img-wrap">
-              <img src="assets/hero_indo_gangetic_smoke_20211105.jpg" alt="NASA Terra MODIS satellite view of regional smoke plume across Indo-Gangetic Plain" width="700" height="400" loading="lazy">
-            </div>
-            <div class="se-stream-meta">
-              <span class="se-stream-meta-tag">NASA Terra MODIS &middot; Agricultural Smoke</span>
-              <h3 class="se-stream-meta-title">Ganga Basin Smoke Plume</h3>
-              <p class="se-stream-meta-desc">Post-harvest agricultural burning smoke spreading across northern India.</p>
-            </div>
-          </article>
+        <!-- Slider Viewport: Showing One Slide at a Time -->
+        <div class="se-lat-slider-viewport">
+          <div id="lat-slider-track" class="se-lat-slider-track">
+            <!-- Slide 1: High Arctic Cryosphere -->
+            <article class="se-lat-slide">
+              <div class="se-lat-slide-img-wrap">
+                <img src="assets/nasa_arctic_sea_ice.jpg" alt="Satellite view of arctic sea ice fractures and open ocean margins" width="1200" height="700" loading="lazy">
+              </div>
+              <div class="se-lat-slide-content">
+                <span class="se-lat-coord-badge">LAT 78&deg; 15' N &middot; HIGH ARCTIC ZONE</span>
+                <h3 class="se-lat-slide-h3">Arctic Sea Ice Fracturing &amp; Melt Margins</h3>
+                <p class="se-lat-slide-desc">
+                  High-latitude satellite remote sensing documenting sea ice pack fragmentation, seasonal melt pond formation, and accelerated open ocean exposure along polar margins.
+                </p>
+                <div class="se-lat-slide-meta">
+                  Instrument: Polar Orbit Earth Observation &middot; Cryospheric Telemetry
+                </div>
+              </div>
+            </article>
 
-          <!-- Card 3: Ganga Valley Winter Haze & Stagnation -->
-          <article class="se-stream-item">
-            <div class="se-stream-img-wrap">
-              <img src="assets/satellite_view_kanpur_haze_20211111.jpg" alt="NASA Aqua MODIS satellite view of atmospheric haze over central Ganga valley" width="700" height="400" loading="lazy">
-            </div>
-            <div class="se-stream-meta">
-              <span class="se-stream-meta-tag">NASA Aqua MODIS &middot; Boundary Layer</span>
-              <h3 class="se-stream-meta-title">Atmospheric Stagnation &amp; Haze</h3>
-              <p class="se-stream-meta-desc">Dense winter aerosol entrapment beneath suppressed meteorological inversions.</p>
-            </div>
-          </article>
+            <!-- Slide 2: Indo-Gangetic Basin -->
+            <article class="se-lat-slide">
+              <div class="se-lat-slide-img-wrap">
+                <img src="assets/hero_indo_gangetic_smoke_20211105.jpg" alt="NASA Terra MODIS satellite view of regional smoke plume across northern India" width="1200" height="700" loading="lazy">
+              </div>
+              <div class="se-lat-slide-content">
+                <span class="se-lat-coord-badge">LAT 28&deg; 38' N &middot; INDO-GANGETIC AIRSHED</span>
+                <h3 class="se-lat-slide-h3">Regional Agricultural Smoke Plume</h3>
+                <p class="se-lat-slide-desc">
+                  Post-harvest biomass burning smoke spreading eastward along the Himalayan foothills, trapped under seasonal anticyclonic stagnation across northern India.
+                </p>
+                <div class="se-lat-slide-meta">
+                  Instrument: NASA Terra MODIS &middot; Corrected Reflectance (Nov 5, 2021)
+                </div>
+              </div>
+            </article>
 
-          <!-- Card 4: Landsat 30m Thermal Radiometry -->
-          <article class="se-stream-item">
-            <div class="se-stream-img-wrap">
-              <img src="assets/kanpur-uhi/kanpur-uhi-30m.png" alt="USGS Landsat 30m thermal radiometry map over urban core" width="700" height="400" loading="lazy">
-            </div>
-            <div class="se-stream-meta">
-              <span class="se-stream-meta-tag">USGS Landsat 8/9 &middot; TIRS-2 Band 10</span>
-              <h3 class="se-stream-meta-title">30m Surface Thermal Radiometry</h3>
-              <p class="se-stream-meta-desc">High-resolution infrared zoning exposing urban heat microclimates and industrial hotspots.</p>
-            </div>
-          </article>
+            <!-- Slide 3: Central Ganga Valley -->
+            <article class="se-lat-slide">
+              <div class="se-lat-slide-img-wrap">
+                <img src="assets/satellite_view_kanpur_haze_20211111.jpg" alt="NASA Aqua MODIS satellite view of atmospheric haze over central Ganga valley" width="1200" height="700" loading="lazy">
+              </div>
+              <div class="se-lat-slide-content">
+                <span class="se-lat-coord-badge">LAT 26&deg; 28' N &middot; CENTRAL GANGA BASIN</span>
+                <h3 class="se-lat-slide-h3">Winter Boundary Layer Stagnation &amp; Haze</h3>
+                <p class="se-lat-slide-desc">
+                  Thermal nocturnal radiation inversion capping Kanpur and the central plains, compressing local particulate emissions into a dense, shallow surface layer.
+                </p>
+                <div class="se-lat-slide-meta">
+                  Instrument: NASA Aqua MODIS &middot; Winter Inversion Analysis (Nov 11, 2021)
+                </div>
+              </div>
+            </article>
 
-          <!-- Card 5: Orbital Atmospheric Boundary -->
-          <article class="se-stream-item">
-            <div class="se-stream-img-wrap">
-              <img src="assets/signal_earth_hero.jpg" alt="Earth orbital horizon and thin atmospheric boundary" width="700" height="400" loading="lazy">
-            </div>
-            <div class="se-stream-meta">
-              <span class="se-stream-meta-tag">Orbital Perspective &middot; Atmosphere</span>
-              <h3 class="se-stream-meta-title">Global Atmospheric Boundary</h3>
-              <p class="se-stream-meta-desc">The thin protective gaseous envelope shielding the biosphere from outer space.</p>
-            </div>
-          </article>
+            <!-- Slide 4: Urban Thermal Zoning -->
+            <article class="se-lat-slide">
+              <div class="se-lat-slide-img-wrap">
+                <img src="assets/kanpur-uhi/kanpur-uhi-30m.png" alt="USGS Landsat 30m thermal radiometry map over urban core" width="1200" height="700" loading="lazy">
+              </div>
+              <div class="se-lat-slide-content">
+                <span class="se-lat-coord-badge">LAT 26&deg; 26' N &middot; INTRA-URBAN MICROCLIMATES</span>
+                <h3 class="se-lat-slide-h3">30m Landsat 8/9 Thermal Infrared Radiometry</h3>
+                <p class="se-lat-slide-desc">
+                  Cloud-native spaceborne thermal radiometry resolving a +3.60 K winter urban heat island in the dense core, uncovering microclimates masked by coarse reanalysis.
+                </p>
+                <div class="se-lat-slide-meta">
+                  Instrument: USGS Landsat Collection 2 Level 2 &middot; TIRS-2 Band 10
+                </div>
+              </div>
+            </article>
 
-          <!-- Duplicate Set for Seamless Continuous Loop -->
-          <!-- Card 1 Dupl -->
-          <article class="se-stream-item" aria-hidden="true">
-            <div class="se-stream-img-wrap">
-              <img src="assets/nasa_arctic_sea_ice.jpg" alt="" width="700" height="400" loading="lazy">
-            </div>
-            <div class="se-stream-meta">
-              <span class="se-stream-meta-tag">Cryosphere Observation &middot; Polar Margin</span>
-              <h3 class="se-stream-meta-title">Arctic Sea Ice Fracture</h3>
-              <p class="se-stream-meta-desc">Fracturing sea ice sheets and summer melt margin dynamics over polar waters.</p>
-            </div>
-          </article>
+            <!-- Slide 5: Global Orbital Horizon -->
+            <article class="se-lat-slide">
+              <div class="se-lat-slide-img-wrap">
+                <img src="assets/signal_earth_hero.jpg" alt="Earth orbital horizon and thin atmospheric boundary" width="1200" height="700" loading="lazy">
+              </div>
+              <div class="se-lat-slide-content">
+                <span class="se-lat-coord-badge">LAT 00&deg; 00' &middot; GLOBAL ORBITAL HORIZON</span>
+                <h3 class="se-lat-slide-h3">Global Atmospheric Boundary &amp; Biosphere</h3>
+                <p class="se-lat-slide-desc">
+                  Orbital perspective documenting the illuminated atmospheric limb, illustrating the razor-thin boundary layer that sustains the planetary biosphere against deep space.
+                </p>
+                <div class="se-lat-slide-meta">
+                  Instrument: Satellite Earth Observation &middot; Global Limb Photography
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
 
-          <!-- Card 2 Dupl -->
-          <article class="se-stream-item" aria-hidden="true">
-            <div class="se-stream-img-wrap">
-              <img src="assets/hero_indo_gangetic_smoke_20211105.jpg" alt="" width="700" height="400" loading="lazy">
-            </div>
-            <div class="se-stream-meta">
-              <span class="se-stream-meta-tag">NASA Terra MODIS &middot; Agricultural Smoke</span>
-              <h3 class="se-stream-meta-title">Ganga Basin Smoke Plume</h3>
-              <p class="se-stream-meta-desc">Post-harvest agricultural burning smoke spreading across northern India.</p>
-            </div>
-          </article>
-
-          <!-- Card 3 Dupl -->
-          <article class="se-stream-item" aria-hidden="true">
-            <div class="se-stream-img-wrap">
-              <img src="assets/satellite_view_kanpur_haze_20211111.jpg" alt="" width="700" height="400" loading="lazy">
-            </div>
-            <div class="se-stream-meta">
-              <span class="se-stream-meta-tag">NASA Aqua MODIS &middot; Boundary Layer</span>
-              <h3 class="se-stream-meta-title">Atmospheric Stagnation &amp; Haze</h3>
-              <p class="se-stream-meta-desc">Dense winter aerosol entrapment beneath suppressed meteorological inversions.</p>
-            </div>
-          </article>
-
-          <!-- Card 4 Dupl -->
-          <article class="se-stream-item" aria-hidden="true">
-            <div class="se-stream-img-wrap">
-              <img src="assets/kanpur-uhi/kanpur-uhi-30m.png" alt="" width="700" height="400" loading="lazy">
-            </div>
-            <div class="se-stream-meta">
-              <span class="se-stream-meta-tag">USGS Landsat 8/9 &middot; TIRS-2 Band 10</span>
-              <h3 class="se-stream-meta-title">30m Surface Thermal Radiometry</h3>
-              <p class="se-stream-meta-desc">High-resolution infrared zoning exposing urban heat microclimates and industrial hotspots.</p>
-            </div>
-          </article>
-
-          <!-- Card 5 Dupl -->
-          <article class="se-stream-item" aria-hidden="true">
-            <div class="se-stream-img-wrap">
-              <img src="assets/signal_earth_hero.jpg" alt="" width="700" height="400" loading="lazy">
-            </div>
-            <div class="se-stream-meta">
-              <span class="se-stream-meta-tag">Orbital Perspective &middot; Atmosphere</span>
-              <h3 class="se-stream-meta-title">Global Atmospheric Boundary</h3>
-              <p class="se-stream-meta-desc">The thin protective gaseous envelope shielding the biosphere from outer space.</p>
-            </div>
-          </article>
+        <!-- Dot Indicators -->
+        <div id="lat-dots" class="se-lat-dots" role="tablist" aria-label="Observation Slide Selector">
+          <button type="button" class="se-lat-dot active" aria-label="Slide 1: Arctic Sea Ice"></button>
+          <button type="button" class="se-lat-dot" aria-label="Slide 2: Indo-Gangetic Airshed"></button>
+          <button type="button" class="se-lat-dot" aria-label="Slide 3: Central Ganga Basin"></button>
+          <button type="button" class="se-lat-dot" aria-label="Slide 4: Urban Microclimates"></button>
+          <button type="button" class="se-lat-dot" aria-label="Slide 5: Global Orbital Horizon"></button>
         </div>
       </div>
     </section>
@@ -426,6 +412,87 @@
             toggleBtn.setAttribute('aria-expanded', 'false');
           });
         });
+      }
+
+      // Latitudinal Observation Slider Logic
+      var track = document.getElementById('lat-slider-track');
+      var prevBtn = document.getElementById('lat-prev-btn');
+      var nextBtn = document.getElementById('lat-next-btn');
+      var counter = document.getElementById('lat-counter');
+      var dots = document.querySelectorAll('#lat-dots .se-lat-dot');
+
+      if (track && nextBtn && prevBtn) {
+        var slides = track.querySelectorAll('.se-lat-slide');
+        var totalSlides = slides.length;
+        var currentIndex = 0;
+
+        function updateSlider(index) {
+          if (index < 0) {
+            currentIndex = totalSlides - 1;
+          } else if (index >= totalSlides) {
+            currentIndex = 0;
+          } else {
+            currentIndex = index;
+          }
+
+          track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+
+          if (counter) {
+            counter.textContent = '0' + (currentIndex + 1) + ' / 0' + totalSlides;
+          }
+
+          dots.forEach(function(dot, idx) {
+            if (idx === currentIndex) {
+              dot.classList.add('active');
+            } else {
+              dot.classList.remove('active');
+            }
+          });
+        }
+
+        nextBtn.addEventListener('click', function() {
+          updateSlider(currentIndex + 1);
+        });
+
+        prevBtn.addEventListener('click', function() {
+          updateSlider(currentIndex - 1);
+        });
+
+        dots.forEach(function(dot, idx) {
+          dot.addEventListener('click', function() {
+            updateSlider(idx);
+          });
+        });
+
+        // Keyboard arrow navigation when viewing slider
+        window.addEventListener('keydown', function(e) {
+          var rect = track.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+            if (e.key === 'ArrowRight') {
+              updateSlider(currentIndex + 1);
+            } else if (e.key === 'ArrowLeft') {
+              updateSlider(currentIndex - 1);
+            }
+          }
+        });
+
+        // Touch swipe support for mobile
+        var touchStartX = 0;
+        track.addEventListener('touchstart', function(e) {
+          touchStartX = e.touches[0].clientX;
+        }, { passive: true });
+
+        track.addEventListener('touchend', function(e) {
+          var touchEndX = e.changedTouches[0].clientX;
+          var diff = touchStartX - touchEndX;
+          if (Math.abs(diff) > 40) {
+            if (diff > 0) {
+              updateSlider(currentIndex + 1);
+            } else {
+              updateSlider(currentIndex - 1);
+            }
+          }
+        }, { passive: true });
       }
     })();
   </script>
