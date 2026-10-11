@@ -1,16 +1,16 @@
-# Signal Earth : Public Environmental Data Portfolio
+# Signal Earth : Environmental Intelligence Platform
 
 The Earth is changing faster than most people realize. Making environmental change visible through maps, data, and science.
 
-Maintained by Avnish Singh, undergraduate student in Civil Engineering at Harcourt Butler Technical University (HBTU), Kanpur.
+Founded and operated by Avnish Singh, Civil Engineering & Environmental Intelligence Researcher, HBTU Kanpur.
 
 Portal URL: https://avnish36singh-arch.github.io/signal-earth-portal/
 
 ## Overview
 
-Signal Earth is an independent environmental data portfolio that transforms satellite observations, maps, official datasets, and research records into clear visual evidence. The project examines air quality data from the Central Pollution Control Board (CPCB), Uttar Pradesh Pollution Control Board (UPPCB), and Delhi Pollution Control Committee (DPCC), alongside reanalysis skin temperature data from NASA POWER (GMAO MERRA-2).
+Signal Earth is an independent environmental intelligence platform that transforms satellite observations, Earth remote sensing, official monitoring networks, and research records into clear, evidence-first visual intelligence. The project examines air quality data from the Central Pollution Control Board (CPCB), Uttar Pradesh Pollution Control Board (UPPCB), and Delhi Pollution Control Committee (DPCC), alongside spaceborne thermal radiometry (USGS Landsat 8/9) and skin temperature reanalysis from NASA POWER (GMAO MERRA-2).
 
-This site is an independent student portfolio, not an operational monitoring platform, not a government body, and not a commercial product. All analytical code is open source and reproducible.
+This platform is an independent environmental intelligence initiative, not an operational government monitoring agency and not a commercial product. All analytical code is open source and reproducible.
 
 ### Research Pipelines
 
