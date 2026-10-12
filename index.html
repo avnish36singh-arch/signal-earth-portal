@@ -25,20 +25,8 @@
 
   <link rel="stylesheet" href="style.css?v=20261013b">
 
-  <!-- Immediate Theme Initialization (Prevents flash of unstyled theme) -->
-  <script>
-    (function() {
-      try {
-        const saved = localStorage.getItem('signal-earth-theme');
-        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        if (saved === 'dark' || (!saved && prefersDark)) {
-          document.documentElement.setAttribute('data-theme', 'dark');
-        } else {
-          document.documentElement.setAttribute('data-theme', 'light');
-        }
-      } catch (e) {}
-    })();
-  </script>
+  <!-- Global Theme Management System (Prevents FOUT & manages light/dark mode) -->
+  <script src="assets/theme.js"></script>
 </head>
 <body class="se-editorial-page" id="top">
   <a href="#main" class="skip-link">Skip to content</a>
@@ -123,76 +111,7 @@
 
     <hr class="se-editorial-divider">
 
-    <!-- Selected Research -->
-    <section class="se-editorial-section" id="research" aria-labelledby="research-heading">
-      <div class="se-editorial-container">
-        <div class="se-editorial-section-header">
-          <h2 id="research-heading" class="se-editorial-section-title">
-            Selected Research
-          </h2>
-          <p class="se-editorial-section-intro">
-            Investigations into the patterns, measurements, and processes shaping our environment.
-          </p>
-        </div>
-
-        <div class="se-editorial-research-grid">
-          <!-- Item 1: Kanpur Particulate Dynamics -->
-          <article class="se-editorial-research-item">
-            <figure class="se-editorial-research-figure">
-              <img src="assets/satellite_view_kanpur_haze_20211111.jpg" alt="NASA Aqua MODIS satellite observation of atmospheric haze over central Ganga valley" width="800" height="500" loading="lazy">
-            </figure>
-            <span class="se-editorial-category-label">Air Quality</span>
-            <h3 class="se-editorial-research-title">
-              <a href="investigations/kanpur.html">Kanpur Particulate Dynamics &amp; Winter Multipliers</a>
-            </h3>
-            <p class="se-editorial-research-desc">
-              Continuous regulatory PM2.5 evaluation across two monitoring windows, documenting seasonal ratios and an explicit 855-day unmonitored station hiatus.
-            </p>
-            <a href="investigations/kanpur.html" class="se-editorial-inline-link">
-              Read research &rarr;
-            </a>
-          </article>
-
-          <!-- Item 2: Kanpur Landsat Thermal Radiometry -->
-          <article class="se-editorial-research-item">
-            <figure class="se-editorial-research-figure">
-              <img src="assets/kanpur-uhi/kanpur-uhi-30m.png" alt="USGS Landsat 30m thermal radiometry map over Kanpur urban core and riverine cooling zone" width="800" height="500" loading="lazy">
-            </figure>
-            <span class="se-editorial-category-label">Land Surface Temperature</span>
-            <h3 class="se-editorial-research-title">
-              <a href="investigations/kanpur-uhi.html">Intra-Urban Thermal Zoning &amp; 30m Landsat Radiometry</a>
-            </h3>
-            <p class="se-editorial-research-desc">
-              High-resolution thermal infrared radiometry from Landsat 8/9 resolving intra-urban microclimates and thermal variance across Kanpur masked by coarse global reanalysis.
-            </p>
-            <a href="investigations/kanpur-uhi.html" class="se-editorial-inline-link">
-              Read research &rarr;
-            </a>
-          </article>
-
-          <!-- Item 3: Delhi NAQI Pollutant Dominance -->
-          <article class="se-editorial-research-item">
-            <figure class="se-editorial-research-figure">
-              <img src="assets/delhi/03_seasonal_aqi_dynamics.png" alt="CPCB NAQI seasonal breakpoint dynamics and pollutant distribution boxplots" width="800" height="500" loading="lazy">
-            </figure>
-            <span class="se-editorial-category-label">Regulatory Mechanics</span>
-            <h3 class="se-editorial-research-title">
-              <a href="investigations/delhi.html">Delhi NAQI Criteria Pollutant Dominance</a>
-            </h3>
-            <p class="se-editorial-research-desc">
-              Analysis of 24 pollutant components and statutory breakpoint mechanics demonstrating particulate dominance over headline AQI scores.
-            </p>
-            <a href="investigations/delhi.html" class="se-editorial-inline-link">
-              Read research &rarr;
-            </a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <hr class="se-editorial-divider">
-
-    <!-- Planetary Observation Stream: Horizontal Latitudinal Transect -->
+    <!-- Planetary Observation Stream: Horizontal Latitudinal Transect Directly Below Hero -->
     <section class="se-editorial-stream-section" aria-labelledby="stream-heading">
       <div class="se-editorial-container">
         <div class="se-editorial-section-header">
@@ -406,85 +325,163 @@
 
     <hr class="se-editorial-divider">
 
-    <!-- Areas of Focus -->
-    <section class="se-editorial-section" aria-labelledby="focus-heading">
+    <!-- Selected Research: Editorial Journal Hierarchy (1 Lead Study + 2 Stacked Supporting) -->
+    <section class="se-editorial-section" id="research" aria-labelledby="research-heading">
       <div class="se-editorial-container">
         <div class="se-editorial-section-header">
-          <h2 id="focus-heading" class="se-editorial-section-title">
-            Areas of Focus
+          <span class="se-editorial-kicker">Peer-Grade Investigation</span>
+          <h2 id="research-heading" class="se-editorial-section-title">
+            Selected Research
           </h2>
+          <p class="se-editorial-section-intro">
+            Quantitative investigations into atmospheric particulate dynamics, thermal infrared zoning, and statutory NAQI formulations.
+          </p>
+        </div>
+
+        <div class="se-editorial-lead-grid">
+          <!-- Left Column: Lead Study (Kanpur Particulate Dynamics) -->
+          <article class="se-editorial-lead-item">
+            <figure class="se-editorial-lead-figure">
+              <img src="assets/satellite_view_kanpur_haze_20211111.jpg" alt="NASA Aqua MODIS satellite observation of atmospheric haze over central Ganga valley" width="900" height="562" loading="lazy">
+            </figure>
+            <span class="se-editorial-category-label">Air Quality &middot; Lead Investigation</span>
+            <h3 class="se-editorial-lead-title">
+              <a href="investigations/kanpur.html">Kanpur Particulate Dynamics &amp; Winter Multipliers</a>
+            </h3>
+            <p class="se-editorial-lead-desc">
+              Continuous regulatory PM2.5 evaluation across two monitoring windows, documenting seasonal ratios, extreme atmospheric stagnation events, and an explicit 855-day unmonitored station hiatus.
+            </p>
+            <div class="se-editorial-lead-meta">
+              <span class="se-editorial-lead-tag">Multi-Year CAAQMS</span>
+              <span class="se-editorial-lead-tag">Zero Synthetic Infilling</span>
+              <span class="se-editorial-lead-tag">Python &amp; SciPy Stack</span>
+            </div>
+            <div>
+              <a href="investigations/kanpur.html" class="se-editorial-inline-link">
+                Read lead investigation &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Right Column: Stacked Supporting Studies -->
+          <div class="se-editorial-supporting-stack">
+            <!-- Supporting Study 1: Kanpur Landsat Thermal Radiometry -->
+            <article class="se-editorial-supporting-item">
+              <figure class="se-editorial-supporting-figure">
+                <img src="assets/kanpur-uhi/kanpur-uhi-30m.png" alt="USGS Landsat 30m thermal radiometry map over Kanpur urban core and riverine cooling zone" width="700" height="394" loading="lazy">
+              </figure>
+              <span class="se-editorial-category-label">Land Surface Temperature</span>
+              <h4 class="se-editorial-supporting-title">
+                <a href="investigations/kanpur-uhi.html">Intra-Urban Thermal Zoning &amp; 30m Landsat Radiometry</a>
+              </h4>
+              <p class="se-editorial-supporting-desc">
+                High-resolution thermal infrared radiometry from Landsat 8/9 resolving intra-urban microclimates and thermal variance across Kanpur masked by coarse global reanalysis.
+              </p>
+              <div>
+                <a href="investigations/kanpur-uhi.html" class="se-editorial-inline-link">
+                  Read research &rarr;
+                </a>
+              </div>
+            </article>
+
+            <!-- Supporting Study 2: Delhi NAQI Pollutant Dominance -->
+            <article class="se-editorial-supporting-item">
+              <figure class="se-editorial-supporting-figure">
+                <img src="assets/delhi/03_seasonal_aqi_dynamics.png" alt="CPCB NAQI seasonal breakpoint dynamics and pollutant distribution boxplots" width="700" height="394" loading="lazy">
+              </figure>
+              <span class="se-editorial-category-label">Regulatory Mechanics</span>
+              <h4 class="se-editorial-supporting-title">
+                <a href="investigations/delhi.html">Delhi NAQI Criteria Pollutant Dominance</a>
+              </h4>
+              <p class="se-editorial-supporting-desc">
+                Analysis of 24 pollutant components and statutory breakpoint mechanics demonstrating particulate dominance over headline AQI scores across the National Capital Region.
+              </p>
+              <div>
+                <a href="investigations/delhi.html" class="se-editorial-inline-link">
+                  Read research &rarr;
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="se-editorial-divider">
+
+    <!-- Unified Editorial Foundation: Mission, Focus Areas, & Research Principles -->
+    <section class="se-editorial-section se-editorial-foundation" aria-labelledby="foundation-heading">
+      <div class="se-editorial-container">
+        <!-- Foundation Intro & Mission -->
+        <div class="se-editorial-foundation-about">
+          <span class="se-editorial-kicker">Independent Initiative</span>
+          <h2 id="foundation-heading" class="se-editorial-foundation-about-h2">
+            About Signal Earth
+          </h2>
+          <p class="se-editorial-foundation-about-text">
+            Signal Earth is an independent environmental research initiative exploring how our planet changes through satellite observations, open environmental datasets, and reproducible scientific analysis. We investigate atmospheric, hydrological, and land surface processes with zero sponsored bias.
+          </p>
+          <div style="margin-top: 1.25rem;">
+            <a href="about.html" class="se-editorial-inline-link">
+              Read about the initiative &amp; governance &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Areas of Focus (3-Column Discipline Grid) -->
+        <div class="se-editorial-section-header" style="margin-bottom: 2rem;">
+          <span class="se-editorial-kicker">Research Scope</span>
+          <h3 class="se-editorial-section-title" style="font-size: 1.65rem;">
+            Areas of Focus
+          </h3>
         </div>
 
         <div class="se-editorial-focus-grid">
           <!-- 01 -->
           <div class="se-editorial-focus-item">
             <span class="se-editorial-focus-num">01</span>
-            <h3 class="se-editorial-focus-title">Air Quality</h3>
+            <h4 class="se-editorial-focus-title">Air Quality</h4>
             <p class="se-editorial-focus-desc">
-              Particulate pollution, monitoring data, and atmospheric patterns.
+              Particulate pollution dynamics, continuous CAAQMS telemetry, meteorological boundary layer interactions, and seasonal aerosol multipliers.
             </p>
           </div>
 
           <!-- 02 -->
           <div class="se-editorial-focus-item">
             <span class="se-editorial-focus-num">02</span>
-            <h3 class="se-editorial-focus-title">Land Surface Temperature</h3>
+            <h4 class="se-editorial-focus-title">Land Surface Temperature</h4>
             <p class="se-editorial-focus-desc">
-              Satellite-derived temperature patterns, land cover, and urban heat islands.
+              High-resolution satellite radiometry, urban heat island zoning, impervious surface warming, and riparian cooling buffer dynamics.
             </p>
           </div>
 
           <!-- 03 -->
           <div class="se-editorial-focus-item">
             <span class="se-editorial-focus-num">03</span>
-            <h3 class="se-editorial-focus-title">Earth Observation &amp; Open Data</h3>
+            <h4 class="se-editorial-focus-title">Earth Observation &amp; Open Data</h4>
             <p class="se-editorial-focus-desc">
-              Satellite imagery, environmental datasets, and reproducible analysis.
+              Public sensor archives from NASA, ESA, USGS, and CPCB paired with documented, fully reproducible Python processing workflows.
             </p>
           </div>
         </div>
-      </div>
-    </section>
 
-    <hr class="se-editorial-divider">
+        <!-- Evidence Before Opinion (Principles Bar) -->
+        <div class="se-editorial-foundation-principles">
+          <div class="se-editorial-section-header" style="margin-bottom: 1.5rem;">
+            <h3 class="se-editorial-section-title" style="font-size: 1.55rem; margin-bottom: 0.5rem;">
+              Evidence before opinion.
+            </h3>
+            <p class="se-editorial-section-intro">
+              Environmental change deserves more than headlines. Signal Earth operates on three core commitments to scientific integrity:
+            </p>
+          </div>
 
-    <!-- Research Principles: Evidence before opinion -->
-    <section class="se-editorial-section" aria-labelledby="principles-heading">
-      <div class="se-editorial-container">
-        <div class="se-editorial-principles-wrap">
-          <h2 id="principles-heading" class="se-editorial-section-title">
-            Evidence before opinion.
-          </h2>
-          <p class="se-editorial-principles-intro">
-            Environmental change deserves more than headlines. Signal Earth works with documented sources, transparent methods, and reproducible analysis to make complex environmental patterns easier to understand.
-          </p>
           <div class="se-editorial-principles-bar" role="list">
             <div class="se-editorial-principle-item" role="listitem">Traceable Sources</div>
             <div class="se-editorial-principle-divider" aria-hidden="true"></div>
             <div class="se-editorial-principle-item" role="listitem">Transparent Methods</div>
             <div class="se-editorial-principle-divider" aria-hidden="true"></div>
             <div class="se-editorial-principle-item" role="listitem">Reproducible Analysis</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="se-editorial-divider">
-
-    <!-- About Signal Earth -->
-    <section class="se-editorial-section" aria-labelledby="about-heading">
-      <div class="se-editorial-container">
-        <div class="se-editorial-about-wrap">
-          <h2 id="about-heading" class="se-editorial-section-title">
-            About Signal Earth
-          </h2>
-          <p class="se-editorial-about-text">
-            Signal Earth is an independent environmental research initiative exploring how our planet changes through satellite observations, environmental data, and scientific analysis.
-          </p>
-          <div>
-            <a href="about.html" class="se-editorial-inline-link">
-              About the project &rarr;
-            </a>
           </div>
         </div>
       </div>
@@ -533,20 +530,5 @@
     </div>
   </footer>
 
-  <!-- Theme Toggle Interaction Script -->
-  <script>
-    (function() {
-      const toggleBtn = document.getElementById('se-theme-toggle');
-      if (!toggleBtn) return;
-      toggleBtn.addEventListener('click', function() {
-        const current = document.documentElement.getAttribute('data-theme') || 'light';
-        const next = current === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', next);
-        try {
-          localStorage.setItem('signal-earth-theme', next);
-        } catch (e) {}
-      });
-    })();
-  </script>
 </body>
 </html>
