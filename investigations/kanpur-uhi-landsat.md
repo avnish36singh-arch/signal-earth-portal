@@ -1,27 +1,27 @@
-# Intra-Urban Thermal Zoning: Landsat 8/9 TIRS-2 Spatial Detail Over Kanpur
+# Intra-Urban Thermal Zoning: Landsat 8/9 Spatial Detail Over Kanpur
 
 **Signal Earth &middot; Investigation 04**  
 *Satellite Earth Observation, Thermal Infrared Radiometry, and Multi-Scale Urban Heat Island Dynamics*  
-**Author**: Avnish Singh, B.Tech Environmental Engineering, Harcourt Butler Technical University (HBTU), Kanpur  
-**Affiliation**: Signal Earth Environmental Research Suite  
+**Author**: Avnish Singh, Civil Engineering undergraduate, Harcourt Butler Technical University (HBTU), Kanpur, focusing on environmental engineering  
+**Affiliation**: Signal Earth  
 **Geographic Domain**: Kanpur Metropolitan Basin ($26.4499^\circ\text{N}, 80.3319^\circ\text{E}$), Central Indo-Gangetic Plain, Uttar Pradesh, India  
-**Temporal Window**: July 1, 2021 – October 31, 2022 (Landsat 8 & Landsat 9 Multi-Seasonal Acquisitions)  
+**Temporal Window**: July 1, 2021 – October 31, 2022 (Landsat 8 TIRS & Landsat 9 TIRS-2 Acquisitions)  
 **Parent Investigation**: [Investigation 03: Seven-Year Multi-Scale MERRA-2 & CAAQMS Inversion Climatology (2017–2023)](../reports/Kanpur_LST_Analysis_Report.md)
 
 ---
 
 ## Executive Summary
 
-Landsat 8 and 9 thermal radiometry at 30-meter spatial resolution reveals intense intra-urban thermal structuring across the Kanpur metropolitan basin that is entirely masked by coarse atmospheric reanalysis grids. 
+Landsat 8 (TIRS) and 9 (TIRS-2) thermal radiometry (100m native resampled by USGS to 30 meters) reveals intra-urban thermal structuring across the Kanpur metropolitan basin that coarse atmospheric reanalysis grids cannot resolve.
 
-In this investigation, ten cloud-free satellite acquisitions captured by the Thermal Infrared Sensor 2 (TIRS-2) across four distinct seasons (July 2021 to October 2022) were radiometrically calibrated and processed into Land Surface Skin Temperature ($T_{\text{skin}}$) fields. Concentric microclimate zones centered on Kanpur ($26.4499^\circ\text{N}, 80.3319^\circ\text{E}$) were evaluated across an Urban Core ($< 5\text{ km}$), a Suburban Ring ($5\text{--}15\text{ km}$), and a Rural Baseline Periphery ($> 15\text{ km}$).
+In this investigation, available cloud-free satellite acquisitions across four distinct seasons (July 2021 to October 2022) were radiometrically calibrated and processed into Land Surface Skin Temperature ($T_{\text{skin}}$) fields. Concentric microclimate zones centered on Kanpur ($26.4499^\circ\text{N}, 80.3319^\circ\text{E}$) were evaluated across an Urban Core ($< 5\text{ km}$), a Suburban Ring ($5\text{--}15\text{ km}$), and a Rural Baseline Periphery ($> 15\text{ km}$).
 
 ### Key Quantitative Findings:
 
-1. **Winter Dry UHI Peak**: During peak winter conditions (January 15, 2022), the mean skin temperature of the Kanpur Urban Core reached **$291.55\text{ K}$ ($18.40^\circ\text{C}$)** compared to **$287.95\text{ K}$ ($14.80^\circ\text{C}$)** in the rural periphery, establishing an Urban Heat Island Intensity (UHII) of **$+3.60\text{ K}$ ($+3.60^\circ\text{C}$)**.
-2. **Pre-Monsoon Extreme Heat Island**: In peak pre-monsoon summer (May 15, 2022), intense solar superheating drove the Urban Core skin temperature to **$317.45\text{ K}$ ($44.30^\circ\text{C}$)** (with localized asphalt hot-spots exceeding $321.2\text{ K} / 48.0^\circ\text{C}$), generating an urban-rural thermal gradient of **$+3.50\text{ K}$**.
-3. **Severe Spatial Masking by Coarse Reanalysis (MERRA-2 Discrepancy)**: A single $0.5^\circ \times 0.625^\circ$ ($55 \times 60\text{ km}$) NASA POWER / MERRA-2 grid cell over Kanpur averages to **$289.35\text{ K}$ ($16.20^\circ\text{C}$)** in winter. Within that exact same geographic footprint, high-resolution 30m Landsat radiometry reveals an intra-urban thermal spread spanning from **$286.8\text{ K}$** (Ganga riparian cooling corridor) to **$293.9\text{ K}$** (dense core masonry)—exposing an internal microclimate heterogeneity of **$7.10\text{ K}$** that coarse reanalysis completely erases.
-4. **Thermodynamic Coupling with Winter Boundary Layer Inversions**: The $+3.60\text{ K}$ thermal excess of the built environment modifies the local nocturnal surface energy budget, creating a localized convective thermal dome that interacts with the regional subsidence inversion, entraining particulate matter ($\text{PM}_{2.5} > 250\ \mu\text{g/m}^3$) within a shallow ($< 250\text{ m}$) boundary layer.
+1. **Winter Dry UHI Snapshot**: Based on winter snapshot observation (January 15, 2022), the mean skin temperature of the Kanpur Urban Core reached **$291.55\text{ K}$ ($18.40^\circ\text{C}$)** compared to **$287.95\text{ K}$ ($14.80^\circ\text{C}$)** in the rural periphery, recording an Urban Heat Island Intensity (UHII) of **$+3.60\text{ K}$ ($+3.60^\circ\text{C}$)**.
+2. **Pre-Monsoon Extreme Heat Island**: In peak pre-monsoon summer (May 15, 2022), intense solar insolation drove the Urban Core skin temperature to **$317.45\text{ K}$ ($44.30^\circ\text{C}$)**, generating an urban-rural thermal gradient of **$+3.50\text{ K}$**.
+3. **Spatial Scale Dissonance (MERRA-2 Comparison)**: A single $0.5^\circ \times 0.625^\circ$ ($55 \times 60\text{ km}$) NASA POWER / MERRA-2 grid cell over Kanpur averages to **$289.35\text{ K}$ ($16.20^\circ\text{C}$)** on this date. High-resolution 30m Landsat radiometry reveals an intra-urban thermal spread spanning from **$286.8\text{ K}$** (Ganga riparian cooling corridor) to **$293.9\text{ K}$** (dense core masonry)—exposing an internal range between extreme pixels of **$7.10\text{ K}$** that coarse reanalysis cannot resolve.
+4. **Hypothesis on Boundary Layer Interactions**: It is hypothesized that the positive thermal excess of the built environment may interact with the regional nocturnal boundary layer, though in-situ atmospheric soundings are required to test convective micro-cell circulations.
 
 ---
 

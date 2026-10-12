@@ -1,0 +1,253 @@
+import csv
+
+ledger = [
+    {
+        'Number as published': '1,628 station-days',
+        'Page and sentence where it appears': 'index.html (Hero stat), investigations/kanpur.html (Section 01, Evidence), research.html',
+        'Script and function that produces it': 'kanpur_air_quality/01_clean_merge.py (len(df))',
+        'Input file and date it was generated': 'data/kanpur/daily_aggregated.csv (2026-08-10)',
+        'Result when you rerun the script today': '1,628 (Kalyanpur: 815, Nehru Nagar: 813)',
+        'Match? (yes / no / can’t reproduce)': 'yes',
+        'Action (keep / relabel / remove)': 'keep'
+    },
+    {
+        'Number as published': '2.40x',
+        'Page and sentence where it appears': 'index.html (Hero anchor), investigations/kanpur.html (Executive Summary: winter PM2.5 averaged 2.4 times monsoon level across both windows), research.html',
+        'Script and function that produces it': 'kanpur_air_quality/02_analysis.py (mean Dec-Feb / mean Jun-Sep across both windows)',
+        'Input file and date it was generated': 'data/kanpur/daily_aggregated.csv (2026-08-10)',
+        'Result when you rerun the script today': '2.40x (61.41 ug/m3 vs 25.61 ug/m3; ratio 2.3976)',
+        'Match? (yes / no / can’t reproduce)': 'yes',
+        'Action (keep / relabel / remove)': 'keep'
+    },
+    {
+        'Number as published': '2.93x',
+        'Page and sentence where it appears': 'investigations/kanpur.html (Section 02: 2.9 times in 2021-22), index.html',
+        'Script and function that produces it': 'kanpur_air_quality/02_analysis.py (Window 1 Dec-Feb / Jun-Sep)',
+        'Input file and date it was generated': 'data/kanpur/daily_aggregated.csv (2026-08-10)',
+        'Result when you rerun the script today': '2.93x (76.26 ug/m3 vs 26.05 ug/m3; ratio 2.9275)',
+        'Match? (yes / no / can’t reproduce)': 'yes',
+        'Action (keep / relabel / remove)': 'keep'
+    },
+    {
+        'Number as published': '2.25x',
+        'Page and sentence where it appears': 'investigations/kanpur.html (Section 02: 2.3 times in 2025-26), index.html',
+        'Script and function that produces it': 'kanpur_air_quality/02_analysis.py (Window 2 Dec-Feb / Jun-Sep)',
+        'Input file and date it was generated': 'data/kanpur/daily_aggregated.csv (2026-08-10)',
+        'Result when you rerun the script today': '2.25x (57.41 ug/m3 vs 25.48 ug/m3; ratio 2.2530)',
+        'Match? (yes / no / can’t reproduce)': 'yes',
+        'Action (keep / relabel / remove)': 'keep'
+    },
+    {
+        'Number as published': '3.56x',
+        'Page and sentence where it appears': 'investigations/kanpur.html (Section 02: peak haze Nov-Jan against Jul-Sep is 3.6 times across both windows)',
+        'Script and function that produces it': 'kanpur_air_quality/02_analysis.py (mean Nov-Jan / mean Jul-Sep across both windows)',
+        'Input file and date it was generated': 'data/kanpur/daily_aggregated.csv (2026-08-10)',
+        'Result when you rerun the script today': '3.56x (76.47 ug/m3 vs 21.51 ug/m3; ratio 3.5556)',
+        'Match? (yes / no / can’t reproduce)': 'yes',
+        'Action (keep / relabel / remove)': 'keep'
+    },
+    {
+        'Number as published': '5.14x',
+        'Page and sentence where it appears': 'investigations/kanpur.html (Section 02: In 2021-22 it reached 5.1 times), index.html',
+        'Script and function that produces it': 'kanpur_air_quality/02_analysis.py (Window 1 Nov-Jan / Jul-Sep)',
+        'Input file and date it was generated': 'data/kanpur/daily_aggregated.csv (2026-08-10)',
+        'Result when you rerun the script today': '5.14x (96.07 ug/m3 vs 18.69 ug/m3; ratio 5.1398)',
+        'Match? (yes / no / can’t reproduce)': 'yes',
+        'Action (keep / relabel / remove)': 'keep'
+    },
+    {
+        'Number as published': '3.01x',
+        'Page and sentence where it appears': 'investigations/kanpur.html (Section 02: in 2025-26 it was 3.0 times)',
+        'Script and function that produces it': 'kanpur_air_quality/02_analysis.py (Window 2 Nov-Jan / Jul-Sep)',
+        'Input file and date it was generated': 'data/kanpur/daily_aggregated.csv (2026-08-10)',
+        'Result when you rerun the script today': '3.01x (67.74 ug/m3 vs 22.50 ug/m3; ratio 3.0108)',
+        'Match? (yes / no / can’t reproduce)': 'yes',
+        'Action (keep / relabel / remove)': 'keep'
+    },
+    {
+        'Number as published': '4.76x',
+        'Page and sentence where it appears': 'investigations/kanpur.html (Section 02: pooled calendar months 4.76x Nov-to-Aug ratio), investigations/comparison.html',
+        'Script and function that produces it': 'kanpur_air_quality/02_analysis.py (mean Nov / mean Aug)',
+        'Input file and date it was generated': 'data/kanpur/daily_aggregated.csv (2026-08-10)',
+        'Result when you rerun the script today': '4.76x (91.49 ug/m3 vs 19.20 ug/m3; ratio 4.7641)',
+        'Match? (yes / no / can’t reproduce)': 'yes',
+        'Action (keep / relabel / remove)': 'keep'
+    },
+    {
+        'Number as published': '6.19x',
+        'Page and sentence where it appears': 'investigations/kanpur.html (Section 02: Window 1 peak month Nov to minimum month Aug ratio of 6.19x)',
+        'Script and function that produces it': 'kanpur_air_quality/02_analysis.py (Window 1 Nov / Aug)',
+        'Input file and date it was generated': 'data/kanpur/daily_aggregated.csv (2026-08-10)',
+        'Result when you rerun the script today': '6.19x (121.18 ug/m3 vs 19.58 ug/m3; ratio 6.1889)',
+        'Match? (yes / no / can’t reproduce)': 'yes',
+        'Action (keep / relabel / remove)': 'keep'
+    },
+    {
+        'Number as published': '855 days',
+        'Page and sentence where it appears': 'investigations/kanpur.html (Executive Summary: between the two windows there are 855 days with no data)',
+        'Script and function that produces it': 'kanpur_air_quality/01_clean_merge.py (date math: 2025-02-18 minus 2022-10-16 minus 1)',
+        'Input file and date it was generated': 'data/kanpur/daily_aggregated.csv (2026-08-10)',
+        'Result when you rerun the script today': '855 days',
+        'Match? (yes / no / can’t reproduce)': 'yes',
+        'Action (keep / relabel / remove)': 'keep'
+    },
+    {
+        'Number as published': '1,137 days',
+        'Page and sentence where it appears': 'index.html (Delhi card), investigations/delhi.html (Executive Summary: 1,137 days that satisfy CPCB quorum), explained/cpcb-naqi.html, factsheets.html',
+        'Script and function that produces it': 'enviornment_rajivgangulaly/scripts/export_web_data.py (len(df[df["AQI_Official"] == True]))',
+        'Input file and date it was generated': 'data/cleaned.json (2026-09-15)',
+        'Result when you rerun the script today': '1,137 days',
+        'Match? (yes / no / can’t reproduce)': 'yes',
+        'Action (keep / relabel / remove)': 'keep'
+    },
+    {
+        'Number as published': '1,133 days',
+        'Page and sentence where it appears': 'investigations/delhi.html (Executive Summary: 1,133 days with valid PM2.5 daily observations)',
+        'Script and function that produces it': 'enviornment_rajivgangulaly/scripts/export_web_data.py (len(df[(df["AQI_Official"] == True) & df["PM2.5"].notna()]))',
+        'Input file and date it was generated': 'data/cleaned.json (2026-09-15)',
+        'Result when you rerun the script today': '1,133 days',
+        'Match? (yes / no / can’t reproduce)': 'yes',
+        'Action (keep / relabel / remove)': 'keep'
+    },
+    {
+        'Number as published': '1,825 records',
+        'Page and sentence where it appears': 'investigations/delhi.html (Executive Summary: analyzes 1,825 daily records from Alipur)',
+        'Script and function that produces it': 'enviornment_rajivgangulaly/scripts/export_web_data.py (len(df))',
+        'Input file and date it was generated': 'enviornment_rajivgangulaly/data/processed/air_quality_clean.csv (2026-09-15)',
+        'Result when you rerun the script today': '1,825 records (5 calendar years: 2017, 2018, 2021, 2022, 2023)',
+        'Match? (yes / no / can’t reproduce)': 'yes',
+        'Action (keep / relabel / remove)': 'keep'
+    },
+    {
+        'Number as published': '731 days',
+        'Page and sentence where it appears': 'investigations/delhi.html (Executive Summary: operational refurbishment created an unmonitored gap of 731 days)',
+        'Script and function that produces it': 'Date math: 2021-01-01 minus 2018-12-31 minus 1 (365 days in 2019 + 366 days in 2020)',
+        'Input file and date it was generated': 'enviornment_rajivgangulaly/data/processed/air_quality_clean.csv',
+        'Result when you rerun the script today': '731 days',
+        'Match? (yes / no / can’t reproduce)': 'yes',
+        'Action (keep / relabel / remove)': 'keep'
+    },
+    {
+        'Number as published': '88.4%',
+        'Page and sentence where it appears': 'index.html (stat-num 88.4%), investigations/delhi.html (Section 03), explained/cpcb-naqi.html, factsheets.html',
+        'Script and function that produces it': 'None (originated in written draft text; pipeline script Dominant_Pollutant.value_counts() produces PM2.5 on 589/1,137 days = 51.8% and PM10 on 494/1,137 days = 43.4%)',
+        'Input file and date it was generated': 'None (drafted text artifact)',
+        'Result when you rerun the script today': '51.8% for PM2.5 alone; 95.3% for combined particulate (PM2.5 + PM10 = 1,083 out of 1,137 days)',
+        'Match? (yes / no / can’t reproduce)': 'can’t reproduce',
+        'Action (keep / relabel / remove)': 'remove (relabel site text to verified script output: particulate matter drove official AQI on 95.3% of days, with PM2.5 dominant on 51.8% and PM10 on 43.4%)'
+    },
+    {
+        'Number as published': '1,005 days',
+        'Page and sentence where it appears': 'investigations/delhi.html (Section 03: 1,005 out of 1,137), explained/cpcb-naqi.html, factsheets.html',
+        'Script and function that produces it': 'None (written draft artifact; 1,005/1,137 = 88.39%)',
+        'Input file and date it was generated': 'None',
+        'Result when you rerun the script today': '589 days (PM2.5 alone), 494 days (PM10), 1,083 days (combined PM2.5+PM10)',
+        'Match? (yes / no / can’t reproduce)': 'can’t reproduce',
+        'Action (keep / relabel / remove)': 'remove'
+    },
+    {
+        'Number as published': '5.75x',
+        'Page and sentence where it appears': 'index.html, investigations/delhi.html (Section 02: 5.75-fold seasonal surge multiplier; 197.5 vs 34.3 ug/m3), research.html, comparison.html, factsheets.html',
+        'Script and function that produces it': 'air_quality_clean.csv seasonal aggregation: Peak haze (Nov-Jan mean = 197.51 ug/m3) vs core monsoon (Jul-Sep mean = 34.32 ug/m3) = 5.755x. Text erroneously labeled NDJ as "winter mean" / "November" and JAS as "July and August". Meteorological winter (Dec-Feb, 166.61 ug/m3) vs monsoon (Jun-Sep, 39.17 ug/m3) is 4.25x.',
+        'Input file and date it was generated': 'enviornment_rajivgangulaly/data/processed/air_quality_clean.csv (2026-09-15)',
+        'Result when you rerun the script today': '5.75x (Nov-Jan vs Jul-Sep); 4.25x (Dec-Feb vs Jun-Sep)',
+        'Match? (yes / no / can’t reproduce)': 'yes',
+        'Action (keep / relabel / remove)': 'relabel (clarify that 5.75x represents peak haze Nov-Jan vs core monsoon Jul-Sep; standard winter-to-monsoon is 4.25x)'
+    },
+    {
+        'Number as published': 'r = -0.455',
+        'Page and sentence where it appears': 'index.html (stat-num r = -0.455), investigations/kanpur-lst.html (Section 03), research.html, methodology.html, pipeline_lst/spatial_kanpur_gis.py',
+        'Script and function that produces it': 'pipeline_lst/spatial_kanpur_gis.py (plot_04_lst_inversion_pm25_coupling: df_power["LST_Skin_C"].corr(daily_pm["pm25"]))',
+        'Input file and date it was generated': 'data/lst/kanpur_nasa_power_daily.csv and data/kanpur/daily_aggregated.csv (2026-09-15)',
+        'Result when you rerun the script today': 'r = -0.4551 (n = 308, p = 2.47e-16)',
+        'Match? (yes / no / can’t reproduce)': 'yes',
+        'Action (keep / relabel / remove)': 'keep'
+    },
+    {
+        'Number as published': '308 daily pairs',
+        'Page and sentence where it appears': 'investigations/kanpur-lst.html (Section 03: concurrent window Jul 9, 2021 to Oct 16, 2022; n = 308 pairs)',
+        'Script and function that produces it': 'pipeline_lst/spatial_kanpur_gis.py (inner merge of df_power and Window 1 daily_pm)',
+        'Input file and date it was generated': 'data/lst/kanpur_nasa_power_daily.csv and data/kanpur/daily_aggregated.csv',
+        'Result when you rerun the script today': '308 daily pairs',
+        'Match? (yes / no / can’t reproduce)': 'yes',
+        'Action (keep / relabel / remove)': 'keep'
+    },
+    {
+        'Number as published': '2,556 days',
+        'Page and sentence where it appears': 'investigations/kanpur-lst.html (Executive Summary: seven years of daily reanalysis records 2017 to 2023)',
+        'Script and function that produces it': 'pipeline_lst/fetch_nasa_power.py (len(df))',
+        'Input file and date it was generated': 'data/lst/kanpur_nasa_power_daily.csv (2026-09-15)',
+        'Result when you rerun the script today': '2,556 days (7 years: 2017-2023)',
+        'Match? (yes / no / can’t reproduce)': 'yes',
+        'Action (keep / relabel / remove)': 'keep'
+    },
+    {
+        'Number as published': '218 days',
+        'Page and sentence where it appears': 'investigations/kanpur-lst.html (Section 04: ventilation coefficient plunges below 2,000 m2/s across 218 observed days), methodology.html',
+        'Script and function that produces it': 'None in Kanpur pipeline (cross-contamination leak from delhi_summary_kpis.json which records 218 severe winter days in Delhi)',
+        'Input file and date it was generated': 'Draft leak from delhi_summary_kpis.json',
+        'Result when you rerun the script today': 'can’t reproduce (proxy formula in thermal_metrics.py does not yield 218 days)',
+        'Match? (yes / no / can’t reproduce)': 'can’t reproduce',
+        'Action (keep / relabel / remove)': 'remove'
+    },
+    {
+        'Number as published': '+3.60 K',
+        'Page and sentence where it appears': 'investigations/kanpur-uhi.html (Summary & Table: Jan 15, 2022 peak winter UHI +3.60 K), investigations/kanpur-uhi-landsat.md',
+        'Script and function that produces it': 'External draft table; referenced scripts kanpur_uhi_analysis.py and generate_investigation_04_assets.py do not exist in repo',
+        'Input file and date it was generated': 'Draft table (2026-10-05)',
+        'Result when you rerun the script today': 'can’t reproduce from repository scripts',
+        'Match? (yes / no / can’t reproduce)': 'can’t reproduce',
+        'Action (keep / relabel / remove)': 'relabel (downgrade from seasonal climate to two-scene snapshot observation: Jan 15 and Feb 16, 2022)'
+    },
+    {
+        'Number as published': '3.8 °C',
+        'Page and sentence where it appears': 'investigations/kanpur-uhi.html (Section 04: MERRA-2 underestimates peak thermal exposure by 2.2°C to 3.8°C; Fig 1 caption: dense Core +3.8 K), investigations/kanpur-uhi-landsat.md',
+        'Script and function that produces it': 'None (table implies core minus MERRA-2 is 1.0 to 2.3 °C; no calculation yields 3.8 °C)',
+        'Input file and date it was generated': 'Written draft',
+        'Result when you rerun the script today': 'can’t reproduce',
+        'Match? (yes / no / can’t reproduce)': 'can’t reproduce',
+        'Action (keep / relabel / remove)': 'remove'
+    },
+    {
+        'Number as published': '7.10 K spread',
+        'Page and sentence where it appears': 'investigations/kanpur-uhi.html (Summary, Table, Fig 4 caption: 7.10 K internal thermal gradient), investigations/kanpur-uhi-landsat.md',
+        'Script and function that produces it': 'Raw max-minus-min extreme pixel difference (293.9 K minus 286.8 K) in draft table; no script or 5th-95th percentile computed',
+        'Input file and date it was generated': 'Written draft',
+        'Result when you rerun the script today': 'can’t reproduce percentile distribution without raw raster',
+        'Match? (yes / no / can’t reproduce)': 'can’t reproduce',
+        'Action (keep / relabel / remove)': 'relabel (label as "range of extreme pixels across draft scene"; remove from headline claims)'
+    },
+    {
+        'Number as published': '3.2 million population',
+        'Page and sentence where it appears': 'investigations/kanpur-uhi.html (Section 04: Kanpur\'s 3.2 million urban residents), investigations/kanpur-uhi-landsat.md',
+        'Script and function that produces it': 'None (uncited draft estimate; Census 2011 reports Kanpur Municipal Corporation as 2.77 million and district as 4.58 million)',
+        'Input file and date it was generated': 'Written draft',
+        'Result when you rerun the script today': 'can’t reproduce 3.2M without citation',
+        'Match? (yes / no / can’t reproduce)': 'can’t reproduce',
+        'Action (keep / relabel / remove)': 'remove (replace with cited Census 2011: 2.77 million municipal corporation)'
+    },
+    {
+        'Number as published': '250 m inversion & buoyant thermal dome',
+        'Page and sentence where it appears': 'investigations/kanpur-uhi.html (Section 05), investigations/kanpur-uhi-landsat.md',
+        'Script and function that produces it': 'None (conceptual hypothesis; no atmospheric sounding or vertical profile measurements exist in repo)',
+        'Input file and date it was generated': 'Written draft',
+        'Result when you rerun the script today': 'can’t reproduce',
+        'Match? (yes / no / can’t reproduce)': 'can’t reproduce',
+        'Action (keep / relabel / remove)': 'remove causal claims and relabel explicitly as hypothesis'
+    }
+]
+
+with open('numbers_ledger.csv', 'w', newline='', encoding='utf-8') as f:
+    writer = csv.DictWriter(f, fieldnames=[
+        'Number as published',
+        'Page and sentence where it appears',
+        'Script and function that produces it',
+        'Input file and date it was generated',
+        'Result when you rerun the script today',
+        'Match? (yes / no / can’t reproduce)',
+        'Action (keep / relabel / remove)'
+    ])
+    writer.writeheader()
+    writer.writerows(ledger)
+
+print(f"numbers_ledger.csv successfully generated with {len(ledger)} entries!")

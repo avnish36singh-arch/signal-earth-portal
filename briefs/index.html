@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Briefs | Signal Earth</title>
+  <meta name="description" content="Concise, 600-word research briefs answering core questions about air quality and surface temperature across Kanpur and Delhi.">
+  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/briefs/index.html">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta property="og:title" content="Research Briefs | Signal Earth">
+  <meta property="og:description" content="Two-layer architecture: concise research briefs linked directly to technical data pipelines.">
+  <meta property="og:url" content="https://avnish36singh-arch.github.io/signal-earth-portal/briefs/index.html">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header>
+    <nav class="se-nav" aria-label="Main Navigation">
+      <div class="se-nav-inner">
+        <a href="../index.html" class="se-brand">
+          <span class="se-brand-name">Signal Earth</span>
+          <span class="se-brand-sub">Independent Research</span>
+        </a>
+
+        <ul class="se-nav-links">
+          <li><a href="../research.html">Research</a></li>
+          <li><a href="index.html" class="active">Briefs</a></li>
+          <li><a href="../explained/index.html">Explained</a></li>
+          <li><a href="../data.html">Data &amp; Code</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="se-container se-page-content">
+    <header class="se-header-mb">
+      <span class="section-kicker">Layer One : Executive Summaries</span>
+      <h1 class="editorial-headline se-headline-clamp">
+        Research Briefs
+      </h1>
+      <p class="se-hero-dek">
+        Each brief distills a full technical investigation into a 600-word summary: the question, the direct answer, the empirical evidence, what the data shows, what it cannot show, and why it matters.
+      </p>
+    </header>
+
+    <div class="se-grid-cards">
+      <!-- Brief 1 -->
+      <article class="se-card">
+        <div class="se-card-img-wrap">
+          <img src="../assets/kanpur/01_timeseries.png" alt="Kanpur daily PM2.5 time series" width="900" height="450" loading="lazy">
+        </div>
+        <div class="se-card-body">
+          <span class="se-card-label">Brief 01 &middot; Kanpur Particulate Dynamics</span>
+          <h2 class="se-card-title">
+            <a href="kanpur-winter-ratio.html">How much worse is Kanpur’s winter air than its monsoon air?</a>
+          </h2>
+          <p class="se-card-dek">
+            Winter PM2.5 in Kanpur was between 2.4 and 5.1 times the monsoon level across two monitoring windows, with 48.9% of winter station-days exceeding statutory standards.
+          </p>
+          <div class="se-card-meta">
+            <div><strong>Period:</strong> 2021–22, 2025–26 (1,628 station-days, 855-day gap)</div>
+            <div><strong>Data Source:</strong> CPCB / UPPCB via OpenAQ v3</div>
+          </div>
+          <div class="se-card-caveat">
+            <strong>Key Caveat:</strong> Two stations only; 2.3-year unmonitored hiatus precludes multi-year trend verification.
+          </div>
+          <div class="se-card-actions">
+            <a href="kanpur-winter-ratio.html" class="se-btn">Read the brief</a>
+            <a href="../investigations/kanpur.html" class="se-btn se-btn-outline">Full analysis &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Brief 2 -->
+      <article class="se-card">
+        <div class="se-card-img-wrap">
+          <img src="../assets/delhi/04_dominant_pollutants.png" alt="Delhi dominant criteria pollutants bar chart" width="900" height="450" loading="lazy">
+        </div>
+        <div class="se-card-body">
+          <span class="se-card-label">Brief 02 &middot; Delhi Regulatory Science</span>
+          <h2 class="se-card-title">
+            <a href="delhi-criteria-dominance.html">Which pollutant really controls Delhi's daily Air Quality Index?</a>
+          </h2>
+          <p class="se-card-dek">
+            Particulate matter (PM2.5 or PM10) governed the official daily AQI on 95.3% of valid monitoring days, while gaseous pollutants virtually never dictated the headline score in winter.
+          </p>
+          <div class="se-card-meta">
+            <div><strong>Period:</strong> 2017 to 2023 (1,137 official days, 731-day hiatus)</div>
+            <div><strong>Data Source:</strong> CPCB / DPCC Site 204 (Delhi Alipur)</div>
+          </div>
+          <div class="se-card-caveat">
+            <strong>Key Caveat:</strong> Single northern peripheral station along NH-44 highway freight corridor.
+          </div>
+          <div class="se-card-actions">
+            <a href="delhi-criteria-dominance.html" class="se-btn">Read the brief</a>
+            <a href="../investigations/delhi.html" class="se-btn se-btn-outline">Full analysis &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Brief 3 -->
+      <article class="se-card">
+        <div class="se-card-img-wrap">
+          <img src="../assets/lst/04_lst_inversion_coupling_pm25.png" alt="Skin temperature versus PM2.5 in Kanpur" width="900" height="450" loading="lazy">
+        </div>
+        <div class="se-card-body">
+          <span class="se-card-label">Brief 03 &middot; Atmospheric Thermal Association</span>
+          <h2 class="se-card-title">
+            <a href="kanpur-temperature-association.html">Does colder weather actually drive higher air pollution in Kanpur?</a>
+          </h2>
+          <p class="se-card-dek">
+            Surface skin temperature exhibits a moderate negative correlation with PM2.5 (r = -0.455 across 308 pairs), reflecting shared regional seasonal cycles rather than direct causation.
+          </p>
+          <div class="se-card-meta">
+            <div><strong>Period:</strong> Jul 2021 to Oct 2022 (n = 308 concurrent pairs)</div>
+            <div><strong>Data Source:</strong> NASA POWER MERRA-2 and UPPCB CAAQMS</div>
+          </div>
+          <div class="se-card-caveat">
+            <strong>Key Caveat:</strong> Coarse ~55 &times; 60 km reanalysis cell; statistical correlation with temporal autocorrelation.
+          </div>
+          <div class="se-card-actions">
+            <a href="kanpur-temperature-association.html" class="se-btn">Read the brief</a>
+            <a href="../investigations/kanpur-lst.html" class="se-btn se-btn-outline">Full analysis &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Brief 4 -->
+      <article class="se-card">
+        <div class="se-card-img-wrap">
+          <img src="../assets/kanpur-uhi/kanpur-uhi-comparison-merra2.png" alt="MERRA-2 versus Landsat thermal comparison" width="900" height="450" loading="lazy">
+        </div>
+        <div class="se-card-body">
+          <span class="se-card-label">Brief 04 &middot; Satellite Radiometry</span>
+          <h2 class="se-card-title">
+            <a href="kanpur-landsat-thermal-snapshot.html">How much warmer is Kanpur's built core than surrounding fields?</a>
+          </h2>
+          <p class="se-card-dek">
+            In clear-sky satellite passes, Kanpur's urban core reached +3.60 K above the rural periphery in winter, unmasking microclimates that coarse reanalysis cannot resolve.
+          </p>
+          <div class="se-card-meta">
+            <div><strong>Period:</strong> 2021–2022 clear-sky satellite acquisitions</div>
+            <div><strong>Data Source:</strong> USGS Landsat 8/9 C2 L2 Surface Temperature</div>
+          </div>
+          <div class="se-card-caveat">
+            <strong>Key Caveat:</strong> Mid-morning snapshot passes across two winter scenes; radiometric skin temperature, not air temperature.
+          </div>
+          <div class="se-card-actions">
+            <a href="kanpur-landsat-thermal-snapshot.html" class="se-btn">Read the brief</a>
+            <a href="../investigations/kanpur-uhi.html" class="se-btn se-btn-outline">Full analysis &rarr;</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="se-footer">
+    <div class="se-container">
+      <div class="se-footer-inner">
+        <div class="se-footer-brand-col">
+          <div class="se-footer-brand-title">Signal Earth</div>
+          <p class="se-footer-brand-desc">
+            An independent project analysing air quality and surface temperature in Kanpur and Delhi through maps, satellite records, and open code.
+          </p>
+        </div>
+        <div class="se-footer-col">
+          <h5>Analyses</h5>
+          <ul>
+            <li><a href="../investigations/kanpur.html">Kanpur Particulate Dynamics</a></li>
+            <li><a href="../investigations/delhi.html">Delhi NAQI Analysis</a></li>
+            <li><a href="../investigations/kanpur-lst.html">Kanpur Reanalysis Temperature</a></li>
+            <li><a href="../investigations/kanpur-uhi.html">Kanpur Landsat 30m Thermal</a></li>
+          </ul>
+        </div>
+        <div class="se-footer-col">
+          <h5>Briefs</h5>
+          <ul>
+            <li><a href="kanpur-winter-ratio.html">Kanpur Winter Ratio</a></li>
+            <li><a href="delhi-criteria-dominance.html">Delhi Criteria Dominance</a></li>
+            <li><a href="kanpur-temperature-association.html">Kanpur Temperature Correlation</a></li>
+            <li><a href="kanpur-landsat-thermal-snapshot.html">Kanpur Landsat Snapshot</a></li>
+          </ul>
+        </div>
+        <div class="se-footer-col">
+          <h5>Methods &amp; Code</h5>
+          <ul>
+            <li><a href="../methodology.html">Methodology</a></li>
+            <li><a href="../data.html">Data &amp; Code</a></li>
+            <li><a href="../numbers_ledger.csv">Number Ledger</a></li>
+            <li><a href="../corrections.html">Corrections Log</a></li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="se-footer-bottom">
+        <div>Signal Earth &middot; Open Science &middot; MIT License</div>
+        <div>Page last updated: October 2026</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

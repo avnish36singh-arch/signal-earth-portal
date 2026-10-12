@@ -1,16 +1,16 @@
-# Signal Earth : Environmental Intelligence Platform
+# Signal Earth : Environmental Data & Research
 
 The Earth is changing faster than most people realize. Making environmental change visible through maps, data, and science.
 
-Founded and operated by Avnish Singh, Civil Engineering & Environmental Intelligence Researcher, HBTU Kanpur.
+Founded and operated by Avnish Singh, Civil Engineering undergraduate focusing on environmental engineering, HBTU Kanpur.
 
 Portal URL: https://avnish36singh-arch.github.io/signal-earth-portal/
 
 ## Overview
 
-Signal Earth is an independent environmental intelligence platform that transforms satellite observations, Earth remote sensing, official monitoring networks, and research records into clear, evidence-first visual intelligence. The project examines air quality data from the Central Pollution Control Board (CPCB), Uttar Pradesh Pollution Control Board (UPPCB), and Delhi Pollution Control Committee (DPCC), alongside spaceborne thermal radiometry (USGS Landsat 8/9) and skin temperature reanalysis from NASA POWER (GMAO MERRA-2).
+Signal Earth is an independent independent research project that transforms satellite observations, Earth remote sensing, official monitoring networks, and research records into clear, evidence-first visual intelligence. The project examines air quality data from the Central Pollution Control Board (CPCB), Uttar Pradesh Pollution Control Board (UPPCB), and Delhi Pollution Control Committee (DPCC), alongside spaceborne thermal radiometry (USGS Landsat 8/9) and skin temperature reanalysis from NASA POWER (GMAO MERRA-2).
 
-This platform is an independent environmental intelligence initiative, not an operational government monitoring agency and not a commercial product. All analytical code is open source and reproducible.
+This platform is an independent project analysing air quality and surface temperature in Kanpur and Delhi, not an operational government monitoring agency and not a commercial product. All analytical code is open source and reproducible.
 
 ### Research Pipelines
 

@@ -26,14 +26,14 @@
       <div class="se-nav-inner">
         <a href="../index.html" class="se-brand">
           <span class="se-brand-name">Signal Earth</span>
-          <span class="se-brand-sub">Environmental Intelligence</span>
+          <span class="se-brand-sub">Independent Research</span>
         </a>
 
         <ul class="se-nav-links">
-          <li><a href="../index.html#analyses" class="active">Analyses</a></li>
-          <li><a href="../index.html#explained">Explained</a></li>
-          <li><a href="../methodology.html">Methodology</a></li>
-          <li><a href="../data.html">Data and code</a></li>
+          <li><a href="../research.html" class="active">Research</a></li>
+          <li><a href="../briefs/index.html">Briefs</a></li>
+          <li><a href="../explained/index.html">Explained</a></li>
+          <li><a href="../data.html">Data &amp; Code</a></li>
           <li><a href="../about.html">About</a></li>
         </ul>
       </div>
@@ -50,14 +50,14 @@
         </h1>
 
         <div class="se-investigation-meta">
-          <span>By <strong>Avnish Singh</strong>, Undergraduate in Environmental Engineering, HBTU Kanpur</span>
+          <span>By <strong>Avnish Singh</strong>, Civil Engineering undergraduate, HBTU Kanpur, focusing on environmental engineering</span>
           <span>Last updated: October 2026</span>
           <span>Reading time: 9 min read</span>
         </div>
 
         <!-- 3-Sentence Summary -->
         <div class="se-summary-box">
-          This investigation processes harmonized cloud-masked USGS Landsat 8 and Landsat 9 Collection 2 Level 2 thermal infrared radiometry (TIRS-2 Band 10, 30-meter resolution) across four seasons (July 2021 to October 2022) to evaluate intra-urban Land Surface Skin Temperature (LST) and concentric Urban Heat Island (UHI) intensity over the Kanpur metropolitan basin. During peak dry winter conditions, the built-up urban core reaches 18.40°C (291.55 K) compared to 14.80°C (287.95 K) in the rural agricultural periphery, generating a net surface UHI intensity of +3.60 K (+3.60°C). By comparing these 30m pixel fields against the single 55 × 60 km MERRA-2 reanalysis grid cell evaluated in Analysis 03, we prove that coarse reanalysis completely masks a 7.10 K internal microclimate spread, underestimating true urban core thermal stress by 2.2°C to 3.8°C.
+          This investigation evaluates USGS Landsat 8 (TIRS) and Landsat 9 (TIRS-2) Collection 2 Level 2 thermal infrared radiometry (Band 10, 100m native resampled to 30 meters) over Kanpur across available cloud-free scenes (July 2021 to October 2022). Based on two winter snapshot scenes (January 15 and February 16, 2022), the high-resolution Landsat observation records an urban core skin temperature running +3.60 K above the rural agricultural periphery on January 15 (18.40°C vs 14.80°C). Within the single 55 × 60 km MERRA-2 grid cell, high-resolution radiometry reveals an internal thermal spread between extreme pixels that coarse reanalysis cannot resolve.
         </div>
 
         <div class="se-card-img-wrap se-img-bordered">
@@ -122,61 +122,61 @@
 
       <!-- Section 3: Quantitative Findings & Zonal Statistics -->
       <section class="se-investigation-section">
-        <span class="section-kicker">03 : Zonal Telemetry Results</span>
+        <span class="section-kicker">03 : Zonal Thermal Results</span>
         <h2 class="editorial-headline se-section-heading">Multi-Seasonal Zonal Surface Temperature & UHI Intensity</h2>
         <p class="se-section-intro">
-          Evaluating ten clear-sky satellite passes across four distinct climatological regimes demonstrates persistent, statistically significant intra-urban thermal structuring:
+          Evaluating clear-sky satellite passes over Kanpur (including two winter snapshot scenes on January 15 and February 16, 2022) indicates intra-urban thermal structuring:
         </p>
 
         <div class="se-table-wrap">
           <table class="se-table">
             <thead>
               <tr>
-                <th>Climatological Season</th>
+                <th>Season Window</th>
                 <th>Urban Core Mean (0–5 km)</th>
                 <th>Suburban Mean (5–15 km)</th>
                 <th>Rural Periphery (15–20 km)</th>
                 <th>UHI Intensity (ΔT = Core - Rural)</th>
                 <th>Coarse MERRA-2 Grid Mean</th>
-                <th>Masked Internal Thermal Spread</th>
+                <th>Internal Thermal Spread</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><strong>Dry Winter (Jan–Feb)</strong></td>
+                <td><strong>Winter Snapshot (Jan 15 & Feb 16, 2022)</strong></td>
                 <td><strong>18.40°C</strong> (291.55 K)</td>
                 <td>16.60°C (289.75 K)</td>
                 <td>14.80°C (287.95 K)</td>
                 <td><strong style="color: #ff5252;">+3.60 K (+3.60°C)</strong></td>
                 <td>16.20°C (289.35 K)</td>
-                <td><strong>7.10 K</strong> (13.8°C to 20.9°C)</td>
+                <td><strong>7.10 K</strong> (extreme pixels: 13.8°C to 20.9°C)</td>
               </tr>
               <tr>
-                <td><strong>Pre-Monsoon Summer (May)</strong></td>
+                <td><strong>Pre-Monsoon Summer (May 2022)</strong></td>
                 <td><strong>44.30°C</strong> (317.45 K)</td>
                 <td>42.50°C (315.65 K)</td>
                 <td>40.80°C (313.95 K)</td>
                 <td><strong style="color: #ff5252;">+3.50 K (+3.50°C)</strong></td>
                 <td>42.70°C (315.85 K)</td>
-                <td><strong>6.80 K</strong> (39.2°C to 46.0°C)</td>
+                <td><strong>6.80 K</strong> (extreme pixels: 39.2°C to 46.0°C)</td>
               </tr>
               <tr>
-                <td><strong>Monsoon (Aug)</strong></td>
+                <td><strong>Monsoon (Aug 2021 & 2022)</strong></td>
                 <td><strong>31.90°C</strong> (305.05 K)</td>
                 <td>31.00°C (304.15 K)</td>
                 <td>30.00°C (303.15 K)</td>
                 <td><strong style="color: #00e5ff;">+1.90 K (+1.90°C)</strong></td>
                 <td>30.90°C (304.05 K)</td>
-                <td><strong>4.20 K</strong> (28.9°C to 33.1°C)</td>
+                <td><strong>4.20 K</strong> (extreme pixels: 28.9°C to 33.1°C)</td>
               </tr>
               <tr>
-                <td><strong>Post-Monsoon (Oct–Nov)</strong></td>
+                <td><strong>Post-Monsoon (Oct–Nov 2021 & 2022)</strong></td>
                 <td><strong>28.50°C</strong> (301.65 K)</td>
                 <td>27.10°C (300.25 K)</td>
                 <td>25.50°C (298.65 K)</td>
                 <td><strong style="color: #ffb74d;">+3.00 K (+3.00°C)</strong></td>
                 <td>26.80°C (299.95 K)</td>
-                <td><strong>6.10 K</strong> (24.2°C to 30.3°C)</td>
+                <td><strong>6.10 K</strong> (extreme pixels: 24.2°C to 30.3°C)</td>
               </tr>
             </tbody>
           </table>
@@ -189,7 +189,7 @@
           </div>
           <img src="../assets/kanpur-uhi/kanpur-uhi-timeseries.png" alt="Multi-seasonal timeline showing skin temperature divergence between core, suburban, and rural zones" class="se-figure-img" width="900" height="450" loading="lazy">
           <div class="se-figure-caption">
-            <strong>Caption:</strong> Multi-scene seasonal time series across 2021–2022. The shaded pink envelope illustrates the surface Urban Heat Island intensity gap, which maximizes during winter (+3.60 K) and remains severe during pre-monsoon summer (+3.50 K), before dampening during the wet monsoon (+1.90 K).
+            <strong>Caption:</strong> Multi-scene seasonal time series across 2021–2022. The shaded pink envelope illustrates the surface Urban Heat Island intensity gap, which reaches +3.60 K in winter snapshot scenes and remains elevated during pre-monsoon summer (+3.50 K), before dampening during the wet monsoon (+1.90 K).
           </div>
           <div class="se-image-credit se-figure-credit-surface">
             Image: Avnish Singh, USGS and NASA POWER records, October 2026. <a href="../credits.html">Credits entry</a>.
@@ -203,7 +203,7 @@
           </div>
           <img src="../assets/kanpur-uhi/kanpur-uhi-seasonal-uhi.png" alt="Bar chart showing UHI intensity peaking in winter and pre-monsoon summer" class="se-figure-img" width="900" height="450" loading="lazy">
           <div class="se-figure-caption">
-            <strong>Caption:</strong> Seasonal breakdown of net UHI Intensity (ΔT = T<sub>core</sub> - T<sub>rural</sub>). Monsoon suppression (+1.90 K) reflects widespread agricultural saturation and high atmospheric moisture channeling net radiation into latent heat flux (λE) rather than sensible heat (H).
+            <strong>Caption:</strong> Seasonal breakdown of net UHI Intensity (ΔT = T<sub>core</sub> - T<sub>rural</sub>). Monsoon suppression (+1.90 K) is consistent with agricultural soil saturation channeling net radiation into latent heat flux (λE) rather than sensible heat (H).
           </div>
           <div class="se-image-credit se-figure-credit-surface">
             Image: Avnish Singh, October 2026. <a href="../credits.html">Credits entry</a>.
@@ -216,11 +216,11 @@
         <span class="section-kicker">04 : Resolution Discrepancy</span>
         <h2 class="editorial-headline se-section-heading">Resolving the Spatial Masking of Coarse Atmospheric Reanalysis</h2>
         <p class="se-section-intro">
-          This investigation provides the direct high-resolution physical counterpart to the macro-climatology established in <a href="kanpur-lst.html" class="se-link">Investigation 03</a>.
+          This investigation provides the high-resolution physical counterpart to the macro-reanalysis evaluated in <a href="kanpur-lst.html" class="se-link">Investigation 03</a>.
         </p>
 
         <p class="se-content-p">
-          In Investigation 03, seven years of continuous daily MERRA-2 reanalysis established the regional thermal decoupling phenomenon (summer superheating vs. winter radiative chill). However, a single 0.5° × 0.625° reanalysis grid cell spans approximately <strong>3,300 km²</strong>, lumping Kanpur's high-density urban core, industrial sectors, the wide Ganga river corridor, and dozens of rural villages into a single numerical average (16.20°C in winter).
+          In Investigation 03, seven years of continuous daily MERRA-2 reanalysis established the regional thermal cycle (summer superheating vs. winter radiative chill). However, a single 0.5° × 0.625° reanalysis grid cell spans approximately <strong>3,300 km²</strong>, lumping Kanpur's high-density urban core, industrial sectors, the Ganga river corridor, and surrounding rural agricultural land into a single numerical average (16.20°C in winter).
         </p>
 
         <div class="se-figure">
@@ -230,7 +230,7 @@
           </div>
           <img src="../assets/kanpur-uhi/kanpur-uhi-comparison-merra2.png" alt="Side-by-side comparison of a uniform MERRA-2 cell versus a 30m Landsat thermal field showing internal temperature spread" class="se-figure-img" width="900" height="450" loading="lazy">
           <div class="se-figure-caption">
-            <strong>Caption:</strong> Side-by-side comparison within identical geographical boundaries. Left: A single uniform MERRA-2 grid cell over Kanpur averages to 16.20°C. Right: 30m Landsat radiometry exposes a 7.10 K internal thermal gradient (13.8°C along the Ganga river to 20.9°C in dense urban masonry), demonstrating that coarse reanalysis completely erases intra-urban thermal variance.
+            <strong>Caption:</strong> Side-by-side comparison within identical geographical boundaries. Left: A single uniform MERRA-2 grid cell over Kanpur averages to 16.20°C. Right: 30m Landsat radiometry reveals an intra-urban thermal range between extreme pixels (13.8°C along the Ganga river to 20.9°C in dense urban masonry), demonstrating that coarse reanalysis cannot resolve local microclimate heterogeneity.
           </div>
           <div class="se-image-credit se-figure-credit-surface">
             Image: Avnish Singh, October 2026. <a href="../credits.html">Credits entry</a>.
@@ -238,24 +238,24 @@
         </div>
 
         <p class="se-content-p">
-          Because reanalysis models assume a uniform regional vegetation fraction (~42%) and generalized aerodynamic roughness across the cell, <strong>coarse reanalysis underestimates the peak thermal exposure of Kanpur's 3.2 million urban residents by 2.2°C to 3.8°C</strong>, while overestimating rural skin temperatures.
+          Because reanalysis models assume a uniform regional vegetation fraction (~42%) and generalized aerodynamic roughness across the cell, coarse reanalysis smoothes over the thermal exposure of Kanpur's urban core population (2.77 million in the municipal corporation, Census 2011), while overestimating rural skin temperatures.
         </p>
       </section>
 
       <!-- Section 5: Inversion Coupling Mechanics -->
       <section class="se-investigation-section">
-        <span class="section-kicker">05 : Boundary Layer Thermodynamics</span>
-        <h2 class="editorial-headline se-section-heading">Thermal Coupling with Winter Nocturnal Inversions</h2>
+        <span class="section-kicker">05 : Boundary Layer Dynamics</span>
+        <h2 class="editorial-headline se-section-heading">Hypothesis: Potential Interaction with Winter Nocturnal Inversions</h2>
         <p class="se-section-intro">
-          The spatial persistence of Kanpur's +3.60 K winter urban thermal excess has direct thermodynamic implications for the severity of ground-level air pollution.
+          The spatial persistence of Kanpur's urban core thermal excess (+3.60 K in the January snapshot) may have thermodynamic interactions with local boundary layer ventilation.
         </p>
 
         <p class="se-content-p">
-          As documented in Investigation 03, winter nocturnal surface cooling (ΔT = T<sub>skin</sub> - T<sub>air</sub> &lt; 0) establishes a severe temperature inversion capping the planetary boundary layer under 250 meters. The +3.60 K thermal anomaly of the urban core creates a localized buoyant thermal dome within this shallow layer.
+          As documented in Investigation 03, winter nocturnal surface cooling (ΔT = T<sub>skin</sub> - T<sub>air</sub> &lt; 0) is consistent with a shallow boundary layer. It is hypothesized that the positive thermal anomaly of the built-up core could create localized buoyancy contrasts within this shallow layer.
         </p>
 
         <p class="se-content-p">
-          Rather than venting pollutants into the upper atmosphere, this localized convective dome encounters the regional subsidence inversion lid, setting up a closed recirculating micro-cell that entrains primary vehicular and industrial emissions directly within the human breathing zone (producing continuous CAAQMS PM2.5 spikes exceeding 250 µg/m³ at Kalyanpur and Nehru Nagar).
+          <em>Methodological Note:</em> This mechanism is proposed as an interpretive hypothesis. Verifying whether localized micro-convective circulation or urban breeze effects trap particulate matter would require vertical meteorological soundings, continuous boundary layer radar (SODAR/ceilometer), and high-resolution numerical dispersion modeling.
         </p>
       </section>
 
@@ -322,7 +322,7 @@
         <div class="se-footer-brand-col">
           <div class="se-footer-brand-title">Signal Earth</div>
           <p class="se-footer-brand-desc">
-            Independent environmental intelligence platform analyzing Earth observation records, satellite telemetry, and public monitoring data.
+            Independent independent research project analyzing Earth observation records, satellite records, and public monitoring data.
           </p>
         </div>
 
@@ -371,11 +371,11 @@
 
       <!-- Mandatory Affiliation Disclaimer -->
       <div class="se-footer-disclaimer">
-        Signal Earth is an independent environmental intelligence platform. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, UPPCB, DPCC, or any agency named on this site.
+        Signal Earth is an independent project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, UPPCB, DPCC, or any agency named on this site.
       </div>
 
       <div class="se-footer-bottom">
-        <div>Signal Earth &middot; Independent Environmental Intelligence &middot; Open Source under MIT License</div>
+        <div>Signal Earth &middot; Open Science under MIT License</div>
         <div>Page last updated: October 2026</div>
       </div>
     </div>
