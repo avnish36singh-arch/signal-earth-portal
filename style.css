@@ -4264,7 +4264,7 @@ body.se-inst-body {
 /* ==========================================================================
    SIGNAL EARTH : EDITORIAL RESEARCH PUBLICATION DESIGN SYSTEM
    Visual Direction: Refined scientific journal, architectural precision,
-   spacious warm off-white, evidence-first typography.
+   spacious warm off-white (Light) / deep obsidian (Dark), evidence-first typography.
    ========================================================================== */
 
 :root {
@@ -4285,6 +4285,18 @@ body.se-inst-body {
   --se-reading-width: 68ch;
 }
 
+[data-theme="dark"] {
+  --se-bg: #111210;
+  --se-surface: #181A16;
+  --se-text-primary: #F3F1ED;
+  --se-text-secondary: #9B9E96;
+  --se-border: #2A2D27;
+  --se-border-hover: #42463D;
+  --se-accent: #5E9474;
+  --se-accent-hover: #75B08E;
+  --se-accent-tint: rgba(94, 148, 116, 0.12);
+}
+
 body.se-editorial-page {
   background-color: var(--se-bg);
   color: var(--se-text-primary);
@@ -4294,6 +4306,7 @@ body.se-editorial-page {
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 /* Base Editorial Container */
@@ -4313,6 +4326,7 @@ body.se-editorial-page {
   background-color: var(--se-border);
   margin: 0;
   padding: 0;
+  transition: background-color 0.25s ease;
 }
 
 /* Editorial Header */
@@ -4321,14 +4335,16 @@ body.se-editorial-page {
   border-bottom: 1px solid var(--se-border);
   position: relative;
   z-index: 50;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
 }
 
 .se-editorial-header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1.35rem;
+  padding-bottom: 1.35rem;
+  gap: 1.5rem;
 }
 
 .se-editorial-wordmark {
@@ -4346,10 +4362,16 @@ body.se-editorial-page {
   color: var(--se-accent);
 }
 
+.se-editorial-header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
 .se-editorial-nav-list {
   display: flex;
   align-items: center;
-  gap: 2.25rem;
+  gap: 1.75rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -4374,6 +4396,45 @@ body.se-editorial-page {
 .se-editorial-nav-link.active {
   color: var(--se-accent);
   font-weight: 600;
+}
+
+/* Theme Toggle Button */
+.se-theme-toggle-btn {
+  background: transparent;
+  border: 1px solid var(--se-border);
+  color: var(--se-text-secondary);
+  padding: 0.38rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--se-font-sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.se-theme-toggle-btn:hover {
+  border-color: var(--se-border-hover);
+  color: var(--se-text-primary);
+  background-color: var(--se-surface);
+}
+
+.se-theme-icon-sun {
+  display: none;
+}
+.se-theme-icon-moon {
+  display: block;
+}
+
+[data-theme="dark"] .se-theme-icon-sun {
+  display: block;
+}
+[data-theme="dark"] .se-theme-icon-moon {
+  display: none;
 }
 
 /* Editorial Hero Section */
@@ -4413,6 +4474,7 @@ body.se-editorial-page {
   letter-spacing: -0.015em;
   color: var(--se-text-primary);
   margin: 0 0 1.5rem 0;
+  transition: color 0.25s ease;
 }
 
 .se-editorial-hero-dek {
@@ -4422,6 +4484,7 @@ body.se-editorial-page {
   color: var(--se-text-secondary);
   margin: 0 0 2.25rem 0;
   max-width: 530px;
+  transition: color 0.25s ease;
 }
 
 .se-editorial-hero-actions {
@@ -4469,7 +4532,7 @@ body.se-editorial-page {
 .se-editorial-btn-secondary:hover {
   border-color: var(--se-border-hover);
   color: var(--se-accent);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: var(--se-surface);
 }
 
 .se-editorial-hero-visual {
@@ -4483,7 +4546,8 @@ body.se-editorial-page {
   border-radius: 3px;
   border: 1px solid var(--se-border);
   display: block;
-  background-color: #EAE8E0;
+  background-color: var(--se-surface);
+  transition: border-color 0.25s ease;
 }
 
 .se-editorial-hero-caption {
@@ -4493,6 +4557,7 @@ body.se-editorial-page {
   color: var(--se-text-secondary);
   margin-top: 0.75rem;
   display: block;
+  transition: color 0.25s ease;
 }
 
 /* Sections Common Styling */
@@ -4513,6 +4578,7 @@ body.se-editorial-page {
   color: var(--se-text-primary);
   margin: 0 0 0.65rem 0;
   letter-spacing: -0.01em;
+  transition: color 0.25s ease;
 }
 
 .se-editorial-section-intro {
@@ -4522,6 +4588,7 @@ body.se-editorial-page {
   color: var(--se-text-secondary);
   margin: 0;
   max-width: 640px;
+  transition: color 0.25s ease;
 }
 
 /* Section: Selected Research Grid */
@@ -4547,8 +4614,8 @@ body.se-editorial-page {
   border-radius: 3px;
   border: 1px solid var(--se-border);
   display: block;
-  background-color: #EAE8E0;
-  transition: border-color 0.15s ease;
+  background-color: var(--se-surface);
+  transition: border-color 0.2s ease;
 }
 
 .se-editorial-research-item:hover .se-editorial-research-figure img {
@@ -4573,6 +4640,7 @@ body.se-editorial-page {
   line-height: 1.32;
   color: var(--se-text-primary);
   margin: 0 0 0.75rem 0;
+  transition: color 0.25s ease;
 }
 
 .se-editorial-research-title a {
@@ -4592,6 +4660,7 @@ body.se-editorial-page {
   color: var(--se-text-secondary);
   margin: 0 0 1.25rem 0;
   flex-grow: 1;
+  transition: color 0.25s ease;
 }
 
 .se-editorial-inline-link {
@@ -4611,6 +4680,124 @@ body.se-editorial-page {
   color: var(--se-accent-hover);
 }
 
+/* ==========================================================================
+   PLANETARY OBSERVATION STREAM (HORIZONTAL SLIDING PHOTOS LIKE LATITUDES)
+   ========================================================================== */
+.se-editorial-stream-section {
+  padding: 5rem 0 5.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.se-stream-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 2.25rem;
+}
+
+.se-stream-wrap::before,
+.se-stream-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 90px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.se-stream-wrap::before {
+  left: 0;
+  background: linear-gradient(90deg, var(--se-bg) 0%, transparent 100%);
+}
+
+.se-stream-wrap::after {
+  right: 0;
+  background: linear-gradient(270deg, var(--se-bg) 0%, transparent 100%);
+}
+
+.se-stream-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: seStreamGlide 55s linear infinite;
+  will-change: transform;
+}
+
+.se-stream-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes seStreamGlide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.se-stream-card {
+  width: 360px;
+  flex-shrink: 0;
+  background-color: var(--se-surface);
+  border: 1px solid var(--se-border);
+  border-radius: 3px;
+  overflow: hidden;
+  transition: border-color 0.2s ease, transform 0.2s ease, background-color 0.25s ease;
+}
+
+.se-stream-card:hover {
+  border-color: var(--se-border-hover);
+  transform: translateY(-2px);
+}
+
+.se-stream-card-figure {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background-color: #0E0F0D;
+  margin: 0;
+}
+
+.se-stream-card-figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.se-stream-card-body {
+  padding: 1.15rem 1.25rem;
+}
+
+.se-stream-card-tag {
+  font-family: var(--se-font-sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--se-accent);
+  margin-bottom: 0.35rem;
+  display: block;
+}
+
+.se-stream-card-title {
+  font-family: var(--se-font-serif);
+  font-size: 1.08rem;
+  font-weight: 500;
+  color: var(--se-text-primary);
+  line-height: 1.35;
+  margin: 0 0 0.4rem 0;
+  transition: color 0.25s ease;
+}
+
+.se-stream-card-desc {
+  font-family: var(--se-font-sans);
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--se-text-secondary);
+  margin: 0;
+  transition: color 0.25s ease;
+}
+
 /* Section: Areas of Focus */
 .se-editorial-focus-grid {
   display: grid;
@@ -4622,6 +4809,7 @@ body.se-editorial-page {
 .se-editorial-focus-item {
   border-top: 1px solid var(--se-border);
   padding-top: 1.5rem;
+  transition: border-color 0.25s ease;
 }
 
 .se-editorial-focus-num {
@@ -4641,6 +4829,7 @@ body.se-editorial-page {
   line-height: 1.3;
   color: var(--se-text-primary);
   margin: 0 0 0.65rem 0;
+  transition: color 0.25s ease;
 }
 
 .se-editorial-focus-desc {
@@ -4649,6 +4838,7 @@ body.se-editorial-page {
   line-height: 1.62;
   color: var(--se-text-secondary);
   margin: 0;
+  transition: color 0.25s ease;
 }
 
 /* Section: Evidence before opinion (Research Principles) */
@@ -4664,6 +4854,7 @@ body.se-editorial-page {
   color: var(--se-text-secondary);
   max-width: 720px;
   margin: 0 0 2.75rem 0;
+  transition: color 0.25s ease;
 }
 
 .se-editorial-principles-bar {
@@ -4673,6 +4864,7 @@ body.se-editorial-page {
   border-top: 1px solid var(--se-border);
   border-bottom: 1px solid var(--se-border);
   padding: 1.6rem 0;
+  transition: border-color 0.25s ease;
 }
 
 .se-editorial-principle-item {
@@ -4682,6 +4874,7 @@ body.se-editorial-page {
   color: var(--se-text-primary);
   text-align: center;
   flex: 1;
+  transition: color 0.25s ease;
 }
 
 .se-editorial-principle-divider {
@@ -4689,6 +4882,7 @@ body.se-editorial-page {
   height: 28px;
   background-color: var(--se-border);
   flex-shrink: 0;
+  transition: background-color 0.25s ease;
 }
 
 /* Section: About Signal Earth */
@@ -4705,6 +4899,7 @@ body.se-editorial-page {
   line-height: 1.5;
   color: var(--se-text-primary);
   margin: 0 0 1.5rem 0;
+  transition: color 0.25s ease;
 }
 
 /* Editorial Footer */
@@ -4713,6 +4908,7 @@ body.se-editorial-page {
   border-top: 1px solid var(--se-border);
   padding-top: 4.5rem;
   padding-bottom: 3.5rem;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
 }
 
 .se-editorial-footer-grid {
@@ -4735,6 +4931,7 @@ body.se-editorial-page {
   text-transform: uppercase;
   color: var(--se-text-primary);
   margin-bottom: 0.85rem;
+  transition: color 0.25s ease;
 }
 
 .se-editorial-footer-desc {
@@ -4744,6 +4941,7 @@ body.se-editorial-page {
   color: var(--se-text-secondary);
   max-width: 420px;
   margin: 0;
+  transition: color 0.25s ease;
 }
 
 .se-editorial-footer-nav-col {
@@ -4760,6 +4958,7 @@ body.se-editorial-page {
   text-transform: uppercase;
   color: var(--se-text-secondary);
   margin-bottom: 0.85rem;
+  transition: color 0.25s ease;
 }
 
 .se-editorial-footer-links {
@@ -4794,6 +4993,7 @@ body.se-editorial-page {
   font-family: var(--se-font-sans);
   font-size: 0.8rem;
   color: var(--se-text-secondary);
+  transition: border-color 0.25s ease, color 0.25s ease;
 }
 
 /* Responsive Rules */
@@ -4829,6 +5029,10 @@ body.se-editorial-page {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.25rem;
+  }
+  .se-editorial-header-right {
+    width: 100%;
+    justify-content: space-between;
   }
   .se-editorial-nav-list {
     flex-wrap: wrap;

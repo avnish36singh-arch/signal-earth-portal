@@ -23,7 +23,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=20261013">
+  <link rel="stylesheet" href="style.css?v=20261013b">
+
+  <!-- Immediate Theme Initialization (Prevents flash of unstyled theme) -->
+  <script>
+    (function() {
+      try {
+        const saved = localStorage.getItem('signal-earth-theme');
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'dark' || (!saved && prefersDark)) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body class="se-editorial-page" id="top">
   <a href="#main" class="skip-link">Skip to content</a>
@@ -36,14 +51,35 @@
           Signal Earth
         </a>
 
-        <nav class="se-editorial-nav" aria-label="Main Navigation">
-          <ul class="se-editorial-nav-list">
-            <li><a href="research.html" class="se-editorial-nav-link">Research</a></li>
-            <li><a href="data.html" class="se-editorial-nav-link">Data &amp; Maps</a></li>
-            <li><a href="briefs/index.html" class="se-editorial-nav-link">Briefs</a></li>
-            <li><a href="about.html" class="se-editorial-nav-link">About</a></li>
-          </ul>
-        </nav>
+        <div class="se-editorial-header-right">
+          <nav class="se-editorial-nav" aria-label="Main Navigation">
+            <ul class="se-editorial-nav-list">
+              <li><a href="research.html" class="se-editorial-nav-link">Research</a></li>
+              <li><a href="data.html" class="se-editorial-nav-link">Data &amp; Maps</a></li>
+              <li><a href="briefs/index.html" class="se-editorial-nav-link">Briefs</a></li>
+              <li><a href="about.html" class="se-editorial-nav-link">About</a></li>
+            </ul>
+          </nav>
+
+          <!-- Light / Dark Mode Toggle Button -->
+          <button type="button" id="se-theme-toggle" class="se-theme-toggle-btn" aria-label="Toggle theme mode" title="Switch light / dark mode">
+            <svg class="se-theme-icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="se-theme-icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span class="se-theme-label">Theme</span>
+          </button>
+        </div>
       </div>
     </div>
   </header>
@@ -149,6 +185,220 @@
             <a href="investigations/delhi.html" class="se-editorial-inline-link">
               Read research &rarr;
             </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <hr class="se-editorial-divider">
+
+    <!-- Planetary Observation Stream: Horizontal Latitudinal Transect -->
+    <section class="se-editorial-stream-section" aria-labelledby="stream-heading">
+      <div class="se-editorial-container">
+        <div class="se-editorial-section-header">
+          <span class="se-editorial-kicker">Visual Observation Stream</span>
+          <h2 id="stream-heading" class="se-editorial-section-title">
+            Spaceborne Earth Observation Archive
+          </h2>
+          <p class="se-editorial-section-intro">
+            Continuous visual transect across planetary latitudes: from polar cryosphere fracture margins to regional aerosol stagnation and intra-urban thermal radiometry.
+          </p>
+        </div>
+      </div>
+
+      <div class="se-stream-wrap" aria-label="Sliding planetary photography carousel">
+        <div class="se-stream-track">
+          <!-- Card 1: Arctic Sea Ice -->
+          <article class="se-stream-card">
+            <figure class="se-stream-card-figure">
+              <img src="assets/nasa_arctic_sea_ice.jpg" alt="Satellite view of arctic sea ice fractures and open ocean margins" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">78&deg;N &middot; Polar Margin &middot; Cryosphere</span>
+              <h3 class="se-stream-card-title">Arctic Sea Ice Fracture</h3>
+              <p class="se-stream-card-desc">Fracturing sea ice sheets and summer melt margin dynamics over polar waters.</p>
+            </div>
+          </article>
+
+          <!-- Card 2: Indo-Gangetic Agricultural Smoke -->
+          <article class="se-stream-card">
+            <figure class="se-stream-card-figure">
+              <img src="assets/hero_indo_gangetic_smoke_20211105.jpg" alt="NASA Terra MODIS satellite view of regional smoke plume across northern India" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">28&deg;N &middot; NASA Terra MODIS &middot; Smoke</span>
+              <h3 class="se-stream-card-title">Ganga Basin Smoke Plume</h3>
+              <p class="se-stream-card-desc">Post-harvest agricultural burning smoke spreading across the northern plains.</p>
+            </div>
+          </article>
+
+          <!-- Card 3: Boundary Layer Haze -->
+          <article class="se-stream-card">
+            <figure class="se-stream-card-figure">
+              <img src="assets/satellite_view_kanpur_haze_20211111.jpg" alt="NASA Aqua MODIS satellite view of atmospheric haze over central Ganga valley" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">26&deg;N &middot; NASA Aqua MODIS &middot; Boundary</span>
+              <h3 class="se-stream-card-title">Atmospheric Stagnation &amp; Haze</h3>
+              <p class="se-stream-card-desc">Dense winter aerosol entrapment beneath suppressed meteorological inversions.</p>
+            </div>
+          </article>
+
+          <!-- Card 4: Landsat 30m Thermal Radiometry -->
+          <article class="se-stream-card">
+            <figure class="se-stream-card-figure">
+              <img src="assets/kanpur-uhi/kanpur-uhi-30m.png" alt="USGS Landsat 30m thermal radiometry map over urban core" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">26&deg;N &middot; Landsat 8/9 &middot; Thermal</span>
+              <h3 class="se-stream-card-title">30m Surface Thermal Radiometry</h3>
+              <p class="se-stream-card-desc">High-resolution infrared zoning exposing urban heat microclimates and industrial hotspots.</p>
+            </div>
+          </article>
+
+          <!-- Card 5: Delhi Night Orbital Radiance -->
+          <article class="se-stream-card">
+            <figure class="se-stream-card-figure">
+              <img src="assets/delhi_iss_night.jpg" alt="Spaceborne nighttime view of urban radiance over Delhi NCR from ISS" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">28&deg;N &middot; ISS Orbital Radiance &middot; Megacity</span>
+              <h3 class="se-stream-card-title">Delhi Nocturnal Urban Footprint</h3>
+              <p class="se-stream-card-desc">Spaceborne night radiance capturing the spatial morphology of the National Capital Region.</p>
+            </div>
+          </article>
+
+          <!-- Card 6: Himalayan Haze Panorama -->
+          <article class="se-stream-card">
+            <figure class="se-stream-card-figure">
+              <img src="assets/himalaya_haze_panorama.jpg" alt="Himalayan mountain range acting as topographic barrier to regional smog" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">30&deg;N &middot; Orographic Trap &middot; Mountain</span>
+              <h3 class="se-stream-card-title">Himalayan Topographic Containment</h3>
+              <p class="se-stream-card-desc">The southern Himalayan mountain front physically trapping winter aerosols within the plains.</p>
+            </div>
+          </article>
+
+          <!-- Card 7: Orbital Atmospheric Boundary -->
+          <article class="se-stream-card">
+            <figure class="se-stream-card-figure">
+              <img src="assets/signal_earth_hero.jpg" alt="Earth orbital horizon and thin atmospheric boundary" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">Orbital Perspective &middot; Atmosphere</span>
+              <h3 class="se-stream-card-title">Global Atmospheric Boundary</h3>
+              <p class="se-stream-card-desc">The thin protective gaseous envelope shielding the biosphere from outer space.</p>
+            </div>
+          </article>
+
+          <!-- Card 8: Deep Space Biosphere Perspective -->
+          <article class="se-stream-card">
+            <figure class="se-stream-card-figure">
+              <img src="assets/satellite_earth_dark.jpg" alt="High angle spaceborne view of coastal waters and river basins at night" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">Earth Observation &middot; Coastal Basin</span>
+              <h3 class="se-stream-card-title">Spaceborne River Basin Network</h3>
+              <p class="se-stream-card-desc">Hydrological pathways and riparian corridors governing regional transport and microclimates.</p>
+            </div>
+          </article>
+
+          <!-- Duplicate Set for Seamless Continuous Infinite Glide -->
+          <!-- Duplicate 1 -->
+          <article class="se-stream-card" aria-hidden="true">
+            <figure class="se-stream-card-figure">
+              <img src="assets/nasa_arctic_sea_ice.jpg" alt="" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">78&deg;N &middot; Polar Margin &middot; Cryosphere</span>
+              <h3 class="se-stream-card-title">Arctic Sea Ice Fracture</h3>
+              <p class="se-stream-card-desc">Fracturing sea ice sheets and summer melt margin dynamics over polar waters.</p>
+            </div>
+          </article>
+
+          <!-- Duplicate 2 -->
+          <article class="se-stream-card" aria-hidden="true">
+            <figure class="se-stream-card-figure">
+              <img src="assets/hero_indo_gangetic_smoke_20211105.jpg" alt="" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">28&deg;N &middot; NASA Terra MODIS &middot; Smoke</span>
+              <h3 class="se-stream-card-title">Ganga Basin Smoke Plume</h3>
+              <p class="se-stream-card-desc">Post-harvest agricultural burning smoke spreading across the northern plains.</p>
+            </div>
+          </article>
+
+          <!-- Duplicate 3 -->
+          <article class="se-stream-card" aria-hidden="true">
+            <figure class="se-stream-card-figure">
+              <img src="assets/satellite_view_kanpur_haze_20211111.jpg" alt="" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">26&deg;N &middot; NASA Aqua MODIS &middot; Boundary</span>
+              <h3 class="se-stream-card-title">Atmospheric Stagnation &amp; Haze</h3>
+              <p class="se-stream-card-desc">Dense winter aerosol entrapment beneath suppressed meteorological inversions.</p>
+            </div>
+          </article>
+
+          <!-- Duplicate 4 -->
+          <article class="se-stream-card" aria-hidden="true">
+            <figure class="se-stream-card-figure">
+              <img src="assets/kanpur-uhi/kanpur-uhi-30m.png" alt="" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">26&deg;N &middot; Landsat 8/9 &middot; Thermal</span>
+              <h3 class="se-stream-card-title">30m Surface Thermal Radiometry</h3>
+              <p class="se-stream-card-desc">High-resolution infrared zoning exposing urban heat microclimates and industrial hotspots.</p>
+            </div>
+          </article>
+
+          <!-- Duplicate 5 -->
+          <article class="se-stream-card" aria-hidden="true">
+            <figure class="se-stream-card-figure">
+              <img src="assets/delhi_iss_night.jpg" alt="" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">28&deg;N &middot; ISS Orbital Radiance &middot; Megacity</span>
+              <h3 class="se-stream-card-title">Delhi Nocturnal Urban Footprint</h3>
+              <p class="se-stream-card-desc">Spaceborne night radiance capturing the spatial morphology of the National Capital Region.</p>
+            </div>
+          </article>
+
+          <!-- Duplicate 6 -->
+          <article class="se-stream-card" aria-hidden="true">
+            <figure class="se-stream-card-figure">
+              <img src="assets/himalaya_haze_panorama.jpg" alt="" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">30&deg;N &middot; Orographic Trap &middot; Mountain</span>
+              <h3 class="se-stream-card-title">Himalayan Topographic Containment</h3>
+              <p class="se-stream-card-desc">The southern Himalayan mountain front physically trapping winter aerosols within the plains.</p>
+            </div>
+          </article>
+
+          <!-- Duplicate 7 -->
+          <article class="se-stream-card" aria-hidden="true">
+            <figure class="se-stream-card-figure">
+              <img src="assets/signal_earth_hero.jpg" alt="" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">Orbital Perspective &middot; Atmosphere</span>
+              <h3 class="se-stream-card-title">Global Atmospheric Boundary</h3>
+              <p class="se-stream-card-desc">The thin protective gaseous envelope shielding the biosphere from outer space.</p>
+            </div>
+          </article>
+
+          <!-- Duplicate 8 -->
+          <article class="se-stream-card" aria-hidden="true">
+            <figure class="se-stream-card-figure">
+              <img src="assets/satellite_earth_dark.jpg" alt="" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">Earth Observation &middot; Coastal Basin</span>
+              <h3 class="se-stream-card-title">Spaceborne River Basin Network</h3>
+              <p class="se-stream-card-desc">Hydrological pathways and riparian corridors governing regional transport and microclimates.</p>
+            </div>
           </article>
         </div>
       </div>
@@ -282,5 +532,21 @@
       </div>
     </div>
   </footer>
+
+  <!-- Theme Toggle Interaction Script -->
+  <script>
+    (function() {
+      const toggleBtn = document.getElementById('se-theme-toggle');
+      if (!toggleBtn) return;
+      toggleBtn.addEventListener('click', function() {
+        const current = document.documentElement.getAttribute('data-theme') || 'light';
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        try {
+          localStorage.setItem('signal-earth-theme', next);
+        } catch (e) {}
+      });
+    })();
+  </script>
 </body>
 </html>
