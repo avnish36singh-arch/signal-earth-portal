@@ -4386,6 +4386,387 @@ body.se-inst-body {
   margin: 0;
 }
 
+/* ==========================================================================
+   HOMEPAGE FLAT-BLACK COMPREHENSIVE DARK THEME
+   ========================================================================== */
+body.se-dark-page {
+  background-color: #0B0B0C;
+  color: #F9FAFB;
+}
+
+body.se-dark-page .se-nav {
+  background-color: #0B0B0C;
+  border-bottom: 1px solid #27272A;
+}
+
+body.se-dark-page .se-brand-name {
+  color: #FFFFFF;
+}
+
+body.se-dark-page .se-brand-sub {
+  color: #9CA3AF;
+}
+
+body.se-dark-page .se-nav-links a {
+  color: #9CA3AF;
+}
+
+body.se-dark-page .se-nav-links a:hover,
+body.se-dark-page .se-nav-links a.active {
+  color: #FFFFFF;
+  border-bottom-color: #F59E0B;
+}
+
+body.se-dark-page .se-findings-section {
+  background: #0B0B0C;
+  border-bottom: 1px solid #27272A;
+}
+
+body.se-dark-page .se-findings-h2 {
+  color: #FFFFFF;
+}
+
+body.se-dark-page .se-finding-card {
+  background: #141518;
+  border: 1px solid #27272A;
+}
+
+body.se-dark-page .se-finding-card:hover {
+  border-color: #52525B;
+}
+
+body.se-dark-page .se-finding-title {
+  color: #FFFFFF;
+}
+
+body.se-dark-page .se-finding-title a {
+  color: #FFFFFF;
+}
+
+body.se-dark-page .se-finding-claim {
+  color: #D1D5DB;
+}
+
+body.se-dark-page .se-finding-meta {
+  border-top-color: #27272A;
+  color: #9CA3AF;
+}
+
+body.se-dark-page .se-finding-meta strong {
+  color: #E5E7EB;
+}
+
+body.se-dark-page .se-finding-caveat {
+  background: #1C1917;
+  border-left-color: #F59E0B;
+  color: #FCD34D;
+}
+
+body.se-dark-page .se-finding-link {
+  color: #F9FAFB;
+}
+
+body.se-dark-page .se-finding-link:hover {
+  color: #F59E0B;
+}
+
+body.se-dark-page .se-how-made-section {
+  background: #0E0F12;
+  border-bottom: 1px solid #27272A;
+}
+
+body.se-dark-page .se-how-made-title {
+  color: #FFFFFF;
+}
+
+body.se-dark-page .se-how-made-desc {
+  color: #9CA3AF;
+}
+
+body.se-dark-page .se-about-strip-section {
+  background: #0B0B0C;
+  border-bottom: 1px solid #27272A;
+}
+
+body.se-dark-page .se-about-strip-name {
+  color: #FFFFFF;
+}
+
+body.se-dark-page .se-about-strip-role {
+  color: #9CA3AF;
+}
+
+body.se-dark-page .se-btn-outline {
+  border-color: #3F3F46;
+  color: #E5E7EB;
+  background-color: transparent;
+}
+
+body.se-dark-page .se-btn-outline:hover {
+  background-color: #27272A;
+  border-color: #71717A;
+  color: #FFFFFF;
+}
+
+/* Dark Data Tables Section */
+.se-dark-table-section {
+  padding: 4.5rem 0;
+  background: #0B0B0C;
+  border-bottom: 1px solid #27272A;
+}
+
+.se-dark-table-wrap {
+  overflow-x: auto;
+  border: 1px solid #27272A;
+  border-radius: var(--radius-sm);
+  background: #141518;
+  margin-top: 1.25rem;
+  margin-bottom: 2.75rem;
+}
+
+.se-dark-table-header-bar {
+  padding: 0.9rem 1.25rem;
+  background: #18191D;
+  border-bottom: 1px solid #27272A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.se-dark-table-title {
+  font-family: var(--font-sans);
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.se-dark-table-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: #9CA3AF;
+  background: #27272A;
+  padding: 0.2rem 0.5rem;
+  border-radius: 2px;
+}
+
+.se-dark-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.se-dark-table th {
+  background: #141518;
+  color: #9CA3AF;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #27272A;
+  white-space: nowrap;
+}
+
+.se-dark-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #1F2024;
+  color: #D1D5DB;
+  font-family: var(--font-sans);
+}
+
+.se-dark-table tr:last-child td {
+  border-bottom: none;
+}
+
+.se-dark-table tr:hover td {
+  background: #1A1B20;
+}
+
+.se-dark-table td strong {
+  color: #FFFFFF;
+}
+
+.se-dark-table td code {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: #F59E0B;
+  background: #27272A;
+  padding: 0.15rem 0.35rem;
+  border-radius: 2px;
+}
+
+.se-dark-table-note {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.78rem;
+  color: #9CA3AF;
+  background: #101114;
+  border-top: 1px solid #1F2024;
+  line-height: 1.5;
+}
+
+/* Dark Research & Reports Section */
+.se-dark-reports-section {
+  padding: 4.5rem 0;
+  background: #0E0F12;
+  border-bottom: 1px solid #27272A;
+}
+
+.se-dark-reports-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+  margin-top: 2rem;
+}
+
+.se-dark-report-card {
+  background: #141518;
+  border: 1px solid #27272A;
+  border-radius: var(--radius-sm);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.se-dark-report-card:hover {
+  border-color: #52525B;
+}
+
+.se-dark-report-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.se-dark-report-title {
+  font-size: 1.22rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 0.6rem;
+  line-height: 1.35;
+}
+
+.se-dark-report-title a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.se-dark-report-title a:hover {
+  text-decoration: underline;
+  color: #F59E0B;
+}
+
+.se-dark-report-desc {
+  font-size: 0.92rem;
+  color: #9CA3AF;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.se-dark-report-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  background: #18191D;
+  border: 1px solid #27272A;
+  border-radius: 2px;
+  margin-top: auto;
+  margin-bottom: 1.25rem;
+}
+
+.se-dark-stat-val {
+  font-family: var(--font-mono);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+}
+
+.se-dark-stat-lbl {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: #9CA3AF;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.se-dark-report-actions {
+  display: flex;
+  gap: 0.85rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Dark Origins / Philosophy Section */
+.se-dark-origins-section {
+  padding: 4.5rem 0;
+  background: #0B0B0C;
+  border-bottom: 1px solid #27272A;
+}
+
+.se-dark-origins-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.se-dark-origin-card {
+  background: #141518;
+  border: 1px solid #27272A;
+  border-radius: var(--radius-sm);
+  padding: 1.65rem;
+}
+
+.se-dark-origin-kicker {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #F59E0B;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.se-dark-origin-h3 {
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+
+.se-dark-origin-p {
+  font-size: 0.9rem;
+  color: #9CA3AF;
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
+
+.se-dark-origin-p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .se-dark-reports-grid {
+    grid-template-columns: 1fr;
+  }
+  .se-dark-origins-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 
 
