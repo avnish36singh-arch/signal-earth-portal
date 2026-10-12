@@ -3,818 +3,284 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Signal Earth | Planetary Observation &amp; Environmental Intelligence</title>
-  <meta name="description" content="An independent environmental intelligence initiative observing planetary boundaries, atmospheric stagnation, and urban microclimates through spaceborne remote sensing and open ground telemetry.">
+  <title>Signal Earth — Independent Environmental Research</title>
+  <meta name="description" content="Signal Earth explores environmental change through satellite observations, open datasets, scientific research, and reproducible analysis.">
   <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <meta property="og:title" content="Signal Earth | Planetary Observation &amp; Environmental Intelligence">
-  <meta property="og:description" content="Making environmental change visible through maps, spaceborne remote sensing, and open code. Independent environmental intelligence observing a changing planet.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Signal Earth — Independent Environmental Research">
+  <meta property="og:description" content="Making environmental change visible through maps, data, and science.">
   <meta property="og:url" content="https://avnish36singh-arch.github.io/signal-earth-portal/">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://avnish36singh-arch.github.io/signal-earth-portal/assets/signal_earth_hero.jpg">
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
-  <link rel="stylesheet" href="style.css?v=20261012e">
+  <meta property="og:image" content="https://avnish36singh-arch.github.io/signal-earth-portal/assets/hero_indo_gangetic_smoke_20211105.jpg">
+
+  <!-- Editorial Typography: Newsreader (Editorial Serif) & Inter (Clean Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=20261013">
 </head>
-<body class="se-dark-page" id="top">
+<body class="se-editorial-page" id="top">
   <a href="#main" class="skip-link">Skip to content</a>
 
-  <!-- Header: Wordmark & Navigation -->
-  <header>
-    <nav class="se-nav" aria-label="Main Navigation">
-      <div class="se-nav-inner">
-        <a href="index.html" class="se-brand" aria-label="Signal Earth Homepage">
-          <span class="se-brand-name">Signal Earth</span>
-          <span class="se-brand-sub">Environmental Intelligence</span>
+  <!-- Header -->
+  <header class="se-editorial-header">
+    <div class="se-editorial-container">
+      <div class="se-editorial-header-inner">
+        <a href="index.html" class="se-editorial-wordmark" aria-label="Signal Earth Homepage">
+          Signal Earth
         </a>
 
-        <ul class="se-nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="#contents">Table of Contents</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="briefs/index.html">Briefs</a></li>
-          <li><a href="explained/index.html">Explained</a></li>
-          <li><a href="data.html">Data &amp; Code</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
+        <nav class="se-editorial-nav" aria-label="Main Navigation">
+          <ul class="se-editorial-nav-list">
+            <li><a href="research.html" class="se-editorial-nav-link">Research</a></li>
+            <li><a href="data.html" class="se-editorial-nav-link">Data &amp; Maps</a></li>
+            <li><a href="briefs/index.html" class="se-editorial-nav-link">Briefs</a></li>
+            <li><a href="about.html" class="se-editorial-nav-link">About</a></li>
+          </ul>
+        </nav>
       </div>
-    </nav>
+    </div>
   </header>
 
   <main id="main">
-    <!-- Hero Section: Editorial Headline + 3D Rotating Earth Globe Widget -->
-    <section class="se-globe-hero-section" aria-labelledby="hero-title">
-      <div class="se-container">
-        <div class="se-globe-hero-grid">
-          <!-- Left Column: Editorial Headline & Actions -->
-          <div class="se-globe-hero-copy">
-            <span class="se-globe-kicker">
-              <span class="se-globe-kicker-dot"></span>
-              Planetary Observation &middot; Environmental Intelligence
-            </span>
-            <h1 id="hero-title" class="se-globe-hero-h1">
-              A clearer view of our changing planet.
+    <!-- Hero Section -->
+    <section class="se-editorial-hero" aria-labelledby="hero-title">
+      <div class="se-editorial-container">
+        <div class="se-editorial-hero-grid">
+          <!-- Left Column -->
+          <div class="se-editorial-hero-left">
+            <span class="se-editorial-kicker">Independent Environmental Research</span>
+            <h1 id="hero-title" class="se-editorial-hero-h1">
+              Reading the signals of a changing Earth.
             </h1>
-            <p class="se-globe-hero-dek">
-              Signal Earth is an independent initiative translating satellite remote sensing, atmospheric physics, and regulatory ground telemetry into transparent, reproducible science.
+            <p class="se-editorial-hero-dek">
+              Signal Earth explores environmental change through satellite observations, open datasets, scientific research, and reproducible analysis.
             </p>
-
-            <div class="se-globe-hero-actions">
-              <a href="#contents" class="se-btn-emerald">
-                Explore Table of Contents &darr;
+            <div class="se-editorial-hero-actions">
+              <a href="research.html" class="se-editorial-btn-primary">
+                Explore Research &rarr;
               </a>
-              <a href="research.html" class="se-btn-glass">
-                Published Research &rarr;
-              </a>
-              <a href="data.html" class="se-btn-glass">
-                Open Data &amp; Code &rarr;
+              <a href="data.html" class="se-editorial-btn-secondary">
+                Browse Data &amp; Maps &rarr;
               </a>
             </div>
-
-            <!-- Key Platform Metadata / Scope -->
-            <div class="se-globe-quick-specs">
-              <div class="se-globe-spec-item">
-                <span class="se-globe-spec-val">19 Documents</span>
-                <span class="se-globe-spec-lbl">Catalog Volumes</span>
-              </div>
-              <div class="se-globe-spec-item">
-                <span class="se-globe-spec-val">3,256 Days</span>
-                <span class="se-globe-spec-lbl">Station Archives Audited</span>
-              </div>
-              <div class="se-globe-spec-item">
-                <span class="se-globe-spec-val">30m Landsat</span>
-                <span class="se-globe-spec-lbl">Thermal Radiometry</span>
-              </div>
-              <div class="se-globe-spec-item">
-                <span class="se-globe-spec-val">Zero Imputation</span>
-                <span class="se-globe-spec-lbl">Empirical Standard</span>
-              </div>
-            </div>
           </div>
 
-          <!-- Right Column: Interactive 3D Rotating Earth Globe Widget -->
-          <div class="se-globe-card">
-            <div class="se-globe-card-header">
-              <span class="se-globe-badge">
-                Live Orbital View &middot; Planetary Telemetry
-              </span>
-              <button type="button" id="globe-toggle-spin" class="se-globe-spin-btn" aria-label="Toggle Earth globe auto-rotation" aria-pressed="true">
-                Pause Spin
-              </button>
-            </div>
-
-            <!-- Canvas Container -->
-            <div id="earth-globe-container" class="se-globe-canvas-wrap" title="Click and drag to rotate the Earth sphere">
-              <canvas id="earth-globe-canvas" width="420" height="420" aria-label="Interactive 3D rotating globe showing Earth observation telemetry locations"></canvas>
-            </div>
-
-            <!-- Location Selector Quick Buttons -->
-            <div class="se-globe-locations-bar" role="tablist" aria-label="Select Observation Region">
-              <button type="button" class="se-globe-loc-btn active" data-loc="0" aria-label="Focus Kanpur Inversion Basin">
-                Kanpur (26&deg;N)
-              </button>
-              <button type="button" class="se-globe-loc-btn" data-loc="1" aria-label="Focus Delhi NCR Airshed">
-                Delhi (28&deg;N)
-              </button>
-              <button type="button" class="se-globe-loc-btn" data-loc="2" aria-label="Focus High Arctic Cryosphere">
-                Arctic (78&deg;N)
-              </button>
-              <button type="button" class="se-globe-loc-btn" data-loc="3" aria-label="Focus Himalayan Orographic Ridge">
-                Himalayas
-              </button>
-            </div>
-
-            <!-- Real-time Coordinate Telemetry HUD Panel -->
-            <div class="se-globe-hud">
-              <div class="se-globe-hud-row">
-                <span class="se-globe-hud-label">Sub-Satellite Telemetry</span>
-                <span id="globe-hud-latlon" class="se-globe-hud-val">26.45&deg;N &middot; 80.33&deg;E (126m AMSL)</span>
-              </div>
-              <div id="globe-hud-target" class="se-globe-hud-target">
-                Kanpur, India &mdash; Central Ganga Basin &middot; Inversion Trap
-              </div>
-              <div id="globe-hud-sensor" class="se-globe-hud-sensor">
-                Landsat 8/9 TIRS-2 &middot; CPCB CAAQMS | 855-Day Hiatus Documented &middot; +3.60K UHI
-              </div>
-              <div>
-                <a id="globe-hud-action" href="investigations/kanpur.html" class="se-globe-hud-link">
-                  Explore Kanpur Investigation &rarr;
-                </a>
-              </div>
-            </div>
+          <!-- Right Column: Authentic Environmental Visual -->
+          <div class="se-editorial-hero-right">
+            <figure class="se-editorial-hero-visual">
+              <img src="assets/hero_indo_gangetic_smoke_20211105.jpg" alt="NASA Terra MODIS satellite view of atmospheric smoke and aerosol plume trapped along the Indo-Gangetic Basin" class="se-editorial-hero-img" width="1000" height="625" fetchpriority="high">
+              <figcaption class="se-editorial-hero-caption">
+                Post-monsoon atmospheric aerosol entrapment across the Indo-Gangetic Plain. NASA Terra MODIS, 5 November 2021.
+              </figcaption>
+            </figure>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 01 / FEATURED REPORTS & INVESTIGATIONS SHOWCASE WIDGET -->
-    <section class="se-reports-showcase-section" aria-labelledby="showcase-heading">
-      <div class="se-container">
-        <div class="se-findings-header">
-          <span class="section-kicker">01 &middot; Curated Showcase</span>
-          <h2 id="showcase-heading" class="se-findings-h2">Featured Reports &amp; Investigations</h2>
-          <p class="se-hero-dek" style="margin-bottom: 0;">
-            Rigorous quantitative investigations translating continuous regulatory ground telemetry, spaceborne thermal radiometry, and regional airshed dynamics.
+    <hr class="se-editorial-divider">
+
+    <!-- Selected Research -->
+    <section class="se-editorial-section" id="research" aria-labelledby="research-heading">
+      <div class="se-editorial-container">
+        <div class="se-editorial-section-header">
+          <h2 id="research-heading" class="se-editorial-section-title">
+            Selected Research
+          </h2>
+          <p class="se-editorial-section-intro">
+            Investigations into the patterns, measurements, and processes shaping our environment.
           </p>
         </div>
 
-        <div class="se-reports-showcase-grid">
-          <!-- Report 01: Kanpur Winter Particulate Dynamics -->
-          <article class="se-showcase-card">
-            <div class="se-showcase-img-wrap">
-              <img src="assets/satellite_view_kanpur_haze_20211111.jpg" alt="NASA Aqua MODIS satellite view of atmospheric haze over central Ganga valley" width="800" height="450" loading="lazy">
-              <span class="se-showcase-overlay-tag">INV-01 &middot; GROUND TELEMETRY</span>
-            </div>
-            <div class="se-showcase-body">
-              <h3 class="se-showcase-title">
-                <a href="investigations/kanpur.html">Kanpur Particulate Dynamics &amp; Winter Multipliers</a>
-              </h3>
-              <p class="se-showcase-dek">
-                Continuous regulatory PM2.5 evaluation across two monitoring windows, documenting seasonal ratios and an explicit 855-day unmonitored station hiatus.
-              </p>
-              <div class="se-showcase-chips">
-                <span class="se-showcase-chip">1,628 Station-Days</span>
-                <span class="se-showcase-chip">2.40&times;&ndash;5.14&times; Multiplier</span>
-                <span class="se-showcase-chip">Hiatus Disclosed</span>
-              </div>
-              <div class="se-showcase-footer">
-                <a href="investigations/kanpur.html" class="se-showcase-link">Open Full Investigation &rarr;</a>
-                <a href="briefs/kanpur-winter-ratio.html" class="se-showcase-sublink">3-Min Brief &rarr;</a>
-              </div>
-            </div>
+        <div class="se-editorial-research-grid">
+          <!-- Item 1: Kanpur Particulate Dynamics -->
+          <article class="se-editorial-research-item">
+            <figure class="se-editorial-research-figure">
+              <img src="assets/satellite_view_kanpur_haze_20211111.jpg" alt="NASA Aqua MODIS satellite observation of atmospheric haze over central Ganga valley" width="800" height="500" loading="lazy">
+            </figure>
+            <span class="se-editorial-category-label">Air Quality</span>
+            <h3 class="se-editorial-research-title">
+              <a href="investigations/kanpur.html">Kanpur Particulate Dynamics &amp; Winter Multipliers</a>
+            </h3>
+            <p class="se-editorial-research-desc">
+              Continuous regulatory PM2.5 evaluation across two monitoring windows, documenting seasonal ratios and an explicit 855-day unmonitored station hiatus.
+            </p>
+            <a href="investigations/kanpur.html" class="se-editorial-inline-link">
+              Read research &rarr;
+            </a>
           </article>
 
-          <!-- Report 02: Delhi NAQI Criteria Pollutant Dominance -->
-          <article class="se-showcase-card">
-            <div class="se-showcase-img-wrap">
-              <img src="assets/hero_indo_gangetic_smoke_20211105.jpg" alt="NASA Terra MODIS satellite view of regional smoke plume across northern India" width="800" height="450" loading="lazy">
-              <span class="se-showcase-overlay-tag">INV-02 &middot; REGULATORY MECHANICS</span>
-            </div>
-            <div class="se-showcase-body">
-              <h3 class="se-showcase-title">
-                <a href="investigations/delhi.html">Delhi NAQI Criteria Pollutant Dominance</a>
-              </h3>
-              <p class="se-showcase-dek">
-                Analysis of 24 pollutant components and statutory breakpoint mechanics demonstrating particulate dominance over headline AQI scores.
-              </p>
-              <div class="se-showcase-chips">
-                <span class="se-showcase-chip">24 Components</span>
-                <span class="se-showcase-chip">95.3% PM Governing</span>
-                <span class="se-showcase-chip">731-Day Hiatus Marked</span>
-              </div>
-              <div class="se-showcase-footer">
-                <a href="investigations/delhi.html" class="se-showcase-link">Open Full Investigation &rarr;</a>
-                <a href="briefs/delhi-criteria-dominance.html" class="se-showcase-sublink">3-Min Brief &rarr;</a>
-              </div>
-            </div>
+          <!-- Item 2: Kanpur Landsat Thermal Radiometry -->
+          <article class="se-editorial-research-item">
+            <figure class="se-editorial-research-figure">
+              <img src="assets/kanpur-uhi/kanpur-uhi-30m.png" alt="USGS Landsat 30m thermal radiometry map over Kanpur urban core and riverine cooling zone" width="800" height="500" loading="lazy">
+            </figure>
+            <span class="se-editorial-category-label">Land Surface Temperature</span>
+            <h3 class="se-editorial-research-title">
+              <a href="investigations/kanpur-uhi.html">Intra-Urban Thermal Zoning &amp; 30m Landsat Radiometry</a>
+            </h3>
+            <p class="se-editorial-research-desc">
+              High-resolution thermal infrared radiometry from Landsat 8/9 resolving intra-urban microclimates and thermal variance across Kanpur masked by coarse global reanalysis.
+            </p>
+            <a href="investigations/kanpur-uhi.html" class="se-editorial-inline-link">
+              Read research &rarr;
+            </a>
           </article>
 
-          <!-- Report 03: Kanpur Landsat 30m Thermal Radiometry -->
-          <article class="se-showcase-card">
-            <div class="se-showcase-img-wrap">
-              <img src="assets/kanpur-uhi/kanpur-uhi-30m.png" alt="USGS Landsat 30m thermal radiometry map over urban core" width="800" height="450" loading="lazy">
-              <span class="se-showcase-overlay-tag">INV-04 &middot; SPACEBORNE RADIOMETRY</span>
-            </div>
-            <div class="se-showcase-body">
-              <h3 class="se-showcase-title">
-                <a href="investigations/kanpur-uhi.html">Kanpur 30m Landsat Thermal Infrared Radiometry</a>
-              </h3>
-              <p class="se-showcase-dek">
-                High-resolution infrared remote sensing unmasking intra-urban microclimates and industrial thermal anomalies masked by coarse global reanalysis.
-              </p>
-              <div class="se-showcase-chips">
-                <span class="se-showcase-chip">USGS Landsat 8/9</span>
-                <span class="se-showcase-chip">TIRS-2 Band 10</span>
-                <span class="se-showcase-chip">+3.60 K Core Anomaly</span>
-              </div>
-              <div class="se-showcase-footer">
-                <a href="investigations/kanpur-uhi.html" class="se-showcase-link">Open Full Investigation &rarr;</a>
-                <a href="briefs/kanpur-landsat-thermal-snapshot.html" class="se-showcase-sublink">3-Min Brief &rarr;</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Report 04: Continuous Ambient Station Rankings & Quorum Audit -->
-          <article class="se-showcase-card">
-            <div class="se-showcase-img-wrap">
-              <img src="assets/delhi_iss_night.jpg" alt="Spaceborne nighttime view of urban radiance over Delhi NCR taken from ISS" width="800" height="450" loading="lazy">
-              <span class="se-showcase-overlay-tag">RNK-01 &middot; OBSERVATIONAL AUDIT</span>
-            </div>
-            <div class="se-showcase-body">
-              <h3 class="se-showcase-title">
-                <a href="rankings.html">Continuous Ambient Station Rankings &amp; Quorum Audit</a>
-              </h3>
-              <p class="se-showcase-dek">
-                Multi-year particulate exposure rankings evaluating continuous regulatory monitors, siting disparities, and sensor uptime completeness across 3,256 station-days.
-              </p>
-              <div class="se-showcase-chips">
-                <span class="se-showcase-chip">3,256 Station-Days</span>
-                <span class="se-showcase-chip">Quorum Audit</span>
-                <span class="se-showcase-chip">Sensor Ranks</span>
-              </div>
-              <div class="se-showcase-footer">
-                <a href="rankings.html" class="se-showcase-link">View Station Rankings &rarr;</a>
-                <a href="sources.html" class="se-showcase-sublink">Sensor Registry &rarr;</a>
-              </div>
-            </div>
+          <!-- Item 3: Delhi NAQI Pollutant Dominance -->
+          <article class="se-editorial-research-item">
+            <figure class="se-editorial-research-figure">
+              <img src="assets/delhi/03_seasonal_aqi_dynamics.png" alt="CPCB NAQI seasonal breakpoint dynamics and pollutant distribution boxplots" width="800" height="500" loading="lazy">
+            </figure>
+            <span class="se-editorial-category-label">Regulatory Mechanics</span>
+            <h3 class="se-editorial-research-title">
+              <a href="investigations/delhi.html">Delhi NAQI Criteria Pollutant Dominance</a>
+            </h3>
+            <p class="se-editorial-research-desc">
+              Analysis of 24 pollutant components and statutory breakpoint mechanics demonstrating particulate dominance over headline AQI scores.
+            </p>
+            <a href="investigations/delhi.html" class="se-editorial-inline-link">
+              Read research &rarr;
+            </a>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- 02 / MASTER TABLE OF CONTENTS (PORTAL CATALOG & RESEARCH DIRECTORY) -->
-    <section id="contents" class="se-toc-section" aria-labelledby="toc-heading">
-      <div class="se-container">
-        <div class="se-toc-header-wrap">
-          <span class="se-toc-kicker">02 &middot; Research Catalog &amp; Platform Directory</span>
-          <h2 id="toc-heading" class="se-toc-h2">Table of Contents</h2>
-          <p class="se-toc-dek">
-            Complete master directory of investigations, synthesized briefs, technical explainers, observational audits, and reproducible data ledgers across Signal Earth. Select any document to open its full study.
+    <hr class="se-editorial-divider">
+
+    <!-- Areas of Focus -->
+    <section class="se-editorial-section" aria-labelledby="focus-heading">
+      <div class="se-editorial-container">
+        <div class="se-editorial-section-header">
+          <h2 id="focus-heading" class="se-editorial-section-title">
+            Areas of Focus
+          </h2>
+        </div>
+
+        <div class="se-editorial-focus-grid">
+          <!-- 01 -->
+          <div class="se-editorial-focus-item">
+            <span class="se-editorial-focus-num">01</span>
+            <h3 class="se-editorial-focus-title">Air Quality</h3>
+            <p class="se-editorial-focus-desc">
+              Particulate pollution, monitoring data, and atmospheric patterns.
+            </p>
+          </div>
+
+          <!-- 02 -->
+          <div class="se-editorial-focus-item">
+            <span class="se-editorial-focus-num">02</span>
+            <h3 class="se-editorial-focus-title">Land Surface Temperature</h3>
+            <p class="se-editorial-focus-desc">
+              Satellite-derived temperature patterns, land cover, and urban heat islands.
+            </p>
+          </div>
+
+          <!-- 03 -->
+          <div class="se-editorial-focus-item">
+            <span class="se-editorial-focus-num">03</span>
+            <h3 class="se-editorial-focus-title">Earth Observation &amp; Open Data</h3>
+            <p class="se-editorial-focus-desc">
+              Satellite imagery, environmental datasets, and reproducible analysis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="se-editorial-divider">
+
+    <!-- Research Principles: Evidence before opinion -->
+    <section class="se-editorial-section" aria-labelledby="principles-heading">
+      <div class="se-editorial-container">
+        <div class="se-editorial-principles-wrap">
+          <h2 id="principles-heading" class="se-editorial-section-title">
+            Evidence before opinion.
+          </h2>
+          <p class="se-editorial-principles-intro">
+            Environmental change deserves more than headlines. Signal Earth works with documented sources, transparent methods, and reproducible analysis to make complex environmental patterns easier to understand.
           </p>
-
-          <!-- Interactive Category Filter Tabs -->
-          <div class="se-toc-filters" role="tablist" aria-label="Table of Contents Categories">
-            <button type="button" class="se-toc-tab active" data-filter="all" aria-selected="true">
-              All Volumes (19)
-            </button>
-            <button type="button" class="se-toc-tab" data-filter="investigation" aria-selected="false">
-              Investigations (5)
-            </button>
-            <button type="button" class="se-toc-tab" data-filter="brief" aria-selected="false">
-              Research Briefs (4)
-            </button>
-            <button type="button" class="se-toc-tab" data-filter="explainer" aria-selected="false">
-              Explainers (3)
-            </button>
-            <button type="button" class="se-toc-tab" data-filter="audit" aria-selected="false">
-              Audits &amp; Rankings (3)
-            </button>
-            <button type="button" class="se-toc-tab" data-filter="data" aria-selected="false">
-              Data &amp; Standards (4)
-            </button>
+          <div class="se-editorial-principles-bar" role="list">
+            <div class="se-editorial-principle-item" role="listitem">Traceable Sources</div>
+            <div class="se-editorial-principle-divider" aria-hidden="true"></div>
+            <div class="se-editorial-principle-item" role="listitem">Transparent Methods</div>
+            <div class="se-editorial-principle-divider" aria-hidden="true"></div>
+            <div class="se-editorial-principle-item" role="listitem">Reproducible Analysis</div>
           </div>
-        </div>
-
-        <!-- Master Table of Contents Rows -->
-        <div class="se-toc-list" role="feed" aria-label="Table of Contents Entries">
-          <!-- Item 01: INV-01 Kanpur Ground Telemetry -->
-          <a href="investigations/kanpur.html" class="se-toc-row" data-category="investigation">
-            <span class="se-toc-code">INV-01</span>
-            <span class="se-toc-title">Kanpur Particulate Dynamics &amp; Winter Air Multipliers</span>
-            <span class="se-toc-topic">Ground Telemetry</span>
-            <span class="se-toc-scope">Kanpur Airshed</span>
-            <span class="se-toc-format">15 min read</span>
-            <span class="se-toc-arrow">Read &rarr;</span>
-          </a>
-
-          <!-- Item 02: INV-02 Delhi NAQI Criteria Dominance -->
-          <a href="investigations/delhi.html" class="se-toc-row" data-category="investigation">
-            <span class="se-toc-code">INV-02</span>
-            <span class="se-toc-title">Delhi NAQI Criteria Pollutant Dominance &amp; Breakpoints</span>
-            <span class="se-toc-topic">Regulatory Mechanics</span>
-            <span class="se-toc-scope">Delhi NCR</span>
-            <span class="se-toc-format">12 min read</span>
-            <span class="se-toc-arrow">Read &rarr;</span>
-          </a>
-
-          <!-- Item 03: INV-03 Kanpur Reanalysis Temperature -->
-          <a href="investigations/kanpur-lst.html" class="se-toc-row" data-category="investigation">
-            <span class="se-toc-code">INV-03</span>
-            <span class="se-toc-title">Kanpur Reanalysis Temperature &amp; Boundary Layer Inversion</span>
-            <span class="se-toc-topic">Boundary Physics</span>
-            <span class="se-toc-scope">Central Ganga</span>
-            <span class="se-toc-format">14 min read</span>
-            <span class="se-toc-arrow">Read &rarr;</span>
-          </a>
-
-          <!-- Item 04: INV-04 Kanpur Landsat 30m Thermal Infrared -->
-          <a href="investigations/kanpur-uhi.html" class="se-toc-row" data-category="investigation">
-            <span class="se-toc-code">INV-04</span>
-            <span class="se-toc-title">Kanpur 30m Landsat Thermal Infrared Radiometry &amp; UHI</span>
-            <span class="se-toc-topic">Spaceborne Thermal</span>
-            <span class="se-toc-scope">Urban Core</span>
-            <span class="se-toc-format">10 min read</span>
-            <span class="se-toc-arrow">Read &rarr;</span>
-          </a>
-
-          <!-- Item 05: INV-05 Inter-City Basin Comparison -->
-          <a href="investigations/comparison.html" class="se-toc-row" data-category="investigation">
-            <span class="se-toc-code">INV-05</span>
-            <span class="se-toc-title">Delhi vs Kanpur Cross-Basin Comparative Dynamics</span>
-            <span class="se-toc-topic">Regional Telemetry</span>
-            <span class="se-toc-scope">Indo-Gangetic</span>
-            <span class="se-toc-format">11 min read</span>
-            <span class="se-toc-arrow">Read &rarr;</span>
-          </a>
-
-          <!-- Item 06: BRF-01 Kanpur Winter Ratio Brief -->
-          <a href="briefs/kanpur-winter-ratio.html" class="se-toc-row" data-category="brief">
-            <span class="se-toc-code code-brief">BRF-01</span>
-            <span class="se-toc-title">Kanpur Winter Particulate Multipliers (Executive Brief)</span>
-            <span class="se-toc-topic">Synthesized Brief</span>
-            <span class="se-toc-scope">Kanpur Airshed</span>
-            <span class="se-toc-format">3 min brief</span>
-            <span class="se-toc-arrow">Read &rarr;</span>
-          </a>
-
-          <!-- Item 07: BRF-02 Delhi Criteria Dominance Brief -->
-          <a href="briefs/delhi-criteria-dominance.html" class="se-toc-row" data-category="brief">
-            <span class="se-toc-code code-brief">BRF-02</span>
-            <span class="se-toc-title">Delhi NAQI Criteria Pollutant Dominance (Executive Brief)</span>
-            <span class="se-toc-topic">Synthesized Brief</span>
-            <span class="se-toc-scope">Delhi NCR</span>
-            <span class="se-toc-format">3 min brief</span>
-            <span class="se-toc-arrow">Read &rarr;</span>
-          </a>
-
-          <!-- Item 08: BRF-03 Kanpur Temperature Association Brief -->
-          <a href="briefs/kanpur-temperature-association.html" class="se-toc-row" data-category="brief">
-            <span class="se-toc-code code-brief">BRF-03</span>
-            <span class="se-toc-title">Kanpur Temperature &amp; Inversion Coupling (Executive Brief)</span>
-            <span class="se-toc-topic">Synthesized Brief</span>
-            <span class="se-toc-scope">Central Ganga</span>
-            <span class="se-toc-format">3 min brief</span>
-            <span class="se-toc-arrow">Read &rarr;</span>
-          </a>
-
-          <!-- Item 09: BRF-04 Kanpur Landsat Thermal Snapshot -->
-          <a href="briefs/kanpur-landsat-thermal-snapshot.html" class="se-toc-row" data-category="brief">
-            <span class="se-toc-code code-brief">BRF-04</span>
-            <span class="se-toc-title">Kanpur Landsat 30m Thermal Snapshot (Executive Brief)</span>
-            <span class="se-toc-topic">Synthesized Brief</span>
-            <span class="se-toc-scope">Urban Core</span>
-            <span class="se-toc-format">3 min brief</span>
-            <span class="se-toc-arrow">Read &rarr;</span>
-          </a>
-
-          <!-- Item 10: EXP-01 CPCB NAQI Formulation -->
-          <a href="explained/cpcb-naqi.html" class="se-toc-row" data-category="explainer">
-            <span class="se-toc-code code-exp">EXP-01</span>
-            <span class="se-toc-title">CPCB National Air Quality Index Formulation &amp; Mathematics</span>
-            <span class="se-toc-topic">Technical Explainer</span>
-            <span class="se-toc-scope">National Standard</span>
-            <span class="se-toc-format">8 min guide</span>
-            <span class="se-toc-arrow">Read &rarr;</span>
-          </a>
-
-          <!-- Item 11: EXP-02 Temperature Inversion Dynamics -->
-          <a href="explained/temperature-inversion.html" class="se-toc-row" data-category="explainer">
-            <span class="se-toc-code code-exp">EXP-02</span>
-            <span class="se-toc-title">Planetary Boundary Layer Inversion &amp; Nocturnal Capping</span>
-            <span class="se-toc-topic">Atmospheric Physics</span>
-            <span class="se-toc-scope">Basin Meteorology</span>
-            <span class="se-toc-format">7 min guide</span>
-            <span class="se-toc-arrow">Read &rarr;</span>
-          </a>
-
-          <!-- Item 12: EXP-03 Weather Reanalysis Grids -->
-          <a href="explained/weather-reanalysis.html" class="se-toc-row" data-category="explainer">
-            <span class="se-toc-code code-exp">EXP-03</span>
-            <span class="se-toc-title">Weather Reanalysis (ERA5 &amp; MERRA-2) vs Spaceborne Radiometry</span>
-            <span class="se-toc-topic">Remote Sensing</span>
-            <span class="se-toc-scope">Global Grids</span>
-            <span class="se-toc-format">9 min guide</span>
-            <span class="se-toc-arrow">Read &rarr;</span>
-          </a>
-
-          <!-- Item 13: RNK-01 Monitoring Station Rankings -->
-          <a href="rankings.html" class="se-toc-row" data-category="audit">
-            <span class="se-toc-code code-rnk">RNK-01</span>
-            <span class="se-toc-title">CAAQMS Monitoring Station Rankings &amp; Sensor Quorum Audit</span>
-            <span class="se-toc-topic">Observational Audit</span>
-            <span class="se-toc-scope">Delhi &amp; Kanpur</span>
-            <span class="se-toc-format">Matrix Audit</span>
-            <span class="se-toc-arrow">Access &rarr;</span>
-          </a>
-
-          <!-- Item 14: FCT-01 Environmental Factsheets -->
-          <a href="factsheets.html" class="se-toc-row" data-category="audit">
-            <span class="se-toc-code code-rnk">FCT-01</span>
-            <span class="se-toc-title">Environmental Factsheets &amp; Regulatory Parameter Reference</span>
-            <span class="se-toc-topic">Standards Matrix</span>
-            <span class="se-toc-scope">NAAQS &amp; WHO</span>
-            <span class="se-toc-format">Factsheet</span>
-            <span class="se-toc-arrow">Access &rarr;</span>
-          </a>
-
-          <!-- Item 15: SRC-01 Data Sources Registry -->
-          <a href="sources.html" class="se-toc-row" data-category="audit">
-            <span class="se-toc-code code-rnk">SRC-01</span>
-            <span class="se-toc-title">Registry of Public Data Sources, Archives &amp; Instruments</span>
-            <span class="se-toc-topic">Sensor Registry</span>
-            <span class="se-toc-scope">Multi-Agency</span>
-            <span class="se-toc-format">Registry</span>
-            <span class="se-toc-arrow">Access &rarr;</span>
-          </a>
-
-          <!-- Item 16: DAT-01 Open Data & Code Registry -->
-          <a href="data.html" class="se-toc-row" data-category="data">
-            <span class="se-toc-code code-dat">DAT-01</span>
-            <span class="se-toc-title">Open Data Registry, GIS Layers &amp; Python Processing Pipelines</span>
-            <span class="se-toc-topic">Open Science</span>
-            <span class="se-toc-scope">Platform Code</span>
-            <span class="se-toc-format">Code &amp; Data</span>
-            <span class="se-toc-arrow">Access &rarr;</span>
-          </a>
-
-          <!-- Item 17: LED-01 Empirical Number Ledger -->
-          <a href="numbers_ledger.csv" class="se-toc-row" data-category="data" download="signal_earth_numbers_ledger.csv">
-            <span class="se-toc-code code-dat">LED-01</span>
-            <span class="se-toc-title">Empirical Number Ledger (27 Published Figures Traceable to Code)</span>
-            <span class="se-toc-topic">Traceability</span>
-            <span class="se-toc-scope">All Studies</span>
-            <span class="se-toc-format">CSV Ledger</span>
-            <span class="se-toc-arrow">Download &rarr;</span>
-          </a>
-
-          <!-- Item 18: MET-01 Scientific Methodology -->
-          <a href="methodology.html" class="se-toc-row" data-category="data">
-            <span class="se-toc-code code-dat">MET-01</span>
-            <span class="se-toc-title">Scientific Methodology &amp; Data Hygiene Standards</span>
-            <span class="se-toc-topic">Epistemic Standard</span>
-            <span class="se-toc-scope">Institutional</span>
-            <span class="se-toc-format">Standard</span>
-            <span class="se-toc-arrow">Access &rarr;</span>
-          </a>
-
-          <!-- Item 19: COR-01 Public Corrections & Audit Log -->
-          <a href="corrections.html" class="se-toc-row" data-category="data">
-            <span class="se-toc-code code-dat">COR-01</span>
-            <span class="se-toc-title">Public Corrections, Errata Log &amp; Peer Review Audits</span>
-            <span class="se-toc-topic">Integrity Audit</span>
-            <span class="se-toc-scope">Version History</span>
-            <span class="se-toc-format">Audit Log</span>
-            <span class="se-toc-arrow">Access &rarr;</span>
-          </a>
         </div>
       </div>
     </section>
 
-    <!-- 03 / PLANETARY SATELLITE OBSERVATION STREAM (RICH SATELLITE IMAGERY) -->
-    <section class="se-stream-section" aria-labelledby="stream-heading">
-      <div class="se-container">
-        <div class="se-stream-header-wrap">
-          <span class="section-kicker">03 &middot; Visual Observation Stream</span>
-          <h2 id="stream-heading" class="se-findings-h2">Spaceborne Earth Observation Archive</h2>
-          <p class="se-hero-dek" style="margin-bottom: 0;">
-            Continuous visual transect across satellite remote sensing passes: from polar cryosphere fracture margins to regional aerosol stagnation and intra-urban thermal radiometry.
+    <hr class="se-editorial-divider">
+
+    <!-- About Signal Earth -->
+    <section class="se-editorial-section" aria-labelledby="about-heading">
+      <div class="se-editorial-container">
+        <div class="se-editorial-about-wrap">
+          <h2 id="about-heading" class="se-editorial-section-title">
+            About Signal Earth
+          </h2>
+          <p class="se-editorial-about-text">
+            Signal Earth is an independent environmental research initiative exploring how our planet changes through satellite observations, environmental data, and scientific analysis.
           </p>
-        </div>
-      </div>
-
-      <!-- Auto-scrolling horizontal stream container -->
-      <div class="se-stream-container">
-        <div class="se-stream-track">
-          <!-- Card 1: Arctic Sea Ice -->
-          <article class="se-stream-item">
-            <div class="se-stream-img-wrap">
-              <img src="assets/nasa_arctic_sea_ice.jpg" alt="Satellite view of arctic sea ice fractures and open ocean margins" width="700" height="400" loading="lazy">
-            </div>
-            <div class="se-stream-meta">
-              <span class="se-stream-meta-tag">Cryosphere Observation &middot; Polar Margin</span>
-              <h3 class="se-stream-meta-title">Arctic Sea Ice Fracture</h3>
-              <p class="se-stream-meta-desc">Fracturing sea ice sheets and summer melt margin dynamics over polar waters.</p>
-            </div>
-          </article>
-
-          <!-- Card 2: Indo-Gangetic Agricultural Smoke -->
-          <article class="se-stream-item">
-            <div class="se-stream-img-wrap">
-              <img src="assets/hero_indo_gangetic_smoke_20211105.jpg" alt="NASA Terra MODIS satellite view of regional smoke plume across northern India" width="700" height="400" loading="lazy">
-            </div>
-            <div class="se-stream-meta">
-              <span class="se-stream-meta-tag">NASA Terra MODIS &middot; Agricultural Smoke</span>
-              <h3 class="se-stream-meta-title">Ganga Basin Smoke Plume</h3>
-              <p class="se-stream-meta-desc">Post-harvest agricultural burning smoke spreading across northern India.</p>
-            </div>
-          </article>
-
-          <!-- Card 3: Boundary Layer Haze -->
-          <article class="se-stream-item">
-            <div class="se-stream-img-wrap">
-              <img src="assets/satellite_view_kanpur_haze_20211111.jpg" alt="NASA Aqua MODIS satellite view of atmospheric haze over central Ganga valley" width="700" height="400" loading="lazy">
-            </div>
-            <div class="se-stream-meta">
-              <span class="se-stream-meta-tag">NASA Aqua MODIS &middot; Boundary Layer</span>
-              <h3 class="se-stream-meta-title">Atmospheric Stagnation &amp; Haze</h3>
-              <p class="se-stream-meta-desc">Dense winter aerosol entrapment beneath suppressed meteorological inversions.</p>
-            </div>
-          </article>
-
-          <!-- Card 4: Landsat 30m Thermal Radiometry -->
-          <article class="se-stream-item">
-            <div class="se-stream-img-wrap">
-              <img src="assets/kanpur-uhi/kanpur-uhi-30m.png" alt="USGS Landsat 30m thermal radiometry map over urban core" width="700" height="400" loading="lazy">
-            </div>
-            <div class="se-stream-meta">
-              <span class="se-stream-meta-tag">USGS Landsat 8/9 &middot; TIRS-2 Band 10</span>
-              <h3 class="se-stream-meta-title">30m Surface Thermal Radiometry</h3>
-              <p class="se-stream-meta-desc">High-resolution infrared zoning exposing urban heat microclimates and industrial hotspots.</p>
-            </div>
-          </article>
-
-          <!-- Card 5: Delhi Night Orbital Radiance -->
-          <article class="se-stream-item">
-            <div class="se-stream-img-wrap">
-              <img src="assets/delhi_iss_night.jpg" alt="Spaceborne nighttime view of urban radiance over Delhi NCR from ISS" width="700" height="400" loading="lazy">
-            </div>
-            <div class="se-stream-meta">
-              <span class="se-stream-meta-tag">ISS Orbital Radiance &middot; Megacity Core</span>
-              <h3 class="se-stream-meta-title">Delhi Nocturnal Urban Footprint</h3>
-              <p class="se-stream-meta-desc">Spaceborne night radiance capturing the spatial morphology of the National Capital Region.</p>
-            </div>
-          </article>
-
-          <!-- Card 6: Himalayan Haze Panorama -->
-          <article class="se-stream-item">
-            <div class="se-stream-img-wrap">
-              <img src="assets/himalaya_haze_panorama.jpg" alt="Himalayan mountain range acting as topographic barrier to regional smog" width="700" height="400" loading="lazy">
-            </div>
-            <div class="se-stream-meta">
-              <span class="se-stream-meta-tag">Topographic Barrier &middot; Orographic Trap</span>
-              <h3 class="se-stream-meta-title">Himalayan Orographic Containment</h3>
-              <p class="se-stream-meta-desc">The southern Himalayan mountain front physically trapping winter aerosols within the plains.</p>
-            </div>
-          </article>
-
-          <!-- Card 7: Orbital Atmospheric Boundary -->
-          <article class="se-stream-item">
-            <div class="se-stream-img-wrap">
-              <img src="assets/signal_earth_hero.jpg" alt="Earth orbital horizon and thin atmospheric boundary" width="700" height="400" loading="lazy">
-            </div>
-            <div class="se-stream-meta">
-              <span class="se-stream-meta-tag">Orbital Perspective &middot; Atmosphere</span>
-              <h3 class="se-stream-meta-title">Global Atmospheric Boundary</h3>
-              <p class="se-stream-meta-desc">The thin protective gaseous envelope shielding the biosphere from outer space.</p>
-            </div>
-          </article>
-
-          <!-- Card 8: Deep Space Biosphere Perspective -->
-          <article class="se-stream-item">
-            <div class="se-stream-img-wrap">
-              <img src="assets/satellite_earth_dark.jpg" alt="High angle spaceborne view of coastal waters and river basins at night" width="700" height="400" loading="lazy">
-            </div>
-            <div class="se-stream-meta">
-              <span class="se-stream-meta-tag">Earth Observation &middot; Coastal Basin</span>
-              <h3 class="se-stream-meta-title">Spaceborne River Basin Network</h3>
-              <p class="se-stream-meta-desc">Hydrological pathways and riparian corridors governing regional transport and microclimates.</p>
-            </div>
-          </article>
-
-          <!-- Duplicate Set for Seamless Continuous Loop -->
-          <!-- Card 1 Dupl -->
-          <article class="se-stream-item" aria-hidden="true">
-            <div class="se-stream-img-wrap">
-              <img src="assets/nasa_arctic_sea_ice.jpg" alt="" width="700" height="400" loading="lazy">
-            </div>
-            <div class="se-stream-meta">
-              <span class="se-stream-meta-tag">Cryosphere Observation &middot; Polar Margin</span>
-              <h3 class="se-stream-meta-title">Arctic Sea Ice Fracture</h3>
-              <p class="se-stream-meta-desc">Fracturing sea ice sheets and summer melt margin dynamics over polar waters.</p>
-            </div>
-          </article>
-
-          <!-- Card 2 Dupl -->
-          <article class="se-stream-item" aria-hidden="true">
-            <div class="se-stream-img-wrap">
-              <img src="assets/hero_indo_gangetic_smoke_20211105.jpg" alt="" width="700" height="400" loading="lazy">
-            </div>
-            <div class="se-stream-meta">
-              <span class="se-stream-meta-tag">NASA Terra MODIS &middot; Agricultural Smoke</span>
-              <h3 class="se-stream-meta-title">Ganga Basin Smoke Plume</h3>
-              <p class="se-stream-meta-desc">Post-harvest agricultural burning smoke spreading across northern India.</p>
-            </div>
-          </article>
-
-          <!-- Card 3 Dupl -->
-          <article class="se-stream-item" aria-hidden="true">
-            <div class="se-stream-img-wrap">
-              <img src="assets/satellite_view_kanpur_haze_20211111.jpg" alt="" width="700" height="400" loading="lazy">
-            </div>
-            <div class="se-stream-meta">
-              <span class="se-stream-meta-tag">NASA Aqua MODIS &middot; Boundary Layer</span>
-              <h3 class="se-stream-meta-title">Atmospheric Stagnation &amp; Haze</h3>
-              <p class="se-stream-meta-desc">Dense winter aerosol entrapment beneath suppressed meteorological inversions.</p>
-            </div>
-          </article>
-
-          <!-- Card 4 Dupl -->
-          <article class="se-stream-item" aria-hidden="true">
-            <div class="se-stream-img-wrap">
-              <img src="assets/kanpur-uhi/kanpur-uhi-30m.png" alt="" width="700" height="400" loading="lazy">
-            </div>
-            <div class="se-stream-meta">
-              <span class="se-stream-meta-tag">USGS Landsat 8/9 &middot; TIRS-2 Band 10</span>
-              <h3 class="se-stream-meta-title">30m Surface Thermal Radiometry</h3>
-              <p class="se-stream-meta-desc">High-resolution infrared zoning exposing urban heat microclimates and industrial hotspots.</p>
-            </div>
-          </article>
-
-          <!-- Card 5 Dupl -->
-          <article class="se-stream-item" aria-hidden="true">
-            <div class="se-stream-img-wrap">
-              <img src="assets/delhi_iss_night.jpg" alt="" width="700" height="400" loading="lazy">
-            </div>
-            <div class="se-stream-meta">
-              <span class="se-stream-meta-tag">ISS Orbital Radiance &middot; Megacity Core</span>
-              <h3 class="se-stream-meta-title">Delhi Nocturnal Urban Footprint</h3>
-              <p class="se-stream-meta-desc">Spaceborne night radiance capturing the spatial morphology of the National Capital Region.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- 04 / FOUNDATIONAL PRINCIPLES (ORIGIN & INTEGRITY) -->
-    <section class="se-dark-origins-section" aria-labelledby="origins-heading">
-      <div class="se-container">
-        <div class="se-findings-header">
-          <span class="section-kicker">04 &middot; Foundational Principles</span>
-          <h2 id="origins-heading" class="se-findings-h2">Signal Earth: Scientific Integrity</h2>
-          <p class="se-hero-dek" style="margin-bottom: 0;">
-            An independent research initiative applying civil engineering discipline and atmospheric physics to open planetary records.
-          </p>
-        </div>
-
-        <div class="se-dark-origins-grid">
-          <!-- Pillar 1: Evidence Over Speculation -->
-          <article class="se-dark-origin-card">
-            <span class="se-dark-origin-kicker">Epistemic Standard</span>
-            <h3 class="se-dark-origin-h3">Evidence Over Speculation</h3>
-            <p class="se-dark-origin-p">
-              Every published number matches an open Python script run logged in our public ledger. Claims are grounded directly in raw archives from the Central Pollution Control Board (CPCB), UPPCB, DPCC, NASA Earthdata, and USGS.
-            </p>
-            <p class="se-dark-origin-p">
-              Correlation is rigorously distinguished from causation, and spatial resolutions are maintained with strict integrity.
-            </p>
-          </article>
-
-          <!-- Pillar 2: Zero Synthetic Imputation -->
-          <article class="se-dark-origin-card">
-            <span class="se-dark-origin-kicker">Reproducibility Rule</span>
-            <h3 class="se-dark-origin-h3">Zero Synthetic Imputation</h3>
-            <p class="se-dark-origin-p">
-              Real-world regulatory stations fail, disconnect, or experience multi-month reporting hiatuses. Signal Earth enforces an uncompromising data standard: operational gaps are explicitly documented and never masked with synthetic interpolation.
-            </p>
-            <p class="se-dark-origin-p">
-              The 855-day hiatus in Kanpur and 731-day hiatus in Delhi are presented openly as unmonitored windows in every chart and table.
-            </p>
-          </article>
-
-          <!-- Pillar 3: Civil Engineering Perspective -->
-          <article class="se-dark-origin-card">
-            <span class="se-dark-origin-kicker">Disciplinary Focus</span>
-            <h3 class="se-dark-origin-h3">Civil Engineering Perspective</h3>
-            <p class="se-dark-origin-p">
-              Founded by a Civil Engineering student at HBTU Kanpur, Signal Earth examines the physical nexus between atmospheric boundary layers, transportation infrastructure corridors, and urban surface thermal morphology across northern India.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- 05 / HOW THE PLATFORM IS BUILT -->
-    <section class="se-how-made-section" aria-labelledby="how-made-heading">
-      <div class="se-container">
-        <div class="se-how-made-inner">
-          <div class="se-how-made-text">
-            <h2 id="how-made-heading" class="se-how-made-title">How Signal Earth is Built</h2>
-            <p class="se-how-made-desc">
-              All calculations run on open code against public regulatory archives and spaceborne remote sensing records. Every number published on this site is traceable to an empirical script run and logged in an open ledger.
-            </p>
-          </div>
-          <div class="se-how-made-links">
-            <a href="data.html" class="se-btn se-btn-outline">Open Code &amp; Data &rarr;</a>
-            <a href="numbers_ledger.csv" class="se-btn se-btn-outline" download="signal_earth_numbers_ledger.csv">Numbers Ledger (CSV) &rarr;</a>
-            <a href="corrections.html" class="se-btn se-btn-outline">Corrections Log &rarr;</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 06 / AUTHOR STRIP -->
-    <section class="se-about-strip-section" aria-labelledby="about-strip-heading">
-      <div class="se-container">
-        <div class="se-about-strip-inner">
-          <div class="se-about-strip-text">
-            <div class="se-about-strip-name" id="about-strip-heading">Avnish Singh</div>
-            <div class="se-about-strip-role">
-              Civil Engineering student, HBTU Kanpur &middot; Environmental Engineering Focus
-            </div>
-            <p class="se-text-xs-secondary-zero" style="margin-top: 0.4rem; color: #9CA3AF;">
-              An independent initiative analysing air quality and surface temperature in Kanpur and Delhi through open datasets, satellite remote sensing, and reproducible pipelines.
-            </p>
-          </div>
-          <div class="se-about-strip-links">
-            <a href="about.html" class="se-btn se-btn-outline">About Signal Earth &rarr;</a>
-            <a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer" class="se-btn se-btn-outline">GitHub Repository &rarr;</a>
+          <div>
+            <a href="about.html" class="se-editorial-inline-link">
+              About the project &rarr;
+            </a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Minimalist Editorial Footer -->
-  <footer class="se-footer">
-    <div class="se-container">
-      <div class="se-footer-inner">
-        <div class="se-footer-brand-col">
-          <div class="se-footer-brand-title">Signal Earth</div>
-          <p class="se-footer-brand-desc">
-            An independent project analysing planetary boundaries, air quality, and surface temperature across northern India through spaceborne remote sensing and open code.
+  <!-- Footer -->
+  <footer class="se-editorial-footer">
+    <div class="se-editorial-container">
+      <div class="se-editorial-footer-grid">
+        <!-- Brand Info -->
+        <div class="se-editorial-footer-brand-col">
+          <div class="se-editorial-footer-brand">Signal Earth</div>
+          <p class="se-editorial-footer-desc">
+            An independent environmental research initiative making environmental change visible through maps, data, and science.
           </p>
         </div>
-        <div class="se-footer-col">
-          <h5>Investigations</h5>
-          <ul>
-            <li><a href="investigations/kanpur.html">Kanpur Particulate Dynamics</a></li>
-            <li><a href="investigations/delhi.html">Delhi NAQI Analysis</a></li>
-            <li><a href="investigations/kanpur-lst.html">Kanpur Reanalysis Temperature</a></li>
-            <li><a href="investigations/kanpur-uhi.html">Kanpur Landsat 30m Thermal</a></li>
-            <li><a href="investigations/comparison.html">Cross-Basin Comparison</a></li>
-          </ul>
-        </div>
-        <div class="se-footer-col">
-          <h5>Synthesized Briefs</h5>
-          <ul>
-            <li><a href="briefs/kanpur-winter-ratio.html">Kanpur Winter Ratio Brief</a></li>
-            <li><a href="briefs/delhi-criteria-dominance.html">Delhi Criteria Dominance Brief</a></li>
-            <li><a href="briefs/kanpur-temperature-association.html">Kanpur Temperature Correlation</a></li>
-            <li><a href="briefs/kanpur-landsat-thermal-snapshot.html">Kanpur Landsat Snapshot</a></li>
-            <li><a href="briefs/index.html">All Research Briefs</a></li>
-          </ul>
-        </div>
-        <div class="se-footer-col">
-          <h5>Transparency</h5>
-          <ul>
-            <li><a href="methodology.html">Methodology &amp; Standards</a></li>
-            <li><a href="data.html">Data Registry &amp; Code</a></li>
-            <li><a href="numbers_ledger.csv">Numbers Ledger (CSV)</a></li>
-            <li><a href="rankings.html">Station Rankings &amp; Quorum</a></li>
-            <li><a href="corrections.html">Corrections &amp; Audit Log</a></li>
-            <li><a href="about.html">About Author</a></li>
-          </ul>
+
+        <!-- Navigation Columns -->
+        <div class="se-editorial-footer-nav-col">
+          <div>
+            <div class="se-editorial-footer-group-title">Research</div>
+            <ul class="se-editorial-footer-links">
+              <li><a href="research.html">Selected Research</a></li>
+              <li><a href="data.html">Data &amp; Maps</a></li>
+              <li><a href="briefs/index.html">Research Briefs</a></li>
+              <li><a href="rankings.html">Station Rankings</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="se-editorial-footer-group-title">Initiative</div>
+            <ul class="se-editorial-footer-links">
+              <li><a href="about.html">About Signal Earth</a></li>
+              <li><a href="methodology.html">Methodology &amp; Standards</a></li>
+              <li><a href="sources.html">Sources &amp; Sensors</a></li>
+              <li><a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      <div class="se-disclaimer-banner" style="background: transparent; border-top: 1px solid var(--border-color); border-bottom: none; margin-top: 2rem; padding: 1.5rem 0 0; text-align: left; color: #9CA3AF;">
-        Signal Earth is an independent research initiative. It is not affiliated with, sponsored by, or endorsed by NASA, USGS, CPCB, UPPCB, DPCC, or any governmental agency.
-      </div>
-
-      <div class="se-footer-bottom">
-        <div>Signal Earth &middot; Open Science under MIT License</div>
+      <div class="se-editorial-footer-bottom">
+        <div>Signal Earth &middot; Open research and reproducible analysis.</div>
         <div>Updated October 2026 &middot; Hosted on GitHub Pages</div>
       </div>
     </div>
   </footer>
-
-  <!-- Scripts: World Land Boundaries, Interactive 3D Earth Globe Widget, TOC Filters -->
-  <script src="assets/world-land.js"></script>
-  <script src="assets/earth-globe.js"></script>
-  <script src="assets/toc-filter.js"></script>
 </body>
 </html>
