@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=20261015">
+  <link rel="stylesheet" href="style.css?v=20261015-minimal">
 
   <!-- Global Theme Management System (Prevents FOUT & manages light/dark mode) -->
   <script src="assets/theme.js"></script>
@@ -39,7 +39,7 @@
           <a href="index.html" class="se-editorial-wordmark" aria-label="Signal Earth Homepage">
             Signal Earth
           </a>
-          <span class="se-wordmark-badge">Research Portal</span>
+          <span class="se-wordmark-badge">Portal</span>
         </div>
 
         <div class="se-editorial-header-right">
@@ -84,10 +84,7 @@
         <div class="se-editorial-hero-grid">
           <!-- Left Column: Editorial Headline & Actions -->
           <div class="se-editorial-hero-left">
-            <div class="se-hero-badge">
-              <span class="se-pulse-dot" aria-hidden="true"></span>
-              <span>Spaceborne Observation &middot; Open Telemetry</span>
-            </div>
+            <span class="se-hero-kicker">Spaceborne Observation &middot; Open Telemetry</span>
             <h1 id="hero-title" class="se-editorial-hero-h1">
               Reading the signals of a changing Earth.
             </h1>
@@ -104,9 +101,11 @@
               </a>
             </div>
             <div class="se-hero-chips">
-              <span class="se-hero-chip">● NASA MODIS &amp; USGS Landsat</span>
-              <span class="se-hero-chip">● Continuous CAAQMS</span>
-              <span class="se-hero-chip">● Zero Synthetic Infilling</span>
+              <span>NASA MODIS &amp; USGS Landsat</span>
+              <span class="se-chip-sep" aria-hidden="true">/</span>
+              <span>Continuous CAAQMS</span>
+              <span class="se-chip-sep" aria-hidden="true">/</span>
+              <span>Zero Synthetic Infilling</span>
             </div>
           </div>
 
@@ -114,18 +113,11 @@
           <div class="se-editorial-hero-right">
             <div class="se-orbital-card">
               <div class="se-orbital-hud-bar">
-                <span class="se-hud-tag">
-                  <span class="se-pulse-dot" style="background:#10B981; width:6px; height:6px;"></span>
-                  TERRA / MODIS &middot; 250m
-                </span>
+                <span class="se-hud-tag">TERRA / MODIS &middot; 250m</span>
                 <span class="se-hud-tag">L1B RADIANCE &middot; 5 NOV 2021</span>
               </div>
               <div class="se-orbital-visual-wrap">
                 <img src="assets/hero_indo_gangetic_smoke_20211105.jpg" alt="NASA Terra MODIS satellite view of atmospheric smoke and aerosol plume trapped along the Indo-Gangetic Basin" class="se-editorial-hero-img" width="1000" height="625" fetchpriority="high">
-                <div class="se-hotspot-pin" title="Central Ganga Valley aerosol stagnation center">
-                  <div class="se-hotspot-core"></div>
-                  <div class="se-hotspot-label">Aerosol Inversion Core &middot; 26.45&deg;N</div>
-                </div>
               </div>
               <div class="se-orbital-caption">
                 <span class="se-hud-coords">26.45&deg;N &middot; 80.33&deg;E &middot; Indo-Gangetic Basin</span>
@@ -561,14 +553,14 @@
               </button>
             </div>
 
-            <div style="display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap;">
+            <div class="se-globe-controls-row">
               <button type="button" id="globe-toggle-spin" class="se-editorial-btn-secondary" aria-pressed="true">
                 Pause Spin
               </button>
               <a id="globe-hud-action" href="investigations/kanpur.html" class="se-editorial-inline-link">
                 Explore Kanpur Investigation <span class="se-arrow">&rarr;</span>
               </a>
-              <span id="globe-hud-sensor" style="font-family: var(--se-font-mono); font-size: 0.76rem; color: var(--se-text-secondary); width: 100%;">
+              <span id="globe-hud-sensor" class="se-globe-sensor-meta">
                 Platform: Landsat 8/9 TIRS-2 &middot; CPCB CAAQMS
               </span>
             </div>
@@ -622,14 +614,14 @@
     </section>
 
     <!-- Scientific Integrity: Evidence Before Opinion Manifesto -->
-    <section class="se-editorial-section" style="background: var(--se-surface-elevated); border-top: 1px solid var(--se-border);" aria-labelledby="principles-heading">
+    <section class="se-editorial-section se-principles-section" aria-labelledby="principles-heading">
       <div class="se-editorial-container">
-        <div class="se-editorial-section-header" style="text-align: center; max-width: 680px; margin-left: auto; margin-right: auto;">
+        <div class="se-editorial-section-header se-header-centered">
           <span class="se-editorial-kicker">Scientific Integrity</span>
           <h2 id="principles-heading" class="se-editorial-section-title">
             Evidence before opinion.
           </h2>
-          <p class="se-editorial-section-intro" style="margin-left: auto; margin-right: auto;">
+          <p class="se-editorial-section-intro">
             Environmental change deserves more than headlines. Signal Earth operates on three uncompromising scientific standards:
           </p>
         </div>
@@ -679,8 +671,8 @@
           </div>
         </div>
 
-        <div style="text-align: center; margin-top: 3rem;">
-          <a href="about.html" class="se-editorial-inline-link" style="font-size: 0.95rem;">
+        <div class="se-principles-action">
+          <a href="about.html" class="se-editorial-inline-link">
             Read about initiative governance &amp; standards <span class="se-arrow">&rarr;</span>
           </a>
         </div>
