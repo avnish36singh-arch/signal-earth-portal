@@ -386,93 +386,6 @@
         </a>
       </div>
 
-      <!-- Sliding Side Drawer Panel -->
-      <aside class="se-globe-drawer" id="globe-drawer" aria-hidden="true" aria-labelledby="drawer-region-name">
-        <button type="button" class="se-drawer-close-btn" id="globe-drawer-close" aria-label="Close region panel">
-          &times;
-        </button>
-
-        <span id="drawer-issue-badge" class="se-drawer-badge">Particulate Stagnation &amp; Hiatus</span>
-        <h2 id="drawer-region-name" class="se-drawer-title">Kanpur Observatory</h2>
-        <div id="drawer-coords" class="se-drawer-coords">26.4499°N, 80.3319°E · Central Indo-Gangetic Basin, India</div>
-
-        <!-- NASA Worldview Snapshot Container -->
-        <div style="margin-bottom: 1.25rem;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
-            <span style="font-family: var(--se-font-mono); font-size: 0.68rem; color: #94A3B8; text-transform: uppercase;">
-              NASA Worldview Snapshot
-            </span>
-            <input type="date" id="drawer-date-picker" style="background: #0A1628; color: #F8FAFC; border: 1px solid rgba(255,255,255,0.2); font-family: var(--se-font-mono); font-size: 0.7rem; padding: 2px 6px; border-radius: 3px;">
-          </div>
-
-          <div class="se-drawer-img-wrap">
-            <img id="drawer-snapshot-img" src="assets/regions/kanpur.jpg" alt="Recent satellite observation from NASA Worldview">
-          </div>
-
-          <div id="drawer-snapshot-status" style="font-family: var(--se-font-mono); font-size: 0.68rem; color: #64748B; margin-bottom: 0.35rem;"></div>
-
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <label style="font-family: var(--se-font-mono); font-size: 0.68rem; color: #94A3B8; display: flex; align-items: center; gap: 0.4rem; cursor: pointer;">
-              <input type="checkbox" id="drawer-compare-toggle"> Compare with 10 years ago
-            </label>
-            <a id="drawer-worldview-link" href="https://worldview.earthdata.nasa.gov" target="_blank" rel="noopener noreferrer" style="font-family: var(--se-font-mono); font-size: 0.68rem; color: #1FB6A6; text-decoration: none;">
-              Open in Worldview &rarr;
-            </a>
-          </div>
-
-          <div id="drawer-compare-wrap" style="display: none; margin-top: 0.75rem;">
-            <div style="font-family: var(--se-font-mono); font-size: 0.68rem; color: #F2A33A; margin-bottom: 0.25rem;">
-              Comparison: 10 Years Prior
-            </div>
-            <div class="se-drawer-img-wrap">
-              <img id="drawer-compare-img" src="assets/regions/kanpur_10yr.jpg" alt="10 years ago satellite observation comparison">
-            </div>
-          </div>
-        </div>
-
-        <!-- Location Environmental Impact Callout -->
-        <div class="se-drawer-impact-card">
-          <div class="se-drawer-impact-title">
-            <span>&#9888;</span> Regional Environmental Impact
-          </div>
-          <p class="se-drawer-impact-desc" id="drawer-impact-desc">
-            Meteorological inversions and geographic containment multiply particulate concentrations fourfold, causing severe cardiopulmonary morbidity across the central Ganga valley.
-          </p>
-        </div>
-
-        <!-- 3 Key Dated Metrics -->
-        <div style="margin-bottom: 1.25rem;">
-          <h3 style="font-family: var(--se-font-mono); font-size: 0.72rem; color: #94A3B8; text-transform: uppercase; margin: 0 0 0.5rem;">
-            Empirical Telemetry Readouts
-          </h3>
-          <div id="drawer-metrics-list"></div>
-        </div>
-
-        <!-- Context & Signals -->
-        <div style="margin-bottom: 1.5rem; font-family: var(--se-font-sans); font-size: 0.88rem; line-height: 1.6; color: #CBD5E1;">
-          <div style="margin-bottom: 0.75rem;">
-            <strong style="color: #F8FAFC; display: block; font-family: var(--se-font-mono); font-size: 0.72rem; text-transform: uppercase; margin-bottom: 0.2rem;">Ecological Significance:</strong>
-            <p id="drawer-why-matters" style="margin: 0;">Multiplies PM2.5 concentrations 4.2x above baseline with severe public health impact.</p>
-          </div>
-          <div>
-            <strong style="color: #F8FAFC; display: block; font-family: var(--se-font-mono); font-size: 0.72rem; text-transform: uppercase; margin-bottom: 0.2rem;">What the Signal Shows:</strong>
-            <p id="drawer-signal-shows" style="margin: 0;">Ground telemetry documents a 4.2× winter surge ratio alongside an 855-day unmonitored regulatory hiatus.</p>
-          </div>
-        </div>
-
-        <!-- Actions -->
-        <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);">
-          <a id="drawer-investigation-link" href="#" class="se-editorial-btn-primary" style="width: 100%; text-align: center; margin-bottom: 0.75rem;">
-            Read Related Signal Earth Investigation &rarr;
-          </a>
-          <div style="display: flex; gap: 0.5rem; align-items: center;">
-            <input type="text" id="drawer-share-input" readonly style="flex: 1; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.15); color: #94A3B8; font-family: var(--se-font-mono); font-size: 0.68rem; padding: 6px 8px; border-radius: 4px;">
-            <button type="button" id="drawer-copy-share-btn" class="se-stream-btn" style="font-size: 0.68rem; padding: 5px 10px; color: #F8FAFC; border-color: rgba(255,255,255,0.2);">
-              Copy
-            </button>
-          </div>
-        </div>
-      </aside>
     </section>
 
     <!-- Accessible Keyboard Region Table (A11y Requirement) -->
@@ -482,7 +395,7 @@
           Planetary Environmental Stations Directory
         </h2>
         <p style="font-family: var(--se-font-sans); font-size: 0.95rem; color: var(--se-text-secondary); margin-bottom: 2rem;">
-          Keyboard-navigable index of all 14 planetary observation regions tracked in the Signal Earth 3D telemetry array.
+          All 14 planetary observation regions tracked in the Signal Earth 3D telemetry array. Click <strong>Open Profile</strong> to view the full Wikipedia-style environmental profile.
         </p>
 
         <div style="overflow-x: auto;">
@@ -492,7 +405,7 @@
                 <th style="padding: 0.75rem;">Station / Region</th>
                 <th style="padding: 0.75rem;">Issue Classification</th>
                 <th style="padding: 0.75rem;">Coordinates</th>
-                <th style="padding: 0.75rem;">Action</th>
+                <th style="padding: 0.75rem;">Profile</th>
               </tr>
             </thead>
             <tbody id="globe-keyboard-tbody"></tbody>

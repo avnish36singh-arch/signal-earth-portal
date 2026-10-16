@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Location — Signal Earth</title>
+  <meta name="description" id="page-desc" content="Detailed environmental and climate profile for a planetary observation station tracked by Signal Earth.">
+  <link rel="canonical" id="page-canonical" href="https://signalearth.netlify.app/location.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="assets/tokens.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="assets/theme.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --loc-bg: #080f1e;
+      --loc-surface: #0d1b30;
+      --loc-border: rgba(255,255,255,0.09);
+      --loc-accent: #1FB6A6;
+      --loc-accent2: #2E6FD8;
+      --loc-muted: #64748B;
+      --loc-text: #e2e8f0;
+      --loc-title: #ffffff;
+      --loc-mono: 'IBM Plex Mono', monospace;
+      --loc-serif: 'Playfair Display', Georgia, serif;
+      --loc-sans: 'Inter', system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { background: var(--loc-bg); color: var(--loc-text); font-family: var(--loc-sans); margin: 0; overflow-x: hidden; }
+
+    .loc-hero { position: relative; width: 100%; min-height: 480px; display: flex; align-items: flex-end; overflow: hidden; background: #0a1628; }
+    .loc-hero-satellite { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.55; transition: opacity 0.6s ease; }
+    .loc-hero-gradient { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(8,15,30,0.15) 0%, rgba(8,15,30,0.6) 60%, rgba(8,15,30,1) 100%); }
+    .loc-hero-content { position: relative; z-index: 2; max-width: 900px; margin: 0 auto; width: 100%; padding: 3rem 2rem 3.5rem; }
+    .loc-breadcrumb { font-family: var(--loc-mono); font-size: 0.7rem; color: var(--loc-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+    .loc-breadcrumb a { color: var(--loc-accent); text-decoration: none; }
+    .loc-breadcrumb a:hover { text-decoration: underline; }
+    .loc-issue-badge { display: inline-flex; align-items: center; gap: 0.4rem; font-family: var(--loc-mono); font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; padding: 0.3rem 0.8rem; border-radius: 3px; border: 1px solid; margin-bottom: 1rem; }
+    .loc-hero-title { font-family: var(--loc-serif); font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 700; line-height: 1.1; color: var(--loc-title); margin: 0 0 0.6rem; }
+    .loc-hero-region { font-family: var(--loc-mono); font-size: 0.85rem; color: #94A3B8; margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+    .loc-hero-coords { font-family: var(--loc-mono); font-size: 0.8rem; color: var(--loc-accent); background: rgba(31,182,166,0.12); padding: 0.2rem 0.5rem; border-radius: 3px; border: 1px solid rgba(31,182,166,0.3); }
+    .loc-hero-summary { font-size: 1.05rem; line-height: 1.65; color: #CBD5E1; max-width: 680px; margin: 0; }
+
+    .loc-main { max-width: 1100px; margin: 0 auto; padding: 0 2rem 5rem; display: grid; grid-template-columns: 1fr 320px; grid-template-areas: "content sidebar"; gap: 3rem; align-items: start; }
+    @media (max-width: 900px) { .loc-main { grid-template-columns: 1fr; grid-template-areas: "sidebar" "content"; } }
+    .loc-content { grid-area: content; padding-top: 2.5rem; }
+    .loc-sidebar { grid-area: sidebar; padding-top: 2.5rem; }
+
+    .loc-section { margin-bottom: 2.5rem; border-bottom: 1px solid var(--loc-border); padding-bottom: 2.5rem; }
+    .loc-section:last-child { border-bottom: none; }
+    .loc-section-label { font-family: var(--loc-mono); font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--loc-accent); margin-bottom: 0.5rem; }
+    .loc-section-title { font-family: var(--loc-serif); font-size: 1.6rem; color: var(--loc-title); margin: 0 0 1rem; line-height: 1.2; }
+    .loc-prose { font-size: 0.97rem; line-height: 1.75; color: var(--loc-text); }
+    .loc-prose p { margin: 0 0 1rem; }
+    .loc-prose strong { color: #F8FAFC; }
+
+    .loc-impact-alert { background: rgba(214,64,43,0.1); border: 1px solid rgba(214,64,43,0.35); border-left: 4px solid #D6402B; border-radius: 6px; padding: 1.1rem 1.25rem; margin-bottom: 2rem; }
+    .loc-impact-alert-label { font-family: var(--loc-mono); font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #F87171; margin-bottom: 0.35rem; }
+    .loc-impact-alert p { margin: 0; font-size: 0.93rem; line-height: 1.6; color: #FEE2E2; }
+
+    .loc-metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+    .loc-metric-card { background: var(--loc-surface); border: 1px solid var(--loc-border); border-radius: 8px; padding: 1.1rem 1rem; transition: border-color 0.2s; }
+    .loc-metric-card:hover { border-color: rgba(31,182,166,0.4); }
+    .loc-metric-name { font-family: var(--loc-mono); font-size: 0.66rem; color: var(--loc-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.4rem; }
+    .loc-metric-value { font-family: var(--loc-mono); font-size: 1.55rem; font-weight: 600; color: var(--loc-accent); line-height: 1.1; margin-bottom: 0.35rem; }
+    .loc-metric-source { font-family: var(--loc-mono); font-size: 0.6rem; color: var(--loc-muted); }
+    .loc-metric-source a { color: var(--loc-muted); text-decoration: none; }
+    .loc-metric-source a:hover { color: var(--loc-accent); text-decoration: underline; }
+
+    .loc-sat-viewer { position: relative; border-radius: 8px; overflow: hidden; background: #0a1628; border: 1px solid var(--loc-border); margin-bottom: 1rem; }
+    .loc-sat-viewer img { width: 100%; height: 300px; object-fit: cover; display: block; }
+    .loc-sat-caption { font-family: var(--loc-mono); font-size: 0.65rem; color: var(--loc-muted); padding: 0.6rem 0.8rem; background: rgba(0,0,0,0.4); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.4rem; }
+    .loc-sat-caption a { color: var(--loc-accent); text-decoration: none; font-weight: 500; }
+    .loc-sat-caption a:hover { text-decoration: underline; }
+
+    .loc-open-data-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .loc-open-data-card { background: var(--loc-surface); border: 1px solid var(--loc-border); border-radius: 8px; padding: 1.1rem 1rem; text-decoration: none; color: inherit; transition: all 0.2s; display: flex; flex-direction: column; gap: 0.4rem; }
+    .loc-open-data-card:hover { border-color: var(--loc-accent); background: rgba(31,182,166,0.05); }
+    .loc-open-data-card-agency { font-family: var(--loc-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--loc-accent); font-weight: 600; }
+    .loc-open-data-card-title { font-size: 0.88rem; color: var(--loc-title); font-weight: 500; }
+    .loc-open-data-card-desc { font-size: 0.78rem; color: var(--loc-muted); line-height: 1.4; }
+    .loc-open-data-card-arrow { font-family: var(--loc-mono); font-size: 0.8rem; color: var(--loc-accent); margin-top: auto; }
+
+    .loc-sidebar-card { background: var(--loc-surface); border: 1px solid var(--loc-border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1.25rem; }
+    .loc-sidebar-card-title { font-family: var(--loc-mono); font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--loc-muted); margin-bottom: 0.85rem; padding-bottom: 0.65rem; border-bottom: 1px solid var(--loc-border); }
+    .loc-info-row { display: flex; justify-content: space-between; align-items: baseline; padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.04); gap: 0.5rem; }
+    .loc-info-row:last-child { border-bottom: none; }
+    .loc-info-label { color: var(--loc-muted); font-family: var(--loc-mono); font-size: 0.72rem; text-transform: uppercase; flex-shrink: 0; }
+    .loc-info-value { color: var(--loc-text); text-align: right; font-size: 0.82rem; }
+    .loc-info-value.mono { font-family: var(--loc-mono); color: var(--loc-accent); font-size: 0.78rem; }
+
+    .loc-worldview-link { display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.8rem 1rem; background: rgba(31,182,166,0.1); border: 1px solid rgba(31,182,166,0.4); border-radius: 6px; color: var(--loc-accent); text-decoration: none; font-family: var(--loc-mono); font-size: 0.78rem; font-weight: 500; transition: all 0.2s; margin-bottom: 0.75rem; }
+    .loc-worldview-link:hover { background: rgba(31,182,166,0.2); color: #fff; }
+
+    .loc-context-block { background: linear-gradient(135deg, rgba(46,111,216,0.06) 0%, rgba(31,182,166,0.06) 100%); border: 1px solid rgba(46,111,216,0.2); border-radius: 8px; padding: 1.25rem; margin-bottom: 1.5rem; }
+    .loc-context-block-label { font-family: var(--loc-mono); font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--loc-accent2); margin-bottom: 0.5rem; }
+    .loc-context-block p { margin: 0; font-size: 0.93rem; line-height: 1.65; color: var(--loc-text); }
+
+    .loc-all-regions { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .loc-region-pill { display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.3rem 0.65rem; background: transparent; border: 1px solid var(--loc-border); border-radius: 20px; font-family: var(--loc-mono); font-size: 0.68rem; color: #94A3B8; text-decoration: none; transition: all 0.15s; }
+    .loc-region-pill:hover { border-color: var(--loc-accent); color: var(--loc-title); }
+    .loc-region-pill.current { background: var(--loc-accent); border-color: var(--loc-accent); color: #0a1628; font-weight: 700; }
+    .loc-region-pill-dot { width: 5px; height: 5px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+
+    .loc-cta-strip { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--loc-border); }
+    .loc-btn-primary { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: var(--loc-accent); color: #0a1628; border-radius: 5px; text-decoration: none; font-family: var(--loc-mono); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.05em; transition: all 0.2s; }
+    .loc-btn-primary:hover { background: #17a494; transform: translateY(-1px); }
+    .loc-btn-secondary { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: transparent; color: var(--loc-text); border: 1px solid var(--loc-border); border-radius: 5px; text-decoration: none; font-family: var(--loc-mono); font-size: 0.8rem; transition: all 0.2s; }
+    .loc-btn-secondary:hover { border-color: rgba(255,255,255,0.3); color: #fff; }
+
+    .loc-toc { list-style: none; padding: 0; margin: 0; }
+    .loc-toc li { padding: 0; }
+    .loc-toc a { display: flex; align-items: center; gap: 0.5rem; padding: 0.45rem 0; border-bottom: 1px solid rgba(255,255,255,0.04); color: #94A3B8; text-decoration: none; font-size: 0.82rem; transition: color 0.15s; }
+    .loc-toc a:hover { color: var(--loc-accent); }
+    .loc-toc a::before { content: '§'; font-family: var(--loc-mono); font-size: 0.7rem; color: var(--loc-muted); }
+
+    .loc-error { min-height: 60vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 4rem 2rem; }
+    .loc-error h1 { font-family: var(--loc-serif); font-size: 2.5rem; color: var(--loc-title); margin-bottom: 1rem; }
+    .loc-error p { color: var(--loc-muted); margin-bottom: 2rem; }
+
+    #loc-loading { min-height: 80vh; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 1rem; }
+    .loc-loading-spinner { width: 36px; height: 36px; border: 3px solid rgba(31,182,166,0.2); border-top-color: var(--loc-accent); border-radius: 50%; animation: spin 0.8s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @media (max-width: 640px) { .loc-hero-content { padding: 2rem 1.25rem 2.5rem; } .loc-main { padding: 0 1.25rem 4rem; } .loc-metrics-grid { grid-template-columns: 1fr 1fr; } }
+  </style>
+</head>
+<body>
+
+  <header class="se-editorial-header" style="background: rgba(8,15,30,0.96); border-bottom: 1px solid rgba(255,255,255,0.08);">
+    <div class="se-editorial-container">
+      <div class="se-editorial-header-inner">
+        <div class="se-editorial-wordmark-wrap">
+          <a href="index.html" class="se-editorial-wordmark" style="color: #F8FAFC;">Signal Earth</a>
+          <span class="se-wordmark-badge" style="background: rgba(31,182,166,0.15); color: #1FB6A6;">Location Profile</span>
+        </div>
+        <div class="se-editorial-header-right">
+          <nav class="se-editorial-nav">
+            <ul class="se-editorial-nav-list">
+              <li><a href="index.html" class="se-editorial-nav-link" style="color: #94A3B8;">Home</a></li>
+              <li><a href="globe.html" class="se-editorial-nav-link" style="color: #1FB6A6;">&#8592; Globe</a></li>
+              <li><a href="research.html" class="se-editorial-nav-link" style="color: #94A3B8;">Research</a></li>
+              <li><a href="data.html" class="se-editorial-nav-link" style="color: #94A3B8;">Data</a></li>
+              <li><a href="reports.html" class="se-editorial-nav-link" style="color: #94A3B8;">Reports</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="loc-loading">
+    <div class="loc-loading-spinner"></div>
+    <div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem; color: #64748B;">Loading environmental profile&hellip;</div>
+  </div>
+
+  <div id="loc-page" style="display: none;">
+    <section class="loc-hero" id="loc-hero" aria-label="Location satellite imagery hero">
+      <img class="loc-hero-satellite" id="loc-hero-img" src="" alt="" loading="eager">
+      <div class="loc-hero-gradient"></div>
+      <div class="loc-hero-content">
+        <div class="loc-breadcrumb">
+          <a href="index.html">Signal Earth</a>
+          <span>&#8250;</span>
+          <a href="globe.html">Planetary Globe</a>
+          <span>&#8250;</span>
+          <span id="loc-hero-breadcrumb-name">Location</span>
+        </div>
+        <div class="loc-issue-badge" id="loc-hero-badge">Issue Type</div>
+        <h1 class="loc-hero-title" id="loc-hero-title">Location Name</h1>
+        <div class="loc-hero-region">
+          <span id="loc-hero-region-text"></span>
+          <span class="loc-hero-coords" id="loc-hero-coords"></span>
+        </div>
+        <p class="loc-hero-summary" id="loc-hero-summary"></p>
+      </div>
+    </section>
+
+    <div class="loc-main">
+      <main class="loc-content" id="main">
+        <div class="loc-impact-alert">
+          <div class="loc-impact-alert-label">&#9888; Regional Environmental Impact</div>
+          <p id="loc-why-matters"></p>
+        </div>
+
+        <section class="loc-section" id="section-metrics">
+          <div class="loc-section-label">Empirical Telemetry</div>
+          <h2 class="loc-section-title">Key Measured Indicators</h2>
+          <div class="loc-metrics-grid" id="loc-metrics-grid"></div>
+        </section>
+
+        <section class="loc-section" id="section-signal">
+          <div class="loc-section-label">Satellite Analysis</div>
+          <h2 class="loc-section-title">What the Signal Shows</h2>
+          <div class="loc-context-block">
+            <div class="loc-context-block-label">Signal Earth Remote Sensing Finding</div>
+            <p id="loc-signal-shows"></p>
+          </div>
+        </section>
+
+        <section class="loc-section" id="section-imagery">
+          <div class="loc-section-label">NASA Spaceborne Radiometry</div>
+          <h2 class="loc-section-title">Satellite Observation</h2>
+          <div class="loc-sat-viewer">
+            <img id="loc-sat-img" src="" alt="Satellite observation of the region" loading="lazy">
+            <div class="loc-sat-caption">
+              <span id="loc-sat-caption-text">NASA GIBS / MODIS Terra True-Color Radiometry</span>
+              <a id="loc-worldview-link-inline" href="https://worldview.earthdata.nasa.gov" target="_blank" rel="noopener noreferrer">Open NASA Worldview &#8594;</a>
+            </div>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--loc-muted); font-family: 'IBM Plex Mono', monospace;">
+            Satellite imagery sourced from NASA GIBS via MODIS Terra/Aqua true-colour reflectance composites. Use NASA Worldview to explore date-specific data.
+          </p>
+        </section>
+
+        <section class="loc-section" id="section-data">
+          <div class="loc-section-label">Open-Source Data</div>
+          <h2 class="loc-section-title">Primary Data Sources &amp; Portals</h2>
+          <p style="font-size: 0.9rem; color: var(--loc-muted); margin-bottom: 1.5rem;">
+            All Signal Earth analysis is grounded in publicly accessible, peer-reviewed or government-operated datasets. Below are the primary open-source portals used for this location.
+          </p>
+          <div class="loc-open-data-grid" id="loc-open-data-grid"></div>
+        </section>
+
+        <section class="loc-section" id="section-context">
+          <div class="loc-section-label">Scientific Context</div>
+          <h2 class="loc-section-title" id="loc-context-title">Background &amp; Environmental Context</h2>
+          <div class="loc-prose" id="loc-context-body"></div>
+        </section>
+
+        <div class="loc-cta-strip">
+          <a href="#" id="loc-investigation-link" class="loc-btn-primary">Read Signal Earth Investigation &#8594;</a>
+          <a href="globe.html" class="loc-btn-secondary">&#8592; Return to Globe</a>
+          <a href="data.html" class="loc-btn-secondary">Explore Raw Data</a>
+        </div>
+      </main>
+
+      <aside class="loc-sidebar" aria-label="Location quick facts">
+        <div class="loc-sidebar-card">
+          <div class="loc-sidebar-card-title">&#128205; Quick Facts</div>
+          <div id="loc-facts-rows"></div>
+        </div>
+        <div class="loc-sidebar-card">
+          <div class="loc-sidebar-card-title">&#128752; Live Satellite Imagery</div>
+          <a class="loc-worldview-link" id="loc-worldview-link-side" href="https://worldview.earthdata.nasa.gov" target="_blank" rel="noopener noreferrer">Open in NASA Worldview &#8599;</a>
+          <a class="loc-worldview-link" id="loc-firms-link" href="https://firms.modaps.eosdis.nasa.gov" target="_blank" rel="noopener noreferrer" style="background: rgba(46,111,216,0.1); border-color: rgba(46,111,216,0.4); color: #2E6FD8;">NASA FIRMS Fire Map &#8599;</a>
+          <p style="font-size: 0.73rem; color: var(--loc-muted); font-family: 'IBM Plex Mono', monospace; margin: 0;">Real-time satellite feeds from NASA Earth Observing System.</p>
+        </div>
+        <div class="loc-sidebar-card">
+          <div class="loc-sidebar-card-title">&#128203; Contents</div>
+          <ul class="loc-toc">
+            <li><a href="#section-metrics">Key Metrics</a></li>
+            <li><a href="#section-signal">Satellite Signal</a></li>
+            <li><a href="#section-imagery">Satellite Imagery</a></li>
+            <li><a href="#section-data">Open Data Sources</a></li>
+            <li><a href="#section-context">Scientific Context</a></li>
+          </ul>
+        </div>
+        <div class="loc-sidebar-card">
+          <div class="loc-sidebar-card-title">&#127757; Other Monitored Locations</div>
+          <div class="loc-all-regions" id="loc-all-regions-nav"></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <div id="loc-error" style="display: none;">
+    <div class="loc-error">
+      <h1>Region Not Found</h1>
+      <p>The requested location profile could not be found. Check the URL or return to the globe.</p>
+      <a href="globe.html" class="loc-btn-primary">&#8592; Return to Globe</a>
+    </div>
+  </div>
+
+  <footer class="se-editorial-footer">
+    <div class="se-editorial-container">
+      <div class="se-editorial-footer-bottom">
+        <div>Signal Earth &middot; Open environmental science. Hosted on Netlify &amp; GitHub Pages.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  (function() {
+    'use strict';
+
+    function getAssetPath(rel) {
+      var p = rel.replace(/^\/+/, '');
+      var isGhPages = window.location.pathname.indexOf('/signal-earth-portal') === 0;
+      return (isGhPages ? '/signal-earth-portal/' : '/') + p;
+    }
+
+    function issueClass(type) {
+      return 'issue-' + (type || '').replace(/\s+/g, '-');
+    }
+
+    var ISSUE_CONTEXT = {
+      'heat': {
+        title: 'Extreme Heat & Heat Dome Dynamics',
+        body: '<p>Heat domes form when high-pressure atmospheric systems trap warm air at the surface, preventing cooling. Climate change is intensifying their frequency, duration and geographic extent. Land surface temperatures (LST) measured via Landsat 8/9 TIRS and Sentinel-3 SLSTR are primary remote sensing indicators of terrestrial heat stress.</p><p>The Mediterranean region, California, and South Asia are among the fastest-warming areas on Earth. Heat exposure is directly linked to excess mortality, crop failure, infrastructure failure and wildfire ignition risk through vapor pressure deficit (VPD) increases.</p><p><strong>Key satellite sensors:</strong> Landsat 8/9 TIRS-2 (Band 10/11), Sentinel-3 SLSTR, GOES-16/18 ABI, MODIS LST (MOD11).</p>'
+      },
+      'air quality': {
+        title: 'Particulate Pollution & Atmospheric Boundary Layer',
+        body: '<p>Atmospheric boundary layer (ABL) entrapment occurs when temperature inversions prevent vertical mixing, concentrating surface pollutants. In the Indo-Gangetic Plain, the Himalayan orographic barrier and winter high-pressure systems create some of the world\'s most extreme pollution episodes.</p><p>PM2.5 particles (aerodynamic diameter &lt; 2.5 &micro;m) penetrate deep into lung tissue and are associated with cardiovascular and respiratory disease. The World Health Organization annual guideline is 5 &micro;g/m&sup3;; many South Asian cities regularly exceed 10&times; this threshold during winter months.</p><p><strong>Key monitoring sources:</strong> CPCB CAAQMS (India), DPCC, NASA MERRA-2 aerosol reanalysis, MODIS Aerosol Optical Depth (MOD04), Sentinel-5P TROPOMI NO&sup2;/PM satellite column data.</p>'
+      },
+      'ice': {
+        title: 'Cryosphere Decline & Polar Amplification',
+        body: '<p>The cryosphere &mdash; Earth\'s frozen water systems including ice sheets, sea ice, glaciers and permafrost &mdash; is disproportionately affected by global warming. The Arctic is warming 3&ndash;4&times; faster than the global mean, a phenomenon known as polar amplification, driven by ice-albedo feedback loops.</p><p>Sea ice loss reduces Earth\'s reflectivity, causing additional ocean heat absorption. Ice sheet mass loss from Greenland and Antarctica is the primary driver of accelerating sea level rise. Glacier retreat threatens freshwater supplies for billions of people downstream.</p><p><strong>Key satellite sensors:</strong> NASA GRACE-FO (gravimetry), CryoSat-2 (altimetry), NSIDC SSMI/S (sea ice extent), Sentinel-1 SAR (glacier velocity), MODIS Snow/Ice (MOD10).</p>'
+      },
+      'forest': {
+        title: 'Forest Carbon Dynamics & Deforestation',
+        body: '<p>Tropical forests are the world\'s largest terrestrial carbon sinks, absorbing approximately 7.6 billion metric tons of CO&sup2; annually. Deforestation, drought stress, and fire release this stored carbon, contributing 10&ndash;15% of global greenhouse gas emissions annually.</p><p>The Amazon Basin alone stores ~120 billion tons of carbon &mdash; the equivalent of over 12 years of global fossil fuel emissions. Brazilian deforestation monitoring by INPE uses PRODES satellite data to track annual forest loss. Global Forest Watch provides near-real-time alerts from Landsat and Sentinel imagery.</p><p><strong>Key monitoring sources:</strong> INPE PRODES (Brazil), Global Forest Watch (GFW), NASA VIIRS Active Fire (FIRMS), MODIS NDVI/EVI vegetation indices, ESA CCI Land Cover.</p>'
+      },
+      'sea level': {
+        title: 'Sea Level Rise & Coastal Inundation',
+        body: '<p>Global mean sea level has risen ~20 cm since 1900 and is accelerating. The rate increased from ~1.4 mm/yr in the 20th century to over 3.6 mm/yr in the satellite era (since 1993). Thermal expansion of warming oceans accounts for approximately 40% of the rise; glacier and ice sheet melt accounts for the rest.</p><p>Low-lying island nations and deltaic coastal zones face existential threats. Pacific atolls like Tuvalu average less than 2 meters elevation, and king tide flooding already inundates large portions of inhabited land. Saltwater intrusion destroys freshwater aquifers critical for island survival.</p><p><strong>Key satellite sensors:</strong> TOPEX/Poseidon, Jason-1/2/3 (radar altimetry), Sentinel-6 Michael Freilich, NASA/CNES SWOT, tide gauge networks (PSMSL).</p>'
+      },
+      'coral': {
+        title: 'Coral Bleaching & Marine Thermal Stress',
+        body: '<p>Coral bleaching occurs when sea surface temperatures exceed 1&deg;C above historical maximum summer temperatures for extended periods. Heat stress causes corals to expel their symbiotic zooxanthellae algae, turning white (bleaching). Prolonged bleaching causes coral mortality.</p><p>NOAA Coral Reef Watch uses satellite SST data to calculate Degree Heating Weeks (DHW) &mdash; a cumulative measure of thermal stress. DHW above 4 causes bleaching; above 8 causes significant coral mortality. The Great Barrier Reef experienced its 5th mass bleaching event in 8 years in 2024.</p><p><strong>Key satellite sensors:</strong> NOAA AVHRR, GOES, Aqua MODIS SST (MYD11), Suomi-NPP VIIRS. Monitoring: NOAA Coral Reef Watch, AIMS Long-Term Monitoring Program.</p>'
+      },
+      'drought': {
+        title: 'Hydroclimate Drought & Water Security',
+        body: '<p>Droughts are multi-dimensional hazards encompassing meteorological (rainfall deficit), agricultural (soil moisture deficit), hydrological (streamflow and groundwater deficit), and socioeconomic dimensions. Climate change is increasing drought intensity, frequency and spatial extent across arid and semi-arid regions.</p><p>Satellite-based drought monitoring uses NDVI for canopy stress, SMAP and GRACE-FO for soil moisture and groundwater anomalies, and MODIS LST for evapotranspiration proxies. The Sahel, Horn of Africa, and Central Asia are among the world\'s most drought-vulnerable regions.</p><p><strong>Key satellite sensors:</strong> NASA SMAP (soil moisture), GRACE-FO (groundwater), MODIS NDVI, Sentinel-2 MSI, CHIRPS rainfall estimates. Monitoring: FEWS NET, IGAD ICPAC.</p>'
+      }
+    };
+
+    var OPEN_DATA_BY_TYPE = {
+      'heat': [
+        { agency: 'NASA', title: 'FIRMS Active Fire Data', desc: 'Near real-time fire radiative power and thermal anomaly detection globally.', url: 'https://firms.modaps.eosdis.nasa.gov' },
+        { agency: 'Copernicus', title: 'CAMS Global Reanalysis', desc: 'Atmospheric composition and climate monitoring from European satellites.', url: 'https://atmosphere.copernicus.eu' },
+        { agency: 'NOAA', title: 'NCEI Climate Data Online', desc: 'Historical climate records, temperature extremes and heat wave statistics.', url: 'https://www.ncei.noaa.gov' }
+      ],
+      'air quality': [
+        { agency: 'CPCB India', title: 'National Air Quality Portal', desc: 'Real-time AQI from Continuous Ambient Air Quality Monitoring Stations.', url: 'https://app.cpcbccr.com/ccr/#/caaqms-dashboard' },
+        { agency: 'NASA', title: 'MERRA-2 Aerosol Reanalysis', desc: 'Global aerosol optical depth and particulate matter reanalysis data.', url: 'https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/' },
+        { agency: 'ESA Copernicus', title: 'Sentinel-5P TROPOMI', desc: 'Column NO2, SO2, CO and aerosol index from satellite spectroscopy.', url: 'https://sentinel.esa.int/web/sentinel/missions/sentinel-5p' }
+      ],
+      'ice': [
+        { agency: 'NSIDC', title: 'Sea Ice Index', desc: 'Daily and monthly Arctic/Antarctic sea ice extent and concentration data.', url: 'https://nsidc.org/arcticseaicenews/' },
+        { agency: 'NASA', title: 'GRACE-FO Ice Sheet Data', desc: 'Monthly ice mass changes from satellite gravimetry for Greenland and Antarctica.', url: 'https://climate.nasa.gov/vital-signs/ice-sheets/' },
+        { agency: 'Polar Portal', title: 'Greenland Ice Sheet Monitor', desc: 'Daily ice sheet surface mass balance from Danish meteorological data.', url: 'http://polarportal.dk' }
+      ],
+      'forest': [
+        { agency: 'Global Forest Watch', title: 'Real-Time Forest Alerts', desc: 'Satellite-based deforestation alerts within days of tree cover loss events.', url: 'https://www.globalforestwatch.org' },
+        { agency: 'INPE', title: 'TerraBrasilis Deforestation', desc: 'Official Brazilian Amazon deforestation monitoring via PRODES program.', url: 'http://terrabrasilis.dpi.inpe.br' },
+        { agency: 'NASA FIRMS', title: 'VIIRS Active Fire', desc: 'Near real-time fire detection from Suomi-NPP and NOAA-20 VIIRS sensors.', url: 'https://firms.modaps.eosdis.nasa.gov' }
+      ],
+      'sea level': [
+        { agency: 'NASA', title: 'Sea Level Change Portal', desc: 'Satellite altimetry sea level data and projections from Jason/Sentinel-6.', url: 'https://sealevel.nasa.gov' },
+        { agency: 'PSMSL', title: 'Permanent Service for Mean Sea Level', desc: 'Global tide gauge data, the foundational long-term sea level record.', url: 'https://www.psmsl.org' },
+        { agency: 'Copernicus', title: 'Marine Environment Monitoring (CMEMS)', desc: 'Ocean observation products including sea level anomaly and SST.', url: 'https://marine.copernicus.eu' }
+      ],
+      'coral': [
+        { agency: 'NOAA', title: 'Coral Reef Watch', desc: 'Satellite SST-based bleaching alerts and Degree Heating Week monitoring.', url: 'https://coralreefwatch.noaa.gov' },
+        { agency: 'AIMS', title: 'Long-Term Monitoring Program', desc: 'Underwater survey data on coral cover, bleaching and recovery.', url: 'https://www.aims.gov.au' },
+        { agency: 'ReefBase', title: 'Global Coral Reef Database', desc: 'Historical reef health records and bleaching event archives worldwide.', url: 'http://www.reefbase.org' }
+      ],
+      'drought': [
+        { agency: 'NASA', title: 'SMAP Soil Moisture', desc: 'Global soil moisture from L-band radar measurements, updated every 2-3 days.', url: 'https://smap.jpl.nasa.gov' },
+        { agency: 'FEWS NET', title: 'Famine Early Warning Network', desc: 'Integrated food security and drought crisis monitoring for vulnerable regions.', url: 'https://fews.net' },
+        { agency: 'Copernicus', title: 'European Drought Observatory', desc: 'Drought indicators, soil moisture anomaly maps and combined drought index.', url: 'https://edo.jrc.ec.europa.eu' }
+      ]
+    };
+
+    function getRegionId() {
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('region')) return params.get('region');
+      var hash = window.location.hash;
+      if (hash && hash.indexOf('#region=') === 0) return hash.replace('#region=', '');
+      if (hash && hash.length > 1) return hash.slice(1);
+      return null;
+    }
+
+    function worldviewUrl(r) {
+      var bbox = r.bbox || [r.lat - 1, r.lon - 1, r.lat + 1, r.lon + 1];
+      var layer = r.gibs_layer || 'MODIS_Terra_CorrectedReflectance_TrueColor';
+      var d = new Date(); d.setDate(d.getDate() - 3);
+      var date = d.toISOString().split('T')[0];
+      return 'https://worldview.earthdata.nasa.gov/?v=' + bbox[1] + ',' + bbox[0] + ',' + bbox[3] + ',' + bbox[2] + '&l=Reference_Labels_15m,Reference_Features_15m,Coastlines_15m,' + layer + '&t=' + date;
+    }
+
+    function fmtCoords(lat, lon) {
+      return Math.abs(lat).toFixed(4) + (lat >= 0 ? '\u00b0N' : '\u00b0S') + ', ' + Math.abs(lon).toFixed(4) + (lon >= 0 ? '\u00b0E' : '\u00b0W');
+    }
+
+    function populatePage(region, allRegions) {
+      var issueType = region.issue_type || 'heat';
+      var color = region.color || '#1FB6A6';
+
+      document.title = region.name + ' \u2014 Signal Earth Location Profile';
+      document.getElementById('page-desc').content = region.summary;
+      document.getElementById('loc-hero-breadcrumb-name').textContent = region.name;
+
+      var badge = document.getElementById('loc-hero-badge');
+      badge.textContent = region.issue_badge || issueType.toUpperCase();
+      badge.style.borderColor = color; badge.style.color = color;
+
+      document.getElementById('loc-hero-title').textContent = region.name;
+      document.getElementById('loc-hero-region-text').textContent = region.region;
+      document.getElementById('loc-hero-coords').textContent = fmtCoords(region.lat, region.lon);
+      document.getElementById('loc-hero-summary').textContent = region.summary;
+
+      var heroImg = document.getElementById('loc-hero-img');
+      heroImg.alt = 'Satellite view of ' + region.name;
+      heroImg.src = getAssetPath('assets/regions/' + region.id + '.jpg');
+      heroImg.onerror = function() { this.onerror = null; this.src = getAssetPath('assets/satellite_earth_dark.jpg'); };
+
+      document.getElementById('loc-why-matters').textContent = region.why_it_matters;
+
+      var metricsGrid = document.getElementById('loc-metrics-grid');
+      metricsGrid.innerHTML = '';
+      if (region.metrics && region.metrics.length) {
+        region.metrics.forEach(function(m) {
+          var card = document.createElement('div');
+          card.className = 'loc-metric-card';
+          card.innerHTML = '<div class="loc-metric-name">' + m.name + '</div>' +
+            '<div class="loc-metric-value" style="color:' + color + '">' + m.value + '</div>' +
+            '<div class="loc-metric-source"><a href="' + (m.url || '#') + '" target="_blank" rel="noopener noreferrer">' + m.source + (m.year ? ' (' + m.year + ')' : '') + '</a></div>';
+          metricsGrid.appendChild(card);
+        });
+      }
+
+      document.getElementById('loc-signal-shows').textContent = region.signal_shows;
+
+      var ctx = ISSUE_CONTEXT[issueType] || {};
+      document.getElementById('loc-context-title').textContent = ctx.title || ('About: ' + issueType);
+      document.getElementById('loc-context-body').innerHTML = ctx.body || '<p>Environmental monitoring data for this region is tracked by Signal Earth using open satellite telemetry.</p>';
+
+      var satImg = document.getElementById('loc-sat-img');
+      satImg.src = getAssetPath('assets/regions/' + region.id + '.jpg');
+      satImg.alt = 'NASA satellite observation: ' + region.name;
+      satImg.onerror = function() { this.onerror = null; this.src = getAssetPath('assets/satellite_earth_dark.jpg'); };
+      document.getElementById('loc-sat-caption-text').textContent = 'NASA GIBS / ' + (region.gibs_layer || 'MODIS TrueColor').replace(/_/g, ' ') + ' \u00b7 ' + region.name;
+
+      var wvUrl = worldviewUrl(region);
+      document.getElementById('loc-worldview-link-inline').href = wvUrl;
+      document.getElementById('loc-worldview-link-side').href = wvUrl;
+
+      var dataGrid = document.getElementById('loc-open-data-grid');
+      dataGrid.innerHTML = '';
+      var sources = [];
+      if (region.external_sources && region.external_sources.length) {
+        region.external_sources.forEach(function(s) { sources.push({ agency: 'Open Source', title: s.name, desc: 'Primary data portal for this location.', url: s.url }); });
+      }
+      (OPEN_DATA_BY_TYPE[issueType] || []).forEach(function(s) { sources.push(s); });
+      sources.forEach(function(s) {
+        var card = document.createElement('a');
+        card.className = 'loc-open-data-card';
+        card.href = s.url; card.target = '_blank'; card.rel = 'noopener noreferrer';
+        card.innerHTML = '<div class="loc-open-data-card-agency">' + s.agency + '</div>' +
+          '<div class="loc-open-data-card-title">' + s.title + '</div>' +
+          '<div class="loc-open-data-card-desc">' + s.desc + '</div>' +
+          '<div class="loc-open-data-card-arrow">Open \u2197</div>';
+        dataGrid.appendChild(card);
+      });
+
+      document.getElementById('loc-investigation-link').href = region.investigation_url || 'research.html';
+
+      var factsEl = document.getElementById('loc-facts-rows');
+      var bbox = region.bbox || [];
+      var rows = [
+        { label: 'Location', value: region.region },
+        { label: 'Coordinates', value: fmtCoords(region.lat, region.lon), mono: true },
+        { label: 'Issue Type', value: issueType.charAt(0).toUpperCase() + issueType.slice(1) },
+        { label: 'Issue Badge', value: region.issue_badge },
+        { label: 'GIBS Layer', value: (region.gibs_layer || 'MODIS TrueColor').replace(/_/g, ' '), mono: true }
+      ];
+      if (bbox.length) rows.push({ label: 'Bbox', value: bbox[0] + '\u00b0, ' + bbox[1] + '\u00b0 \u2192 ' + bbox[2] + '\u00b0, ' + bbox[3] + '\u00b0', mono: true });
+      factsEl.innerHTML = rows.map(function(r) {
+        return '<div class="loc-info-row"><span class="loc-info-label">' + r.label + '</span><span class="loc-info-value' + (r.mono ? ' mono' : '') + '">' + r.value + '</span></div>';
+      }).join('');
+
+      var pillsNav = document.getElementById('loc-all-regions-nav');
+      pillsNav.innerHTML = '';
+      allRegions.forEach(function(r) {
+        var pill = document.createElement('a');
+        pill.className = 'loc-region-pill' + (r.id === region.id ? ' current' : '');
+        pill.href = 'location.html?region=' + r.id;
+        pill.title = r.name;
+        pill.innerHTML = '<span class="loc-region-pill-dot" style="background:' + (r.color || '#1FB6A6') + '"></span>' + r.name;
+        pillsNav.appendChild(pill);
+      });
+
+      document.getElementById('loc-loading').style.display = 'none';
+      document.getElementById('loc-page').style.display = 'block';
+    }
+
+    function init() {
+      var regionId = getRegionId();
+      var jsonUrl = getAssetPath('data/regions.json');
+      fetch(jsonUrl)
+        .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+        .then(function(data) {
+          var allRegions = data.regions || [];
+          var region = allRegions.find(function(r) { return r.id === regionId; });
+          if (!region) {
+            document.getElementById('loc-loading').style.display = 'none';
+            document.getElementById('loc-error').style.display = 'block';
+            return;
+          }
+          populatePage(region, allRegions);
+        })
+        .catch(function(err) {
+          console.error('Failed to load regions.json:', err);
+          document.getElementById('loc-loading').style.display = 'none';
+          document.getElementById('loc-error').style.display = 'block';
+        });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  })();
+  </script>
+</body>
+</html>

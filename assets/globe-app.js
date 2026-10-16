@@ -358,7 +358,7 @@
     });
   }
 
-  // Render Quick-Select Region Pills
+  // Render Quick-Select Region Pills — click centres globe then opens location page
   function renderRegionPills(regions) {
     var pillsContainer = document.getElementById('globe-regions-pills');
     if (!pillsContainer) return;
@@ -369,12 +369,26 @@
       btn.type = 'button';
       btn.className = 'se-globe-pill' + (activeRegion && activeRegion.id === r.id ? ' active' : '');
       btn.setAttribute('data-region-id', r.id);
+      btn.setAttribute('title', 'Open location profile: ' + r.name);
       btn.innerHTML =
         '<span class="se-globe-pill-dot" style="background-color: ' + (r.color || '#1FB6A6') + ';"></span>' +
         r.name;
 
       btn.addEventListener('click', function () {
-        selectRegion(r);
+        // Centre & ring the globe briefly, then navigate to location page
+        activeRegion = r;
+        updateActivePill(r.id);
+        if (globeInstance) {
+          var controls = globeInstance.controls();
+          controls.autoRotate = false;
+          globeInstance.ringsData([r]);
+          globeInstance.pointOfView({ lat: r.lat, lng: r.lon, altitude: 1.55 }, 600);
+        }
+        var basePath = window.location.pathname.indexOf('/signal-earth-portal') === 0
+          ? '/signal-earth-portal/' : '/';
+        setTimeout(function () {
+          window.location.href = basePath + 'location.html?region=' + r.id;
+        }, 650);
       });
       pillsContainer.appendChild(btn);
     });
@@ -547,7 +561,7 @@
     }
   }
 
-  // Select Region and Open Side Drawer Panel
+  // Select Region — centres globe, rings beacon, then navigates to dedicated location profile page
   function selectRegion(region) {
     if (!region) return;
     activeRegion = region;
@@ -555,93 +569,20 @@
     // Highlight pill
     updateActivePill(region.id);
 
-    // Halt auto-rotation, update Location Impact Beacon Ring on Globe, and focus coordinates
+    // Halt auto-rotation, show beacon ring, and fly to coordinates
     if (globeInstance) {
       var controls = globeInstance.controls();
       controls.autoRotate = false;
       globeInstance.ringsData([region]);
-      globeInstance.pointOfView({ lat: region.lat, lng: region.lon, altitude: 1.55 }, 800);
+      globeInstance.pointOfView({ lat: region.lat, lng: region.lon, altitude: 1.55 }, 700);
     }
 
-    var drawer = document.getElementById('globe-drawer');
-    if (!drawer) return;
-
-    // Set textual details
-    var nameEl = document.getElementById('drawer-region-name');
-    if (nameEl) nameEl.textContent = region.name;
-
-    var coordsEl = document.getElementById('drawer-coords');
-    if (coordsEl) coordsEl.textContent = region.lat.toFixed(4) + '°N, ' + region.lon.toFixed(4) + '°E · ' + region.region;
-    
-    var badgeEl = document.getElementById('drawer-issue-badge');
-    if (badgeEl) {
-      badgeEl.textContent = region.issue_badge;
-      badgeEl.style.borderColor = region.color || '#1FB6A6';
-      badgeEl.style.color = region.color || '#1FB6A6';
-    }
-
-    // Location Environmental Impact Callout
-    var impactDescEl = document.getElementById('drawer-impact-desc');
-    if (impactDescEl) impactDescEl.textContent = region.why_it_matters;
-
-    var whyEl = document.getElementById('drawer-why-matters');
-    if (whyEl) whyEl.textContent = region.summary;
-
-    var signalEl = document.getElementById('drawer-signal-shows');
-    if (signalEl) signalEl.textContent = region.signal_shows;
-
-    // Metrics
-    var metricsWrap = document.getElementById('drawer-metrics-list');
-    if (metricsWrap) {
-      metricsWrap.innerHTML = '';
-      if (region.metrics && region.metrics.length) {
-        region.metrics.forEach(function (m) {
-          var row = document.createElement('div');
-          row.className = 'se-drawer-metric-card';
-          row.innerHTML =
-            '<span class="se-drawer-metric-name">' + m.name + '</span>' +
-            '<span class="se-drawer-metric-val">' + m.value + '</span>' +
-            '<a href="' + m.url + '" target="_blank" rel="noopener noreferrer" class="se-drawer-metric-src">' + m.source + ' (' + (m.year || 2026) + ') &rarr;</a>';
-          metricsWrap.appendChild(row);
-        });
-      }
-    }
-
-    // Investigation link
-    var investLink = document.getElementById('drawer-investigation-link');
-    if (investLink) {
-      investLink.href = region.investigation_url || 'research.html';
-    }
-
-    // Share link
-    var shareInput = document.getElementById('drawer-share-input');
-    if (shareInput) {
-      var shareUrl = window.location.origin + window.location.pathname + '#region=' + region.id;
-      shareInput.value = shareUrl;
-    }
-
-    // Load satellite images (default primary + comparison if active)
-    var defaultDate = getDefaultWorldviewDate();
-    var datePicker = document.getElementById('drawer-date-picker');
-    if (datePicker) {
-      datePicker.value = defaultDate;
-      datePicker.max = defaultDate;
-    }
-    loadWorldviewSnapshot(region, defaultDate, false);
-
-    var compareToggle = document.getElementById('drawer-compare-toggle');
-    if (compareToggle && compareToggle.checked) {
-      loadWorldviewSnapshot(region, defaultDate, true);
-    }
-
-    // Open Drawer
-    drawer.classList.add('is-open');
-    drawer.setAttribute('aria-hidden', 'false');
-
-    // Update URL hash smoothly without scroll jump
-    if (history.replaceState) {
-      history.replaceState(null, null, '#region=' + region.id);
-    }
+    // Navigate to the standalone wiki-style location profile page
+    var basePath = window.location.pathname.indexOf('/signal-earth-portal') === 0
+      ? '/signal-earth-portal/' : '/';
+    setTimeout(function () {
+      window.location.href = basePath + 'location.html?region=' + region.id;
+    }, 750);
   }
 
   // Load NASA Worldview Snapshot / Accurate Regional Satellite Asset
@@ -701,44 +642,52 @@
     }
   }
 
-  // Handle URL Hash deep linking
+  // Handle URL Hash deep linking — redirect to location page
   function handleUrlHash() {
     var hash = window.location.hash;
     if (hash && hash.indexOf('#region=') === 0) {
       var id = hash.replace('#region=', '');
       var found = allRegions.find(function (r) { return r.id === id; });
       if (found) {
-        selectRegion(found);
+        // Fly globe to region, then redirect to location profile
+        if (globeInstance) {
+          globeInstance.ringsData([found]);
+          globeInstance.pointOfView({ lat: found.lat, lng: found.lon, altitude: 1.55 }, 700);
+        }
+        var basePath = window.location.pathname.indexOf('/signal-earth-portal') === 0
+          ? '/signal-earth-portal/' : '/';
+        setTimeout(function () {
+          window.location.href = basePath + 'location.html?region=' + found.id;
+        }, 800);
         return true;
       }
     }
     return false;
   }
 
-  // Accessible Keyboard Region Table
+  // Accessible Keyboard Region Table — rows link directly to location profile pages
   function populateKeyboardList(regions) {
     var tableBody = document.getElementById('globe-keyboard-tbody');
     if (!tableBody) return;
     tableBody.innerHTML = '';
 
+    var basePath = window.location.pathname.indexOf('/signal-earth-portal') === 0
+      ? '/signal-earth-portal/' : '/';
+
     regions.forEach(function (r) {
       var tr = document.createElement('tr');
+      var locationUrl = basePath + 'location.html?region=' + r.id;
       tr.innerHTML =
         '<td><strong>' + r.name + '</strong><br><span style="font-size: 11px; color: var(--se-text-muted);">' + r.region + '</span></td>' +
         '<td><span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: ' + (r.color || '#1FB6A6') + '; margin-right: 6px;"></span>' + r.issue_badge + '</td>' +
-        '<td style="font-family: var(--se-font-mono); font-size: 12px;">' + r.lat.toFixed(2) + '°N, ' + r.lon.toFixed(2) + '°E</td>' +
-        '<td><button type="button" class="se-stream-btn" data-region-id="' + r.id + '" style="font-size: 11px; padding: 3px 8px;">Focus on Globe</button></td>';
+        '<td style="font-family: var(--se-font-mono); font-size: 12px;">' + r.lat.toFixed(2) + '\u00b0, ' + r.lon.toFixed(2) + '\u00b0</td>' +
+        '<td><a href="' + locationUrl + '" class="se-stream-btn" style="font-size: 11px; padding: 3px 8px; text-decoration: none; display: inline-block;">Open Profile \u2197</a></td>';
 
-      tr.querySelector('button').addEventListener('click', function () {
-        selectRegion(r);
-        var sec = document.getElementById('globe-section');
-        if (sec) window.scrollTo({ top: sec.offsetTop - 40, behavior: 'smooth' });
-      });
       tableBody.appendChild(tr);
     });
   }
 
-  // Wire UI Controls: Filters, Drawer Close, Date Picker, Share Copy
+  // Wire UI Controls: Filters only (drawer removed — detail opens on location.html)
   function initGlobeControls() {
     // Filter tags
     var filterBtns = document.querySelectorAll('.se-globe-filter-btn');
@@ -757,57 +706,6 @@
         updateGlobeLayers();
       });
     });
-
-    // Drawer close button
-    var closeBtn = document.getElementById('globe-drawer-close');
-    var drawer = document.getElementById('globe-drawer');
-    if (closeBtn && drawer) {
-      closeBtn.addEventListener('click', function () {
-        drawer.classList.remove('is-open');
-        drawer.setAttribute('aria-hidden', 'true');
-      });
-    }
-
-    // Date picker
-    var datePicker = document.getElementById('drawer-date-picker');
-    if (datePicker) {
-      datePicker.addEventListener('change', function () {
-        if (activeRegion) {
-          loadWorldviewSnapshot(activeRegion, datePicker.value, false);
-        }
-      });
-    }
-
-    // 10-year compare toggle
-    var compareToggle = document.getElementById('drawer-compare-toggle');
-    var compareWrap = document.getElementById('drawer-compare-wrap');
-    if (compareToggle && compareWrap) {
-      compareToggle.addEventListener('change', function () {
-        if (compareToggle.checked) {
-          compareWrap.style.display = 'block';
-          if (activeRegion && datePicker) {
-            loadWorldviewSnapshot(activeRegion, datePicker.value, true);
-          }
-        } else {
-          compareWrap.style.display = 'none';
-        }
-      });
-    }
-
-    // Copy share link button
-    var copyBtn = document.getElementById('drawer-copy-share-btn');
-    var shareInput = document.getElementById('drawer-share-input');
-    if (copyBtn && shareInput) {
-      copyBtn.addEventListener('click', function () {
-        shareInput.select();
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-          navigator.clipboard.writeText(shareInput.value).then(function () {
-            copyBtn.textContent = 'Copied ✓';
-            setTimeout(function () { copyBtn.textContent = 'Copy'; }, 2000);
-          });
-        }
-      });
-    }
   }
 
   // Lazy initialization with IntersectionObserver
