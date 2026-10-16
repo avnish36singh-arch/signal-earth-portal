@@ -1,0 +1,440 @@
+/* ==========================================================================
+   SIGNAL EARTH : HOMEPAGE STYLESHEET (assets/homepage.css)
+   Clean, authoritative, accessible styling matching our scientific token system.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Live Key-Numbers Strip
+   -------------------------------------------------------------------------- */
+.se-key-numbers-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 3rem 0 1rem;
+  padding: 1.25rem;
+  background: var(--se-bg-surface);
+  border: 1px solid var(--se-border);
+  border-radius: var(--se-radius-md);
+  box-shadow: var(--se-shadow-sm);
+}
+
+.se-key-number-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0.75rem;
+  border-right: 1px solid var(--se-border-subtle);
+  text-decoration: none;
+  transition: transform 0.15s ease;
+}
+
+.se-key-number-item:last-child {
+  border-right: none;
+}
+
+.se-key-number-item:hover {
+  transform: translateY(-2px);
+}
+
+.se-key-num-label {
+  font-family: var(--se-font-mono);
+  font-size: var(--se-text-xs);
+  color: var(--se-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.35rem;
+}
+
+.se-key-num-val {
+  font-family: var(--se-font-mono);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--se-text-primary);
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+}
+
+.se-key-num-src {
+  font-family: var(--se-font-sans);
+  font-size: 0.75rem;
+  color: var(--se-teal-live);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* --------------------------------------------------------------------------
+   2. Our Four Investigations: Direct Link Cards Only
+   -------------------------------------------------------------------------- */
+.se-investigations-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin: 2.5rem 0 1.5rem;
+}
+
+.se-investigation-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--se-bg-surface);
+  border: 1px solid var(--se-border);
+  border-radius: var(--se-radius-md);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.se-investigation-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--se-border-hover);
+  box-shadow: var(--se-shadow-md);
+}
+
+.se-investigation-card:focus-visible {
+  outline: 2px solid var(--se-teal-live);
+  outline-offset: 3px;
+}
+
+.se-inv-fig {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #000000;
+  margin: 0;
+  border-bottom: 1px solid var(--se-border-subtle);
+  position: relative;
+}
+
+.se-inv-fig img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.se-investigation-card:hover .se-inv-fig img {
+  transform: scale(1.03);
+}
+
+.se-inv-fig-credit {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.35rem 0.65rem;
+  background: rgba(10, 22, 40, 0.75);
+  font-family: var(--se-font-mono);
+  font-size: 0.62rem;
+  color: #CBD5E1;
+  letter-spacing: 0.04em;
+}
+
+.se-inv-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.se-inv-num {
+  font-family: var(--se-font-mono);
+  font-size: var(--se-text-xs);
+  color: var(--se-teal-live);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.4rem;
+}
+
+.se-inv-title {
+  font-family: var(--se-font-serif);
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: var(--se-text-primary);
+  margin: 0 0 0.5rem;
+}
+
+.se-inv-teaser {
+  font-family: var(--se-font-sans);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--se-text-secondary);
+  margin: 0 0 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.se-inv-link-text {
+  margin-top: auto;
+  font-family: var(--se-font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--se-text-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.se-investigation-card:hover .se-inv-link-text {
+  color: var(--se-teal-live);
+}
+
+/* --------------------------------------------------------------------------
+   3. Global Reports Cards & Research Feed
+   -------------------------------------------------------------------------- */
+.se-reports-trio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.se-mini-report-card {
+  background: var(--se-bg-surface);
+  border: 1px solid var(--se-border);
+  border-radius: var(--se-radius-md);
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+}
+
+.se-mini-report-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--se-border-hover);
+  box-shadow: var(--se-shadow-md);
+}
+
+.se-mini-report-cat {
+  font-family: var(--se-font-mono);
+  font-size: var(--se-text-xs);
+  color: var(--se-teal-live);
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+.se-mini-report-title {
+  font-family: var(--se-font-serif);
+  font-size: 1.25rem;
+  color: var(--se-text-primary);
+  margin: 0 0 0.5rem;
+}
+
+.se-mini-report-finding {
+  font-family: var(--se-font-sans);
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--se-text-secondary);
+  margin: 0 0 1rem;
+}
+
+.se-mini-report-source {
+  margin-top: auto;
+  font-family: var(--se-font-mono);
+  font-size: 0.72rem;
+  color: var(--se-text-muted);
+}
+
+/* Papers Feed */
+.se-papers-filter-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.5rem 0 2rem;
+  flex-wrap: wrap;
+}
+
+.se-paper-chip {
+  background: var(--se-bg-surface);
+  border: 1px solid var(--se-border);
+  color: var(--se-text-secondary);
+  font-family: var(--se-font-mono);
+  font-size: var(--se-text-xs);
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--se-radius-sm);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.se-paper-chip:hover {
+  border-color: var(--se-border-hover);
+  color: var(--se-text-primary);
+}
+
+.se-paper-chip.active {
+  background: var(--se-text-primary);
+  color: var(--se-bg-page);
+  border-color: var(--se-text-primary);
+}
+
+.se-papers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.se-paper-card {
+  background: var(--se-bg-surface);
+  border: 1px solid var(--se-border);
+  border-radius: var(--se-radius-md);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+.se-paper-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--se-border-hover);
+  box-shadow: var(--se-shadow-sm);
+}
+
+.se-paper-journal {
+  font-family: var(--se-font-mono);
+  font-size: 0.7rem;
+  color: var(--se-teal-live);
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+.se-paper-title {
+  font-family: var(--se-font-serif);
+  font-size: 1.1rem;
+  line-height: 1.3;
+  color: var(--se-text-primary);
+  margin: 0 0 0.5rem;
+}
+
+.se-paper-takeaway {
+  font-family: var(--se-font-sans);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--se-text-secondary);
+  margin: 0 0 1rem;
+}
+
+.se-paper-doi {
+  margin-top: auto;
+  font-family: var(--se-font-mono);
+  font-size: 0.68rem;
+  color: var(--se-text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   4. Netlify Forms Section
+   -------------------------------------------------------------------------- */
+.se-forms-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.se-form-card {
+  background: var(--se-bg-surface);
+  border: 1px solid var(--se-border);
+  border-radius: var(--se-radius-md);
+  padding: 2.25rem;
+}
+
+.se-form-title {
+  font-family: var(--se-font-serif);
+  font-size: 1.5rem;
+  color: var(--se-text-primary);
+  margin: 0 0 0.5rem;
+}
+
+.se-form-desc {
+  font-family: var(--se-font-sans);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--se-text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.se-input-group {
+  margin-bottom: 1.25rem;
+}
+
+.se-input-label {
+  display: block;
+  font-family: var(--se-font-mono);
+  font-size: var(--se-text-xs);
+  color: var(--se-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.4rem;
+}
+
+.se-input-field {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  background: var(--se-bg-page);
+  border: 1px solid var(--se-border);
+  border-radius: var(--se-radius-sm);
+  font-family: var(--se-font-sans);
+  font-size: 0.9rem;
+  color: var(--se-text-primary);
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.se-input-field:focus {
+  border-color: var(--se-teal-live);
+}
+
+.se-textarea-field {
+  min-height: 90px;
+  resize: vertical;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Breakpoints
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .se-investigations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .se-key-numbers-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .se-reports-trio-grid {
+    grid-template-columns: 1fr;
+  }
+  .se-papers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .se-forms-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .se-investigations-grid {
+    grid-template-columns: 1fr;
+  }
+  .se-key-numbers-strip {
+    grid-template-columns: 1fr;
+  }
+  .se-key-number-item {
+    border-right: none;
+    border-bottom: 1px solid var(--se-border-subtle);
+    padding-bottom: 0.75rem;
+  }
+  .se-key-number-item:last-child {
+    border-bottom: none;
+  }
+  .se-papers-grid {
+    grid-template-columns: 1fr;
+  }
+  .se-form-card {
+    padding: 1.5rem;
+  }
+}

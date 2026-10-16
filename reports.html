@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The State of the Planet — Global Reports &amp; Rankings | Signal Earth</title>
+  <meta name="description" content="Independent registry of peer-reviewed global climate reports, emissions accounting, and statutory air quality rankings. Verified 2026 datasets with primary links.">
+  <link rel="canonical" href="https://signalearth.netlify.app/reports.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="assets/tokens.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="assets/theme.js"></script>
+  <style>
+    .se-reports-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 1.5rem;
+      margin: 2.5rem 0;
+    }
+    .se-report-card {
+      background: var(--se-bg-surface);
+      border: 1px solid var(--se-border);
+      border-radius: var(--se-radius-md);
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .se-report-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--se-border-hover);
+      box-shadow: var(--se-shadow-md);
+    }
+    .se-report-cat {
+      font-family: var(--se-font-mono);
+      font-size: var(--se-text-xs);
+      font-weight: 600;
+      color: var(--se-teal-live);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.5rem;
+    }
+    .se-report-title {
+      font-family: var(--se-font-serif);
+      font-size: 1.45rem;
+      line-height: 1.25;
+      color: var(--se-text-primary);
+      margin: 0 0 0.5rem;
+    }
+    .se-report-org {
+      font-family: var(--se-font-mono);
+      font-size: var(--se-text-xs);
+      color: var(--se-text-muted);
+      margin-bottom: 1rem;
+    }
+    .se-report-finding {
+      font-family: var(--se-font-sans);
+      font-size: var(--se-text-sm);
+      line-height: 1.6;
+      color: var(--se-text-secondary);
+      margin-bottom: 1.25rem;
+    }
+    .se-report-metrics {
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid var(--se-border-subtle);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .se-metric-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-family: var(--se-font-mono);
+      font-size: var(--se-text-xs);
+    }
+    .se-metric-val {
+      font-weight: 600;
+      color: var(--se-text-primary);
+    }
+  </style>
+</head>
+<body class="se-editorial-page">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Header -->
+  <header class="se-editorial-header" id="se-header">
+    <div class="se-editorial-container">
+      <div class="se-editorial-header-inner">
+        <div class="se-editorial-wordmark-wrap">
+          <a href="index.html" class="se-editorial-wordmark">Signal Earth</a>
+          <span class="se-wordmark-badge">Reports</span>
+        </div>
+        <div class="se-editorial-header-right">
+          <nav class="se-editorial-nav">
+            <ul class="se-editorial-nav-list">
+              <li><a href="index.html" class="se-editorial-nav-link">Home</a></li>
+              <li><a href="research.html" class="se-editorial-nav-link">Research</a></li>
+              <li><a href="data.html" class="se-editorial-nav-link">Data &amp; Maps</a></li>
+              <li><a href="reports.html" class="se-editorial-nav-link active" aria-current="page">Reports</a></li>
+              <li><a href="briefs/index.html" class="se-editorial-nav-link">Briefs</a></li>
+              <li><a href="methodology.html" class="se-editorial-nav-link">Methodology</a></li>
+              <li><a href="about.html" class="se-editorial-nav-link">About</a></li>
+            </ul>
+          </nav>
+          <button type="button" id="se-theme-toggle" class="se-theme-toggle-btn" aria-label="Toggle theme mode" title="Switch light / dark mode">
+            <span class="se-theme-label">Theme</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section style="padding: 4rem 0 5rem;">
+      <div class="se-editorial-container">
+        <div style="max-width: 860px; margin-bottom: 3rem;">
+          <div style="display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--se-font-mono); font-size: var(--se-text-xs); color: var(--se-teal-live); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem;">
+            <span>● Verified Primary Datasets</span> &middot; <span>Last verified: 16 October 2026</span>
+          </div>
+          <h1 style="font-family: var(--se-font-serif); font-size: clamp(2.2rem, 4vw, 3.4rem); line-height: 1.15; color: var(--se-text-primary); margin-bottom: 1rem;">
+            The State of the Planet
+          </h1>
+          <p style="font-family: var(--se-font-sans); font-size: 1.1rem; line-height: 1.6; color: var(--se-text-secondary);">
+            A curated planetary registry of institutional climate assessments, global greenhouse gas budgets, emissions gap trajectories, and air quality audits. Every metric cites its official primary dataset with zero memory interpolation.
+          </p>
+        </div>
+
+        <!-- Global Reports Grid -->
+        <div class="se-reports-grid" id="reports-container">
+          <!-- Card 1: 1.5°C Tracker -->
+          <article class="se-report-card">
+            <span class="se-report-cat">Global Temperature</span>
+            <h2 class="se-report-title">1.5°C Global Temperature Threshold Tracker</h2>
+            <div class="se-report-org">Copernicus Climate Change Service (C3S) / WMO &middot; 2026</div>
+            <p class="se-report-finding">
+              2025 was +1.47°C above the pre-industrial baseline, while the 3-year running mean (2023–2025) crossed +1.52°C for the first time in recorded history. September 2026 reached +1.63°C.
+            </p>
+            <div class="se-report-metrics">
+              <div class="se-metric-row">
+                <span style="color: var(--se-text-muted);">2025 Annual Anomaly:</span>
+                <span class="se-metric-val">+1.47°C (ERA5)</span>
+              </div>
+              <div class="se-metric-row">
+                <span style="color: var(--se-text-muted);">3-Year Running Mean:</span>
+                <span class="se-metric-val">+1.52°C</span>
+              </div>
+              <div class="se-metric-row">
+                <span style="color: var(--se-text-muted);">September 2026:</span>
+                <span class="se-metric-val">+1.63°C</span>
+              </div>
+            </div>
+            <div style="margin-top: 1rem;">
+              <a href="https://climate.copernicus.eu" target="_blank" rel="noopener noreferrer" class="se-editorial-inline-link">
+                Primary C3S Bulletin &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2: CCPI Rankings -->
+          <article class="se-report-card">
+            <span class="se-report-cat">Policy Comparison</span>
+            <h2 class="se-report-title">Climate Change Performance Index (CCPI 2026)</h2>
+            <div class="se-report-org">Germanwatch, NewClimate Institute &amp; CAN &middot; 2026</div>
+            <p class="se-report-finding">
+              Ranks 1 to 3 remain vacant because no nation achieved a 'Very High' rating across all categories. Denmark ranks 4th, UK 5th, while petro-states (Russia 64th, USA 65th, Saudi Arabia 67th) occupy the bottom.
+            </p>
+            <div class="se-report-metrics">
+              <div class="se-metric-row">
+                <span style="color: var(--se-text-muted);">Top Performer:</span>
+                <span class="se-metric-val">4th (Denmark)</span>
+              </div>
+              <div class="se-metric-row">
+                <span style="color: var(--se-text-muted);">Vacant Benchmark:</span>
+                <span class="se-metric-val">Ranks 1, 2, 3</span>
+              </div>
+              <div class="se-metric-row">
+                <span style="color: var(--se-text-muted);">Lowest Rank:</span>
+                <span class="se-metric-val">67th (Saudi Arabia)</span>
+              </div>
+            </div>
+            <div style="margin-top: 1rem;">
+              <a href="https://ccpi.org" target="_blank" rel="noopener noreferrer" class="se-editorial-inline-link">
+                Primary CCPI Registry &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3: Global Carbon Budget -->
+          <article class="se-report-card">
+            <span class="se-report-cat">Carbon Accounting</span>
+            <h2 class="se-report-title">Global Carbon Budget</h2>
+            <div class="se-report-org">Global Carbon Project (GCP) &middot; 2026</div>
+            <p class="se-report-finding">
+              Global fossil CO₂ emissions reached a record 38.1 billion tonnes (GtCO₂). Adding land-use changes yields 42.2 GtCO₂ total, leaving roughly 170 GtCO₂ in the 1.5°C carbon budget (~4 years of emissions).
+            </p>
+            <div class="se-report-metrics">
+              <div class="se-metric-row">
+                <span style="color: var(--se-text-muted);">Fossil CO₂ Emissions:</span>
+                <span class="se-metric-val">38.1 GtCO₂</span>
+              </div>
+              <div class="se-metric-row">
+                <span style="color: var(--se-text-muted);">Total Anthropogenic CO₂:</span>
+                <span class="se-metric-val">42.2 GtCO₂</span>
+              </div>
+              <div class="se-metric-row">
+                <span style="color: var(--se-text-muted);">Remaining 1.5°C Budget:</span>
+                <span class="se-metric-val">~170 GtCO₂ (~4 yrs)</span>
+              </div>
+            </div>
+            <div style="margin-top: 1rem;">
+              <a href="https://globalcarbonbudget.org" target="_blank" rel="noopener noreferrer" class="se-editorial-inline-link">
+                Primary Carbon Budget Portal &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 4: UNEP Emissions Gap -->
+          <article class="se-report-card">
+            <span class="se-report-cat">Pledge Alignment</span>
+            <h2 class="se-report-title">UNEP Emissions Gap Report</h2>
+            <div class="se-report-org">United Nations Environment Programme &middot; 2026</div>
+            <p class="se-report-finding">
+              Total global greenhouse gas emissions stand at 57.7 GtCO₂e. Current implemented policies project 2.8°C of warming by 2100. Bridging to a 1.5°C pathway demands an immediate 42% emissions cut by 2030.
+            </p>
+            <div class="se-report-metrics">
+              <div class="se-metric-row">
+                <span style="color: var(--se-text-muted);">Global Emissions:</span>
+                <span class="se-metric-val">57.7 GtCO₂e</span>
+              </div>
+              <div class="se-metric-row">
+                <span style="color: var(--se-text-muted);">Current Policy Warming:</span>
+                <span class="se-metric-val">+2.8°C by 2100</span>
+              </div>
+              <div class="se-metric-row">
+                <span style="color: var(--se-text-muted);">Required 2030 Cut:</span>
+                <span class="se-metric-val">-42% vs 2019</span>
+              </div>
+            </div>
+            <div style="margin-top: 1rem;">
+              <a href="https://www.unep.org/resources/emissions-gap-report" target="_blank" rel="noopener noreferrer" class="se-editorial-inline-link">
+                Primary UNEP Report &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 5: IQAir World Air Quality -->
+          <article class="se-report-card">
+            <span class="se-report-cat">Aerosol Pollution</span>
+            <h2 class="se-report-title">World Air Quality Report</h2>
+            <div class="se-report-org">IQAir / Greenpeace &middot; 2026</div>
+            <p class="se-report-finding">
+              Pakistan (#1) and Bangladesh (#2) record the highest national particulate averages globally; India ranks 6th with 48.9 µg/m³ PM2.5 (9.8× the WHO annual limit of 5 µg/m³), with regional hotspots exceeding 110 µg/m³.
+            </p>
+            <div class="se-report-metrics">
+              <div class="se-metric-row">
+                <span style="color: var(--se-text-muted);">Top 2 Most Polluted:</span>
+                <span class="se-metric-val">Pakistan, Bangladesh</span>
+              </div>
+              <div class="se-metric-row">
+                <span style="color: var(--se-text-muted);">India National Mean:</span>
+                <span class="se-metric-val">48.9 µg/m³ PM2.5</span>
+              </div>
+              <div class="se-metric-row">
+                <span style="color: var(--se-text-muted);">WHO Guideline:</span>
+                <span class="se-metric-val">5.0 µg/m³</span>
+              </div>
+            </div>
+            <div style="margin-top: 1rem;">
+              <a href="https://www.iqair.com/world-air-quality-report" target="_blank" rel="noopener noreferrer" class="se-editorial-inline-link">
+                Primary Air Quality Report &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 6: NOAA Coral Bleaching -->
+          <article class="se-report-card">
+            <span class="se-report-cat">Ocean &amp; Biosphere</span>
+            <h2 class="se-report-title">4th Global Coral Bleaching Event</h2>
+            <div class="se-report-org">NOAA Coral Reef Watch &middot; 2026</div>
+            <p class="se-report-finding">
+              Satellite radiometry confirms mass thermal stress across over 73% of planetary coral reef areas, marking the fourth documented global mass bleaching event since 1998.
+            </p>
+            <div class="se-report-metrics">
+              <div class="se-metric-row">
+                <span style="color: var(--se-text-muted);">Reef Area Stressed:</span>
+                <span class="se-metric-val">73% Global Reefs</span>
+              </div>
+              <div class="se-metric-row">
+                <span style="color: var(--se-text-muted);">Peak Heat Stress:</span>
+                <span class="se-metric-val">16+ Degree Heating Wks</span>
+              </div>
+              <div class="se-metric-row">
+                <span style="color: var(--se-text-muted);">Global Frequency:</span>
+                <span class="se-metric-val">4th Global Event</span>
+              </div>
+            </div>
+            <div style="margin-top: 1rem;">
+              <a href="https://coralreefwatch.noaa.gov" target="_blank" rel="noopener noreferrer" class="se-editorial-inline-link">
+                Primary Coral Reef Watch &rarr;
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- How Signal Earth Uses This Data -->
+        <div style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 2.5rem; margin-top: 3rem;">
+          <h2 style="font-family: var(--se-font-serif); font-size: 1.8rem; margin: 0 0 1rem; color: var(--se-text-primary);">
+            How Signal Earth Uses These Datasets
+          </h2>
+          <p style="font-family: var(--se-font-sans); font-size: 0.95rem; line-height: 1.7; color: var(--se-text-secondary); margin-bottom: 1rem;">
+            Global assessments provide necessary boundary conditions, but coarse resolution often masks local microclimates. Signal Earth bridges global reanalysis and ground truth by pairing institutional reports with 30m Landsat thermal radiometry, high-resolution MODIS plumes, and continuous station audits.
+          </p>
+          <p style="font-family: var(--se-font-sans); font-size: 0.95rem; line-height: 1.7; color: var(--se-text-secondary); margin-bottom: 1.5rem;">
+            For example, while IQAir and CPCB document headline particulate numbers for northern India, Signal Earth's Kanpur investigation explicitly proves that an 855-day unmonitored regulatory hiatus occurred—enforcing a strict zero-synthetic-infilling policy.
+          </p>
+          <a href="methodology.html" class="se-editorial-inline-link">Read our complete methodology and data integrity standards &rarr;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="se-editorial-footer">
+    <div class="se-editorial-container">
+      <div class="se-editorial-footer-bottom">
+        <div>Signal Earth &middot; Open environmental science. Hosted on Netlify &amp; GitHub Pages.</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

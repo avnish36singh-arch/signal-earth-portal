@@ -1,0 +1,94 @@
+/* ==========================================================================
+   SIGNAL EARTH : DESIGN TOKENS (assets/tokens.css)
+   Disciplined, scientific, accessible visual system.
+   Palette: Deep ocean navy, paper white, verified teal, thermal data encoding.
+   Typography: Newsreader (Editorial Serif), Inter (Clean Sans), IBM Plex Mono.
+   ========================================================================== */
+
+:root {
+  /* Surfaces & Backgrounds (Light Default) */
+  --se-bg-page: #F7F8FA;          /* Paper white */
+  --se-bg-surface: #FFFFFF;       /* Pure white card container */
+  --se-bg-elevated: #F0F2F5;      /* Subtle contrast / table header */
+  --se-border: #E2E4E9;           /* Hairline structural border */
+  --se-border-subtle: #ECEEF2;    /* Divider lines */
+  --se-border-hover: #CBD0D8;
+
+  /* Typography Colors */
+  --se-text-primary: #0F172A;     /* Slate 900 */
+  --se-text-secondary: #475569;   /* Slate 600 */
+  --se-text-muted: #64748B;       /* Slate 500 */
+  --se-text-inverse: #F8FAFC;     /* Slate 50 */
+
+  /* Scientific Accents (Data-encoding only, not decorative) */
+  --se-teal-live: #1FB6A6;        /* Verified / Live sensor indicator */
+  --se-blue-cold: #2E6FD8;        /* Cryosphere / Negative anomaly */
+  --se-amber-warm: #F2A33A;       /* Moderate particulate / Alert */
+  --se-red-hot: #D6402B;          /* Severe thermal anomaly / PM spike */
+  --se-navy-space: #0A1628;       /* Deep ocean navy for globe & terminal */
+
+  /* Typography Scale */
+  --se-font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --se-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --se-font-mono: 'IBM Plex Mono', Menlo, Consolas, monospace;
+
+  --se-text-xs: 0.72rem;   /* HUD coordinates, satellite tags (11.5px) */
+  --se-text-sm: 0.84rem;   /* Metadata, captions, button labels (13.5px) */
+  --se-text-base: 1.00rem; /* Body copy — max 72ch width (16px) */
+  --se-text-lg: 1.18rem;   /* Lead teasers, sub-headings (19px) */
+  --se-text-xl: 1.50rem;   /* Card titles (24px) */
+  --se-text-2xl: 2.10rem;  /* Section headings (33.6px) */
+  --se-text-3xl: 3.20rem;  /* Hero editorial headline (51px) */
+
+  /* Strict Spacing Scale */
+  --se-space-2xs: 0.25rem;
+  --se-space-xs: 0.5rem;
+  --se-space-sm: 1.0rem;
+  --se-space-md: 2.0rem;
+  --se-space-lg: 4.0rem;
+  --se-space-xl: 6.0rem;
+
+  /* Disciplined Radius */
+  --se-radius-sm: 4px;     /* Buttons, chips, code boxes */
+  --se-radius-md: 8px;     /* Cards, report tiles */
+  --se-radius-lg: 12px;    /* Globe viewport, modal frame */
+
+  --se-max-width: 1240px;
+  --se-reading-width: 70ch;
+  --se-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --se-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --se-shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="dark"] {
+  --se-bg-page: #0A1628;          /* Deep ocean navy */
+  --se-bg-surface: #0E1D33;       /* Midnight blue surface */
+  --se-bg-elevated: #142642;      /* Elevated card body */
+  --se-border: #1E3456;
+  --se-border-subtle: #172B47;
+  --se-border-hover: #2C4A75;
+
+  --se-text-primary: #F8FAFC;
+  --se-text-secondary: #94A3B8;
+  --se-text-muted: #64748B;
+  --se-text-inverse: #0A1628;
+
+  --se-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.35);
+  --se-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.45);
+  --se-shadow-lg: 0 14px 32px rgba(0, 0, 0, 0.55);
+}
+
+/* Base Accessibility & Focus States */
+:focus-visible {
+  outline: 2px solid var(--se-teal-live);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

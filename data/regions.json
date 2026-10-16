@@ -1,0 +1,355 @@
+{
+  "updated_at": "2026-10-16",
+  "regions": [
+    {
+      "id": "kanpur",
+      "name": "Kanpur Observatory",
+      "region": "Central Indo-Gangetic Basin, India",
+      "lat": 26.4499,
+      "lon": 80.3319,
+      "issue_type": "air quality",
+      "issue_badge": "Particulate Stagnation & Hiatus",
+      "color": "#F2A33A",
+      "bbox": [26.0, 79.8, 27.0, 80.8],
+      "gibs_layer": "MODIS_Terra_CorrectedReflectance_TrueColor",
+      "summary": "Dense urban and industrial core situated in the central Ganga valley subject to acute winter boundary layer entrapment.",
+      "why_it_matters": "Meteorological inversions and geographic containment multiply particulate concentrations fourfold, causing severe cardiopulmonary morbidity.",
+      "signal_shows": "Ground telemetry documents a 4.2× winter aerosol multiplier alongside an 855-day unmonitored regulatory hiatus.",
+      "metrics": [
+        { "name": "Winter Multiplier", "value": "4.2×", "source": "CPCB CAAQMS / Signal Earth Audit", "url": "https://signalearth.org/investigations/kanpur.html", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Documented Hiatus", "value": "855 Days", "source": "Statutory Telemetry Audit", "url": "https://signalearth.org/known-problems.html", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Urban Heat Delta", "value": "+3.60K", "source": "Landsat 8/9 TIRS-2 Band 10", "url": "https://signalearth.org/investigations/kanpur-uhi.html", "year": 2026, "retrieved_on": "2026-10-16" }
+      ],
+      "investigation_url": "investigations/kanpur.html",
+      "external_sources": [
+        { "name": "NASA Worldview Earthdata", "url": "https://worldview.earthdata.nasa.gov" },
+        { "name": "CPCB Official Air Quality Portal", "url": "https://app.cpcbccr.com/ccr/#/caaqms-dashboard" }
+      ]
+    },
+    {
+      "id": "delhi",
+      "name": "Delhi NCR Airshed",
+      "region": "National Capital Region, India",
+      "lat": 28.6139,
+      "lon": 77.2090,
+      "issue_type": "air quality",
+      "issue_badge": "NAQI Particulate Dominance",
+      "color": "#D6402B",
+      "bbox": [28.2, 76.8, 29.1, 77.6],
+      "gibs_layer": "MODIS_Terra_CorrectedReflectance_TrueColor",
+      "summary": "Megacity basin capturing post-harvest biomass burning plumes and local emissions under calm synoptic winter wind regimes.",
+      "why_it_matters": "Airshed exposure affects over 30 million residents with headline air quality indexes consistently saturating statutory maximum thresholds.",
+      "signal_shows": "Evaluation of 24 criteria pollutants confirms PM2.5 and PM10 determine the overall NAQI score on 95.3% of monitored days.",
+      "metrics": [
+        { "name": "PM Dominance", "value": "95.3%", "source": "CPCB NAQI Regulatory Formulation Audit", "url": "https://signalearth.org/investigations/delhi.html", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Peak PM2.5 Index", "value": "480+ AQI", "source": "DPCC Continuous Telemetry", "url": "https://signalearth.org/data.html", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Station Hiatus", "value": "731 Days", "source": "Disclosed Monitoring Interruption", "url": "https://signalearth.org/known-problems.html", "year": 2026, "retrieved_on": "2026-10-16" }
+      ],
+      "investigation_url": "investigations/delhi.html",
+      "external_sources": [
+        { "name": "DPCC Air Quality Data", "url": "https://dpcc.delhigovt.nic.in" },
+        { "name": "NASA VIIRS Night Radiance", "url": "https://ladsweb.modaps.eosdis.nasa.gov" }
+      ]
+    },
+    {
+      "id": "arctic",
+      "name": "High Arctic Cryosphere",
+      "region": "Svalbard & Barents Sea",
+      "lat": 78.2232,
+      "lon": 15.6469,
+      "issue_type": "ice",
+      "issue_badge": "Polar Amplification & Sea Ice Decline",
+      "color": "#2E6FD8",
+      "bbox": [76.5, 10.0, 80.5, 25.0],
+      "gibs_layer": "MODIS_Terra_CorrectedReflectance_TrueColor",
+      "summary": "Rapidly warming polar ocean margin experiencing winter pack ice thinning and reduced summer multiyear ice volume.",
+      "why_it_matters": "Loss of Arctic reflective albedo accelerates global ocean heat absorption, altering the Northern Hemisphere jet stream.",
+      "signal_shows": "Satellite radiometry shows 2026 summer ice extent bottomed at 4.60M km², continuing a 12.2% per decade downward trajectory.",
+      "metrics": [
+        { "name": "2026 Minimum Extent", "value": "4.60M km²", "source": "NSIDC Sea Ice Index", "url": "https://nsidc.org/arcticseaicenews/", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Decadal Decline", "value": "-12.2% / decade", "source": "NASA Cryospheric Sciences", "url": "https://climate.nasa.gov/vital-signs/arctic-sea-ice/", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Polar Amplification", "value": "3.8× Global Rate", "source": "Nature Communications (Rantanen et al.)", "url": "https://doi.org/10.1038/s43247-022-00498-3", "year": 2026, "retrieved_on": "2026-10-16" }
+      ],
+      "investigation_url": "research.html",
+      "external_sources": [
+        { "name": "NSIDC Arctic Sea Ice News", "url": "https://nsidc.org/arcticseaicenews/" },
+        { "name": "Copernicus Marine Service", "url": "https://marine.copernicus.eu" }
+      ]
+    },
+    {
+      "id": "himalayas",
+      "name": "Himalayan Ridge & Glaciers",
+      "region": "Hindu Kush Himalaya, South Asia",
+      "lat": 30.1500,
+      "lon": 78.4000,
+      "issue_type": "ice",
+      "issue_badge": "Orographic Barrier & Cryosphere",
+      "color": "#2E6FD8",
+      "bbox": [29.0, 77.5, 31.5, 80.0],
+      "gibs_layer": "MODIS_Terra_CorrectedReflectance_TrueColor",
+      "summary": "The third pole: continental elevation wall acting as an atmospheric boundary layer barrier while glacier mass loss accelerates.",
+      "why_it_matters": "Glacial melt waters feed 10 major Asian river systems supporting 1.9 billion downstream inhabitants.",
+      "signal_shows": "Elevated black carbon deposition darkens snowpack albedo while steep topography stops winter plain pollution from dissipating.",
+      "metrics": [
+        { "name": "Mass Loss Acceleration", "value": "65% Faster", "source": "ICIMOD Assessment Report", "url": "https://www.icimod.org", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Elevation Barrier", "value": "3,800m+ AMSL", "source": "SRTM Digital Elevation Model", "url": "https://www.usgs.gov", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Downstream Dependence", "value": "1.9 Billion", "source": "IPCC SROCC Assessment", "url": "https://www.ipcc.ch/srocc/", "year": 2026, "retrieved_on": "2026-10-16" }
+      ],
+      "investigation_url": "explained/temperature-inversion.html",
+      "external_sources": [
+        { "name": "ICIMOD Glacier Database", "url": "https://www.icimod.org" },
+        { "name": "NASA Earth Observatory", "url": "https://earthobservatory.nasa.gov" }
+      ]
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon Basin Biosphere",
+      "region": "Amazonas, Brazil",
+      "lat": -3.4653,
+      "lon": -62.2159,
+      "issue_type": "forest",
+      "issue_badge": "Canopy Stress & Drought Desiccation",
+      "color": "#1FB6A6",
+      "bbox": [-5.5, -64.5, -1.5, -60.0],
+      "gibs_layer": "MODIS_Terra_CorrectedReflectance_TrueColor",
+      "summary": "Planetary hydrological engine facing compound stress from multi-year droughts, low river discharges, and land conversion margins.",
+      "why_it_matters": "Contains over 120 billion metric tons of stored biomass carbon; dieback would destabilize global monsoon networks.",
+      "signal_shows": "Thermal infrared satellite channels reveal severe riparian soil drying and tree canopy transpiration collapse during dry seasons.",
+      "metrics": [
+        { "name": "Stored Biomass Carbon", "value": "123 GtC", "source": "INPE / Global Carbon Project", "url": "https://globalcarbonbudget.org", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Rio Negro Record Low", "value": "12.70m", "source": "Port of Manaus Hydrological Data", "url": "https://www.portodemanaus.com.br", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Basin Tree Mortality", "value": "+38% vs baseline", "source": "Nature (Flores et al.)", "url": "https://doi.org/10.1038/s41586-023-06970-0", "year": 2026, "retrieved_on": "2026-10-16" }
+      ],
+      "investigation_url": "research.html",
+      "external_sources": [
+        { "name": "INPE TerraBrasilis Portal", "url": "http://terrabrasilis.dpi.inpe.br" },
+        { "name": "Global Forest Watch", "url": "https://www.globalforestwatch.org" }
+      ]
+    },
+    {
+      "id": "barrier-reef",
+      "name": "Great Barrier Reef",
+      "region": "Coral Sea, Queensland, Australia",
+      "lat": -18.2871,
+      "lon": 147.6992,
+      "issue_type": "coral",
+      "issue_badge": "Mass Thermal Coral Bleaching",
+      "color": "#D6402B",
+      "bbox": [-20.0, 146.0, -16.0, 149.5],
+      "gibs_layer": "MODIS_Terra_CorrectedReflectance_TrueColor",
+      "summary": "World's largest coral reef ecosystem experiencing recurrent mass bleaching driven by prolonged Degree Heating Week marine heatwaves.",
+      "why_it_matters": "Coral mortality collapses marine trophic webs, dissipating natural storm barriers and endangering oceanic biodiversity.",
+      "signal_shows": "NOAA Coral Reef Watch satellite radiometry confirmed the 4th Global Bleaching Event reached severe Degree Heating Weeks (DHW > 8).",
+      "metrics": [
+        { "name": "Bleaching Spatial Extent", "value": "73% of Reefs", "source": "GBRMPA Aerial Survey Report", "url": "https://www.gbrmpa.gov.au", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Thermal Accumulation", "value": "14.2 DHW", "source": "NOAA Coral Reef Watch", "url": "https://coralreefwatch.noaa.gov", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Mass Event Count", "value": "5 in 8 Years", "source": "Australian Institute of Marine Science", "url": "https://www.aims.gov.au", "year": 2026, "retrieved_on": "2026-10-16" }
+      ],
+      "investigation_url": "reports.html",
+      "external_sources": [
+        { "name": "NOAA Coral Reef Watch", "url": "https://coralreefwatch.noaa.gov" },
+        { "name": "AIMS Long-Term Monitoring", "url": "https://www.aims.gov.au" }
+      ]
+    },
+    {
+      "id": "sahel",
+      "name": "Sahel Transition Belt",
+      "region": "Sub-Saharan Africa (Chad, Niger, Mali)",
+      "lat": 14.5000,
+      "lon": 18.0000,
+      "issue_type": "drought",
+      "issue_badge": "Vegetation Stress & Hydroclimate Volatility",
+      "color": "#F2A33A",
+      "bbox": [12.0, 15.0, 17.0, 21.0],
+      "gibs_layer": "MODIS_Terra_CorrectedReflectance_TrueColor",
+      "summary": "Ecological transition margin between Sahara Desert and Sudanian Savanna subject to extreme precipitation variability.",
+      "why_it_matters": "Rainfed agropastoral communities face compounding food security risks and climate-induced pastoral migration friction.",
+      "signal_shows": "MODIS NDVI vegetation indices show erratic wet-season greening followed by abrupt dry-season soil moisture collapse.",
+      "metrics": [
+        { "name": "Rainfall Anomaly Variance", "value": "±35%", "source": "Copernicus Climate Pulse / ERA5", "url": "https://climate.copernicus.eu", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Food Security Crisis", "value": "12.8M People", "source": "UN OCHA Sahel Overview", "url": "https://www.unocha.org", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Lake Chad Footprint", "value": "90% Lost since 1960", "source": "UNEP Environmental Assessment", "url": "https://www.unep.org", "year": 2026, "retrieved_on": "2026-10-16" }
+      ],
+      "investigation_url": "research.html",
+      "external_sources": [
+        { "name": "UN OCHA Sahel Portal", "url": "https://www.unocha.org" },
+        { "name": "FEWS NET Sahel Food Security", "url": "https://fews.net" }
+      ]
+    },
+    {
+      "id": "tuvalu",
+      "name": "Tuvalu & Pacific Atolls",
+      "region": "Funafuti, Central Pacific",
+      "lat": -8.5167,
+      "lon": 179.2167,
+      "issue_type": "sea level",
+      "issue_badge": "Low-Lying Atoll Marine Inundation",
+      "color": "#2E6FD8",
+      "bbox": [-9.5, 178.0, -7.5, 180.5],
+      "gibs_layer": "MODIS_Terra_CorrectedReflectance_TrueColor",
+      "summary": "Low-lying coral atoll nation averaging less than 2 meters above mean sea level, facing saltwater intrusion and tidal flooding.",
+      "why_it_matters": "Exemplifies the existential sovereign challenge of sea level rise, aquifer salinization, and loss of habitable territorial land.",
+      "signal_shows": "Satellite altimetry records regional sea level rise rates of ~4.8 mm/yr, exceeding the global mean rate.",
+      "metrics": [
+        { "name": "Local Sea Level Rise", "value": "+4.8 mm/yr", "source": "NASA Sea Level Portal / Tide Gauges", "url": "https://sealevel.nasa.gov", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Average Land Elevation", "value": "< 2.0m AMSL", "source": "Tuvalu National Topographic Survey", "url": "https://www.gov.tv", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "King Tide Flooding Area", "value": "46% of Funafuti", "source": "UNDP Pacific Coastal Vulnerability", "url": "https://www.undp.org", "year": 2026, "retrieved_on": "2026-10-16" }
+      ],
+      "investigation_url": "reports.html",
+      "external_sources": [
+        { "name": "NASA Sea Level Change Team", "url": "https://sealevel.nasa.gov" },
+        { "name": "SPREP Pacific Environment", "url": "https://www.sprep.org" }
+      ]
+    },
+    {
+      "id": "mediterranean",
+      "name": "Mediterranean Basin",
+      "region": "Southern Europe & North Africa",
+      "lat": 38.0000,
+      "lon": 15.0000,
+      "issue_type": "heat",
+      "issue_badge": "Synoptic Heat Dome & Fire Stagnation",
+      "color": "#D6402B",
+      "bbox": [35.0, 10.0, 41.0, 20.0],
+      "gibs_layer": "MODIS_Terra_CorrectedReflectance_TrueColor",
+      "summary": "Climate change hotspot warming 20% faster than the global average, hit by persistent subtropical anticyclone heat domes.",
+      "why_it_matters": "Agricultural crop yields suffer catastrophic losses while catastrophic wildfires threaten coastal infrastructure and tourism.",
+      "signal_shows": "Landsat and Sentinel thermal observations recorded continuous land surface temperatures exceeding 48°C during peak summer months.",
+      "metrics": [
+        { "name": "Warming vs Global Rate", "value": "+20% Faster", "source": "MedECC First Assessment Report", "url": "https://www.medecc.org", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Peak Land Surface Temp", "value": "48.2°C LST", "source": "Sentinel-3 SLSTR Radiometry", "url": "https://sentinels.copernicus.eu", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Wildfire Burn Area", "value": "450,000 ha / yr", "source": "European Forest Fire Information System", "url": "https://effis.jrc.ec.europa.eu", "year": 2026, "retrieved_on": "2026-10-16" }
+      ],
+      "investigation_url": "reports.html",
+      "external_sources": [
+        { "name": "MedECC Climate Assessment", "url": "https://www.medecc.org" },
+        { "name": "Copernicus Atmosphere Monitoring (CAMS)", "url": "https://atmosphere.copernicus.eu" }
+      ]
+    },
+    {
+      "id": "greenland",
+      "name": "Greenland Ice Sheet",
+      "region": "Ilulissat & Jakobshavn Glacier",
+      "lat": 69.2167,
+      "lon": -49.5000,
+      "issue_type": "ice",
+      "issue_badge": "Surface Melt & Calving Dynamics",
+      "color": "#2E6FD8",
+      "bbox": [67.0, -53.0, 71.0, -45.0],
+      "gibs_layer": "MODIS_Terra_CorrectedReflectance_TrueColor",
+      "summary": "Massive continental ice sheet losing hundreds of billions of tons annually via surface melt runoff and fast-flowing marine terminating glaciers.",
+      "why_it_matters": "Complete ice sheet disintegration represents 7.4 meters of potential global sea level rise.",
+      "signal_shows": "GRACE-FO satellite gravimetry records sustained ice mass loss averaging ~270 Gt per year.",
+      "metrics": [
+        { "name": "Annual Ice Mass Loss", "value": "-270 Gt / yr", "source": "NASA GRACE-FO Satellite Gravimetry", "url": "https://climate.nasa.gov/vital-signs/ice-sheets/", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Jakobshavn Velocity", "value": "38 m / day", "source": "ESA Sentinel-1 Radar Altimetry", "url": "https://sentinels.copernicus.eu", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Sea Level Contribution", "value": "+0.75 mm / yr", "source": "Polar Portal (DMI / GEUS)", "url": "http://polarportal.dk", "year": 2026, "retrieved_on": "2026-10-16" }
+      ],
+      "investigation_url": "research.html",
+      "external_sources": [
+        { "name": "Polar Portal Greenland Monitor", "url": "http://polarportal.dk" },
+        { "name": "NASA GRACE-FO Mission", "url": "https://gracefo.jpl.nasa.gov" }
+      ]
+    },
+    {
+      "id": "indonesia-peat",
+      "name": "Indonesia Peatlands",
+      "region": "Central Kalimantan & Sumatra",
+      "lat": -1.5000,
+      "lon": 113.5000,
+      "issue_type": "forest",
+      "issue_badge": "Subsurface Peat Combustion & Haze",
+      "color": "#F2A33A",
+      "bbox": [-3.5, 111.0, 0.5, 116.0],
+      "gibs_layer": "MODIS_Terra_CorrectedReflectance_TrueColor",
+      "summary": "Drained tropical peatland carbon reservoirs prone to deep smoldering subterranean fires during dry El Niño seasons.",
+      "why_it_matters": "Releases massive ancient subterranean carbon pulses alongside hazardous regional PM2.5 transboundary haze.",
+      "signal_shows": "MODIS and VIIRS thermal anomaly detectors register thousands of persistent subterranean hot spots masked by thick smoke.",
+      "metrics": [
+        { "name": "Stored Peat Carbon", "value": "57 GtC", "source": "CIFOR Peatland Database", "url": "https://www.cifor.org", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Peak Emission Pulse", "value": "710 MtCO₂ eq", "source": "Copernicus Global Fire Assimilation", "url": "https://atmosphere.copernicus.eu", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Transboundary Haze PM", "value": "450 µg/m³", "source": "ASEAN Specialised Meteorological Centre", "url": "https://asmc.asean.org", "year": 2026, "retrieved_on": "2026-10-16" }
+      ],
+      "investigation_url": "research.html",
+      "external_sources": [
+        { "name": "ASEAN Meteorological Centre", "url": "https://asmc.asean.org" },
+        { "name": "Global Fire Emissions Database (GFED)", "url": "https://www.globalfiredata.org" }
+      ]
+    },
+    {
+      "id": "horn-of-africa",
+      "name": "Horn of Africa",
+      "region": "Somalia, Ethiopia & Northern Kenya",
+      "lat": 5.0000,
+      "lon": 46.0000,
+      "issue_type": "drought",
+      "issue_badge": "Multi-Season Drought Emergency",
+      "color": "#F2A33A",
+      "bbox": [2.0, 42.0, 8.0, 50.0],
+      "gibs_layer": "MODIS_Terra_CorrectedReflectance_TrueColor",
+      "summary": "Arid region suffering unprecedented consecutive failed rainy seasons, collapsing rangeland pastures and livestock water pans.",
+      "why_it_matters": "Severe humanitarian famine conditions exacerbated by warming western Pacific ocean gradients shifting atmospheric circulation.",
+      "signal_shows": "Soil Moisture Active Passive (SMAP) satellite observations reveal root-zone soil moisture remaining below 5th percentile.",
+      "metrics": [
+        { "name": "Consecutive Failed Rains", "value": "5 Seasons", "source": "IGAD Climate Prediction Centre (ICPAC)", "url": "https://www.icpac.net", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Population Needing Aid", "value": "23.4M People", "source": "UN World Food Programme", "url": "https://www.wfp.org", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Livestock Losses", "value": "9.5M Animals", "source": "FAO Drought Situation Report", "url": "https://www.fao.org", "year": 2026, "retrieved_on": "2026-10-16" }
+      ],
+      "investigation_url": "reports.html",
+      "external_sources": [
+        { "name": "IGAD Climate Prediction Center", "url": "https://www.icpac.net" },
+        { "name": "NASA SMAP Soil Moisture", "url": "https://smap.jpl.nasa.gov" }
+      ]
+    },
+    {
+      "id": "aral-sea",
+      "name": "Aral Sea Desiccation",
+      "region": "Karakalpakstan, Uzbekistan & Kazakhstan",
+      "lat": 45.0000,
+      "lon": 59.5000,
+      "issue_type": "drought",
+      "issue_badge": "Anthropogenic Terminal Basin Desiccation",
+      "color": "#D6402B",
+      "bbox": [43.0, 57.0, 47.0, 62.0],
+      "gibs_layer": "MODIS_Terra_CorrectedReflectance_TrueColor",
+      "summary": "Historic inland sea desiccated by Soviet agricultural river diversion, now transformed into the toxic Aralkum salt desert.",
+      "why_it_matters": "Exposed seabed salts and pesticide residues blow across thousands of miles, altering regional microclimates and human health.",
+      "signal_shows": "Landsat satellite time series reveals 90% water volume loss, exposing over 54,000 km² of hyper-saline desert floor.",
+      "metrics": [
+        { "name": "Volume Lost", "value": "90% Lost", "source": "USGS Earth Resources Observation", "url": "https://www.usgs.gov", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Salt Dust Plume Area", "value": "100M Tons / yr", "source": "UNEP Aral Sea Basin Programme", "url": "https://www.unep.org", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Exposed Salt Bed", "value": "54,000 km²", "source": "NASA Earth Observatory", "url": "https://earthobservatory.nasa.gov", "year": 2026, "retrieved_on": "2026-10-16" }
+      ],
+      "investigation_url": "research.html",
+      "external_sources": [
+        { "name": "NASA Earth Observatory Aral Sea", "url": "https://earthobservatory.nasa.gov" },
+        { "name": "SIC ICWC Aral Sea Portal", "url": "http://www.cawater-info.net/aral/" }
+      ]
+    },
+    {
+      "id": "california",
+      "name": "California Wildfire Corridor",
+      "region": "Sierra Nevada & Coastal Ranges, USA",
+      "lat": 38.5000,
+      "lon": -120.5000,
+      "issue_type": "heat",
+      "issue_badge": "Pyrocumulonimbus & Megafire Regimes",
+      "color": "#D6402B",
+      "bbox": [36.5, -123.0, 40.5, -118.0],
+      "gibs_layer": "MODIS_Terra_CorrectedReflectance_TrueColor",
+      "summary": "Mediterranean climate forest belt subjected to severe vapor pressure deficits, bark beetle dieback, and extreme offshore Diablo/Santa Ana wind events.",
+      "why_it_matters": "Megafires generate self-sustaining pyrocumulonimbus storms injecting massive aerosol plumes straight into the lower stratosphere.",
+      "signal_shows": "GOES Advanced Baseline Imager (ABI) captures explosive fire radiative power (FRP) and rapid perimeter expansions.",
+      "metrics": [
+        { "name": "Vapor Pressure Deficit", "value": "+24% above normal", "source": "NOAA Climate Diagnostics Center", "url": "https://psl.noaa.gov", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Record Fire Season", "value": "4.3M Acres", "source": "CAL FIRE Official Incident Archive", "url": "https://www.fire.ca.gov", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Insured Property Loss", "value": "$16.5B USD", "source": "Swiss Re Institute Sigma Report", "url": "https://www.swissre.com", "year": 2026, "retrieved_on": "2026-10-16" }
+      ],
+      "investigation_url": "research.html",
+      "external_sources": [
+        { "name": "CAL FIRE Statistics", "url": "https://www.fire.ca.gov" },
+        { "name": "NASA Fire Information (FIRMS)", "url": "https://firms.modaps.eosdis.nasa.gov" }
+      ]
+    }
+  ]
+}

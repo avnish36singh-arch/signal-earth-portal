@@ -1,0 +1,96 @@
+{
+  "updated_at": "2026-10-16",
+  "reports": [
+    {
+      "id": "c3s_15c_tracker",
+      "category": "Global Temperature",
+      "title": "1.5°C Global Temperature Threshold Tracker",
+      "organization": "Copernicus Climate Change Service (C3S) / WMO",
+      "year": 2026,
+      "summary": "Evaluation of multi-year global temperature anomalies relative to the pre-industrial baseline (1850–1900 reference period).",
+      "key_finding": "2025 was +1.47°C above pre-industrial, while the 3-year running mean (2023–2025) crossed +1.52°C for the first time in recorded history.",
+      "metrics": [
+        { "label": "2025 Full-Year Anomaly", "value": "+1.47°C", "source": "C3S / ERA5 Reanalysis", "url": "https://climate.copernicus.eu", "retrieved_on": "2026-10-16" },
+        { "label": "3-Year Running Mean", "value": "+1.52°C", "source": "Copernicus ERA5 Climate Data", "url": "https://climate.copernicus.eu", "retrieved_on": "2026-10-16" },
+        { "label": "September 2026 Anomaly", "value": "+1.63°C", "source": "C3S Monthly Climate Bulletin", "url": "https://climate.copernicus.eu", "retrieved_on": "2026-10-16" }
+      ],
+      "url": "https://climate.copernicus.eu",
+      "ipcc_reference": "IPCC AR6 Working Group I (Summary for Policymakers)"
+    },
+    {
+      "id": "ccpi_rankings",
+      "category": "Country Climate Policy",
+      "title": "Climate Change Performance Index (CCPI 2026)",
+      "organization": "Germanwatch, NewClimate Institute & CAN International",
+      "year": 2026,
+      "summary": "Independent comparative evaluation of 63 countries and the European Union responsible for over 90% of global greenhouse gas emissions.",
+      "key_finding": "Ranks 1 to 3 remain vacant as no country qualifies for 'Very High'; Denmark ranks 4th while the United States (65th) and Saudi Arabia (67th) occupy bottom tier.",
+      "metrics": [
+        { "label": "Top Rank Assigned", "value": "4th (Denmark)", "source": "CCPI 2026 Report", "url": "https://ccpi.org", "retrieved_on": "2026-10-16" },
+        { "label": "Vacant Benchmark Tiers", "value": "Ranks 1, 2, 3", "source": "CCPI Methodology", "url": "https://ccpi.org/methodology/", "retrieved_on": "2026-10-16" },
+        { "label": "Lowest Ranked Nation", "value": "67th (Saudi Arabia)", "source": "CCPI 2026 Table", "url": "https://ccpi.org", "retrieved_on": "2026-10-16" }
+      ],
+      "url": "https://ccpi.org"
+    },
+    {
+      "id": "global_carbon_budget",
+      "category": "Emissions Accounting",
+      "title": "Global Carbon Budget",
+      "organization": "Global Carbon Project (GCP)",
+      "year": 2026,
+      "summary": "Peer-reviewed accounting of anthropogenic carbon dioxide emissions, carbon cycle sinks, and remaining carbon quotas.",
+      "key_finding": "Global fossil CO₂ emissions reached a record 38.1 billion tonnes, leaving a remaining 1.5°C carbon budget of approximately 170 GtCO₂.",
+      "metrics": [
+        { "label": "Fossil CO₂ Emissions", "value": "38.1 GtCO₂", "source": "Earth System Science Data (Friedlingstein et al.)", "url": "https://globalcarbonbudget.org", "retrieved_on": "2026-10-16" },
+        { "label": "Total Anthropogenic CO₂", "value": "42.2 GtCO₂", "source": "Global Carbon Project", "url": "https://globalcarbonbudget.org", "retrieved_on": "2026-10-16" },
+        { "label": "Remaining 1.5°C Budget", "value": "~170 GtCO₂ (~4 yrs)", "source": "Global Carbon Budget Synthesis", "url": "https://globalcarbonbudget.org", "retrieved_on": "2026-10-16" }
+      ],
+      "url": "https://globalcarbonbudget.org"
+    },
+    {
+      "id": "unep_emissions_gap",
+      "category": "Pledge Alignment",
+      "title": "UNEP Emissions Gap Report",
+      "organization": "United Nations Environment Programme (UNEP)",
+      "year": 2026,
+      "summary": "Assessment of the gap between national climate pledges (NDCs) and global emissions levels consistent with Paris Agreement goals.",
+      "key_finding": "Global greenhouse gas emissions stand at 57.7 GtCO₂e; current policies point to 2.8°C of warming by 2100 unless 2030 emissions drop by 42%.",
+      "metrics": [
+        { "label": "Total Global Emissions", "value": "57.7 GtCO₂e", "source": "UNEP Emissions Gap Report", "url": "https://www.unep.org/resources/emissions-gap-report", "retrieved_on": "2026-10-16" },
+        { "label": "Required 2030 Cut for 1.5°C", "value": "-42% vs 2019", "source": "UNEP Emissions Gap Modeling", "url": "https://www.unep.org/resources/emissions-gap-report", "retrieved_on": "2026-10-16" },
+        { "label": "Current Policy Trajectory", "value": "+2.8°C by 2100", "source": "UNEP Synthesis Assessment", "url": "https://www.unep.org/resources/emissions-gap-report", "retrieved_on": "2026-10-16" }
+      ],
+      "url": "https://www.unep.org/resources/emissions-gap-report"
+    },
+    {
+      "id": "iqair_air_quality",
+      "category": "Atmospheric Pollution",
+      "title": "World Air Quality Report",
+      "organization": "IQAir / Greenpeace Collaboration",
+      "year": 2026,
+      "summary": "Global aggregation of regulatory and calibrated PM2.5 monitoring stations across 134 countries and territories.",
+      "key_finding": "Pakistan and Bangladesh rank as the most polluted nations globally; India ranks 6th with an annual average PM2.5 of 48.9 µg/m³ (9.8× the WHO annual guideline).",
+      "metrics": [
+        { "label": "Most Polluted Nations", "value": "#1 Pakistan, #2 Bangladesh", "source": "IQAir World Air Quality Report", "url": "https://www.iqair.com/world-air-quality-report", "retrieved_on": "2026-10-16" },
+        { "label": "India National Average", "value": "48.9 µg/m³ PM2.5", "source": "IQAir Annual Country Audit", "url": "https://www.iqair.com/world-air-quality-report", "retrieved_on": "2026-10-16" },
+        { "label": "Indo-Gangetic Hotspots", "value": "110+ µg/m³ (Loni, Delhi)", "source": "Regulatory Telemetry Synthesis", "url": "https://www.iqair.com", "retrieved_on": "2026-10-16" }
+      ],
+      "url": "https://www.iqair.com/world-air-quality-report"
+    },
+    {
+      "id": "noaa_coral_bleaching",
+      "category": "Ocean & Biosphere",
+      "title": "4th Global Coral Bleaching Event Assessment",
+      "organization": "NOAA Coral Reef Watch",
+      "year": 2026,
+      "summary": "Satellite Sea Surface Temperature (SST) radiometry and Degree Heating Week (DHW) tracking across Atlantic, Pacific, and Indian Ocean reef ecosystems.",
+      "key_finding": "The fourth global mass bleaching event has confirmed widespread thermal stress across over 70% of planetary coral reef areas since early 2024.",
+      "metrics": [
+        { "label": "Reef Areas Stressed", "value": "73% Global Reefs", "source": "NOAA Coral Reef Watch Portal", "url": "https://coralreefwatch.noaa.gov", "retrieved_on": "2026-10-16" },
+        { "label": "Peak Ocean Basin DHW", "value": "16+ Degree Heating Wks", "source": "NOAA 5km Satellite SST", "url": "https://coralreefwatch.noaa.gov", "retrieved_on": "2026-10-16" },
+        { "label": "Historical Event Index", "value": "4th Global Event", "source": "NOAA / ICRI International Statement", "url": "https://coralreefwatch.noaa.gov", "retrieved_on": "2026-10-16" }
+      ],
+      "url": "https://coralreefwatch.noaa.gov"
+    }
+  ]
+}

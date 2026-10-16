@@ -1,0 +1,72 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Serverless function rewrite for live planetary telemetry
+[[redirects]]
+  from = "/api/key-numbers"
+  to = "/.netlify/functions/key-numbers"
+  status = 200
+
+# Canonical investigation route aliases
+[[redirects]]
+  from = "/investigations/kanpur-particulates.html"
+  to = "/investigations/kanpur.html"
+  status = 200
+
+[[redirects]]
+  from = "/investigations/kanpur-particulates"
+  to = "/investigations/kanpur.html"
+  status = 200
+
+[[redirects]]
+  from = "/investigations/landsat-uhi.html"
+  to = "/investigations/kanpur-uhi.html"
+  status = 200
+
+[[redirects]]
+  from = "/investigations/landsat-uhi"
+  to = "/investigations/kanpur-uhi.html"
+  status = 200
+
+[[redirects]]
+  from = "/investigations/delhi-naqi.html"
+  to = "/investigations/delhi.html"
+  status = 200
+
+[[redirects]]
+  from = "/investigations/delhi-naqi"
+  to = "/investigations/delhi.html"
+  status = 200
+
+[[redirects]]
+  from = "/investigations/inversion-dynamics.html"
+  to = "/explained/temperature-inversion.html"
+  status = 200
+
+[[redirects]]
+  from = "/investigations/inversion-dynamics"
+  to = "/explained/temperature-inversion.html"
+  status = 200
+
+# Security and caching headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, immutable"
+
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, stale-while-revalidate=86400"

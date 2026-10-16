@@ -1,0 +1,101 @@
+{
+  "updated_at": "2026-10-16",
+  "papers": [
+    {
+      "id": "paper_arctic_amplification",
+      "category": "Cryosphere",
+      "title": "The Arctic has warmed nearly four times faster than the globe since 1979",
+      "authors": "Rantanen, M., Karpechko, A. Y., Lipponen, A., et al.",
+      "journal": "Communications Earth & Environment",
+      "year": 2022,
+      "doi": "10.1038/s43247-022-00498-3",
+      "url": "https://doi.org/10.1038/s43247-022-00498-3",
+      "takeaway": "Observational evidence confirms four-fold polar amplification driven by sea ice-albedo feedbacks, far exceeding CMIP6 model projections.",
+      "retrieved_on": "2026-10-16"
+    },
+    {
+      "id": "paper_global_carbon_budget",
+      "category": "Climate",
+      "title": "Global Carbon Budget: Fossil Emissions and Land-Use Sink Dynamics",
+      "authors": "Friedlingstein, P., O'Sullivan, M., Jones, M. W., et al.",
+      "journal": "Earth System Science Data",
+      "year": 2023,
+      "doi": "10.5194/essd-15-5301-2023",
+      "url": "https://doi.org/10.5194/essd-15-5301-2023",
+      "takeaway": "Global fossil fuel emissions reached unprecedented rates with less than 170 GtCO₂ remaining to stay below 1.5°C of warming.",
+      "retrieved_on": "2026-10-16"
+    },
+    {
+      "id": "paper_amazon_tipping",
+      "category": "Climate",
+      "title": "Critical transitions and compounding stressors in the Amazon forest system",
+      "authors": "Flores, B. M., Montoya, E., Sakschewski, B., et al.",
+      "journal": "Nature",
+      "year": 2024,
+      "doi": "10.1038/s41586-023-06970-0",
+      "url": "https://doi.org/10.1038/s41586-023-06970-0",
+      "takeaway": "By 2050, 10% to 47% of the Amazon forest will be exposed to compounding disturbances, risking a large-scale ecosystem tipping point.",
+      "retrieved_on": "2026-10-16"
+    },
+    {
+      "id": "paper_ganga_aerosols",
+      "category": "Air Quality",
+      "title": "Aerosol optical properties and radiative forcing over the Indo-Gangetic Basin",
+      "authors": "Dey, S., Tripathi, S. N., Singh, R. P., & Holben, B. N.",
+      "journal": "Atmospheric Chemistry and Physics",
+      "year": 2012,
+      "doi": "10.5194/acp-12-1403-2012",
+      "url": "https://doi.org/10.5194/acp-12-1403-2012",
+      "takeaway": "Shallow planetary boundary layers in winter trap ground aerosol loadings, causing surface radiative cooling alongside lower tropospheric heating.",
+      "retrieved_on": "2026-10-16"
+    },
+    {
+      "id": "paper_india_mortality",
+      "category": "Air Quality",
+      "title": "Health and economic impact of air pollution across the states of India",
+      "authors": "India State-Level Disease Burden Initiative Air Pollution Collaborators",
+      "journal": "The Lancet Planetary Health",
+      "year": 2021,
+      "doi": "10.1016/S2542-5196(20)30298-9",
+      "url": "https://doi.org/10.1016/S2542-5196(20)30298-9",
+      "takeaway": "Ambient particulate pollution accounted for 1.67 million deaths in India, with Uttar Pradesh and the Gangetic plain experiencing the highest disease burden.",
+      "retrieved_on": "2026-10-16"
+    },
+    {
+      "id": "paper_urban_heat_island",
+      "category": "Heat",
+      "title": "The energetic basis of the urban heat island and surface radiometry",
+      "authors": "Oke, T. R.",
+      "journal": "Quarterly Journal of the Royal Meteorological Society",
+      "year": 1982,
+      "doi": "10.1002/qj.49710845502",
+      "url": "https://doi.org/10.1002/qj.49710845502",
+      "takeaway": "Foundational formulation establishing how impervious urban geometry, canyon aspect ratio, and thermal inertia create localized urban heat deltas.",
+      "retrieved_on": "2026-10-16"
+    },
+    {
+      "id": "paper_glacier_mass_loss",
+      "category": "Cryosphere",
+      "title": "Accelerated global glacier mass loss in the early twenty-first century",
+      "authors": "Hugonnet, R., McNabb, R., Berthier, E., et al.",
+      "journal": "Nature",
+      "year": 2021,
+      "doi": "10.1038/s41586-021-03436-z",
+      "url": "https://doi.org/10.1038/s41586-021-03436-z",
+      "takeaway": "High-mountain Asian and Himalayan glaciers accelerated their mass loss by over 60%, contributing directly to accelerated downstream discharge volatility.",
+      "retrieved_on": "2026-10-16"
+    },
+    {
+      "id": "paper_landsat_lst",
+      "category": "Methods",
+      "title": "Split-window and single-channel algorithms for Land Surface Temperature from Landsat",
+      "authors": "Jimenez-Munoz, J. C., Cristobal, J., Sobrino, J. A., et al.",
+      "journal": "IEEE Transactions on Geoscience and Remote Sensing",
+      "year": 2014,
+      "doi": "10.1109/TGRS.2013.2295938",
+      "url": "https://doi.org/10.1109/TGRS.2013.2295938",
+      "takeaway": "Mathematical validation of single-channel thermal infrared radiometry algorithms for Landsat TIRS Band 10 atmospheric correction.",
+      "retrieved_on": "2026-10-16"
+    }
+  ]
+}
