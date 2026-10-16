@@ -108,6 +108,23 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Global Link and Button Resets */
+a {
+  color: var(--accent, #0f766e);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease, opacity 0.15s ease;
+}
+a:hover {
+  opacity: 0.8;
+}
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
 /* Skip Link */
 .skip-link {
   position: absolute;

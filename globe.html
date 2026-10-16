@@ -322,15 +322,32 @@
           <span class="se-wordmark-badge" style="background: rgba(255,255,255,0.1); color: #F8FAFC;">3D Globe</span>
         </div>
         <div class="se-editorial-header-right">
-          <nav class="se-editorial-nav">
+          <nav class="se-editorial-nav" aria-label="Main Navigation">
             <ul class="se-editorial-nav-list">
-              <li><a href="index.html" class="se-editorial-nav-link" style="color: #94A3B8;">Home</a></li>
               <li><a href="research.html" class="se-editorial-nav-link" style="color: #94A3B8;">Research</a></li>
-              <li><a href="data.html" class="se-editorial-nav-link" style="color: #94A3B8;">Data &amp; Maps</a></li>
+              <li><a href="data.html" class="se-editorial-nav-link" style="color: #94A3B8;">Data</a></li>
               <li><a href="reports.html" class="se-editorial-nav-link" style="color: #94A3B8;">Reports</a></li>
+              <li><a href="methodology.html" class="se-editorial-nav-link" style="color: #94A3B8;">Methodology</a></li>
               <li><a href="about.html" class="se-editorial-nav-link" style="color: #94A3B8;">About</a></li>
             </ul>
           </nav>
+          <button type="button" id="se-theme-toggle" class="se-theme-toggle-btn" aria-label="Toggle theme mode" title="Switch light / dark mode">
+            <svg class="se-theme-icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="se-theme-icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span class="se-theme-label" style="color:#94A3B8;">Theme</span>
+          </button>
         </div>
       </div>
     </div>
@@ -392,10 +409,10 @@
     <section id="globe-regions-list" style="padding: 4rem 0; background: var(--se-bg-page); color: var(--se-text-primary);">
       <div class="se-editorial-container">
         <h2 style="font-family: var(--se-font-serif); font-size: 2rem; margin: 0 0 0.5rem;">
-          Planetary Environmental Stations Directory
+          Regions of interest
         </h2>
         <p style="font-family: var(--se-font-sans); font-size: 0.95rem; color: var(--se-text-secondary); margin-bottom: 2rem;">
-          All 14 planetary observation regions tracked in the Signal Earth 3D telemetry array. Click <strong>Open Profile</strong> to view the full Wikipedia-style environmental profile.
+          Index of all 14 observation regions tracked across the globe array. Select any station to view its dedicated profile.
         </p>
 
         <div style="overflow-x: auto;">
@@ -415,10 +432,39 @@
     </section>
   </main>
 
+  <!-- Standardized Footer -->
   <footer class="se-editorial-footer">
     <div class="se-editorial-container">
-      <div class="se-editorial-footer-bottom">
-        <div>Signal Earth &middot; Open environmental science. Hosted on Netlify &amp; GitHub Pages.</div>
+      <div class="se-editorial-footer-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+        <div>
+          <div style="font-family: var(--se-font-serif); font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--se-text-primary);">
+            Signal Earth
+          </div>
+          <p style="font-size: 0.9rem; line-height: 1.6; color: var(--se-text-secondary); max-width: 50ch; margin: 0 0 1rem;">
+            Avnish Singh &middot; Civil Engineering undergraduate, HBTU Kanpur, focusing on environmental engineering &middot; Contact: <a href="mailto:avnish36singh@gmail.com" class="se-link">avnish36singh@gmail.com</a>
+          </p>
+          <div style="font-size: 0.85rem;">
+            <a href="credits.html" class="se-link">How to cite</a> &middot;
+            <a href="methodology.html" class="se-link">Methodology</a> &middot;
+            <a href="known-problems.html" class="se-link">Known Problems</a> &middot;
+            <a href="numbers_ledger.csv" class="se-link" download>Numbers Ledger (CSV)</a> &middot;
+            <a href="https://github.com/avnish36singh-arch/signal-earth-portal" class="se-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size: 0.8rem; font-family: var(--se-font-mono); text-transform: uppercase; color: var(--se-text-muted); margin-bottom: 0.5rem;">
+            Attribution &amp; Hosting
+          </div>
+          <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.5rem;">
+            Contains modified Copernicus Climate Change Service information [2026]. Content licensed under CC BY 4.0; code licensed under MIT.
+          </p>
+          <p style="font-size: 0.82rem; color: var(--se-text-muted); margin: 0;">
+            Hosted on Netlify.
+          </p>
+        </div>
+      </div>
+      <div class="se-editorial-footer-bottom" style="border-top: 1px solid var(--se-border); padding-top: 1rem; font-size: 0.8rem; color: var(--se-text-muted);">
+        <div>Spot an error? Report a correction on <a href="https://github.com/avnish36singh-arch/signal-earth-portal/issues" target="_blank" rel="noopener noreferrer" class="se-link">GitHub Issues</a>.</div>
       </div>
     </div>
   </footer>
