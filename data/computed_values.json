@@ -1,0 +1,39 @@
+{
+  "kanpur": {
+    "total_station_days": 1628,
+    "kalyanpur_station_days": 815,
+    "nehru_nagar_station_days": 813,
+    "valid_pm25_observations": 1334,
+    "hiatus_last_window_1": "2022-10-16",
+    "hiatus_first_window_2": "2025-02-18",
+    "hiatus_first_missing_date": "2022-10-17",
+    "hiatus_last_missing_date": "2025-02-17",
+    "hiatus_days_inclusive": 855,
+    "pooled_winter_mean_ug_m3": 61.95,
+    "pooled_summer_mean_ug_m3": 26.07,
+    "pooled_monsoon_mean_ug_m3": 22.85,
+    "pooled_winter_to_summer_ratio": 2.38,
+    "pooled_winter_to_monsoon_ratio": 2.71,
+    "nov_peak_mean_ug_m3": 89.85,
+    "aug_min_mean_ug_m3": 19.4,
+    "peak_to_min_ratio": 4.63,
+    "kalyanpur_winter_to_summer_ratio": 2.54,
+    "nehru_nagar_winter_to_summer_ratio": 2.24
+  },
+  "delhi": {
+    "total_records": 1825,
+    "aqi_official_valid_days": 1137,
+    "pm25_valid_observations": 1134,
+    "winter_mean_ug_m3": 166.61,
+    "monsoon_mean_ug_m3": 39.17,
+    "winter_to_monsoon_ratio": 4.25,
+    "peak_haze_mean_ug_m3": 197.51,
+    "core_monsoon_mean_ug_m3": 34.32,
+    "peak_to_core_monsoon_ratio": 5.75,
+    "pm25_dominant_days": 589,
+    "pm10_dominant_days": 494,
+    "pm25_pct": 51.8,
+    "pm10_pct": 43.4,
+    "particulate_total_pct": 95.2
+  }
+}
