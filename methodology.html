@@ -5,40 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Methodology and Limitations | Signal Earth</title>
   <meta name="description" content="Documentation of CPCB NAQI calculation protocols, regulatory validity rules, sensor gaps, machine learning evaluation splits, and reanalysis data limits.">
-  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/methodology.html">
+  <link rel="canonical" href="https://signalearth.netlify.app/methodology.html">
+  <script>
+    if (window.location.hostname.indexOf('github.io') !== -1) {
+      window.location.replace('https://signalearth.netlify.app' + window.location.pathname.replace(/^\/signal-earth-portal/, '') + window.location.search + window.location.hash);
+    }
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=https://signalearth.netlify.app/methodology.html">
+  </noscript>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
   <meta property="og:title" content="Methodology and Limitations | Signal Earth">
   <meta property="og:description" content="Calculation protocols, regulatory validity criteria, sensor gaps, and data limits.">
-  <meta property="og:url" content="https://avnish36singh-arch.github.io/signal-earth-portal/methodology.html">
+  <meta property="og:url" content="https://signalearth.netlify.app/methodology.html">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="https://avnish36singh-arch.github.io/signal-earth-portal/assets/delhi/01_aqi_time_series.png">
+  <meta property="og:image" content="https://signalearth.netlify.app/assets/delhi/01_aqi_time_series.png">
   <link rel="stylesheet" href="style.css">
   <script src="assets/theme.js"></script>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
 
-  <!-- 5-Item Editorial Navigation -->
-  <header>
-    <nav class="se-nav" aria-label="Main Navigation">
-      <div class="se-nav-inner">
-        <a href="index.html" class="se-brand">
-          <span class="se-brand-name">Signal Earth</span>
-          <span class="se-brand-sub">Independent Research</span>
-        </a>
-
-        <ul class="se-nav-links">
-          <li><a href="research.html">Research</a></li>
-          <li><a href="briefs/index.html">Briefs</a></li>
-          <li><a href="explained/index.html">Explained</a></li>
-          <li><a href="data.html">Data &amp; Code</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
+  <!-- Standardized Header -->
+  <header class="se-editorial-header">
+    <div class="se-editorial-container">
+      <div class="se-editorial-header-inner">
+        <div class="se-editorial-wordmark-wrap">
+          <a href="index.html" class="se-editorial-wordmark" aria-label="Signal Earth Homepage">
+            Signal Earth
+          </a>
+        </div>
+        <div class="se-editorial-header-right">
+          <nav class="se-editorial-nav" aria-label="Main Navigation">
+            <ul class="se-editorial-nav-list">
+              <li><a href="research.html" class="se-editorial-nav-link">Research</a></li>
+              <li><a href="data.html" class="se-editorial-nav-link">Data</a></li>
+              <li><a href="reports.html" class="se-editorial-nav-link">Reports</a></li>
+              <li><a href="methodology.html" class="se-editorial-nav-link active" aria-current="page">Methodology</a></li>
+              <li><a href="about.html" class="se-editorial-nav-link">About</a></li>
+            </ul>
+          </nav>
+          <button type="button" id="se-theme-toggle" class="se-theme-toggle-btn" aria-label="Toggle theme mode" title="Switch light / dark mode">
+            <svg class="se-theme-icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="se-theme-icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span class="se-theme-label">Theme</span>
+          </button>
+        </div>
       </div>
-    </nav>
+    </div>
   </header>
 
   <main id="main" class="se-container-narrow se-container-py">
@@ -310,15 +339,15 @@
               <td>Direct top-of-atmosphere thermal infrared radiance (Band 10: 10.60–11.19 µm) converted to kinetic skin temperature via MODTRAN radiative transfer models and fractional surface emissivity.</td>
               <td>Thermodynamic energy-balance skin equilibrium parameter calculated inside a numerical weather forecast model assimilating sparse synoptic radiosondes and broad radiance soundings.</td>
             </tr>
-            <tr>
+        <tr>
               <td><strong>Spatial Resolution</strong></td>
-              <td><strong>30 meters</strong> (100 m native resampled to 30 m via cubic convolution). Resolves street canyons, vegetation patches, and industrial sectors.</td>
-              <td><strong>~55 × 60 km</strong> (0.5° latitude × 0.625° longitude). A single grid box covers the entire Kanpur metropolitan region and rural outskirts.</td>
+              <td><strong>30 meters</strong> (TIRS thermal bands, 100 m native, resampled to 30 m via cubic convolution; Landsat 9 carries TIRS-2). Resolves street canyons, vegetation patches, and industrial sectors.</td>
+              <td><strong>~55 &times; 60 km</strong> (0.5&deg; latitude &times; 0.625&deg; longitude). A single grid box covers the entire Kanpur metropolitan region and rural outskirts.</td>
             </tr>
             <tr>
               <td><strong>Microclimate Gradient</strong></td>
-              <td>Resolves genuine intra-urban thermal heterogeneity: exposes a <strong>7.10 K internal temperature spread</strong> between the cool Ganga riverbank and hot urban masonry.</td>
-              <td><strong>Zero intra-urban gradients:</strong> Spatially averages all terrain within 3,300 km² into a single uniform number, underestimating core urban heat stress by 2.3 to 3.8 K.</td>
+              <td>Resolves genuine intra-urban thermal heterogeneity: exposes localized temperature spreads between the cool Ganga riverbank and hot urban masonry.</td>
+              <td><strong>Zero intra-urban gradients:</strong> Spatially averages all terrain within 3,300 km&sup2; into a single uniform number, underestimating core urban heat stress by 2.3 to 3.8 K.</td>
             </tr>
             <tr>
               <td><strong>Temporal Continuity</strong></td>
@@ -334,9 +363,36 @@
         </table>
       </div>
 
+      <h3 class="editorial-headline se-content-h3" style="margin-top: 2rem;">Computational Workflow: At-Sensor Brightness Temperature</h3>
+      <p class="se-content-p">
+        Below is a simplified illustration showing how raw digital numbers (DN) from Landsat thermal sensors are converted to at-sensor spectral radiance, inverted via Planck's law to brightness temperature (Kelvin and Celsius), and differenced across masks to compute the urban minus rural thermal delta. Note that true kinetic Land Surface Temperature (LST) further requires fractional vegetation cover and emissivity corrections via split-window or radiative transfer algorithms.
+      </p>
+
+      <div style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-sm); padding: 1.25rem; font-family: var(--se-font-mono); font-size: 0.8rem; line-height: 1.6; overflow-x: auto; margin: 1.5rem 0;">
+        <span style="color: var(--se-text-muted);"># Simplified illustration: Landsat thermal band conversion to Brightness Temperature</span><br>
+        <span style="color: var(--se-text-muted);"># DN: Digital Number (raw integer pixel value from USGS Level-1/Level-2 product)</span><br>
+        <span style="color: var(--se-text-muted);"># ML: Radiance multiplicative scaling factor from metadata (RADIANCE_MULT_BAND_10)</span><br>
+        <span style="color: var(--se-text-muted);"># AL: Radiance additive scaling factor from metadata (RADIANCE_ADD_BAND_10)</span><br>
+        <span style="color: var(--se-text-muted);"># K1, K2: Thermal calibration constants from metadata (K1_CONSTANT_BAND_10, K2_CONSTANT_BAND_10)</span><br>
+        <span style="color: var(--se-text-muted);"># L_lambda: Top-of-Atmosphere (TOA) spectral radiance [W/(m²·sr·µm)]</span><br>
+        <span style="color: var(--se-text-muted);"># BT: At-sensor Brightness Temperature [Kelvin]</span><br>
+        <span style="color: var(--se-text-muted);"># Note: TIRS thermal bands, 100 m native, resampled to 30 m. Landsat 9 carries TIRS-2.</span><br><br>
+        <span style="color: #F472B6;">import</span> numpy <span style="color: #F472B6;">as</span> np<br><br>
+        <span style="color: var(--se-text-muted);"># Step 1: Scale raw digital numbers to spectral radiance</span><br>
+        L_lambda = ML * DN + AL<br><br>
+        <span style="color: var(--se-text-muted);"># Step 2: Invert Planck's radiation law to calculate at-sensor Brightness Temperature</span><br>
+        BT_kelvin = K2 / np.log((K1 / L_lambda) + <span style="color: #1FB6A6;">1.0</span>)<br>
+        BT_celsius = BT_kelvin - <span style="color: #1FB6A6;">273.15</span><br><br>
+        <span style="color: var(--se-text-muted);"># Step 3: Compute urban minus rural brightness temperature delta</span><br>
+        urban_mean_bt = np.nanmean(BT_celsius[urban_mask])<br>
+        rural_mean_bt = np.nanmean(BT_celsius[rural_mask])<br>
+        delta_bt = urban_mean_bt - rural_mean_bt<br><br>
+        print(<span style="color: #1FB6A6;">f"Urban minus rural brightness temperature delta: {delta_bt:.2f} °C"</span>)
+      </div>
+
       <ul class="se-list-bullet-desc-sm">
         <li>
-          <strong>Completed in Investigation 04:</strong> High-resolution intra-urban thermal zoning is fully resolved in <a href="investigations/kanpur-uhi.html" class="se-link"><strong>Investigation 04</strong></a> using cloud-masked USGS Landsat 8 and 9 Collection 2 Level 2 Surface Temperature products (30m resolution), quantifying Kanpur's concentric Urban Heat Island (peaking at +3.60 K in dry winter) across Core (0–5 km), Suburban (5–15 km), and Rural (15–20 km) regimes.
+          <strong>Completed in Investigation 04:</strong> High-resolution intra-urban thermal zoning is published in <a href="investigations/landsat-uhi.html" class="se-link"><strong>Investigation 04</strong></a> using cloud-masked USGS Landsat 8 and 9 Collection 2 Level 2 Surface Temperature products (TIRS thermal bands, 100 m native, resampled to 30 m; Landsat 9 carries TIRS-2), quantifying Kanpur's concentric Urban Heat Island across urban core and rural baseline regimes.
         </li>
         <li>
           <strong>Reanalysis Role in Inversion Climatology:</strong> In Analysis 03, daily reanalysis skin temperature (TS) and 2m ambient air (T2M) provide the long-term continuous baseline for evaluating regional surface energy balance shifts and atmospheric ventilation stagnation across 7 unbroken years.
@@ -372,68 +428,39 @@
 
   </main>
 
-  <!-- 4-Column Editorial Footer (Black #0B0B0C) -->
-  <footer class="se-footer">
-    <div class="se-container">
-      <div class="se-footer-inner">
-        <div class="se-footer-brand-col">
-          <div class="se-footer-brand-title">Signal Earth</div>
-          <p class="se-footer-brand-desc">
-            An independent project analysing air quality and surface temperature in Kanpur and Delhi through maps, satellite records, and open code.
+  <!-- Standardized Footer -->
+  <footer class="se-editorial-footer">
+    <div class="se-editorial-container">
+      <div class="se-editorial-footer-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+        <div>
+          <div style="font-family: var(--se-font-serif); font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--se-text-primary);">
+            Signal Earth
+          </div>
+          <p style="font-size: 0.9rem; line-height: 1.6; color: var(--se-text-secondary); max-width: 50ch; margin: 0 0 1rem;">
+            Avnish Singh &middot; Civil Engineering undergraduate, HBTU Kanpur, focusing on environmental engineering &middot; Contact: <a href="mailto:avnish36singh@gmail.com" class="se-link">avnish36singh@gmail.com</a>
+          </p>
+          <div style="font-size: 0.85rem;">
+            <a href="credits.html" class="se-link">How to cite</a> &middot;
+            <a href="methodology.html" class="se-link">Methodology</a> &middot;
+            <a href="known-problems.html" class="se-link">Known Problems</a> &middot;
+            <a href="numbers_ledger.csv" class="se-link" download>Numbers Ledger (CSV)</a> &middot;
+            <a href="https://github.com/avnish36singh-arch/signal-earth-portal" class="se-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size: 0.8rem; font-family: var(--se-font-mono); text-transform: uppercase; color: var(--se-text-muted); margin-bottom: 0.5rem;">
+            Attribution &amp; Hosting
+          </div>
+          <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.5rem;">
+            Contains modified Copernicus Climate Change Service information [2026]. Content licensed under CC BY 4.0; code licensed under MIT.
+          </p>
+          <p style="font-size: 0.82rem; color: var(--se-text-muted); margin: 0;">
+            Hosted on Netlify.
           </p>
         </div>
-
-        <div class="se-footer-col">
-          <h5>Analyses</h5>
-          <ul>
-            <li><a href="investigations/kanpur.html">Kanpur Particulate Dynamics</a></li>
-            <li><a href="investigations/delhi.html">Delhi NAQI Analysis</a></li>
-            <li><a href="investigations/kanpur-lst.html">Kanpur Reanalysis Temperature</a></li>
-            <li><a href="investigations/kanpur-uhi.html">Kanpur Landsat 30m Thermal</a></li>
-            <li><a href="investigations/comparison.html">Regional Airshed Comparison</a></li>
-          </ul>
-        </div>
-
-        <div class="se-footer-col">
-          <h5>Method and Data</h5>
-          <ul>
-            <li><a href="index.html#explained">Explained Pieces</a></li>
-            <li><a href="methodology.html">Methodology and Limits</a></li>
-            <li><a href="data.html">Data and Code</a></li>
-            <li><a href="about.html">About Signal Earth</a></li>
-          </ul>
-        </div>
-
-        <div class="se-footer-col">
-          <h5>Legal</h5>
-          <ul>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="terms.html">Terms of Use</a></li>
-            <li><a href="licenses.html">Licenses and Terms</a></li>
-            <li><a href="credits.html">Image Credits</a></li>
-            <li><a href="corrections.html">Corrections Log</a></li>
-          </ul>
-        </div>
-
-        <div class="se-footer-col">
-          <h5>Follow</h5>
-          <ul>
-            <li><a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/company/signalearth/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li><a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="contact.html">Contact Information</a></li>
-          </ul>
-        </div>
       </div>
-
-      <!-- Mandatory Affiliation Disclaimer -->
-      <div class="se-footer-disclaimer">
-        Signal Earth is an independent project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, UPPCB, DPCC, or any agency named on this site.
-      </div>
-
-      <div class="se-footer-bottom">
-        <div>Signal Earth &middot; Open Science under MIT License</div>
-        <div>Page last updated: October 2026</div>
+      <div class="se-editorial-footer-bottom" style="border-top: 1px solid var(--se-border); padding-top: 1rem; font-size: 0.8rem; color: var(--se-text-muted);">
+        <div>Spot an error? Report a correction on <a href="https://github.com/avnish36singh-arch/signal-earth-portal/issues" target="_blank" rel="noopener noreferrer" class="se-link">GitHub Issues</a>.</div>
       </div>
     </div>
   </footer>

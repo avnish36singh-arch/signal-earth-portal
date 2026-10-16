@@ -5,14 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research &amp; Analyses | Signal Earth</title>
   <meta name="description" content="Quantitative investigations into air quality, particulate dynamics, statutory NAQI mechanics, and satellite thermal observations across northern India.">
-  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/research.html">
+  <link rel="canonical" href="https://signalearth.netlify.app/research.html">
+  <script>
+    if (window.location.hostname.indexOf('github.io') !== -1) {
+      window.location.replace('https://signalearth.netlify.app' + window.location.pathname.replace(/^\/signal-earth-portal/, '') + window.location.search + window.location.hash);
+    }
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=https://signalearth.netlify.app/research.html">
+  </noscript>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
   <meta property="og:title" content="Research &amp; Analyses | Signal Earth">
   <meta property="og:description" content="Quantitative investigations into air quality, particulate dynamics, statutory NAQI mechanics, and satellite thermal observations.">
-  <meta property="og:url" content="https://avnish36singh-arch.github.io/signal-earth-portal/research.html">
+  <meta property="og:url" content="https://signalearth.netlify.app/research.html">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://avnish36singh-arch.github.io/signal-earth-portal/assets/hero_indo_gangetic_smoke_20211105.jpg">
   <link rel="stylesheet" href="style.css?v=20261012">
@@ -24,23 +32,44 @@
   <a href="#main" class="skip-link">Skip to content</a>
 
   <!-- Header with Brand and Links -->
-  <header>
-    <nav class="se-nav" aria-label="Main Navigation">
-      <div class="se-nav-inner">
-        <a href="index.html" class="se-brand" aria-label="Signal Earth Homepage">
-          <span class="se-brand-name">Signal Earth</span>
-          <span class="se-brand-sub">Independent Research</span>
-        </a>
-
-        <ul class="se-nav-links">
-          <li><a href="research.html" class="active">Research</a></li>
-          <li><a href="briefs/index.html">Briefs</a></li>
-          <li><a href="explained/index.html">Explained</a></li>
-          <li><a href="data.html">Data &amp; Code</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
+  <header class="se-editorial-header">
+    <div class="se-editorial-container">
+      <div class="se-editorial-header-inner">
+        <div class="se-editorial-wordmark-wrap">
+          <a href="index.html" class="se-editorial-wordmark" aria-label="Signal Earth Homepage">
+            Signal Earth
+          </a>
+        </div>
+        <div class="se-editorial-header-right">
+          <nav class="se-editorial-nav" aria-label="Main Navigation">
+            <ul class="se-editorial-nav-list">
+              <li><a href="research.html" class="se-editorial-nav-link active" aria-current="page">Research</a></li>
+              <li><a href="data.html" class="se-editorial-nav-link">Data</a></li>
+              <li><a href="reports.html" class="se-editorial-nav-link">Reports</a></li>
+              <li><a href="methodology.html" class="se-editorial-nav-link">Methodology</a></li>
+              <li><a href="about.html" class="se-editorial-nav-link">About</a></li>
+            </ul>
+          </nav>
+          <button type="button" id="se-theme-toggle" class="se-theme-toggle-btn" aria-label="Toggle theme mode" title="Switch light / dark mode">
+            <svg class="se-theme-icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="se-theme-icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span class="se-theme-label">Theme</span>
+          </button>
+        </div>
       </div>
-    </nav>
+    </div>
   </header>
 
   <main id="main">
@@ -243,6 +272,131 @@
       </div>
     </section>
 
+    <!-- =======================================================================
+         PAPERS & LITERATURE FEED (RELOCATED FROM HOMEPAGE)
+         ======================================================================= -->
+    <section id="papers-feed" style="padding: 5rem 0; background: var(--se-bg-surface); border-top: 1px solid var(--se-border); border-bottom: 1px solid var(--se-border);" aria-labelledby="papers-heading">
+      <div class="se-container">
+        <div class="se-section-header">
+          <span class="section-kicker">Peer-Reviewed Literature</span>
+          <h2 id="papers-heading" class="editorial-headline se-section-title">
+            Research &amp; Papers Feed
+          </h2>
+          <p class="se-hero-dek">
+            Curated papers across boundary layer thermodynamics, polar amplification, urban heat islands, and remote sensing methods.
+          </p>
+
+          <!-- Filter chips -->
+          <div class="se-papers-filter-row" role="tablist" style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1.25rem;">
+            <button type="button" class="se-btn se-btn-sm se-paper-chip active" data-filter="all" aria-pressed="true">All Fields</button>
+            <button type="button" class="se-btn se-btn-sm se-paper-chip" data-filter="climate" aria-pressed="false">Climate</button>
+            <button type="button" class="se-btn se-btn-sm se-paper-chip" data-filter="air quality" aria-pressed="false">Air Quality</button>
+            <button type="button" class="se-btn se-btn-sm se-paper-chip" data-filter="cryosphere" aria-pressed="false">Cryosphere</button>
+            <button type="button" class="se-btn se-btn-sm se-paper-chip" data-filter="heat" aria-pressed="false">Thermal Heat</button>
+            <button type="button" class="se-btn se-btn-sm se-paper-chip" data-filter="methods" aria-pressed="false">Methods</button>
+          </div>
+        </div>
+
+        <div class="se-equal-analyses-grid" id="papers-grid" style="margin-top: 2rem;">
+          <!-- Paper 1: Arctic Amplification -->
+          <article class="se-card" data-category="cryosphere">
+            <div class="se-card-body">
+              <span class="se-card-label">Communications Earth &amp; Environment (2022) &middot; Mika Rantanen et al.</span>
+              <h3 class="se-card-title">
+                <a href="https://doi.org/10.1038/s43247-022-00498-3" target="_blank" rel="noopener noreferrer">The Arctic has warmed nearly four times faster than the globe since 1979</a>
+              </h3>
+              <p class="se-card-dek">
+                Observational evidence confirms nearly four-fold polar amplification since 1979 driven by sea ice-albedo feedbacks, with observed rates in the upper spread of CMIP6 projections.
+              </p>
+              <div class="se-card-meta">
+                <div><strong>DOI:</strong> <a href="https://doi.org/10.1038/s43247-022-00498-3" target="_blank" rel="noopener noreferrer">10.1038/s43247-022-00498-3 &rarr;</a></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Paper 2: Global Carbon Budget 2023 -->
+          <article class="se-card" data-category="climate">
+            <div class="se-card-body">
+              <span class="se-card-label">Earth System Science Data (2023) &middot; Pierre Friedlingstein et al.</span>
+              <h3 class="se-card-title">
+                <a href="https://doi.org/10.5194/essd-15-5301-2023" target="_blank" rel="noopener noreferrer">Global Carbon Budget 2023</a>
+              </h3>
+              <p class="se-card-dek">
+                Global fossil CO2 emissions reached 36.8 GtCO2 in 2023, leaving a remaining carbon budget of approximately 275 GtCO2 for a 50% chance to limit warming to 1.5&deg;C.
+              </p>
+              <div class="se-card-meta">
+                <div><strong>DOI:</strong> <a href="https://doi.org/10.5194/essd-15-5301-2023" target="_blank" rel="noopener noreferrer">10.5194/essd-15-5301-2023 &rarr;</a></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Paper 3: Amazon Transitions -->
+          <article class="se-card" data-category="climate">
+            <div class="se-card-body">
+              <span class="se-card-label">Nature (2024) &middot; Bernardo M. Flores et al.</span>
+              <h3 class="se-card-title">
+                <a href="https://doi.org/10.1038/s41586-023-06970-0" target="_blank" rel="noopener noreferrer">Critical transitions in the Amazon forest system</a>
+              </h3>
+              <p class="se-card-dek">
+                By 2050, 10% to 47% of the Amazon forest will be exposed to compounding disturbances including warming temperatures, extreme droughts, and deforestation, risking critical ecosystem transitions.
+              </p>
+              <div class="se-card-meta">
+                <div><strong>DOI:</strong> <a href="https://doi.org/10.1038/s41586-023-06970-0" target="_blank" rel="noopener noreferrer">10.1038/s41586-023-06970-0 &rarr;</a></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Paper 4: Indo-Gangetic Aerosols -->
+          <article class="se-card" data-category="air quality">
+            <div class="se-card-body">
+              <span class="se-card-label">Atmospheric Chemistry and Physics (2012) &middot; R. Gautam et al.</span>
+              <h3 class="se-card-title">
+                <a href="https://doi.org/10.5194/acp-12-1403-2012" target="_blank" rel="noopener noreferrer">Aerosol optical properties and radiative forcing over the Indo-Gangetic Plain: analysis of seasonal and spatial variations</a>
+              </h3>
+              <p class="se-card-dek">
+                Shallow winter boundary layers trap ground aerosol loadings, causing surface radiative cooling alongside lower tropospheric solar absorption and atmospheric warming over northern India.
+              </p>
+              <div class="se-card-meta">
+                <div><strong>DOI:</strong> <a href="https://doi.org/10.5194/acp-12-1403-2012" target="_blank" rel="noopener noreferrer">10.5194/acp-12-1403-2012 &rarr;</a></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Paper 5: Lancet India Air Pollution -->
+          <article class="se-card" data-category="air quality">
+            <div class="se-card-body">
+              <span class="se-card-label">The Lancet Planetary Health (2021) &middot; Anamika Pandey et al.</span>
+              <h3 class="se-card-title">
+                <a href="https://doi.org/10.1016/S2542-5196(20)30298-9" target="_blank" rel="noopener noreferrer">Health and economic impact of air pollution in the states of India: the Global Burden of Disease Study 2019</a>
+              </h3>
+              <p class="se-card-dek">
+                Ambient particulate pollution and household air pollution were associated with 1.67 million deaths in India in 2019, with Uttar Pradesh and the Gangetic plain experiencing the highest population-weighted exposure.
+              </p>
+              <div class="se-card-meta">
+                <div><strong>DOI:</strong> <a href="https://doi.org/10.1016/S2542-5196(20)30298-9" target="_blank" rel="noopener noreferrer">10.1016/S2542-5196(20)30298-9 &rarr;</a></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Paper 6: Oke Urban Heat Island -->
+          <article class="se-card" data-category="heat">
+            <div class="se-card-body">
+              <span class="se-card-label">Quarterly Journal of the Royal Meteorological Society (1982) &middot; T. R. Oke</span>
+              <h3 class="se-card-title">
+                <a href="https://doi.org/10.1002/qj.49710845502" target="_blank" rel="noopener noreferrer">The energetic basis of the urban heat island</a>
+              </h3>
+              <p class="se-card-dek">
+                Classical formulation establishing how urban canyon geometry, surface thermal properties, impervious cover, and anthropogenic heat flux govern intra-urban heat island intensity.
+              </p>
+              <div class="se-card-meta">
+                <div><strong>DOI:</strong> <a href="https://doi.org/10.1002/qj.49710845502" target="_blank" rel="noopener noreferrer">10.1002/qj.49710845502 &rarr;</a></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- Method and Honesty Strip -->
     <section class="se-honesty-strip" aria-labelledby="honesty-heading">
       <div class="se-container">
@@ -265,71 +419,39 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="se-footer">
-    <div class="se-container">
-      <div class="se-footer-inner">
-        <div class="se-footer-brand-col">
-          <div class="se-footer-brand-title">Signal Earth</div>
-          <p class="se-footer-brand-desc">
-            Independent research examining statutory ambient monitoring archives and satellite observations across northern India.
+  <!-- Standardized Footer -->
+  <footer class="se-editorial-footer">
+    <div class="se-editorial-container">
+      <div class="se-editorial-footer-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+        <div>
+          <div style="font-family: var(--se-font-serif); font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--se-text-primary);">
+            Signal Earth
+          </div>
+          <p style="font-size: 0.9rem; line-height: 1.6; color: var(--se-text-secondary); max-width: 50ch; margin: 0 0 1rem;">
+            Avnish Singh &middot; Civil Engineering undergraduate, HBTU Kanpur, focusing on environmental engineering &middot; Contact: <a href="mailto:avnish36singh@gmail.com" class="se-link">avnish36singh@gmail.com</a>
+          </p>
+          <div style="font-size: 0.85rem;">
+            <a href="credits.html" class="se-link">How to cite</a> &middot;
+            <a href="methodology.html" class="se-link">Methodology</a> &middot;
+            <a href="known-problems.html" class="se-link">Known Problems</a> &middot;
+            <a href="numbers_ledger.csv" class="se-link" download>Numbers Ledger (CSV)</a> &middot;
+            <a href="https://github.com/avnish36singh-arch/signal-earth-portal" class="se-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size: 0.8rem; font-family: var(--se-font-mono); text-transform: uppercase; color: var(--se-text-muted); margin-bottom: 0.5rem;">
+            Attribution &amp; Hosting
+          </div>
+          <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.5rem;">
+            Contains modified Copernicus Climate Change Service information [2026]. Content licensed under CC BY 4.0; code licensed under MIT.
+          </p>
+          <p style="font-size: 0.82rem; color: var(--se-text-muted); margin: 0;">
+            Hosted on Netlify.
           </p>
         </div>
-
-        <div class="se-footer-col">
-          <h5>Analyses</h5>
-          <ul>
-            <li><a href="investigations/kanpur.html">Kanpur Particulate Dynamics</a></li>
-            <li><a href="investigations/delhi.html">Delhi NAQI Analysis</a></li>
-            <li><a href="investigations/kanpur-lst.html">Kanpur Reanalysis Temperature</a></li>
-            <li><a href="investigations/kanpur-uhi.html">Kanpur Landsat 30m Thermal</a></li>
-            <li><a href="investigations/comparison.html">Regional Airshed Comparison</a></li>
-            <li><a href="rankings.html">Station Rankings Table</a></li>
-          </ul>
-        </div>
-
-        <div class="se-footer-col">
-          <h5>Method &amp; Data</h5>
-          <ul>
-            <li><a href="explained/index.html">Explained Guides</a></li>
-            <li><a href="methodology.html">Methodology &amp; Standards</a></li>
-            <li><a href="data.html">Data Registry &amp; Code</a></li>
-            <li><a href="sources.html">Data Sources &amp; Custodians</a></li>
-            <li><a href="known-problems.html">Known Problems &amp; Technical Limits</a></li>
-          </ul>
-        </div>
-
-        <div class="se-footer-col">
-          <h5>Legal &amp; Audit</h5>
-          <ul>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="terms.html">Terms of Use</a></li>
-            <li><a href="licenses.html">Licenses &amp; Attribution</a></li>
-            <li><a href="credits.html">Image Credits &amp; JSON</a></li>
-            <li><a href="corrections.html">Corrections Log</a></li>
-          </ul>
-        </div>
-
-        <div class="se-footer-col">
-          <h5>Channels</h5>
-          <ul>
-            <li><a href="https://www.linkedin.com/company/signalearth/" target="_blank" rel="noopener noreferrer">Signal Earth on LinkedIn</a></li>
-            <li><a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer">Signal Earth on Instagram</a></li>
-            <li><a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer">Signal Earth on GitHub</a></li>
-            <li><a href="about.html">About Signal Earth &amp; Founder</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
       </div>
-
-      <!-- Mandatory Affiliation Notice -->
-      <div class="se-footer-disclaimer">
-        Signal Earth is an independent environmental data project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, UPPCB, DPCC, or any government agency named on this site.
-      </div>
-
-      <div class="se-footer-bottom">
-        <div>Maintained by: Signal Earth &middot; Code under MIT License</div>
-        <div>Page updated: October 2026 &middot; Hosted on GitHub Pages</div>
+      <div class="se-editorial-footer-bottom" style="border-top: 1px solid var(--se-border); padding-top: 1rem; font-size: 0.8rem; color: var(--se-text-muted);">
+        <div>Spot an error? Report a correction on <a href="https://github.com/avnish36singh-arch/signal-earth-portal/issues" target="_blank" rel="noopener noreferrer" class="se-link">GitHub Issues</a>.</div>
       </div>
     </div>
   </footer>
@@ -620,7 +742,26 @@
               plotEl.innerHTML = '<div style="padding: 2rem; color: #DC2626; font-family: monospace;">Unable to load data/kanpur/daily_pm25_chart.json. Please ensure the data file exists.</div>';
             }
           });
-      }
+      // Papers feed category filtering
+      document.querySelectorAll('.se-paper-chip').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var cat = btn.getAttribute('data-filter');
+          document.querySelectorAll('.se-paper-chip').forEach(function(b) {
+            b.classList.remove('active');
+            b.setAttribute('aria-pressed', 'false');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-pressed', 'true');
+
+          document.querySelectorAll('#papers-grid [data-category]').forEach(function(card) {
+            if (cat === 'all' || card.getAttribute('data-category') === cat) {
+              card.style.display = '';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
     })();
   </script>
 </body>
