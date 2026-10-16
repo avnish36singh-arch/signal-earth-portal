@@ -227,6 +227,57 @@
       color: #94A3B8;
       text-decoration: underline;
     }
+
+    /* Region Quick Select Pills Bar */
+    .se-globe-pills-bar {
+      display: flex;
+      gap: 0.5rem;
+      overflow-x: auto;
+      padding: 0.75rem 0;
+      margin-bottom: 0.75rem;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+    }
+    .se-globe-pills-bar::-webkit-scrollbar {
+      height: 4px;
+    }
+    .se-globe-pills-bar::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+    }
+    .se-globe-pill {
+      background: rgba(10, 22, 40, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #CBD5E1;
+      font-family: var(--se-font-mono);
+      font-size: 0.75rem;
+      padding: 0.35rem 0.75rem;
+      border-radius: 20px;
+      cursor: pointer;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.18s ease;
+    }
+    .se-globe-pill:hover {
+      background: rgba(27, 48, 86, 0.9);
+      color: #FFFFFF;
+      border-color: rgba(255, 255, 255, 0.35);
+    }
+    .se-globe-pill.active {
+      background: #1FB6A6;
+      color: #0A1628;
+      font-weight: 700;
+      border-color: #1FB6A6;
+      box-shadow: 0 0 12px rgba(31, 182, 166, 0.4);
+    }
+    .se-globe-pill-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      display: inline-block;
+    }
   </style>
 </head>
 <body>
@@ -268,6 +319,11 @@
 
       <!-- Overlay Bar: Legend and Category Filters -->
       <div class="se-globe-nav-overlay">
+        <!-- Quick-Select Region Pills Strip -->
+        <div class="se-globe-pills-bar" id="globe-regions-pills" role="toolbar" aria-label="Quick Select Planetary Observation Stations">
+          <!-- Populated dynamically by assets/globe-app.js -->
+        </div>
+
         <div class="se-globe-legend-bar">
           <span class="se-globe-legend-title">Issue Filters:</span>
           <button type="button" class="se-globe-filter-btn active" data-filter="heat" aria-pressed="true">
@@ -304,9 +360,9 @@
           &times;
         </button>
 
-        <span id="drawer-issue-badge" class="se-drawer-badge"></span>
-        <h2 id="drawer-region-name" class="se-drawer-title"></h2>
-        <div id="drawer-coords" class="se-drawer-coords"></div>
+        <span id="drawer-issue-badge" class="se-drawer-badge">Particulate Stagnation &amp; Hiatus</span>
+        <h2 id="drawer-region-name" class="se-drawer-title">Kanpur Observatory</h2>
+        <div id="drawer-coords" class="se-drawer-coords">26.4499°N, 80.3319°E · Central Indo-Gangetic Basin, India</div>
 
         <!-- NASA Worldview Snapshot Container -->
         <div style="margin-bottom: 1.25rem;">
@@ -318,7 +374,7 @@
           </div>
 
           <div class="se-drawer-img-wrap">
-            <img id="drawer-snapshot-img" src="assets/satellite_view_kanpur_haze_20211111.jpg" alt="Recent satellite observation from NASA Worldview">
+            <img id="drawer-snapshot-img" src="assets/regions/kanpur.jpg" alt="Recent satellite observation from NASA Worldview">
           </div>
 
           <div id="drawer-snapshot-status" style="font-family: var(--se-font-mono); font-size: 0.68rem; color: #64748B; margin-bottom: 0.35rem;"></div>
@@ -337,7 +393,7 @@
               Comparison: 10 Years Prior
             </div>
             <div class="se-drawer-img-wrap">
-              <img id="drawer-compare-img" src="assets/hero_indo_gangetic_smoke_20211105.jpg" alt="10 years ago satellite observation comparison">
+              <img id="drawer-compare-img" src="assets/regions/kanpur_10yr.jpg" alt="10 years ago satellite observation comparison">
             </div>
           </div>
         </div>

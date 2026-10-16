@@ -438,3 +438,179 @@
     padding: 1.5rem;
   }
 }
+
+/* --------------------------------------------------------------------------
+   6. Globe Drawer, Region Pills, and Overlays
+   -------------------------------------------------------------------------- */
+.se-globe-pills-bar {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding: 0.75rem 0;
+  margin-bottom: 0.75rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+.se-globe-pills-bar::-webkit-scrollbar {
+  height: 4px;
+}
+.se-globe-pills-bar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.se-globe-pill {
+  background: rgba(10, 22, 40, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #CBD5E1;
+  font-family: var(--se-font-mono);
+  font-size: 0.75rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.18s ease;
+}
+.se-globe-pill:hover {
+  background: rgba(27, 48, 86, 0.9);
+  color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+.se-globe-pill.active {
+  background: #1FB6A6;
+  color: #0A1628;
+  font-weight: 700;
+  border-color: #1FB6A6;
+  box-shadow: 0 0 12px rgba(31, 182, 166, 0.4);
+}
+.se-globe-pill-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Sliding Side Drawer Panel */
+.se-globe-drawer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(92vw, 480px);
+  background: rgba(10, 22, 40, 0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 30;
+  padding: 2rem;
+  overflow-y: auto;
+  transform: translateX(100%);
+  transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: -15px 0 35px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+}
+.se-globe-drawer.is-open {
+  transform: translateX(0);
+}
+.se-drawer-close-btn {
+  align-self: flex-end;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #F8FAFC;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  line-height: 1;
+  transition: background 0.15s ease;
+}
+.se-drawer-close-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+.se-drawer-badge {
+  display: inline-block;
+  font-family: var(--se-font-mono);
+  font-size: var(--se-text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--se-radius-sm);
+  border: 1px solid #1FB6A6;
+  color: #1FB6A6;
+  margin: 0.5rem 0 0.75rem;
+  width: fit-content;
+}
+.se-drawer-title {
+  font-family: var(--se-font-serif);
+  font-size: 1.85rem;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 0 0 0.35rem;
+}
+.se-drawer-coords {
+  font-family: var(--se-font-mono);
+  font-size: 0.74rem;
+  color: #94A3B8;
+  margin-bottom: 1.25rem;
+}
+.se-drawer-img-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: var(--se-radius-md);
+  overflow: hidden;
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.se-drawer-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.25s ease;
+}
+.se-drawer-metric-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--se-radius-sm);
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.se-drawer-metric-name {
+  font-family: var(--se-font-mono);
+  font-size: 0.72rem;
+  color: #94A3B8;
+  text-transform: uppercase;
+}
+.se-drawer-metric-val {
+  font-family: var(--se-font-mono);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1FB6A6;
+}
+.se-drawer-metric-src {
+  width: 100%;
+  font-family: var(--se-font-mono);
+  font-size: 0.65rem;
+  color: #64748B;
+  text-decoration: none;
+  margin-top: 0.2rem;
+}
+.se-drawer-metric-src:hover {
+  color: #94A3B8;
+  text-decoration: underline;
+}
