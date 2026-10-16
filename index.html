@@ -4,103 +4,374 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Signal Earth — Independent Spaceborne Environmental Research</title>
-  <meta name="description" content="Signal Earth explores planetary environmental change through satellite radiometry, open telemetry datasets, and reproducible scientific analysis.">
+  <meta name="description" content="Independent analysis of air quality and urban heat in the Indo-Gangetic Basin using satellite and open monitoring data.">
   <link rel="canonical" href="https://signalearth.netlify.app/">
+  <script>
+    if (window.location.hostname.indexOf('github.io') !== -1) {
+      window.location.replace('https://signalearth.netlify.app' + window.location.pathname.replace(/^\/signal-earth-portal/, '') + window.location.search + window.location.hash);
+    }
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=https://signalearth.netlify.app/">
+  </noscript>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="manifest" href="site.webmanifest">
-
-  <!-- Open Graph & Social Cards -->
-  <meta property="og:title" content="Signal Earth — Independent Spaceborne Environmental Research">
-  <meta property="og:description" content="Making planetary change visible through satellite radiometry, open datasets, and reproducible science.">
-  <meta property="og:url" content="https://signalearth.netlify.app/">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://signalearth.netlify.app/assets/hero_indo_gangetic_smoke_20211105.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Signal Earth — Spaceborne Environmental Research">
-  <meta name="twitter:description" content="Open environmental telemetry, satellite radiometry, and reproducible science.">
-
-  <!-- Google Fonts: Newsreader (Editorial Serif), Inter (Clean Sans) & IBM Plex Mono -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <!-- Design Tokens & Stylesheets -->
   <link rel="stylesheet" href="assets/tokens.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="assets/homepage.css">
-
-  <!-- Pinned Three.js and Globe.gl for 3D Centerpiece -->
-  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
-  <script src="https://unpkg.com/globe.gl@2.32.2/dist/globe.gl.min.js"></script>
-
-  <!-- Global Theme Management System (Prevents FOUT) -->
   <script src="assets/theme.js"></script>
 
-  <!-- JSON-LD Structured Data for Science Organization -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Signal Earth",
-    "url": "https://signalearth.netlify.app",
-    "logo": "https://signalearth.netlify.app/favicon.svg",
-    "description": "Independent environmental research initiative exploring satellite radiometry and open telemetry.",
-    "sameAs": [
-      "https://github.com/avnish36singh-arch/signal-earth-portal"
-    ]
-  }
-  </script>
+  <style>
+    :root {
+      --home-bg: var(--se-bg-page, #ffffff);
+      --home-surface: var(--se-bg-surface, #f8fafc);
+      --home-text: var(--se-text-primary, #0f172a);
+      --home-secondary: var(--se-text-secondary, #475569);
+      --home-muted: var(--se-text-muted, #64748b);
+      --home-border: var(--se-border, #e2e8f0);
+      --home-accent: #0f766e;
+      --home-font-serif: var(--se-font-serif, Georgia, serif);
+      --home-font-sans: var(--se-font-sans, system-ui, -apple-system, sans-serif);
+      --home-font-mono: var(--se-font-mono, ui-monospace, monospace);
+    }
+
+    [data-theme="dark"] {
+      --home-bg: #0b0f17;
+      --home-surface: #111827;
+      --home-text: #f1f5f9;
+      --home-secondary: #94a3b8;
+      --home-muted: #64748b;
+      --home-border: #1e293b;
+      --home-accent: #14b8a6;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --home-bg: #0b0f17;
+        --home-surface: #111827;
+        --home-text: #f1f5f9;
+        --home-secondary: #94a3b8;
+        --home-muted: #64748b;
+        --home-border: #1e293b;
+        --home-accent: #14b8a6;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--home-bg);
+      color: var(--home-text);
+      font-family: var(--home-font-sans);
+      font-size: 16px;
+      line-height: 1.65;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      color: var(--home-accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    a:hover {
+      opacity: 0.8;
+    }
+
+    .se-container-text {
+      width: 100%;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    .se-container-wide {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* Standardized Header */
+    .se-editorial-header {
+      border-bottom: 1px solid var(--home-border);
+      background: var(--home-bg);
+    }
+    .se-editorial-header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.85rem 0;
+    }
+    .se-editorial-wordmark {
+      font-family: var(--home-font-serif);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--home-text);
+      text-decoration: none;
+    }
+    .se-editorial-nav-list {
+      display: flex;
+      list-style: none;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+      align-items: center;
+    }
+    .se-editorial-nav-link {
+      font-size: 0.875rem;
+      color: var(--home-secondary);
+      text-decoration: none;
+    }
+    .se-editorial-nav-link:hover {
+      color: var(--home-text);
+    }
+    .se-editorial-header-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .se-theme-toggle-btn {
+      background: transparent;
+      border: 1px solid var(--home-border);
+      color: var(--home-secondary);
+      padding: 4px 8px;
+      font-size: 0.75rem;
+      border-radius: 4px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* Hairline Dividers */
+    .home-section {
+      padding: 2.75rem 0;
+      border-bottom: 1px solid var(--home-border);
+    }
+
+    /* Section Headings */
+    .home-section-title {
+      font-family: var(--home-font-serif);
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0 0 1.25rem 0;
+      color: var(--home-text);
+      line-height: 1.25;
+    }
+
+    /* Hero */
+    .home-hero-h1 {
+      font-family: var(--home-font-serif);
+      font-size: clamp(2.25rem, 4.5vw, 3.25rem);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin: 0 0 1rem 0;
+      color: var(--home-text);
+    }
+    .home-hero-sub {
+      font-size: 1.125rem;
+      line-height: 1.6;
+      color: var(--home-secondary);
+      margin: 0 0 1.5rem 0;
+    }
+    .home-hero-links {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 1rem;
+    }
+
+    /* 4 Headline Numbers Row (960px max width) */
+    .home-stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+    @media (max-width: 768px) {
+      .home-stats-row {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 480px) {
+      .home-stats-row {
+        grid-template-columns: 1fr;
+      }
+    }
+    .home-stat-item {
+      display: flex;
+      flex-direction: column;
+    }
+    .home-stat-num {
+      font-family: var(--home-font-mono);
+      font-size: 1.65rem;
+      font-weight: 600;
+      line-height: 1.15;
+      color: var(--home-text);
+      margin-bottom: 0.25rem;
+    }
+    .home-stat-label {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--home-text);
+      margin-bottom: 0.25rem;
+    }
+    .home-stat-meta {
+      font-size: 0.8125rem;
+      color: var(--home-secondary);
+      line-height: 1.4;
+      margin-bottom: 0.35rem;
+    }
+    .home-stat-src {
+      font-size: 0.8125rem;
+    }
+
+    /* Investigations: 4 rows */
+    .home-inv-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+    .home-inv-row {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 1.5rem;
+      align-items: start;
+    }
+    @media (max-width: 580px) {
+      .home-inv-row {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+      }
+    }
+    .home-inv-fig {
+      width: 100%;
+      height: 95px;
+      object-fit: cover;
+      display: block;
+      border: 1px solid var(--home-border);
+    }
+    .home-inv-body {
+      display: flex;
+      flex-direction: column;
+    }
+    .home-inv-title {
+      font-family: var(--home-font-serif);
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin: 0 0 0.25rem 0;
+      line-height: 1.3;
+    }
+    .home-inv-title a {
+      color: var(--home-text);
+      text-decoration: none;
+    }
+    .home-inv-title a:hover {
+      color: var(--home-accent);
+      text-decoration: underline;
+    }
+    .home-inv-finding {
+      font-size: 0.9375rem;
+      color: var(--home-secondary);
+      margin: 0 0 0.4rem 0;
+      line-height: 1.5;
+    }
+    .home-inv-link {
+      font-size: 0.875rem;
+    }
+
+    /* Plain State of the Planet Table */
+    .home-table-wrap {
+      overflow-x: auto;
+    }
+    .home-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.875rem;
+    }
+    .home-table th {
+      border-bottom: 1px solid var(--home-border);
+      padding: 0.6rem 0.75rem 0.6rem 0;
+      font-weight: 600;
+      color: var(--home-text);
+    }
+    .home-table td {
+      border-bottom: 1px solid var(--home-border);
+      padding: 0.65rem 0.75rem 0.65rem 0;
+      color: var(--home-secondary);
+      vertical-align: top;
+      line-height: 1.45;
+    }
+    .home-table tr:last-child td {
+      border-bottom: none;
+    }
+    .home-table td:first-child {
+      font-weight: 500;
+      color: var(--home-text);
+    }
+    .home-table td.mono {
+      font-family: var(--home-font-mono);
+      color: var(--home-text);
+    }
+
+    /* Method and Open Data */
+    .home-method-p {
+      font-size: 0.95rem;
+      line-height: 1.65;
+      color: var(--home-secondary);
+      margin: 0 0 1rem 0;
+    }
+    .home-method-links {
+      display: flex;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+      font-size: 0.9375rem;
+      margin-bottom: 1.5rem;
+    }
+    .home-correction-line {
+      font-size: 0.875rem;
+      color: var(--home-muted);
+      border-top: 1px solid var(--home-border);
+      padding-top: 1.25rem;
+      margin: 0;
+    }
+
+    /* Standardized Footer */
+    .se-editorial-footer {
+      background: var(--home-bg);
+      padding: 2.5rem 0;
+      font-size: 0.8125rem;
+      color: var(--home-secondary);
+    }
+    .se-footer-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+      line-height: 1.6;
+    }
+  </style>
 </head>
-<body class="se-editorial-page" id="top">
-  <a href="#main" class="skip-link">Skip to content</a>
+<body>
 
-  <!-- =======================================================================
-       1. STICKY NAVBAR
-       ======================================================================= -->
-  <header class="se-editorial-header" id="se-header">
-    <div class="se-editorial-container">
+  <!-- Standardized Header -->
+  <header class="se-editorial-header">
+    <div class="se-container-text">
       <div class="se-editorial-header-inner">
-        <div class="se-editorial-wordmark-wrap">
-          <a href="index.html" class="se-editorial-wordmark" aria-label="Signal Earth Homepage">
-            Signal Earth
-          </a>
-          <span class="se-wordmark-badge">
-            <span style="display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--se-teal-live); margin-right:4px;"></span>
-            Portal
-          </span>
-        </div>
-
+        <a href="index.html" class="se-editorial-wordmark">Signal Earth</a>
         <div class="se-editorial-header-right">
-          <nav class="se-editorial-nav" aria-label="Main Navigation">
+          <nav aria-label="Main Navigation">
             <ul class="se-editorial-nav-list">
-              <li><a href="index.html" class="se-editorial-nav-link active" aria-current="page">Home</a></li>
               <li><a href="research.html" class="se-editorial-nav-link">Research</a></li>
-              <li><a href="data.html" class="se-editorial-nav-link">Data &amp; Maps</a></li>
+              <li><a href="data.html" class="se-editorial-nav-link">Data</a></li>
               <li><a href="reports.html" class="se-editorial-nav-link">Reports</a></li>
-              <li><a href="briefs/index.html" class="se-editorial-nav-link">Briefs</a></li>
               <li><a href="methodology.html" class="se-editorial-nav-link">Methodology</a></li>
               <li><a href="about.html" class="se-editorial-nav-link">About</a></li>
             </ul>
           </nav>
-
-          <!-- Light / Dark Mode Toggle Button -->
-          <button type="button" id="se-theme-toggle" class="se-theme-toggle-btn" aria-label="Toggle theme mode" title="Switch light / dark mode">
-            <svg class="se-theme-icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <circle cx="12" cy="12" r="5"></circle>
-              <line x1="12" y1="1" x2="12" y2="3"></line>
-              <line x1="12" y1="21" x2="12" y2="23"></line>
-              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-              <line x1="1" y1="12" x2="3" y2="12"></line>
-              <line x1="21" y1="12" x2="23" y2="12"></line>
-              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-            </svg>
-            <svg class="se-theme-icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-            </svg>
+          <button type="button" id="se-theme-toggle" class="se-theme-toggle-btn" aria-label="Toggle theme">
             <span class="se-theme-label">Theme</span>
           </button>
         </div>
@@ -109,838 +380,207 @@
   </header>
 
   <main id="main">
-    <!-- =======================================================================
-         2. EDITORIAL HERO & LIVE KEY-NUMBERS STRIP
-         ======================================================================= -->
-    <section class="se-editorial-hero" aria-labelledby="hero-title" style="padding-top: 4rem; padding-bottom: 2rem;">
-      <div class="se-editorial-container">
-        <div style="max-width: 840px;">
-          <div style="display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--se-font-mono); font-size: var(--se-text-xs); color: var(--se-teal-live); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem;">
-            <span>● Spaceborne Observation &middot; Open Telemetry</span>
-          </div>
-          <h1 id="hero-title" style="font-family: var(--se-font-serif); font-size: clamp(2.5rem, 5vw, 4.2rem); font-weight: 400; line-height: 1.1; letter-spacing: -0.025em; color: var(--se-text-primary); margin-bottom: 1.25rem;">
-            Reading the signals of a changing Earth.
-          </h1>
-          <p style="font-family: var(--se-font-sans); font-size: clamp(1.05rem, 1.8vw, 1.25rem); line-height: 1.6; color: var(--se-text-secondary); margin-bottom: 2rem; max-width: 68ch;">
-            Signal Earth explores environmental dynamics across extreme planetary terrains through satellite radiometry, continuous regulatory telemetry audits, and reproducible scientific analysis with zero sponsored bias.
-          </p>
-          <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
-            <a href="#globe-section" class="se-editorial-btn-primary">
-              Explore the globe &darr;
-            </a>
-            <a href="#investigations" class="se-editorial-btn-secondary">
-              Read our investigations
-            </a>
-          </div>
-        </div>
-
-        <!-- Live Key-Numbers Strip (Client fetches /api/key-numbers with fallback to data/key-numbers.json) -->
-        <div class="se-key-numbers-strip" id="key-numbers-strip" aria-label="Live Planetary Indicators">
-          <div class="se-key-number-item">
-            <span class="se-key-num-label">Global Temp Anomaly</span>
-            <span class="se-key-num-val" id="kn-temp-val">+1.47°C</span>
-            <a id="kn-temp-src" href="https://climate.copernicus.eu" target="_blank" rel="noopener noreferrer" class="se-key-num-src">
-              Copernicus C3S / ERA5 &rarr;
-            </a>
-          </div>
-          <div class="se-key-number-item">
-            <span class="se-key-num-label">Atmospheric CO₂</span>
-            <span class="se-key-num-val" id="kn-co2-val">426.07 ppm</span>
-            <a id="kn-co2-src" href="https://gml.noaa.gov/ccgg/trends/data.html" target="_blank" rel="noopener noreferrer" class="se-key-num-src">
-              NOAA Mauna Loa &rarr;
-            </a>
-          </div>
-          <div class="se-key-number-item">
-            <span class="se-key-num-label">Arctic Sea Ice Minimum</span>
-            <span class="se-key-num-val" id="kn-ice-val">4.60M km²</span>
-            <a id="kn-ice-src" href="https://nsidc.org/arcticseaicenews/" target="_blank" rel="noopener noreferrer" class="se-key-num-src">
-              NSIDC Sea Ice Index &rarr;
-            </a>
-          </div>
-          <div class="se-key-number-item">
-            <span class="se-key-num-label">Sea Level Rise Trend</span>
-            <span class="se-key-num-val" id="kn-sea-val">+4.5 mm/yr</span>
-            <a id="kn-sea-src" href="https://climate.nasa.gov/vital-signs/sea-level/" target="_blank" rel="noopener noreferrer" class="se-key-num-src">
-              NASA Satellite Altimetry &rarr;
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =======================================================================
-         3. OUR FOUR INVESTIGATIONS: DIRECT LINK CARDS ONLY
-         Rule: No copied text, tabs or charts. 4 cards in 4 columns, each a real <a>.
-         ======================================================================= -->
-    <section id="investigations" style="padding: 4.5rem 0;" aria-labelledby="inv-heading">
-      <div class="se-editorial-container">
-        <div class="se-editorial-section-header">
-          <span class="se-stream-card-tag" style="color: var(--se-teal-live);">Peer-Grade Research</span>
-          <h2 id="inv-heading" class="se-editorial-section-title">
-            Our Four Investigations
-          </h2>
-          <p class="se-editorial-section-intro">
-            Quantitative evaluations into atmospheric particulate dynamics, high-resolution thermal infrared zoning, and statutory NAQI formulations.
-          </p>
-        </div>
-
-        <div class="se-investigations-grid">
-          <!-- Card 1: Kanpur Particulates -->
-          <a href="investigations/kanpur-particulates.html" class="se-investigation-card" aria-label="Read Kanpur Particulates & Winter Multipliers investigation">
-            <figure class="se-inv-fig">
-              <img src="assets/satellite_view_kanpur_haze_20211111.jpg" alt="NASA Aqua MODIS regional haze over northern India" width="400" height="250" loading="lazy">
-              <span class="se-inv-fig-credit">NASA Aqua MODIS &middot; 250m</span>
-            </figure>
-            <div class="se-inv-body">
-              <span class="se-inv-num">Investigation 01</span>
-              <h3 class="se-inv-title">Kanpur Particulates &amp; Winter Multipliers</h3>
-              <p class="se-inv-teaser">Multi-year PM2.5 audit: winter peaks 4.2&times; the summer baseline.</p>
-              <span class="se-inv-link-text">Read investigation &rarr;</span>
-            </div>
-          </a>
-
-          <!-- Card 2: Landsat UHI -->
-          <a href="investigations/landsat-uhi.html" class="se-investigation-card" aria-label="Read Intra-Urban 30m Landsat Thermal Zoning investigation">
-            <figure class="se-inv-fig">
-              <img src="assets/kanpur-uhi/kanpur-uhi-30m.png" alt="USGS Landsat 8/9 30m thermal radiometry map" width="400" height="250" loading="lazy">
-              <span class="se-inv-fig-credit">USGS Landsat 8/9 TIRS-2 &middot; 30m</span>
-            </figure>
-            <div class="se-inv-body">
-              <span class="se-inv-num">Investigation 02</span>
-              <h3 class="se-inv-title">Intra-Urban 30 m Landsat Thermal Zoning</h3>
-              <p class="se-inv-teaser">Landsat thermal bands reveal a +3.6 K urban heat island.</p>
-              <span class="se-inv-link-text">Read investigation &rarr;</span>
-            </div>
-          </a>
-
-          <!-- Card 3: Delhi NAQI -->
-          <a href="investigations/delhi-naqi.html" class="se-investigation-card" aria-label="Read Delhi NAQI Criteria Pollutant Dominance investigation">
-            <figure class="se-inv-fig">
-              <img src="assets/delhi_iss_night.jpg" alt="Spaceborne nighttime view of urban radiance over Delhi NCR from ISS" width="400" height="250" loading="lazy">
-              <span class="se-inv-fig-credit">ISS Night Radiance &middot; Megacity</span>
-            </figure>
-            <div class="se-inv-body">
-              <span class="se-inv-num">Investigation 03</span>
-              <h3 class="se-inv-title">Delhi NAQI Criteria Pollutant Dominance</h3>
-              <p class="se-inv-teaser">Which pollutant sets Delhi's AQI, and when.</p>
-              <span class="se-inv-link-text">Read investigation &rarr;</span>
-            </div>
-          </a>
-
-          <!-- Card 4: Inversion Dynamics -->
-          <a href="investigations/inversion-dynamics.html" class="se-investigation-card" aria-label="Read Atmospheric Inversion Dynamics investigation">
-            <figure class="se-inv-fig">
-              <img src="assets/aerosol_smog_inversion.jpg" alt="Atmospheric boundary layer inversion suppressing vertical mixing" width="400" height="250" loading="lazy">
-              <span class="se-inv-fig-credit">ERA5 Reanalysis &middot; Boundary Physics</span>
-            </figure>
-            <div class="se-inv-body">
-              <span class="se-inv-num">Investigation 04</span>
-              <h3 class="se-inv-title">Atmospheric Inversion Dynamics</h3>
-              <p class="se-inv-teaser">Why winter air stops moving and pollution stays trapped.</p>
-              <span class="se-inv-link-text">Read investigation &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <div style="text-align: right; margin-top: 1rem;">
-          <a href="research.html" class="se-editorial-inline-link" style="font-weight: 600;">
-            View all research &amp; investigations &rarr;
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- =======================================================================
-         4. CENTERPIECE: INTERACTIVE ENVIRONMENTAL GLOBE (85vh, Full Width)
-         ======================================================================= -->
-    <section class="se-globe-wrapper" id="globe-section" aria-label="Interactive 3D Environmental Globe">
-      <div id="globe-container"></div>
-
-      <!-- Skeleton loading indicator -->
-      <div id="globe-skeleton" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: #0A1628; z-index: 10;">
-        <div style="font-family: var(--se-font-mono); font-size: 0.85rem; color: #1FB6A6; display: flex; align-items: center; gap: 0.5rem;">
-          <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #1FB6A6; animation: sePulse 1.5s infinite;"></span>
-          Initializing Planetary Orbital Satellite Globe...
-        </div>
-      </div>
-
-      <!-- Overlay Bar: Legend and Category Filters -->
-      <div class="se-globe-nav-overlay">
-        <!-- Quick-Select Region Pills Strip -->
-        <div class="se-globe-pills-bar" id="globe-regions-pills" role="toolbar" aria-label="Quick Select Planetary Observation Stations">
-          <!-- Populated dynamically by assets/globe-app.js -->
-        </div>
-
-        <div class="se-globe-legend-bar">
-          <span class="se-globe-legend-title">Issue Filters:</span>
-          <button type="button" class="se-globe-filter-btn active" data-filter="heat" aria-pressed="true">
-            <span class="se-filter-dot dot-heat"></span> Heat
-          </button>
-          <button type="button" class="se-globe-filter-btn active" data-filter="air quality" aria-pressed="true">
-            <span class="se-filter-dot dot-air"></span> Air Quality
-          </button>
-          <button type="button" class="se-globe-filter-btn active" data-filter="ice" aria-pressed="true">
-            <span class="se-filter-dot dot-ice"></span> Ice
-          </button>
-          <button type="button" class="se-globe-filter-btn active" data-filter="forest" aria-pressed="true">
-            <span class="se-filter-dot dot-forest"></span> Forest
-          </button>
-          <button type="button" class="se-globe-filter-btn active" data-filter="sea level" aria-pressed="true">
-            <span class="se-filter-dot dot-sea"></span> Sea Level
-          </button>
-          <button type="button" class="se-globe-filter-btn active" data-filter="coral" aria-pressed="true">
-            <span class="se-filter-dot dot-coral"></span> Coral
-          </button>
-          <button type="button" class="se-globe-filter-btn active" data-filter="drought" aria-pressed="true">
-            <span class="se-filter-dot dot-drought"></span> Drought
-          </button>
-        </div>
-
-        <a href="#globe-regions-list" class="se-stream-btn" style="background: rgba(10,22,40,0.88); color: #F8FAFC; border-color: rgba(255,255,255,0.2);">
-          Browse Regions (A11y) &darr;
-        </a>
-      </div>
-
-      <!-- Sliding Side Drawer Panel -->
-      <aside class="se-globe-drawer" id="globe-drawer" aria-hidden="true" aria-labelledby="drawer-region-name">
-        <button type="button" class="se-drawer-close-btn" id="globe-drawer-close" aria-label="Close region panel">
-          &times;
-        </button>
-
-        <span id="drawer-issue-badge" class="se-drawer-badge">Particulate Stagnation &amp; Hiatus</span>
-        <h2 id="drawer-region-name" class="se-drawer-title">Kanpur Observatory</h2>
-        <div id="drawer-coords" class="se-drawer-coords">26.4499°N, 80.3319°E · Central Indo-Gangetic Basin, India</div>
-
-        <!-- NASA Worldview Snapshot Container -->
-        <div style="margin-bottom: 1.25rem;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
-            <span style="font-family: var(--se-font-mono); font-size: 0.68rem; color: #94A3B8; text-transform: uppercase;">
-              NASA Worldview Snapshot
-            </span>
-            <input type="date" id="drawer-date-picker" style="background: #0A1628; color: #F8FAFC; border: 1px solid rgba(255,255,255,0.2); font-family: var(--se-font-mono); font-size: 0.7rem; padding: 2px 6px; border-radius: 3px;">
-          </div>
-
-          <div class="se-drawer-img-wrap">
-            <img id="drawer-snapshot-img" src="assets/regions/kanpur.jpg" alt="Recent satellite observation from NASA Worldview">
-          </div>
-
-          <div id="drawer-snapshot-status" style="font-family: var(--se-font-mono); font-size: 0.68rem; color: #64748B; margin-bottom: 0.35rem;"></div>
-
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <label style="font-family: var(--se-font-mono); font-size: 0.68rem; color: #94A3B8; display: flex; align-items: center; gap: 0.4rem; cursor: pointer;">
-              <input type="checkbox" id="drawer-compare-toggle"> Compare with 10 years ago
-            </label>
-            <a id="drawer-worldview-link" href="https://worldview.earthdata.nasa.gov" target="_blank" rel="noopener noreferrer" style="font-family: var(--se-font-mono); font-size: 0.68rem; color: #1FB6A6; text-decoration: none;">
-              Open in Worldview &rarr;
-            </a>
-          </div>
-
-          <div id="drawer-compare-wrap" style="display: none; margin-top: 0.75rem;">
-            <div style="font-family: var(--se-font-mono); font-size: 0.68rem; color: #F2A33A; margin-bottom: 0.25rem;">
-              Comparison: 10 Years Prior
-            </div>
-            <div class="se-drawer-img-wrap">
-              <img id="drawer-compare-img" src="assets/regions/kanpur_10yr.jpg" alt="10 years ago satellite observation comparison">
-            </div>
-          </div>
-        </div>
-
-        <!-- Location Environmental Impact Callout -->
-        <div class="se-drawer-impact-card">
-          <div class="se-drawer-impact-title">
-            <span>&#9888;</span> Regional Environmental Impact
-          </div>
-          <p class="se-drawer-impact-desc" id="drawer-impact-desc">
-            Meteorological inversions and geographic containment multiply particulate concentrations fourfold, causing severe cardiopulmonary morbidity across the central Ganga valley.
-          </p>
-        </div>
-
-        <!-- 3 Key Dated Metrics -->
-        <div style="margin-bottom: 1.25rem;">
-          <h3 style="font-family: var(--se-font-mono); font-size: 0.72rem; color: #94A3B8; text-transform: uppercase; margin: 0 0 0.5rem;">
-            Empirical Telemetry Readouts
-          </h3>
-          <div id="drawer-metrics-list"></div>
-        </div>
-
-        <!-- Context & Signals -->
-        <div style="margin-bottom: 1.5rem; font-family: var(--se-font-sans); font-size: 0.88rem; line-height: 1.6; color: #CBD5E1;">
-          <div style="margin-bottom: 0.75rem;">
-            <strong style="color: #F8FAFC; display: block; font-family: var(--se-font-mono); font-size: 0.72rem; text-transform: uppercase; margin-bottom: 0.2rem;">Ecological Significance:</strong>
-            <p id="drawer-why-matters" style="margin: 0;">Multiplies PM2.5 concentrations 4.2x above baseline with severe public health impact.</p>
-          </div>
-          <div>
-            <strong style="color: #F8FAFC; display: block; font-family: var(--se-font-mono); font-size: 0.72rem; text-transform: uppercase; margin-bottom: 0.2rem;">What the Signal Shows:</strong>
-            <p id="drawer-signal-shows" style="margin: 0;">Ground telemetry documents a 4.2× winter surge ratio alongside an 855-day unmonitored regulatory hiatus.</p>
-          </div>
-        </div>
-
-        <!-- Actions -->
-        <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);">
-          <a id="drawer-investigation-link" href="#" class="se-editorial-btn-primary" style="width: 100%; text-align: center; margin-bottom: 0.75rem;">
-            Read Related Signal Earth Investigation &rarr;
-          </a>
-          <div style="display: flex; gap: 0.5rem; align-items: center;">
-            <input type="text" id="drawer-share-input" readonly style="flex: 1; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.15); color: #94A3B8; font-family: var(--se-font-mono); font-size: 0.68rem; padding: 6px 8px; border-radius: 4px;">
-            <button type="button" id="drawer-copy-share-btn" class="se-stream-btn" style="font-size: 0.68rem; padding: 5px 10px; color: #F8FAFC; border-color: rgba(255,255,255,0.2);">
-              Copy
-            </button>
-          </div>
-        </div>
-      </aside>
-    </section>
-
-    <!-- Accessible Keyboard Region Table -->
-    <section id="globe-regions-list" style="padding: 2.5rem 0; background: var(--se-bg-page); border-bottom: 1px solid var(--se-border);">
-      <div class="se-editorial-container">
-        <h3 style="font-family: var(--se-font-serif); font-size: 1.5rem; margin: 0 0 0.5rem;">
-          Planetary Observation Stations (Keyboard Access)
-        </h3>
-        <p style="font-family: var(--se-font-sans); font-size: 0.85rem; color: var(--se-text-secondary); margin-bottom: 1.25rem;">
-          Keyboard-navigable index of all 14 active planetary observation regions.
+    <!-- 1. Hero -->
+    <section class="home-section" aria-labelledby="hero-h1">
+      <div class="se-container-text">
+        <h1 class="home-hero-h1" id="hero-h1">Reading the signals of a changing Earth.</h1>
+        <p class="home-hero-sub">
+          Independent analysis of air quality and urban heat in the Indo-Gangetic Basin using satellite and open monitoring data.
         </p>
+        <div class="home-hero-links">
+          <a href="#investigations">Read the investigations</a>
+          <a href="globe.html">Explore the globe</a>
+        </div>
+      </div>
+    </section>
 
-        <div style="overflow-x: auto;">
-          <table class="se-table" style="width: 100%; border-collapse: collapse; text-align: left;">
+    <!-- 2. Four Headline Numbers in One Row (960px max width) -->
+    <section class="home-section" aria-label="Key indicators">
+      <div class="se-container-wide">
+        <div class="home-stats-row">
+          <div class="home-stat-item">
+            <div class="home-stat-num">+1.47 °C</div>
+            <div class="home-stat-label">Global temperature anomaly</div>
+            <div class="home-stat-meta">Year: 2024 · Baseline: 1850–1900 pre-industrial</div>
+            <div class="home-stat-src"><a href="https://climate.copernicus.eu" target="_blank" rel="noopener noreferrer">Copernicus C3S / ERA5</a></div>
+          </div>
+          <div class="home-stat-item">
+            <div class="home-stat-num">426.07 ppm</div>
+            <div class="home-stat-label">Atmospheric CO2 concentration</div>
+            <div class="home-stat-meta">Year: 2024 annual mean · Baseline: ~280 ppm pre-industrial</div>
+            <div class="home-stat-src"><a href="https://gml.noaa.gov/ccgg/trends/data.html" target="_blank" rel="noopener noreferrer">NOAA GML Mauna Loa</a></div>
+          </div>
+          <div class="home-stat-item">
+            <div class="home-stat-num">4.28M km²</div>
+            <div class="home-stat-label">Arctic sea ice minimum extent</div>
+            <div class="home-stat-meta">Year: September 2024 · Baseline: 1981–2010 median (6.22M km²)</div>
+            <div class="home-stat-src"><a href="https://nsidc.org/arcticseaicenews/" target="_blank" rel="noopener noreferrer">NSIDC Sea Ice Index</a></div>
+          </div>
+          <div class="home-stat-item">
+            <div class="home-stat-num">+4.5 mm/yr</div>
+            <div class="home-stat-label">Sea level rise trend</div>
+            <div class="home-stat-meta">Year: 1993–2024 · Baseline: TODO (satellite altimetry record trend)</div>
+            <div class="home-stat-src"><a href="https://climate.nasa.gov/vital-signs/sea-level/" target="_blank" rel="noopener noreferrer">NASA Satellite Altimetry</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Investigations: Four Rows -->
+    <section class="home-section" id="investigations" aria-labelledby="inv-title">
+      <div class="se-container-text">
+        <h2 class="home-section-title" id="inv-title">Investigations</h2>
+        <div class="home-inv-list">
+          <!-- Investigation 01 -->
+          <article class="home-inv-row">
+            <img class="home-inv-fig" src="assets/kanpur/01_timeseries.png" alt="Timeseries of daily particulate observations across Kanpur stations" loading="lazy">
+            <div class="home-inv-body">
+              <h3 class="home-inv-title">
+                <a href="investigations/kanpur-particulates.html">01 · Kanpur Particulates &amp; Seasonal Multipliers</a>
+              </h3>
+              <p class="home-inv-finding">
+                Multi-year ground station audit shows winter PM2.5 levels reach 2.4x the summer baseline, punctuated by an unmonitored 855-day hiatus.
+              </p>
+              <div><a href="investigations/kanpur-particulates.html" class="home-inv-link">Read investigation &rarr;</a></div>
+            </div>
+          </article>
+
+          <!-- Investigation 02 -->
+          <article class="home-inv-row">
+            <img class="home-inv-fig" src="assets/kanpur-uhi/kanpur-uhi-30m.png" alt="Landsat 30m thermal radiometry zoning map" loading="lazy">
+            <div class="home-inv-body">
+              <h3 class="home-inv-title">
+                <a href="investigations/landsat-uhi.html">02 · Intra-Urban 30 m Landsat Thermal Zoning</a>
+              </h3>
+              <p class="home-inv-finding">
+                TIRS thermal bands (100 m native, resampled to 30 m; Landsat 9 carries TIRS-2) identify localized surface urban heat island deltas across Kanpur.
+              </p>
+              <div><a href="investigations/landsat-uhi.html" class="home-inv-link">Read investigation &rarr;</a></div>
+            </div>
+          </article>
+
+          <!-- Investigation 03 -->
+          <article class="home-inv-row">
+            <img class="home-inv-fig" src="assets/delhi/01_aqi_time_series.png" alt="Delhi statutory NAQI criteria pollutant timeline" loading="lazy">
+            <div class="home-inv-body">
+              <h3 class="home-inv-title">
+                <a href="investigations/delhi-naqi.html">03 · Delhi NAQI Criteria Pollutant Dominance</a>
+              </h3>
+              <p class="home-inv-finding">
+                Particulate matter (PM2.5 and PM10) drove statutory AQI on 95.3% of validated station-days, with PM2.5 dominant on 51.8% of days.
+              </p>
+              <div><a href="investigations/delhi-naqi.html" class="home-inv-link">Read investigation &rarr;</a></div>
+            </div>
+          </article>
+
+          <!-- Investigation 04 -->
+          <article class="home-inv-row">
+            <img class="home-inv-fig" src="assets/aerosol_smog_inversion.jpg" alt="Aerosol layer trapped beneath nocturnal boundary layer inversion" loading="lazy">
+            <div class="home-inv-body">
+              <h3 class="home-inv-title">
+                <a href="investigations/inversion-dynamics.html">04 · Atmospheric Inversion Dynamics</a>
+              </h3>
+              <p class="home-inv-finding">
+                Shallow winter boundary layers and suppressed nocturnal ventilation trap particulate concentrations across northern India.
+              </p>
+              <div><a href="investigations/inversion-dynamics.html" class="home-inv-link">Read investigation &rarr;</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. State of the Planet: Plain Table -->
+    <section class="home-section" aria-labelledby="planet-title">
+      <div class="se-container-text">
+        <h2 class="home-section-title" id="planet-title">State of the planet</h2>
+        <div class="home-table-wrap">
+          <table class="home-table">
             <thead>
-              <tr style="border-bottom: 2px solid var(--se-border);">
-                <th style="padding: 0.6rem;">Station</th>
-                <th style="padding: 0.6rem;">Issue</th>
-                <th style="padding: 0.6rem;">Coordinates</th>
-                <th style="padding: 0.6rem;">Action</th>
+              <tr>
+                <th>Indicator</th>
+                <th>Value</th>
+                <th>Year</th>
+                <th>Source</th>
               </tr>
             </thead>
-            <tbody id="globe-keyboard-tbody"></tbody>
+            <tbody>
+              <tr>
+                <td>Global Surface Temperature</td>
+                <td class="mono">+1.47 °C</td>
+                <td>2024</td>
+                <td><a href="reports.html#c3s_15c_tracker">Copernicus C3S / WMO</a></td>
+              </tr>
+              <tr>
+                <td>CCPI Climate Performance</td>
+                <td>Ranks 1–3 vacant; Denmark 4th</td>
+                <td>2026</td>
+                <td><a href="reports.html#ccpi_rankings">Germanwatch / NewClimate</a></td>
+              </tr>
+              <tr>
+                <td>Global Carbon Budget</td>
+                <td class="mono">38.1 GtCO2 fossil emissions</td>
+                <td>2026</td>
+                <td><a href="reports.html#global_carbon_budget">Global Carbon Project</a></td>
+              </tr>
+              <tr>
+                <td>UNEP Emissions Gap</td>
+                <td class="mono">2.8 °C projected warming</td>
+                <td>2026</td>
+                <td><a href="reports.html#unep_emissions_gap">UNEP</a></td>
+              </tr>
+              <tr>
+                <td>Ambient Particulate Pollution</td>
+                <td class="mono">48.9 µg/m³ PM2.5 (India)</td>
+                <td>2026</td>
+                <td><a href="reports.html#iqair_air_quality">IQAir</a></td>
+              </tr>
+              <tr>
+                <td>Global Coral Reef Bleaching</td>
+                <td class="mono">73.7% of global reef area</td>
+                <td>2024–2026</td>
+                <td><a href="reports.html#noaa_coral_bleaching">NOAA Coral Reef Watch</a></td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
     </section>
 
-    <!-- =======================================================================
-         5. GLOBAL REPORTS AND RANKINGS SECTION
-         ======================================================================= -->
-    <section style="padding: 5rem 0;" aria-labelledby="reports-heading">
-      <div class="se-editorial-container">
-        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2.5rem; flex-wrap: wrap; gap: 1rem;">
-          <div>
-            <span class="se-stream-card-tag" style="color: var(--se-teal-live);">Institutional Benchmarks</span>
-            <h2 id="reports-heading" class="se-editorial-section-title">
-              The State of the Planet
-            </h2>
-            <p class="se-editorial-section-intro">
-              Curated primary findings from institutional climate evaluations, global greenhouse budgets, and statutory air quality rankings.
-            </p>
-          </div>
-          <div style="font-family: var(--se-font-mono); font-size: var(--se-text-xs); color: var(--se-text-muted);">
-            Last verified: 16 October 2026
-          </div>
+    <!-- 5. Method and Open Data -->
+    <section class="home-section" aria-labelledby="method-title">
+      <div class="se-container-text">
+        <h2 class="home-section-title" id="method-title">Method and open data</h2>
+        <p class="home-method-p">
+          Signal Earth analyzes open environmental observations from satellite radiometers and statutory regulatory monitoring networks. When Kanpur experienced an operational monitoring station hiatus of 855 days from October 17, 2022 to February 17, 2025, we preserved the gap rather than manufacturing synthetic figures.
+        </p>
+        <div class="home-method-links">
+          <a href="methodology.html">Methodology</a>
+          <a href="known-problems.html">Known Problems</a>
+          <a href="numbers_ledger.csv" download>Numbers Ledger (CSV)</a>
+          <a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-
-        <div class="se-reports-trio-grid">
-          <!-- Report 1: 1.5°C Tracker -->
-          <a href="reports.html#c3s_15c_tracker" class="se-mini-report-card">
-            <span class="se-mini-report-cat">Global Temperature</span>
-            <h3 class="se-mini-report-title">1.5°C Threshold Tracker</h3>
-            <p class="se-mini-report-finding">
-              2025 global surface air temp was +1.47°C above pre-industrial; the 3-year running mean crossed +1.52°C.
-            </p>
-            <div class="se-mini-report-source">Copernicus C3S / WMO &middot; 2026 &rarr;</div>
-          </a>
-
-          <!-- Report 2: CCPI Rankings -->
-          <a href="reports.html#ccpi_rankings" class="se-mini-report-card">
-            <span class="se-mini-report-cat">Policy Comparison</span>
-            <h3 class="se-mini-report-title">CCPI 2026 Country Rankings</h3>
-            <p class="se-mini-report-finding">
-              Ranks 1–3 remain vacant; Denmark ranks 4th, while Russia, USA, and Saudi Arabia occupy the lowest positions.
-            </p>
-            <div class="se-mini-report-source">Germanwatch / NewClimate &middot; 2026 &rarr;</div>
-          </a>
-
-          <!-- Report 3: Global Carbon Budget -->
-          <a href="reports.html#global_carbon_budget" class="se-mini-report-card">
-            <span class="se-mini-report-cat">Carbon Accounting</span>
-            <h3 class="se-mini-report-title">Global Carbon Budget</h3>
-            <p class="se-mini-report-finding">
-              Fossil CO₂ emissions reached 38.1 GtCO₂; remaining 1.5°C quota sits at ~170 GtCO₂ (approx. 4 years).
-            </p>
-            <div class="se-mini-report-source">Global Carbon Project &middot; 2026 &rarr;</div>
-          </a>
-
-          <!-- Report 4: UNEP Emissions Gap -->
-          <a href="reports.html#unep_emissions_gap" class="se-mini-report-card">
-            <span class="se-mini-report-cat">Pledge Alignment</span>
-            <h3 class="se-mini-report-title">UNEP Emissions Gap Report</h3>
-            <p class="se-mini-report-finding">
-              Current policies project 2.8°C of warming by 2100; a 42% emissions reduction is required by 2030.
-            </p>
-            <div class="se-mini-report-source">UNEP &middot; 2026 &rarr;</div>
-          </a>
-
-          <!-- Report 5: IQAir Air Quality -->
-          <a href="reports.html#iqair_air_quality" class="se-mini-report-card">
-            <span class="se-mini-report-cat">Aerosol Pollution</span>
-            <h3 class="se-mini-report-title">World Air Quality Report</h3>
-            <p class="se-mini-report-finding">
-              Pakistan and Bangladesh rank most polluted globally; India ranks 6th with 48.9 µg/m³ PM2.5 (9.8× WHO limit).
-            </p>
-            <div class="se-mini-report-source">IQAir &middot; 2026 &rarr;</div>
-          </a>
-
-          <!-- Report 6: NOAA Coral Bleaching -->
-          <a href="reports.html#noaa_coral_bleaching" class="se-mini-report-card">
-            <span class="se-mini-report-cat">Ocean &amp; Biosphere</span>
-            <h3 class="se-mini-report-title">4th Global Coral Bleaching Event</h3>
-            <p class="se-mini-report-finding">
-              Satellite SST records mass thermal stress across over 73% of global coral reef areas.
-            </p>
-            <div class="se-mini-report-source">NOAA Coral Reef Watch &middot; 2026 &rarr;</div>
-          </a>
-        </div>
-
-        <div style="text-align: right;">
-          <a href="reports.html" class="se-editorial-inline-link">
-            Explore complete reports registry with methodology notes &rarr;
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- =======================================================================
-         6. RESEARCH AND PAPERS FEED
-         ======================================================================= -->
-    <section style="padding: 5rem 0; background: var(--se-bg-surface); border-top: 1px solid var(--se-border); border-bottom: 1px solid var(--se-border);" aria-labelledby="papers-heading">
-      <div class="se-editorial-container">
-        <div class="se-editorial-section-header">
-          <span class="se-stream-card-tag" style="color: var(--se-teal-live);">Peer-Reviewed Literature</span>
-          <h2 id="papers-heading" class="se-editorial-section-title">
-            Latest Research &amp; Papers Feed
-          </h2>
-          <p class="se-editorial-section-intro">
-            Curated papers across Arctic amplification, boundary layer thermodynamics, urban heat islands, and remote sensing methods.
-          </p>
-
-          <!-- Filter chips -->
-          <div class="se-papers-filter-row" role="tablist">
-            <button type="button" class="se-paper-chip active" data-filter="all" aria-pressed="true">All Fields</button>
-            <button type="button" class="se-paper-chip" data-filter="climate" aria-pressed="false">Climate</button>
-            <button type="button" class="se-paper-chip" data-filter="air quality" aria-pressed="false">Air Quality</button>
-            <button type="button" class="se-paper-chip" data-filter="cryosphere" aria-pressed="false">Cryosphere</button>
-            <button type="button" class="se-paper-chip" data-filter="heat" aria-pressed="false">Thermal Heat</button>
-            <button type="button" class="se-paper-chip" data-filter="methods" aria-pressed="false">Methods</button>
-          </div>
-        </div>
-
-        <div class="se-papers-grid" id="papers-grid">
-          <!-- Paper 1 -->
-          <a href="https://doi.org/10.1038/s43247-022-00498-3" target="_blank" rel="noopener noreferrer" class="se-paper-card" data-category="cryosphere">
-            <span class="se-paper-journal">Communications Earth &amp; Environment &middot; 2022</span>
-            <h3 class="se-paper-title">The Arctic has warmed nearly four times faster than the globe since 1979</h3>
-            <p class="se-paper-takeaway">Observational evidence confirms four-fold polar amplification driven by sea ice-albedo feedbacks, far exceeding CMIP6 model projections.</p>
-            <span class="se-paper-doi">DOI: 10.1038/s43247-022-00498-3 &rarr;</span>
-          </a>
-
-          <!-- Paper 2 -->
-          <a href="https://doi.org/10.5194/essd-15-5301-2023" target="_blank" rel="noopener noreferrer" class="se-paper-card" data-category="climate">
-            <span class="se-paper-journal">Earth System Science Data &middot; 2023</span>
-            <h3 class="se-paper-title">Global Carbon Budget: Fossil Emissions and Land-Use Sinks</h3>
-            <p class="se-paper-takeaway">Global fossil fuel emissions reached unprecedented rates with less than 170 GtCO₂ remaining to stay below 1.5°C of warming.</p>
-            <span class="se-paper-doi">DOI: 10.5194/essd-15-5301-2023 &rarr;</span>
-          </a>
-
-          <!-- Paper 3 -->
-          <a href="https://doi.org/10.1038/s41586-023-06970-0" target="_blank" rel="noopener noreferrer" class="se-paper-card" data-category="climate">
-            <span class="se-paper-journal">Nature &middot; 2024</span>
-            <h3 class="se-paper-title">Critical transitions and compounding stressors in the Amazon forest</h3>
-            <p class="se-paper-takeaway">By 2050, 10% to 47% of the Amazon forest will be exposed to compounding disturbances, risking an ecosystem tipping point.</p>
-            <span class="se-paper-doi">DOI: 10.1038/s41586-023-06970-0 &rarr;</span>
-          </a>
-
-          <!-- Paper 4 -->
-          <a href="https://doi.org/10.5194/acp-12-1403-2012" target="_blank" rel="noopener noreferrer" class="se-paper-card" data-category="air quality">
-            <span class="se-paper-journal">Atmospheric Chemistry and Physics &middot; 2012</span>
-            <h3 class="se-paper-title">Aerosol optical properties &amp; forcing over the Indo-Gangetic Basin</h3>
-            <p class="se-paper-takeaway">Shallow winter boundary layers trap ground aerosol loadings, causing surface radiative cooling alongside lower tropospheric heating.</p>
-            <span class="se-paper-doi">DOI: 10.5194/acp-12-1403-2012 &rarr;</span>
-          </a>
-
-          <!-- Paper 5 -->
-          <a href="https://doi.org/10.1016/S2542-5196(20)30298-9" target="_blank" rel="noopener noreferrer" class="se-paper-card" data-category="air quality">
-            <span class="se-paper-journal">The Lancet Planetary Health &middot; 2021</span>
-            <h3 class="se-paper-title">Health and economic impact of air pollution across India</h3>
-            <p class="se-paper-takeaway">Ambient particulate pollution accounted for 1.67 million deaths in India, with Uttar Pradesh and the Gangetic plain facing the highest burden.</p>
-            <span class="se-paper-doi">DOI: 10.1016/S2542-5196(20)30298-9 &rarr;</span>
-          </a>
-
-          <!-- Paper 6 -->
-          <a href="https://doi.org/10.1002/qj.49710845502" target="_blank" rel="noopener noreferrer" class="se-paper-card" data-category="heat">
-            <span class="se-paper-journal">Quarterly Journal of the Royal Met Soc &middot; 1982</span>
-            <h3 class="se-paper-title">The energetic basis of the urban heat island and radiometry</h3>
-            <p class="se-paper-takeaway">Foundational formulation establishing how impervious urban geometry, canyon aspect ratio, and thermal inertia create localized urban heat deltas.</p>
-            <span class="se-paper-doi">DOI: 10.1002/qj.49710845502 &rarr;</span>
-          </a>
-        </div>
-
-        <div style="text-align: right; margin-top: 1.5rem;">
-          <a href="research.html" class="se-editorial-inline-link">
-            Explore complete scientific papers repository &rarr;
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- =======================================================================
-         7. SATELLITE ARCHIVE STRIP (Preserved Horizontal Marquee)
-         ======================================================================= -->
-    <section class="se-editorial-stream-section" aria-labelledby="stream-heading">
-      <div class="se-editorial-container">
-        <div class="se-stream-header-wrap">
-          <div>
-            <span class="se-editorial-kicker">Visual Observation Stream</span>
-            <h2 id="stream-heading" class="se-editorial-section-title">
-              Spaceborne Earth Observation Archive
-            </h2>
-            <p class="se-editorial-section-intro">
-              Continuous visual transect across planetary latitudes: from polar cryosphere fracture margins to regional aerosol stagnation and intra-urban thermal radiometry.
-            </p>
-          </div>
-          <div class="se-stream-controls">
-            <button type="button" id="stream-toggle-btn" class="se-stream-btn" aria-label="Pause or resume observation stream">
-              <span id="stream-toggle-icon">⏸</span>
-              <span id="stream-toggle-text">Pause Stream</span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="se-stream-wrap" aria-label="Sliding planetary photography carousel">
-        <div class="se-stream-track" id="se-stream-track">
-          <!-- Card 1: Arctic Sea Ice -->
-          <a href="https://worldview.earthdata.nasa.gov/?v=10,75,25,80&l=MODIS_Terra_CorrectedReflectance_TrueColor" target="_blank" rel="noopener noreferrer" class="se-stream-card">
-            <figure class="se-stream-card-figure">
-              <img src="assets/nasa_arctic_sea_ice.jpg" alt="Satellite view of arctic sea ice fractures and open ocean margins" width="700" height="400" loading="lazy">
-            </figure>
-            <div class="se-stream-card-body">
-              <span class="se-stream-card-tag">78&deg;N &middot; Polar Margin &middot; Cryosphere</span>
-              <h3 class="se-stream-card-title">Arctic Sea Ice Fracture</h3>
-              <p class="se-stream-card-desc">Fracturing sea ice sheets and summer melt margin dynamics over polar waters.</p>
-            </div>
-          </a>
-
-          <!-- Card 2: Indo-Gangetic Agricultural Smoke -->
-          <a href="https://worldview.earthdata.nasa.gov/?v=74,26,82,31&t=2021-11-05&l=MODIS_Terra_CorrectedReflectance_TrueColor" target="_blank" rel="noopener noreferrer" class="se-stream-card">
-            <figure class="se-stream-card-figure">
-              <img src="assets/hero_indo_gangetic_smoke_20211105.jpg" alt="NASA Terra MODIS satellite view of regional smoke plume across northern India" width="700" height="400" loading="lazy">
-            </figure>
-            <div class="se-stream-card-body">
-              <span class="se-stream-card-tag">28&deg;N &middot; NASA Terra MODIS &middot; Smoke</span>
-              <h3 class="se-stream-card-title">Ganga Basin Smoke Plume</h3>
-              <p class="se-stream-card-desc">Post-harvest agricultural burning smoke spreading across the northern plains.</p>
-            </div>
-          </a>
-
-          <!-- Card 3: Boundary Layer Haze -->
-          <a href="https://worldview.earthdata.nasa.gov/?v=78,25,83,28&t=2021-11-11&l=MODIS_Aqua_CorrectedReflectance_TrueColor" target="_blank" rel="noopener noreferrer" class="se-stream-card">
-            <figure class="se-stream-card-figure">
-              <img src="assets/satellite_view_kanpur_haze_20211111.jpg" alt="NASA Aqua MODIS satellite view of atmospheric haze over central Ganga valley" width="700" height="400" loading="lazy">
-            </figure>
-            <div class="se-stream-card-body">
-              <span class="se-stream-card-tag">26&deg;N &middot; NASA Aqua MODIS &middot; Boundary</span>
-              <h3 class="se-stream-card-title">Atmospheric Stagnation &amp; Haze</h3>
-              <p class="se-stream-card-desc">Dense winter aerosol entrapment beneath suppressed meteorological inversions.</p>
-            </div>
-          </a>
-
-          <!-- Card 4: Landsat 30m Thermal Radiometry -->
-          <a href="investigations/landsat-uhi.html" class="se-stream-card">
-            <figure class="se-stream-card-figure">
-              <img src="assets/kanpur-uhi/kanpur-uhi-30m.png" alt="USGS Landsat 30m thermal radiometry map over urban core" width="700" height="400" loading="lazy">
-            </figure>
-            <div class="se-stream-card-body">
-              <span class="se-stream-card-tag">26&deg;N &middot; Landsat 8/9 &middot; Thermal</span>
-              <h3 class="se-stream-card-title">30m Surface Thermal Radiometry</h3>
-              <p class="se-stream-card-desc">High-resolution infrared zoning exposing urban heat microclimates and industrial hotspots.</p>
-            </div>
-          </a>
-
-          <!-- Card 5: Delhi Night Orbital Radiance -->
-          <a href="investigations/delhi-naqi.html" class="se-stream-card">
-            <figure class="se-stream-card-figure">
-              <img src="assets/delhi_iss_night.jpg" alt="Spaceborne nighttime view of urban radiance over Delhi NCR from ISS" width="700" height="400" loading="lazy">
-            </figure>
-            <div class="se-stream-card-body">
-              <span class="se-stream-card-tag">28&deg;N &middot; ISS Orbital Radiance &middot; Megacity</span>
-              <h3 class="se-stream-card-title">Delhi Nocturnal Urban Footprint</h3>
-              <p class="se-stream-card-desc">Spaceborne night radiance capturing the spatial morphology of the National Capital Region.</p>
-            </div>
-          </a>
-
-          <!-- Card 6: Himalayan Haze Panorama -->
-          <a href="explained/temperature-inversion.html" class="se-stream-card">
-            <figure class="se-stream-card-figure">
-              <img src="assets/himalaya_haze_panorama.jpg" alt="Himalayan mountain range acting as topographic barrier to regional smog" width="700" height="400" loading="lazy">
-            </figure>
-            <div class="se-stream-card-body">
-              <span class="se-stream-card-tag">30&deg;N &middot; Orographic Trap &middot; Mountain</span>
-              <h3 class="se-stream-card-title">Himalayan Topographic Containment</h3>
-              <p class="se-stream-card-desc">The southern Himalayan mountain front physically trapping winter aerosols within the plains.</p>
-            </div>
-          </a>
-
-          <!-- Duplicate Set for Seamless Continuous Glide -->
-          <div class="se-stream-card" aria-hidden="true">
-            <figure class="se-stream-card-figure">
-              <img src="assets/nasa_arctic_sea_ice.jpg" alt="Arctic sea ice fracture overview" width="700" height="400" loading="lazy" aria-hidden="true">
-            </figure>
-            <div class="se-stream-card-body">
-              <span class="se-stream-card-tag">78&deg;N &middot; Polar Margin &middot; Cryosphere</span>
-              <h3 class="se-stream-card-title">Arctic Sea Ice Fracture</h3>
-              <p class="se-stream-card-desc">Fracturing sea ice sheets and summer melt margin dynamics over polar waters.</p>
-            </div>
-          </div>
-
-          <div class="se-stream-card" aria-hidden="true">
-            <figure class="se-stream-card-figure">
-              <img src="assets/hero_indo_gangetic_smoke_20211105.jpg" alt="Ganga Basin regional smoke plume overview" width="700" height="400" loading="lazy" aria-hidden="true">
-            </figure>
-            <div class="se-stream-card-body">
-              <span class="se-stream-card-tag">28&deg;N &middot; NASA Terra MODIS &middot; Smoke</span>
-              <h3 class="se-stream-card-title">Ganga Basin Smoke Plume</h3>
-              <p class="se-stream-card-desc">Post-harvest agricultural burning smoke spreading across the northern plains.</p>
-            </div>
-          </div>
-
-          <div class="se-stream-card" aria-hidden="true">
-            <figure class="se-stream-card-figure">
-              <img src="assets/satellite_view_kanpur_haze_20211111.jpg" alt="Atmospheric winter stagnation and haze overview" width="700" height="400" loading="lazy" aria-hidden="true">
-            </figure>
-            <div class="se-stream-card-body">
-              <span class="se-stream-card-tag">26&deg;N &middot; NASA Aqua MODIS &middot; Boundary</span>
-              <h3 class="se-stream-card-title">Atmospheric Stagnation &amp; Haze</h3>
-              <p class="se-stream-card-desc">Dense winter aerosol entrapment beneath suppressed meteorological inversions.</p>
-            </div>
-          </div>
-
-          <div class="se-stream-card" aria-hidden="true">
-            <figure class="se-stream-card-figure">
-              <img src="assets/kanpur-uhi/kanpur-uhi-30m.png" alt="Landsat 30m thermal radiometry overview" width="700" height="400" loading="lazy" aria-hidden="true">
-            </figure>
-            <div class="se-stream-card-body">
-              <span class="se-stream-card-tag">26&deg;N &middot; Landsat 8/9 &middot; Thermal</span>
-              <h3 class="se-stream-card-title">30m Surface Thermal Radiometry</h3>
-              <p class="se-stream-card-desc">High-resolution infrared zoning exposing urban heat microclimates and industrial hotspots.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =======================================================================
-         8. SCIENTIFIC INTEGRITY & DISCLOSURE BLOCK
-         ======================================================================= -->
-    <section class="se-editorial-section se-principles-section" aria-labelledby="principles-heading">
-      <div class="se-editorial-container">
-        <div class="se-editorial-section-header se-header-centered">
-          <span class="se-editorial-kicker">Scientific Integrity</span>
-          <h2 id="principles-heading" class="se-editorial-section-title">
-            Evidence before opinion.
-          </h2>
-          <p class="se-editorial-section-intro">
-            Environmental change deserves more than headlines. Signal Earth operates on three uncompromising scientific standards:
-          </p>
-        </div>
-
-        <div class="se-principles-grid">
-          <div class="se-principle-card">
-            <h3 class="se-principle-title">Traceable Sources</h3>
-            <p class="se-principle-desc">
-              Every data point traces directly to public spaceborne archives (NASA MODIS, USGS Landsat, ESA Sentinel) or official regulatory CAAQMS telemetry. Zero synthetic infilling or black-box tampering.
-            </p>
-          </div>
-
-          <div class="se-principle-card">
-            <h3 class="se-principle-title">Transparent Methods</h3>
-            <p class="se-principle-desc">
-              All statistical formulations, statutory CPCB NAQI breakpoint formulas, thermal radiance calibrations, and station operational hiatuses are explicitly documented and published.
-            </p>
-          </div>
-
-          <div class="se-principle-card">
-            <h3 class="se-principle-title">Reproducible Analysis</h3>
-            <p class="se-principle-desc">
-              All quantitative findings are accompanied by documented Python, SciPy, and Jupyter analysis notebooks hosted openly on GitHub for independent scientific verification.
-            </p>
-          </div>
-        </div>
-
-        <!-- Callout: 855-day Hiatus Policy -->
-        <div style="background: var(--se-bg-surface); border-left: 3px solid var(--se-amber-warm); padding: 1.5rem; margin-top: 2rem; border-radius: var(--se-radius-sm);">
-          <div style="font-family: var(--se-font-mono); font-size: var(--se-text-xs); color: var(--se-amber-warm); text-transform: uppercase; margin-bottom: 0.25rem;">
-            Empirical Disclosure
-          </div>
-          <p style="font-family: var(--se-font-sans); font-size: 0.9rem; line-height: 1.6; color: var(--se-text-secondary); margin: 0;">
-            <strong>The 855-Day Regulatory Hiatus:</strong> When monitoring stations fail, many dashboards synthetically interpolate missing values. Signal Earth explicitly discloses Kanpur's 855-day regulatory station interruption, preserving genuine data gaps as empirical truth.
-          </p>
-        </div>
-
-        <div class="se-principles-action" style="margin-top: 1.5rem;">
-          <a href="methodology.html" class="se-editorial-inline-link">
-            Read about initiative governance &amp; standards &rarr;
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- =======================================================================
-         9. OPEN DATA & COMPUTATIONAL STACK
-         ======================================================================= -->
-    <section style="padding: 4rem 0 5rem;" aria-label="Open Data and Computation">
-      <div class="se-editorial-container">
-        <div style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 2.5rem;">
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center;" class="se-forms-grid">
-            <div>
-              <span class="se-stream-card-tag" style="color: var(--se-teal-live);">Open Science</span>
-              <h2 style="font-family: var(--se-font-serif); font-size: 1.85rem; color: var(--se-text-primary); margin: 0.5rem 0 1rem;">
-                Open Code &amp; Calibrated Data Ledgers
-              </h2>
-              <p style="font-family: var(--se-font-sans); font-size: 0.95rem; line-height: 1.6; color: var(--se-text-secondary); margin-bottom: 1.5rem;">
-                Download our continuous multi-year numbers ledger in CSV format or execute our Python/SciPy processing workflows directly against NASA and USGS archives.
-              </p>
-              <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                <a href="numbers_ledger.csv" class="se-editorial-btn-primary" download>
-                  Download Numbers Ledger (CSV) &darr;
-                </a>
-                <a href="data.html" class="se-editorial-btn-secondary">
-                  Browse Data Registry
-                </a>
-              </div>
-            </div>
-
-            <div>
-              <div style="background: #0A1628; border: 1px solid #1E3456; border-radius: 6px; padding: 1.25rem; font-family: var(--se-font-mono); font-size: 0.78rem; color: #CBD5E1; line-height: 1.6; overflow-x: auto;">
-                <span style="color: #71717A;"># Planck thermal radiometry inversion</span><br>
-                <span style="color: #F472B6;">import</span> numpy <span style="color: #F472B6;">as</span> np, rasterio<br><br>
-                <span style="color: #71717A;"># Landsat 8/9 Band 10 TOA radiance to Brightness Temp</span><br>
-                L_lambda = ML * DN + AL<br>
-                BT = K2 / np.log((K1 / L_lambda) + <span style="color: #34D399;">1.0</span>)<br>
-                LST_celsius = BT - <span style="color: #34D399;">273.15</span><br>
-                print(<span style="color: #34D399;">f"Urban delta: {np.nanmean(LST_celsius):.2f}°C"</span>)
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =======================================================================
-         10. INTERACTIVE NETLIFY FORMS
-         ======================================================================= -->
-    <section style="padding: 4rem 0 5rem; background: var(--se-bg-page); border-top: 1px solid var(--se-border);" aria-label="Forms and Newsletter">
-      <div class="se-editorial-container">
-        <div class="se-forms-grid">
-          <!-- Form 1: Newsletter -->
-          <div class="se-form-card">
-            <h3 class="se-form-title">Get the Monthly Signal</h3>
-            <p class="se-form-desc">
-              A monthly brief analyzing one planetary signal, one satellite radiometry anomaly, and open reproducible code. Zero tracking cookies.
-            </p>
-            <form name="newsletter" method="POST" data-netlify="true" action="/thank-you.html">
-              <input type="hidden" name="form-name" value="newsletter">
-              <div class="se-input-group">
-                <label for="newsletter-email" class="se-input-label">Email Address</label>
-                <input type="email" id="newsletter-email" name="email" required placeholder="researcher@institution.org" class="se-input-field">
-              </div>
-              <button type="submit" class="se-editorial-btn-primary" style="width: 100%;">
-                Subscribe to Monthly Signal &rarr;
-              </button>
-            </form>
-          </div>
-
-          <!-- Form 2: Report a Data Error -->
-          <div class="se-form-card">
-            <h3 class="se-form-title">Report a Data Discrepancy</h3>
-            <p class="se-form-desc">
-              Spot an anomaly in our statutory NAQI calculations or Landsat Band 10 calibrations? Submit an empirical correction.
-            </p>
-            <form name="data-error" method="POST" data-netlify="true" action="/thank-you.html">
-              <input type="hidden" name="form-name" value="data-error">
-              <div class="se-input-group">
-                <label for="error-dataset" class="se-input-label">Investigation or Dataset</label>
-                <input type="text" id="error-dataset" name="dataset" required placeholder="e.g. Kanpur UHI / Landsat 30m" class="se-input-field">
-              </div>
-              <div class="se-input-group">
-                <label for="error-description" class="se-input-label">Discrepancy Details &amp; Citation URL</label>
-                <textarea id="error-description" name="description" required placeholder="Describe the observed calculation or telemetry discrepancy..." class="se-input-field se-textarea-field"></textarea>
-              </div>
-              <button type="submit" class="se-editorial-btn-secondary" style="width: 100%;">
-                Submit Scientific Correction &rarr;
-              </button>
-            </form>
-          </div>
-        </div>
+        <p class="home-correction-line">
+          Spot an error? Report a correction on <a href="https://github.com/avnish36singh-arch/signal-earth-portal/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a>.
+        </p>
       </div>
     </section>
   </main>
 
-  <!-- =======================================================================
-       11. EDITORIAL FOOTER
-       ======================================================================= -->
+  <!-- Standardized Footer -->
   <footer class="se-editorial-footer">
-    <div class="se-editorial-container">
-      <div class="se-editorial-footer-grid">
-        <!-- Brand Info -->
-        <div class="se-editorial-footer-brand-col">
-          <div class="se-editorial-footer-brand">
-            Signal Earth
-            <span class="se-wordmark-badge">Scientific Research</span>
-          </div>
-          <p class="se-editorial-footer-desc">
-            An independent environmental research initiative making planetary change visible through satellite radiometry, open telemetry, and reproducible scientific analysis.
-          </p>
-          <div style="margin-top: 0.5rem;">
-            <a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer" class="se-editorial-inline-link" style="font-family: var(--se-font-mono); font-size: 0.78rem;">
-              github.com/avnish36singh-arch/signal-earth-portal &rarr;
-            </a>
-          </div>
-        </div>
-
-        <!-- Navigation Columns -->
-        <div class="se-editorial-footer-nav-col">
-          <div>
-            <div class="se-editorial-footer-group-title">Research</div>
-            <ul class="se-editorial-footer-links">
-              <li><a href="research.html">Published Investigations</a></li>
-              <li><a href="data.html">Data &amp; Maps Registry</a></li>
-              <li><a href="reports.html">Reports &amp; Rankings</a></li>
-              <li><a href="briefs/index.html">Research Briefs</a></li>
-              <li><a href="rankings.html">Station Rankings</a></li>
-              <li><a href="investigations/kanpur-particulates.html">Kanpur Telemetry Audit</a></li>
-              <li><a href="investigations/landsat-uhi.html">Landsat 30m UHI</a></li>
-            </ul>
-          </div>
-          <div>
-            <div class="se-editorial-footer-group-title">Initiative</div>
-            <ul class="se-editorial-footer-links">
-              <li><a href="about.html">About Signal Earth</a></li>
-              <li><a href="methodology.html">Methodology &amp; Standards</a></li>
-              <li><a href="sources.html">Sources &amp; Sensors</a></li>
-              <li><a href="known-problems.html">Known Problems &amp; Hiatuses</a></li>
-              <li><a href="credits.html">Credits &amp; Citations</a></li>
-              <li><a href="privacy.html">Privacy &amp; Terms</a></li>
-            </ul>
-          </div>
-        </div>
+    <div class="se-footer-inner">
+      <div style="margin-bottom: 0.5rem; font-weight: 600; color: var(--home-text);">
+        Signal Earth
       </div>
-
-      <div class="se-editorial-footer-bottom">
-        <div>Signal Earth &middot; Open environmental science and reproducible analysis. Licensed under CC BY 4.0. Code under MIT.</div>
-        <div>Updated October 2026 &middot; Hosted on Netlify &amp; GitHub Pages</div>
+      <div style="margin-bottom: 0.75rem;">
+        Avnish Singh · Civil Engineering undergraduate, HBTU Kanpur · Contact: <a href="mailto:avnish36singh@gmail.com">avnish36singh@gmail.com</a> · <a href="credits.html">How to cite</a>
+      </div>
+      <div>
+        Content licensed under CC BY 4.0; code licensed under MIT · Contains modified Copernicus Climate Change Service information [2026] · Hosted on Netlify.
       </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="assets/globe-app.js"></script>
-  <script src="assets/homepage-app.js"></script>
 </body>
 </html>
