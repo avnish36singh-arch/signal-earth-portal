@@ -11,6 +11,10 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="assets/homepage.css">
   <script src="assets/theme.js"></script>
+  <!-- Pinned Three.js and Globe.gl libraries -->
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/globe.gl@2.32.2/dist/globe.gl.min.js"></script>
+  <script src="assets/globe-country.js" defer></script>
   <script src="assets/homepage-app.js" defer></script>
 
   <style>
@@ -374,19 +378,65 @@
   </header>
 
   <main id="main">
-    <!-- 1. Hero -->
-    <section class="home-section" aria-labelledby="hero-h1">
-      <div class="se-container-text">
-        <h1 class="home-hero-h1" id="hero-h1">Reading the signals of a changing Earth.</h1>
-        <p class="home-hero-sub">
-          Independent analysis of air quality and urban heat in the Indo-Gangetic Basin using satellite and open monitoring data.
-        </p>
-        <div class="home-hero-links">
-          <a href="#investigations">Read the investigations</a>
-          <a href="globe.html">Explore the globe</a>
+    <!-- 1. Centerpiece 3D Interactive Country Globe -->
+    <section class="se-globe-hero-wrapper" id="globe-hero-section" aria-label="3D Environmental Planetary Country Globe">
+      <div id="globe-container"></div>
+
+      <!-- Loading skeleton -->
+      <div id="globe-skeleton">
+        <div style="font-family: var(--home-font-mono); font-size: 0.85rem; color: #1FB6A6; display: flex; align-items: center; gap: 0.6rem;">
+          <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #1FB6A6; animation: sePulseTeal 1.5s infinite;"></span>
+          Initializing Planetary 3D Country Globe...
         </div>
       </div>
+
+      <!-- Overlay HUD -->
+      <div class="se-globe-top-overlay">
+        <div class="se-globe-headline-card">
+          <span class="se-globe-badge">3D Planetary Environmental Explorer</span>
+          <h1 class="se-globe-h1" id="hero-h1">Reading the signals of a changing Earth.</h1>
+          <p class="se-globe-lead">
+            Select any sovereign country polygon to inspect verified annual PM2.5 exposure, surface warming anomalies, territorial emissions, and energy transition rankings.
+          </p>
+          <div class="se-globe-search-box">
+            <input type="text" id="globe-country-search" class="se-globe-search-input" placeholder="Search country (e.g. India, Germany, USA)..." aria-label="Search countries on globe">
+            <div id="globe-search-results" class="globe-search-results"></div>
+          </div>
+        </div>
+
+        <div class="se-globe-quick-panel">
+          <div class="se-globe-controls-bar">
+            <button type="button" id="globe-rotate-btn" class="se-globe-btn" aria-label="Pause or resume globe orbit">
+              <span class="rotate-icon">⏸</span>
+              <span class="rotate-text">Pause Orbit</span>
+            </button>
+            <button type="button" id="globe-reset-btn" class="se-globe-btn" aria-label="Reset planetary view">
+              <span>⟲</span>
+              <span>Reset</span>
+            </button>
+            <a href="#accessible-country-index" class="se-globe-btn" style="text-decoration: none;">
+              <span>Directory &darr;</span>
+            </a>
+          </div>
+
+          <div class="se-globe-pills-bar" id="globe-pills-bar" role="toolbar" aria-label="Quick select sovereign nations">
+            <button type="button" class="globe-pill active" data-iso="IND">India</button>
+            <button type="button" class="globe-pill" data-iso="USA">United States</button>
+            <button type="button" class="globe-pill" data-iso="CHN">China</button>
+            <button type="button" class="globe-pill" data-iso="DEU">Germany</button>
+            <button type="button" class="globe-pill" data-iso="BRA">Brazil</button>
+            <button type="button" class="globe-pill" data-iso="GBR">United Kingdom</button>
+            <button type="button" class="globe-pill" data-iso="ZAF">South Africa</button>
+            <button type="button" class="globe-pill" data-iso="JPN">Japan</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="se-globe-hint-pill">
+        Click any highlighted sovereign nation to view its verified environmental dossier
+      </div>
     </section>
+
 
     <!-- 2. Four Headline Numbers in One Row (960px max width) -->
     <section class="home-section" aria-label="Key indicators">
@@ -420,7 +470,48 @@
       </div>
     </section>
 
-    <!-- 3. Our Four Investigations: 4-Column Card Grid -->
+    <!-- 3. Accessible Sovereign Country Directory -->
+    <section class="home-section" id="accessible-country-index" aria-labelledby="country-index-heading">
+      <div class="se-container-wide">
+        <div style="margin-bottom: 1.5rem;">
+          <span style="font-family: var(--home-font-mono); font-size: 0.75rem; color: var(--home-accent); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;">Sovereign Environmental Profiles</span>
+          <h2 class="home-section-title" id="country-index-heading" style="margin-top: 0.25rem;">
+            Country Dossiers &amp; Global Comparative Rankings
+          </h2>
+          <p class="home-hero-sub" style="font-size: 0.95rem; margin-bottom: 0;">
+            Comparative index across 48 sovereign nations tracking annual mean PM2.5 (HEI/IHME SOGA), surface temperature anomaly (Berkeley Earth), territorial CO2 (Global Carbon Project), and renewable electricity generation (Ember). Select any country to open its dedicated dossier.
+          </p>
+        </div>
+
+        <div class="home-table-wrap">
+          <table class="home-table" style="font-size: 0.85rem;">
+            <thead>
+              <tr>
+                <th style="padding: 0.65rem 0.5rem;">Country</th>
+                <th style="padding: 0.65rem 0.5rem;">ISO-3</th>
+                <th style="padding: 0.65rem 0.5rem;">Region</th>
+                <th style="padding: 0.65rem 0.5rem;">PM2.5 Rank</th>
+                <th style="padding: 0.65rem 0.5rem;">CO2 Rank</th>
+                <th style="padding: 0.65rem 0.5rem; text-align: right;">Dossier</th>
+              </tr>
+            </thead>
+            <tbody id="accessible-countries-tbody">
+              <!-- Dynamically populated by assets/globe-country.js with pre-rendered fallback -->
+              <tr>
+                <td style="padding: 0.65rem 0.5rem; font-weight: 600;"><a href="country/ind/">India</a></td>
+                <td style="padding: 0.65rem 0.5rem; font-family: monospace;">IND</td>
+                <td style="padding: 0.65rem 0.5rem;">Asia</td>
+                <td style="padding: 0.65rem 0.5rem; font-family: monospace;">#3</td>
+                <td style="padding: 0.65rem 0.5rem; font-family: monospace;">#3</td>
+                <td style="padding: 0.65rem 0.5rem; text-align: right;"><a href="country/ind/" class="se-link" style="font-weight: 600;">View dossier &rarr;</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Our Four Investigations: 4-Column Card Grid -->
     <section class="home-section" id="investigations" aria-labelledby="inv-heading">
       <div class="se-editorial-container">
         <div style="margin-bottom: 2rem;">
