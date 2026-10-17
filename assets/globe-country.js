@@ -1,8 +1,8 @@
 /**
  * Signal Earth : Interactive 3D Planetary Country Globe (assets/globe-country.js)
- * Centerpiece 3D Earth visualization tracking global environmental metrics.
+ * Full-viewport WebGL 3D Earth visualization tracking sovereign environmental metrics.
  * Built with Three.js (0.160.0) and Globe.gl (2.32.2).
- * Strictly zero em dashes throughout.
+ * Strict typography: ZERO EM DASHES.
  */
 
 (function () {
@@ -12,9 +12,11 @@
   var globeSkeleton = document.getElementById('globe-skeleton');
   var searchInput = document.getElementById('globe-country-search');
   var searchResults = document.getElementById('globe-search-results');
+  var metricSelect = document.getElementById('globe-metric-select');
   var rotateToggleBtn = document.getElementById('globe-rotate-btn');
   var resetViewBtn = document.getElementById('globe-reset-btn');
   var pillsContainer = document.getElementById('globe-pills-bar');
+  var legendContainer = document.getElementById('globe-legend');
 
   if (!globeContainer) return;
 
@@ -23,6 +25,121 @@
   var allCountriesList = [];
   var isAutoRotating = true;
   var hoverD = null;
+  var currentMetric = 'pm25';
+
+  // Check prefers-reduced-motion
+  var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReducedMotion) {
+    isAutoRotating = false;
+  }
+
+  // Metric color scale configurations (Colourblind-safe sequential & diverging)
+  var METRIC_CONFIGS = {
+    pm25: {
+      name: 'Annual Mean PM2.5',
+      unit: 'µg/m³',
+      min: 5,
+      max: 60,
+      type: 'sequential_warm',
+      interpolate: function (v) {
+        if (v === null || v === undefined) return null;
+        // 5 (clean emerald) -> 15 (yellow) -> 35 (orange) -> 60+ (crimson)
+        if (v <= 5) return '#10B981';
+        if (v <= 15) return interpolateHex('#10B981', '#FBBF24', (v - 5) / 10);
+        if (v <= 35) return interpolateHex('#FBBF24', '#F97316', (v - 15) / 20);
+        return interpolateHex('#F97316', '#EF4444', Math.min(1, (v - 35) / 25));
+      }
+    },
+    temp_anomaly: {
+      name: 'Temperature Anomaly',
+      unit: '°C',
+      min: -0.5,
+      max: 2.5,
+      type: 'diverging_cool_warm',
+      interpolate: function (v) {
+        if (v === null || v === undefined) return null;
+        // -0.5 (blue) -> 0.5 (slate) -> 1.5 (amber) -> 2.5+ (crimson)
+        if (v <= 0.5) return interpolateHex('#3B82F6', '#94A3B8', (v + 0.5) / 1.0);
+        if (v <= 1.5) return interpolateHex('#94A3B8', '#F59E0B', (v - 0.5) / 1.0);
+        return interpolateHex('#F59E0B', '#EF4444', Math.min(1, (v - 1.5) / 1.0));
+      }
+    },
+    co2_per_capita: {
+      name: 'CO2 per Capita',
+      unit: 't/person',
+      min: 0.5,
+      max: 18,
+      type: 'sequential',
+      interpolate: function (v) {
+        if (v === null || v === undefined) return null;
+        if (v <= 3) return interpolateHex('#10B981', '#FBBF24', v / 3);
+        if (v <= 10) return interpolateHex('#FBBF24', '#F97316', (v - 3) / 7);
+        return interpolateHex('#F97316', '#9333EA', Math.min(1, (v - 10) / 8));
+      }
+    },
+    total_co2: {
+      name: 'Total Territorial CO2',
+      unit: 'Mt/yr',
+      min: 10,
+      max: 5000,
+      type: 'sequential',
+      interpolate: function (v) {
+        if (v === null || v === undefined) return null;
+        var logV = Math.log10(Math.max(1, v));
+        // log scale: 1 (10 Mt) to 4 (10,000 Mt)
+        var t = Math.min(1, Math.max(0, (logV - 1) / 3));
+        return interpolateHex('#34D399', '#EF4444', t);
+      }
+    },
+    renewable_elec_share: {
+      name: 'Renewable Electricity Share',
+      unit: '%',
+      min: 0,
+      max: 100,
+      type: 'sequential_green',
+      interpolate: function (v) {
+        if (v === null || v === undefined) return null;
+        if (v <= 30) return interpolateHex('#475569', '#0D9488', v / 30);
+        return interpolateHex('#0D9488', '#10B981', Math.min(1, (v - 30) / 70));
+      }
+    },
+    forest_share: {
+      name: 'Forest Area Share',
+      unit: '%',
+      min: 0,
+      max: 75,
+      type: 'sequential_forest',
+      interpolate: function (v) {
+        if (v === null || v === undefined) return null;
+        if (v <= 25) return interpolateHex('#E2E8F0', '#4ADE80', v / 25);
+        return interpolateHex('#4ADE80', '#15803D', Math.min(1, (v - 25) / 50));
+      }
+    },
+    forest_change: {
+      name: '10-Yr Forest Net Change',
+      unit: '%',
+      min: -15,
+      max: 15,
+      type: 'diverging_forest',
+      interpolate: function (v) {
+        if (v === null || v === undefined) return null;
+        if (v < 0) return interpolateHex('#EF4444', '#94A3B8', Math.min(1, (v + 15) / 15));
+        return interpolateHex('#94A3B8', '#10B981', Math.min(1, v / 15));
+      }
+    }
+  };
+
+  function interpolateHex(hex1, hex2, factor) {
+    factor = Math.max(0, Math.min(1, factor));
+    var c1 = parseInt(hex1.replace('#', ''), 16);
+    var c2 = parseInt(hex2.replace('#', ''), 16);
+    var r1 = (c1 >> 16) & 255, g1 = (c1 >> 8) & 255, b1 = c1 & 255;
+    var r2 = (c2 >> 16) & 255, g2 = (c2 >> 8) & 255, b2 = c2 & 255;
+    var r = Math.round(r1 + factor * (r2 - r1));
+    var g = Math.round(g1 + factor * (g2 - g1));
+    var b = Math.round(b1 + factor * (b2 - b1));
+    return 'rgb(' + r + ',' + g + ',' + b + ')';
+  }
 
   // Check WebGL availability
   function isWebGLAvailable() {
@@ -60,9 +177,11 @@
     });
 
     initGlobe(geoData);
+    initMetricSelector();
     initSearch();
     initPills();
     initControls();
+    updateLegend();
     populateAccessibleIndex(indexData);
 
     if (globeSkeleton) {
@@ -81,6 +200,32 @@
     }
   });
 
+  function getCountryMetric(iso3, metricKey) {
+    var c = countriesIndex[iso3];
+    if (!c || !c.indicators || !c.indicators[metricKey]) return null;
+    return c.indicators[metricKey];
+  }
+
+  function getPolygonColor(feature) {
+    var iso3 = getIso3(feature);
+    var metricObj = getCountryMetric(iso3, currentMetric);
+    var cfg = METRIC_CONFIGS[currentMetric] || METRIC_CONFIGS.pm25;
+
+    if (!metricObj || metricObj.value === null || metricObj.value === undefined) {
+      // Visibly distinct unranked / no-data color: dark muted slate with opacity
+      return 'rgba(71, 85, 105, 0.45)';
+    }
+
+    var baseColor = cfg.interpolate(metricObj.value);
+    if (!baseColor) return 'rgba(71, 85, 105, 0.45)';
+
+    // Parse rgb or hex to rgba with subtle translucency over satellite marble
+    if (baseColor.indexOf('rgb') === 0) {
+      return baseColor.replace('rgb', 'rgba').replace(')', ', 0.78)');
+    }
+    return baseColor;
+  }
+
   function initGlobe(geoData) {
     var width = globeContainer.clientWidth;
     var height = globeContainer.clientHeight;
@@ -96,26 +241,22 @@
       .height(height)
       .polygonsData(geoData.features)
       .polygonAltitude(function (d) {
-        return d === hoverD ? 0.04 : 0.005;
+        return d === hoverD ? 0.045 : 0.006;
       })
       .polygonCapColor(function (d) {
-        var iso3 = getIso3(d);
         if (d === hoverD) {
-          return 'rgba(31, 182, 166, 0.72)';
+          return 'rgba(255, 255, 255, 0.9)';
         }
-        if (countriesIndex[iso3]) {
-          return 'rgba(15, 23, 42, 0.42)';
-        }
-        return 'rgba(15, 23, 42, 0.3)';
+        return getPolygonColor(d);
       })
       .polygonSideColor(function () {
-        return 'rgba(255, 255, 255, 0.08)';
+        return 'rgba(255, 255, 255, 0.12)';
       })
       .polygonStrokeColor(function (d) {
         if (d === hoverD) {
           return '#1FB6A6';
         }
-        return 'rgba(255, 255, 255, 0.22)';
+        return 'rgba(255, 255, 255, 0.28)';
       })
       .polygonLabel(function (d) {
         var iso3 = getIso3(d);
@@ -123,45 +264,43 @@
         var name = (d.properties && d.properties.NAME) || iso3;
         var region = (countryMeta && countryMeta.region) || (d.properties && d.properties.REGION_UN) || 'Global';
 
-        var ranksHtml = '';
-        var actionText = 'Click to open country dossier &rarr;';
+        var metricObj = getCountryMetric(iso3, currentMetric);
+        var cfg = METRIC_CONFIGS[currentMetric] || METRIC_CONFIGS.pm25;
 
-        if (countryMeta && countryMeta.ranks) {
-          var r = countryMeta.ranks;
-          var badges = [];
-          if (r.pm25) badges.push('PM2.5 Rank #' + r.pm25);
-          if (r.co2_total) badges.push('CO2 Rank #' + r.co2_total);
-          if (r.temp_anomaly) badges.push('Temp Rank #' + r.temp_anomaly);
-          if (badges.length > 0) {
-            ranksHtml = '<div style="font-family: monospace; font-size: 0.75rem; color: #1FB6A6; margin-top: 0.25rem;">' + badges.join(' &middot; ') + '</div>';
-          }
+        var metricLine = '';
+        if (metricObj && metricObj.value !== null && metricObj.value !== undefined) {
+          var valStr = metricObj.formatted || (metricObj.value + ' ' + (metricObj.unit || ''));
+          var yrStr = metricObj.year ? ' (' + metricObj.year + ')' : '';
+          var rkStr = metricObj.rank ? ' · Rank #' + metricObj.rank + (metricObj.total_ranked ? ' of ' + metricObj.total_ranked : '') : '';
+          metricLine = '<div style="font-family: monospace; font-size: 0.85rem; font-weight: 700; color: #1FB6A6; margin-top: 0.35rem;">' +
+            cfg.name + ': ' + valStr + yrStr +
+            '</div>' +
+            '<div style="font-size: 0.72rem; color: #94A3B8; margin-top: 2px;">' + rkStr + '</div>';
+        } else {
+          metricLine = '<div style="font-family: monospace; font-size: 0.8rem; color: #94A3B8; margin-top: 0.35rem; font-style: italic;">' +
+            cfg.name + ': No data / Unranked' +
+            '</div>';
         }
 
-        if (!countryMeta) {
-          actionText = 'Click to view sovereign territory overview &rarr;';
-        }
-
-        return '<div style="background: rgba(10, 22, 40, 0.95); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 6px; padding: 0.65rem 0.9rem; color: #F8FAFC; max-width: 280px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); pointer-events: none;">' +
-          '<div style="font-family: Georgia, serif; font-size: 1rem; font-weight: 700; color: #FFFFFF; line-height: 1.2;">' + name + ' <span style="font-family: monospace; font-size: 0.78rem; color: #94A3B8; font-weight: normal;">[' + iso3 + ']</span></div>' +
-          '<div style="font-size: 0.78rem; color: #CBD5E1; margin-top: 2px;">' + region + '</div>' +
-          ranksHtml +
-          '<div style="font-size: 0.75rem; color: #5EEAD4; margin-top: 0.45rem; font-weight: 600;">' + actionText + '</div>' +
+        return '<div style="background: rgba(10, 22, 40, 0.96); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.22); border-radius: 6px; padding: 0.75rem 1rem; color: #F8FAFC; max-width: 300px; box-shadow: 0 12px 28px rgba(0,0,0,0.6); pointer-events: none;">' +
+          '<div style="font-family: Georgia, serif; font-size: 1.05rem; font-weight: 700; color: #FFFFFF; line-height: 1.2;">' + name + ' <span style="font-family: monospace; font-size: 0.75rem; color: #94A3B8; font-weight: normal;">[' + iso3 + ']</span></div>' +
+          '<div style="font-size: 0.75rem; color: #CBD5E1; margin-top: 2px;">' + region + '</div>' +
+          metricLine +
+          '<div style="font-size: 0.75rem; color: #5EEAD4; margin-top: 0.5rem; font-weight: 600;">Click to open sovereign dossier &rarr;</div>' +
           '</div>';
       })
       .onPolygonHover(function (d) {
         hoverD = d;
         globeContainer.style.cursor = d ? 'pointer' : 'grab';
         myGlobe
-          .polygonAltitude(function (polygon) { return polygon === hoverD ? 0.04 : 0.005; })
+          .polygonAltitude(function (polygon) { return polygon === hoverD ? 0.045 : 0.006; })
           .polygonCapColor(function (polygon) {
-            var iso3 = getIso3(polygon);
-            if (polygon === hoverD) return 'rgba(31, 182, 166, 0.72)';
-            if (countriesIndex[iso3]) return 'rgba(15, 23, 42, 0.42)';
-            return 'rgba(15, 23, 42, 0.3)';
+            if (polygon === hoverD) return 'rgba(255, 255, 255, 0.9)';
+            return getPolygonColor(polygon);
           })
           .polygonStrokeColor(function (polygon) {
             if (polygon === hoverD) return '#1FB6A6';
-            return 'rgba(255, 255, 255, 0.22)';
+            return 'rgba(255, 255, 255, 0.28)';
           });
       })
       .onPolygonClick(function (d) {
@@ -171,26 +310,24 @@
         navigateToCountry(iso3);
       });
 
-    // Beacon rings for primary stations (e.g. India)
-    var ringsData = [
-      { lat: 20.5937, lng: 78.9629, maxR: 4, propagationSpeed: 1.5, repeatPeriod: 1200, color: function () { return 'rgba(31, 182, 166, 0.8)'; } }
-    ];
-    myGlobe
-      .ringsData(ringsData)
-      .ringColor(function (d) { return d.color(); })
-      .ringMaxRadius('maxR')
-      .ringPropagationSpeed('propagationSpeed')
-      .ringRepeatPeriod('repeatPeriod');
-
     // Controls setup
     var controls = myGlobe.controls();
-    controls.autoRotate = true;
+    controls.autoRotate = isAutoRotating;
     controls.autoRotateSpeed = 0.55;
     controls.enableDamping = true;
     controls.dampingFactor = 0.05;
 
+    // Interaction stops auto-rotation
+    controls.addEventListener('start', function () {
+      if (isAutoRotating) {
+        isAutoRotating = false;
+        controls.autoRotate = false;
+        updateRotateButtonState();
+      }
+    });
+
     // Center camera with gentle framing of South Asia / Indian Ocean
-    myGlobe.pointOfView({ lat: 22.0, lng: 78.0, altitude: 2.1 }, 1000);
+    myGlobe.pointOfView({ lat: 20.0, lng: 77.0, altitude: 2.1 }, 1000);
 
     // Renderer optimization
     var renderer = myGlobe.renderer();
@@ -206,6 +343,55 @@
     });
   }
 
+  function initMetricSelector() {
+    if (!metricSelect) return;
+    metricSelect.addEventListener('change', function () {
+      currentMetric = metricSelect.value;
+      if (myGlobe) {
+        myGlobe.polygonCapColor(function (d) {
+          if (d === hoverD) return 'rgba(255, 255, 255, 0.9)';
+          return getPolygonColor(d);
+        });
+      }
+      updateLegend();
+    });
+  }
+
+  function updateLegend() {
+    if (!legendContainer) return;
+    var cfg = METRIC_CONFIGS[currentMetric] || METRIC_CONFIGS.pm25;
+
+    var gradientCss = '';
+    if (currentMetric === 'pm25') {
+      gradientCss = 'linear-gradient(to right, #10B981, #FBBF24, #F97316, #EF4444)';
+    } else if (currentMetric === 'temp_anomaly') {
+      gradientCss = 'linear-gradient(to right, #3B82F6, #94A3B8, #F59E0B, #EF4444)';
+    } else if (currentMetric === 'co2_per_capita') {
+      gradientCss = 'linear-gradient(to right, #10B981, #FBBF24, #F97316, #9333EA)';
+    } else if (currentMetric === 'total_co2') {
+      gradientCss = 'linear-gradient(to right, #34D399, #F59E0B, #EF4444)';
+    } else if (currentMetric === 'renewable_elec_share') {
+      gradientCss = 'linear-gradient(to right, #475569, #0D9488, #10B981)';
+    } else if (currentMetric === 'forest_share') {
+      gradientCss = 'linear-gradient(to right, #E2E8F0, #4ADE80, #15803D)';
+    } else if (currentMetric === 'forest_change') {
+      gradientCss = 'linear-gradient(to right, #EF4444, #94A3B8, #10B981)';
+    }
+
+    legendContainer.innerHTML = '<div style="font-family: var(--se-font-sans); font-size: 0.75rem; color: #CBD5E1; margin-bottom: 4px; font-weight: 600;">' +
+      cfg.name + ' (' + cfg.unit + ')' +
+      '</div>' +
+      '<div style="height: 10px; width: 100%; border-radius: 4px; background: ' + gradientCss + '; margin-bottom: 4px;"></div>' +
+      '<div style="display: flex; justify-content: space-between; font-family: monospace; font-size: 0.7rem; color: #94A3B8;">' +
+      '<span>' + cfg.min + ' ' + cfg.unit + '</span>' +
+      '<span>' + cfg.max + '+ ' + cfg.unit + '</span>' +
+      '</div>' +
+      '<div style="display: flex; align-items: center; gap: 6px; margin-top: 6px; font-size: 0.7rem; color: #94A3B8;">' +
+      '<span style="display: inline-block; width: 10px; height: 10px; border-radius: 2px; background: rgba(71, 85, 105, 0.75); border: 1px solid rgba(255,255,255,0.2);"></span>' +
+      '<span>Unranked / No data</span>' +
+      '</div>';
+  }
+
   function getIso3(feature) {
     if (!feature || !feature.properties) return '';
     var p = feature.properties;
@@ -218,7 +404,6 @@
 
   function navigateToCountry(iso3) {
     var isoClean = iso3.toLowerCase();
-    // Direct navigation to pre-built static country page
     window.location.href = 'country/' + isoClean + '/';
   }
 
@@ -320,7 +505,7 @@
     if (resetViewBtn) {
       resetViewBtn.addEventListener('click', function () {
         if (!myGlobe) return;
-        myGlobe.pointOfView({ lat: 22.0, lng: 78.0, altitude: 2.1 }, 1000);
+        myGlobe.pointOfView({ lat: 20.0, lng: 77.0, altitude: 2.1 }, 1000);
       });
     }
   }
@@ -348,15 +533,16 @@
     });
 
     var rowsHtml = sorted.map(function (c) {
-      var r = c.ranks || {};
-      var pmRank = r.pm25 ? '#' + r.pm25 : 'Unranked';
-      var co2Rank = r.co2_total ? '#' + r.co2_total : 'Unranked';
-      var tempRank = r.temp_anomaly ? '#' + r.temp_anomaly : 'Unranked';
+      var ind = c.indicators || {};
+      var pmObj = ind.pm25 || {};
+      var co2Obj = ind.co2_per_capita || ind.total_co2 || {};
+      var pmRank = pmObj.rank ? '#' + pmObj.rank : 'Unranked';
+      var co2Rank = co2Obj.rank ? '#' + co2Obj.rank : 'Unranked';
 
-      return '<tr style="border-bottom: 1px solid var(--home-border);">' +
+      return '<tr style="border-bottom: 1px solid var(--se-border);">' +
         '<td style="padding: 0.65rem 0.5rem; font-weight: 600;"><a href="country/' + c.iso3.toLowerCase() + '/" style="color: inherit; text-decoration: underline;">' + c.name + '</a></td>' +
         '<td style="padding: 0.65rem 0.5rem; font-family: monospace; font-size: 0.85rem;">' + c.iso3 + '</td>' +
-        '<td style="padding: 0.65rem 0.5rem; color: var(--home-secondary);">' + c.region + '</td>' +
+        '<td style="padding: 0.65rem 0.5rem; color: var(--se-text-secondary);">' + c.region + '</td>' +
         '<td style="padding: 0.65rem 0.5rem; font-family: monospace; font-size: 0.85rem;">' + pmRank + '</td>' +
         '<td style="padding: 0.65rem 0.5rem; font-family: monospace; font-size: 0.85rem;">' + co2Rank + '</td>' +
         '<td style="padding: 0.65rem 0.5rem; text-align: right;"><a href="country/' + c.iso3.toLowerCase() + '/" class="se-link" style="font-weight: 600;">View dossier &rarr;</a></td>' +
