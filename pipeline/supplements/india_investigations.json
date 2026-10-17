@@ -1,0 +1,63 @@
+[
+  {
+    "id": "kanpur-particulates",
+    "title": "Kanpur Particulates & Seasonal Multipliers",
+    "subtitle": "Continuous ambient monitoring audit across 1,628 station-days and 855-day station hiatus",
+    "location": "Kanpur, Uttar Pradesh (NSI Kalyanpur & Nehru Nagar)",
+    "key_findings": [
+      "Analyzes 1,628 station-days (Kalyanpur n = 815, Nehru Nagar n = 813; 1,334 valid PM2.5 observations) across two discrete observation windows (2021-2022 and 2025-2026).",
+      "Dual canonical seasonal ratios: under meteorological bounds (Dec-Feb vs Jun-Sep), winter PM2.5 averages 2.40x the monsoon baseline; under peak haze bounds (Nov-Jan vs Jul-Sep), the ratio reaches 3.56x (single-month Nov vs Aug reaches 4.76x).",
+      "Discloses an unmonitored operational station hiatus of 855 days (October 17, 2022 to February 17, 2025), strictly rejecting synthetic infilling to maintain empirical integrity."
+    ],
+    "primary_data_file": "data/kanpur/daily_aggregated.csv",
+    "script_reference": "kanpur_air_quality/02_analysis.py",
+    "image_url": "assets/kanpur/01_timeseries.png",
+    "href": "/investigations/kanpur-particulates.html"
+  },
+  {
+    "id": "delhi-naqi",
+    "title": "Delhi NAQI Criteria Pollutant Dominance",
+    "subtitle": "Five-year statutory CPCB sub-index evaluation across 1,137 official AQI days",
+    "location": "Alipur, Delhi National Capital Region",
+    "key_findings": [
+      "Evaluates 1,825 daily records across five monitored calendar years (2017, 2018, 2021, 2022, 2023) at Delhi Alipur.",
+      "Exactly 1,137 days meet statutory CPCB quorum rules; particulate matter drove official AQI on 95.3% of days (PM2.5 dominant on 51.8%, PM10 dominant on 43.4%).",
+      "Documents a 731-day unmonitored station hiatus (January 1, 2019 to December 31, 2020) caused by station refurbishment.",
+      "Prospective out-of-time forecasting split on unobserved 2023 records yields test MAE of 39.69 AQI points and R² of 0.769."
+    ],
+    "primary_data_file": "enviornment_rajivgangulaly/data/processed/air_quality_clean.csv",
+    "script_reference": "enviornment_rajivgangulaly/scripts/export_web_data.py",
+    "image_url": "assets/delhi/01_aqi_time_series.png",
+    "href": "/investigations/delhi-naqi.html"
+  },
+  {
+    "id": "landsat-uhi",
+    "title": "Intra-Urban 30 m Landsat Thermal Radiometry",
+    "subtitle": "High-resolution thermal infrared zoning vs regional MERRA-2 reanalysis",
+    "location": "Kanpur Metropolitan Region & Ganga River Corridor",
+    "key_findings": [
+      "USGS Landsat 8/9 TIRS/TIRS-2 thermal infrared sensors (100 m native resampled to 30 m) resolve localized urban microclimates masked by coarse 55 x 60 km reanalysis grid cells.",
+      "Spaceborne radiometry identifies an urban core thermal delta of 1.0 to 2.3 K over coarse MERRA-2 baseline values on evaluated overpass scenes.",
+      "Surface thermal gradients across industrial hubs, dense historic cores, and agricultural buffers range up to 7.10 K extreme pixel spread across raw raster footprints."
+    ],
+    "primary_data_file": "data/kanpur_thermal_zones.geojson",
+    "script_reference": "Kanpur-LST-Thermal-Analysis-GIS",
+    "image_url": "assets/kanpur-uhi/kanpur-uhi-30m.png",
+    "href": "/investigations/landsat-uhi.html"
+  },
+  {
+    "id": "reanalysis-stagnation",
+    "title": "MERRA-2 Reanalysis & Boundary Layer Stagnation",
+    "subtitle": "Seven-year bioclimatic heat stress and nocturnal inversion coupling",
+    "location": "Indo-Gangetic Basin (Kanpur Regional Grid)",
+    "key_findings": [
+      "Seven complete calendar years of daily assimilation records (2017 to 2023, 2,556 days) document 372 dangerous heat stress days (NOAA Heat Index >= 41.0 °C).",
+      "Apparent temperature peaks at 52.40 °C during pre-monsoon moisture surges despite dry-bulb air temperature remaining at 40.75 °C.",
+      "Empirical negative correlation (r = -0.455, n = 308 pairs, p = 2.47e-16) between radiant skin temperature and particulate concentrations confirms boundary layer inversion trapping."
+    ],
+    "primary_data_file": "data/lst/kanpur_nasa_power_daily.csv",
+    "script_reference": "pipeline_lst/spatial_kanpur_gis.py",
+    "image_url": "assets/lst/06_ventilation_coefficient_inversion.png",
+    "href": "/investigations/inversion-dynamics.html"
+  }
+]
