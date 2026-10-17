@@ -1,9 +1,12 @@
 /* ==========================================================================
-   SIGNAL EARTH : COUNTRY PROFILE STYLESHEET (assets/country.css)
+   SIGNAL EARTH : COUNTRY DOSSIER STYLESHEET (assets/country.css)
    Clean, accessible, data-dense scientific styling for national profiles.
    Zero em dashes.
    ========================================================================== */
 
+/* --------------------------------------------------------------------------
+   1. Country Hero & Header Identity
+   -------------------------------------------------------------------------- */
 .se-country-hero {
   padding: 3.5rem 0 2.5rem;
   border-bottom: 1px solid var(--se-border);
@@ -55,6 +58,16 @@
   letter-spacing: 0.05em;
 }
 
+.se-country-stamp-tag {
+  font-family: var(--se-font-mono);
+  font-size: 0.72rem;
+  color: var(--se-text-muted);
+  background: rgba(148, 163, 184, 0.1);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--se-radius-sm);
+  margin-left: auto;
+}
+
 .se-country-h1 {
   font-family: var(--se-font-serif);
   font-size: clamp(2.2rem, 4.5vw, 3.4rem);
@@ -62,22 +75,22 @@
   line-height: 1.15;
   letter-spacing: -0.02em;
   color: var(--se-text-primary);
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.35rem;
 }
 
 .se-country-official-name {
   font-family: var(--se-font-sans);
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: var(--se-text-muted);
   margin-bottom: 1rem;
 }
 
 .se-country-dek {
   font-family: var(--se-font-sans);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 1.6;
   color: var(--se-text-secondary);
-  max-width: 68ch;
+  max-width: 70ch;
   margin: 0 0 1.5rem;
 }
 
@@ -94,20 +107,58 @@
   color: var(--se-text-primary);
 }
 
-/* Indicators Grid: 4 columns on large screens, 2 on tablet, 1 on mobile */
-.se-indicators-section {
-  padding: 3.5rem 0;
+/* --------------------------------------------------------------------------
+   2. Dossier Section Layout
+   -------------------------------------------------------------------------- */
+.se-dossier-section {
+  padding: 3.25rem 0;
   border-bottom: 1px solid var(--se-border);
 }
 
-.se-indicators-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-  margin-top: 2rem;
+.se-section-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
 }
 
-@media (max-width: 1024px) {
+.se-section-badge {
+  font-family: var(--se-font-mono);
+  font-size: 0.7rem;
+  color: var(--se-teal-live);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 0.25rem;
+}
+
+.se-section-h2 {
+  font-family: var(--se-font-serif);
+  font-size: 1.75rem;
+  margin: 0;
+  color: var(--se-text-primary);
+  line-height: 1.25;
+}
+
+.se-section-header-note {
+  font-family: var(--se-font-mono);
+  font-size: 0.75rem;
+  color: var(--se-text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   3. Indicators Grid & Cards (Section 1 & 4)
+   -------------------------------------------------------------------------- */
+.se-indicators-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
   .se-indicators-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -163,6 +214,12 @@
   white-space: nowrap;
 }
 
+.se-ind-rank-badge.is-unranked {
+  background: rgba(148, 163, 184, 0.12);
+  color: var(--se-text-muted);
+  border-color: rgba(148, 163, 184, 0.25);
+}
+
 .se-ind-value-row {
   margin-bottom: 0.5rem;
 }
@@ -177,8 +234,27 @@
 
 .se-ind-value.is-nodata {
   color: var(--se-text-muted);
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   font-style: italic;
+}
+
+/* Micro Percentile Bar */
+.se-percentile-wrap {
+  margin-bottom: 0.75rem;
+}
+
+.se-percentile-track {
+  width: 100%;
+  height: 4px;
+  background: var(--se-border-subtle);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.se-percentile-fill {
+  height: 100%;
+  background: var(--se-teal-live);
+  border-radius: 2px;
 }
 
 .se-ind-context {
@@ -199,33 +275,213 @@
   color: var(--se-text-muted);
 }
 
-.se-ind-src-line {
-  margin-bottom: 0.25rem;
+/* --------------------------------------------------------------------------
+   4. Deep Dive Metric Detail (Sections 2, 3, 5)
+   -------------------------------------------------------------------------- */
+.se-metric-detail-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  align-items: start;
 }
 
-.se-ind-src-line a {
+@media (max-width: 800px) {
+  .se-metric-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.se-metric-highlight-card {
+  background: var(--se-bg-surface);
+  border: 1px solid var(--se-border);
+  border-radius: var(--se-radius-md);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.se-metric-hl-title {
+  font-family: var(--se-font-mono);
+  font-size: 0.75rem;
+  color: var(--se-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.se-metric-hl-num {
+  font-family: var(--se-font-mono);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--se-text-primary);
+  line-height: 1.1;
+  margin-bottom: 0.35rem;
+}
+
+.se-metric-hl-sub {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--se-teal-live);
+  margin-bottom: 0.75rem;
+}
+
+.se-metric-hl-rank {
+  font-family: var(--se-font-mono);
+  font-size: 0.8rem;
   color: var(--se-text-secondary);
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--se-border-subtle);
+}
+
+.se-metric-context-card {
+  background: var(--se-bg-surface);
+  border: 1px solid var(--se-border);
+  border-radius: var(--se-radius-md);
+  padding: 1.5rem;
+}
+
+.se-metric-ctx-heading {
+  font-family: var(--se-font-sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: var(--se-text-primary);
+}
+
+.se-plain-sentence {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--se-text-primary);
+  margin-bottom: 1.25rem;
+}
+
+.se-metric-stat-line {
+  font-size: 0.88rem;
+  margin-bottom: 1rem;
+  color: var(--se-text-secondary);
+}
+
+.se-metric-stat-line strong {
+  color: var(--se-text-primary);
+  font-family: var(--se-font-mono);
+}
+
+.se-method-limit-box {
+  background: rgba(148, 163, 184, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: var(--se-radius-sm);
+  padding: 0.9rem 1rem;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--se-text-secondary);
+  margin-bottom: 1rem;
+}
+
+.se-method-limit-box strong {
+  color: var(--se-text-primary);
+  display: block;
+  margin-bottom: 0.25rem;
+  font-family: var(--se-font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.se-metric-src-tag {
+  font-size: 0.75rem;
+  color: var(--se-text-muted);
+}
+
+.se-metric-src-tag a {
+  color: var(--se-text-secondary);
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   5. Tables (Peer Table & Provenance Table)
+   -------------------------------------------------------------------------- */
+.se-peer-table,
+.se-provenance-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.85rem;
+}
+
+.se-peer-table th,
+.se-provenance-table th {
+  padding: 0.75rem 0.65rem;
+  border-bottom: 2px solid var(--se-border);
+  font-weight: 600;
+  color: var(--se-text-primary);
+  font-family: var(--se-font-sans);
+}
+
+.se-peer-table td,
+.se-provenance-table td {
+  padding: 0.7rem 0.65rem;
+  border-bottom: 1px solid var(--se-border-subtle);
+  color: var(--se-text-secondary);
+  vertical-align: middle;
+}
+
+.se-peer-table tr.is-current-country td {
+  background: rgba(31, 182, 166, 0.08);
+  font-weight: 600;
+  color: var(--se-text-primary);
+}
+
+.se-peer-table td a,
+.se-provenance-table td a {
+  color: var(--se-teal-live);
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
-.se-ind-src-line a:hover {
-  color: var(--se-teal-live);
-}
-
-.se-ind-license-badge {
-  display: inline-block;
+.se-provenance-table td.mono {
   font-family: var(--se-font-mono);
-  font-size: 0.65rem;
-  color: var(--se-text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  color: var(--se-text-primary);
 }
 
-/* Original Investigations Section */
+/* Missing Indicators Gap Log */
+.se-gaps-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.se-gaps-item {
+  background: var(--se-bg-surface);
+  border: 1px solid var(--se-border);
+  border-radius: var(--se-radius-sm);
+  padding: 0.65rem 0.9rem;
+  font-size: 0.82rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.se-gaps-name {
+  font-weight: 600;
+  color: var(--se-text-primary);
+}
+
+.se-gaps-reason {
+  font-family: var(--se-font-mono);
+  font-size: 0.75rem;
+  color: var(--se-text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   6. Original Research Section (India Only)
+   -------------------------------------------------------------------------- */
 .se-orig-inv-section {
   padding: 3.5rem 0;
-  background: var(--se-bg-page);
+  background: var(--se-bg-surface);
   border-bottom: 1px solid var(--se-border);
 }
 
@@ -243,7 +499,7 @@
 }
 
 .se-orig-inv-card {
-  background: var(--se-bg-surface);
+  background: var(--se-bg-page);
   border: 1px solid var(--se-border);
   border-radius: var(--se-radius-md);
   overflow: hidden;
@@ -321,4 +577,38 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 0.5rem;
+}
+
+/* --------------------------------------------------------------------------
+   7. Print Styling (@media print)
+   -------------------------------------------------------------------------- */
+@media print {
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+
+  .se-editorial-header,
+  .se-country-back-link,
+  .se-theme-toggle-btn,
+  .se-editorial-footer-bottom {
+    display: none !important;
+  }
+
+  .se-indicator-card,
+  .se-metric-highlight-card,
+  .se-metric-context-card,
+  .se-peer-table,
+  .se-provenance-table,
+  .se-orig-inv-card {
+    break-inside: avoid;
+    box-shadow: none !important;
+    border: 1px solid #CCCCCC !important;
+  }
+
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.75rem;
+    color: #555555;
+  }
 }

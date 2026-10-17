@@ -11,6 +11,40 @@
   <link rel="stylesheet" href="../../style.css">
   <link rel="stylesheet" href="../../assets/country.css">
   <script src="../../assets/theme.js"></script>
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="{{PAGE_TITLE}}">
+  <meta property="og:description" content="{{META_DESCRIPTION}}">
+  <meta property="og:url" content="{{CANONICAL_URL}}">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Signal Earth">
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "{{COUNTRY_NAME}} Environmental and Climate Indicators",
+    "description": "{{META_DESCRIPTION}}",
+    "spatialCoverage": {
+      "@type": "Place",
+      "name": "{{COUNTRY_NAME}}",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": {{LATITUDE}},
+        "longitude": {{LONGITUDE}}
+      }
+    },
+    "temporalCoverage": "1990/2024",
+    "creator": {
+      "@type": "Person",
+      "name": "Avnish Singh",
+      "affiliation": "HBTU Kanpur"
+    },
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "isAccessibleForFree": true
+  }
+  </script>
 </head>
 <body class="se-editorial-page">
   <a href="#main" class="skip-link">Skip to content</a>
@@ -21,7 +55,7 @@
       <div class="se-editorial-header-inner">
         <div class="se-editorial-wordmark-wrap">
           <a href="../../index.html" class="se-editorial-wordmark">Signal Earth</a>
-          <span class="se-wordmark-badge">Country Profile</span>
+          <span class="se-wordmark-badge">Country Dossier</span>
         </div>
         <div class="se-editorial-header-right">
           <nav class="se-editorial-nav" aria-label="Main Navigation">
@@ -56,7 +90,7 @@
   </header>
 
   <main id="main">
-    <!-- Country Hero Section -->
+    <!-- Country Hero and Header Identity -->
     <section class="se-country-hero" aria-labelledby="country-h1">
       <div class="se-editorial-container">
         <a href="../../index.html" class="se-country-back-link">&larr; Return to Planetary Globe</a>
@@ -64,6 +98,7 @@
         <div class="se-country-badge-row">
           <span class="se-country-iso-badge">{{ISO3_CODE}}</span>
           <span class="se-country-region-tag">{{REGION}} &middot; {{SUBREGION}}</span>
+          <span class="se-country-stamp-tag">Pipeline Data Build: {{DATA_AS_OF}}</span>
         </div>
 
         <h1 class="se-country-h1" id="country-h1">{{COUNTRY_NAME}}</h1>
@@ -76,34 +111,331 @@
         <div class="se-country-geo-pills">
           <div class="se-country-geo-item">Capital: <strong>{{CAPITAL}}</strong></div>
           <div class="se-country-geo-item">Land Area: <strong>{{LAND_AREA}}</strong></div>
-          <div class="se-country-geo-item">Coordinates: <strong>{{COORDINATES}}</strong></div>
+          <div class="se-country-geo-item">Centroid: <strong>{{COORDINATES}}</strong></div>
+          <div class="se-country-geo-item">ISO 3166-1: <strong>{{ISO3_CODE}} / {{ISO2_CODE}}</strong></div>
         </div>
       </div>
     </section>
 
-    <!-- Key Indicators Section (8 Core Metrics) -->
-    <section class="se-indicators-section" aria-labelledby="indicators-heading">
+    <!-- SECTION 1: At a Glance (Headline Indicators) -->
+    <section class="se-dossier-section" id="at-a-glance" aria-labelledby="glance-heading">
       <div class="se-editorial-container">
-        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 1rem;">
+        <div class="se-section-header-row">
           <div>
-            <span style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-teal-live); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;">Verified Environmental Observables</span>
-            <h2 id="indicators-heading" style="font-family: var(--se-font-serif); font-size: 1.85rem; margin: 0.25rem 0 0.5rem; color: var(--se-text-primary);">
-              Key Indicators &amp; Planetary Rankings
-            </h2>
+            <span class="se-section-badge">Section 01</span>
+            <h2 id="glance-heading" class="se-section-h2">At a Glance: Core Planetary Indicators</h2>
           </div>
-          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted);">
-            Rankings among nations with reported data (Rank X of N)
+          <div class="se-section-header-note">
+            Standardized comparative indicators with ranked percentile distributions
           </div>
         </div>
 
         <div class="se-indicators-grid">
-          {{INDICATOR_CARDS}}
+          {{HEADLINE_INDICATOR_CARDS}}
         </div>
       </div>
     </section>
 
-    <!-- Original Research Section (Conditional) -->
+    <!-- SECTION 2: Air Quality (Particulate Exposure) -->
+    <section class="se-dossier-section" id="air-quality" aria-labelledby="air-heading">
+      <div class="se-editorial-container">
+        <div class="se-section-header-row">
+          <div>
+            <span class="se-section-badge">Section 02</span>
+            <h2 id="air-heading" class="se-section-h2">Air Quality: Annual Mean PM2.5 Exposure</h2>
+          </div>
+          <div class="se-section-header-note">
+            Population-weighted ambient particulate exposure (µg/m³)
+          </div>
+        </div>
+
+        <div class="se-metric-detail-grid">
+          <div class="se-metric-highlight-card">
+            <div class="se-metric-hl-title">Annual Mean PM2.5 (Year: {{AIR_YEAR}})</div>
+            <div class="se-metric-hl-num">{{AIR_PM25_VALUE}}</div>
+            <div class="se-metric-hl-sub">{{AIR_WHO_MULTIPLE}}</div>
+            <div class="se-metric-hl-rank">Global Rank: {{AIR_PM25_RANK}}</div>
+          </div>
+          <div class="se-metric-context-card">
+            <h3 class="se-metric-ctx-heading">Plain Language Explanation</h3>
+            <p class="se-plain-sentence">{{AIR_PLAIN_SENTENCE}}</p>
+            
+            <div class="se-method-limit-box">
+              <strong>Mandatory Exposure Scope:</strong>
+              This metric represents population-weighted annual mean ambient PM2.5 exposure derived from satellite aerosol optical depth and ground monitoring calibration. It is a chronic long-term health exposure estimate and is not comparable to hourly or 24-hour National Air Quality Index (AQI) values.
+            </div>
+            <div class="se-metric-src-tag">
+              Source: <a href="https://www.stateofglobalair.org/" target="_blank" rel="noopener noreferrer">Health Effects Institute &amp; IHME (State of Global Air 2024)</a> &middot; License: CC BY 4.0
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Temperature and Climate -->
+    <section class="se-dossier-section" id="climate" aria-labelledby="climate-heading">
+      <div class="se-editorial-container">
+        <div class="se-section-header-row">
+          <div>
+            <span class="se-section-badge">Section 03</span>
+            <h2 id="climate-heading" class="se-section-h2">Temperature &amp; Climate Anomaly</h2>
+          </div>
+          <div class="se-section-header-note">
+            Surface land temperature anomalies relative to the 1951-1980 climatological baseline
+          </div>
+        </div>
+
+        <div class="se-metric-detail-grid">
+          <div class="se-metric-highlight-card">
+            <div class="se-metric-hl-title">Surface Temperature Anomaly</div>
+            <div class="se-metric-hl-num">{{TEMP_ANOMALY_VALUE}}</div>
+            <div class="se-metric-hl-sub">Baseline: 1951-1980 Berkeley Earth normal</div>
+            <div class="se-metric-hl-rank">Global Anomaly Rank: {{TEMP_ANOMALY_RANK}}</div>
+          </div>
+          <div class="se-metric-context-card">
+            <h3 class="se-metric-ctx-heading">Long-Term Warming Dynamics</h3>
+            <p class="se-plain-sentence">{{TEMP_PLAIN_SENTENCE}}</p>
+            <div class="se-metric-stat-line">
+              Trailing 30-Year Trend Rate: <strong>{{TEMP_TREND_VALUE}}</strong> (Rank: {{TEMP_TREND_RANK}})
+            </div>
+            <div class="se-method-limit-box">
+              <strong>Spatial Limitation Disclosure:</strong>
+              National land surface averages represent area-weighted means and inherently mask significant intra-national regional variations, microclimates, urban heat islands, and extreme elevation gradients.
+            </div>
+            <div class="se-metric-src-tag">
+              Source: <a href="https://berkeleyearth.org/data/" target="_blank" rel="noopener noreferrer">Berkeley Earth Surface Temperature Series (2024 update)</a> &middot; License: CC BY 4.0
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Emissions and Energy -->
+    <section class="se-dossier-section" id="emissions-energy" aria-labelledby="emissions-heading">
+      <div class="se-editorial-container">
+        <div class="se-section-header-row">
+          <div>
+            <span class="se-section-badge">Section 04</span>
+            <h2 id="emissions-heading" class="se-section-h2">Emissions &amp; Clean Energy Transition</h2>
+          </div>
+          <div class="se-section-header-note">
+            Territorial fossil greenhouse accounting and power grid generation shares
+          </div>
+        </div>
+
+        <div class="se-indicators-grid" style="margin-top: 1.5rem;">
+          <div class="se-indicator-card">
+            <div class="se-ind-header">
+              <h3 class="se-ind-title">Total Territorial CO2</h3>
+              <span class="se-ind-rank-badge">{{CO2_TOTAL_RANK_BADGE}}</span>
+            </div>
+            <div class="se-ind-value-row">
+              <div class="se-ind-value">{{CO2_TOTAL_VALUE}}</div>
+            </div>
+            <div class="se-ind-context">Share of global fossil emissions: <strong>{{CO2_GLOBAL_SHARE}}</strong>. Excludes international aviation and bunker fuels.</div>
+            <div class="se-ind-footer">
+              Source: Global Carbon Project (GCB 2024) &middot; CC BY 4.0
+            </div>
+          </div>
+
+          <div class="se-indicator-card">
+            <div class="se-ind-header">
+              <h3 class="se-ind-title">Per Capita CO2</h3>
+              <span class="se-ind-rank-badge">{{CO2_CAPITA_RANK_BADGE}}</span>
+            </div>
+            <div class="se-ind-value-row">
+              <div class="se-ind-value">{{CO2_CAPITA_VALUE}}</div>
+            </div>
+            <div class="se-ind-context">Normalized emissions per resident per year. World average baseline is ~4.7 tonnes per capita.</div>
+            <div class="se-ind-footer">
+              Source: Global Carbon Project &middot; CC BY 4.0
+            </div>
+          </div>
+
+          <div class="se-indicator-card">
+            <div class="se-ind-header">
+              <h3 class="se-ind-title">Renewable Electricity Share</h3>
+              <span class="se-ind-rank-badge">{{RENEWABLES_RANK_BADGE}}</span>
+            </div>
+            <div class="se-ind-value-row">
+              <div class="se-ind-value">{{RENEWABLES_VALUE}}</div>
+            </div>
+            <div class="se-ind-context">Share of annual utility electricity generation sourced from solar, wind, hydro, and bioenergy.</div>
+            <div class="se-ind-footer">
+              Source: Ember Global Electricity Review &middot; CC BY 4.0
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Land and Water Resources -->
+    <section class="se-dossier-section" id="land-water" aria-labelledby="land-heading">
+      <div class="se-editorial-container">
+        <div class="se-section-header-row">
+          <div>
+            <span class="se-section-badge">Section 05</span>
+            <h2 id="land-heading" class="se-section-h2">Land Cover &amp; Terrestrial Resources</h2>
+          </div>
+          <div class="se-section-header-note">
+            Forest canopy share, territorial surface area, and freshwater reporting status
+          </div>
+        </div>
+
+        <div class="se-metric-detail-grid">
+          <div class="se-metric-highlight-card">
+            <div class="se-metric-hl-title">Forest Cover Fraction</div>
+            <div class="se-metric-hl-num">{{FOREST_SHARE_VALUE}}</div>
+            <div class="se-metric-hl-sub">Share of national territorial land area</div>
+            <div class="se-metric-hl-rank">Global Forest Share Rank: {{FOREST_RANK_BADGE}}</div>
+          </div>
+          <div class="se-metric-context-card">
+            <h3 class="se-metric-ctx-heading">Forest Resources &amp; Water Decision Audit</h3>
+            <p class="se-plain-sentence">{{FOREST_PLAIN_SENTENCE}}</p>
+            
+            <div class="se-method-limit-box" style="margin-top: 1rem;">
+              <strong>Water Stress Metric Exclusion Notice:</strong>
+              Global water stress metrics are currently excluded from this dossier. International freshwater extraction datasets (e.g. FAO AQUASTAT) fail the Signal Earth data governance threshold (minimum 80% contemporaneous sovereign reporting coverage with under 3 years latency).
+            </div>
+            <div class="se-metric-src-tag">
+              Source: <a href="https://www.fao.org/forest-resources-assessment/" target="_blank" rel="noopener noreferrer">FAO Forest Resources Assessment / World Bank</a> &middot; License: CC BY 4.0 IGO
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: People (Demographics) -->
+    <section class="se-dossier-section" id="people" aria-labelledby="people-heading">
+      <div class="se-editorial-container">
+        <div class="se-section-header-row">
+          <div>
+            <span class="se-section-badge">Section 06</span>
+            <h2 id="people-heading" class="se-section-h2">People: Population &amp; Settlement Density</h2>
+          </div>
+          <div class="se-section-header-note">
+            Demographic scale, geographic concentration, and urbanization denominators
+          </div>
+        </div>
+
+        <div class="se-indicators-grid" style="margin-top: 1.5rem;">
+          <div class="se-indicator-card">
+            <div class="se-ind-header">
+              <h3 class="se-ind-title">Resident Population</h3>
+              <span class="se-ind-rank-badge">{{POP_RANK_BADGE}}</span>
+            </div>
+            <div class="se-ind-value-row">
+              <div class="se-ind-value">{{POPULATION_VALUE}}</div>
+            </div>
+            <div class="se-ind-context">Total de facto sovereign resident population (UN WPP 2024 revision estimate).</div>
+            <div class="se-ind-footer">Source: United Nations Population Division &middot; CC BY 3.0 IGO</div>
+          </div>
+
+          <div class="se-indicator-card">
+            <div class="se-ind-header">
+              <h3 class="se-ind-title">Settlement Density</h3>
+              <span class="se-ind-rank-badge">{{POP_DENSITY_RANK_BADGE}}</span>
+            </div>
+            <div class="se-ind-value-row">
+              <div class="se-ind-value">{{POP_DENSITY_VALUE}}</div>
+            </div>
+            <div class="se-ind-context">Arithmetic population density expressed as persons per square kilometer of sovereign land area.</div>
+            <div class="se-ind-footer">Derived from UN WPP &amp; FAO Land Area</div>
+          </div>
+
+          <div class="se-indicator-card">
+            <div class="se-ind-header">
+              <h3 class="se-ind-title">Demographic Growth Context</h3>
+              <span class="se-ind-rank-badge">Context</span>
+            </div>
+            <div class="se-ind-value-row">
+              <div class="se-ind-value" style="font-size: 1.35rem;">{{POP_CONTEXT_SUMMARY}}</div>
+            </div>
+            <div class="se-ind-context">{{POP_CONTEXT_DETAIL}}</div>
+            <div class="se-ind-footer">Source: United Nations WPP (2024 Revision)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: Regional Context (Peer Rankings) -->
+    <section class="se-dossier-section" id="regional-context" aria-labelledby="peers-heading">
+      <div class="se-editorial-container">
+        <div class="se-section-header-row">
+          <div>
+            <span class="se-section-badge">Section 07</span>
+            <h2 id="peers-heading" class="se-section-h2">Regional Context: {{SUBREGION}} Peers</h2>
+          </div>
+          <div class="se-section-header-note">
+            Direct comparison among geographic peers within the same regional basin
+          </div>
+        </div>
+
+        <div style="overflow-x: auto; margin-top: 1.5rem;">
+          <table class="se-peer-table">
+            <thead>
+              <tr>
+                <th>Country</th>
+                <th>ISO-3</th>
+                <th>Annual PM2.5</th>
+                <th>Temp Anomaly</th>
+                <th>CO2 / Capita</th>
+                <th>Renewables</th>
+                <th style="text-align: right;">Dossier</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{REGIONAL_PEERS_TABLE_ROWS}}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONDITIONAL: INDIA ORIGINAL INVESTIGATIONS SECTION -->
     {{ORIGINAL_INVESTIGATIONS_SECTION}}
+
+    <!-- SECTION 8: Data Governance, Provenance & Gaps -->
+    <section class="se-dossier-section" id="sources-governance" aria-labelledby="gov-heading">
+      <div class="se-editorial-container">
+        <div class="se-section-header-row">
+          <div>
+            <span class="se-section-badge">Section 08</span>
+            <h2 id="gov-heading" class="se-section-h2">Data Governance, Provenance Ledger &amp; Gaps</h2>
+          </div>
+          <div class="se-section-header-note">
+            Full audit log of datasets, measurement versions, legal licenses, and missing indicators
+          </div>
+        </div>
+
+        <h3 style="font-family: var(--se-font-serif); font-size: 1.25rem; margin: 1.5rem 0 0.75rem;">Contemporaneous Dataset Audit Table</h3>
+        <div style="overflow-x: auto;">
+          <table class="se-provenance-table">
+            <thead>
+              <tr>
+                <th>Indicator Name</th>
+                <th>Reported Value</th>
+                <th>Year</th>
+                <th>Organization &amp; Dataset</th>
+                <th>License</th>
+                <th style="text-align: right;">Upstream Source</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{AUDIT_TABLE_ROWS}}
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="font-family: var(--se-font-serif); font-size: 1.25rem; margin: 2.25rem 0 0.5rem;">Missing Indicator Disclosure Log</h3>
+        <p style="font-size: 0.9rem; color: var(--se-text-secondary); margin-bottom: 1rem;">
+          In accordance with the Signal Earth open data policy, unmonitored or unvalidated indicators are presented as "No data" rather than synthetic estimates:
+        </p>
+        <ul class="se-gaps-list">
+          {{MISSING_GAPS_LIST}}
+        </ul>
+      </div>
+    </section>
 
   </main>
 

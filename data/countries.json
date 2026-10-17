@@ -310,11 +310,9 @@
     "ranks": {
       "pm25": 3,
       "temp_anomaly": 142,
-      "temp_trend": 158,
-      "co2_total": 3,
       "co2_per_capita": 118,
-      "forest_share": 124,
       "renewables_share": 108,
+      "forest_share": 124,
       "population": 1
     }
   },
