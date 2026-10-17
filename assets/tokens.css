@@ -1,46 +1,49 @@
 /* ==========================================================================
-   SIGNAL EARTH : DESIGN TOKENS (assets/tokens.css)
-   Disciplined, scientific, accessible visual system.
-   Palette: Deep ocean navy, paper white, verified teal, thermal data encoding.
-   Typography: Newsreader (Editorial Serif), Inter (Clean Sans), IBM Plex Mono.
+   SIGNAL EARTH : MINIMALIST MONOCHROME DESIGN TOKENS (assets/tokens.css)
+   Pure Swiss-inspired editorial minimalism.
+   Strict black and white architectural aesthetic.
+   Zero choppy AI elements. Zero tacky gradients. Zero saturated neon glows.
+   Strict typography: ZERO EM DASHES.
    ========================================================================== */
 
 :root {
-  /* Surfaces & Backgrounds (Light Default) */
-  --se-bg-page: #F7F8FA;          /* Paper white */
-  --se-bg-surface: #FFFFFF;       /* Pure white card container */
-  --se-bg-elevated: #F0F2F5;      /* Subtle contrast / table header */
-  --se-border: #E2E4E9;           /* Hairline structural border */
-  --se-border-subtle: #ECEEF2;    /* Divider lines */
-  --se-border-hover: #CBD0D8;
+  /* Surfaces & Backgrounds (Light Monochrome Default) */
+  --se-bg-page: #FFFFFF;          /* Pure stark paper white */
+  --se-bg-surface: #FAFAFA;       /* Subtle neutral off-white */
+  --se-bg-elevated: #F4F4F5;      /* Subtle contrast / table headers */
+  --se-border: #E4E4E7;           /* Hairline structural boundary (Zinc 200) */
+  --se-border-subtle: #F4F4F5;    /* Sub-divider lines */
+  --se-border-hover: #A1A1AA;     /* Hover boundary */
 
-  /* Typography Colors */
-  --se-text-primary: #0F172A;     /* Slate 900 */
-  --se-text-secondary: #475569;   /* Slate 600 */
-  --se-text-muted: #64748B;       /* Slate 500 */
-  --se-text-inverse: #F8FAFC;     /* Slate 50 */
+  /* Typography Colors (High-Contrast Ink) */
+  --se-text-primary: #09090B;     /* Deep dense black ink (Zinc 950) */
+  --se-text-secondary: #52525B;   /* Charcoal secondary (Zinc 600) */
+  --se-text-muted: #71717A;       /* Neutral muted caption (Zinc 500) */
+  --se-text-inverse: #FFFFFF;     /* Pure white */
 
-  /* Scientific Accents (Data-encoding only, not decorative) */
-  --se-teal-live: #1FB6A6;        /* Verified / Live sensor indicator */
-  --se-blue-cold: #2E6FD8;        /* Cryosphere / Negative anomaly */
-  --se-amber-warm: #F2A33A;       /* Moderate particulate / Alert */
-  --se-red-hot: #D6402B;          /* Severe thermal anomaly / PM spike */
-  --se-navy-space: #0A1628;       /* Deep ocean navy for globe & terminal */
+  /* Monochromatic Data Indicators (Restrained, Scientific) */
+  --se-teal-live: #09090B;        /* Primary monochrome accent */
+  --se-accent: #09090B;           /* Stark black */
+  --se-accent-subtle: #F4F4F5;    /* Light tone */
+  --se-blue-cold: #3F3F46;        /* Monochromatic deep gray */
+  --se-amber-warm: #52525B;       /* Medium charcoal */
+  --se-red-hot: #18181B;          /* Dense graphite */
+  --se-navy-space: #000000;       /* Pure void black */
 
   /* Typography Scale */
   --se-font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
   --se-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --se-font-mono: 'IBM Plex Mono', Menlo, Consolas, monospace;
 
-  --se-text-xs: 0.72rem;   /* HUD coordinates, satellite tags (11.5px) */
-  --se-text-sm: 0.84rem;   /* Metadata, captions, button labels (13.5px) */
-  --se-text-base: 1.00rem; /* Body copy — max 72ch width (16px) */
-  --se-text-lg: 1.18rem;   /* Lead teasers, sub-headings (19px) */
-  --se-text-xl: 1.50rem;   /* Card titles (24px) */
-  --se-text-2xl: 2.10rem;  /* Section headings (33.6px) */
-  --se-text-3xl: 3.20rem;  /* Hero editorial headline (51px) */
+  --se-text-xs: 0.72rem;   /* HUD coordinates, satellite tags */
+  --se-text-sm: 0.84rem;   /* Metadata, captions, button labels */
+  --se-text-base: 1.00rem; /* Body copy - max 72ch width */
+  --se-text-lg: 1.18rem;   /* Lead teasers, sub-headings */
+  --se-text-xl: 1.50rem;   /* Card titles */
+  --se-text-2xl: 2.10rem;  /* Section headings */
+  --se-text-3xl: 3.20rem;  /* Hero editorial headline */
 
-  /* Strict Spacing Scale */
+  /* Disciplined Spacing Scale */
   --se-space-2xs: 0.25rem;
   --se-space-xs: 0.5rem;
   --se-space-sm: 1.0rem;
@@ -48,39 +51,74 @@
   --se-space-lg: 4.0rem;
   --se-space-xl: 6.0rem;
 
-  /* Disciplined Radius */
-  --se-radius-sm: 4px;     /* Buttons, chips, code boxes */
-  --se-radius-md: 8px;     /* Cards, report tiles */
-  --se-radius-lg: 12px;    /* Globe viewport, modal frame */
+  /* Architectural Sharp Radius (Brutalist Minimalism) */
+  --se-radius-sm: 2px;
+  --se-radius-md: 3px;
+  --se-radius-lg: 4px;
 
   --se-max-width: 1240px;
   --se-reading-width: 70ch;
-  --se-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
-  --se-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
-  --se-shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.12);
+  --se-shadow-sm: none;
+  --se-shadow-md: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --se-shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 [data-theme="dark"] {
-  --se-bg-page: #0A1628;          /* Deep ocean navy */
-  --se-bg-surface: #0E1D33;       /* Midnight blue surface */
-  --se-bg-elevated: #142642;      /* Elevated card body */
-  --se-border: #1E3456;
-  --se-border-subtle: #172B47;
-  --se-border-hover: #2C4A75;
+  /* Surfaces & Backgrounds (Pure Minimalist Void Black) */
+  --se-bg-page: #000000;          /* Pure pitch black */
+  --se-bg-surface: #0A0A0A;       /* Ultra-deep dark surface (Zinc 950) */
+  --se-bg-elevated: #121212;      /* Elevated layer */
+  --se-border: #222222;           /* Hairline boundary */
+  --se-border-subtle: #171717;    /* Subtle divider */
+  --se-border-hover: #404040;     /* Active hover boundary */
 
-  --se-text-primary: #F8FAFC;
-  --se-text-secondary: #94A3B8;
-  --se-text-muted: #64748B;
-  --se-text-inverse: #0A1628;
+  /* Typography Colors (High-Legibility Platinum) */
+  --se-text-primary: #FFFFFF;     /* Pure crisp white */
+  --se-text-secondary: #A1A1AA;   /* Neutral platinum (Zinc 400) */
+  --se-text-muted: #71717A;       /* Muted gray (Zinc 500) */
+  --se-text-inverse: #000000;     /* Pure black */
 
-  --se-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.35);
-  --se-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.45);
-  --se-shadow-lg: 0 14px 32px rgba(0, 0, 0, 0.55);
+  /* Monochromatic Data Indicators (White/Silver Spectrum) */
+  --se-teal-live: #FFFFFF;        /* Pure stark white highlight */
+  --se-accent: #FFFFFF;
+  --se-accent-subtle: #18181B;
+  --se-blue-cold: #D4D4D8;
+  --se-amber-warm: #A1A1AA;
+  --se-red-hot: #FFFFFF;
+  --se-navy-space: #000000;
+
+  --se-shadow-sm: none;
+  --se-shadow-md: 0 1px 3px rgba(0, 0, 0, 0.6);
+  --se-shadow-lg: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Smooth Natural Native Scrolling */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: var(--se-bg-page);
+  color: var(--se-text-primary);
+}
+
+/* Minimalist Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--se-bg-page);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--se-border);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--se-border-hover);
 }
 
 /* Base Accessibility & Focus States */
 :focus-visible {
-  outline: 2px solid var(--se-teal-live);
+  outline: 2px solid var(--se-text-primary);
   outline-offset: 2px;
 }
 

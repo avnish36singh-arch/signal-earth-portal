@@ -2,6 +2,7 @@
  * Signal Earth : Interactive 3D Planetary Country Globe (assets/globe-country.js)
  * Full-viewport WebGL 3D Earth visualization tracking sovereign environmental metrics.
  * Built with Three.js (0.160.0) and Globe.gl (2.32.2).
+ * Minimalist Monochrome (Black & White) Aesthetic.
  * Strict typography: ZERO EM DASHES.
  */
 
@@ -31,7 +32,7 @@
   function getRelPath(relPath) {
     var p = relPath.replace(/^\/+/, '');
     var isGhPages = window.location.pathname.indexOf('/signal-earth-portal') === 0;
-    return (isGhPages ? '/signal-earth-portal/' : '') + p;
+    return (isGhPages ? '/signal-earth-portal/' : '/') + p;
   }
 
   // Check prefers-reduced-motion
@@ -40,20 +41,19 @@
     isAutoRotating = false;
   }
 
-  // Metric color scale configurations (Colourblind-safe sequential & diverging)
+  // Minimalist Monochrome Color Scale Configurations (Charcoal to Stark White)
   var METRIC_CONFIGS = {
     pm25: {
       name: 'Annual Mean PM2.5',
       unit: 'µg/m³',
       min: 5,
       max: 60,
-      type: 'sequential_warm',
       interpolate: function (v) {
         if (v === null || v === undefined) return null;
-        if (v <= 5) return '#10B981';
-        if (v <= 15) return interpolateHex('#10B981', '#FBBF24', (v - 5) / 10);
-        if (v <= 35) return interpolateHex('#FBBF24', '#F97316', (v - 15) / 20);
-        return interpolateHex('#F97316', '#EF4444', Math.min(1, (v - 35) / 25));
+        if (v <= 5) return '#27272A';
+        if (v <= 15) return interpolateHex('#27272A', '#71717A', (v - 5) / 10);
+        if (v <= 35) return interpolateHex('#71717A', '#D4D4D8', (v - 15) / 20);
+        return interpolateHex('#D4D4D8', '#FFFFFF', Math.min(1, (v - 35) / 25));
       }
     },
     temp_anomaly: {
@@ -61,12 +61,11 @@
       unit: '°C',
       min: -0.5,
       max: 2.5,
-      type: 'diverging_cool_warm',
       interpolate: function (v) {
         if (v === null || v === undefined) return null;
-        if (v <= 0.5) return interpolateHex('#3B82F6', '#94A3B8', (v + 0.5) / 1.0);
-        if (v <= 1.5) return interpolateHex('#94A3B8', '#F59E0B', (v - 0.5) / 1.0);
-        return interpolateHex('#F59E0B', '#EF4444', Math.min(1, (v - 1.5) / 1.0));
+        if (v <= 0.5) return interpolateHex('#3F3F46', '#71717A', (v + 0.5) / 1.0);
+        if (v <= 1.5) return interpolateHex('#71717A', '#D4D4D8', (v - 0.5) / 1.0);
+        return interpolateHex('#D4D4D8', '#FFFFFF', Math.min(1, (v - 1.5) / 1.0));
       }
     },
     co2_per_capita: {
@@ -74,12 +73,11 @@
       unit: 't/person',
       min: 0.5,
       max: 18,
-      type: 'sequential',
       interpolate: function (v) {
         if (v === null || v === undefined) return null;
-        if (v <= 3) return interpolateHex('#10B981', '#FBBF24', v / 3);
-        if (v <= 10) return interpolateHex('#FBBF24', '#F97316', (v - 3) / 7);
-        return interpolateHex('#F97316', '#9333EA', Math.min(1, (v - 10) / 8));
+        if (v <= 3) return interpolateHex('#27272A', '#71717A', v / 3);
+        if (v <= 10) return interpolateHex('#71717A', '#D4D4D8', (v - 3) / 7);
+        return interpolateHex('#D4D4D8', '#FFFFFF', Math.min(1, (v - 10) / 8));
       }
     },
     total_co2: {
@@ -87,12 +85,11 @@
       unit: 'Mt/yr',
       min: 10,
       max: 5000,
-      type: 'sequential',
       interpolate: function (v) {
         if (v === null || v === undefined) return null;
         var logV = Math.log10(Math.max(1, v));
         var t = Math.min(1, Math.max(0, (logV - 1) / 3));
-        return interpolateHex('#34D399', '#EF4444', t);
+        return interpolateHex('#27272A', '#FFFFFF', t);
       }
     },
     renewable_elec_share: {
@@ -100,11 +97,9 @@
       unit: '%',
       min: 0,
       max: 100,
-      type: 'sequential_green',
       interpolate: function (v) {
         if (v === null || v === undefined) return null;
-        if (v <= 30) return interpolateHex('#475569', '#0D9488', v / 30);
-        return interpolateHex('#0D9488', '#10B981', Math.min(1, (v - 30) / 70));
+        return interpolateHex('#27272A', '#FFFFFF', v / 100);
       }
     },
     forest_share: {
@@ -112,11 +107,9 @@
       unit: '%',
       min: 0,
       max: 75,
-      type: 'sequential_forest',
       interpolate: function (v) {
         if (v === null || v === undefined) return null;
-        if (v <= 25) return interpolateHex('#E2E8F0', '#4ADE80', v / 25);
-        return interpolateHex('#4ADE80', '#15803D', Math.min(1, (v - 25) / 50));
+        return interpolateHex('#27272A', '#FFFFFF', v / 75);
       }
     },
     forest_change: {
@@ -124,11 +117,10 @@
       unit: '%',
       min: -15,
       max: 15,
-      type: 'diverging_forest',
       interpolate: function (v) {
         if (v === null || v === undefined) return null;
-        if (v < 0) return interpolateHex('#EF4444', '#94A3B8', Math.min(1, (v + 15) / 15));
-        return interpolateHex('#94A3B8', '#10B981', Math.min(1, v / 15));
+        if (v < 0) return interpolateHex('#3F3F46', '#71717A', Math.min(1, (v + 15) / 15));
+        return interpolateHex('#71717A', '#FFFFFF', Math.min(1, v / 15));
       }
     }
   };
@@ -158,18 +150,18 @@
   // Protocol check: file:// protocol restriction warning
   if (window.location.protocol === 'file:') {
     if (globeSkeleton) {
-      globeSkeleton.innerHTML = '<div style="padding: 2.5rem; text-align: center; color: #CBD5E1; font-family: sans-serif; max-width: 580px; margin: 0 auto; background: rgba(15, 23, 42, 0.95); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 8px;">' +
-        '<h2 style="color: #FFFFFF; font-size: 1.3rem; margin-top: 0; margin-bottom: 0.5rem;">Local Web Server Required for 3D Globe</h2>' +
-        '<p style="font-size: 0.9rem; line-height: 1.6; color: #94A3B8; margin-bottom: 1.25rem;">' +
+      globeSkeleton.innerHTML = '<div style="padding: 2.5rem; text-align: center; color: #CBD5E1; font-family: sans-serif; max-width: 580px; margin: 0 auto; background: #0A0A0A; border: 1px solid #222222; border-radius: 4px;">' +
+        '<h2 style="color: #FFFFFF; font-size: 1.25rem; margin-top: 0; margin-bottom: 0.5rem; font-family: Georgia, serif;">Local Web Server Required for 3D Globe</h2>' +
+        '<p style="font-size: 0.88rem; line-height: 1.6; color: #A1A1AA; margin-bottom: 1.25rem;">' +
         'You opened this page directly as a <code>file://</code> URL. Web browsers strictly restrict WebGL and GeoJSON data fetching when opened directly from the filesystem.' +
         '</p>' +
-        '<div style="background: #030712; padding: 0.75rem 1rem; border-radius: 6px; font-family: monospace; font-size: 0.85rem; color: #1FB6A6; margin-bottom: 1.25rem; border: 1px solid rgba(31, 182, 166, 0.3);">' +
+        '<div style="background: #000000; padding: 0.75rem 1rem; border-radius: 3px; font-family: monospace; font-size: 0.85rem; color: #FFFFFF; margin-bottom: 1.25rem; border: 1px solid #333333;">' +
         'python -m http.server 8000' +
         '</div>' +
         '<p style="font-size: 0.88rem; color: #CBD5E1; margin-bottom: 1.5rem;">' +
-        'Then open <a href="http://localhost:8000/" style="color: #5EEAD4; font-weight: 700; text-decoration: underline;">http://localhost:8000/</a> in your browser, or visit the live site at <a href="https://signalearth.netlify.app/" style="color: #5EEAD4; font-weight: 700; text-decoration: underline;">https://signalearth.netlify.app/</a>.' +
+        'Then open <a href="http://localhost:8000/" style="color: #FFFFFF; font-weight: 700; text-decoration: underline;">http://localhost:8000/</a> in your browser, or visit <a href="https://signalearth.netlify.app/" style="color: #FFFFFF; font-weight: 700; text-decoration: underline;">https://signalearth.netlify.app/</a>.' +
         '</p>' +
-        '<a href="#accessible-country-index" style="display: inline-block; background: #1FB6A6; color: #0A1628; padding: 0.5rem 1rem; border-radius: 4px; font-weight: 700; text-decoration: none; font-size: 0.85rem;">Browse Country Directory Below &darr;</a>' +
+        '<a href="#accessible-country-index" style="display: inline-block; background: #FFFFFF; color: #000000; padding: 0.5rem 1rem; border-radius: 2px; font-weight: 700; text-decoration: none; font-size: 0.82rem;">Browse Country Directory Below &darr;</a>' +
         '</div>';
     }
     return;
@@ -177,10 +169,10 @@
 
   if (!isWebGLAvailable()) {
     if (globeSkeleton) {
-      globeSkeleton.innerHTML = '<div style="padding: 2rem; text-align: center; color: #94A3B8; font-family: var(--se-font-sans);">' +
-        '<p style="font-size: 1.1rem; color: #F8FAFC; margin-bottom: 0.5rem;">WebGL acceleration is unavailable in your browser environment.</p>' +
+      globeSkeleton.innerHTML = '<div style="padding: 2rem; text-align: center; color: #A1A1AA; font-family: var(--se-font-sans);">' +
+        '<p style="font-size: 1.1rem; color: #FFFFFF; margin-bottom: 0.5rem;">WebGL acceleration is unavailable in your browser environment.</p>' +
         '<p style="font-size: 0.9rem; margin-bottom: 1.5rem;">You can explore all sovereign country profiles using the accessible directory table below.</p>' +
-        '<a href="#accessible-country-index" class="se-stream-btn" style="display: inline-block; background: #1FB6A6; color: #0A1628; font-weight: 600;">Browse Country Directory &darr;</a>' +
+        '<a href="#accessible-country-index" style="display: inline-block; background: #FFFFFF; color: #000000; padding: 0.5rem 1rem; border-radius: 2px; font-weight: 600; text-decoration: none;">Browse Country Directory &darr;</a>' +
         '</div>';
     }
     return;
@@ -214,13 +206,13 @@
         if (globeSkeleton && globeSkeleton.parentNode) {
           globeSkeleton.parentNode.removeChild(globeSkeleton);
         }
-      }, 400);
+      }, 300);
     }
   })
   .catch(function (err) {
     console.error('Failed to load globe data:', err);
     if (globeSkeleton) {
-      globeSkeleton.innerHTML = '<div style="color: #F87171; font-family: var(--se-font-mono); font-size: 0.85rem; padding: 2rem; text-align: center;">' +
+      globeSkeleton.innerHTML = '<div style="color: #A1A1AA; font-family: var(--se-font-mono); font-size: 0.85rem; padding: 2rem; text-align: center;">' +
         'Unable to load planetary boundary data. Please reload or browse the country directory below.' +
         '</div>';
     }
@@ -238,14 +230,14 @@
     var cfg = METRIC_CONFIGS[currentMetric] || METRIC_CONFIGS.pm25;
 
     if (!metricObj || metricObj.value === null || metricObj.value === undefined) {
-      return 'rgba(71, 85, 105, 0.45)';
+      return 'rgba(24, 24, 27, 0.72)';
     }
 
     var baseColor = cfg.interpolate(metricObj.value);
-    if (!baseColor) return 'rgba(71, 85, 105, 0.45)';
+    if (!baseColor) return 'rgba(24, 24, 27, 0.72)';
 
     if (baseColor.indexOf('rgb') === 0) {
-      return baseColor.replace('rgb', 'rgba').replace(')', ', 0.78)');
+      return baseColor.replace('rgb', 'rgba').replace(')', ', 0.82)');
     }
     return baseColor;
   }
@@ -263,10 +255,10 @@
     myGlobe = Globe()
       (globeContainer)
       .globeImageUrl(getRelPath('assets/earth-blue-marble.jpg'))
-      .backgroundColor('rgba(10, 22, 40, 0)')
+      .backgroundColor('#000000')
       .showAtmosphere(true)
-      .atmosphereColor('#1FB6A6')
-      .atmosphereAltitude(0.18)
+      .atmosphereColor('#FFFFFF')
+      .atmosphereAltitude(0.10)
       .width(width)
       .height(height)
       .polygonsData(geoData.features)
@@ -275,18 +267,18 @@
       })
       .polygonCapColor(function (d) {
         if (d === hoverD) {
-          return 'rgba(255, 255, 255, 0.9)';
+          return 'rgba(255, 255, 255, 0.98)';
         }
         return getPolygonColor(d);
       })
       .polygonSideColor(function () {
-        return 'rgba(255, 255, 255, 0.12)';
+        return 'rgba(255, 255, 255, 0.10)';
       })
       .polygonStrokeColor(function (d) {
         if (d === hoverD) {
-          return '#1FB6A6';
+          return '#FFFFFF';
         }
-        return 'rgba(255, 255, 255, 0.28)';
+        return 'rgba(255, 255, 255, 0.22)';
       })
       .polygonLabel(function (d) {
         var iso3 = getIso3(d);
@@ -302,21 +294,21 @@
           var valStr = metricObj.formatted || (metricObj.value + ' ' + (metricObj.unit || ''));
           var yrStr = metricObj.year ? ' (' + metricObj.year + ')' : '';
           var rkStr = metricObj.rank ? ' · Rank #' + metricObj.rank + (metricObj.total_ranked ? ' of ' + metricObj.total_ranked : '') : '';
-          metricLine = '<div style="font-family: monospace; font-size: 0.85rem; font-weight: 700; color: #1FB6A6; margin-top: 0.35rem;">' +
+          metricLine = '<div style="font-family: monospace; font-size: 0.85rem; font-weight: 700; color: #FFFFFF; margin-top: 0.35rem;">' +
             cfg.name + ': ' + valStr + yrStr +
             '</div>' +
-            '<div style="font-size: 0.72rem; color: #94A3B8; margin-top: 2px;">' + rkStr + '</div>';
+            '<div style="font-size: 0.72rem; color: #A1A1AA; margin-top: 2px;">' + rkStr + '</div>';
         } else {
-          metricLine = '<div style="font-family: monospace; font-size: 0.8rem; color: #94A3B8; margin-top: 0.35rem; font-style: italic;">' +
+          metricLine = '<div style="font-family: monospace; font-size: 0.8rem; color: #71717A; margin-top: 0.35rem; font-style: italic;">' +
             cfg.name + ': No data / Unranked' +
             '</div>';
         }
 
-        return '<div style="background: rgba(10, 22, 40, 0.96); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.22); border-radius: 6px; padding: 0.75rem 1rem; color: #F8FAFC; max-width: 300px; box-shadow: 0 12px 28px rgba(0,0,0,0.6); pointer-events: none;">' +
-          '<div style="font-family: Georgia, serif; font-size: 1.05rem; font-weight: 700; color: #FFFFFF; line-height: 1.2;">' + name + ' <span style="font-family: monospace; font-size: 0.75rem; color: #94A3B8; font-weight: normal;">[' + iso3 + ']</span></div>' +
-          '<div style="font-size: 0.75rem; color: #CBD5E1; margin-top: 2px;">' + region + '</div>' +
+        return '<div style="background: #0A0A0A; border: 1px solid #333333; border-radius: 3px; padding: 0.75rem 1rem; color: #FFFFFF; max-width: 290px; box-shadow: 0 10px 25px rgba(0,0,0,0.8); pointer-events: none;">' +
+          '<div style="font-family: Georgia, serif; font-size: 1.05rem; font-weight: 700; color: #FFFFFF; line-height: 1.2;">' + name + ' <span style="font-family: monospace; font-size: 0.75rem; color: #A1A1AA; font-weight: normal;">[' + iso3 + ']</span></div>' +
+          '<div style="font-size: 0.75rem; color: #A1A1AA; margin-top: 2px;">' + region + '</div>' +
           metricLine +
-          '<div style="font-size: 0.75rem; color: #5EEAD4; margin-top: 0.5rem; font-weight: 600;">Click to open sovereign dossier &rarr;</div>' +
+          '<div style="font-size: 0.72rem; color: #D4D4D8; margin-top: 0.5rem; font-weight: 600;">Click to open sovereign dossier &rarr;</div>' +
           '</div>';
       })
       .onPolygonHover(function (d) {
@@ -325,12 +317,12 @@
         myGlobe
           .polygonAltitude(function (polygon) { return polygon === hoverD ? 0.045 : 0.006; })
           .polygonCapColor(function (polygon) {
-            if (polygon === hoverD) return 'rgba(255, 255, 255, 0.9)';
+            if (polygon === hoverD) return 'rgba(255, 255, 255, 0.98)';
             return getPolygonColor(polygon);
           })
           .polygonStrokeColor(function (polygon) {
-            if (polygon === hoverD) return '#1FB6A6';
-            return 'rgba(255, 255, 255, 0.28)';
+            if (polygon === hoverD) return '#FFFFFF';
+            return 'rgba(255, 255, 255, 0.22)';
           });
       })
       .onPolygonClick(function (d) {
@@ -388,7 +380,7 @@
       currentMetric = metricSelect.value;
       if (myGlobe) {
         myGlobe.polygonCapColor(function (d) {
-          if (d === hoverD) return 'rgba(255, 255, 255, 0.9)';
+          if (d === hoverD) return 'rgba(255, 255, 255, 0.98)';
           return getPolygonColor(d);
         });
       }
@@ -400,33 +392,18 @@
     if (!legendContainer) return;
     var cfg = METRIC_CONFIGS[currentMetric] || METRIC_CONFIGS.pm25;
 
-    var gradientCss = '';
-    if (currentMetric === 'pm25') {
-      gradientCss = 'linear-gradient(to right, #10B981, #FBBF24, #F97316, #EF4444)';
-    } else if (currentMetric === 'temp_anomaly') {
-      gradientCss = 'linear-gradient(to right, #3B82F6, #94A3B8, #F59E0B, #EF4444)';
-    } else if (currentMetric === 'co2_per_capita') {
-      gradientCss = 'linear-gradient(to right, #10B981, #FBBF24, #F97316, #9333EA)';
-    } else if (currentMetric === 'total_co2') {
-      gradientCss = 'linear-gradient(to right, #34D399, #F59E0B, #EF4444)';
-    } else if (currentMetric === 'renewable_elec_share') {
-      gradientCss = 'linear-gradient(to right, #475569, #0D9488, #10B981)';
-    } else if (currentMetric === 'forest_share') {
-      gradientCss = 'linear-gradient(to right, #E2E8F0, #4ADE80, #15803D)';
-    } else if (currentMetric === 'forest_change') {
-      gradientCss = 'linear-gradient(to right, #EF4444, #94A3B8, #10B981)';
-    }
+    var gradientCss = 'linear-gradient(to right, #27272A, #71717A, #D4D4D8, #FFFFFF)';
 
-    legendContainer.innerHTML = '<div style="font-family: var(--se-font-sans); font-size: 0.75rem; color: #CBD5E1; margin-bottom: 4px; font-weight: 600;">' +
+    legendContainer.innerHTML = '<div style="font-family: var(--se-font-sans); font-size: 0.75rem; color: #FFFFFF; margin-bottom: 5px; font-weight: 600;">' +
       cfg.name + ' (' + cfg.unit + ')' +
       '</div>' +
-      '<div style="height: 10px; width: 100%; border-radius: 4px; background: ' + gradientCss + '; margin-bottom: 4px;"></div>' +
-      '<div style="display: flex; justify-content: space-between; font-family: monospace; font-size: 0.7rem; color: #94A3B8;">' +
+      '<div style="height: 6px; width: 100%; border-radius: 2px; background: ' + gradientCss + '; margin-bottom: 5px; border: 1px solid rgba(255,255,255,0.15);"></div>' +
+      '<div style="display: flex; justify-content: space-between; font-family: monospace; font-size: 0.7rem; color: #A1A1AA;">' +
       '<span>' + cfg.min + ' ' + cfg.unit + '</span>' +
       '<span>' + cfg.max + '+ ' + cfg.unit + '</span>' +
       '</div>' +
-      '<div style="display: flex; align-items: center; gap: 6px; margin-top: 6px; font-size: 0.7rem; color: #94A3B8;">' +
-      '<span style="display: inline-block; width: 10px; height: 10px; border-radius: 2px; background: rgba(71, 85, 105, 0.75); border: 1px solid rgba(255,255,255,0.2);"></span>' +
+      '<div style="display: flex; align-items: center; gap: 6px; margin-top: 8px; font-size: 0.7rem; color: #71717A;">' +
+      '<span style="display: inline-block; width: 8px; height: 8px; border-radius: 1px; background: #18181B; border: 1px solid rgba(255,255,255,0.25);"></span>' +
       '<span>Unranked / No data</span>' +
       '</div>';
   }
@@ -481,15 +458,15 @@
       }).slice(0, 7);
 
       if (!matches.length) {
-        searchResults.innerHTML = '<div style="padding: 0.6rem 0.85rem; font-size: 0.8rem; color: #94A3B8;">No sovereign nation found</div>';
+        searchResults.innerHTML = '<div style="padding: 0.6rem 0.85rem; font-size: 0.8rem; color: #71717A;">No sovereign nation found</div>';
         searchResults.style.display = 'block';
         return;
       }
 
       var html = matches.map(function (c) {
-        return '<div class="globe-search-item" data-iso="' + c.iso3 + '" style="padding: 0.55rem 0.85rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.06);">' +
-          '<span style="font-weight: 600; color: #F8FAFC; font-size: 0.85rem;">' + c.name + '</span>' +
-          '<span style="font-family: monospace; font-size: 0.72rem; color: #1FB6A6;">[' + c.iso3 + ']</span>' +
+        return '<div class="globe-search-item" data-iso="' + c.iso3 + '" style="padding: 0.55rem 0.85rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1F1F23;">' +
+          '<span style="font-weight: 600; color: #FFFFFF; font-size: 0.85rem;">' + c.name + '</span>' +
+          '<span style="font-family: monospace; font-size: 0.72rem; color: #A1A1AA;">[' + c.iso3 + ']</span>' +
           '</div>';
       }).join('');
 
@@ -578,13 +555,13 @@
       var pmRank = pmObj.rank ? '#' + pmObj.rank : 'Unranked';
       var co2Rank = co2Obj.rank ? '#' + co2Obj.rank : 'Unranked';
 
-      return '<tr style="border-bottom: 1px solid var(--se-border);">' +
-        '<td style="padding: 0.65rem 0.5rem; font-weight: 600;"><a href="' + getRelPath('country/' + c.iso3.toLowerCase() + '/') + '" style="color: inherit; text-decoration: underline;">' + c.name + '</a></td>' +
-        '<td style="padding: 0.65rem 0.5rem; font-family: monospace; font-size: 0.85rem;">' + c.iso3 + '</td>' +
-        '<td style="padding: 0.65rem 0.5rem; color: var(--se-text-secondary);">' + c.region + '</td>' +
-        '<td style="padding: 0.65rem 0.5rem; font-family: monospace; font-size: 0.85rem;">' + pmRank + '</td>' +
-        '<td style="padding: 0.65rem 0.5rem; font-family: monospace; font-size: 0.85rem;">' + co2Rank + '</td>' +
-        '<td style="padding: 0.65rem 0.5rem; text-align: right;"><a href="' + getRelPath('country/' + c.iso3.toLowerCase() + '/') + '" class="se-link" style="font-weight: 600;">View dossier &rarr;</a></td>' +
+      return '<tr>' +
+        '<td style="padding: 0.75rem 0.5rem; font-weight: 600;"><a href="' + getRelPath('country/' + c.iso3.toLowerCase() + '/') + '" style="color: inherit; text-decoration: underline;">' + c.name + '</a></td>' +
+        '<td style="padding: 0.75rem 0.5rem; font-family: monospace; font-size: 0.85rem;">' + c.iso3 + '</td>' +
+        '<td style="padding: 0.75rem 0.5rem; color: var(--se-text-secondary);">' + c.region + '</td>' +
+        '<td style="padding: 0.75rem 0.5rem; font-family: monospace; font-size: 0.85rem;">' + pmRank + '</td>' +
+        '<td style="padding: 0.75rem 0.5rem; font-family: monospace; font-size: 0.85rem;">' + co2Rank + '</td>' +
+        '<td style="padding: 0.75rem 0.5rem; text-align: right;"><a href="' + getRelPath('country/' + c.iso3.toLowerCase() + '/') + '" class="se-link" style="font-weight: 600;">View dossier &rarr;</a></td>' +
         '</tr>';
     }).join('');
 

@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="assets/tokens.css">
   <link rel="stylesheet" href="style.css">
   <script src="assets/theme.js"></script>
+
   <!-- Pinned Three.js and Globe.gl libraries (local vendor with CDN fallback) -->
   <script src="assets/vendor/three.min.js"></script>
   <script src="assets/vendor/globe.gl.min.js"></script>
@@ -27,6 +28,7 @@
   <script src="assets/globe-country.js" defer></script>
 
   <style>
+    /* Minimalist Monochrome Layout */
     body {
       margin: 0;
       padding: 0;
@@ -34,9 +36,10 @@
       background: var(--se-bg-page);
       color: var(--se-text-primary);
       font-family: var(--se-font-sans);
+      -webkit-font-smoothing: antialiased;
     }
 
-    /* Minimal 5-Item Editorial Header */
+    /* Minimal Editorial Header */
     .se-editorial-header {
       border-bottom: 1px solid var(--se-border);
       background: var(--se-bg-page);
@@ -47,22 +50,32 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0.75rem 1.5rem;
+      padding: 0.85rem 1.5rem;
       max-width: 1400px;
       margin: 0 auto;
     }
     .se-editorial-wordmark {
       font-family: var(--se-font-serif);
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       font-weight: 700;
       color: var(--se-text-primary);
       text-decoration: none;
       letter-spacing: -0.01em;
     }
+    .se-wordmark-badge-mono {
+      font-family: var(--se-font-mono);
+      font-size: 0.7rem;
+      color: var(--se-text-muted);
+      border: 1px solid var(--se-border);
+      padding: 0.15rem 0.45rem;
+      border-radius: var(--se-radius-sm);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
     .se-editorial-nav-list {
       display: flex;
       list-style: none;
-      gap: 1.25rem;
+      gap: 1.5rem;
       padding: 0;
       margin: 0;
       align-items: center;
@@ -72,23 +85,25 @@
       color: var(--se-text-secondary);
       text-decoration: none;
       font-weight: 500;
-      transition: color 0.15s ease;
+      transition: color 0.1s ease;
     }
     .se-editorial-nav-link:hover {
       color: var(--se-text-primary);
     }
     .se-editorial-nav-link.active {
-      color: var(--se-teal-live);
-      font-weight: 600;
+      color: var(--se-text-primary);
+      font-weight: 700;
+      border-bottom: 1.5px solid var(--se-text-primary);
+      padding-bottom: 2px;
     }
 
-    /* Full-Viewport Globe Stage */
+    /* Full-Viewport Minimalist Globe Stage */
     .se-globe-stage {
       position: relative;
       width: 100vw;
       height: calc(100vh - 58px);
       min-height: 580px;
-      background: radial-gradient(circle at 50% 50%, #0A1628 0%, #030712 100%);
+      background: #000000;
       overflow: hidden;
     }
 
@@ -101,19 +116,18 @@
       z-index: 1;
     }
 
-    /* Floating HUD Controls */
+    /* Minimalist HUD Panels (Black and White Architectural Style) */
     .se-hud-top-left {
       position: absolute;
       top: 1.25rem;
       left: 1.5rem;
       z-index: 10;
-      max-width: 380px;
-      background: rgba(10, 22, 40, 0.82);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      border-radius: var(--se-radius-md);
+      max-width: 360px;
+      background: rgba(10, 10, 10, 0.94);
+      border: 1px solid #222222;
+      border-radius: var(--se-radius-sm);
       padding: 1.25rem;
-      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
       pointer-events: auto;
     }
     .se-hud-title {
@@ -123,62 +137,68 @@
       color: #FFFFFF;
       margin: 0 0 0.35rem;
       line-height: 1.2;
+      letter-spacing: -0.01em;
     }
     .se-hud-desc {
       font-size: 0.82rem;
-      line-height: 1.45;
-      color: #CBD5E1;
-      margin: 0 0 1rem;
+      line-height: 1.5;
+      color: #A1A1AA;
+      margin: 0 0 1.1rem;
     }
 
-    /* Metric Selector Dropdown */
+    /* Monochrome Metric Selector */
     .se-hud-select-wrap {
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.85rem;
     }
     .se-hud-select-label {
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       font-family: var(--se-font-mono);
       text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: #94A3B8;
+      letter-spacing: 0.06em;
+      color: #71717A;
       display: block;
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.35rem;
     }
     .se-hud-select {
       width: 100%;
-      background: rgba(15, 23, 42, 0.95);
-      color: #F8FAFC;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      padding: 0.5rem 0.65rem;
+      background: #000000;
+      color: #FFFFFF;
+      border: 1px solid #2E2E32;
+      padding: 0.55rem 0.65rem;
       border-radius: var(--se-radius-sm);
       font-family: var(--se-font-sans);
       font-size: 0.85rem;
-      font-weight: 600;
+      font-weight: 500;
       outline: none;
       cursor: pointer;
+      transition: border-color 0.15s ease;
     }
     .se-hud-select:focus {
-      border-color: #1FB6A6;
+      border-color: #FFFFFF;
     }
 
-    /* Instant Search Box */
+    /* Monochrome Instant Search Box */
     .se-hud-search-wrap {
       position: relative;
     }
     .se-hud-search-input {
       width: 100%;
-      background: rgba(15, 23, 42, 0.85);
-      color: #F8FAFC;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      padding: 0.5rem 0.65rem;
+      background: #000000;
+      color: #FFFFFF;
+      border: 1px solid #2E2E32;
+      padding: 0.55rem 0.65rem;
       border-radius: var(--se-radius-sm);
       font-family: var(--se-font-sans);
       font-size: 0.85rem;
       outline: none;
       box-sizing: border-box;
+      transition: border-color 0.15s ease;
     }
     .se-hud-search-input:focus {
-      border-color: #1FB6A6;
+      border-color: #FFFFFF;
+    }
+    .se-hud-search-input::placeholder {
+      color: #52525B;
     }
     .globe-search-results {
       display: none;
@@ -186,32 +206,31 @@
       top: calc(100% + 4px);
       left: 0;
       width: 100%;
-      background: rgba(15, 23, 42, 0.98);
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: #0A0A0A;
+      border: 1px solid #2E2E32;
       border-radius: var(--se-radius-sm);
       max-height: 220px;
       overflow-y: auto;
       z-index: 25;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
     }
 
-    /* Floating Legend (Bottom-Right HUD) */
+    /* Minimalist Bottom-Right Legend */
     .se-hud-bottom-right {
       position: absolute;
       bottom: 1.5rem;
       right: 1.5rem;
       z-index: 10;
       width: 260px;
-      background: rgba(10, 22, 40, 0.82);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      border-radius: var(--se-radius-md);
+      background: rgba(10, 10, 10, 0.94);
+      border: 1px solid #222222;
+      border-radius: var(--se-radius-sm);
       padding: 0.85rem 1rem;
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
       pointer-events: auto;
     }
 
-    /* Orbit and View Buttons (Bottom-Left HUD) */
+    /* Minimalist Bottom-Left Controls */
     .se-hud-bottom-left {
       position: absolute;
       bottom: 1.5rem;
@@ -222,10 +241,9 @@
       pointer-events: auto;
     }
     .se-hud-btn {
-      background: rgba(10, 22, 40, 0.75);
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      color: #CBD5E1;
+      background: rgba(10, 10, 10, 0.94);
+      border: 1px solid #222222;
+      color: #A1A1AA;
       padding: 0.45rem 0.85rem;
       border-radius: var(--se-radius-sm);
       font-size: 0.75rem;
@@ -238,16 +256,40 @@
       transition: all 0.15s ease;
     }
     .se-hud-btn:hover {
-      background: rgba(15, 23, 42, 0.95);
-      color: #FFFFFF;
-      border-color: #1FB6A6;
+      background: #FFFFFF;
+      color: #000000;
+      border-color: #FFFFFF;
     }
 
     /* Accessible Directory Drawer */
     .se-accessible-directory-section {
       background: var(--se-bg-page);
       border-top: 1px solid var(--se-border);
-      padding: 3rem 1.5rem;
+      padding: 3.5rem 1.5rem;
+    }
+    .se-peer-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.88rem;
+    }
+    .se-peer-table th {
+      border-bottom: 2px solid var(--se-text-primary);
+      padding: 0.75rem 0.5rem;
+      font-family: var(--se-font-mono);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--se-text-primary);
+    }
+    .se-peer-table td {
+      border-bottom: 1px solid var(--se-border);
+      padding: 0.75rem 0.5rem;
+      color: var(--se-text-secondary);
+    }
+    .se-peer-table tr:hover td {
+      background: var(--se-bg-surface);
+      color: var(--se-text-primary);
     }
   </style>
 </head>
@@ -259,9 +301,9 @@
     <div class="se-editorial-header-inner">
       <div style="display: flex; align-items: center; gap: 0.75rem;">
         <a href="index.html" class="se-editorial-wordmark">Signal Earth</a>
-        <span style="font-family: var(--se-font-mono); font-size: 0.7rem; color: #1FB6A6; background: rgba(31, 182, 166, 0.12); padding: 0.15rem 0.45rem; border-radius: 3px; border: 1px solid rgba(31, 182, 166, 0.25);">Global Telemetry</span>
+        <span class="se-wordmark-badge-mono">Global Telemetry</span>
       </div>
-      <div style="display: flex; align-items: center; gap: 1.25rem;">
+      <div style="display: flex; align-items: center; gap: 1.5rem;">
         <nav aria-label="Main Navigation">
           <ul class="se-editorial-nav-list">
             <li><a href="index.html" class="se-editorial-nav-link active" aria-current="page">Globe</a></li>
@@ -273,7 +315,7 @@
           </ul>
         </nav>
         <button type="button" id="se-theme-toggle" class="se-theme-toggle-btn" aria-label="Toggle theme mode" title="Switch light / dark mode">
-          <svg class="se-theme-icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg class="se-theme-icon-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
             <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -284,7 +326,7 @@
             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
           </svg>
-          <svg class="se-theme-icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg class="se-theme-icon-moon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
           <span class="se-theme-label">Theme</span>
@@ -299,9 +341,9 @@
       <div id="globe-container"></div>
 
       <!-- Loading skeleton -->
-      <div id="globe-skeleton" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #0A1628; z-index: 5; transition: opacity 0.4s ease;">
-        <div style="font-family: var(--se-font-mono); font-size: 0.85rem; color: #1FB6A6; display: flex; align-items: center; gap: 0.6rem;">
-          <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #1FB6A6; animation: sePulseTeal 1.5s infinite;"></span>
+      <div id="globe-skeleton" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #000000; z-index: 5; transition: opacity 0.3s ease;">
+        <div style="font-family: var(--se-font-mono); font-size: 0.82rem; color: #A1A1AA; display: flex; align-items: center; gap: 0.6rem;">
+          <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #FFFFFF; animation: sePulseMono 1.2s infinite;"></span>
           Initializing Planetary 3D Country Globe...
         </div>
       </div>
@@ -310,12 +352,12 @@
       <div class="se-hud-top-left">
         <h1 class="se-hud-title">Planetary Environmental Explorer</h1>
         <p class="se-hud-desc">
-          Verified empirical sovereign environmental telemetry across a changing planet. Click any nation to inspect its verified dossier.
+          Verified empirical sovereign environmental telemetry across a changing planet. Select any nation to inspect its verified dossier.
         </p>
 
         <!-- Metric Layer Selector -->
         <div class="se-hud-select-wrap">
-          <label for="globe-metric-select" class="se-hud-select-label">Select Color Indicator Layer</label>
+          <label for="globe-metric-select" class="se-hud-select-label">Color Indicator Layer</label>
           <select id="globe-metric-select" class="se-hud-select" aria-label="Choose planetary indicator color scale">
             <option value="pm25" selected>Annual Mean PM2.5 (µg/m³)</option>
             <option value="temp_anomaly">Surface Temperature Anomaly (°C)</option>
@@ -329,7 +371,7 @@
 
         <!-- Instant Country Search Filter -->
         <div class="se-hud-search-wrap">
-          <input type="text" id="globe-country-search" class="se-hud-search-input" placeholder="Search country (e.g. India, Germany, USA)..." aria-label="Search countries on globe">
+          <input type="text" id="globe-country-search" class="se-hud-search-input" placeholder="Search nation (e.g. India, Germany, USA)..." aria-label="Search countries on globe">
           <div id="globe-search-results" class="globe-search-results"></div>
         </div>
       </div>
@@ -358,9 +400,9 @@
     <!-- Accessible Sovereign Country Directory Fallback -->
     <section class="se-accessible-directory-section" id="accessible-country-index" aria-labelledby="country-index-heading">
       <div style="max-width: 1200px; margin: 0 auto;">
-        <div style="margin-bottom: 1.5rem;">
-          <span style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-teal-live); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;">Accessible Directory</span>
-          <h2 style="font-family: var(--se-font-serif); font-size: 1.5rem; font-weight: 700; margin: 0.25rem 0 0.5rem; color: var(--se-text-primary);" id="country-index-heading">
+        <div style="margin-bottom: 2rem;">
+          <span style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;">Accessible Directory</span>
+          <h2 style="font-family: var(--se-font-serif); font-size: 1.6rem; font-weight: 700; margin: 0.35rem 0 0.5rem; color: var(--se-text-primary);" id="country-index-heading">
             Sovereign Country Directory &amp; Ranks
           </h2>
           <p style="font-size: 0.9rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0;">
@@ -369,26 +411,26 @@
         </div>
 
         <div style="overflow-x: auto;">
-          <table class="se-peer-table" style="width: 100%;">
+          <table class="se-peer-table">
             <thead>
               <tr>
-                <th style="padding: 0.65rem 0.5rem;">Country</th>
-                <th style="padding: 0.65rem 0.5rem; width: 90px;">ISO-3</th>
-                <th style="padding: 0.65rem 0.5rem;">Region</th>
-                <th style="padding: 0.65rem 0.5rem; width: 130px;">PM2.5 Rank</th>
-                <th style="padding: 0.65rem 0.5rem; width: 130px;">CO2 Rank</th>
-                <th style="padding: 0.65rem 0.5rem; text-align: right; width: 140px;">Dossier</th>
+                <th style="padding: 0.75rem 0.5rem;">Country</th>
+                <th style="padding: 0.75rem 0.5rem; width: 90px;">ISO-3</th>
+                <th style="padding: 0.75rem 0.5rem;">Region</th>
+                <th style="padding: 0.75rem 0.5rem; width: 130px;">PM2.5 Rank</th>
+                <th style="padding: 0.75rem 0.5rem; width: 130px;">CO2 Rank</th>
+                <th style="padding: 0.75rem 0.5rem; text-align: right; width: 140px;">Dossier</th>
               </tr>
             </thead>
             <tbody id="accessible-countries-tbody">
               <!-- Dynamically populated by assets/globe-country.js -->
               <tr>
-                <td style="padding: 0.65rem 0.5rem; font-weight: 600;"><a href="country/ind/">India</a></td>
-                <td style="padding: 0.65rem 0.5rem; font-family: monospace;">IND</td>
-                <td style="padding: 0.65rem 0.5rem;">Asia</td>
-                <td style="padding: 0.65rem 0.5rem; font-family: monospace;">#3</td>
-                <td style="padding: 0.65rem 0.5rem; font-family: monospace;">#3</td>
-                <td style="padding: 0.65rem 0.5rem; text-align: right;"><a href="country/ind/" class="se-link" style="font-weight: 600;">View dossier &rarr;</a></td>
+                <td style="padding: 0.75rem 0.5rem; font-weight: 600;"><a href="country/ind/" style="color: inherit; text-decoration: underline;">India</a></td>
+                <td style="padding: 0.75rem 0.5rem; font-family: monospace;">IND</td>
+                <td style="padding: 0.75rem 0.5rem;">Asia</td>
+                <td style="padding: 0.75rem 0.5rem; font-family: monospace;">#3</td>
+                <td style="padding: 0.75rem 0.5rem; font-family: monospace;">#3</td>
+                <td style="padding: 0.75rem 0.5rem; text-align: right;"><a href="country/ind/" class="se-link" style="font-weight: 600;">View dossier &rarr;</a></td>
               </tr>
             </tbody>
           </table>
@@ -397,18 +439,18 @@
     </section>
   </main>
 
-  <!-- Standardized Editorial Footer -->
-  <footer class="se-editorial-footer">
-    <div class="se-editorial-container">
-      <div class="se-editorial-footer-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+  <!-- Minimalist Editorial Footer -->
+  <footer class="se-editorial-footer" style="background: var(--se-bg-page); border-top: 1px solid var(--se-border); padding: 3rem 1.5rem 2rem;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2.5rem; margin-bottom: 2.5rem;">
         <div>
-          <div style="font-family: var(--se-font-serif); font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--se-text-primary);">
+          <div style="font-family: var(--se-font-serif); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--se-text-primary);">
             Signal Earth
           </div>
-          <p style="font-size: 0.9rem; line-height: 1.6; color: var(--se-text-secondary); max-width: 50ch; margin: 0 0 1rem;">
-            Avnish Singh &middot; Civil Engineering undergraduate, HBTU Kanpur, focusing on environmental engineering &middot; Contact: <a href="mailto:avnish36singh@gmail.com" class="se-link">avnish36singh@gmail.com</a>
+          <p style="font-size: 0.88rem; line-height: 1.6; color: var(--se-text-secondary); max-width: 52ch; margin: 0 0 1rem;">
+            Avnish Singh &middot; Civil Engineering undergraduate, HBTU Kanpur, focusing on environmental engineering &middot; Contact: <a href="mailto:avnish36singh@gmail.com" class="se-link" style="color: var(--se-text-primary); text-decoration: underline;">avnish36singh@gmail.com</a>
           </p>
-          <div style="font-size: 0.85rem;">
+          <div style="font-size: 0.82rem; color: var(--se-text-muted);">
             <a href="credits.html" class="se-link">How to cite</a> &middot;
             <a href="methodology.html" class="se-link">Methodology</a> &middot;
             <a href="sources.html" class="se-link">Data Sources</a> &middot;
@@ -419,7 +461,7 @@
           </div>
         </div>
         <div>
-          <div style="font-size: 0.8rem; font-family: var(--se-font-mono); text-transform: uppercase; color: var(--se-text-muted); margin-bottom: 0.5rem;">
+          <div style="font-size: 0.75rem; font-family: var(--se-font-mono); text-transform: uppercase; color: var(--se-text-muted); margin-bottom: 0.5rem; letter-spacing: 0.05em;">
             Attribution &amp; Hosting
           </div>
           <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.5rem;">
@@ -430,7 +472,7 @@
           </p>
         </div>
       </div>
-      <div class="se-editorial-footer-bottom">
+      <div style="border-top: 1px solid var(--se-border); padding-top: 1.25rem; display: flex; justify-content: space-between; font-size: 0.78rem; color: var(--se-text-muted); flex-wrap: wrap; gap: 0.5rem;">
         <div>&copy; 2026 Signal Earth. Open-access empirical environmental telemetry.</div>
         <div><a href="privacy.html" class="se-link">Privacy Policy</a> &middot; <a href="terms.html" class="se-link">Terms of Use</a> &middot; <a href="licenses.html" class="se-link">Licenses</a></div>
       </div>
