@@ -3,130 +3,165 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page Not Found (404) | Signal Earth</title>
-  <meta name="description" content="The requested page could not be located in the Signal Earth research repository.">
+  <title>Resource Not Found (404) | Signal Earth</title>
+  <meta name="description" content="The requested environmental dossier or document does not exist in the Signal Earth portal.">
+  <link rel="canonical" href="https://signalearth.netlify.app/404.html">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="assets/tokens.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/country.css">
   <script src="assets/theme.js"></script>
 </head>
-<body>
+<body class="se-editorial-page">
   <a href="#main" class="skip-link">Skip to content</a>
 
-
-  <!-- 5-Item Editorial Navigation -->
-  <header>
-    <nav class="se-nav" aria-label="Main Navigation">
-      <div class="se-nav-inner">
-        <a href="index.html" class="se-brand">
-          <span class="se-brand-name">Signal Earth</span>
-          <span class="se-brand-sub">Independent Research</span>
-        </a>
-
-        <ul class="se-nav-links">
-          <li><a href="index.html#analyses">Analyses</a></li>
-          <li><a href="index.html#explained">Explained</a></li>
-          <li><a href="methodology.html">Methodology</a></li>
-          <li><a href="data.html">Data and code</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
+  <!-- Standardized Editorial Header -->
+  <header class="se-editorial-header" id="se-header">
+    <div class="se-editorial-container">
+      <div class="se-editorial-header-inner">
+        <div class="se-editorial-wordmark-wrap">
+          <a href="index.html" class="se-editorial-wordmark">Signal Earth</a>
+          <span class="se-wordmark-badge">404</span>
+        </div>
+        <div class="se-editorial-header-right">
+          <nav class="se-editorial-nav" aria-label="Main Navigation">
+            <ul class="se-editorial-nav-list">
+              <li><a href="index.html" class="se-editorial-nav-link">Globe</a></li>
+              <li><a href="rankings.html" class="se-editorial-nav-link">Rankings</a></li>
+              <li><a href="compare.html" class="se-editorial-nav-link">Compare</a></li>
+              <li><a href="data.html" class="se-editorial-nav-link">Data</a></li>
+              <li><a href="methodology.html" class="se-editorial-nav-link">Methodology</a></li>
+              <li><a href="about.html" class="se-editorial-nav-link">About</a></li>
+            </ul>
+          </nav>
+          <button type="button" id="se-theme-toggle" class="se-theme-toggle-btn" aria-label="Toggle theme mode" title="Switch light / dark mode">
+            <svg class="se-theme-icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="se-theme-icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span class="se-theme-label">Theme</span>
+          </button>
+        </div>
       </div>
-    </nav>
+    </div>
   </header>
 
-  <main id="main" class="se-container-narrow se-404-main">
-    <span class="section-kicker">Error 404</span>
-    <h1 class="editorial-headline se-headline-clamp">
-      Page Not Found
-    </h1>
-    <p class="se-hero-dek se-card-desc">
-      The requested URL does not match any archived document, analysis, or resource in this portfolio.
-    </p>
+  <main id="main">
+    <section class="se-country-hero" style="padding: 4.5rem 0 3.5rem;">
+      <div class="se-editorial-container" style="max-width: 680px;">
+        <span class="se-section-badge" style="color: #F87171;">HTTP 404 Error</span>
+        <h1 class="se-country-h1" style="font-size: 2.5rem; margin-top: 0.25rem;">Resource Not Found</h1>
+        <p class="se-country-dek" style="margin-bottom: 2rem;">
+          The requested path does not exist on Signal Earth. If you were searching for a sovereign environmental dossier, search below or return to the planetary globe.
+        </p>
 
-    <div class="se-404-box">
-      <h2 class="se-card-title">Available Portfolio Sections</h2>
-      <ul class="se-list-bullet-simple">
-        <li><a href="index.html" class="se-link">Index: Research Overview and NAQI Calculator</a></li>
-        <li><a href="investigations/kanpur.html" class="se-link">Investigation 01: Kanpur Particulate Dynamics</a></li>
-        <li><a href="investigations/delhi.html" class="se-link">Investigation 02: Delhi Five-Year NAQI Analysis</a></li>
-        <li><a href="investigations/kanpur-lst.html" class="se-link">Investigation 03: Kanpur Surface Skin Temperature</a></li>
-        <li><a href="investigations/comparison.html" class="se-link">Investigation 04: Regional Airshed Comparison</a></li>
-        <li><a href="methodology.html" class="se-link">Methodology: Technical Framework and Limits</a></li>
-        <li><a href="data.html" class="se-link">Data and Code: Station Registry and Sources</a></li>
-      </ul>
-    </div>
+        <!-- Instant Country Search Box -->
+        <div style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.5rem; margin-bottom: 2rem;">
+          <label for="country-search-input" style="display: block; font-family: var(--se-font-mono); font-size: 0.75rem; text-transform: uppercase; color: var(--se-text-muted); margin-bottom: 0.5rem; font-weight: 600;">
+            Search Sovereign Country Dossiers
+          </label>
+          <input type="text" id="country-search-input" placeholder="Type country name or ISO code (e.g. India, Germany, USA)..." style="width: 100%; padding: 0.65rem 0.85rem; font-size: 0.95rem; border: 1px solid var(--se-border); border-radius: var(--se-radius-sm); background: var(--se-bg-page); color: var(--se-text-primary); outline: none;">
+          <div id="country-search-results" style="margin-top: 0.75rem; display: flex; flex-direction: column; gap: 0.4rem;"></div>
+        </div>
 
-    <p class="se-card-desc">
-      If you followed an external link or believe a document was moved without redirection, please review the <a href="corrections.html" class="se-link">Corrections Log</a> or open an issue on the <a href="https://github.com/avnish36singh-arch/signal-earth-portal/issues" target="_blank" rel="noopener noreferrer" class="se-link">GitHub repository</a>.
-    </p>
+        <div style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.5rem;">
+          <h2 style="font-family: var(--se-font-serif); font-size: 1.15rem; margin: 0 0 0.75rem; color: var(--se-text-primary);">
+            Core Planetary Portals
+          </h2>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem;">
+            <li>&rarr; <a href="index.html" class="se-link" style="font-weight: 600;">Homepage: 3D Interactive Planetary Globe</a></li>
+            <li>&rarr; <a href="rankings.html" class="se-link" style="font-weight: 600;">Planetary Rankings: 8-Indicator Sortable Leaderboard</a></li>
+            <li>&rarr; <a href="compare.html" class="se-link" style="font-weight: 600;">Country Comparison: Side-by-Side Benchmarking</a></li>
+            <li>&rarr; <a href="data.html" class="se-link" style="font-weight: 600;">Open Data Portal &amp; Numbers Ledger</a></li>
+            <li>&rarr; <a href="methodology.html" class="se-link" style="font-weight: 600;">Methodological Framework &amp; Limits</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- 4-Column Editorial Footer (Black #0B0B0C) -->
-  <footer class="se-footer">
-    <div class="se-container">
-      <div class="se-footer-inner">
-        <div class="se-footer-brand-col">
-          <div class="se-footer-brand-title">Signal Earth</div>
-          <p class="se-footer-brand-desc">
-            An independent project analysing air quality and surface temperature in Kanpur and Delhi through maps, satellite records, and open code.
+  <!-- Standardized Editorial Footer -->
+  <footer class="se-editorial-footer">
+    <div class="se-editorial-container">
+      <div class="se-editorial-footer-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+        <div>
+          <div style="font-family: var(--se-font-serif); font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--se-text-primary);">
+            Signal Earth
+          </div>
+          <p style="font-size: 0.9rem; line-height: 1.6; color: var(--se-text-secondary); max-width: 50ch; margin: 0 0 1rem;">
+            Avnish Singh &middot; Civil Engineering undergraduate, HBTU Kanpur, focusing on environmental engineering &middot; Contact: <a href="mailto:avnish36singh@gmail.com" class="se-link">avnish36singh@gmail.com</a>
+          </p>
+          <div style="font-size: 0.85rem;">
+            <a href="credits.html" class="se-link">How to cite</a> &middot;
+            <a href="methodology.html" class="se-link">Methodology</a> &middot;
+            <a href="sources.html" class="se-link">Data Sources</a> &middot;
+            <a href="corrections.html" class="se-link">Corrections Log</a> &middot;
+            <a href="known-problems.html" class="se-link">Known Problems</a> &middot;
+            <a href="numbers_ledger.csv" class="se-link" download>Numbers Ledger (CSV)</a> &middot;
+            <a href="https://github.com/avnish36singh-arch/signal-earth-portal" class="se-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size: 0.8rem; font-family: var(--se-font-mono); text-transform: uppercase; color: var(--se-text-muted); margin-bottom: 0.5rem;">
+            Attribution &amp; Hosting
+          </div>
+          <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.5rem;">
+            Contains modified Copernicus Climate Change Service information [2026]. Content licensed under CC BY 4.0; code licensed under MIT.
+          </p>
+          <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-muted); margin: 0;">
+            Hosted on Netlify. Static build with zero cookies, zero trackers, and zero server-side state.
           </p>
         </div>
-
-        <div class="se-footer-col">
-          <h5>Analyses</h5>
-          <ul>
-            <li><a href="investigations/kanpur.html">Kanpur Particulate Dynamics</a></li>
-            <li><a href="investigations/delhi.html">Delhi NAQI Analysis</a></li>
-            <li><a href="investigations/kanpur-lst.html">Kanpur Reanalysis Temperature</a></li>
-            <li><a href="investigations/comparison.html">Regional Airshed Comparison</a></li>
-          </ul>
-        </div>
-
-        <div class="se-footer-col">
-          <h5>Method and Data</h5>
-          <ul>
-            <li><a href="index.html#explained">Explained Pieces</a></li>
-            <li><a href="methodology.html">Methodology and Limits</a></li>
-            <li><a href="data.html">Data and Code</a></li>
-            <li><a href="about.html">About Signal Earth</a></li>
-          </ul>
-        </div>
-
-        <div class="se-footer-col">
-          <h5>Legal</h5>
-          <ul>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="terms.html">Terms of Use</a></li>
-            <li><a href="licenses.html">Licenses and Terms</a></li>
-            <li><a href="credits.html">Image Credits</a></li>
-            <li><a href="corrections.html">Corrections Log</a></li>
-          </ul>
-        </div>
-
-        <div class="se-footer-col">
-          <h5>Follow</h5>
-          <ul>
-            <li><a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/company/signalearth/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li><a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="contact.html">Contact Information</a></li>
-          </ul>
-        </div>
       </div>
-
-      <!-- Mandatory Affiliation Disclaimer -->
-      <div class="se-footer-disclaimer">
-        Signal Earth is an independent project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, UPPCB, DPCC, or any agency named on this site.
-      </div>
-
-      <div class="se-footer-bottom">
-        <div>Signal Earth &middot; Open Science under MIT License</div>
-        <div>Page last updated: October 2026</div>
+      <div class="se-editorial-footer-bottom">
+        <div>&copy; 2026 Signal Earth. Open-access empirical environmental telemetry.</div>
+        <div><a href="privacy.html" class="se-link">Privacy Policy</a> &middot; <a href="terms.html" class="se-link">Terms of Use</a> &middot; <a href="licenses.html" class="se-link">Licenses</a></div>
       </div>
     </div>
   </footer>
+
+  <script>
+    (function() {
+      var input = document.getElementById('country-search-input');
+      var results = document.getElementById('country-search-results');
+      if (!input || !results) return;
+
+      var countries = [];
+      fetch('data/countries.json')
+        .then(function(r) { return r.json(); })
+        .then(function(data) { countries = data; })
+        .catch(function(e) { console.error('Country index load failed', e); });
+
+      input.addEventListener('input', function() {
+        var q = input.value.trim().toLowerCase();
+        if (!q) { results.innerHTML = ''; return; }
+        var matches = countries.filter(function(c) {
+          return c.name.toLowerCase().indexOf(q) !== -1 || c.iso3.toLowerCase().indexOf(q) !== -1;
+        }).slice(0, 6);
+
+        if (!matches.length) {
+          results.innerHTML = '<div style="font-size: 0.8rem; color: var(--se-text-muted); padding: 0.4rem 0;">No sovereign nation found.</div>';
+          return;
+        }
+
+        results.innerHTML = matches.map(function(c) {
+          return '<a href="country/' + c.iso3.toLowerCase() + '/" style="display: flex; justify-content: space-between; padding: 0.45rem 0.65rem; background: var(--se-bg-page); border: 1px solid var(--se-border); border-radius: 4px; text-decoration: none; color: inherit; font-size: 0.85rem;">' +
+            '<span style="font-weight: 600;">' + c.name + '</span>' +
+            '<span style="font-family: monospace; color: var(--se-teal-live);">[' + c.iso3 + '] &rarr;</span>' +
+            '</a>';
+        }).join('');
+      });
+    })();
+  </script>
 </body>
 </html>

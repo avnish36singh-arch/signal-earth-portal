@@ -13,7 +13,42 @@
 
 [[redirects]]
   from = "/location.html"
-  to = "/"
+  to = "/globe.html"
+  status = 301
+
+[[redirects]]
+  from = "/location"
+  to = "/globe.html"
+  status = 301
+
+[[redirects]]
+  from = "/investigations/comparison.html"
+  to = "/compare.html"
+  status = 301
+
+[[redirects]]
+  from = "/briefs.html"
+  to = "/reports.html"
+  status = 301
+
+[[redirects]]
+  from = "/citations.html"
+  to = "/credits.html"
+  status = 301
+
+[[redirects]]
+  from = "/factsheets.html"
+  to = "/data.html"
+  status = 301
+
+[[redirects]]
+  from = "/country"
+  to = "/country/"
+  status = 301
+
+[[redirects]]
+  from = "/country/index.html"
+  to = "/country/"
   status = 301
 
 # Canonical investigation route aliases
@@ -61,17 +96,18 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    X-Frame-Options = "SAMEORIGIN"
+    X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
-    X-XSS-Protection = "1; mode=block"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+    Content-Security-Policy = "default-src 'self' 'unsafe-inline' https://unpkg.com https://cdn.jsdelivr.net https://worldview.earthdata.nasa.gov; img-src 'self' data: https: blob:; script-src 'self' 'unsafe-inline' https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https://*.github.io https://*.netlify.app https://api.open-meteo.com https://gibs.earthdata.nasa.gov;"
 
 [[headers]]
   for = "/assets/*"
   [headers.values]
-    Cache-Control = "public, max-age=604800, immutable"
+    Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
   for = "/data/*"
   [headers.values]
-    Cache-Control = "public, max-age=3600, stale-while-revalidate=86400"
+    Cache-Control = "public, max-age=86400, must-revalidate"

@@ -3,154 +3,526 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Station Rankings and Data Quorum | Signal Earth</title>
-  <meta name="description" content="Analytical station-level rankings and monitoring quorum evaluated across 3,256 continuous ambient monitoring station-days in Kanpur and Delhi.">
-  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/rankings.html">
+  <title>Global Environmental Rankings & Leaderboards | Signal Earth</title>
+  <meta name="description" content="Authoritative sovereign rankings across annual mean PM2.5 exposure, surface temperature anomalies, per capita CO2 emissions, and clean electricity shares.">
+  <link rel="canonical" href="https://signalearth.netlify.app/rankings.html">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="assets/tokens.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/country.css">
   <script src="assets/theme.js"></script>
+
+  <style>
+    .se-rankings-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      justify-content: space-between;
+      margin: 2rem 0 1rem;
+      padding: 1.25rem;
+      background: var(--se-bg-surface);
+      border: 1px solid var(--se-border);
+      border-radius: var(--se-radius-md);
+    }
+    .se-rank-filter-group {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .se-rank-select {
+      background: var(--se-bg-page);
+      color: var(--se-text-primary);
+      border: 1px solid var(--se-border);
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--se-radius-sm);
+      font-family: var(--se-font-sans);
+      font-size: 0.85rem;
+      font-weight: 600;
+      outline: none;
+    }
+    .se-rank-input {
+      background: var(--se-bg-page);
+      color: var(--se-text-primary);
+      border: 1px solid var(--se-border);
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--se-radius-sm);
+      font-family: var(--se-font-sans);
+      font-size: 0.85rem;
+      outline: none;
+      min-width: 200px;
+    }
+    .se-rank-btn {
+      background: transparent;
+      border: 1px solid var(--se-border);
+      color: var(--se-text-secondary);
+      font-family: var(--se-font-mono);
+      font-size: 0.75rem;
+      padding: 0.4rem 0.7rem;
+      border-radius: 16px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .se-rank-btn:hover, .se-rank-btn.active {
+      background: var(--se-teal-live);
+      color: #0A1628;
+      font-weight: 700;
+      border-color: var(--se-teal-live);
+    }
+    .se-tally-bar {
+      font-family: var(--se-font-mono);
+      font-size: 0.78rem;
+      color: var(--se-text-muted);
+      margin-bottom: 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .se-staleness-badge {
+      display: inline-block;
+      font-family: var(--se-font-mono);
+      font-size: 0.7rem;
+      color: #D97706;
+      background: rgba(217, 119, 6, 0.12);
+      border: 1px solid rgba(217, 119, 6, 0.3);
+      padding: 0.1rem 0.35rem;
+      border-radius: 3px;
+      margin-left: 0.3rem;
+    }
+    .se-unranked-row td {
+      background: rgba(148, 163, 184, 0.05);
+      color: var(--se-text-muted);
+      font-style: italic;
+    }
+  </style>
 </head>
-<body>
+<body class="se-editorial-page">
   <a href="#main" class="skip-link">Skip to content</a>
 
-  <header>
-    <nav class="se-nav" aria-label="Main Navigation">
-      <div class="se-nav-inner">
-        <a href="index.html" class="se-brand">
-          <span class="se-brand-name">Signal Earth</span>
-          <span class="se-brand-sub">Independent Research</span>
-        </a>
-        <ul class="se-nav-links">
-          <li><a href="research.html">Research</a></li>
-          <li><a href="briefs/index.html">Briefs</a></li>
-          <li><a href="explained/index.html">Explained</a></li>
-          <li><a href="data.html">Data &amp; Code</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
+  <!-- Standardized 5-Item Editorial Header -->
+  <header class="se-editorial-header" id="se-header">
+    <div class="se-editorial-container">
+      <div class="se-editorial-header-inner">
+        <div class="se-editorial-wordmark-wrap">
+          <a href="index.html" class="se-editorial-wordmark">Signal Earth</a>
+          <span class="se-wordmark-badge">Rankings</span>
+        </div>
+        <div class="se-editorial-header-right">
+          <nav class="se-editorial-nav" aria-label="Main Navigation">
+            <ul class="se-editorial-nav-list">
+              <li><a href="index.html" class="se-editorial-nav-link">Globe</a></li>
+              <li><a href="rankings.html" class="se-editorial-nav-link" style="color: var(--se-teal-live); font-weight: 600;">Rankings</a></li>
+              <li><a href="compare.html" class="se-editorial-nav-link">Compare</a></li>
+              <li><a href="data.html" class="se-editorial-nav-link">Data</a></li>
+              <li><a href="methodology.html" class="se-editorial-nav-link">Methodology</a></li>
+              <li><a href="about.html" class="se-editorial-nav-link">About</a></li>
+            </ul>
+          </nav>
+          <button type="button" id="se-theme-toggle" class="se-theme-toggle-btn" aria-label="Toggle theme mode" title="Switch light / dark mode">
+            <svg class="se-theme-icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="se-theme-icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span class="se-theme-label">Theme</span>
+          </button>
+        </div>
       </div>
-    </nav>
+    </div>
   </header>
 
-  <main id="main" class="se-container se-page-content" style="padding-top: 3rem; padding-bottom: 4rem;">
-    <div class="se-section-header">
-      <span class="section-kicker">Comparative Context &middot; Station Data Quorum</span>
-      <h1 class="editorial-headline se-section-title" style="font-size: 2rem;">Station Comparison and Data Quorum</h1>
-      <p class="se-hero-dek">
-        Station-level particulate ranking evaluated from verified public monitoring datasets. Preserved from the original portal documentation.
-      </p>
-    </div>
-
-    <div class="se-panel">
-      <span class="section-kicker">Analytical Station Ranking</span>
-      <h2 class="editorial-headline" style="font-size: 1.35rem; margin-top: 0.35rem; margin-bottom: 0.5rem;">Analysed Monitoring Stations Ranked by Mean Observed PM2.5</h2>
-      <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
-        This ranking evaluates the three individual CAAQMS monitors analysed in our codebase by their arithmetic mean PM2.5 concentration across all valid reporting days.
-      </p>
-
-      <div class="se-table-wrap">
-        <table class="se-table">
-          <thead>
-            <tr>
-              <th>Rank</th>
-              <th>Station Name &amp; ID</th>
-              <th>Setting / Environment</th>
-              <th>Observed Mean PM2.5</th>
-              <th>Observation Period</th>
-              <th>Valid Rows (n)</th>
-              <th>Key Limitation</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>1</strong></td>
-              <td><strong>Alipur, Delhi (Site 204)</strong></td>
-              <td>Northern peripheral highway transport corridor (NH-44)</td>
-              <td><strong>112.4 &micro;g/m&sup3;</strong></td>
-              <td>2017 to 2023</td>
-              <td>n = 1,137 official days (1,133 PM2.5 valid days)</td>
-              <td>731-day unmonitored operational gap; high heavy freight traffic influence</td>
-            </tr>
-            <tr>
-              <td><strong>2</strong></td>
-              <td><strong>Nehru Nagar, Kanpur (Site 5662)</strong></td>
-              <td>Dense urban mixed commercial and industrial basin</td>
-              <td><strong>58.7 &micro;g/m&sup3;</strong></td>
-              <td>Jul 2021 to Oct 2022 &amp; Feb 2025 to Aug 2026</td>
-              <td>n = 813 station-days</td>
-              <td>2.3-year reporting hiatus; single sensor location in central core</td>
-            </tr>
-            <tr>
-              <td><strong>3</strong></td>
-              <td><strong>NSI Kalyanpur, Kanpur (Site 229252)</strong></td>
-              <td>Semi-suburban educational campus corridor</td>
-              <td><strong>55.4 &micro;g/m&sup3;</strong></td>
-              <td>Jul 2021 to Oct 2022 &amp; Feb 2025 to Aug 2026</td>
-              <td>n = 815 station-days</td>
-              <td>2.3-year reporting hiatus; localized vegetation buffering</td>
-            </tr>
-          </tbody>
-        </table>
+  <main id="main">
+    <section class="se-country-hero" style="padding: 3.5rem 0 2rem;">
+      <div class="se-editorial-container">
+        <a href="index.html" class="se-country-back-link">&larr; Return to Planetary Globe</a>
+        <div class="se-country-badge-row">
+          <span class="se-country-iso-badge">Global Registry</span>
+          <span class="se-country-region-tag">Comparative Leaderboards</span>
+        </div>
+        <h1 class="se-country-h1">Planetary Environmental Rankings</h1>
+        <p class="se-country-dek">
+          Contemporaneous sovereign leaderboards across annual mean PM2.5 exposure, surface warming anomalies, fossil CO2 emissions, and clean power generation.
+        </p>
       </div>
+    </section>
 
-      <p class="se-caption-tight" style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
-        <strong>Essential Caveat:</strong> The monitoring periods for Delhi and Kanpur are non-identical. Delhi Alipur reflects 2017 to 2023 data, whereas Kanpur reflects discrete windows from 2021 to 2022 and 2025 to 2026 (pooled n = 1,628 station-days across both stations). Micro-environments differ substantially between a major transit highway border (Alipur) and central urban residential monitors (Kanpur). This table reflects station records, not uniform citywide exposure.
-      </p>
+    <section class="se-dossier-section" style="padding-top: 2rem;">
+      <div class="se-editorial-container">
+        <!-- Controls Bar -->
+        <div class="se-rankings-controls">
+          <div class="se-rank-filter-group">
+            <label for="metric-select" style="font-family: var(--se-font-mono); font-size: 0.75rem; text-transform: uppercase; color: var(--se-text-muted); font-weight: 600;">Metric:</label>
+            <select id="metric-select" class="se-rank-select" aria-label="Select ranking indicator">
+              <option value="pm25" selected>Annual Mean PM2.5 Exposure (µg/m³)</option>
+              <option value="temp_anomaly">Surface Temperature Anomaly (°C)</option>
+              <option value="temp_trend">30-Year Warming Trend Rate (°C / decade)</option>
+              <option value="co2_total">Total Territorial Fossil CO2 (Mt CO2)</option>
+              <option value="co2_per_capita">Per Capita Fossil CO2 (t CO2 / person)</option>
+              <option value="forest_share">Forest Cover Share (% of land)</option>
+              <option value="renewables_share">Renewable Electricity Share (%)</option>
+              <option value="population">Resident Population</option>
+            </select>
+          </div>
 
-      <div style="margin-top: 1.5rem;">
-        <a href="investigations/comparison.html" class="se-btn">View Detailed Airshed Comparison &rarr;</a>
-        <a href="index.html" class="se-btn se-btn-outline" style="margin-left: 0.5rem;">Back to Homepage</a>
+          <div class="se-rank-filter-group">
+            <button type="button" class="se-rank-btn active" data-region="all">All Regions</button>
+            <button type="button" class="se-rank-btn" data-region="Africa">Africa</button>
+            <button type="button" class="se-rank-btn" data-region="Americas">Americas</button>
+            <button type="button" class="se-rank-btn" data-region="Asia">Asia</button>
+            <button type="button" class="se-rank-btn" data-region="Europe">Europe</button>
+            <button type="button" class="se-rank-btn" data-region="Oceania">Oceania</button>
+          </div>
+
+          <div class="se-rank-filter-group">
+            <input type="text" id="country-filter-input" class="se-rank-input" placeholder="Filter by country..." aria-label="Filter countries by name or ISO code">
+            <button type="button" id="download-csv-btn" class="se-rank-btn" style="border-radius: var(--se-radius-sm); background: var(--se-bg-page); font-weight: 600;">
+              Download CSV &darr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Tally Bar & Staleness Disclosure -->
+        <div class="se-tally-bar">
+          <div id="tally-count">Loading sovereign rankings...</div>
+          <div>Note: [*] indicates reporting lag exceeding 1 year from the contemporaneous anchor.</div>
+        </div>
+
+        <!-- Table Container -->
+        <div style="overflow-x: auto;">
+          <table class="se-peer-table" id="rankings-table">
+            <thead>
+              <tr>
+                <th style="width: 70px;">Rank</th>
+                <th>Country</th>
+                <th style="width: 80px;">ISO-3</th>
+                <th>Region</th>
+                <th>Reported Value</th>
+                <th style="width: 120px;">Observation Year</th>
+                <th style="width: 180px;">Distribution Percentile</th>
+                <th style="text-align: right;">Dossier</th>
+              </tr>
+            </thead>
+            <tbody id="rankings-tbody">
+              <!-- Populated dynamically -->
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Historical In-Situ Monitoring Station Annex -->
+    <section class="se-dossier-section" style="background: var(--se-bg-surface);">
+      <div class="se-editorial-container">
+        <div class="se-section-header-row">
+          <div>
+            <span class="se-section-badge">Observational Annex</span>
+            <h2 class="se-section-h2">In-Situ Regulatory Air Quality Monitoring Stations</h2>
+          </div>
+          <div class="se-section-header-note">
+            Station-specific particulate metrics evaluated across verified monitoring station-days
+          </div>
+        </div>
+
+        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--se-text-secondary); max-width: 75ch; margin-bottom: 1.5rem;">
+          In addition to country-wide population-weighted satellite exposure estimates, Signal Earth conducts station-level telemetry audits across monitored regulatory stations in northern India:
+        </p>
+
+        <div style="overflow-x: auto;">
+          <table class="se-peer-table">
+            <thead>
+              <tr>
+                <th>Station ID &amp; Location</th>
+                <th>Setting</th>
+                <th>Observed Mean PM2.5</th>
+                <th>Validated Station-Days</th>
+                <th>Documented Hiatus</th>
+                <th style="text-align: right;">Investigation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Alipur, Delhi (Site 204)</strong></td>
+                <td>Northern freight corridor (NH-44)</td>
+                <td style="font-family: monospace; font-weight: 700;">112.4 µg/m³</td>
+                <td style="font-family: monospace;">1,137 official days</td>
+                <td style="font-family: monospace; color: #D97706;">731 days (2019-2020)</td>
+                <td style="text-align: right;"><a href="investigations/delhi-naqi.html" class="se-link" style="font-weight: 600;">Delhi NAQI &rarr;</a></td>
+              </tr>
+              <tr>
+                <td><strong>Nehru Nagar, Kanpur (Site 5662)</strong></td>
+                <td>Dense commercial &amp; industrial basin</td>
+                <td style="font-family: monospace; font-weight: 700;">58.7 µg/m³</td>
+                <td style="font-family: monospace;">813 station-days</td>
+                <td style="font-family: monospace; color: #D97706;">855 days (2022-2025)</td>
+                <td style="text-align: right;"><a href="investigations/kanpur-particulates.html" class="se-link" style="font-weight: 600;">Kanpur PM2.5 &rarr;</a></td>
+              </tr>
+              <tr>
+                <td><strong>NSI Kalyanpur, Kanpur (Site 229252)</strong></td>
+                <td>Semi-suburban educational corridor</td>
+                <td style="font-family: monospace; font-weight: 700;">55.4 µg/m³</td>
+                <td style="font-family: monospace;">815 station-days</td>
+                <td style="font-family: monospace; color: #D97706;">855 days (2022-2025)</td>
+                <td style="text-align: right;"><a href="investigations/kanpur-particulates.html" class="se-link" style="font-weight: 600;">Kanpur PM2.5 &rarr;</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="se-footer">
-    <div class="se-container">
-      <div class="se-footer-inner">
-        <div class="se-footer-brand-col">
-          <div class="se-footer-brand-title">Signal Earth</div>
-          <p class="se-footer-brand-desc">
-            An independent project analysing air quality and surface temperature in Kanpur and Delhi through maps, satellite records, and open code.
+  <!-- Standardized Editorial Footer -->
+  <footer class="se-editorial-footer">
+    <div class="se-editorial-container">
+      <div class="se-editorial-footer-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+        <div>
+          <div style="font-family: var(--se-font-serif); font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--se-text-primary);">
+            Signal Earth
+          </div>
+          <p style="font-size: 0.9rem; line-height: 1.6; color: var(--se-text-secondary); max-width: 50ch; margin: 0 0 1rem;">
+            Avnish Singh &middot; Civil Engineering undergraduate, HBTU Kanpur, focusing on environmental engineering &middot; Contact: <a href="mailto:avnish36singh@gmail.com" class="se-link">avnish36singh@gmail.com</a>
+          </p>
+          <div style="font-size: 0.85rem;">
+            <a href="credits.html" class="se-link">How to cite</a> &middot;
+            <a href="methodology.html" class="se-link">Methodology</a> &middot;
+            <a href="sources.html" class="se-link">Data Sources</a> &middot;
+            <a href="corrections.html" class="se-link">Corrections Log</a> &middot;
+            <a href="known-problems.html" class="se-link">Known Problems</a> &middot;
+            <a href="numbers_ledger.csv" class="se-link" download>Numbers Ledger (CSV)</a> &middot;
+            <a href="https://github.com/avnish36singh-arch/signal-earth-portal" class="se-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size: 0.8rem; font-family: var(--se-font-mono); text-transform: uppercase; color: var(--se-text-muted); margin-bottom: 0.5rem;">
+            Attribution &amp; Hosting
+          </div>
+          <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.5rem;">
+            Contains modified Copernicus Climate Change Service information [2026]. Content licensed under CC BY 4.0; code licensed under MIT.
+          </p>
+          <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-muted); margin: 0;">
+            Hosted on Netlify. Static build with zero cookies, zero trackers, and zero server-side state.
           </p>
         </div>
-        <div class="se-footer-col">
-          <h5>Analyses</h5>
-          <ul>
-            <li><a href="investigations/kanpur.html">Kanpur Particulate Dynamics</a></li>
-            <li><a href="investigations/delhi.html">Delhi NAQI Analysis</a></li>
-            <li><a href="investigations/kanpur-lst.html">Kanpur Reanalysis Temperature</a></li>
-            <li><a href="investigations/comparison.html">Regional Airshed Comparison</a></li>
-          </ul>
-        </div>
-        <div class="se-footer-col">
-          <h5>Method and Data</h5>
-          <ul>
-            <li><a href="explained/index.html">Explained Pieces</a></li>
-            <li><a href="methodology.html">Methodology &amp; Standards</a></li>
-            <li><a href="data.html">Data Registry &amp; Code</a></li>
-            <li><a href="corrections.html">Corrections Log</a></li>
-          </ul>
-        </div>
-        <div class="se-footer-col">
-          <h5>Legal</h5>
-          <ul>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="terms.html">Terms of Use</a></li>
-            <li><a href="licenses.html">Licenses &amp; Attribution</a></li>
-            <li><a href="credits.html">Credits</a></li>
-          </ul>
-        </div>
       </div>
-      <div class="se-footer-disclaimer">
-        Signal Earth is an independent project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, UPPCB, DPCC, or any agency named on this site.
-      </div>
-      <div class="se-footer-bottom">
-        <div>Signal Earth &middot; Open Science under MIT License</div>
-        <div>Page last updated: October 2026</div>
+      <div class="se-editorial-footer-bottom">
+        <div>&copy; 2026 Signal Earth. Open-access empirical environmental telemetry.</div>
+        <div><a href="privacy.html" class="se-link">Privacy Policy</a> &middot; <a href="terms.html" class="se-link">Terms of Use</a> &middot; <a href="licenses.html" class="se-link">Licenses</a></div>
       </div>
     </div>
   </footer>
+
+  <!-- Client-side Leaderboard Controller -->
+  <script>
+    (function () {
+      'use strict';
+
+      var metricSelect = document.getElementById('metric-select');
+      var countryInput = document.getElementById('country-filter-input');
+      var tbody = document.getElementById('rankings-tbody');
+      var tallyCount = document.getElementById('tally-count');
+      var downloadBtn = document.getElementById('download-csv-btn');
+      var regionBtns = document.querySelectorAll('.se-rank-btn[data-region]');
+
+      var allProfiles = [];
+      var activeRegion = 'all';
+
+      var ANCHOR_YEARS = {
+        pm25: 2021,
+        temp_anomaly: 2023,
+        temp_trend: 2023,
+        co2_total: 2023,
+        co2_per_capita: 2023,
+        forest_share: 2022,
+        renewables_share: 2023,
+        population: 2023
+      };
+
+      // Load countries index
+      fetch('data/countries.json')
+        .then(function (r) { return r.json(); })
+        .then(function (indexData) {
+          // Fetch complete profiles
+          var promises = indexData.map(function (c) {
+            return fetch('data/country/' + c.iso3.toLowerCase() + '.json')
+              .then(function (res) { return res.json(); })
+              .catch(function () { return null; });
+          });
+          return Promise.all(promises);
+        })
+        .then(function (profiles) {
+          allProfiles = profiles.filter(function (p) { return p !== null; });
+          renderTable();
+        })
+        .catch(function (err) {
+          console.error('Failed to load ranking profiles:', err);
+          tbody.innerHTML = '<tr><td colspan="8" style="text-align: center; padding: 2rem; color: #F87171;">Failed to load country profiles.</td></tr>';
+        });
+
+      function renderTable() {
+        if (!allProfiles.length) return;
+
+        var metricKey = metricSelect.value;
+        var query = countryInput.value.trim().toLowerCase();
+        var anchorYear = ANCHOR_YEARS[metricKey] || 2023;
+
+        // Filter by region and text
+        var filtered = allProfiles.filter(function (p) {
+          if (activeRegion !== 'all' && p.region !== activeRegion) return false;
+          if (query) {
+            var matchName = p.name.toLowerCase().indexOf(query) !== -1;
+            var matchIso = p.iso3.toLowerCase().indexOf(query) !== -1;
+            if (!matchName && !matchIso) return false;
+          }
+          return true;
+        });
+
+        // Separate ranked and unranked
+        var ranked = [];
+        var unranked = [];
+
+        filtered.forEach(function (p) {
+          var ind = (p.indicators && p.indicators[metricKey]) || {};
+          if (ind.value !== null && ind.value !== undefined && ind.rank !== null && ind.rank !== undefined) {
+            ranked.push(p);
+          } else {
+            unranked.push(p);
+          }
+        });
+
+        // Sort ranked by rank integer ascending
+        ranked.sort(function (a, b) {
+          var rA = a.indicators[metricKey].rank;
+          var rB = b.indicators[metricKey].rank;
+          return rA - rB;
+        });
+
+        // Sort unranked alphabetically
+        unranked.sort(function (a, b) {
+          return a.name.localeCompare(b.name);
+        });
+
+        tallyCount.textContent = 'Ranked Nations: ' + ranked.length + ' | Unreported (No data): ' + unranked.length + ' | Primary Anchor Year: ' + anchorYear;
+
+        var html = '';
+
+        ranked.forEach(function (p) {
+          var ind = p.indicators[metricKey];
+          var rank = ind.rank;
+          var totalRanked = ind.total_ranked || ranked.length;
+          var year = ind.year || 'Unreported';
+          var valStr = ind.formatted_value || (ind.value + ' ' + (ind.unit || ''));
+
+          var stalenessHtml = '';
+          if (typeof year === 'number' && Math.abs(anchorYear - year) > 1) {
+            stalenessHtml = '<span class="se-staleness-badge" title="Observed year lags primary baseline by ' + Math.abs(anchorYear - year) + ' years">[' + year + ' *]</span>';
+          } else {
+            stalenessHtml = '<span style="font-family: monospace;">' + year + '</span>';
+          }
+
+          var pct = Math.max(5, Math.min(100, Math.round((1.0 - (rank - 1) / Math.max(1, totalRanked - 1)) * 100)));
+
+          html += '<tr>' +
+            '<td style="font-family: monospace; font-weight: 700;">#' + rank + '</td>' +
+            '<td style="font-weight: 600;"><a href="country/' + p.iso3.toLowerCase() + '/" style="color: inherit; text-decoration: underline;">' + p.name + '</a></td>' +
+            '<td style="font-family: monospace;">' + p.iso3 + '</td>' +
+            '<td style="color: var(--se-text-secondary);">' + p.region + '</td>' +
+            '<td style="font-family: monospace; font-weight: 700; color: var(--se-text-primary);">' + valStr + '</td>' +
+            '<td>' + stalenessHtml + '</td>' +
+            '<td><div class="se-percentile-wrap" title="' + pct + '% percentile"><div class="se-percentile-track"><div class="se-percentile-fill" style="width: ' + pct + '%;"></div></div></div></td>' +
+            '<td style="text-align: right;"><a href="country/' + p.iso3.toLowerCase() + '/" class="se-link" style="font-weight: 600;">Dossier &rarr;</a></td>' +
+            '</tr>';
+        });
+
+        if (unranked.length > 0) {
+          html += '<tr class="se-unranked-row"><td colspan="8" style="padding: 0.85rem; font-weight: 700; border-top: 2px solid var(--se-border);">Unranked Sovereign Nations (No Statutory Data Reported)</td></tr>';
+          unranked.forEach(function (p) {
+            html += '<tr class="se-unranked-row">' +
+              '<td style="font-family: monospace;">-</td>' +
+              '<td><a href="country/' + p.iso3.toLowerCase() + '/" style="color: inherit; text-decoration: underline;">' + p.name + '</a></td>' +
+              '<td style="font-family: monospace;">' + p.iso3 + '</td>' +
+              '<td>' + p.region + '</td>' +
+              '<td>No data</td>' +
+              '<td>Unreported</td>' +
+              '<td><div class="se-percentile-wrap"><div class="se-percentile-track"></div></div></td>' +
+              '<td style="text-align: right;"><a href="country/' + p.iso3.toLowerCase() + '/" class="se-link">Dossier &rarr;</a></td>' +
+              '</tr>';
+          });
+        }
+
+        tbody.innerHTML = html;
+      }
+
+      // Event Listeners
+      metricSelect.addEventListener('change', renderTable);
+      countryInput.addEventListener('input', renderTable);
+
+      regionBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          regionBtns.forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          activeRegion = btn.getAttribute('data-region');
+          renderTable();
+        });
+      });
+
+      // CSV Export Generator
+      if (downloadBtn) {
+        downloadBtn.addEventListener('click', function () {
+          var metricKey = metricSelect.value;
+          var lines = [
+            '# Signal Earth: Independent Planetary Environmental Database',
+            '# Dataset: Global Sovereign Rankings Ledger (' + metricKey + ')',
+            '# Extracted on: ' + new Date().toISOString().split('T')[0] + ' | Source: https://signalearth.netlify.app/rankings.html',
+            '# License: Creative Commons Attribution 4.0 International (CC BY 4.0)',
+            'iso3,country_name,region,indicator_id,value,unit,observation_year,global_rank,total_ranked,staleness_flag,license'
+          ];
+
+          allProfiles.forEach(function (p) {
+            var ind = (p.indicators && p.indicators[metricKey]) || {};
+            var val = ind.value !== null && ind.value !== undefined ? ind.value : '';
+            var yr = ind.year || '';
+            var rk = ind.rank || '';
+            var tot = ind.total_ranked || '';
+            var st = (typeof yr === 'number' && Math.abs((ANCHOR_YEARS[metricKey] || 2023) - yr) > 1) ? 'TRUE' : 'FALSE';
+            var lic = ind.license || 'CC BY 4.0';
+
+            lines.push([
+              p.iso3,
+              '"' + p.name + '"',
+              '"' + p.region + '"',
+              metricKey,
+              val,
+              '"' + (ind.unit || '') + '"',
+              yr,
+              rk,
+              tot,
+              st,
+              '"' + lic + '"'
+            ].join(','));
+          });
+
+          var blob = new Blob([lines.join('\n')], { type: 'text/csv;charset=utf-8;' });
+          var link = document.createElement('a');
+          link.href = URL.createObjectURL(blob);
+          link.setAttribute('download', 'signal_earth_rankings_' + metricKey + '.csv');
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        });
+      }
+
+    })();
+  </script>
 </body>
 </html>

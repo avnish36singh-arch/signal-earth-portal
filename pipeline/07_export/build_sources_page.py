@@ -1,0 +1,200 @@
+#!/usr/bin/env python3
+"""
+Compiles sources.html directly from pipeline/manifest.json.
+Guarantees zero manual hand-typing and zero em dashes.
+"""
+
+import os
+import json
+
+WORKSPACE_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+MANIFEST_PATH = os.path.join(WORKSPACE_ROOT, "pipeline", "manifest.json")
+OUTPUT_SOURCES_HTML = os.path.join(WORKSPACE_ROOT, "sources.html")
+
+def build_sources():
+    with open(MANIFEST_PATH, "r", encoding="utf-8") as f:
+        manifest = json.load(f)
+
+    sources = manifest.get("sources", {})
+    last_updated = manifest.get("last_updated_utc", "2026-10-17")[:10]
+
+    tiles = []
+    for sid, sdata in sources.items():
+        name = sdata.get("name", sid)
+        dimension = sdata.get("dimension", "General")
+        agency = sdata.get("agency", "")
+        url = sdata.get("url", "#")
+        license_id = sdata.get("license", "Open Data")
+        latest_year = sdata.get("latest_year", "N/A")
+        lag = sdata.get("typical_lag", "N/A")
+        access_mode = sdata.get("access_mode", "automated")
+
+        tile = f"""        <article class="se-source-tile" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.5rem; display: flex; flex-direction: column;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+            <span style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-teal-live); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;">{dimension}</span>
+            <span style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-text-muted);">Year: {latest_year}</span>
+          </div>
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.25rem; margin: 0 0 0.5rem; color: var(--se-text-primary);">{name}</h3>
+          <p style="font-size: 0.88rem; line-height: 1.5; color: var(--se-text-secondary); margin-bottom: 1rem;">
+            Custodial Agency: <strong>{agency}</strong>
+          </p>
+          <div style="margin-top: auto; padding-top: 0.75rem; border-top: 1px solid var(--se-border-subtle); font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); display: flex; flex-direction: column; gap: 0.35rem;">
+            <div>License: <strong style="color: var(--se-text-primary);">{license_id}</strong></div>
+            <div>Typical Publication Lag: {lag}</div>
+            <div>Access Pipeline: <code>{access_mode}</code></div>
+            <div style="margin-top: 0.35rem;">
+              <a href="{url}" target="_blank" rel="noopener noreferrer" class="se-link" style="font-weight: 600;">Upstream Repository &rarr;</a>
+            </div>
+          </div>
+        </article>"""
+        tiles.append(tile)
+
+    all_tiles_html = "\n".join(tiles)
+
+    html_content = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Sources Registry &amp; Provenance | Signal Earth</title>
+  <meta name="description" content="Authoritative open data sources registry, custodial licenses, and upstream repository links generated from the pipeline manifest.">
+  <link rel="canonical" href="https://signalearth.netlify.app/sources.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="assets/tokens.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/country.css">
+  <script src="assets/theme.js"></script>
+</head>
+<body class="se-editorial-page">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Standardized 5-Item Editorial Header -->
+  <header class="se-editorial-header" id="se-header">
+    <div class="se-editorial-container">
+      <div class="se-editorial-header-inner">
+        <div class="se-editorial-wordmark-wrap">
+          <a href="index.html" class="se-editorial-wordmark">Signal Earth</a>
+          <span class="se-wordmark-badge">Data Sources</span>
+        </div>
+        <div class="se-editorial-header-right">
+          <nav class="se-editorial-nav" aria-label="Main Navigation">
+            <ul class="se-editorial-nav-list">
+              <li><a href="index.html" class="se-editorial-nav-link">Globe</a></li>
+              <li><a href="rankings.html" class="se-editorial-nav-link">Rankings</a></li>
+              <li><a href="compare.html" class="se-editorial-nav-link">Compare</a></li>
+              <li><a href="data.html" class="se-editorial-nav-link">Data</a></li>
+              <li><a href="methodology.html" class="se-editorial-nav-link">Methodology</a></li>
+              <li><a href="about.html" class="se-editorial-nav-link">About</a></li>
+            </ul>
+          </nav>
+          <button type="button" id="se-theme-toggle" class="se-theme-toggle-btn" aria-label="Toggle theme mode" title="Switch light / dark mode">
+            <svg class="se-theme-icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="se-theme-icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span class="se-theme-label">Theme</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="se-country-hero" style="padding: 3.5rem 0 2rem;">
+      <div class="se-editorial-container">
+        <a href="index.html" class="se-country-back-link">&larr; Return to Planetary Globe</a>
+        <div class="se-country-badge-row">
+          <span class="se-country-iso-badge">Automated Manifest</span>
+          <span class="se-country-region-tag">Provenance Registry</span>
+          <span class="se-country-stamp-tag">Synchronized: {last_updated}</span>
+        </div>
+        <h1 class="se-country-h1">Data Sources Registry &amp; Provenance</h1>
+        <p class="se-country-dek">
+          Every number on Signal Earth has a named custodial source, observation year, and open redistribution license. This registry is compiled directly from the pipeline manifest.
+        </p>
+      </div>
+    </section>
+
+    <section class="se-dossier-section" style="padding-top: 2rem;">
+      <div class="se-editorial-container">
+        <div class="se-section-header-row">
+          <div>
+            <span class="se-section-badge">Authoritative Ingest</span>
+            <h2 class="se-section-h2">Global Observational Repositories</h2>
+          </div>
+          <div class="se-section-header-note">
+            Compiled automatically from pipeline/manifest.json
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 1.5rem;">
+{all_tiles_html}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Standardized Editorial Footer -->
+  <footer class="se-editorial-footer">
+    <div class="se-editorial-container">
+      <div class="se-editorial-footer-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+        <div>
+          <div style="font-family: var(--se-font-serif); font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--se-text-primary);">
+            Signal Earth
+          </div>
+          <p style="font-size: 0.9rem; line-height: 1.6; color: var(--se-text-secondary); max-width: 50ch; margin: 0 0 1rem;">
+            Avnish Singh &middot; Civil Engineering undergraduate, HBTU Kanpur, focusing on environmental engineering &middot; Contact: <a href="mailto:avnish36singh@gmail.com" class="se-link">avnish36singh@gmail.com</a>
+          </p>
+          <div style="font-size: 0.85rem;">
+            <a href="credits.html" class="se-link">How to cite</a> &middot;
+            <a href="methodology.html" class="se-link">Methodology</a> &middot;
+            <a href="sources.html" class="se-link">Data Sources</a> &middot;
+            <a href="corrections.html" class="se-link">Corrections Log</a> &middot;
+            <a href="known-problems.html" class="se-link">Known Problems</a> &middot;
+            <a href="numbers_ledger.csv" class="se-link" download>Numbers Ledger (CSV)</a> &middot;
+            <a href="https://github.com/avnish36singh-arch/signal-earth-portal" class="se-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size: 0.8rem; font-family: var(--se-font-mono); text-transform: uppercase; color: var(--se-text-muted); margin-bottom: 0.5rem;">
+            Attribution &amp; Hosting
+          </div>
+          <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.5rem;">
+            Contains modified Copernicus Climate Change Service information [2026]. Content licensed under CC BY 4.0; code licensed under MIT.
+          </p>
+          <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-muted); margin: 0;">
+            Hosted on Netlify. Static build with zero cookies, zero trackers, and zero server-side state.
+          </p>
+        </div>
+      </div>
+      <div class="se-editorial-footer-bottom">
+        <div>&copy; 2026 Signal Earth. Open-access empirical environmental telemetry.</div>
+        <div><a href="privacy.html" class="se-link">Privacy Policy</a> &middot; <a href="terms.html" class="se-link">Terms of Use</a> &middot; <a href="licenses.html" class="se-link">Licenses</a></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+"""
+
+    # Enforce zero em-dashes
+    for dash in ["\u2013", "\u2014"]:
+        html_content = html_content.replace(dash, "-")
+
+    with open(OUTPUT_SOURCES_HTML, "w", encoding="utf-8") as out:
+        out.write(html_content)
+
+    print(f"Generated {OUTPUT_SOURCES_HTML} from manifest with {len(sources)} sources.")
+
+if __name__ == "__main__":
+    build_sources()

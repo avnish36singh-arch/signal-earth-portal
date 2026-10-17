@@ -4,47 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Methodology and Limitations | Signal Earth</title>
-  <meta name="description" content="Documentation of CPCB NAQI calculation protocols, regulatory validity rules, sensor gaps, machine learning evaluation splits, and reanalysis data limits.">
+  <meta name="description" content="Mathematical formulation of sovereign environmental indicators, global competition ranking protocols, in-situ CAAQMS validity rules, sensor hiatuses, and reanalysis constraints.">
   <link rel="canonical" href="https://signalearth.netlify.app/methodology.html">
-  <script>
-    if (window.location.hostname.indexOf('github.io') !== -1) {
-      window.location.replace('https://signalearth.netlify.app' + window.location.pathname.replace(/^\/signal-earth-portal/, '') + window.location.search + window.location.hash);
-    }
-  </script>
-  <noscript>
-    <meta http-equiv="refresh" content="0; url=https://signalearth.netlify.app/methodology.html">
-  </noscript>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
   <meta property="og:title" content="Methodology and Limitations | Signal Earth">
-  <meta property="og:description" content="Calculation protocols, regulatory validity criteria, sensor gaps, and data limits.">
+  <meta property="og:description" content="Indicator mathematical definitions, global ranking algorithms, regulatory validity criteria, sensor gaps, and data limits.">
   <meta property="og:url" content="https://signalearth.netlify.app/methodology.html">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="https://signalearth.netlify.app/assets/delhi/01_aqi_time_series.png">
   <link rel="stylesheet" href="style.css">
   <script src="assets/theme.js"></script>
 </head>
-<body>
+<body class="se-editorial-page">
   <a href="#main" class="skip-link">Skip to content</a>
 
-  <!-- Standardized Header -->
-  <header class="se-editorial-header">
+  <!-- Standardized 5-Item Editorial Header -->
+  <header class="se-editorial-header" id="se-header">
     <div class="se-editorial-container">
       <div class="se-editorial-header-inner">
         <div class="se-editorial-wordmark-wrap">
-          <a href="index.html" class="se-editorial-wordmark" aria-label="Signal Earth Homepage">
-            Signal Earth
-          </a>
+          <a href="index.html" class="se-editorial-wordmark">Signal Earth</a>
+          <span class="se-wordmark-badge">Methodology</span>
         </div>
         <div class="se-editorial-header-right">
           <nav class="se-editorial-nav" aria-label="Main Navigation">
             <ul class="se-editorial-nav-list">
-              <li><a href="research.html" class="se-editorial-nav-link">Research</a></li>
+              <li><a href="index.html" class="se-editorial-nav-link">Globe</a></li>
+              <li><a href="rankings.html" class="se-editorial-nav-link">Rankings</a></li>
+              <li><a href="compare.html" class="se-editorial-nav-link">Compare</a></li>
               <li><a href="data.html" class="se-editorial-nav-link">Data</a></li>
-              <li><a href="reports.html" class="se-editorial-nav-link">Reports</a></li>
-              <li><a href="methodology.html" class="se-editorial-nav-link active" aria-current="page">Methodology</a></li>
+              <li><a href="methodology.html" class="se-editorial-nav-link active" style="color: var(--se-teal-live); font-weight: 600;" aria-current="page">Methodology</a></li>
               <li><a href="about.html" class="se-editorial-nav-link">About</a></li>
             </ul>
           </nav>
@@ -77,358 +68,192 @@
         Methodology and Limitations
       </h1>
       <p class="se-hero-dek">
-        Environmental data analysis carries an obligation of procedural disclosure. This page documents the mathematical definitions, statutory validity thresholds, sensor hiatuses, and modeling constraints governing investigations published on Signal Earth.
+        Environmental data analysis carries an obligation of procedural disclosure. This document details the mathematical definitions of our global sovereign indicators, ranking protocols, in-situ regulatory validation rules, sensor hiatuses, and modeling constraints.
       </p>
     </header>
 
-    <!-- Section 1: CPCB NAQI Formula -->
-    <section id="naqi-formula" class="se-content-section">
-      <span class="section-kicker">01 : Regulatory Formula</span>
-      <h2 class="editorial-headline se-content-h2">CPCB National Air Quality Index (NAQI) Mathematical Formulation</h2>
+    <!-- Section 1: Global Sovereign Indicator Definitions -->
+    <section id="sovereign-indicators" class="se-content-section" style="margin-bottom: 3rem;">
+      <span class="section-kicker">01 : Sovereign Indicator Formulations</span>
+      <h2 class="editorial-headline se-content-h2">Global Environmental Indicators and Mathematical Definitions</h2>
       <p class="se-content-p">
-        The National Air Quality Index developed by the Central Pollution Control Board (CPCB, October 2014) utilizes a linear piecewise sub-index formulation. For any pollutant parameter <em>p</em> with observed 24-hour average concentration <em>C<sub>p</sub></em>, the sub-index <em>I<sub>p</sub></em> is computed as:
+        Every country dossier and ranking table on Signal Earth evaluates up to eight core sovereign indicators. All metrics are mapped to ISO 3166-1 alpha-3 entities:
       </p>
 
-      <div class="se-math-box">
+      <div class="se-table-wrap" style="overflow-x: auto; margin: 1.5rem 0;">
+        <table class="se-table" style="width: 100%; border-collapse: collapse;">
+          <thead>
+            <tr style="border-bottom: 2px solid var(--se-border); text-align: left;">
+              <th style="padding: 0.75rem;">Indicator</th>
+              <th style="padding: 0.75rem;">ID &amp; Unit</th>
+              <th style="padding: 0.75rem;">Anchor Year</th>
+              <th style="padding: 0.75rem;">Computation Protocol</th>
+              <th style="padding: 0.75rem;">Primary Custodian</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid var(--se-border);">
+              <td style="padding: 0.75rem;"><strong>Annual Mean PM2.5</strong></td>
+              <td style="padding: 0.75rem; font-family: var(--se-font-mono); font-size: 0.85rem;"><code>pm25</code> (µg/m³)</td>
+              <td style="padding: 0.75rem;">2021</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem; line-height: 1.4;">Population-weighted ground exposure estimate combining satellite aerosol optical depth (AOD), chemical transport modeling, and ground monitoring. Benchmarked to WHO guideline (5.0 µg/m³) as <code>Value / 5.0</code>.</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;">WHO / IHME GBD</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--se-border);">
+              <td style="padding: 0.75rem;"><strong>Surface Temperature Anomaly</strong></td>
+              <td style="padding: 0.75rem; font-family: var(--se-font-mono); font-size: 0.85rem;"><code>temp_anomaly</code> (&deg;C)</td>
+              <td style="padding: 0.75rem;">2023</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem; line-height: 1.4;">Territorial area-weighted annual mean 2-meter air temperature anomaly relative to the 1991-2020 ERA5 climatological reference baseline: <code>T_annual - T_baseline</code>.</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;">Copernicus / ERA5</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--se-border);">
+              <td style="padding: 0.75rem;"><strong>CO2 per Capita</strong></td>
+              <td style="padding: 0.75rem; font-family: var(--se-font-mono); font-size: 0.85rem;"><code>co2_per_capita</code> (t CO2/person)</td>
+              <td style="padding: 0.75rem;">2023</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem; line-height: 1.4;">Territorial fossil fuel emissions divided by United Nations medium-variant annual sovereign population: <code>Total_CO2 / Population</code>.</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;">Global Carbon Project</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--se-border);">
+              <td style="padding: 0.75rem;"><strong>Total Territorial CO2</strong></td>
+              <td style="padding: 0.75rem; font-family: var(--se-font-mono); font-size: 0.85rem;"><code>total_co2</code> (Mt CO2/yr)</td>
+              <td style="padding: 0.75rem;">2023</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem; line-height: 1.4;">Total annual territorial fossil carbon dioxide emissions from energy, industrial processes, and cement manufacturing. Excludes international aviation and shipping bunkers.</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;">Global Carbon Project</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--se-border);">
+              <td style="padding: 0.75rem;"><strong>Global CO2 Share</strong></td>
+              <td style="padding: 0.75rem; font-family: var(--se-font-mono); font-size: 0.85rem;"><code>share_global_co2</code> (%)</td>
+              <td style="padding: 0.75rem;">2023</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem; line-height: 1.4;">Territorial emissions expressed as percentage share of global fossil carbon emissions: <code>(Total_CO2 / Global_Total_CO2) * 100</code>.</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;">Global Carbon Project</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--se-border);">
+              <td style="padding: 0.75rem;"><strong>Renewable Generation Share</strong></td>
+              <td style="padding: 0.75rem; font-family: var(--se-font-mono); font-size: 0.85rem;"><code>renewable_elec_share</code> (%)</td>
+              <td style="padding: 0.75rem;">2023</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem; line-height: 1.4;">Gross electricity generated from hydro, wind, solar, bioenergy, and geothermal sources divided by total domestic gross electricity generation: <code>(Elec_Renewables / Elec_Total) * 100</code>.</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;">Ember Climate</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--se-border);">
+              <td style="padding: 0.75rem;"><strong>Forest Area Share</strong></td>
+              <td style="padding: 0.75rem; font-family: var(--se-font-mono); font-size: 0.85rem;"><code>forest_share</code> (%)</td>
+              <td style="padding: 0.75rem;">2020</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem; line-height: 1.4;">Total land area under canopy density exceeding 10% with trees reaching minimum height of 5 meters, divided by total sovereign land area (excluding inland waters): <code>(Forest_Area / Land_Area) * 100</code>.</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;">FAO FRA</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.75rem;"><strong>10-Year Forest Change Rate</strong></td>
+              <td style="padding: 0.75rem; font-family: var(--se-font-mono); font-size: 0.85rem;"><code>forest_change</code> (%)</td>
+              <td style="padding: 0.75rem;">2020</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem; line-height: 1.4;">Decadal net percentage change in total forest canopy cover between 2010 and 2020: <code>((Forest_2020 - Forest_2010) / Forest_2010) * 100</code>.</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;">FAO FRA</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Section 2: Ranking Algorithm & Null Rules -->
+    <section id="ranking-algorithm" class="se-content-section" style="margin-bottom: 3rem;">
+      <span class="section-kicker">02 : Ranking Protocol &amp; Staleness</span>
+      <h2 class="editorial-headline se-content-h2">Competition Ranking Algorithm and Null Data Rules</h2>
+      <p class="se-content-p">
+        Global sovereign rankings on Signal Earth follow standard competition ranking ("1224" ranking):
+      </p>
+
+      <ul class="se-list-bullet-clean">
+        <li>
+          <strong>Directionality:</strong> Indicators where higher values represent larger environmental footprint (such as PM2.5, CO2 per capita, total CO2, and temperature anomaly) are ranked in descending order (Rank 1 = highest recorded value). Indicators where higher values represent environmental transition or resource resilience (renewable generation share, forest share, and forest net gain) are ranked in descending order (Rank 1 = highest renewable share or greatest forest expansion).
+        </li>
+        <li>
+          <strong>Ties and Gaps:</strong> Countries with identical values receive the same rank. The subsequent country is assigned a rank equal to the previous rank plus the count of tied nations (for example, if two nations tie at Rank 4, both receive Rank 4, and the next nation receives Rank 6).
+        </li>
+        <li>
+          <strong>Distribution Percentile:</strong> Computed relative to the total cohort of nations reporting valid data for that indicator: <code>Percentile = ((total_ranked - rank) / (total_ranked - 1)) * 100</code>.
+        </li>
+        <li>
+          <strong>Strict Null Handling:</strong> If a country lacks reported data for an indicator, it is designated as <strong>Unranked</strong> and assigned null. Null data is never replaced with zero, never estimated with synthetic regional averages, and never forward-interpolated across multi-year reporting voids.
+        </li>
+        <li>
+          <strong>Year Staleness Rule:</strong> In the global rankings table, when a country's reported year differs by more than one calendar year from the indicator's anchor year, the table appends a visible warning badge: <code>[YYYY *]</code>. A 2019 report is never presented beside a 2023 report without an explicit staleness flag.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Section 3: Observational In-Situ Monitoring (Kanpur & Delhi) -->
+    <section id="insitu-regulatory" class="se-content-section" style="margin-bottom: 3rem;">
+      <span class="section-kicker">03 : Regulatory Monitoring</span>
+      <h2 class="editorial-headline se-content-h2">In-Situ Regulatory Air Quality Monitoring (Kanpur and Delhi)</h2>
+      <p class="se-content-p">
+        In addition to population-weighted satellite exposure modeling, Signal Earth maintains an observational annex of regulatory Continuous Ambient Air Quality Monitoring Stations (CAAQMS) operated under Central Pollution Control Board (CPCB) and State Pollution Control Board guidelines in northern India:
+      </p>
+
+      <h3 class="se-content-h3" style="margin-top: 1.5rem;">CPCB NAQI Mathematical Formulation</h3>
+      <p class="se-content-p">
+        Under statutory CPCB protocols (October 2014), the National Air Quality Index is computed using a linear piecewise sub-index formulation for each criteria pollutant <em>p</em> with 24-hour average concentration <em>C<sub>p</sub></em>:
+      </p>
+
+      <div style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-sm); padding: 1rem; font-family: var(--se-font-mono); font-size: 0.9rem; margin: 1rem 0;">
         I<sub>p</sub> = [ (I<sub>HI</sub> - I<sub>LO</sub>) / (B<sub>HI</sub> - B<sub>LO</sub>) ] * (C<sub>p</sub> - B<sub>LO</sub>) + I<sub>LO</sub>
       </div>
 
       <p class="se-content-p">
-        Where <em>B<sub>HI</sub></em> and <em>B<sub>LO</sub></em> represent the upper and lower breakpoint concentrations for the category containing <em>C<sub>p</sub></em>, and <em>I<sub>HI</sub></em> and <em>I<sub>LO</sub></em> represent the corresponding sub-index scale bounds. The composite daily AQI is determined by the maximum sub-index across all monitored criteria pollutants:
+        The composite daily AQI represents the maximum sub-index across all monitored parameters: <code>AQI = max(I<sub>PM2.5</sub>, I<sub>PM10</sub>, I<sub>NO2</sub>, I<sub>SO2</sub>, I<sub>CO</sub>, I<sub>O3</sub>, I<sub>NH3</sub>, I<sub>Pb</sub>)</code>. The parameter achieving the maximum sub-index is designated as the dominant pollutant.
       </p>
 
-      <div class="se-math-box-slate">
-        AQI = max(I<sub>PM2.5</sub>, I<sub>PM10</sub>, I<sub>NO2</sub>, I<sub>SO2</sub>, I<sub>CO</sub>, I<sub>O3</sub>, I<sub>NH3</sub>, I<sub>Pb</sub>)
-      </div>
-
-      <p class="se-content-p-lead">
-        The pollutant responsible for <code>max(I<sub>p</sub>)</code> is designated as the Dominant Pollutant for that monitoring day.
-      </p>
-
-      <h3 class="se-content-h3">Official CPCB NAQI Breakpoint Matrix</h3>
-      <div class="se-table-wrap">
-        <table class="se-table">
-          <thead>
-            <tr>
-              <th>AQI Category</th>
-              <th>Index Range</th>
-              <th>PM2.5 (24h)</th>
-              <th>PM10 (24h)</th>
-              <th>NO2 (24h)</th>
-              <th>NH3 (24h)</th>
-              <th>SO2 (24h)</th>
-              <th>CO (8h mg/m³)</th>
-              <th>O3 (8h)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="se-aqi-good">Good</td>
-              <td>0 to 50</td>
-              <td>0 to 30</td>
-              <td>0 to 50</td>
-              <td>0 to 40</td>
-              <td>0 to 200</td>
-              <td>0 to 40</td>
-              <td>0.0 to 1.0</td>
-              <td>0 to 50</td>
-            </tr>
-            <tr>
-              <td class="se-aqi-satisfactory">Satisfactory</td>
-              <td>51 to 100</td>
-              <td>31 to 60</td>
-              <td>51 to 100</td>
-              <td>41 to 80</td>
-              <td>201 to 400</td>
-              <td>41 to 80</td>
-              <td>1.1 to 2.0</td>
-              <td>51 to 100</td>
-            </tr>
-            <tr>
-              <td class="se-aqi-moderate">Moderate</td>
-              <td>101 to 200</td>
-              <td>61 to 90</td>
-              <td>101 to 250</td>
-              <td>81 to 180</td>
-              <td>401 to 800</td>
-              <td>81 to 380</td>
-              <td>2.1 to 10.0</td>
-              <td>101 to 168</td>
-            </tr>
-            <tr>
-              <td class="se-aqi-poor">Poor</td>
-              <td>201 to 300</td>
-              <td>91 to 120</td>
-              <td>251 to 350</td>
-              <td>181 to 280</td>
-              <td>801 to 1200</td>
-              <td>381 to 800</td>
-              <td>10.1 to 17.0</td>
-              <td>169 to 208</td>
-            </tr>
-            <tr>
-              <td class="se-aqi-very-poor">Very Poor</td>
-              <td>301 to 400</td>
-              <td>121 to 250</td>
-              <td>351 to 430</td>
-              <td>281 to 400</td>
-              <td>1201 to 1800</td>
-              <td>801 to 1600</td>
-              <td>17.1 to 34.0</td>
-              <td>209 to 748</td>
-            </tr>
-            <tr>
-              <td class="se-aqi-severe">Severe</td>
-              <td>401 to 500</td>
-              <td>250+</td>
-              <td>430+</td>
-              <td>400+</td>
-              <td>1800+</td>
-              <td>1600+</td>
-              <td>34.0+</td>
-              <td>748+</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <span class="citation-tag">Concentrations in µg/m³ unless noted otherwise. Source: Central Pollution Control Board (2014).</span>
-    </section>
-
-    <!-- Section 2: Statutory Compliance Rules -->
-    <section id="statutory-rules" class="se-content-section">
-      <span class="section-kicker">02 : Statutory Compliance</span>
-      <h2 class="editorial-headline se-content-h2">Official versus Indicative Validity Rules</h2>
-      <p class="se-content-p">
-        Under statutory CPCB guidelines, a daily AQI score is officially valid only when all of the following conditions are satisfied:
-      </p>
+      <h3 class="se-content-h3" style="margin-top: 1.5rem;">Statutory Validity Criteria</h3>
       <ol class="se-list-ordered-desc">
-        <li>
-          <strong>Criteria Pollutant Quorum:</strong> At least <strong>three criteria pollutants</strong> must have valid daily sub-indices.
-        </li>
-        <li>
-          <strong>Particulate Presence:</strong> At least one of the valid pollutants must be either PM2.5 or PM10.
-        </li>
-        <li>
-          <strong>Temporal Completeness:</strong> Each pollutant parameter must have a minimum of 16 valid hourly readings within the 24-hour observation cycle (at least 66.7% data completeness).
-        </li>
+        <li><strong>Criteria Pollutant Quorum:</strong> At least three criteria pollutants must have valid daily sub-indices.</li>
+        <li><strong>Particulate Presence:</strong> At least one valid pollutant must be particulate matter (PM2.5 or PM10).</li>
+        <li><strong>Temporal Completeness:</strong> Each pollutant requires a minimum of 16 valid hourly readings within the 24-hour cycle (at least 66.7% data completeness).</li>
       </ol>
 
-      <div class="se-caveat-box">
-        <div class="se-caveat-title">Validation Accounting in Our Pipeline</div>
-        <p class="se-caveat-text">
-          Many informal dashboards report an "AQI" whenever any single parameter (such as PM2.5 alone) is active. In our Delhi/Alipur pipeline, across 1,825 total calendar rows, <strong>1,137 days</strong> satisfy the full statutory criteria (62.3%), while <strong>688 days</strong> are partial or missing. We partition these into two explicit fields: <code>AQI_Official</code> (valid regulatory days) and <code>AQI_Indicative</code> (single-parameter estimates). We do not present an indicative value as official CPCB data.
+      <div class="se-caveat-box" style="background: var(--se-bg-surface); border-left: 3px solid var(--se-teal-live); padding: 1rem; margin: 1.25rem 0;">
+        <div style="font-weight: 700; margin-bottom: 0.5rem;">Verification in Our In-Situ Pipeline</div>
+        <p style="font-size: 0.88rem; line-height: 1.5; margin: 0;">
+          At Delhi Alipur (Site 204), across 1,825 total calendar rows, exactly 1,137 days satisfy full statutory criteria (62.3%), while 688 days represent instrument dropouts or incomplete cycles. Particulate matter drove the official score on 95.3% of valid days (1,083 out of 1,137 days: PM2.5 on 51.8%, PM10 on 43.4%, CO on 4.4%, and Ozone on 0.4%).
         </p>
       </div>
-    </section>
 
-    <!-- Section 3: Reporting Hiatuses -->
-    <section id="hiatuses" class="se-content-section">
-      <span class="section-kicker">03 : Reporting Hiatuses</span>
-      <h2 class="editorial-headline se-content-h2">Instrument Drops and Missing Intervals</h2>
+      <h3 class="se-content-h3" style="margin-top: 1.5rem;">Seasonal Winter Multiplier Definitions</h3>
       <p class="se-content-p">
-        Continuous Ambient Air Quality Monitoring Stations (CAAQMS) are mechanical instruments operating in high particulate concentrations. They experience beta-attenuation tape depletion, optical recalibration, and sensor outages:
+        Seasonal particulate surge multipliers reflect distinct meteorological and behavioral comparison windows:
       </p>
-
-      <ul class="se-list-bullet-desc">
-        <li>
-          <strong>Delhi / Alipur (CPCB/DPCC Site 204):</strong> An operational hiatus occurred from <strong>January 1, 2019 to December 31, 2020 (731 consecutive days)</strong> where criteria pollutants went unrecorded due to station refurbishment. Rather than interpolating across a two-year void, our pipeline preserves this interval as missing data.
-        </li>
-        <li>
-          <strong>Kanpur / Kalyanpur and Nehru Nagar (UPPCB/CPCB):</strong> Observations ingested via OpenAQ v3 span July 2021 through October 2022, followed by an unmonitored hiatus until early 2025. Data from these stations is analyzed strictly within its verified observation windows.
-        </li>
+      <ul class="se-list-bullet-clean">
+        <li><strong>Kanpur Dec-Feb vs Jun-Sep (2.40x):</strong> Compares standard meteorological winter (mean 114.7 µg/m³) to full monsoon (mean 47.8 µg/m³).</li>
+        <li><strong>Kanpur Nov-Jan vs Jul-Sep (3.56x):</strong> Compares peak inversion and biomass burning months (mean 150.3 µg/m³) to core monsoon washout months (mean 42.2 µg/m³).</li>
+        <li><strong>Kanpur Single-Month Extreme (4.76x):</strong> Compares peak November mean (188.4 µg/m³) to cleanest August mean (39.6 µg/m³).</li>
+        <li><strong>Delhi Alipur Multipliers:</strong> Meteorological winter vs full monsoon is 4.25x (166.6 µg/m³ vs 39.2 µg/m³); peak inversion window vs core monsoon is 5.75x (197.5 µg/m³ vs 34.3 µg/m³).</li>
       </ul>
 
-      <p class="se-content-p-tight">
-        <strong>Signal Earth Principle:</strong> We do not impute or forward-fill long-duration instrument dropouts. Data gaps are reported as missing observations on all timelines and tables.
-      </p>
-    </section>
-
-    <!-- Section 4: Machine Learning Evaluation -->
-    <section id="ml-evaluation" class="se-content-section">
-      <span class="section-kicker">04 : Machine Learning Evaluation</span>
-      <h2 class="editorial-headline se-content-h2">Chronological Testing Splits</h2>
+      <h3 class="se-content-h3" style="margin-top: 1.5rem;">Operational Hiatus Preservation</h3>
       <p class="se-content-p">
-        For day-ahead AQI time-series predictive modeling:
+        Monitoring equipment in highly polluted airsheds experiences mechanical downtime, optical recalibration, and operational refits:
       </p>
-
-      <ul class="se-list-bullet-desc-sm">
-        <li>
-          <strong>Short-Gap Interpolation:</strong> Linear interpolation is permitted strictly for short gaps of 1 to 2 consecutive days. Gaps of 3 or more days reset the lag sequence window.
-        </li>
-        <li>
-          <strong>Strict Out-of-Time Split:</strong> Standard random k-fold cross-validation causes temporal leakage in atmospheric time series because future weather states leak into past predictions. The model was trained exclusively on records prior to 2023 and evaluated strictly on the unobserved 2023 calendar year (Test MAE: 39.69 AQI points, RMSE: 54.98 AQI points, R² = 0.769).
-        </li>
+      <ul class="se-list-bullet-clean">
+        <li><strong>Delhi Alipur:</strong> An operational hiatus occurred from January 1, 2019 to December 31, 2020 (731 consecutive days) during station refitting.</li>
+        <li><strong>Kanpur:</strong> A hiatus occurred from October 17, 2022 to February 17, 2025 (855 consecutive days) between observation campaigns. Data across NSI Kalyanpur (815 station-days) and Nehru Nagar (813 station-days) is evaluated strictly within active operational windows.</li>
       </ul>
     </section>
 
-    <!-- Section 5: Ratio-Based Diagnostics -->
-    <section id="ratio-limits" class="se-content-section">
-      <span class="section-kicker">05 : Ratio-Based Diagnostics</span>
-      <h2 class="editorial-headline se-content-h2">Diagnostic Screening Ratios versus Chemical Receptor Models</h2>
+    <!-- Section 4: Remote Sensing vs Reanalysis -->
+    <section id="reanalysis-grid" class="se-content-section" style="margin-bottom: 3rem;">
+      <span class="section-kicker">04 : Remote Sensing &amp; Thermal Physics</span>
+      <h2 class="editorial-headline se-content-h2">Satellite Thermal Radiometry (Landsat) vs Atmospheric Reanalysis (MERRA-2)</h2>
       <p class="se-content-p">
-        Our investigations utilize aerodynamic and volatile tracer ratio metrics to characterize screening regimes:
+        A fundamental distinction exists between high-resolution satellite radiometry and coarse atmospheric reanalysis:
       </p>
 
-      <div class="se-table-wrap">
-        <table class="se-table">
-          <thead>
-            <tr>
-              <th>Diagnostic Ratio</th>
-              <th>Observed Regime</th>
-              <th>Physical / Chemical Indication</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>PM2.5 / PM10 &gt; 0.65</td>
-              <td>Post-Monsoon / Winter</td>
-              <td>Fine combustion dominance (biomass burning, vehicular exhaust, secondary aerosols)</td>
-            </tr>
-            <tr>
-              <td>PM2.5 / PM10 &lt; 0.40</td>
-              <td>Pre-Monsoon / Summer</td>
-              <td>Mechanical crustal dust dominance (resuspended road silt, construction dust)</td>
-            </tr>
-            <tr>
-              <td>Toluene / Benzene approx 1.5 to 2.2</td>
-              <td>Highway Corridors</td>
-              <td>Fresh tailpipe vehicular combustion emissions</td>
-            </tr>
-            <tr>
-              <td>Toluene / Benzene &gt; 3.0</td>
-              <td>Industrial Belts</td>
-              <td>Industrial solvent use, printing, chemical processing facilities</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="se-caveat-box">
-        <div class="se-caveat-title">Scientific Limitation</div>
-        <p class="se-caveat-text">
-          These ratios represent <strong>screening indicators</strong>, not receptor models. Full source apportionment requires chemical speciation filters (carbonaceous aerosols, elemental ions, and trace metals) coupled with EPA Positive Matrix Factorization (PMF) or Chemical Mass Balance (CMB) modeling.
-        </p>
-      </div>
-    </section>
-
-    <!-- Section 6: Thermal Radiometry vs. Atmospheric Reanalysis -->
-    <section id="reanalysis-grid" class="se-content-section">
-      <span class="section-kicker">06 : Remote Sensing vs. Model Assimilation</span>
-      <h2 class="editorial-headline se-content-h2">Satellite Thermal Radiometry (Landsat) vs. Atmospheric Model Reanalysis (MERRA-2)</h2>
-      <p class="se-content-p">
-        A central scientific distinction in Signal Earth is the difference between direct satellite thermal infrared radiometry (Analysis 04) and numerical atmospheric reanalysis assimilation (Analysis 03):
-      </p>
-
-      <div class="se-table-wrap" style="margin-bottom: 1.5rem;">
-        <table class="se-table">
-          <thead>
-            <tr>
-              <th>Methodological Dimension</th>
-              <th>Satellite Thermal Radiometry (Analysis 04)</th>
-              <th>Atmospheric Model Reanalysis (Analysis 03)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Primary Data Source</strong></td>
-              <td>USGS Landsat 8 & 9 TIRS-2 (Collection 2 Level-2)</td>
-              <td>NASA POWER GMAO MERRA-2 Global Reanalysis</td>
-            </tr>
-            <tr>
-              <td><strong>Measurement Physics</strong></td>
-              <td>Direct top-of-atmosphere thermal infrared radiance (Band 10: 10.60–11.19 µm) converted to kinetic skin temperature via MODTRAN radiative transfer models and fractional surface emissivity.</td>
-              <td>Thermodynamic energy-balance skin equilibrium parameter calculated inside a numerical weather forecast model assimilating sparse synoptic radiosondes and broad radiance soundings.</td>
-            </tr>
-        <tr>
-              <td><strong>Spatial Resolution</strong></td>
-              <td><strong>30 meters</strong> (TIRS thermal bands, 100 m native, resampled to 30 m via cubic convolution; Landsat 9 carries TIRS-2). Resolves street canyons, vegetation patches, and industrial sectors.</td>
-              <td><strong>~55 &times; 60 km</strong> (0.5&deg; latitude &times; 0.625&deg; longitude). A single grid box covers the entire Kanpur metropolitan region and rural outskirts.</td>
-            </tr>
-            <tr>
-              <td><strong>Microclimate Gradient</strong></td>
-              <td>Resolves genuine intra-urban thermal heterogeneity: exposes localized temperature spreads between the cool Ganga riverbank and hot urban masonry.</td>
-              <td><strong>Zero intra-urban gradients:</strong> Spatially averages all terrain within 3,300 km&sup2; into a single uniform number, underestimating core urban heat stress by 2.3 to 3.8 K.</td>
-            </tr>
-            <tr>
-              <td><strong>Temporal Continuity</strong></td>
-              <td>Episodic (16-day orbital repeat, harmonized to 8-day L8/L9 passes). Strictly requires cloud-free acquisitions (&lt; 10% cloud cover).</td>
-              <td>Continuous, gapless daily time series (2,556 consecutive daily rows from 2017 to 2023), independent of cloud cover.</td>
-            </tr>
-            <tr>
-              <td><strong>Scientific Role</strong></td>
-              <td>Pinpoints localized urban heat island intensity, microclimate zones, and cool-roof mitigation priorities.</td>
-              <td>Identifies multi-year macro-climatological trajectories, seasonal sensible heat flips, and regional ventilation collapse.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3 class="editorial-headline se-content-h3" style="margin-top: 2rem;">Computational Workflow: At-Sensor Brightness Temperature</h3>
-      <p class="se-content-p">
-        Below is a simplified illustration showing how raw digital numbers (DN) from Landsat thermal sensors are converted to at-sensor spectral radiance, inverted via Planck's law to brightness temperature (Kelvin and Celsius), and differenced across masks to compute the urban minus rural thermal delta. Note that true kinetic Land Surface Temperature (LST) further requires fractional vegetation cover and emissivity corrections via split-window or radiative transfer algorithms.
-      </p>
-
-      <div style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-sm); padding: 1.25rem; font-family: var(--se-font-mono); font-size: 0.8rem; line-height: 1.6; overflow-x: auto; margin: 1.5rem 0;">
-        <span style="color: var(--se-text-muted);"># Simplified illustration: Landsat thermal band conversion to Brightness Temperature</span><br>
-        <span style="color: var(--se-text-muted);"># DN: Digital Number (raw integer pixel value from USGS Level-1/Level-2 product)</span><br>
-        <span style="color: var(--se-text-muted);"># ML: Radiance multiplicative scaling factor from metadata (RADIANCE_MULT_BAND_10)</span><br>
-        <span style="color: var(--se-text-muted);"># AL: Radiance additive scaling factor from metadata (RADIANCE_ADD_BAND_10)</span><br>
-        <span style="color: var(--se-text-muted);"># K1, K2: Thermal calibration constants from metadata (K1_CONSTANT_BAND_10, K2_CONSTANT_BAND_10)</span><br>
-        <span style="color: var(--se-text-muted);"># L_lambda: Top-of-Atmosphere (TOA) spectral radiance [W/(m²·sr·µm)]</span><br>
-        <span style="color: var(--se-text-muted);"># BT: At-sensor Brightness Temperature [Kelvin]</span><br>
-        <span style="color: var(--se-text-muted);"># Note: TIRS thermal bands, 100 m native, resampled to 30 m. Landsat 9 carries TIRS-2.</span><br><br>
-        <span style="color: #F472B6;">import</span> numpy <span style="color: #F472B6;">as</span> np<br><br>
-        <span style="color: var(--se-text-muted);"># Step 1: Scale raw digital numbers to spectral radiance</span><br>
-        L_lambda = ML * DN + AL<br><br>
-        <span style="color: var(--se-text-muted);"># Step 2: Invert Planck's radiation law to calculate at-sensor Brightness Temperature</span><br>
-        BT_kelvin = K2 / np.log((K1 / L_lambda) + <span style="color: #1FB6A6;">1.0</span>)<br>
-        BT_celsius = BT_kelvin - <span style="color: #1FB6A6;">273.15</span><br><br>
-        <span style="color: var(--se-text-muted);"># Step 3: Compute urban minus rural brightness temperature delta</span><br>
-        urban_mean_bt = np.nanmean(BT_celsius[urban_mask])<br>
-        rural_mean_bt = np.nanmean(BT_celsius[rural_mask])<br>
-        delta_bt = urban_mean_bt - rural_mean_bt<br><br>
-        print(<span style="color: #1FB6A6;">f"Urban minus rural brightness temperature delta: {delta_bt:.2f} °C"</span>)
-      </div>
-
-      <ul class="se-list-bullet-desc-sm">
-        <li>
-          <strong>Completed in Investigation 04:</strong> High-resolution intra-urban thermal zoning is published in <a href="investigations/landsat-uhi.html" class="se-link"><strong>Investigation 04</strong></a> using cloud-masked USGS Landsat 8 and 9 Collection 2 Level 2 Surface Temperature products (TIRS thermal bands, 100 m native, resampled to 30 m; Landsat 9 carries TIRS-2), quantifying Kanpur's concentric Urban Heat Island across urban core and rural baseline regimes.
-        </li>
-        <li>
-          <strong>Reanalysis Role in Inversion Climatology:</strong> In Analysis 03, daily reanalysis skin temperature (TS) and 2m ambient air (T2M) provide the long-term continuous baseline for evaluating regional surface energy balance shifts and atmospheric ventilation stagnation across 7 unbroken years.
-        </li>
+      <ul class="se-list-bullet-clean">
+        <li><strong>USGS Landsat 8/9 TIRS-2 (30m):</strong> Directly measures top-of-atmosphere thermal infrared radiance (Band 10: 10.60-11.19 µm) at 100 m native resolution (resampled to 30 m). Inverted via Planck's radiation law, it resolves urban microclimate heterogeneity, showing an urban-core minus rural-baseline thermal delta of 1.0 to 2.3 K during cloud-free winter overpasses.</li>
+        <li><strong>NASA POWER GMAO MERRA-2 (~55 x 60 km):</strong> Computes skin temperature via a thermodynamic surface energy balance parameter inside an atmospheric general circulation model. A single grid cell covers approximately 3,300 km&sup2;, averaging entire metropolitan regions with rural hinterlands and muting intra-urban microclimates.</li>
+        <li><strong>Temporal Nature:</strong> Landsat captures instantaneous 10:30 AM local solar time snapshots every 8 to 16 days strictly during cloudless conditions. MERRA-2 provides an unbroken daily time series across 7 consecutive years (2,556 daily records).</li>
       </ul>
-    </section>
-
-    <!-- Section 7: Temperature Inversion Physics -->
-    <section id="inversion" class="se-content-section">
-      <span class="section-kicker">07 : Boundary Layer Physics</span>
-      <h2 class="editorial-headline se-content-h2">Temperature Inversion Mechanics and Surface-Air Temperature Association</h2>
-      <p class="se-content-p">
-        The sharp winter surge in particulate concentrations across the Indo-Gangetic Plain is primarily an atmospheric ventilation problem rather than an emissions surge alone. While seasonal crop residue fires and heating fires add particulate mass, hazardous ground levels occur because the planetary boundary layer collapses vertically.
-      </p>
-
-      <div class="se-inversion-box">
-        <h3 class="se-inversion-h3">The Physical Mechanism of Nocturnal Inversion</h3>
-        <p class="se-inversion-p-lead">
-          Under normal daytime conditions, sunlight warms the soil and asphalt. The ground heats the air in contact with it, and because warm air is less dense than the cooler air above, it rises in buoyant convective plumes that carry pollutants several kilometers into the free troposphere.
-        </p>
-        <p class="se-inversion-p-end">
-          Between November and January, northern India experiences calm winds (often below 1.5 meters per second) and dry, cloudless skies under regional anticyclonic high pressure. After sunset, the alluvial soil radiates heat into space through longwave infrared emission. The ground cools faster than the air column above, producing a temperature inversion where air temperature increases with height within the lowest 100 to 300 meters. The buoyant stability of this cold ground layer prevents vertical air movement, capping the city beneath an effective thermal ceiling.
-        </p>
-      </div>
-
-      <div class="se-caveat-box">
-        <div class="se-caveat-title">Observation vs Mechanism in This Analysis</div>
-        <p class="se-caveat-text">
-          In Analysis 03, I document a moderate negative correlation (Pearson r = -0.455) between daily surface skin temperature and ground PM2.5 in Kanpur during the 308-day temporal overlap window. Crucially, this statistical correlation is dominated by shared seasonality: co-occurring winter boundary layer compression, light regional winds, and biomass burning coincide with minimum surface skin temperatures. Furthermore, because consecutive daily atmospheric records exhibit substantial autocorrelation, these n = 308 daily observations must not be reported or interpreted as independent statistical samples. Moreover, daily mean reanalysis values cannot directly measure the vertical temperature gradient (dT/dz) or the exact height of the nocturnal inversion cap. To parameterize this behavior without continuous sounding towers, Analysis 03 evaluates the Atmospheric Ventilation Coefficient (<em>V<sub>c</sub></em>) and the Nocturnal Inversion Severity Index (NISI) proxy, documenting episodes where atmospheric dispersion capacity collapses below 2,000 m&sup2;/s.
-        </p>
-      </div>
     </section>
 
   </main>
 
-  <!-- Standardized Footer -->
+  <!-- Standardized Editorial Footer -->
   <footer class="se-editorial-footer">
     <div class="se-editorial-container">
       <div class="se-editorial-footer-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; margin-bottom: 2rem;">
@@ -442,6 +267,8 @@
           <div style="font-size: 0.85rem;">
             <a href="credits.html" class="se-link">How to cite</a> &middot;
             <a href="methodology.html" class="se-link">Methodology</a> &middot;
+            <a href="sources.html" class="se-link">Data Sources</a> &middot;
+            <a href="corrections.html" class="se-link">Corrections Log</a> &middot;
             <a href="known-problems.html" class="se-link">Known Problems</a> &middot;
             <a href="numbers_ledger.csv" class="se-link" download>Numbers Ledger (CSV)</a> &middot;
             <a href="https://github.com/avnish36singh-arch/signal-earth-portal" class="se-link" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -454,13 +281,14 @@
           <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.5rem;">
             Contains modified Copernicus Climate Change Service information [2026]. Content licensed under CC BY 4.0; code licensed under MIT.
           </p>
-          <p style="font-size: 0.82rem; color: var(--se-text-muted); margin: 0;">
-            Hosted on Netlify.
+          <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-muted); margin: 0;">
+            Hosted on Netlify. Static build with zero cookies, zero trackers, and zero server-side state.
           </p>
         </div>
       </div>
-      <div class="se-editorial-footer-bottom" style="border-top: 1px solid var(--se-border); padding-top: 1rem; font-size: 0.8rem; color: var(--se-text-muted);">
-        <div>Spot an error? Report a correction on <a href="https://github.com/avnish36singh-arch/signal-earth-portal/issues" target="_blank" rel="noopener noreferrer" class="se-link">GitHub Issues</a>.</div>
+      <div class="se-editorial-footer-bottom">
+        <div>&copy; 2026 Signal Earth. Open-access empirical environmental telemetry.</div>
+        <div><a href="privacy.html" class="se-link">Privacy Policy</a> &middot; <a href="terms.html" class="se-link">Terms of Use</a> &middot; <a href="licenses.html" class="se-link">Licenses</a></div>
       </div>
     </div>
   </footer>

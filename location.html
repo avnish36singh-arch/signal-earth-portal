@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="page-title">Kanpur: Station Data Audit — Signal Earth</title>
+  <title id="page-title">Kanpur: Station Data Audit  -  Signal Earth</title>
   <meta name="description" id="page-desc" content="Single-station telemetry audit of continuous ambient particulate monitoring and hiatus records in Kanpur.">
   <link rel="canonical" id="page-canonical" href="https://signalearth.netlify.app/location.html">
   <script>
@@ -377,7 +377,7 @@
         <div class="loc-stat-val" id="stat-1-val">2.40x</div>
         <div class="loc-stat-label" id="stat-1-label">Winter vs summer mean</div>
         <p class="loc-stat-def" id="stat-1-def">
-          Dec–Feb mean (61.4 µg/m³) vs Jun–Sep mean (25.6 µg/m³) pooled across Kalyanpur and Nehru Nagar (2021–2026). Peak Nov to min Aug ratio is 4.76x.
+          Dec-Feb mean (61.4 µg/m³) vs Jun-Sep mean (25.6 µg/m³) pooled across Kalyanpur and Nehru Nagar (2021-2026). Peak Nov to min Aug ratio is 4.76x.
         </p>
       </div>
       <div class="loc-stat-item">
@@ -426,7 +426,7 @@
           <line x1="196" y1="20" x2="196" y2="205" stroke="currentColor" stroke-opacity="0.2" stroke-dasharray="2,2" />
           <line x1="468" y1="20" x2="468" y2="205" stroke="currentColor" stroke-opacity="0.2" stroke-dasharray="2,2" />
           <text x="332" y="105" text-anchor="middle" font-size="11" font-family="sans-serif" font-weight="600" fill="currentColor" opacity="0.75">855-day unmonitored hiatus</text>
-          <text x="332" y="122" text-anchor="middle" font-size="10" font-family="monospace" fill="currentColor" opacity="0.6">Oct 17, 2022 – Feb 17, 2025</text>
+          <text x="332" y="122" text-anchor="middle" font-size="10" font-family="monospace" fill="currentColor" opacity="0.6">Oct 17, 2022 - Feb 17, 2025</text>
 
           <!-- Window 1 Path: Jul 2021 to Oct 2022 -->
           <polyline fill="none" stroke="currentColor" stroke-width="2" points="
@@ -531,7 +531,7 @@
         var region = (data.regions || []).find(function(r) { return r.id === regionId; });
         if (!region) return;
 
-        document.getElementById('page-title').textContent = region.name + ': Station Data Audit — Signal Earth';
+        document.getElementById('page-title').textContent = region.name + ': Station Data Audit  -  Signal Earth';
         document.getElementById('loc-title').textContent = region.name;
         document.getElementById('loc-subtitle').textContent = region.issue_badge || (region.issue_type ? region.issue_type.toUpperCase() + ' station audit' : 'Station data audit');
         

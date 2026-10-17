@@ -3,179 +3,291 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Sources and Custodians | Signal Earth</title>
-  <meta name="description" content="Detailed provenance and custodial attribution of all public environmental repositories utilized across Signal Earth.">
-  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/sources.html">
+  <title>Data Sources Registry &amp; Provenance | Signal Earth</title>
+  <meta name="description" content="Authoritative open data sources registry, custodial licenses, and upstream repository links generated from the pipeline manifest.">
+  <link rel="canonical" href="https://signalearth.netlify.app/sources.html">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="assets/tokens.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/country.css">
   <script src="assets/theme.js"></script>
 </head>
-<body>
+<body class="se-editorial-page">
   <a href="#main" class="skip-link">Skip to content</a>
 
-  <header>
-    <nav class="se-nav" aria-label="Main Navigation">
-      <div class="se-nav-inner">
-        <a href="index.html" class="se-brand">
-          <span class="se-brand-name">Signal Earth</span>
-          <span class="se-brand-sub">Independent Research</span>
-        </a>
-        <ul class="se-nav-links">
-          <li><a href="index.html#observe">Observe</a></li>
-          <li><a href="index.html#research">Research</a></li>
-          <li><a href="explained/index.html">Explained</a></li>
-          <li><a href="data.html">Library</a></li>
-          <li><a href="methodology.html">Build</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
+  <!-- Standardized 5-Item Editorial Header -->
+  <header class="se-editorial-header" id="se-header">
+    <div class="se-editorial-container">
+      <div class="se-editorial-header-inner">
+        <div class="se-editorial-wordmark-wrap">
+          <a href="index.html" class="se-editorial-wordmark">Signal Earth</a>
+          <span class="se-wordmark-badge">Data Sources</span>
+        </div>
+        <div class="se-editorial-header-right">
+          <nav class="se-editorial-nav" aria-label="Main Navigation">
+            <ul class="se-editorial-nav-list">
+              <li><a href="index.html" class="se-editorial-nav-link">Globe</a></li>
+              <li><a href="rankings.html" class="se-editorial-nav-link">Rankings</a></li>
+              <li><a href="compare.html" class="se-editorial-nav-link">Compare</a></li>
+              <li><a href="data.html" class="se-editorial-nav-link">Data</a></li>
+              <li><a href="methodology.html" class="se-editorial-nav-link">Methodology</a></li>
+              <li><a href="about.html" class="se-editorial-nav-link">About</a></li>
+            </ul>
+          </nav>
+          <button type="button" id="se-theme-toggle" class="se-theme-toggle-btn" aria-label="Toggle theme mode" title="Switch light / dark mode">
+            <svg class="se-theme-icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="se-theme-icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span class="se-theme-label">Theme</span>
+          </button>
+        </div>
       </div>
-    </nav>
+    </div>
   </header>
 
-  <main id="main" class="se-container se-page-content" style="padding-top: 3rem; padding-bottom: 4rem;">
-    <div class="se-section-header">
-      <span class="section-kicker">Data Provenance &middot; Public Custodians</span>
-      <h1 class="editorial-headline se-section-title" style="font-size: 2rem;">Data Sources and Custodians</h1>
-      <p class="se-hero-dek">
-        Every analysis on Signal Earth is built entirely on open, publicly accessible scientific repositories and government monitoring programs. No proprietary or paywalled data is utilized.
-      </p>
-    </div>
-
-    <!-- Quantitative Analysis Sources -->
-    <div class="se-panel">
-      <span class="section-kicker">Quantitative Repositories (Used in Codebase)</span>
-      <div class="se-sources-grid" style="margin-top: 1rem;">
-        <!-- Tile 1: CPCB -->
-        <article class="se-source-tile">
-          <h3 class="se-source-title">CPCB (Central Pollution Control Board)</h3>
-          <p class="se-source-purpose">
-            Statutory criteria pollutant concentrations (PM2.5, PM10, NO2, SO2, CO, O3) and official NAQI breakpoint standards.
-          </p>
-          <div class="se-source-meta">
-            <span><strong>Terms:</strong> Central Pollution Control Board Terms of Use / Government of India Open Data</span><br>
-            <span><strong>Access Date:</strong> Verified October 2026</span><br>
-            <span><strong>URL:</strong> <a href="https://cpcb.nic.in" target="_blank" rel="noopener noreferrer" class="se-link">cpcb.nic.in</a></span>
-          </div>
-        </article>
-
-        <!-- Tile 2: OpenAQ -->
-        <article class="se-source-tile">
-          <h3 class="se-source-title">OpenAQ Data Platform</h3>
-          <p class="se-source-purpose">
-            Harmonized REST API v3 feeds of historical hourly and daily air quality records from Uttar Pradesh Pollution Control Board stations.
-          </p>
-          <div class="se-source-meta">
-            <span><strong>Terms:</strong> Platform API under CC BY 4.0; underlying observational data subject to originating station provider terms (UPPCB / DPCC / CPCB)</span><br>
-            <span><strong>Access Date:</strong> September 2026</span><br>
-            <span><strong>URL:</strong> <a href="https://openaq.org" target="_blank" rel="noopener noreferrer" class="se-link">openaq.org</a></span>
-          </div>
-        </article>
-
-        <!-- Tile 3: NASA POWER & MERRA-2 -->
-        <article class="se-source-tile">
-          <h3 class="se-source-title">NASA POWER / GES DISC (MERRA-2)</h3>
-          <p class="se-source-purpose">
-            Daily atmospheric reanalysis skin temperature (TS) and 2-meter air temperature (T2M) over the 0.5&deg; x 0.625&deg; Kanpur grid box.
-          </p>
-          <div class="se-source-meta">
-            <span><strong>Terms:</strong> NASA Earth Science Open Data Policy</span><br>
-            <span><strong>Access Date:</strong> August 2026</span><br>
-            <span><strong>URL:</strong> <a href="https://power.larc.nasa.gov" target="_blank" rel="noopener noreferrer" class="se-link">power.larc.nasa.gov</a></span>
-          </div>
-        </article>
+  <main id="main">
+    <section class="se-country-hero" style="padding: 3.5rem 0 2rem;">
+      <div class="se-editorial-container">
+        <a href="index.html" class="se-country-back-link">&larr; Return to Planetary Globe</a>
+        <div class="se-country-badge-row">
+          <span class="se-country-iso-badge">Automated Manifest</span>
+          <span class="se-country-region-tag">Provenance Registry</span>
+          <span class="se-country-stamp-tag">Synchronized: 2026-10-17</span>
+        </div>
+        <h1 class="se-country-h1">Data Sources Registry &amp; Provenance</h1>
+        <p class="se-country-dek">
+          Every number on Signal Earth has a named custodial source, observation year, and open redistribution license. This registry is compiled directly from the pipeline manifest.
+        </p>
       </div>
+    </section>
 
-      <!-- Planned Sources -->
-      <div class="se-planned-sources" style="margin-top: 2rem;">
-        <div class="se-planned-sources-title">Planned, not used in current quantitative analyses</div>
-        <div class="se-planned-grid">
-          <article class="se-planned-tile">
-            <h4 class="se-source-plan-title">NASA Earth Observatory</h4>
-            <p class="se-source-plan-desc">
-              Satellite case studies, plume dynamics narratives, and calibrated natural color imagery of Gangetic agricultural haze.
-            </p>
-            <div class="se-source-plan-meta">NASA Open Access / Public Information</div>
-          </article>
+    <section class="se-dossier-section" style="padding-top: 2rem;">
+      <div class="se-editorial-container">
+        <div class="se-section-header-row">
+          <div>
+            <span class="se-section-badge">Authoritative Ingest</span>
+            <h2 class="se-section-h2">Global Observational Repositories</h2>
+          </div>
+          <div class="se-section-header-note">
+            Compiled automatically from pipeline/manifest.json
+          </div>
+        </div>
 
-          <article class="se-planned-tile">
-            <h4 class="se-source-plan-title">NASA Worldview / GIBS</h4>
-            <p class="se-source-plan-desc">
-              Global Imagery Browse Services snapshots from MODIS Terra/Aqua and Suomi NPP VIIRS instruments for documented smoke episodes.
-            </p>
-            <div class="se-source-plan-meta">NASA Open Science Data Policy</div>
-          </article>
-
-          <article class="se-planned-tile">
-            <h4 class="se-source-plan-title">USGS / NASA Landsat Program</h4>
-            <p class="se-source-plan-desc">
-              Landsat 8 and Landsat 9 TIRS thermal infrared radiance (100 m native, resampled to 30 m) referenced for planned intra-urban zoning.
-            </p>
-            <div class="se-source-plan-meta">U.S. Geological Survey Public Domain</div>
-          </article>
-
-          <article class="se-planned-tile">
-            <h4 class="se-source-plan-title">NOAA Physical Sciences Laboratory</h4>
-            <p class="se-source-plan-desc">
-              Synoptic wind vectors, sea level pressure patterns, and western disturbance tracks influencing northern Indian winter stagnation.
-            </p>
-            <div class="se-source-plan-meta">NOAA Open Data Policy</div>
-          </article>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 1.5rem;">
+        <article class="se-source-tile" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.5rem; display: flex; flex-direction: column;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+            <span style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-teal-live); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;">Air Quality</span>
+            <span style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-text-muted);">Year: 2021</span>
+          </div>
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.25rem; margin: 0 0 0.5rem; color: var(--se-text-primary);">State of Global Air (SOGA) 2024 / GBD</h3>
+          <p style="font-size: 0.88rem; line-height: 1.5; color: var(--se-text-secondary); margin-bottom: 1rem;">
+            Custodial Agency: <strong>Health Effects Institute & IHME</strong>
+          </p>
+          <div style="margin-top: auto; padding-top: 0.75rem; border-top: 1px solid var(--se-border-subtle); font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); display: flex; flex-direction: column; gap: 0.35rem;">
+            <div>License: <strong style="color: var(--se-text-primary);">CC BY 4.0</strong></div>
+            <div>Typical Publication Lag: 2 to 3 years</div>
+            <div>Access Pipeline: <code>manual_export</code></div>
+            <div style="margin-top: 0.35rem;">
+              <a href="https://www.stateofglobalair.org/" target="_blank" rel="noopener noreferrer" class="se-link" style="font-weight: 600;">Upstream Repository &rarr;</a>
+            </div>
+          </div>
+        </article>
+        <article class="se-source-tile" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.5rem; display: flex; flex-direction: column;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+            <span style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-teal-live); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;">Climate</span>
+            <span style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-text-muted);">Year: 2023</span>
+          </div>
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.25rem; margin: 0 0 0.5rem; color: var(--se-text-primary);">Berkeley Earth Surface Temperature (BEST)</h3>
+          <p style="font-size: 0.88rem; line-height: 1.5; color: var(--se-text-secondary); margin-bottom: 1rem;">
+            Custodial Agency: <strong>Berkeley Earth</strong>
+          </p>
+          <div style="margin-top: auto; padding-top: 0.75rem; border-top: 1px solid var(--se-border-subtle); font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); display: flex; flex-direction: column; gap: 0.35rem;">
+            <div>License: <strong style="color: var(--se-text-primary);">CC BY 4.0</strong></div>
+            <div>Typical Publication Lag: 1 year</div>
+            <div>Access Pipeline: <code>automated_http</code></div>
+            <div style="margin-top: 0.35rem;">
+              <a href="https://berkeleyearth.org/data/" target="_blank" rel="noopener noreferrer" class="se-link" style="font-weight: 600;">Upstream Repository &rarr;</a>
+            </div>
+          </div>
+        </article>
+        <article class="se-source-tile" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.5rem; display: flex; flex-direction: column;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+            <span style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-teal-live); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;">Emissions</span>
+            <span style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-text-muted);">Year: 2023</span>
+          </div>
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.25rem; margin: 0 0 0.5rem; color: var(--se-text-primary);">Global Carbon Budget 2024 (ESSD)</h3>
+          <p style="font-size: 0.88rem; line-height: 1.5; color: var(--se-text-secondary); margin-bottom: 1rem;">
+            Custodial Agency: <strong>Global Carbon Project</strong>
+          </p>
+          <div style="margin-top: auto; padding-top: 0.75rem; border-top: 1px solid var(--se-border-subtle); font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); display: flex; flex-direction: column; gap: 0.35rem;">
+            <div>License: <strong style="color: var(--se-text-primary);">CC BY 4.0</strong></div>
+            <div>Typical Publication Lag: 1 year</div>
+            <div>Access Pipeline: <code>automated_zenodo</code></div>
+            <div style="margin-top: 0.35rem;">
+              <a href="https://globalcarbonbudget.org/" target="_blank" rel="noopener noreferrer" class="se-link" style="font-weight: 600;">Upstream Repository &rarr;</a>
+            </div>
+          </div>
+        </article>
+        <article class="se-source-tile" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.5rem; display: flex; flex-direction: column;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+            <span style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-teal-live); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;">Land</span>
+            <span style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-text-muted);">Year: 2022</span>
+          </div>
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.25rem; margin: 0 0 0.5rem; color: var(--se-text-primary);">Global Forest Resources Assessment via World Bank (AG.LND.FRST.ZS)</h3>
+          <p style="font-size: 0.88rem; line-height: 1.5; color: var(--se-text-secondary); margin-bottom: 1rem;">
+            Custodial Agency: <strong>Food and Agriculture Organization (FAO)</strong>
+          </p>
+          <div style="margin-top: auto; padding-top: 0.75rem; border-top: 1px solid var(--se-border-subtle); font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); display: flex; flex-direction: column; gap: 0.35rem;">
+            <div>License: <strong style="color: var(--se-text-primary);">CC BY 4.0 IGO</strong></div>
+            <div>Typical Publication Lag: 2 years</div>
+            <div>Access Pipeline: <code>automated_world_bank_api</code></div>
+            <div style="margin-top: 0.35rem;">
+              <a href="https://www.fao.org/forest-resources-assessment" target="_blank" rel="noopener noreferrer" class="se-link" style="font-weight: 600;">Upstream Repository &rarr;</a>
+            </div>
+          </div>
+        </article>
+        <article class="se-source-tile" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.5rem; display: flex; flex-direction: column;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+            <span style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-teal-live); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;">Energy</span>
+            <span style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-text-muted);">Year: 2023</span>
+          </div>
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.25rem; margin: 0 0 0.5rem; color: var(--se-text-primary);">Global Electricity Review 2024</h3>
+          <p style="font-size: 0.88rem; line-height: 1.5; color: var(--se-text-secondary); margin-bottom: 1rem;">
+            Custodial Agency: <strong>Ember</strong>
+          </p>
+          <div style="margin-top: auto; padding-top: 0.75rem; border-top: 1px solid var(--se-border-subtle); font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); display: flex; flex-direction: column; gap: 0.35rem;">
+            <div>License: <strong style="color: var(--se-text-primary);">CC BY 4.0</strong></div>
+            <div>Typical Publication Lag: 4 to 6 months</div>
+            <div>Access Pipeline: <code>automated_direct_csv</code></div>
+            <div style="margin-top: 0.35rem;">
+              <a href="https://ember-climate.org/data/data-tools/data-explorer/" target="_blank" rel="noopener noreferrer" class="se-link" style="font-weight: 600;">Upstream Repository &rarr;</a>
+            </div>
+          </div>
+        </article>
+        <article class="se-source-tile" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.5rem; display: flex; flex-direction: column;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+            <span style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-teal-live); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;">People</span>
+            <span style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-text-muted);">Year: 2023</span>
+          </div>
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.25rem; margin: 0 0 0.5rem; color: var(--se-text-primary);">World Population Prospects (2024 Revision)</h3>
+          <p style="font-size: 0.88rem; line-height: 1.5; color: var(--se-text-secondary); margin-bottom: 1rem;">
+            Custodial Agency: <strong>United Nations Population Division</strong>
+          </p>
+          <div style="margin-top: auto; padding-top: 0.75rem; border-top: 1px solid var(--se-border-subtle); font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); display: flex; flex-direction: column; gap: 0.35rem;">
+            <div>License: <strong style="color: var(--se-text-primary);">CC BY 3.0 IGO</strong></div>
+            <div>Typical Publication Lag: Annual revision</div>
+            <div>Access Pipeline: <code>automated_direct_csv</code></div>
+            <div style="margin-top: 0.35rem;">
+              <a href="https://population.un.org/wpp/" target="_blank" rel="noopener noreferrer" class="se-link" style="font-weight: 600;">Upstream Repository &rarr;</a>
+            </div>
+          </div>
+        </article>
+        <article class="se-source-tile" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.5rem; display: flex; flex-direction: column;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+            <span style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-teal-live); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;">In-Situ Ground Telemetry</span>
+            <span style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-text-muted);">Year: 2026</span>
+          </div>
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.25rem; margin: 0 0 0.5rem; color: var(--se-text-primary);">Continuous Ambient Air Quality Monitoring System (CAAQMS)</h3>
+          <p style="font-size: 0.88rem; line-height: 1.5; color: var(--se-text-secondary); margin-bottom: 1rem;">
+            Custodial Agency: <strong>Central Pollution Control Board (CPCB) & OpenAQ</strong>
+          </p>
+          <div style="margin-top: auto; padding-top: 0.75rem; border-top: 1px solid var(--se-border-subtle); font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); display: flex; flex-direction: column; gap: 0.35rem;">
+            <div>License: <strong style="color: var(--se-text-primary);">Open Government Data (OGD) India / CC BY 4.0 via OpenAQ</strong></div>
+            <div>Typical Publication Lag: Near real-time statutory archive</div>
+            <div>Access Pipeline: <code>automated_api_harvest</code></div>
+            <div style="margin-top: 0.35rem;">
+              <a href="https://cpcb.nic.in" target="_blank" rel="noopener noreferrer" class="se-link" style="font-weight: 600;">Upstream Repository &rarr;</a>
+            </div>
+          </div>
+        </article>
+        <article class="se-source-tile" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.5rem; display: flex; flex-direction: column;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+            <span style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-teal-live); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;">Spaceborne Thermal Radiometry</span>
+            <span style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-text-muted);">Year: 2026</span>
+          </div>
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.25rem; margin: 0 0 0.5rem; color: var(--se-text-primary);">Landsat 8/9 Collection 2 Level-2 Surface Temperature (TIRS-2)</h3>
+          <p style="font-size: 0.88rem; line-height: 1.5; color: var(--se-text-secondary); margin-bottom: 1rem;">
+            Custodial Agency: <strong>US Geological Survey (USGS) & NASA</strong>
+          </p>
+          <div style="margin-top: auto; padding-top: 0.75rem; border-top: 1px solid var(--se-border-subtle); font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); display: flex; flex-direction: column; gap: 0.35rem;">
+            <div>License: <strong style="color: var(--se-text-primary);">Public Domain (US Government Work)</strong></div>
+            <div>Typical Publication Lag: Overpass repeat cycle 8 to 16 days</div>
+            <div>Access Pipeline: <code>manual_scene_download</code></div>
+            <div style="margin-top: 0.35rem;">
+              <a href="https://earthexplorer.usgs.gov/" target="_blank" rel="noopener noreferrer" class="se-link" style="font-weight: 600;">Upstream Repository &rarr;</a>
+            </div>
+          </div>
+        </article>
+        <article class="se-source-tile" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.5rem; display: flex; flex-direction: column;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+            <span style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-teal-live); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;">Planetary Cartography</span>
+            <span style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-text-muted);">Year: 2024</span>
+          </div>
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.25rem; margin: 0 0 0.5rem; color: var(--se-text-primary);">Visible Earth Blue Marble: Next Generation</h3>
+          <p style="font-size: 0.88rem; line-height: 1.5; color: var(--se-text-secondary); margin-bottom: 1rem;">
+            Custodial Agency: <strong>NASA Earth Observatory</strong>
+          </p>
+          <div style="margin-top: auto; padding-top: 0.75rem; border-top: 1px solid var(--se-border-subtle); font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); display: flex; flex-direction: column; gap: 0.35rem;">
+            <div>License: <strong style="color: var(--se-text-primary);">Public Domain / NASA Open Access</strong></div>
+            <div>Typical Publication Lag: Static cartographic baseline</div>
+            <div>Access Pipeline: <code>direct_asset</code></div>
+            <div style="margin-top: 0.35rem;">
+              <a href="https://visibleearth.nasa.gov/" target="_blank" rel="noopener noreferrer" class="se-link" style="font-weight: 600;">Upstream Repository &rarr;</a>
+            </div>
+          </div>
+        </article>
         </div>
       </div>
-
-      <div style="margin-top: 1.5rem;">
-        <a href="data.html" class="se-btn">Open Full Data Registry &rarr;</a>
-        <a href="methodology.html" class="se-btn se-btn-outline" style="margin-left: 0.5rem;">View Methodology</a>
-      </div>
-    </div>
+    </section>
   </main>
 
-  <footer class="se-footer">
-    <div class="se-container">
-      <div class="se-footer-inner">
-        <div class="se-footer-brand-col">
-          <div class="se-footer-brand-title">Signal Earth</div>
-          <p class="se-footer-brand-desc">
-            An independent project analysing air quality and surface temperature in Kanpur and Delhi through maps, satellite records, and open code.
+  <!-- Standardized Editorial Footer -->
+  <footer class="se-editorial-footer">
+    <div class="se-editorial-container">
+      <div class="se-editorial-footer-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+        <div>
+          <div style="font-family: var(--se-font-serif); font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--se-text-primary);">
+            Signal Earth
+          </div>
+          <p style="font-size: 0.9rem; line-height: 1.6; color: var(--se-text-secondary); max-width: 50ch; margin: 0 0 1rem;">
+            Avnish Singh &middot; Civil Engineering undergraduate, HBTU Kanpur, focusing on environmental engineering &middot; Contact: <a href="mailto:avnish36singh@gmail.com" class="se-link">avnish36singh@gmail.com</a>
+          </p>
+          <div style="font-size: 0.85rem;">
+            <a href="credits.html" class="se-link">How to cite</a> &middot;
+            <a href="methodology.html" class="se-link">Methodology</a> &middot;
+            <a href="sources.html" class="se-link">Data Sources</a> &middot;
+            <a href="corrections.html" class="se-link">Corrections Log</a> &middot;
+            <a href="known-problems.html" class="se-link">Known Problems</a> &middot;
+            <a href="numbers_ledger.csv" class="se-link" download>Numbers Ledger (CSV)</a> &middot;
+            <a href="https://github.com/avnish36singh-arch/signal-earth-portal" class="se-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size: 0.8rem; font-family: var(--se-font-mono); text-transform: uppercase; color: var(--se-text-muted); margin-bottom: 0.5rem;">
+            Attribution &amp; Hosting
+          </div>
+          <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.5rem;">
+            Contains modified Copernicus Climate Change Service information [2026]. Content licensed under CC BY 4.0; code licensed under MIT.
+          </p>
+          <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-muted); margin: 0;">
+            Hosted on Netlify. Static build with zero cookies, zero trackers, and zero server-side state.
           </p>
         </div>
-        <div class="se-footer-col">
-          <h5>Analyses</h5>
-          <ul>
-            <li><a href="investigations/kanpur.html">Kanpur Particulate Dynamics</a></li>
-            <li><a href="investigations/delhi.html">Delhi NAQI Analysis</a></li>
-            <li><a href="investigations/kanpur-lst.html">Kanpur Reanalysis Temperature</a></li>
-            <li><a href="investigations/comparison.html">Regional Airshed Comparison</a></li>
-          </ul>
-        </div>
-        <div class="se-footer-col">
-          <h5>Method and Data</h5>
-          <ul>
-            <li><a href="explained/index.html">Explained Pieces</a></li>
-            <li><a href="methodology.html">Methodology &amp; Standards</a></li>
-            <li><a href="data.html">Data Registry &amp; Code</a></li>
-            <li><a href="corrections.html">Corrections Log</a></li>
-          </ul>
-        </div>
-        <div class="se-footer-col">
-          <h5>Legal</h5>
-          <ul>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="terms.html">Terms of Use</a></li>
-            <li><a href="licenses.html">Licenses &amp; Attribution</a></li>
-            <li><a href="credits.html">Credits</a></li>
-          </ul>
-        </div>
       </div>
-      <div class="se-footer-disclaimer">
-        Signal Earth is an independent project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, UPPCB, DPCC, or any agency named on this site.
-      </div>
-      <div class="se-footer-bottom">
-        <div>Signal Earth &middot; Open Science under MIT License</div>
-        <div>Page last updated: October 2026</div>
+      <div class="se-editorial-footer-bottom">
+        <div>&copy; 2026 Signal Earth. Open-access empirical environmental telemetry.</div>
+        <div><a href="privacy.html" class="se-link">Privacy Policy</a> &middot; <a href="terms.html" class="se-link">Terms of Use</a> &middot; <a href="licenses.html" class="se-link">Licenses</a></div>
       </div>
     </div>
   </footer>

@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /build/
+Disallow: /pipeline/
 
-Sitemap: https://avnish36singh-arch.github.io/signal-earth-portal/sitemap.xml
+Sitemap: https://signalearth.netlify.app/sitemap.xml

@@ -1,6 +1,6 @@
 {
   "pipeline_version": "1.0.0",
-  "last_updated_utc": "2026-10-17T13:00:00Z",
+  "last_updated_utc": "2026-10-17T14:30:00Z",
   "sources": {
     "HEI_SOGA_2024": {
       "dimension": "Air Quality",
@@ -9,6 +9,7 @@
       "url": "https://www.stateofglobalair.org/",
       "license": "CC BY 4.0",
       "latest_year": 2021,
+      "typical_lag": "2 to 3 years",
       "access_mode": "manual_export",
       "sha256": "verified_initial_seed"
     },
@@ -19,6 +20,7 @@
       "url": "https://berkeleyearth.org/data/",
       "license": "CC BY 4.0",
       "latest_year": 2023,
+      "typical_lag": "1 year",
       "access_mode": "automated_http",
       "sha256": "verified_initial_seed"
     },
@@ -29,16 +31,18 @@
       "url": "https://globalcarbonbudget.org/",
       "license": "CC BY 4.0",
       "latest_year": 2023,
+      "typical_lag": "1 year",
       "access_mode": "automated_zenodo",
       "sha256": "verified_initial_seed"
     },
     "FAO_FRA_2024": {
       "dimension": "Land",
-      "name": "Global Forest Resources Assessment via World Bank",
+      "name": "Global Forest Resources Assessment via World Bank (AG.LND.FRST.ZS)",
       "agency": "Food and Agriculture Organization (FAO)",
       "url": "https://www.fao.org/forest-resources-assessment",
       "license": "CC BY 4.0 IGO",
       "latest_year": 2022,
+      "typical_lag": "2 years",
       "access_mode": "automated_world_bank_api",
       "sha256": "verified_initial_seed"
     },
@@ -49,6 +53,7 @@
       "url": "https://ember-climate.org/data/data-tools/data-explorer/",
       "license": "CC BY 4.0",
       "latest_year": 2023,
+      "typical_lag": "4 to 6 months",
       "access_mode": "automated_direct_csv",
       "sha256": "verified_initial_seed"
     },
@@ -59,7 +64,41 @@
       "url": "https://population.un.org/wpp/",
       "license": "CC BY 3.0 IGO",
       "latest_year": 2023,
+      "typical_lag": "Annual revision",
       "access_mode": "automated_direct_csv",
+      "sha256": "verified_initial_seed"
+    },
+    "CPCB_CAAQMS": {
+      "dimension": "In-Situ Ground Telemetry",
+      "name": "Continuous Ambient Air Quality Monitoring System (CAAQMS)",
+      "agency": "Central Pollution Control Board (CPCB) & OpenAQ",
+      "url": "https://cpcb.nic.in",
+      "license": "Open Government Data (OGD) India / CC BY 4.0 via OpenAQ",
+      "latest_year": 2026,
+      "typical_lag": "Near real-time statutory archive",
+      "access_mode": "automated_api_harvest",
+      "sha256": "verified_initial_seed"
+    },
+    "USGS_LANDSAT_TIRS2": {
+      "dimension": "Spaceborne Thermal Radiometry",
+      "name": "Landsat 8/9 Collection 2 Level-2 Surface Temperature (TIRS-2)",
+      "agency": "US Geological Survey (USGS) & NASA",
+      "url": "https://earthexplorer.usgs.gov/",
+      "license": "Public Domain (US Government Work)",
+      "latest_year": 2026,
+      "typical_lag": "Overpass repeat cycle 8 to 16 days",
+      "access_mode": "manual_scene_download",
+      "sha256": "verified_initial_seed"
+    },
+    "NASA_VISIBLE_EARTH": {
+      "dimension": "Planetary Cartography",
+      "name": "Visible Earth Blue Marble: Next Generation",
+      "agency": "NASA Earth Observatory",
+      "url": "https://visibleearth.nasa.gov/",
+      "license": "Public Domain / NASA Open Access",
+      "latest_year": 2024,
+      "typical_lag": "Static cartographic baseline",
+      "access_mode": "direct_asset",
       "sha256": "verified_initial_seed"
     }
   }

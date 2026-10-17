@@ -4,142 +4,173 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Known Problems and Technical Limits | Signal Earth</title>
-  <meta name="description" content="Permanent auditable record of data gaps, operational hiatuses, and spatial constraints across the Signal Earth codebase.">
-  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/known-problems.html">
+  <meta name="description" content="Permanent auditable record of data gaps, operational hiatuses, spatial constraints, and parameter exclusions across the Signal Earth codebase.">
+  <link rel="canonical" href="https://signalearth.netlify.app/known-problems.html">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
+  <meta property="og:title" content="Known Problems and Technical Limits | Signal Earth">
+  <meta property="og:description" content="Permanent record of data gaps, spatial constraints, and methodological limits across the Signal Earth codebase.">
+  <meta property="og:url" content="https://signalearth.netlify.app/known-problems.html">
+  <meta property="og:type" content="article">
   <link rel="stylesheet" href="style.css">
   <script src="assets/theme.js"></script>
 </head>
-<body>
+<body class="se-editorial-page">
   <a href="#main" class="skip-link">Skip to content</a>
 
-  <header>
-    <nav class="se-nav" aria-label="Main Navigation">
-      <div class="se-nav-inner">
-        <a href="index.html" class="se-brand">
-          <span class="se-brand-name">Signal Earth</span>
-          <span class="se-brand-sub">Independent Research</span>
-        </a>
-        <ul class="se-nav-links">
-          <li><a href="index.html#observe">Observe</a></li>
-          <li><a href="index.html#research">Research</a></li>
-          <li><a href="explained/index.html">Explained</a></li>
-          <li><a href="data.html">Library</a></li>
-          <li><a href="methodology.html">Build</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
+  <!-- Standardized 5-Item Editorial Header -->
+  <header class="se-editorial-header" id="se-header">
+    <div class="se-editorial-container">
+      <div class="se-editorial-header-inner">
+        <div class="se-editorial-wordmark-wrap">
+          <a href="index.html" class="se-editorial-wordmark">Signal Earth</a>
+          <span class="se-wordmark-badge">Known Limits</span>
+        </div>
+        <div class="se-editorial-header-right">
+          <nav class="se-editorial-nav" aria-label="Main Navigation">
+            <ul class="se-editorial-nav-list">
+              <li><a href="index.html" class="se-editorial-nav-link">Globe</a></li>
+              <li><a href="rankings.html" class="se-editorial-nav-link">Rankings</a></li>
+              <li><a href="compare.html" class="se-editorial-nav-link">Compare</a></li>
+              <li><a href="data.html" class="se-editorial-nav-link">Data</a></li>
+              <li><a href="methodology.html" class="se-editorial-nav-link">Methodology</a></li>
+              <li><a href="about.html" class="se-editorial-nav-link">About</a></li>
+            </ul>
+          </nav>
+          <button type="button" id="se-theme-toggle" class="se-theme-toggle-btn" aria-label="Toggle theme mode" title="Switch light / dark mode">
+            <svg class="se-theme-icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="se-theme-icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span class="se-theme-label">Theme</span>
+          </button>
+        </div>
       </div>
-    </nav>
+    </div>
   </header>
 
-  <main id="main" class="se-container se-page-content" style="padding-top: 3rem; padding-bottom: 4rem;">
+  <main id="main" class="se-container-narrow se-container-py">
     <div class="se-section-header">
       <span class="section-kicker">Scientific Honesty &middot; Technical Limitations</span>
-      <h1 class="editorial-headline se-section-title" style="font-size: 2rem;">Known Problems and Technical Limits</h1>
+      <h1 class="editorial-headline se-section-title" style="font-size: 2.25rem;">Known Problems and Technical Limits</h1>
       <p class="se-hero-dek">
-        A permanent record of data gaps, spatial constraints, and methodological limits across the Signal Earth codebase. Preserved from the original homepage.
+        A permanent, auditable record of sensor hiatuses, reanalysis resolution boundaries, orbital overpass limits, and parameter omissions across the Signal Earth codebase.
       </p>
     </div>
 
-    <div class="se-panel">
-      <div class="se-table-wrap">
-        <table class="se-table">
+    <div class="se-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.5rem; margin-top: 2rem;">
+      <div class="se-table-wrap" style="overflow-x: auto;">
+        <table class="se-table" style="width: 100%; border-collapse: collapse;">
           <thead>
-            <tr>
-              <th>Issue / Constraint</th>
-              <th>Effect on Research Findings</th>
-              <th>Status</th>
-              <th>Documentation Link</th>
+            <tr style="border-bottom: 2px solid var(--se-border); text-align: left;">
+              <th style="padding: 0.75rem;">Issue / Constraint</th>
+              <th style="padding: 0.75rem;">Effect on Research Findings</th>
+              <th style="padding: 0.75rem; width: 110px;">Status</th>
+              <th style="padding: 0.75rem; width: 140px;">Documentation</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td><strong>Delhi Alipur 731-Day Gap (2019 to 2020)</strong></td>
-              <td>Operational refurbishment halted recordings for two full calendar years (Jan 1, 2019 to Dec 31, 2020). Exactly 1,137 out of 1,825 recorded rows meet CPCB quorum (1,133 valid PM2.5 records). Trends cannot claim unbroken multi-year continuity.</td>
-              <td><span class="se-status-tag se-status-fixed">Documented</span></td>
-              <td><a href="corrections.html#hiatus-delhi" class="se-link">Corrections Log</a></td>
+            <tr style="border-bottom: 1px solid var(--se-border);">
+              <td style="padding: 0.75rem;"><strong>Delhi Alipur 731-Day Hiatus (2019 to 2020)</strong></td>
+              <td style="padding: 0.75rem; font-size: 0.88rem; line-height: 1.5;">Station refurbishment halted recordings for two full calendar years (Jan 1, 2019 to Dec 31, 2020). Exactly 1,137 out of 1,825 recorded rows meet statutory CPCB regulatory quorum (1,133 valid PM2.5 records). Time series cannot claim unbroken multi-year continuity.</td>
+              <td style="padding: 0.75rem;"><span class="se-status-tag se-status-fixed" style="font-family: var(--se-font-mono); font-size: 0.75rem; background: rgba(34, 197, 94, 0.12); color: #16A34A; padding: 0.2rem 0.5rem; border-radius: 4px;">Documented</span></td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;"><a href="corrections.html#hiatus-delhi" class="se-link">Corrections Log</a></td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--se-border);">
+              <td style="padding: 0.75rem;"><strong>Kanpur 855-Day Operational Hiatus (Oct 2022 to Feb 2025)</strong></td>
+              <td style="padding: 0.75rem; font-size: 0.88rem; line-height: 1.5;">Ground monitoring data across NSI Kalyanpur (815 station-days) and Nehru Nagar (813 station-days) is partitioned into two discrete observation windows (Jul 2021 to Oct 2022 and Feb 2025 to Aug 2026). The 855-day hiatus is preserved as null rather than synthetically filled.</td>
+              <td style="padding: 0.75rem;"><span class="se-status-tag se-status-fixed" style="font-family: var(--se-font-mono); font-size: 0.75rem; background: rgba(34, 197, 94, 0.12); color: #16A34A; padding: 0.2rem 0.5rem; border-radius: 4px;">Documented</span></td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;"><a href="corrections.html#hiatus-kanpur" class="se-link">Corrections Log</a></td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--se-border);">
+              <td style="padding: 0.75rem;"><strong>NASA POWER / MERRA-2 Coarse Grid (~55 x 60 km)</strong></td>
+              <td style="padding: 0.75rem; font-size: 0.88rem; line-height: 1.5;">Skin temperature is derived from an atmospheric numerical reanalysis model on a 0.5&deg; &times; 0.625&deg; grid. It averages an area of ~3,300 km&sup2;, completely muting intra-urban street microclimates and underestimating urban core heat stress by 1.0 to 2.3 K compared to calibrated Landsat radiometry.</td>
+              <td style="padding: 0.75rem;"><span class="se-status-tag se-status-fixed" style="font-family: var(--se-font-mono); font-size: 0.75rem; background: rgba(34, 197, 94, 0.12); color: #16A34A; padding: 0.2rem 0.5rem; border-radius: 4px;">Documented</span></td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;"><a href="methodology.html#reanalysis-grid" class="se-link">Methodology Limits</a></td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--se-border);">
+              <td style="padding: 0.75rem;"><strong>Satellite Sun-Synchronous Overpass Timing Constraints</strong></td>
+              <td style="padding: 0.75rem; font-size: 0.88rem; line-height: 1.5;">Landsat 8/9 overpasses occur at approximately 10:30 AM local solar time, while MODIS Terra and Aqua pass at ~10:30 AM and ~1:30 PM. Diurnal maximum surface heating typically occurs at 14:00-15:30 local time, and nocturnal surface temperature inversions peak between 03:00-06:00 AM. Daytime satellite scenes capture orbital snapshot radiances rather than diurnal extremes.</td>
+              <td style="padding: 0.75rem;"><span class="se-status-tag se-status-fixed" style="font-family: var(--se-font-mono); font-size: 0.75rem; background: rgba(34, 197, 94, 0.12); color: #16A34A; padding: 0.2rem 0.5rem; border-radius: 4px;">Documented</span></td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;"><a href="methodology.html#reanalysis-grid" class="se-link">Methodology Limits</a></td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--se-border);">
+              <td style="padding: 0.75rem;"><strong>Global Freshwater Data Exclusion (FAO AQUASTAT)</strong></td>
+              <td style="padding: 0.75rem; font-size: 0.88rem; line-height: 1.5;">National-scale freshwater stress and internal renewable water withdrawal metrics from UN-Water / FAO AQUASTAT suffer from multi-decade reporting voids and inconsistent national extraction accounting. To maintain scientific integrity, water metrics are strictly omitted from global country rankings until high-frequency satellite gravimetry and altimetry (GRACE-FO / SWOT) are incorporated.</td>
+              <td style="padding: 0.75rem;"><span class="se-status-tag se-status-fixed" style="font-family: var(--se-font-mono); font-size: 0.75rem; background: rgba(217, 119, 6, 0.12); color: #D97706; padding: 0.2rem 0.5rem; border-radius: 4px;">Excluded</span></td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;"><a href="sources.html" class="se-link">Data Sources</a></td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--se-border);">
+              <td style="padding: 0.75rem;"><strong>Particulate Diagnostic Ratios (PM2.5 / PM10) as Screening Only</strong></td>
+              <td style="padding: 0.75rem; font-size: 0.88rem; line-height: 1.5;">Aerodynamic fine-to-coarse ratios provide qualitative indications of fine combustion versus coarse crustal dust, but cannot substitute for chemical speciation filters or positive matrix factorization (PMF) receptor modeling.</td>
+              <td style="padding: 0.75rem;"><span class="se-status-tag se-status-fixed" style="font-family: var(--se-font-mono); font-size: 0.75rem; background: rgba(34, 197, 94, 0.12); color: #16A34A; padding: 0.2rem 0.5rem; border-radius: 4px;">Documented</span></td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;"><a href="methodology.html#ratio-limits" class="se-link">Methodology Limits</a></td>
             </tr>
             <tr>
-              <td><strong>Kanpur 2.3-Year Hiatus (Oct 2022 to Feb 2025)</strong></td>
-              <td>Ground monitoring data is partitioned into two discrete windows (Jul 2021 to Oct 2022 and Feb 2025 to Aug 2026). Winter analyses primarily reflect 2021 to 2022 conditions.</td>
-              <td><span class="se-status-tag se-status-fixed">Documented</span></td>
-              <td><a href="corrections.html#hiatus-kanpur" class="se-link">Corrections Log</a></td>
-            </tr>
-            <tr>
-              <td><strong>NASA POWER / MERRA-2 Coarse Grid (~55 x 60 km)</strong></td>
-              <td>Skin temperature is derived from an assimilation model over a regional grid cell. It cannot resolve intra-urban microclimates, street canyons, or specific industrial pockets.</td>
-              <td><span class="se-status-tag se-status-fixed">Documented</span></td>
-              <td><a href="methodology.html#reanalysis-grid" class="se-link">Methodology Limits</a></td>
-            </tr>
-            <tr>
-              <td><strong>Particulate Ratios (PM2.5 / PM10) as Screening Only</strong></td>
-              <td>Fine-to-coarse ratios provide general qualitative indications of combustion versus mechanical dust, but cannot replace chemical mass balance (CMB) or positive matrix factorization (PMF).</td>
-              <td><span class="se-status-tag se-status-fixed">Documented</span></td>
-              <td><a href="methodology.html#ratio-limits" class="se-link">Methodology Limits</a></td>
-            </tr>
-            <tr>
-              <td><strong>Planned Intra-Urban Spatial Zoning (Landsat / MODIS)</strong></td>
-              <td>Accurate spatial microclimate offsets across Kanpur require cloud-masked Landsat thermal radiometry (100 m native, resampled to 30 m). Analysis is planned and not yet completed; placeholder offsets have been removed.</td>
-              <td><span class="se-status-tag se-status-open">Planned</span></td>
-              <td><a href="investigations/kanpur-lst.html#spatial-zoning-notice" class="se-link">Investigation 03 Notice</a></td>
+              <td style="padding: 0.75rem;"><strong>Planned Intra-Urban Spatial Zoning (Landsat / MODIS)</strong></td>
+              <td style="padding: 0.75rem; font-size: 0.88rem; line-height: 1.5;">Accurate intra-urban thermal zoning across Kanpur requires cloud-masked Landsat thermal radiometry (100 m native, resampled to 30 m). Analysis 04 established the initial snapshot calibration; automated multi-year time-series zoning is in development.</td>
+              <td style="padding: 0.75rem;"><span class="se-status-tag se-status-open" style="font-family: var(--se-font-mono); font-size: 0.75rem; background: rgba(59, 130, 246, 0.12); color: #2563EB; padding: 0.2rem 0.5rem; border-radius: 4px;">In Progress</span></td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;"><a href="investigations/kanpur-lst.html" class="se-link">Investigation 03</a></td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <div style="margin-top: 1.5rem;">
-        <a href="corrections.html" class="se-btn">View Full Corrections Log &rarr;</a>
-        <a href="methodology.html" class="se-btn se-btn-outline" style="margin-left: 0.5rem;">Read Methodology</a>
+      <div style="margin-top: 2rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+        <a href="corrections.html" class="se-btn" style="display: inline-block; background: var(--se-teal-live); color: #ffffff; padding: 0.6rem 1.2rem; border-radius: var(--se-radius-sm); text-decoration: none; font-weight: 600; font-size: 0.9rem;">View Corrections Log &rarr;</a>
+        <a href="methodology.html" class="se-btn se-btn-outline" style="display: inline-block; border: 1px solid var(--se-border); color: var(--se-text-primary); padding: 0.6rem 1.2rem; border-radius: var(--se-radius-sm); text-decoration: none; font-weight: 600; font-size: 0.9rem;">Read Methodology</a>
       </div>
     </div>
   </main>
 
-  <footer class="se-footer">
-    <div class="se-container">
-      <div class="se-footer-inner">
-        <div class="se-footer-brand-col">
-          <div class="se-footer-brand-title">Signal Earth</div>
-          <p class="se-footer-brand-desc">
-            An independent project analysing air quality and surface temperature in Kanpur and Delhi through maps, satellite records, and open code.
+  <!-- Standardized Editorial Footer -->
+  <footer class="se-editorial-footer">
+    <div class="se-editorial-container">
+      <div class="se-editorial-footer-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+        <div>
+          <div style="font-family: var(--se-font-serif); font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--se-text-primary);">
+            Signal Earth
+          </div>
+          <p style="font-size: 0.9rem; line-height: 1.6; color: var(--se-text-secondary); max-width: 50ch; margin: 0 0 1rem;">
+            Avnish Singh &middot; Civil Engineering undergraduate, HBTU Kanpur, focusing on environmental engineering &middot; Contact: <a href="mailto:avnish36singh@gmail.com" class="se-link">avnish36singh@gmail.com</a>
+          </p>
+          <div style="font-size: 0.85rem;">
+            <a href="credits.html" class="se-link">How to cite</a> &middot;
+            <a href="methodology.html" class="se-link">Methodology</a> &middot;
+            <a href="sources.html" class="se-link">Data Sources</a> &middot;
+            <a href="corrections.html" class="se-link">Corrections Log</a> &middot;
+            <a href="known-problems.html" class="se-link">Known Problems</a> &middot;
+            <a href="numbers_ledger.csv" class="se-link" download>Numbers Ledger (CSV)</a> &middot;
+            <a href="https://github.com/avnish36singh-arch/signal-earth-portal" class="se-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size: 0.8rem; font-family: var(--se-font-mono); text-transform: uppercase; color: var(--se-text-muted); margin-bottom: 0.5rem;">
+            Attribution &amp; Hosting
+          </div>
+          <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.5rem;">
+            Contains modified Copernicus Climate Change Service information [2026]. Content licensed under CC BY 4.0; code licensed under MIT.
+          </p>
+          <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-muted); margin: 0;">
+            Hosted on Netlify. Static build with zero cookies, zero trackers, and zero server-side state.
           </p>
         </div>
-        <div class="se-footer-col">
-          <h5>Analyses</h5>
-          <ul>
-            <li><a href="investigations/kanpur.html">Kanpur Particulate Dynamics</a></li>
-            <li><a href="investigations/delhi.html">Delhi NAQI Analysis</a></li>
-            <li><a href="investigations/kanpur-lst.html">Kanpur Reanalysis Temperature</a></li>
-            <li><a href="investigations/comparison.html">Regional Airshed Comparison</a></li>
-          </ul>
-        </div>
-        <div class="se-footer-col">
-          <h5>Method and Data</h5>
-          <ul>
-            <li><a href="explained/index.html">Explained Pieces</a></li>
-            <li><a href="methodology.html">Methodology &amp; Standards</a></li>
-            <li><a href="data.html">Data Registry &amp; Code</a></li>
-            <li><a href="corrections.html">Corrections Log</a></li>
-          </ul>
-        </div>
-        <div class="se-footer-col">
-          <h5>Legal</h5>
-          <ul>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="terms.html">Terms of Use</a></li>
-            <li><a href="licenses.html">Licenses &amp; Attribution</a></li>
-            <li><a href="credits.html">Credits</a></li>
-          </ul>
-        </div>
       </div>
-      <div class="se-footer-disclaimer">
-        Signal Earth is an independent project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, UPPCB, DPCC, or any agency named on this site.
-      </div>
-      <div class="se-footer-bottom">
-        <div>Signal Earth &middot; Open Science under MIT License</div>
-        <div>Page last updated: October 2026</div>
+      <div class="se-editorial-footer-bottom">
+        <div>&copy; 2026 Signal Earth. Open-access empirical environmental telemetry.</div>
+        <div><a href="privacy.html" class="se-link">Privacy Policy</a> &middot; <a href="terms.html" class="se-link">Terms of Use</a> &middot; <a href="licenses.html" class="se-link">Licenses</a></div>
       </div>
     </div>
   </footer>

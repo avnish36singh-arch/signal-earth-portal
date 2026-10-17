@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compare Sovereign Environmental Indicators | Signal Earth</title>
+  <meta name="description" content="Side-by-side comparative benchmarking of two to three sovereign nations across air quality, warming anomalies, emissions, and energy transition.">
+  <link rel="canonical" href="https://signalearth.netlify.app/compare.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="assets/tokens.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/country.css">
+  <script src="assets/theme.js"></script>
+
+  <style>
+    .se-compare-selectors {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    @media (max-width: 800px) {
+      .se-compare-selectors {
+        grid-template-columns: 1fr;
+      }
+    }
+    .se-compare-selector-card {
+      background: var(--se-bg-surface);
+      border: 1px solid var(--se-border);
+      border-radius: var(--se-radius-md);
+      padding: 1.25rem;
+    }
+    .se-compare-select {
+      width: 100%;
+      padding: 0.6rem 0.75rem;
+      background: var(--se-bg-page);
+      color: var(--se-text-primary);
+      border: 1px solid var(--se-border);
+      border-radius: var(--se-radius-sm);
+      font-family: var(--se-font-sans);
+      font-size: 0.9rem;
+      font-weight: 600;
+      outline: none;
+      margin-top: 0.5rem;
+    }
+    .se-compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.88rem;
+      margin-top: 1rem;
+    }
+    .se-compare-table th {
+      padding: 1rem 0.85rem;
+      border-bottom: 2px solid var(--se-border);
+      color: var(--se-text-primary);
+      font-family: var(--se-font-serif);
+      font-size: 1.05rem;
+    }
+    .se-compare-table td {
+      padding: 1rem 0.85rem;
+      border-bottom: 1px solid var(--se-border-subtle);
+      vertical-align: top;
+    }
+    .se-compare-row-hdr {
+      font-weight: 600;
+      color: var(--se-text-primary);
+      width: 25%;
+      background: var(--se-bg-surface);
+    }
+    .se-compare-val {
+      font-family: var(--se-font-mono);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--se-text-primary);
+      line-height: 1.1;
+      margin-bottom: 0.25rem;
+    }
+    .se-compare-sub {
+      font-size: 0.78rem;
+      color: var(--se-text-secondary);
+      line-height: 1.4;
+    }
+    .se-compare-rank {
+      display: inline-block;
+      font-family: var(--se-font-mono);
+      font-size: 0.72rem;
+      color: var(--se-teal-live);
+      background: rgba(31, 182, 166, 0.12);
+      border: 1px solid rgba(31, 182, 166, 0.25);
+      padding: 0.1rem 0.4rem;
+      border-radius: 3px;
+      margin-top: 0.4rem;
+    }
+    .se-delta-box {
+      font-family: var(--se-font-mono);
+      font-size: 0.72rem;
+      color: var(--se-text-muted);
+      margin-top: 0.35rem;
+    }
+  </style>
+</head>
+<body class="se-editorial-page">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Standardized 5-Item Editorial Header -->
+  <header class="se-editorial-header" id="se-header">
+    <div class="se-editorial-container">
+      <div class="se-editorial-header-inner">
+        <div class="se-editorial-wordmark-wrap">
+          <a href="index.html" class="se-editorial-wordmark">Signal Earth</a>
+          <span class="se-wordmark-badge">Comparison</span>
+        </div>
+        <div class="se-editorial-header-right">
+          <nav class="se-editorial-nav" aria-label="Main Navigation">
+            <ul class="se-editorial-nav-list">
+              <li><a href="index.html" class="se-editorial-nav-link">Globe</a></li>
+              <li><a href="rankings.html" class="se-editorial-nav-link">Rankings</a></li>
+              <li><a href="compare.html" class="se-editorial-nav-link" style="color: var(--se-teal-live); font-weight: 600;">Compare</a></li>
+              <li><a href="data.html" class="se-editorial-nav-link">Data</a></li>
+              <li><a href="methodology.html" class="se-editorial-nav-link">Methodology</a></li>
+              <li><a href="about.html" class="se-editorial-nav-link">About</a></li>
+            </ul>
+          </nav>
+          <button type="button" id="se-theme-toggle" class="se-theme-toggle-btn" aria-label="Toggle theme mode" title="Switch light / dark mode">
+            <svg class="se-theme-icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="se-theme-icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span class="se-theme-label">Theme</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="se-country-hero" style="padding: 3.5rem 0 2rem;">
+      <div class="se-editorial-container">
+        <a href="index.html" class="se-country-back-link">&larr; Return to Planetary Globe</a>
+        <div class="se-country-badge-row">
+          <span class="se-country-iso-badge">Multi-Sovereign Benchmarking</span>
+          <span class="se-country-region-tag">Side-by-Side Analysis</span>
+        </div>
+        <h1 class="se-country-h1">Country Indicator Comparison</h1>
+        <p class="se-country-dek">
+          Benchmarking two to three sovereign nations across standardized environmental observables. Select countries below; links are shareable via URL parameters.
+        </p>
+      </div>
+    </section>
+
+    <section class="se-dossier-section" style="padding-top: 2rem;">
+      <div class="se-editorial-container">
+        <!-- Selectors Row -->
+        <div class="se-compare-selectors">
+          <div class="se-compare-selector-card">
+            <span class="se-section-badge">Country A (Primary Baseline)</span>
+            <select id="country-select-1" class="se-compare-select" aria-label="Select country A"></select>
+          </div>
+          <div class="se-compare-selector-card">
+            <span class="se-section-badge">Country B</span>
+            <select id="country-select-2" class="se-compare-select" aria-label="Select country B"></select>
+          </div>
+          <div class="se-compare-selector-card">
+            <span class="se-section-badge">Country C (Optional)</span>
+            <select id="country-select-3" class="se-compare-select" aria-label="Select country C"></select>
+          </div>
+        </div>
+
+        <!-- Share URL Pill -->
+        <div style="margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; font-family: var(--se-font-mono); font-size: 0.78rem; color: var(--se-text-muted);">
+          <div id="share-link-status">Shareable URL synchronized to current selection.</div>
+          <button type="button" id="copy-url-btn" class="se-rank-btn" style="border-radius: var(--se-radius-sm); background: var(--se-bg-surface); padding: 0.35rem 0.75rem;">
+            Copy Link 🔗
+          </button>
+        </div>
+
+        <!-- Comparison Table -->
+        <div style="overflow-x: auto;">
+          <table class="se-compare-table">
+            <thead>
+              <tr>
+                <th class="se-compare-row-hdr" style="background: transparent;">Indicator</th>
+                <th id="th-country-1">Country A</th>
+                <th id="th-country-2">Country B</th>
+                <th id="th-country-3">Country C</th>
+              </tr>
+            </thead>
+            <tbody id="compare-tbody">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Standardized Editorial Footer -->
+  <footer class="se-editorial-footer">
+    <div class="se-editorial-container">
+      <div class="se-editorial-footer-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+        <div>
+          <div style="font-family: var(--se-font-serif); font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--se-text-primary);">
+            Signal Earth
+          </div>
+          <p style="font-size: 0.9rem; line-height: 1.6; color: var(--se-text-secondary); max-width: 50ch; margin: 0 0 1rem;">
+            Avnish Singh &middot; Civil Engineering undergraduate, HBTU Kanpur, focusing on environmental engineering &middot; Contact: <a href="mailto:avnish36singh@gmail.com" class="se-link">avnish36singh@gmail.com</a>
+          </p>
+          <div style="font-size: 0.85rem;">
+            <a href="credits.html" class="se-link">How to cite</a> &middot;
+            <a href="methodology.html" class="se-link">Methodology</a> &middot;
+            <a href="sources.html" class="se-link">Data Sources</a> &middot;
+            <a href="corrections.html" class="se-link">Corrections Log</a> &middot;
+            <a href="known-problems.html" class="se-link">Known Problems</a> &middot;
+            <a href="numbers_ledger.csv" class="se-link" download>Numbers Ledger (CSV)</a> &middot;
+            <a href="https://github.com/avnish36singh-arch/signal-earth-portal" class="se-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size: 0.8rem; font-family: var(--se-font-mono); text-transform: uppercase; color: var(--se-text-muted); margin-bottom: 0.5rem;">
+            Attribution &amp; Hosting
+          </div>
+          <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.5rem;">
+            Contains modified Copernicus Climate Change Service information [2026]. Content licensed under CC BY 4.0; code licensed under MIT.
+          </p>
+          <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-muted); margin: 0;">
+            Hosted on Netlify. Static build with zero cookies, zero trackers, and zero server-side state.
+          </p>
+        </div>
+      </div>
+      <div class="se-editorial-footer-bottom">
+        <div>&copy; 2026 Signal Earth. Open-access empirical environmental telemetry.</div>
+        <div><a href="privacy.html" class="se-link">Privacy Policy</a> &middot; <a href="terms.html" class="se-link">Terms of Use</a> &middot; <a href="licenses.html" class="se-link">Licenses</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+
+      var s1 = document.getElementById('country-select-1');
+      var s2 = document.getElementById('country-select-2');
+      var s3 = document.getElementById('country-select-3');
+      var th1 = document.getElementById('th-country-1');
+      var th2 = document.getElementById('th-country-2');
+      var th3 = document.getElementById('th-country-3');
+      var tbody = document.getElementById('compare-tbody');
+      var copyBtn = document.getElementById('copy-url-btn');
+
+      var countriesList = [];
+      var profilesMap = {};
+
+      var INDICATORS_META = [
+        { key: 'pm25', name: 'Annual Mean PM2.5', unit: 'µg/m³', benchmark: 'WHO Guideline: 5 µg/m³' },
+        { key: 'temp_anomaly', name: 'Surface Temp Anomaly', unit: '°C', benchmark: 'Baseline: 1951-1980 normal' },
+        { key: 'temp_trend', name: '30-Year Warming Trend', unit: '°C / decade', benchmark: 'Linear trend' },
+        { key: 'co2_total', name: 'Total Territorial CO2', unit: 'Mt CO2', benchmark: 'Excludes bunker fuels' },
+        { key: 'co2_per_capita', name: 'Per Capita Fossil CO2', unit: 't CO2 / person', benchmark: 'World avg ~4.7 t' },
+        { key: 'forest_share', name: 'Forest Cover Fraction', unit: '% of land', benchmark: 'Sovereign land area' },
+        { key: 'renewables_share', name: 'Renewable Electricity', unit: '% of generation', benchmark: 'Solar, wind, hydro, bio' },
+        { key: 'population', name: 'Resident Population', unit: 'people', benchmark: 'UN WPP 2024 revision' }
+      ];
+
+      // Parse URL parameters ?c=IND,USA,CHN
+      var params = new URLSearchParams(window.location.search);
+      var cParam = params.get('c');
+      var defaultIsos = cParam ? cParam.split(',').map(function(s){return s.trim().toUpperCase();}) : ['IND', 'USA', 'CHN'];
+
+      fetch('data/countries.json')
+        .then(function (r) { return r.json(); })
+        .then(function (list) {
+          countriesList = list.sort(function(a,b){ return a.name.localeCompare(b.name); });
+          populateDropdowns();
+          loadSelectedProfiles();
+        });
+
+      function populateDropdowns() {
+        var optHtml = countriesList.map(function (c) {
+          return '<option value="' + c.iso3 + '">' + c.name + ' [' + c.iso3 + ']</option>';
+        }).join('');
+
+        s1.innerHTML = optHtml;
+        s2.innerHTML = optHtml;
+        s3.innerHTML = '<option value="">None (Compare Two)</option>' + optHtml;
+
+        s1.value = defaultIsos[0] || 'IND';
+        s2.value = defaultIsos[1] || 'USA';
+        s3.value = defaultIsos[2] || (defaultIsos.length > 2 ? defaultIsos[2] : 'CHN');
+
+        s1.addEventListener('change', onSelectionChange);
+        s2.addEventListener('change', onSelectionChange);
+        s3.addEventListener('change', onSelectionChange);
+      }
+
+      function onSelectionChange() {
+        var isos = [s1.value, s2.value, s3.value].filter(Boolean);
+        var newUrl = window.location.pathname + '?c=' + isos.join(',');
+        window.history.replaceState(null, '', newUrl);
+        loadSelectedProfiles();
+      }
+
+      function loadSelectedProfiles() {
+        var isos = [s1.value, s2.value, s3.value].filter(Boolean);
+        var promises = isos.map(function (iso) {
+          if (profilesMap[iso]) return Promise.resolve(profilesMap[iso]);
+          return fetch('data/country/' + iso.toLowerCase() + '.json')
+            .then(function(res){ return res.json(); })
+            .then(function(data){ profilesMap[iso] = data; return data; })
+            .catch(function(){ return null; });
+        });
+
+        Promise.all(promises).then(function (profiles) {
+          renderComparison(profiles.filter(Boolean));
+        });
+      }
+
+      function renderComparison(profiles) {
+        if (!profiles.length) return;
+        var p1 = profiles[0] || null;
+        var p2 = profiles[1] || null;
+        var p3 = profiles[2] || null;
+
+        th1.innerHTML = p1 ? '<a href="country/' + p1.iso3.toLowerCase() + '/" style="color: inherit; text-decoration: underline;">' + p1.name + ' [' + p1.iso3 + ']</a>' : '-';
+        th2.innerHTML = p2 ? '<a href="country/' + p2.iso3.toLowerCase() + '/" style="color: inherit; text-decoration: underline;">' + p2.name + ' [' + p2.iso3 + ']</a>' : '-';
+        th3.innerHTML = p3 ? '<a href="country/' + p3.iso3.toLowerCase() + '/" style="color: inherit; text-decoration: underline;">' + p3.name + ' [' + p3.iso3 + ']</a>' : '<span style="color: var(--se-text-muted); font-size: 0.85rem;">[None selected]</span>';
+
+        var rowsHtml = INDICATORS_META.map(function (meta) {
+          var k = meta.key;
+          var ind1 = p1 && p1.indicators ? p1.indicators[k] : null;
+          var ind2 = p2 && p2.indicators ? p2.indicators[k] : null;
+          var ind3 = p3 && p3.indicators ? p3.indicators[k] : null;
+
+          return '<tr>' +
+            '<td class="se-compare-row-hdr">' +
+            '<div>' + meta.name + '</div>' +
+            '<div style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-text-muted); font-weight: normal;">' + meta.unit + '</div>' +
+            '<div style="font-size: 0.72rem; color: var(--se-teal-live); margin-top: 0.2rem;">' + meta.benchmark + '</div>' +
+            '</td>' +
+            '<td>' + renderCell(ind1, p1) + '</td>' +
+            '<td>' + renderCell(ind2, p2, ind1) + '</td>' +
+            '<td>' + (p3 ? renderCell(ind3, p3, ind1) : '<span style="color: var(--se-text-muted); font-size: 0.8rem;">-</span>') + '</td>' +
+            '</tr>';
+        }).join('');
+
+        tbody.innerHTML = rowsHtml;
+      }
+
+      function renderCell(ind, profile, baselineInd) {
+        if (!ind || ind.value === null || ind.value === undefined) {
+          return '<div><div class="se-compare-val" style="color: var(--se-text-muted); font-style: italic;">No data</div>' +
+            '<div class="se-compare-sub">Unreported</div>' +
+            '<div class="se-delta-box">Relative delta disabled: unmonitored baseline</div></div>';
+        }
+
+        var valStr = ind.formatted_value || (ind.value + ' ' + (ind.unit || ''));
+        var yr = ind.year ? '(' + ind.year + ')' : '';
+        var rk = ind.rank && ind.total_ranked ? '<span class="se-compare-rank">Rank ' + ind.rank + ' of ' + ind.total_ranked + '</span>' : '';
+
+        var deltaHtml = '';
+        if (baselineInd && baselineInd.value !== null && baselineInd.value !== undefined && baselineInd.value !== 0) {
+          var diff = ind.value - baselineInd.value;
+          var pctDiff = ((diff / Math.abs(baselineInd.value)) * 100).toFixed(1);
+          var sign = diff > 0 ? '+' : '';
+          deltaHtml = '<div class="se-delta-box">vs Country A: <strong>' + sign + pctDiff + '%</strong> (' + sign + diff.toFixed(1) + ')</div>';
+        }
+
+        return '<div>' +
+          '<div class="se-compare-val">' + valStr + '</div>' +
+          '<div class="se-compare-sub">' + yr + '</div>' +
+          rk +
+          deltaHtml +
+          '</div>';
+      }
+
+      if (copyBtn) {
+        copyBtn.addEventListener('click', function () {
+          navigator.clipboard.writeText(window.location.href).then(function () {
+            copyBtn.textContent = 'Link Copied! ✓';
+            setTimeout(function () { copyBtn.textContent = 'Copy Link 🔗'; }, 2000);
+          });
+        });
+      }
+
+    })();
+  </script>
+</body>
+</html>

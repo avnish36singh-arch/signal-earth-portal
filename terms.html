@@ -4,42 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terms of Use | Signal Earth</title>
-  <meta name="description" content="Terms of use for the Signal Earth independent independent research project.">
-  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/terms.html">
+  <meta name="description" content="Terms of use and legal disclaimers for Signal Earth, an independent planetary environmental data project.">
+  <link rel="canonical" href="https://signalearth.netlify.app/terms.html">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
   <meta property="og:title" content="Terms of Use | Signal Earth">
-  <meta property="og:description" content="Terms of use for the Signal Earth platform.">
-  <meta property="og:url" content="https://avnish36singh-arch.github.io/signal-earth-portal/terms.html">
+  <meta property="og:description" content="Terms of use and non-affiliation disclaimers for the Signal Earth portal.">
+  <meta property="og:url" content="https://signalearth.netlify.app/terms.html">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="https://avnish36singh-arch.github.io/signal-earth-portal/assets/delhi/01_aqi_time_series.png">
   <link rel="stylesheet" href="style.css">
   <script src="assets/theme.js"></script>
 </head>
-<body>
+<body class="se-editorial-page">
   <a href="#main" class="skip-link">Skip to content</a>
 
-
-  <!-- 5-Item Editorial Navigation -->
-  <header>
-    <nav class="se-nav" aria-label="Main Navigation">
-      <div class="se-nav-inner">
-        <a href="index.html" class="se-brand">
-          <span class="se-brand-name">Signal Earth</span>
-          <span class="se-brand-sub">Independent Research</span>
-        </a>
-
-        <ul class="se-nav-links">
-          <li><a href="index.html#analyses">Analyses</a></li>
-          <li><a href="index.html#explained">Explained</a></li>
-          <li><a href="methodology.html">Methodology</a></li>
-          <li><a href="data.html">Data and code</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
+  <!-- Standardized 5-Item Editorial Header -->
+  <header class="se-editorial-header" id="se-header">
+    <div class="se-editorial-container">
+      <div class="se-editorial-header-inner">
+        <div class="se-editorial-wordmark-wrap">
+          <a href="index.html" class="se-editorial-wordmark">Signal Earth</a>
+          <span class="se-wordmark-badge">Terms</span>
+        </div>
+        <div class="se-editorial-header-right">
+          <nav class="se-editorial-nav" aria-label="Main Navigation">
+            <ul class="se-editorial-nav-list">
+              <li><a href="index.html" class="se-editorial-nav-link">Globe</a></li>
+              <li><a href="rankings.html" class="se-editorial-nav-link">Rankings</a></li>
+              <li><a href="compare.html" class="se-editorial-nav-link">Compare</a></li>
+              <li><a href="data.html" class="se-editorial-nav-link">Data</a></li>
+              <li><a href="methodology.html" class="se-editorial-nav-link">Methodology</a></li>
+              <li><a href="about.html" class="se-editorial-nav-link">About</a></li>
+            </ul>
+          </nav>
+          <button type="button" id="se-theme-toggle" class="se-theme-toggle-btn" aria-label="Toggle theme mode" title="Switch light / dark mode">
+            <svg class="se-theme-icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="se-theme-icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span class="se-theme-label">Theme</span>
+          </button>
+        </div>
       </div>
-    </nav>
+    </div>
   </header>
 
   <main id="main" class="se-container-narrow se-container-py">
@@ -49,164 +68,93 @@
         Terms of Use
       </h1>
       <p class="se-hero-dek">
-        Last updated: October 2026.
+        Last updated: October 2026. Terms governing the use of Signal Earth analyses, software, and datasets.
       </p>
     </header>
 
-    <div class="se-terms-stack">
+    <div class="se-terms-stack" style="display: flex; flex-direction: column; gap: 2rem;">
       
-      <section>
-        <h2 class="editorial-headline se-terms-h2">1. Educational and Research Purpose Only</h2>
-        <p>
-          Signal Earth is an independent independent research project maintained for informational, technical, and educational purposes. The content, charts, and calculations published here represent retrospective statistical evaluations of archived public datasets.
+      <section style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.5rem;">
+        <h2 class="editorial-headline se-terms-h2" style="font-size: 1.25rem; margin-top: 0;">1. Educational &amp; Independent Research Purpose</h2>
+        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+          Signal Earth is an independent scientific research and data aggregation project created and maintained by <strong>Avnish Singh</strong>, an undergraduate student in Civil Engineering at Harcourt Butler Technical University (HBTU Kanpur), focusing on environmental engineering.
+        </p>
+        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--se-text-secondary); margin: 0;">
+          All models, visualizations, and datasets published on this site are provided for research, academic evaluation, and public-interest informational purposes. They do not constitute official statutory compliance declarations, commercial investment advice, or municipal regulatory determinations.
         </p>
       </section>
 
-      <section>
-        <h2 class="editorial-headline se-terms-h2">2. Not Professional, Medical, or Regulatory Advice</h2>
-        <p>
-          The materials on this site do not constitute medical, health, legal, or regulatory compliance advice. They should not be used as a basis for personal health decisions, clinical exposure assessments, or official statutory reporting. For official regulatory air quality declarations, consult the statutory releases of the Central Pollution Control Board (CPCB) or state pollution control authorities.
+      <section style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.5rem;">
+        <h2 class="editorial-headline se-terms-h2" style="font-size: 1.25rem; margin-top: 0;">2. Non-Affiliation and Institutional Disclaimers</h2>
+        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+          <strong>Signal Earth is strictly an independent personal initiative.</strong> It is not affiliated with, endorsed by, sponsored by, or operated under the formal auspices of:
         </p>
-      </section>
-
-      <section>
-        <h2 class="editorial-headline se-terms-h2">3. Data Accuracy, Gaps, and Limitations</h2>
-        <p>
-          All environmental datasets are subject to sensor dropouts, instrument drift, and reporting hiatuses, as detailed on the <a href="methodology.html" class="se-link">Methodology and Limitations</a> page. While reasonable effort is made to accurately process and present records, no representation or warranty is made that the analyses are error-free or uninterrupted.
-        </p>
-      </section>
-
-      <section>
-        <h2 class="editorial-headline se-terms-h2">4. Disclaimer of Warranty and Limitation of Liability</h2>
-        <p>
-          This website and its contents are provided "as is" and "as available", without warranty of any kind, express or implied, including but not limited to fitness for a particular purpose or non-infringement. In no event shall the author or maintainer be liable for any direct, indirect, incidental, or consequential damages arising from the use of or inability to use this site or its data.
-        </p>
-      </section>
-
-      <section>
-        <h2 class="editorial-headline se-terms-h2">5. Intellectual Property and Licensing</h2>
-        <ul class="se-list-bullet-clean">
-          <li>
-            <strong>Source Code:</strong> All software, pipelines, and scripts authored for Signal Earth are released under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer" class="se-link">MIT License</a>.
-          </li>
-          <li>
-            <strong>Text and Visualizations:</strong> Written analytical text and original figures are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0), unless otherwise indicated.
-          </li>
-          <li>
-            <strong>Third-Party Data:</strong> Ground air quality records originate from CPCB and UPPCB via OpenAQ (CC BY 4.0). Reanalysis records originate from NASA POWER / MERRA-2 under NASA Open Data terms.
-          </li>
+        <ul class="se-list-bullet-clean" style="font-size: 0.88rem; line-height: 1.5; margin-bottom: 0.75rem;">
+          <li>Harcourt Butler Technical University (HBTU Kanpur)</li>
+          <li>Central Pollution Control Board (CPCB) or State Pollution Control Boards (UPPCB, DPCC)</li>
+          <li>National Aeronautics and Space Administration (NASA) or European Space Agency (ESA)</li>
+          <li>United States Geological Survey (USGS)</li>
+          <li>European Centre for Medium-Range Weather Forecasts (ECMWF) or Copernicus C3S</li>
+          <li>World Health Organization (WHO) or Food and Agriculture Organization (FAO)</li>
         </ul>
-      </section>
-
-      <section>
-        <h2 class="editorial-headline se-terms-h2">6. Citation Format for Academic Reuse</h2>
-        <p class="se-content-p-tight">
-          If you reference findings, figures, or pipelines from Signal Earth in academic writing, please cite the work as follows:
-        </p>
-        <div class="se-citation-box">
-          Singh, A. (2026). Signal Earth: Analyses of Public Air Quality and Temperature Records. https://avnish36singh-arch.github.io/signal-earth-portal/
-        </div>
-      </section>
-
-      <section>
-        <h2 class="editorial-headline se-terms-h2">7. Corrections and Feedback</h2>
-        <p>
-          If you detect a calculation error, a faulty citation, or a data inconsistency, please review our <a href="corrections.html" class="se-link">Corrections Log</a> or open an issue on the relevant GitHub repository. Corrections are evaluated and recorded with date stamps.
+        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--se-text-secondary); margin: 0;">
+          The author's academic affiliation with HBTU Kanpur reflects educational context only and does not imply institutional liability, sponsorship, or peer-review endorsement by the university.
         </p>
       </section>
 
-      <section>
-        <h2 class="editorial-headline se-terms-h2">8. External Links</h2>
-        <p>
-          This website provides hyperlinks to third-party repositories, data providers, and academic papers. The maintainer is not responsible for the content, uptime, or privacy practices of external websites.
+      <section style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.5rem;">
+        <h2 class="editorial-headline se-terms-h2" style="font-size: 1.25rem; margin-top: 0;">3. No Warranty and Limitation of Liability</h2>
+        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--se-text-secondary); margin: 0;">
+          All content, software, and downloadable files are provided "as is", without warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. In no event shall the author or maintainer be liable for any direct, indirect, incidental, or consequential damages resulting from the use of, or inability to use, information provided on this platform.
         </p>
       </section>
 
-      <section>
-        <h2 class="editorial-headline se-terms-h2">9. Acceptable Use</h2>
-        <p>
-          You agree to use this site for lawful educational, research, and audit purposes. You agree not to attempt to disrupt or impair the site's hosting infrastructure.
-        </p>
-      </section>
-
-      <section>
-        <h2 class="editorial-headline se-terms-h2">10. Governing Law</h2>
-        <p>
-          These Terms of Use are governed by the laws of India, with jurisdiction in Kanpur, Uttar Pradesh.
-        </p>
-      </section>
-
-      <section>
-        <h2 class="editorial-headline se-terms-h2">11. Contact</h2>
-        <p>
-          For questions regarding these terms, contact: <a href="mailto:avnish36singh@gmail.com" class="se-link">avnish36singh@gmail.com</a>.
+      <section style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.5rem;">
+        <h2 class="editorial-headline se-terms-h2" style="font-size: 1.25rem; margin-top: 0;">4. Errata and Corrections Procedure</h2>
+        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--se-text-secondary); margin: 0;">
+          The maintainer is committed to immediate error transparency. Anyone identifying a numerical discrepancy, citation error, or calculation bug is encouraged to submit an issue via the public <a href="https://github.com/avnish36singh-arch/signal-earth-portal/issues" target="_blank" rel="noopener noreferrer" class="se-link">GitHub repository</a> or email <a href="mailto:avnish36singh@gmail.com" class="se-link">avnish36singh@gmail.com</a>. Confirmed errors are promptly documented in the public <a href="corrections.html" class="se-link">Corrections Log</a>.
         </p>
       </section>
 
     </div>
   </main>
 
-  <!-- 4-Column Editorial Footer (Black #0B0B0C) -->
-  <footer class="se-footer">
-    <div class="se-container">
-      <div class="se-footer-inner">
-        <div class="se-footer-brand-col">
-          <div class="se-footer-brand-title">Signal Earth</div>
-          <p class="se-footer-brand-desc">
-            An independent project analysing air quality and surface temperature in Kanpur and Delhi through maps, satellite records, and open code.
+  <!-- Standardized Editorial Footer -->
+  <footer class="se-editorial-footer">
+    <div class="se-editorial-container">
+      <div class="se-editorial-footer-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+        <div>
+          <div style="font-family: var(--se-font-serif); font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--se-text-primary);">
+            Signal Earth
+          </div>
+          <p style="font-size: 0.9rem; line-height: 1.6; color: var(--se-text-secondary); max-width: 50ch; margin: 0 0 1rem;">
+            Avnish Singh &middot; Civil Engineering undergraduate, HBTU Kanpur, focusing on environmental engineering &middot; Contact: <a href="mailto:avnish36singh@gmail.com" class="se-link">avnish36singh@gmail.com</a>
+          </p>
+          <div style="font-size: 0.85rem;">
+            <a href="credits.html" class="se-link">How to cite</a> &middot;
+            <a href="methodology.html" class="se-link">Methodology</a> &middot;
+            <a href="sources.html" class="se-link">Data Sources</a> &middot;
+            <a href="corrections.html" class="se-link">Corrections Log</a> &middot;
+            <a href="known-problems.html" class="se-link">Known Problems</a> &middot;
+            <a href="numbers_ledger.csv" class="se-link" download>Numbers Ledger (CSV)</a> &middot;
+            <a href="https://github.com/avnish36singh-arch/signal-earth-portal" class="se-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size: 0.8rem; font-family: var(--se-font-mono); text-transform: uppercase; color: var(--se-text-muted); margin-bottom: 0.5rem;">
+            Attribution &amp; Hosting
+          </div>
+          <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.5rem;">
+            Contains modified Copernicus Climate Change Service information [2026]. Content licensed under CC BY 4.0; code licensed under MIT.
+          </p>
+          <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-muted); margin: 0;">
+            Hosted on Netlify. Static build with zero cookies, zero trackers, and zero server-side state.
           </p>
         </div>
-
-        <div class="se-footer-col">
-          <h5>Analyses</h5>
-          <ul>
-            <li><a href="investigations/kanpur.html">Kanpur Particulate Dynamics</a></li>
-            <li><a href="investigations/delhi.html">Delhi NAQI Analysis</a></li>
-            <li><a href="investigations/kanpur-lst.html">Kanpur Reanalysis Temperature</a></li>
-            <li><a href="investigations/comparison.html">Regional Airshed Comparison</a></li>
-          </ul>
-        </div>
-
-        <div class="se-footer-col">
-          <h5>Method and Data</h5>
-          <ul>
-            <li><a href="index.html#explained">Explained Pieces</a></li>
-            <li><a href="methodology.html">Methodology and Limits</a></li>
-            <li><a href="data.html">Data and Code</a></li>
-            <li><a href="about.html">About Signal Earth</a></li>
-          </ul>
-        </div>
-
-        <div class="se-footer-col">
-          <h5>Legal</h5>
-          <ul>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="terms.html">Terms of Use</a></li>
-            <li><a href="licenses.html">Licenses and Terms</a></li>
-            <li><a href="credits.html">Image Credits</a></li>
-            <li><a href="corrections.html">Corrections Log</a></li>
-          </ul>
-        </div>
-
-        <div class="se-footer-col">
-          <h5>Follow</h5>
-          <ul>
-            <li><a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/company/signalearth/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li><a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="contact.html">Contact Information</a></li>
-          </ul>
-        </div>
       </div>
-
-      <!-- Mandatory Affiliation Disclaimer -->
-      <div class="se-footer-disclaimer">
-        Signal Earth is an independent project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, UPPCB, DPCC, or any agency named on this site.
-      </div>
-
-      <div class="se-footer-bottom">
-        <div>Signal Earth &middot; Open Science under MIT License</div>
-        <div>Page last updated: October 2026</div>
+      <div class="se-editorial-footer-bottom">
+        <div>&copy; 2026 Signal Earth. Open-access empirical environmental telemetry.</div>
+        <div><a href="privacy.html" class="se-link">Privacy Policy</a> &middot; <a href="terms.html" class="se-link">Terms of Use</a> &middot; <a href="licenses.html" class="se-link">Licenses</a></div>
       </div>
     </div>
   </footer>

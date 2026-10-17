@@ -3,259 +3,688 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Credits | Signal Earth</title>
-  <meta name="description" content="Complete registry of satellite imagery, sensors, dates, analytical figures, and provenance credits for Signal Earth.">
-  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/credits.html">
+  <title>Credits &amp; Citation | Signal Earth</title>
+  <meta name="description" content="Registry of satellite imagery, software libraries, scientific citations, and provenance credits for Signal Earth.">
+  <link rel="canonical" href="https://signalearth.netlify.app/credits.html">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <meta property="og:title" content="Image Credits | Signal Earth">
-  <meta property="og:description" content="Registry of satellite imagery, sensors, observation dates, and figure provenance.">
-  <meta property="og:url" content="https://avnish36singh-arch.github.io/signal-earth-portal/credits.html">
+  <meta property="og:title" content="Credits &amp; Citation | Signal Earth">
+  <meta property="og:description" content="Registry of satellite imagery, software libraries, and academic citation formats.">
+  <meta property="og:url" content="https://signalearth.netlify.app/credits.html">
   <meta property="og:type" content="article">
   <link rel="stylesheet" href="style.css">
   <script src="assets/theme.js"></script>
 </head>
-<body>
+<body class="se-editorial-page">
   <a href="#main" class="skip-link">Skip to content</a>
 
-
-  <header>
-    <nav class="se-nav" aria-label="Main Navigation">
-      <div class="se-nav-inner">
-        <a href="index.html" class="se-brand">
-          <span class="se-brand-name">Signal Earth</span>
-          <span class="se-brand-sub">Independent Research</span>
-        </a>
-
-        <ul class="se-nav-links">
-          <li><a href="index.html#analyses">Analyses</a></li>
-          <li><a href="index.html#explained">Explained</a></li>
-          <li><a href="methodology.html">Methodology</a></li>
-          <li><a href="data.html">Data and code</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
+  <!-- Standardized 5-Item Editorial Header -->
+  <header class="se-editorial-header" id="se-header">
+    <div class="se-editorial-container">
+      <div class="se-editorial-header-inner">
+        <div class="se-editorial-wordmark-wrap">
+          <a href="index.html" class="se-editorial-wordmark">Signal Earth</a>
+          <span class="se-wordmark-badge">Credits</span>
+        </div>
+        <div class="se-editorial-header-right">
+          <nav class="se-editorial-nav" aria-label="Main Navigation">
+            <ul class="se-editorial-nav-list">
+              <li><a href="index.html" class="se-editorial-nav-link">Globe</a></li>
+              <li><a href="rankings.html" class="se-editorial-nav-link">Rankings</a></li>
+              <li><a href="compare.html" class="se-editorial-nav-link">Compare</a></li>
+              <li><a href="data.html" class="se-editorial-nav-link">Data</a></li>
+              <li><a href="methodology.html" class="se-editorial-nav-link">Methodology</a></li>
+              <li><a href="about.html" class="se-editorial-nav-link">About</a></li>
+            </ul>
+          </nav>
+          <button type="button" id="se-theme-toggle" class="se-theme-toggle-btn" aria-label="Toggle theme mode" title="Switch light / dark mode">
+            <svg class="se-theme-icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="se-theme-icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span class="se-theme-label">Theme</span>
+          </button>
+        </div>
       </div>
-    </nav>
+    </div>
   </header>
 
   <main id="main" class="se-container-narrow se-container-py">
     <header class="se-header-mb">
       <span class="section-kicker">Provenance and Attribution</span>
       <h1 class="editorial-headline se-headline-clamp">
-        Image Credits and Sources
+        Credits and Citation
       </h1>
       <p class="se-hero-dek">
-        Every photograph, satellite scene, map, and analytical figure on Signal Earth is credited with its acquisition date, sensing instrument, custodial organization, and reuse license.
+        Every photograph, satellite scene, software library, and analytical figure on Signal Earth is credited below with its acquisition date, sensing instrument, custodial organization, and reuse license.
       </p>
     </header>
 
-    <!-- Satellite Imagery Section -->
-    <section class="se-content-section">
-      <span class="section-kicker">01 : Satellite Imagery and Remote Sensing</span>
-      <h2 class="editorial-headline se-content-h2">Earth Observation Data</h2>
+    <!-- How to Cite Signal Earth -->
+    <section class="se-content-section" style="margin-bottom: 3rem;">
+      <span class="section-kicker">01 : Academic Citation</span>
+      <h2 class="editorial-headline se-content-h2">How to Cite Signal Earth</h2>
+      <p class="se-content-p">
+        If you use Signal Earth analyses, processed data, or visualizations in academic research, reports, or journalism, please cite the project as follows:
+      </p>
 
-      <div class="se-card-stack">
-        <article class="se-card-panel">
-          <h3 class="se-card-title">Arctic Sea Ice Fracturing and Open Ocean Boundary</h3>
-          <p class="se-card-desc">
-            <strong>File:</strong> <code>assets/nasa_arctic_sea_ice.jpg</code><br>
-            <strong>Date:</strong> October 2026<br>
-            <strong>Sensor:</strong> High Latitude Earth Observation Satellite Perspective<br>
-            <strong>Provider:</strong> Signal Earth Observation Archive<br>
-            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
-            <strong>Source URL:</strong> <a href="https://earthobservatory.nasa.gov/" target="_blank" rel="noopener noreferrer" class="se-link">Earth Observation Reference</a>
-          </p>
-          <div class="se-card-meta">
-            Credit: Image: Signal Earth Observation Archive, October 2026
-          </div>
-        </article>
+      <div style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.5rem; margin-bottom: 1.5rem;">
+        <h3 style="font-family: var(--se-font-sans); font-size: 0.95rem; font-weight: 700; margin: 0 0 0.5rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--se-teal-live);">
+          APA Format (7th Edition)
+        </h3>
+        <p style="font-family: var(--se-font-serif); font-size: 0.95rem; line-height: 1.6; margin: 0; color: var(--se-text-primary);">
+          Singh, A. (2026). <em>Signal Earth: Independent Planetary Environmental Database and Geospatial Analyses</em>. Signal Earth. https://signalearth.netlify.app/
+        </p>
+      </div>
 
-        <article class="se-card-panel">
-          <h3 class="se-card-title">Earth Orbital Horizon and Atmospheric Boundary</h3>
-          <p class="se-card-desc">
-            <strong>File:</strong> <code>assets/signal_earth_hero.jpg</code><br>
-            <strong>Date:</strong> October 2026<br>
-            <strong>Sensor:</strong> Orbital Earth Observation / Atmospheric Limb Perspective<br>
-            <strong>Provider:</strong> Signal Earth Observation Archive<br>
-            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
-            <strong>Source URL:</strong> <a href="https://earthobservatory.nasa.gov/" target="_blank" rel="noopener noreferrer" class="se-link">Earth Observation Reference</a>
-          </p>
-          <div class="se-card-meta">
-            Credit: Image: Signal Earth Observation Archive, October 2026
-          </div>
-        </article>
-
-        <article class="se-card-panel">
-          <h3 class="se-card-title">Indo-Gangetic Plain Smoke and Atmospheric Haze</h3>
-          <p class="se-card-desc">
-            <strong>File:</strong> <code>assets/hero_indo_gangetic_smoke_20211105.jpg</code><br>
-            <strong>Acquisition Date:</strong> November 5, 2021<br>
-            <strong>Sensor:</strong> MODIS on NASA Terra Satellite (Corrected Reflectance True Color)<br>
-            <strong>Provider:</strong> NASA Worldview / Global Imagery Browse Services (GIBS)<br>
-            <strong>License:</strong> NASA Open Data Policy (Public domain for educational and scientific research)<br>
-            <strong>Source URL:</strong> <a href="https://worldview.earthdata.nasa.gov/?v=73,24,85,32&t=2021-11-05" target="_blank" rel="noopener noreferrer" class="se-link">NASA Worldview Scene Explorer</a>
-          </p>
-          <div class="se-card-meta">
-            Credit: Image: NASA Worldview / GIBS, Terra MODIS, November 5, 2021
-          </div>
-        </article>
-
-        <article class="se-card-panel">
-          <h3 class="se-card-title">Ganga Valley Winter Haze over Kanpur and Central Uttar Pradesh</h3>
-          <p class="se-card-desc">
-            <strong>File:</strong> <code>assets/satellite_view_kanpur_haze_20211111.jpg</code><br>
-            <strong>Acquisition Date:</strong> November 11, 2021<br>
-            <strong>Sensor:</strong> MODIS on NASA Aqua Satellite (Corrected Reflectance True Color)<br>
-            <strong>Provider:</strong> NASA Worldview / Global Imagery Browse Services (GIBS)<br>
-            <strong>License:</strong> NASA Open Data Policy (Public domain for educational and scientific research)<br>
-            <strong>Source URL:</strong> <a href="https://worldview.earthdata.nasa.gov/?v=78,25,83,28&t=2021-11-11" target="_blank" rel="noopener noreferrer" class="se-link">NASA Worldview Scene Explorer</a>
-          </p>
-          <div class="se-card-meta">
-            Credit: Image: NASA Worldview / GIBS, Aqua MODIS, November 11, 2021
-          </div>
-        </article>
-
-        <article class="se-card-panel">
-          <h3 class="se-card-title">Landsat 8 &amp; 9 High-Resolution Thermal Radiometry (Kanpur)</h3>
-          <p class="se-card-desc">
-            <strong>Files:</strong> <code>assets/kanpur-uhi/*.png</code><br>
-            <strong>Observation Period:</strong> July 2021 &ndash; October 2022 (10 Cloud-Screened Acquisitions)<br>
-            <strong>Sensor:</strong> Thermal Infrared Sensor 2 (TIRS-2 Band 10) on Landsat 8 &amp; 9<br>
-            <strong>Provider:</strong> USGS / NASA Landsat Collection 2 Level 2 Surface Temperature<br>
-            <strong>License:</strong> USGS Open Data Policy / Public Domain<br>
-            <strong>Source URL:</strong> <a href="https://earthexplorer.usgs.gov/" target="_blank" rel="noopener noreferrer" class="se-link">USGS EarthExplorer / Landsat Registry</a>
-          </p>
-          <div class="se-card-meta">
-            Credit: Image: Avnish Singh, using USGS / NASA Landsat Collection 2 records, October 2026
-          </div>
-        </article>
+      <div style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.5rem;">
+        <h3 style="font-family: var(--se-font-sans); font-size: 0.95rem; font-weight: 700; margin: 0 0 0.5rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--se-teal-live);">
+          BibTeX Entry
+        </h3>
+        <pre style="background: var(--se-bg-page); border: 1px solid var(--se-border); border-radius: var(--se-radius-sm); padding: 1rem; font-family: var(--se-font-mono); font-size: 0.8rem; line-height: 1.5; color: var(--se-text-primary); overflow-x: auto; margin: 0;">@misc{singh2026signalearth,
+  author = {Singh, Avnish},
+  title = {Signal Earth: Independent Planetary Environmental Database and Geospatial Analyses},
+  year = {2026},
+  howpublished = {\url{https://signalearth.netlify.app/}},
+  note = {Civil Engineering undergraduate, HBTU Kanpur}
+}</pre>
       </div>
     </section>
 
-    <!-- Code-Generated Analytical Charts Section -->
-    <section class="se-content-section">
-      <span class="section-kicker">02 : Original Research Figures</span>
-      <h2 class="editorial-headline se-content-h2">Analytical Charts and Spatial Visualizations</h2>
-
+    <!-- Software and Technology Stack Credits -->
+    <section class="se-content-section" style="margin-bottom: 3rem;">
+      <span class="section-kicker">02 : Software &amp; Frameworks</span>
+      <h2 class="editorial-headline se-content-h2">Open Source Software and Frameworks</h2>
       <p class="se-content-p">
-        All charts, scatter plots, seasonal timelines, and diurnal cycles published on this website were authored by <strong>Avnish Singh</strong> using open source Python pipelines (Pandas, Matplotlib, Seaborn) and QGIS. They are distributed under the Creative Commons Attribution 4.0 International license (CC BY 4.0).
+        Signal Earth is built entirely with open-source web standards and geospatial rendering libraries:
       </p>
 
-      <div class="se-table-wrap">
-        <table class="se-table">
+      <div class="se-table-wrap" style="overflow-x: auto; margin: 1.5rem 0;">
+        <table class="se-table" style="width: 100%; border-collapse: collapse;">
           <thead>
-            <tr>
-              <th>Investigation</th>
-              <th>Figure Name</th>
-              <th>Data Custodian</th>
-              <th>Repository Source</th>
+            <tr style="border-bottom: 2px solid var(--se-border); text-align: left;">
+              <th style="padding: 0.75rem;">Component</th>
+              <th style="padding: 0.75rem;">Version / Source</th>
+              <th style="padding: 0.75rem;">License</th>
+              <th style="padding: 0.75rem;">Role in Signal Earth</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td><strong>Kanpur (01)</strong></td>
-              <td>01 Timeseries, 02 Monthly Seasonal, 03 AQI Breakdown, 04 Diurnal, 05 Correlation, 06 Scatter Weather, 07 Wind Rose</td>
-              <td>UPPCB / CPCB via OpenAQ v3</td>
-              <td><a href="https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur" target="_blank" rel="noopener noreferrer" class="se-link">Air-Quality-Analysis-Kanpur</a></td>
+            <tr style="border-bottom: 1px solid var(--se-border);">
+              <td style="padding: 0.75rem;"><strong>Three.js</strong></td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;">r160 (mrdoob)</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;">MIT License</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;">WebGL 3D scene graph, camera projection, and atmospheric glow shader.</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--se-border);">
+              <td style="padding: 0.75rem;"><strong>Globe.gl</strong></td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;">v2.32.2 (Vasco Asturiano)</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;">MIT License</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;">Country polygon mesh extrusion, hover tooltips, and click-navigation.</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--se-border);">
+              <td style="padding: 0.75rem;"><strong>Natural Earth</strong></td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;">1:110m Cultural Vectors</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;">Public Domain</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;">Sovereign country boundary geometries and centroid coordinates.</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--se-border);">
+              <td style="padding: 0.75rem;"><strong>NASA Blue Marble</strong></td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;">Visible Earth / MODIS</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;">Public Domain / NASA Open Data</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;">Planetary surface texture base and night lights radiance maps.</td>
             </tr>
             <tr>
-              <td><strong>Delhi (02)</strong></td>
-              <td>01 AQI Timeseries, 02 Correlation Matrix, 03 Seasonal Dynamics, 04 Dominant Pollutants, 05 PM &amp; BTEX, 06 Meteorology, 07 Heatmap, 08 ML Forecast, 09 Wind Rose</td>
-              <td>CPCB / DPCC (Site 204)</td>
-              <td><a href="https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb" target="_blank" rel="noopener noreferrer" class="se-link">delhi-air_qaulity_cpcb</a></td>
-            </tr>
-            <tr>
-              <td><strong>Kanpur Temperature (03)</strong></td>
-              <td>01 LST Seasonal Timeline, 02 Skin vs Air Anomaly, 03 Spatial Zones (QGIS), 04 PM2.5 Inversion Coupling, 05 Bioclimatic Heat Stress Index, 06 Ventilation &amp; NISI Stagnation, 07 Microclimate Transect Profile</td>
-              <td>NASA POWER (MERRA-2) / UPPCB / QGIS</td>
-              <td><a href="https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS" target="_blank" rel="noopener noreferrer" class="se-link">Kanpur-LST-Thermal-Analysis-GIS</a></td>
-            </tr>
-            <tr>
-              <td><strong>Kanpur 30m UHI (04)</strong></td>
-              <td>01 30m Thermal Radiometry Map, 02 Resolution Comparison (MERRA-2 vs Landsat), 03 Multi-Seasonal Trajectory Across Concentric Rings, 04 Seasonal UHI Breakdown Boxplot</td>
-              <td>USGS / NASA Landsat 8/9 TIRS-2</td>
-              <td><a href="https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS" target="_blank" rel="noopener noreferrer" class="se-link">Kanpur-LST-Thermal-Analysis-GIS</a></td>
+              <td style="padding: 0.75rem;"><strong>Open Typography</strong></td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;">Outfit, Inter, JetBrains Mono</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;">SIL Open Font License 1.1</td>
+              <td style="padding: 0.75rem; font-size: 0.85rem;">High-legibility editorial headings, body text, and tabular telemetry.</td>
             </tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <!-- Attribution Guidelines -->
-    <section class="se-panel-box">
-      <h3 class="se-card-title">Citing Imagery from Signal Earth</h3>
-      <p class="se-card-desc">
-        When reusing original charts or composite figures from this portfolio, provide attribution in accordance with CC BY 4.0:
-      </p>
-      <blockquote class="se-quote-license">
-        Singh, A. (2026). Signal Earth: Public Environmental Data Investigations. Harcourt Butler Technical University, Kanpur. Image: [Figure Title], Data: [CPCB / NASA POWER].
-      </blockquote>
+    <!-- Satellite Imagery Registry -->
+    <section class="se-content-section" style="margin-bottom: 3rem;">
+      <span class="section-kicker">03 : Satellite Earth Observation</span>
+      <h2 class="editorial-headline se-content-h2">Satellite Imagery Registry</h2>
+      <div class="se-card-stack">
+        
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Arctic Sea Ice Fracturing and Open Ocean Boundary</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/nasa_arctic_sea_ice.jpg</code><br>
+            <strong>Observation Date:</strong> 2026-10-12<br>
+            <strong>Instrument / Method:</strong> High Latitude Earth Observation Satellite Perspective<br>
+            <strong>Custodian:</strong> Signal Earth Observation Archive<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://earthobservatory.nasa.gov/" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Signal Earth Observation Archive, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Earth Orbital Horizon and Atmospheric Boundary</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/signal_earth_hero.jpg</code><br>
+            <strong>Observation Date:</strong> 2026-10-12<br>
+            <strong>Instrument / Method:</strong> Earth Observation Satellite Imagery Perspective<br>
+            <strong>Custodian:</strong> Signal Earth Observation Archive<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://earthobservatory.nasa.gov/" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Signal Earth Observation Archive, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Indo-Gangetic Plain Post-Monsoon Smoke and Atmospheric Haze</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/hero_indo_gangetic_smoke_20211105.jpg</code><br>
+            <strong>Observation Date:</strong> 2021-11-05<br>
+            <strong>Instrument / Method:</strong> MODIS / Terra (Corrected Reflectance True Color)<br>
+            <strong>Custodian:</strong> NASA Worldview / Global Imagery Browse Services (GIBS)<br>
+            <strong>License:</strong> NASA Open Data Policy (Freely usable for academic and public information purposes with attribution)<br>
+            <strong>Source Reference:</strong> <a href="https://worldview.earthdata.nasa.gov/?v=73,24,85,32&t=2021-11-05" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: NASA Worldview / GIBS, Terra MODIS, November 5, 2021
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Ganga Valley Winter Haze over Kanpur and Central Uttar Pradesh</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/satellite_view_kanpur_haze_20211111.jpg</code><br>
+            <strong>Observation Date:</strong> 2021-11-11<br>
+            <strong>Instrument / Method:</strong> MODIS / Aqua (Corrected Reflectance True Color)<br>
+            <strong>Custodian:</strong> NASA Worldview / Global Imagery Browse Services (GIBS)<br>
+            <strong>License:</strong> NASA Open Data Policy (Freely usable for academic and public information purposes with attribution)<br>
+            <strong>Source Reference:</strong> <a href="https://worldview.earthdata.nasa.gov/?v=78,25,83,28&t=2021-11-11" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: NASA Worldview / GIBS, Aqua MODIS, November 11, 2021
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">High-Resolution 30-Meter Landsat Thermal Infrared Radiometry over Kanpur</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/kanpur-uhi/kanpur-uhi-30m.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-04<br>
+            <strong>Instrument / Method:</strong> USGS Landsat 8/9 TIRS-2 (Collection 2 Level 2 Band 10)<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, using USGS Landsat 8/9 radiometry, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Comparative Spatial Resolution: Coarse MERRA-2 vs 30m Landsat Radiometry</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/kanpur-uhi/kanpur-uhi-comparison-merra2.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-04<br>
+            <strong>Instrument / Method:</strong> NASA MERRA-2 Reanalysis &amp; USGS Landsat 8/9 TIRS-2<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, MERRA-2 and USGS Landsat comparison, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Multi-Seasonal Thermal Trajectory Across Kanpur Concentric Urban Zones</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/kanpur-uhi/kanpur-uhi-timeseries.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-04<br>
+            <strong>Instrument / Method:</strong> USGS Landsat 8/9 TIRS-2 Spatial Radiometry<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, using USGS Landsat 8/9 scenes, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Seasonal Urban Heat Island Intensity Breakdown Across Concentric Rings</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/kanpur-uhi/kanpur-uhi-seasonal-uhi.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-04<br>
+            <strong>Instrument / Method:</strong> USGS Landsat 8/9 TIRS-2 Spatial Radiometry<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, using USGS Landsat 8/9 scenes, October 2026
+          </div>
+        </article>
+      </div>
     </section>
+
+    <!-- Analytical Figures Registry -->
+    <section class="se-content-section" style="margin-bottom: 3rem;">
+      <span class="section-kicker">04 : Scientific Figures</span>
+      <h2 class="editorial-headline se-content-h2">Analytical Charts and Diagnostic Figures</h2>
+      <div class="se-card-stack">
+        
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">CPCB NAQI Multi-Year Timeline at Alipur, Delhi</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/delhi/01_aqi_time_series.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-02<br>
+            <strong>Instrument / Method:</strong> CAAQMS Ground Sensor (CPCB Site 204, DPCC)<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, using CPCB / DPCC records, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Correlation Matrix of 24 Atmospheric and Meteorological Components at Alipur</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/delhi/02_correlation_matrix_24_components.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-02<br>
+            <strong>Instrument / Method:</strong> CAAQMS Ground Sensor (CPCB Site 204, DPCC)<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, using CPCB / DPCC records, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Delhi Alipur Seasonal Particulate Dynamics and Post-Monsoon Surge</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/delhi/03_seasonal_aqi_dynamics.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-02<br>
+            <strong>Instrument / Method:</strong> CAAQMS Ground Sensor (CPCB Site 204, DPCC)<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, using CPCB / DPCC records, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Frequency Distribution of Dominant Criteria Pollutants at Alipur</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/delhi/04_dominant_pollutants.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-02<br>
+            <strong>Instrument / Method:</strong> CAAQMS Ground Sensor (CPCB Site 204, DPCC)<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, using CPCB / DPCC records, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Fine-to-Coarse Particulate Ratio and VOC Tracers at Alipur</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/delhi/05_pm_and_btex_dynamics.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-02<br>
+            <strong>Instrument / Method:</strong> CAAQMS Ground Sensor (CPCB Site 204, DPCC)<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, using CPCB / DPCC records, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Meteorological Regimes: Temperature, Relative Humidity, and Wind Velocity</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/delhi/06_meteorology_impact.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-02<br>
+            <strong>Instrument / Method:</strong> CAAQMS Ground Sensor (CPCB Site 204, DPCC)<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, using CPCB / DPCC records, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Calendar Month and Year AQI Matrix at Alipur</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/delhi/07_monthly_aqi_heatmap.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-02<br>
+            <strong>Instrument / Method:</strong> CAAQMS Ground Sensor (CPCB Site 204, DPCC)<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, using CPCB / DPCC records, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Day-Ahead Machine Learning AQI Forecast Model Comparison</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/delhi/08_forecast_evaluation.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-02<br>
+            <strong>Instrument / Method:</strong> CAAQMS Ground Sensor (CPCB Site 204, DPCC)<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, using CPCB / DPCC records, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Directional Wind Rose and Upwind Transport Corridor at Alipur</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/delhi/09_wind_rose_and_sources.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-02<br>
+            <strong>Instrument / Method:</strong> CAAQMS Ground Sensor (CPCB Site 204, DPCC)<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, using CPCB / DPCC records, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Daily Mean PM2.5 and PM10 Timeseries across Kanpur Stations</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/kanpur/01_timeseries.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-02<br>
+            <strong>Instrument / Method:</strong> CAAQMS Ground Sensor (UPPCB / CPCB via OpenAQ)<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Calendar Month PM2.5 and PM10 Progression in Kanpur</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/kanpur/02_monthly_seasonal.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-02<br>
+            <strong>Instrument / Method:</strong> CAAQMS Ground Sensor (UPPCB / CPCB via OpenAQ)<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">CPCB NAQI Category Distribution in Kanpur</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/kanpur/03_aqi_breakdown.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-02<br>
+            <strong>Instrument / Method:</strong> CAAQMS Ground Sensor (UPPCB / CPCB via OpenAQ)<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Diurnal Particulate Variations across 24 Hours in Kanpur</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/kanpur/04_diurnal.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-02<br>
+            <strong>Instrument / Method:</strong> CAAQMS Ground Sensor (UPPCB / CPCB via OpenAQ)<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Kanpur Pollutant and Weather Correlation Matrix</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/kanpur/05_correlation_heatmap.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-02<br>
+            <strong>Instrument / Method:</strong> CAAQMS Ground Sensor (UPPCB / CPCB via OpenAQ)<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Bivariate Regressions: Temperature and Wind versus PM2.5 in Kanpur</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/kanpur/06_scatter_weather.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-02<br>
+            <strong>Instrument / Method:</strong> CAAQMS Ground Sensor (UPPCB / CPCB via OpenAQ)<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Directional Wind Rose and Upwind Concentrations in Kanpur</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/kanpur/07_wind_rose.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-02<br>
+            <strong>Instrument / Method:</strong> CAAQMS Ground Sensor (UPPCB / CPCB via OpenAQ)<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/Air-Quality-Analysis-Kanpur" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, using UPPCB / CPCB records via OpenAQ, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">MERRA-2 Reanalysis Skin Temperature vs 2m Air Temperature Timeline</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/lst/01_kanpur_lst_seasonal_timeline.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-02<br>
+            <strong>Instrument / Method:</strong> NASA POWER / GMAO MERRA-2 Atmospheric Reanalysis<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, using NASA POWER MERRA-2 reanalysis, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Skin-Air Temperature Decoupling and Seasonal Differences</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/lst/02_skin_vs_air_temperature_anomaly.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-02<br>
+            <strong>Instrument / Method:</strong> NASA POWER / GMAO MERRA-2 Atmospheric Reanalysis<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, using NASA POWER MERRA-2 reanalysis, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Kanpur Metropolitan Boundary and Station Overlays</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/lst/03_kanpur_spatial_thermal_zones.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-02<br>
+            <strong>Instrument / Method:</strong> QGIS Spatial Processing / Survey of India Boundary / OSM<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, OpenStreetMap contributors, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Concurrent Seasonal Association: Surface Skin Temperature versus PM2.5 in Overlap Window</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/lst/04_lst_inversion_coupling_pm25.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-02<br>
+            <strong>Instrument / Method:</strong> CAAQMS Ground Monitoring paired with NASA POWER MERRA-2<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, NASA POWER and UPPCB records, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">NOAA Bioclimatic Heat Index and Extreme Heatwave Climatology</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/lst/05_bioclimatic_heat_stress_index.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-02<br>
+            <strong>Instrument / Method:</strong> NASA POWER MERRA-2 Atmospheric Reanalysis<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, using NASA POWER MERRA-2 reanalysis, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">Atmospheric Ventilation Coefficient and Nocturnal Inversion Severity Index Trajectory</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/lst/06_ventilation_coefficient_inversion.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-02<br>
+            <strong>Instrument / Method:</strong> NASA POWER MERRA-2 paired with UPPCB CAAQMS<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, using NASA POWER MERRA-2 and UPPCB records, October 2026
+          </div>
+        </article>
+
+        <article class="se-card-panel" style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h3 style="font-family: var(--se-font-serif); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--se-text-primary);">25-km West-to-East Metropolitan Microclimate Transect Profile</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.75rem;">
+            <strong>Asset Path:</strong> <code>assets/lst/07_urban_microclimate_transect.png</code><br>
+            <strong>Observation Date:</strong> 2026-10-02<br>
+            <strong>Instrument / Method:</strong> QGIS Spatial Analysis Suite / USGS Thermal Telemetry<br>
+            <strong>Custodian:</strong> Avnish Singh<br>
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)<br>
+            <strong>Source Reference:</strong> <a href="https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS" target="_blank" rel="noopener noreferrer" class="se-link">Direct Source Link &rarr;</a>
+          </p>
+          <div style="font-family: var(--se-font-mono); font-size: 0.75rem; color: var(--se-text-muted); background: var(--se-bg-page); padding: 0.4rem 0.6rem; border-radius: var(--se-radius-sm); border: 1px solid var(--se-border);">
+            Image: Avnish Singh, QGIS Spatial Analysis Suite, October 2026
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Photography Registry -->
+    <section class="se-content-section" style="margin-bottom: 3rem;">
+      <span class="section-kicker">05 : Photographic Perspectives</span>
+      <h2 class="editorial-headline se-content-h2">Photographic Assets</h2>
+      <div class="se-card-stack">
+        
+      </div>
+    </section>
+
   </main>
 
-  <!-- 4-Column Editorial Footer (Black #0B0B0C) -->
-  <footer class="se-footer">
-    <div class="se-container">
-      <div class="se-footer-inner">
-        <div class="se-footer-brand-col">
-          <div class="se-footer-brand-title">Signal Earth</div>
-          <p class="se-footer-brand-desc">
-            An independent project analysing air quality and surface temperature in Kanpur and Delhi through maps, satellite records, and open code.
+  <!-- Standardized Editorial Footer -->
+  <footer class="se-editorial-footer">
+    <div class="se-editorial-container">
+      <div class="se-editorial-footer-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+        <div>
+          <div style="font-family: var(--se-font-serif); font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--se-text-primary);">
+            Signal Earth
+          </div>
+          <p style="font-size: 0.9rem; line-height: 1.6; color: var(--se-text-secondary); max-width: 50ch; margin: 0 0 1rem;">
+            Avnish Singh &middot; Civil Engineering undergraduate, HBTU Kanpur, focusing on environmental engineering &middot; Contact: <a href="mailto:avnish36singh@gmail.com" class="se-link">avnish36singh@gmail.com</a>
+          </p>
+          <div style="font-size: 0.85rem;">
+            <a href="credits.html" class="se-link">How to cite</a> &middot;
+            <a href="methodology.html" class="se-link">Methodology</a> &middot;
+            <a href="sources.html" class="se-link">Data Sources</a> &middot;
+            <a href="corrections.html" class="se-link">Corrections Log</a> &middot;
+            <a href="known-problems.html" class="se-link">Known Problems</a> &middot;
+            <a href="numbers_ledger.csv" class="se-link" download>Numbers Ledger (CSV)</a> &middot;
+            <a href="https://github.com/avnish36singh-arch/signal-earth-portal" class="se-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size: 0.8rem; font-family: var(--se-font-mono); text-transform: uppercase; color: var(--se-text-muted); margin-bottom: 0.5rem;">
+            Attribution &amp; Hosting
+          </div>
+          <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.5rem;">
+            Contains modified Copernicus Climate Change Service information [2026]. Content licensed under CC BY 4.0; code licensed under MIT.
+          </p>
+          <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-muted); margin: 0;">
+            Hosted on Netlify. Static build with zero cookies, zero trackers, and zero server-side state.
           </p>
         </div>
-
-        <div class="se-footer-col">
-          <h5>Analyses</h5>
-          <ul>
-            <li><a href="investigations/kanpur.html">Kanpur Particulate Dynamics</a></li>
-            <li><a href="investigations/delhi.html">Delhi NAQI Analysis</a></li>
-            <li><a href="investigations/kanpur-lst.html">Kanpur Reanalysis Temperature</a></li>
-            <li><a href="investigations/comparison.html">Regional Airshed Comparison</a></li>
-          </ul>
-        </div>
-
-        <div class="se-footer-col">
-          <h5>Method and Data</h5>
-          <ul>
-            <li><a href="index.html#explained">Explained Pieces</a></li>
-            <li><a href="methodology.html">Methodology and Limits</a></li>
-            <li><a href="data.html">Data and Code</a></li>
-            <li><a href="about.html">About Signal Earth</a></li>
-          </ul>
-        </div>
-
-        <div class="se-footer-col">
-          <h5>Legal</h5>
-          <ul>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="terms.html">Terms of Use</a></li>
-            <li><a href="licenses.html">Licenses and Terms</a></li>
-            <li><a href="credits.html">Image Credits</a></li>
-            <li><a href="corrections.html">Corrections Log</a></li>
-          </ul>
-        </div>
-
-        <div class="se-footer-col">
-          <h5>Follow</h5>
-          <ul>
-            <li><a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/company/signalearth/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li><a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="contact.html">Contact Information</a></li>
-          </ul>
-        </div>
       </div>
-
-      <!-- Mandatory Affiliation Disclaimer -->
-      <div class="se-footer-disclaimer">
-        Signal Earth is an independent project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, UPPCB, DPCC, or any agency named on this site.
-      </div>
-
-      <div class="se-footer-bottom">
-        <div>Signal Earth &middot; Open Science under MIT License</div>
-        <div>Page last updated: October 2026</div>
+      <div class="se-editorial-footer-bottom">
+        <div>&copy; 2026 Signal Earth. Open-access empirical environmental telemetry.</div>
+        <div><a href="privacy.html" class="se-link">Privacy Policy</a> &middot; <a href="terms.html" class="se-link">Terms of Use</a> &middot; <a href="licenses.html" class="se-link">Licenses</a></div>
       </div>
     </div>
   </footer>
