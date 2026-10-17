@@ -40,23 +40,17 @@
       });
     }
 
-    // Try Netlify Serverless API endpoint first
-    fetch('/api/key-numbers')
+    // Fetch static JSON directly without serverless backend
+    fetch('data/key-numbers.json')
       .then(function (res) {
-        if (!res.ok) throw new Error('API unavailable, trying static fallback');
+        if (!res.ok) throw new Error('Static data unavailable');
         return res.json();
       })
       .then(function (json) {
         applyData(json);
       })
-      .catch(function () {
-        // Fallback to static JSON ledger
-        fetch('data/key-numbers.json')
-          .then(function (res) { return res.json(); })
-          .then(function (json) { applyData(json); })
-          .catch(function (err) {
-            console.warn('Key numbers static fallback loaded default DOM values', err);
-          });
+      .catch(function (err) {
+        console.warn('Key numbers static load warning:', err);
       });
   }
 

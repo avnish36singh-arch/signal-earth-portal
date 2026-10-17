@@ -327,73 +327,7 @@
   color: var(--se-text-muted);
 }
 
-/* --------------------------------------------------------------------------
-   4. Netlify Forms Section
-   -------------------------------------------------------------------------- */
-.se-forms-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin: 3rem 0;
-}
 
-.se-form-card {
-  background: var(--se-bg-surface);
-  border: 1px solid var(--se-border);
-  border-radius: var(--se-radius-md);
-  padding: 2.25rem;
-}
-
-.se-form-title {
-  font-family: var(--se-font-serif);
-  font-size: 1.5rem;
-  color: var(--se-text-primary);
-  margin: 0 0 0.5rem;
-}
-
-.se-form-desc {
-  font-family: var(--se-font-sans);
-  font-size: 0.88rem;
-  line-height: 1.6;
-  color: var(--se-text-secondary);
-  margin-bottom: 1.5rem;
-}
-
-.se-input-group {
-  margin-bottom: 1.25rem;
-}
-
-.se-input-label {
-  display: block;
-  font-family: var(--se-font-mono);
-  font-size: var(--se-text-xs);
-  color: var(--se-text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.4rem;
-}
-
-.se-input-field {
-  width: 100%;
-  padding: 0.65rem 0.85rem;
-  background: var(--se-bg-page);
-  border: 1px solid var(--se-border);
-  border-radius: var(--se-radius-sm);
-  font-family: var(--se-font-sans);
-  font-size: 0.9rem;
-  color: var(--se-text-primary);
-  outline: none;
-  transition: border-color 0.15s ease;
-}
-
-.se-input-field:focus {
-  border-color: var(--se-teal-live);
-}
-
-.se-textarea-field {
-  min-height: 90px;
-  resize: vertical;
-}
 
 /* --------------------------------------------------------------------------
    Responsive Breakpoints
@@ -410,9 +344,6 @@
   }
   .se-papers-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .se-forms-grid {
-    grid-template-columns: 1fr;
   }
 }
 

@@ -1,0 +1,21 @@
+[
+  {
+    "iso3": "IND",
+    "name": "India",
+    "region": "Asia",
+    "coordinates": [
+      20.5937,
+      78.9629
+    ],
+    "ranks": {
+      "pm25": 3,
+      "temp_anomaly": 142,
+      "temp_trend": 158,
+      "co2_total": 3,
+      "co2_per_capita": 118,
+      "forest_share": 124,
+      "renewables_share": 108,
+      "population": 1
+    }
+  }
+]

@@ -1,15 +1,20 @@
 [build]
+  command = "python build/build_countries.py"
   publish = "."
-  functions = "netlify/functions"
 
 [build.environment]
   NODE_VERSION = "20"
 
-# Serverless function rewrite for live planetary telemetry
+# Form landing and legacy redirects
 [[redirects]]
-  from = "/api/key-numbers"
-  to = "/.netlify/functions/key-numbers"
-  status = 200
+  from = "/thank-you.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/location.html"
+  to = "/"
+  status = 301
 
 # Canonical investigation route aliases
 [[redirects]]

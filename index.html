@@ -3,21 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Signal Earth — Independent Spaceborne Environmental Research</title>
+  <title>Signal Earth: Independent Spaceborne Environmental Research</title>
   <meta name="description" content="Independent analysis of air quality and urban heat in the Indo-Gangetic Basin using satellite and open monitoring data.">
   <link rel="canonical" href="https://signalearth.netlify.app/">
-  <script>
-    if (window.location.hostname.indexOf('github.io') !== -1) {
-      window.location.replace('https://signalearth.netlify.app' + window.location.pathname.replace(/^\/signal-earth-portal/, '') + window.location.search + window.location.hash);
-    }
-  </script>
-  <noscript>
-    <meta http-equiv="refresh" content="0; url=https://signalearth.netlify.app/">
-  </noscript>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="assets/tokens.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/homepage.css">
   <script src="assets/theme.js"></script>
+  <script src="assets/homepage-app.js" defer></script>
 
   <style>
     :root {
@@ -401,7 +395,7 @@
           <div class="home-stat-item">
             <div class="home-stat-num">+1.47 °C</div>
             <div class="home-stat-label">Global temperature anomaly</div>
-            <div class="home-stat-meta">Year: 2024 · Baseline: 1850–1900 pre-industrial</div>
+            <div class="home-stat-meta">Year: 2024 · Baseline: 1850-1900 pre-industrial</div>
             <div class="home-stat-src"><a href="https://climate.copernicus.eu" target="_blank" rel="noopener noreferrer">Copernicus C3S / ERA5</a></div>
           </div>
           <div class="home-stat-item">
@@ -413,79 +407,254 @@
           <div class="home-stat-item">
             <div class="home-stat-num">4.28M km²</div>
             <div class="home-stat-label">Arctic sea ice minimum extent</div>
-            <div class="home-stat-meta">Year: September 2024 · Baseline: 1981–2010 median (6.22M km²)</div>
+            <div class="home-stat-meta">Year: September 2024 · Baseline: 1981-2010 median (6.22M km²)</div>
             <div class="home-stat-src"><a href="https://nsidc.org/arcticseaicenews/" target="_blank" rel="noopener noreferrer">NSIDC Sea Ice Index</a></div>
           </div>
           <div class="home-stat-item">
             <div class="home-stat-num">+4.5 mm/yr</div>
             <div class="home-stat-label">Sea level rise trend</div>
-            <div class="home-stat-meta">Year: 1993–2024 · Baseline: TODO (satellite altimetry record trend)</div>
+            <div class="home-stat-meta">Year: 1993-2024 · Baseline: satellite altimetry record trend</div>
             <div class="home-stat-src"><a href="https://climate.nasa.gov/vital-signs/sea-level/" target="_blank" rel="noopener noreferrer">NASA Satellite Altimetry</a></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 3. Investigations: Four Rows -->
-    <section class="home-section" id="investigations" aria-labelledby="inv-title">
-      <div class="se-container-text">
-        <h2 class="home-section-title" id="inv-title">Investigations</h2>
-        <div class="home-inv-list">
-          <!-- Investigation 01 -->
-          <article class="home-inv-row">
-            <img class="home-inv-fig" src="assets/kanpur/01_timeseries.png" alt="Timeseries of daily particulate observations across Kanpur stations" loading="lazy">
-            <div class="home-inv-body">
-              <h3 class="home-inv-title">
-                <a href="investigations/kanpur-particulates.html">01 · Kanpur Particulates &amp; Seasonal Multipliers</a>
-              </h3>
-              <p class="home-inv-finding">
-                Multi-year ground station audit shows winter PM2.5 levels reach 2.4x the summer baseline, punctuated by an unmonitored 855-day hiatus.
-              </p>
-              <div><a href="investigations/kanpur-particulates.html" class="home-inv-link">Read investigation &rarr;</a></div>
-            </div>
-          </article>
+    <!-- 3. Our Four Investigations: 4-Column Card Grid -->
+    <section class="home-section" id="investigations" aria-labelledby="inv-heading">
+      <div class="se-editorial-container">
+        <div style="margin-bottom: 2rem;">
+          <span class="se-stream-card-tag" style="color: var(--se-teal-live); font-weight: 600;">Peer-Grade Research</span>
+          <h2 class="home-section-title" id="inv-heading" style="margin-top: 0.25rem;">Our Four Investigations</h2>
+          <p class="home-hero-sub" style="margin-bottom: 1.5rem; font-size: 1rem;">
+            Quantitative evaluations into atmospheric particulate dynamics, high-resolution thermal infrared zoning, and statutory NAQI formulations.
+          </p>
+        </div>
 
-          <!-- Investigation 02 -->
-          <article class="home-inv-row">
-            <img class="home-inv-fig" src="assets/kanpur-uhi/kanpur-uhi-30m.png" alt="Landsat 30m thermal radiometry zoning map" loading="lazy">
-            <div class="home-inv-body">
-              <h3 class="home-inv-title">
-                <a href="investigations/landsat-uhi.html">02 · Intra-Urban 30 m Landsat Thermal Zoning</a>
-              </h3>
-              <p class="home-inv-finding">
-                TIRS thermal bands (100 m native, resampled to 30 m; Landsat 9 carries TIRS-2) identify localized surface urban heat island deltas across Kanpur.
-              </p>
-              <div><a href="investigations/landsat-uhi.html" class="home-inv-link">Read investigation &rarr;</a></div>
+        <div class="se-investigations-grid">
+          <!-- Card 1: Kanpur Particulates -->
+          <a href="investigations/kanpur-particulates.html" class="se-investigation-card" aria-label="Read Kanpur Particulates and Seasonal Multipliers investigation">
+            <figure class="se-inv-fig">
+              <img src="assets/satellite_view_kanpur_haze_20211111.jpg" alt="NASA Aqua MODIS regional haze over northern India" width="400" height="250" loading="lazy">
+              <span class="se-inv-fig-credit">NASA Aqua MODIS &middot; 250m</span>
+            </figure>
+            <div class="se-inv-body">
+              <span class="se-inv-num">Investigation 01</span>
+              <h3 class="se-inv-title">Kanpur Particulates &amp; Seasonal Multipliers</h3>
+              <p class="se-inv-teaser">Multi-year PM2.5 audit: winter PM2.5 averages 2.40x the monsoon baseline (3.56x during peak inversion), with an 855-day station hiatus.</p>
+              <span class="se-inv-link-text">Read investigation &rarr;</span>
             </div>
-          </article>
+          </a>
 
-          <!-- Investigation 03 -->
-          <article class="home-inv-row">
-            <img class="home-inv-fig" src="assets/delhi/01_aqi_time_series.png" alt="Delhi statutory NAQI criteria pollutant timeline" loading="lazy">
-            <div class="home-inv-body">
-              <h3 class="home-inv-title">
-                <a href="investigations/delhi-naqi.html">03 · Delhi NAQI Criteria Pollutant Dominance</a>
-              </h3>
-              <p class="home-inv-finding">
-                Particulate matter (PM2.5 and PM10) drove statutory AQI on 95.3% of validated station-days, with PM2.5 dominant on 51.8% of days.
-              </p>
-              <div><a href="investigations/delhi-naqi.html" class="home-inv-link">Read investigation &rarr;</a></div>
+          <!-- Card 2: Landsat UHI -->
+          <a href="investigations/landsat-uhi.html" class="se-investigation-card" aria-label="Read Intra-Urban 30m Landsat Thermal Zoning investigation">
+            <figure class="se-inv-fig">
+              <img src="assets/kanpur-uhi/kanpur-uhi-30m.png" alt="USGS Landsat 8/9 30m thermal radiometry map" width="400" height="250" loading="lazy">
+              <span class="se-inv-fig-credit">USGS Landsat 8/9 TIRS-2 &middot; 30m</span>
+            </figure>
+            <div class="se-inv-body">
+              <span class="se-inv-num">Investigation 02</span>
+              <h3 class="se-inv-title">Intra-Urban 30 m Landsat Thermal Zoning</h3>
+              <p class="se-inv-teaser">Spaceborne thermal infrared radiometry resolves 1.0 to 2.3 K urban core heat island deltas over coarse reanalysis baselines across Kanpur.</p>
+              <span class="se-inv-link-text">Read investigation &rarr;</span>
             </div>
-          </article>
+          </a>
 
-          <!-- Investigation 04 -->
-          <article class="home-inv-row">
-            <img class="home-inv-fig" src="assets/aerosol_smog_inversion.jpg" alt="Aerosol layer trapped beneath nocturnal boundary layer inversion" loading="lazy">
-            <div class="home-inv-body">
-              <h3 class="home-inv-title">
-                <a href="investigations/inversion-dynamics.html">04 · Atmospheric Inversion Dynamics</a>
-              </h3>
-              <p class="home-inv-finding">
-                Shallow winter boundary layers and suppressed nocturnal ventilation trap particulate concentrations across northern India.
-              </p>
-              <div><a href="investigations/inversion-dynamics.html" class="home-inv-link">Read investigation &rarr;</a></div>
+          <!-- Card 3: Delhi NAQI -->
+          <a href="investigations/delhi-naqi.html" class="se-investigation-card" aria-label="Read Delhi NAQI Criteria Pollutant Dominance investigation">
+            <figure class="se-inv-fig">
+              <img src="assets/delhi_iss_night.jpg" alt="Spaceborne nighttime view of urban radiance over Delhi NCR from ISS" width="400" height="250" loading="lazy">
+              <span class="se-inv-fig-credit">ISS Night Radiance &middot; Megacity</span>
+            </figure>
+            <div class="se-inv-body">
+              <span class="se-inv-num">Investigation 03</span>
+              <h3 class="se-inv-title">Delhi NAQI Criteria Pollutant Dominance</h3>
+              <p class="se-inv-teaser">Particulate matter (PM2.5 and PM10) drove statutory AQI on 95.3% of validated station-days, with PM2.5 dominant on 51.8% of days.</p>
+              <span class="se-inv-link-text">Read investigation &rarr;</span>
             </div>
-          </article>
+          </a>
+
+          <!-- Card 4: Inversion Dynamics -->
+          <a href="investigations/inversion-dynamics.html" class="se-investigation-card" aria-label="Read Atmospheric Inversion Dynamics investigation">
+            <figure class="se-inv-fig">
+              <img src="assets/aerosol_smog_inversion.jpg" alt="Atmospheric boundary layer inversion suppressing vertical mixing" width="400" height="250" loading="lazy">
+              <span class="se-inv-fig-credit">ERA5 Reanalysis &middot; Boundary Physics</span>
+            </figure>
+            <div class="se-inv-body">
+              <span class="se-inv-num">Investigation 04</span>
+              <h3 class="se-inv-title">Atmospheric Inversion Dynamics</h3>
+              <p class="se-inv-teaser">Shallow winter nocturnal boundary layers and suppressed atmospheric ventilation trap particulates across northern India.</p>
+              <span class="se-inv-link-text">Read investigation &rarr;</span>
+            </div>
+          </a>
+        </div>
+
+        <div style="text-align: right; margin-top: 1.5rem;">
+          <a href="research.html" class="se-link" style="font-size: 0.95rem; font-weight: 600;">View all research &amp; investigations &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Spaceborne Earth Observation Archive -->
+    <section class="home-section" id="observation-stream" style="overflow: hidden;" aria-labelledby="stream-heading">
+      <div class="se-editorial-container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <span class="se-stream-card-tag" style="color: var(--se-teal-live); font-weight: 600;">Visual Observation Stream</span>
+            <h2 class="home-section-title" id="stream-heading" style="margin-top: 0.25rem;">Spaceborne Earth Observation Archive</h2>
+            <p class="home-hero-sub" style="margin-bottom: 0; font-size: 1rem; max-width: 65ch;">
+              Continuous visual transect across planetary latitudes: from polar cryosphere fracture margins to regional aerosol stagnation and intra-urban thermal radiometry.
+            </p>
+          </div>
+          <div>
+            <button type="button" id="stream-toggle-btn" class="se-theme-toggle-btn" style="padding: 6px 12px; font-size: 0.8rem;" aria-label="Pause or resume observation stream">
+              <span id="stream-toggle-icon">⏸</span>
+              <span id="stream-toggle-text">Pause Stream</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="se-stream-wrap" aria-label="Sliding planetary photography carousel">
+        <div class="se-stream-track" id="se-stream-track">
+          <!-- Card 1: Himalayan Topographic Containment -->
+          <a href="investigations/kanpur-particulates.html" class="se-stream-card">
+            <figure class="se-stream-card-figure">
+              <img src="assets/himalaya_haze_panorama.jpg" alt="Satellite view of Himalayan mountain barrier trapping aerosols" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">30&deg;N &middot; Orographic Trap &middot; Mountain</span>
+              <h3 class="se-stream-card-title">Himalayan Topographic Containment</h3>
+              <p class="se-stream-card-desc">The southern Himalayan mountain front physically trapping winter aerosols within the plains.</p>
+            </div>
+          </a>
+
+          <!-- Card 2: Arctic Sea Ice -->
+          <a href="https://worldview.earthdata.nasa.gov/?v=10,75,25,80&l=MODIS_Terra_CorrectedReflectance_TrueColor" target="_blank" rel="noopener noreferrer" class="se-stream-card">
+            <figure class="se-stream-card-figure">
+              <img src="assets/nasa_arctic_sea_ice.jpg" alt="Satellite view of arctic sea ice fractures and open ocean margins" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">78&deg;N &middot; Polar Margin &middot; Cryosphere</span>
+              <h3 class="se-stream-card-title">Arctic Sea Ice Fracture</h3>
+              <p class="se-stream-card-desc">Fracturing sea ice sheets and summer melt margin dynamics over polar waters.</p>
+            </div>
+          </a>
+
+          <!-- Card 3: Indo-Gangetic Agricultural Smoke -->
+          <a href="https://worldview.earthdata.nasa.gov/?v=74,26,82,31&t=2021-11-05&l=MODIS_Terra_CorrectedReflectance_TrueColor" target="_blank" rel="noopener noreferrer" class="se-stream-card">
+            <figure class="se-stream-card-figure">
+              <img src="assets/hero_indo_gangetic_smoke_20211105.jpg" alt="NASA Terra MODIS satellite view of regional smoke plume across northern India" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">28&deg;N &middot; NASA Terra MODIS &middot; Smoke</span>
+              <h3 class="se-stream-card-title">Ganga Basin Smoke Plume</h3>
+              <p class="se-stream-card-desc">Post-harvest agricultural burning smoke spreading across the northern plains.</p>
+            </div>
+          </a>
+
+          <!-- Card 4: Atmospheric Stagnation & Haze -->
+          <a href="investigations/kanpur-particulates.html" class="se-stream-card">
+            <figure class="se-stream-card-figure">
+              <img src="assets/satellite_view_kanpur_haze_20211111.jpg" alt="NASA Aqua MODIS satellite view of atmospheric haze over central Ganga valley" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">26&deg;N &middot; NASA Aqua MODIS &middot; Boundary</span>
+              <h3 class="se-stream-card-title">Atmospheric Stagnation &amp; Haze</h3>
+              <p class="se-stream-card-desc">Dense winter aerosol entrapment beneath suppressed meteorological inversions.</p>
+            </div>
+          </a>
+
+          <!-- Card 5: Landsat 30m Thermal Radiometry -->
+          <a href="investigations/landsat-uhi.html" class="se-stream-card">
+            <figure class="se-stream-card-figure">
+              <img src="assets/kanpur-uhi/kanpur-uhi-30m.png" alt="USGS Landsat 30m thermal radiometry map over urban core" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">26&deg;N &middot; Landsat 8/9 &middot; Thermal</span>
+              <h3 class="se-stream-card-title">30m Surface Thermal Radiometry</h3>
+              <p class="se-stream-card-desc">High-resolution infrared zoning exposing urban heat microclimates and industrial hotspots.</p>
+            </div>
+          </a>
+
+          <!-- Card 6: Delhi Night Orbital Radiance -->
+          <a href="investigations/delhi-naqi.html" class="se-stream-card">
+            <figure class="se-stream-card-figure">
+              <img src="assets/delhi_iss_night.jpg" alt="Spaceborne nighttime view of urban radiance over Delhi NCR from ISS" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">28&deg;N &middot; ISS Orbital Radiance &middot; Megacity</span>
+              <h3 class="se-stream-card-title">Delhi Nocturnal Urban Footprint</h3>
+              <p class="se-stream-card-desc">Spaceborne night radiance capturing the spatial morphology of the National Capital Region.</p>
+            </div>
+          </a>
+
+          <!-- Repeat sequence for continuous loop -->
+          <a href="investigations/kanpur-particulates.html" class="se-stream-card" aria-hidden="true" tabindex="-1">
+            <figure class="se-stream-card-figure">
+              <img src="assets/himalaya_haze_panorama.jpg" alt="" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">30&deg;N &middot; Orographic Trap &middot; Mountain</span>
+              <h3 class="se-stream-card-title">Himalayan Topographic Containment</h3>
+              <p class="se-stream-card-desc">The southern Himalayan mountain front physically trapping winter aerosols within the plains.</p>
+            </div>
+          </a>
+
+          <a href="https://worldview.earthdata.nasa.gov/?v=10,75,25,80&l=MODIS_Terra_CorrectedReflectance_TrueColor" target="_blank" rel="noopener noreferrer" class="se-stream-card" aria-hidden="true" tabindex="-1">
+            <figure class="se-stream-card-figure">
+              <img src="assets/nasa_arctic_sea_ice.jpg" alt="" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">78&deg;N &middot; Polar Margin &middot; Cryosphere</span>
+              <h3 class="se-stream-card-title">Arctic Sea Ice Fracture</h3>
+              <p class="se-stream-card-desc">Fracturing sea ice sheets and summer melt margin dynamics over polar waters.</p>
+            </div>
+          </a>
+
+          <a href="https://worldview.earthdata.nasa.gov/?v=74,26,82,31&t=2021-11-05&l=MODIS_Terra_CorrectedReflectance_TrueColor" target="_blank" rel="noopener noreferrer" class="se-stream-card" aria-hidden="true" tabindex="-1">
+            <figure class="se-stream-card-figure">
+              <img src="assets/hero_indo_gangetic_smoke_20211105.jpg" alt="" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">28&deg;N &middot; NASA Terra MODIS &middot; Smoke</span>
+              <h3 class="se-stream-card-title">Ganga Basin Smoke Plume</h3>
+              <p class="se-stream-card-desc">Post-harvest agricultural burning smoke spreading across the northern plains.</p>
+            </div>
+          </a>
+
+          <a href="investigations/kanpur-particulates.html" class="se-stream-card" aria-hidden="true" tabindex="-1">
+            <figure class="se-stream-card-figure">
+              <img src="assets/satellite_view_kanpur_haze_20211111.jpg" alt="" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">26&deg;N &middot; NASA Aqua MODIS &middot; Boundary</span>
+              <h3 class="se-stream-card-title">Atmospheric Stagnation &amp; Haze</h3>
+              <p class="se-stream-card-desc">Dense winter aerosol entrapment beneath suppressed meteorological inversions.</p>
+            </div>
+          </a>
+
+          <a href="investigations/landsat-uhi.html" class="se-stream-card" aria-hidden="true" tabindex="-1">
+            <figure class="se-stream-card-figure">
+              <img src="assets/kanpur-uhi/kanpur-uhi-30m.png" alt="" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">26&deg;N &middot; Landsat 8/9 &middot; Thermal</span>
+              <h3 class="se-stream-card-title">30m Surface Thermal Radiometry</h3>
+              <p class="se-stream-card-desc">High-resolution infrared zoning exposing urban heat microclimates and industrial hotspots.</p>
+            </div>
+          </a>
+
+          <a href="investigations/delhi-naqi.html" class="se-stream-card" aria-hidden="true" tabindex="-1">
+            <figure class="se-stream-card-figure">
+              <img src="assets/delhi_iss_night.jpg" alt="" width="700" height="400" loading="lazy">
+            </figure>
+            <div class="se-stream-card-body">
+              <span class="se-stream-card-tag">28&deg;N &middot; ISS Orbital Radiance &middot; Megacity</span>
+              <h3 class="se-stream-card-title">Delhi Nocturnal Urban Footprint</h3>
+              <p class="se-stream-card-desc">Spaceborne night radiance capturing the spatial morphology of the National Capital Region.</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -513,7 +682,7 @@
               </tr>
               <tr>
                 <td>CCPI Climate Performance</td>
-                <td>Ranks 1–3 vacant; Denmark 4th</td>
+                <td>Ranks 1-3 vacant; Denmark 4th</td>
                 <td>2026</td>
                 <td><a href="reports.html#ccpi_rankings">Germanwatch / NewClimate</a></td>
               </tr>
@@ -538,7 +707,7 @@
               <tr>
                 <td>Global Coral Reef Bleaching</td>
                 <td class="mono">73.7% of global reef area</td>
-                <td>2024–2026</td>
+                <td>2024-2026</td>
                 <td><a href="reports.html#noaa_coral_bleaching">NOAA Coral Reef Watch</a></td>
               </tr>
             </tbody>
