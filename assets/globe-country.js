@@ -27,6 +27,13 @@
   var hoverD = null;
   var currentMetric = 'pm25';
 
+  // Base path resolver for dual deployment (GitHub Pages subpath vs Netlify root vs localhost)
+  function getRelPath(relPath) {
+    var p = relPath.replace(/^\/+/, '');
+    var isGhPages = window.location.pathname.indexOf('/signal-earth-portal') === 0;
+    return (isGhPages ? '/signal-earth-portal/' : '') + p;
+  }
+
   // Check prefers-reduced-motion
   var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (prefersReducedMotion) {
@@ -43,7 +50,6 @@
       type: 'sequential_warm',
       interpolate: function (v) {
         if (v === null || v === undefined) return null;
-        // 5 (clean emerald) -> 15 (yellow) -> 35 (orange) -> 60+ (crimson)
         if (v <= 5) return '#10B981';
         if (v <= 15) return interpolateHex('#10B981', '#FBBF24', (v - 5) / 10);
         if (v <= 35) return interpolateHex('#FBBF24', '#F97316', (v - 15) / 20);
@@ -58,7 +64,6 @@
       type: 'diverging_cool_warm',
       interpolate: function (v) {
         if (v === null || v === undefined) return null;
-        // -0.5 (blue) -> 0.5 (slate) -> 1.5 (amber) -> 2.5+ (crimson)
         if (v <= 0.5) return interpolateHex('#3B82F6', '#94A3B8', (v + 0.5) / 1.0);
         if (v <= 1.5) return interpolateHex('#94A3B8', '#F59E0B', (v - 0.5) / 1.0);
         return interpolateHex('#F59E0B', '#EF4444', Math.min(1, (v - 1.5) / 1.0));
@@ -86,7 +91,6 @@
       interpolate: function (v) {
         if (v === null || v === undefined) return null;
         var logV = Math.log10(Math.max(1, v));
-        // log scale: 1 (10 Mt) to 4 (10,000 Mt)
         var t = Math.min(1, Math.max(0, (logV - 1) / 3));
         return interpolateHex('#34D399', '#EF4444', t);
       }
@@ -151,6 +155,26 @@
     }
   }
 
+  // Protocol check: file:// protocol restriction warning
+  if (window.location.protocol === 'file:') {
+    if (globeSkeleton) {
+      globeSkeleton.innerHTML = '<div style="padding: 2.5rem; text-align: center; color: #CBD5E1; font-family: sans-serif; max-width: 580px; margin: 0 auto; background: rgba(15, 23, 42, 0.95); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 8px;">' +
+        '<h2 style="color: #FFFFFF; font-size: 1.3rem; margin-top: 0; margin-bottom: 0.5rem;">Local Web Server Required for 3D Globe</h2>' +
+        '<p style="font-size: 0.9rem; line-height: 1.6; color: #94A3B8; margin-bottom: 1.25rem;">' +
+        'You opened this page directly as a <code>file://</code> URL. Web browsers strictly restrict WebGL and GeoJSON data fetching when opened directly from the filesystem.' +
+        '</p>' +
+        '<div style="background: #030712; padding: 0.75rem 1rem; border-radius: 6px; font-family: monospace; font-size: 0.85rem; color: #1FB6A6; margin-bottom: 1.25rem; border: 1px solid rgba(31, 182, 166, 0.3);">' +
+        'python -m http.server 8000' +
+        '</div>' +
+        '<p style="font-size: 0.88rem; color: #CBD5E1; margin-bottom: 1.5rem;">' +
+        'Then open <a href="http://localhost:8000/" style="color: #5EEAD4; font-weight: 700; text-decoration: underline;">http://localhost:8000/</a> in your browser, or visit the live site at <a href="https://signalearth.netlify.app/" style="color: #5EEAD4; font-weight: 700; text-decoration: underline;">https://signalearth.netlify.app/</a>.' +
+        '</p>' +
+        '<a href="#accessible-country-index" style="display: inline-block; background: #1FB6A6; color: #0A1628; padding: 0.5rem 1rem; border-radius: 4px; font-weight: 700; text-decoration: none; font-size: 0.85rem;">Browse Country Directory Below &darr;</a>' +
+        '</div>';
+    }
+    return;
+  }
+
   if (!isWebGLAvailable()) {
     if (globeSkeleton) {
       globeSkeleton.innerHTML = '<div style="padding: 2rem; text-align: center; color: #94A3B8; font-family: var(--se-font-sans);">' +
@@ -164,8 +188,8 @@
 
   // Load countries index and boundary GeoJSON concurrently
   Promise.all([
-    fetch('data/countries.json').then(function (r) { return r.json(); }),
-    fetch('data/world-110m.geojson').then(function (r) { return r.json(); })
+    fetch(getRelPath('data/countries.json')).then(function (r) { return r.json(); }),
+    fetch(getRelPath('data/world-110m.geojson')).then(function (r) { return r.json(); })
   ])
   .then(function (results) {
     var indexData = results[0];
@@ -187,7 +211,9 @@
     if (globeSkeleton) {
       globeSkeleton.style.opacity = '0';
       setTimeout(function () {
-        if (globeSkeleton.parentNode) globeSkeleton.parentNode.removeChild(globeSkeleton);
+        if (globeSkeleton && globeSkeleton.parentNode) {
+          globeSkeleton.parentNode.removeChild(globeSkeleton);
+        }
       }, 400);
     }
   })
@@ -212,14 +238,12 @@
     var cfg = METRIC_CONFIGS[currentMetric] || METRIC_CONFIGS.pm25;
 
     if (!metricObj || metricObj.value === null || metricObj.value === undefined) {
-      // Visibly distinct unranked / no-data color: dark muted slate with opacity
       return 'rgba(71, 85, 105, 0.45)';
     }
 
     var baseColor = cfg.interpolate(metricObj.value);
     if (!baseColor) return 'rgba(71, 85, 105, 0.45)';
 
-    // Parse rgb or hex to rgba with subtle translucency over satellite marble
     if (baseColor.indexOf('rgb') === 0) {
       return baseColor.replace('rgb', 'rgba').replace(')', ', 0.78)');
     }
@@ -227,12 +251,18 @@
   }
 
   function initGlobe(geoData) {
-    var width = globeContainer.clientWidth;
-    var height = globeContainer.clientHeight;
+    if (typeof Globe === 'undefined') {
+      console.warn('Globe.gl not loaded yet, retrying in 150ms...');
+      setTimeout(function () { initGlobe(geoData); }, 150);
+      return;
+    }
+
+    var width = globeContainer.clientWidth || window.innerWidth || 800;
+    var height = globeContainer.clientHeight || (window.innerHeight - 58) || 600;
 
     myGlobe = Globe()
       (globeContainer)
-      .globeImageUrl('assets/earth-blue-marble.jpg')
+      .globeImageUrl(getRelPath('assets/earth-blue-marble.jpg'))
       .backgroundColor('rgba(10, 22, 40, 0)')
       .showAtmosphere(true)
       .atmosphereColor('#1FB6A6')
@@ -335,11 +365,20 @@
       renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
     }
 
+    // Force dimension check shortly after mounting
+    setTimeout(function () {
+      if (myGlobe && globeContainer) {
+        var w = globeContainer.clientWidth || window.innerWidth;
+        var h = globeContainer.clientHeight || (window.innerHeight - 58);
+        myGlobe.width(w).height(h);
+      }
+    }, 250);
+
     // Responsive resize listener
     window.addEventListener('resize', function () {
       if (!myGlobe || !globeContainer) return;
-      myGlobe.width(globeContainer.clientWidth);
-      myGlobe.height(globeContainer.clientHeight);
+      myGlobe.width(globeContainer.clientWidth || window.innerWidth);
+      myGlobe.height(globeContainer.clientHeight || (window.innerHeight - 58));
     });
   }
 
@@ -404,7 +443,7 @@
 
   function navigateToCountry(iso3) {
     var isoClean = iso3.toLowerCase();
-    window.location.href = 'country/' + isoClean + '/';
+    window.location.href = getRelPath('country/' + isoClean + '/');
   }
 
   function focusCountry(iso3) {
@@ -540,12 +579,12 @@
       var co2Rank = co2Obj.rank ? '#' + co2Obj.rank : 'Unranked';
 
       return '<tr style="border-bottom: 1px solid var(--se-border);">' +
-        '<td style="padding: 0.65rem 0.5rem; font-weight: 600;"><a href="country/' + c.iso3.toLowerCase() + '/" style="color: inherit; text-decoration: underline;">' + c.name + '</a></td>' +
+        '<td style="padding: 0.65rem 0.5rem; font-weight: 600;"><a href="' + getRelPath('country/' + c.iso3.toLowerCase() + '/') + '" style="color: inherit; text-decoration: underline;">' + c.name + '</a></td>' +
         '<td style="padding: 0.65rem 0.5rem; font-family: monospace; font-size: 0.85rem;">' + c.iso3 + '</td>' +
         '<td style="padding: 0.65rem 0.5rem; color: var(--se-text-secondary);">' + c.region + '</td>' +
         '<td style="padding: 0.65rem 0.5rem; font-family: monospace; font-size: 0.85rem;">' + pmRank + '</td>' +
         '<td style="padding: 0.65rem 0.5rem; font-family: monospace; font-size: 0.85rem;">' + co2Rank + '</td>' +
-        '<td style="padding: 0.65rem 0.5rem; text-align: right;"><a href="country/' + c.iso3.toLowerCase() + '/" class="se-link" style="font-weight: 600;">View dossier &rarr;</a></td>' +
+        '<td style="padding: 0.65rem 0.5rem; text-align: right;"><a href="' + getRelPath('country/' + c.iso3.toLowerCase() + '/') + '" class="se-link" style="font-weight: 600;">View dossier &rarr;</a></td>' +
         '</tr>';
     }).join('');
 

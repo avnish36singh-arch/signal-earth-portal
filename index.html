@@ -13,9 +13,17 @@
   <link rel="stylesheet" href="assets/tokens.css">
   <link rel="stylesheet" href="style.css">
   <script src="assets/theme.js"></script>
-  <!-- Pinned Three.js and Globe.gl libraries -->
-  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
-  <script src="https://unpkg.com/globe.gl@2.32.2/dist/globe.gl.min.js"></script>
+  <!-- Pinned Three.js and Globe.gl libraries (local vendor with CDN fallback) -->
+  <script src="assets/vendor/three.min.js"></script>
+  <script src="assets/vendor/globe.gl.min.js"></script>
+  <script>
+    if (typeof THREE === 'undefined') {
+      document.write('<script src="https://unpkg.com/three@0.160.0/build/three.min.js"><\/script>');
+    }
+    if (typeof Globe === 'undefined') {
+      document.write('<script src="https://unpkg.com/globe.gl@2.32.2/dist/globe.gl.min.js"><\/script>');
+    }
+  </script>
   <script src="assets/globe-country.js" defer></script>
 
   <style>
