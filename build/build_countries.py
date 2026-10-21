@@ -522,12 +522,35 @@ def build_all_countries():
         print(f"  [+] Generated /country/{iso3}/index.html ({name})")
         generated_routes.append(f"country/{iso3}/")
 
+        compact_indicators = {}
+        for k, ind in indicators.items():
+            val = ind.get('value')
+            yr = ind.get('year')
+            rk = ind.get('rank')
+            tot = ind.get('total_ranked')
+            unit = ind.get('unit', '')
+            fmt = ind.get('formatted_value', str(val) if val is not None else 'No data')
+            src = ind.get('source_name', '')
+            lic = ind.get('license', 'CC BY 4.0')
+
+            compact_indicators[k] = {
+                'value': val,
+                'year': yr,
+                'rank': rk,
+                'total_ranked': tot,
+                'unit': unit,
+                'formatted': fmt,
+                'source': src,
+                'license': lic
+            }
+
         countries_index.append({
             "iso3": iso3.upper(),
             "name": name,
             "region": region,
             "coordinates": [lat, lon],
-            "ranks": ranks_summary
+            "ranks": ranks_summary,
+            "indicators": compact_indicators
         })
 
     # Write data/countries.json

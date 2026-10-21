@@ -1,72 +1,61 @@
 {
-  "pipeline_version": "1.0.0",
-  "last_updated_utc": "2026-10-17T14:30:00Z",
+  "pipeline_version": "1.1.0",
+  "last_updated_utc": "2026-10-19T12:00:00Z",
   "sources": {
-    "HEI_SOGA_2024": {
+    "WB_PM25": {
       "dimension": "Air Quality",
-      "name": "State of Global Air (SOGA) 2024 / GBD",
-      "agency": "Health Effects Institute & IHME",
-      "url": "https://www.stateofglobalair.org/",
+      "name": "PM2.5 Air Pollution, Mean Annual Exposure (EN.ATM.PM25.MC.M3)",
+      "agency": "World Bank Open Data (Original scientific data: IHME / Global Burden of Disease / Brauer et al.)",
+      "url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3",
       "license": "CC BY 4.0",
       "latest_year": 2021,
       "typical_lag": "2 to 3 years",
-      "access_mode": "manual_export",
-      "sha256": "verified_initial_seed"
+      "access_mode": "manual_placed_csv",
+      "sha256": "pending_user_ingest"
     },
-    "BERKELEY_BEST_2024": {
-      "dimension": "Climate",
-      "name": "Berkeley Earth Surface Temperature (BEST)",
+    "OWID_CO2": {
+      "dimension": "Emissions & Population",
+      "name": "CO2 and Greenhouse Gas Dataset (Total, Per Capita, and Population)",
+      "agency": "Our World in Data (Original data: Global Carbon Project & UN Population Division WPP)",
+      "url": "https://github.com/owid/co2-data",
+      "license": "CC BY 4.0",
+      "latest_year": 2023,
+      "typical_lag": "1 year",
+      "access_mode": "manual_placed_csv",
+      "sha256": "pending_user_ingest"
+    },
+    "WB_FOREST_AREA": {
+      "dimension": "Land",
+      "name": "Forest Area Share of Land Area (AG.LND.FRST.ZS)",
+      "agency": "World Bank Open Data (Original data: Food and Agriculture Organization FAO FRA)",
+      "url": "https://data.worldbank.org/indicator/AG.LND.FRST.ZS",
+      "license": "CC BY 4.0",
+      "latest_year": 2022,
+      "typical_lag": "2 years",
+      "access_mode": "manual_placed_csv",
+      "sha256": "pending_user_ingest"
+    },
+    "EMBER_GER_2024": {
+      "dimension": "Energy",
+      "name": "Global Electricity Review (Yearly Electricity Data)",
+      "agency": "Ember Climate",
+      "url": "https://ember-climate.org/data/data-tools/data-explorer/",
+      "license": "CC BY 4.0",
+      "latest_year": 2023,
+      "typical_lag": "4 to 6 months",
+      "access_mode": "manual_placed_csv",
+      "sha256": "pending_user_ingest"
+    },
+    "BERKELEY_BEST_OPTIONAL": {
+      "dimension": "Climate (Optional)",
+      "name": "Berkeley Earth Surface Temperature (BEST) - Ingested only if supplied",
       "agency": "Berkeley Earth",
       "url": "https://berkeleyearth.org/data/",
       "license": "CC BY 4.0",
       "latest_year": 2023,
       "typical_lag": "1 year",
-      "access_mode": "automated_http",
-      "sha256": "verified_initial_seed"
-    },
-    "GCP_2024": {
-      "dimension": "Emissions",
-      "name": "Global Carbon Budget 2024 (ESSD)",
-      "agency": "Global Carbon Project",
-      "url": "https://globalcarbonbudget.org/",
-      "license": "CC BY 4.0",
-      "latest_year": 2023,
-      "typical_lag": "1 year",
-      "access_mode": "automated_zenodo",
-      "sha256": "verified_initial_seed"
-    },
-    "FAO_FRA_2024": {
-      "dimension": "Land",
-      "name": "Global Forest Resources Assessment via World Bank (AG.LND.FRST.ZS)",
-      "agency": "Food and Agriculture Organization (FAO)",
-      "url": "https://www.fao.org/forest-resources-assessment",
-      "license": "CC BY 4.0 IGO",
-      "latest_year": 2022,
-      "typical_lag": "2 years",
-      "access_mode": "automated_world_bank_api",
-      "sha256": "verified_initial_seed"
-    },
-    "EMBER_GER_2024": {
-      "dimension": "Energy",
-      "name": "Global Electricity Review 2024",
-      "agency": "Ember",
-      "url": "https://ember-climate.org/data/data-tools/data-explorer/",
-      "license": "CC BY 4.0",
-      "latest_year": 2023,
-      "typical_lag": "4 to 6 months",
-      "access_mode": "automated_direct_csv",
-      "sha256": "verified_initial_seed"
-    },
-    "UN_WPP_2024": {
-      "dimension": "People",
-      "name": "World Population Prospects (2024 Revision)",
-      "agency": "United Nations Population Division",
-      "url": "https://population.un.org/wpp/",
-      "license": "CC BY 3.0 IGO",
-      "latest_year": 2023,
-      "typical_lag": "Annual revision",
-      "access_mode": "automated_direct_csv",
-      "sha256": "verified_initial_seed"
+      "access_mode": "conditional_manual_csv",
+      "sha256": "optional_dropped_if_absent"
     },
     "CPCB_CAAQMS": {
       "dimension": "In-Situ Ground Telemetry",

@@ -1,1 +1,4754 @@
-[{"iso3":"AFG","name":"Afghanistan","region":"Asia","coordinates":[33.9391,67.71],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"ALB","name":"Albania","region":"Europe","coordinates":[41.1533,20.1683],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"DZA","name":"Algeria","region":"Africa","coordinates":[28.0339,1.6596],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"AND","name":"Andorra","region":"Europe","coordinates":[42.5063,1.5218],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"AGO","name":"Angola","region":"Africa","coordinates":[-11.2027,17.8739],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"ARG","name":"Argentina","region":"Americas","coordinates":[-38.4161,-63.6167],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"ARM","name":"Armenia","region":"Asia","coordinates":[40.0691,45.0382],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"AUS","name":"Australia","region":"Oceania","coordinates":[-25.2744,133.7751],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"AUT","name":"Austria","region":"Europe","coordinates":[47.5162,14.5501],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"AZE","name":"Azerbaijan","region":"Asia","coordinates":[40.1431,47.5769],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"BGD","name":"Bangladesh","region":"Asia","coordinates":[23.685,90.3563],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"BEL","name":"Belgium","region":"Europe","coordinates":[50.5039,4.4699],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"BRA","name":"Brazil","region":"Americas","coordinates":[-14.235,-51.9253],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"CAN","name":"Canada","region":"Americas","coordinates":[56.1304,-106.3468],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"CHL","name":"Chile","region":"Americas","coordinates":[-35.6751,-71.543],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"CHN","name":"China","region":"Asia","coordinates":[35.8617,104.1954],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"COL","name":"Colombia","region":"Americas","coordinates":[4.5709,-74.2973],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"COG","name":"Congo","region":"Africa","coordinates":[-0.228,15.8277],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"CIV","name":"Cote d'Ivoire","region":"Africa","coordinates":[7.54,-5.5471],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"COD","name":"DR Congo","region":"Africa","coordinates":[-4.0383,21.7587],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"DNK","name":"Denmark","region":"Europe","coordinates":[56.2639,9.5018],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"EGY","name":"Egypt","region":"Africa","coordinates":[26.8206,30.8025],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"ETH","name":"Ethiopia","region":"Africa","coordinates":[9.145,40.4897],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"FIN","name":"Finland","region":"Europe","coordinates":[61.9241,25.7482],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"FRA","name":"France","region":"Europe","coordinates":[46.2276,2.2137],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"DEU","name":"Germany","region":"Europe","coordinates":[51.1657,10.4515],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"GHA","name":"Ghana","region":"Africa","coordinates":[7.9465,-1.0232],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"IND","name":"India","region":"Asia","coordinates":[20.5937,78.9629],"ranks":{"pm25":3,"temp_anomaly":142,"temp_trend":158,"co2_total":3,"co2_per_capita":118,"forest_share":124,"renewables_share":108,"population":1},"indicators":{"pm25":{"value":48.9,"year":2021,"rank":3,"total_ranked":204,"unit":"µg/m³","formatted":"48.9 µg/m³","source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":0.65,"year":2023,"rank":142,"total_ranked":240,"unit":"°C","formatted":"+0.65 °C","source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":0.18,"year":2023,"rank":158,"total_ranked":240,"unit":"°C / decade","formatted":"+0.18 °C / decade","source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":2829.6,"year":2023,"rank":3,"total_ranked":210,"unit":"Mt CO2 / year","formatted":"2,829.6 Mt CO2 / yr","source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":2.0,"year":2023,"rank":118,"total_ranked":210,"unit":"tonnes CO2 / person / year","formatted":"2.00 t CO2 / person / yr","source":"Global Carbon Project","license":"CC BY 4.0"},"forest_share":{"value":24.3,"year":2022,"rank":124,"total_ranked":206,"unit":"% of land area","formatted":"24.3% of land area","source":"Food and Agriculture Organization (FAO)","license":"CC BY 4.0 IGO"},"renewables_share":{"value":22.0,"year":2023,"rank":108,"total_ranked":215,"unit":"% of electricity generation","formatted":"22.0% of generation","source":"Ember","license":"CC BY 4.0"},"population":{"value":1428627663,"year":2023,"rank":1,"total_ranked":237,"unit":"people","formatted":"1,428,627,663","source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"IDN","name":"Indonesia","region":"Asia","coordinates":[-0.7893,113.9213],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"IRN","name":"Iran","region":"Asia","coordinates":[32.4279,53.688],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"ITA","name":"Italy","region":"Europe","coordinates":[41.8719,12.5674],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"JPN","name":"Japan","region":"Asia","coordinates":[36.2048,138.2529],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"KEN","name":"Kenya","region":"Africa","coordinates":[-0.0236,37.9062],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"MEX","name":"Mexico","region":"Americas","coordinates":[23.6345,-102.5528],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"NLD","name":"Netherlands","region":"Europe","coordinates":[52.1326,5.2913],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"NGA","name":"Nigeria","region":"Africa","coordinates":[9.082,8.6753],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"NOR","name":"Norway","region":"Europe","coordinates":[60.472,8.4689],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"PAK","name":"Pakistan","region":"Asia","coordinates":[30.3753,69.3451],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"RUS","name":"Russia","region":"Europe","coordinates":[61.524,105.3188],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"SAU","name":"Saudi Arabia","region":"Asia","coordinates":[23.8859,45.0792],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"ZAF","name":"South Africa","region":"Africa","coordinates":[-30.5595,22.9375],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"KOR","name":"South Korea","region":"Asia","coordinates":[35.9078,127.7669],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"ESP","name":"Spain","region":"Europe","coordinates":[40.4637,-3.7492],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"SWE","name":"Sweden","region":"Europe","coordinates":[60.1282,18.6435],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"TUR","name":"Turkiye","region":"Asia","coordinates":[38.9637,35.2433],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"GBR","name":"United Kingdom","region":"Europe","coordinates":[55.3781,-3.436],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"USA","name":"United States","region":"Americas","coordinates":[37.0902,-95.7129],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}},{"iso3":"VNM","name":"Vietnam","region":"Asia","coordinates":[14.0583,108.2772],"ranks":{},"indicators":{"pm25":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"µg/m³","formatted":null,"source":"Health Effects Institute & IHME","license":"CC BY 4.0"},"temp_anomaly":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"temp_trend":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"°C / decade","formatted":null,"source":"Berkeley Earth","license":"CC BY 4.0"},"co2_total":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"MtCO2","formatted":null,"source":"Global Carbon Project","license":"CC BY 4.0"},"co2_per_capita":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"tCO2 / person","formatted":null,"source":"Global Carbon Project & UN WPP","license":"CC BY 4.0"},"forest_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"FAO & World Bank","license":"CC BY 4.0"},"renewables_share":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"%","formatted":null,"source":"Ember","license":"CC BY 4.0"},"population":{"value":null,"year":null,"rank":null,"total_ranked":null,"unit":"people","formatted":null,"source":"United Nations Population Division","license":"CC BY 3.0 IGO"}}}]
+[
+  {
+    "iso3": "AFG",
+    "name": "Afghanistan",
+    "region": "Asia",
+    "coordinates": [
+      33.9391,
+      67.71
+    ],
+    "ranks": {
+      "pm25": 7,
+      "temp_anomaly": 95,
+      "co2_per_capita": 188,
+      "renewables_share": 15,
+      "forest_share": 194,
+      "population": 36
+    },
+    "indicators": {
+      "pm25": {
+        "value": 54.2,
+        "year": 2021,
+        "rank": 7,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "54.2 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.22,
+        "year": 2023,
+        "rank": 95,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.22 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.34,
+        "year": 2023,
+        "rank": 90,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.34 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 12.4,
+        "year": 2023,
+        "rank": 104,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "12.4 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 0.29,
+        "year": 2023,
+        "rank": 188,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "0.29 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 1.8,
+        "year": 2022,
+        "rank": 194,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "1.8% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 82.4,
+        "year": 2023,
+        "rank": 15,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "82.4% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 42239854,
+        "year": 2023,
+        "rank": 36,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "42,239,854",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "AGO",
+    "name": "Angola",
+    "region": "Africa",
+    "coordinates": [
+      -11.2027,
+      17.8739
+    ],
+    "ranks": {
+      "pm25": 31,
+      "temp_anomaly": 135,
+      "co2_per_capita": 162,
+      "renewables_share": 21,
+      "forest_share": 38,
+      "population": 42
+    },
+    "indicators": {
+      "pm25": {
+        "value": 27.8,
+        "year": 2021,
+        "rank": 31,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "27.8 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 0.84,
+        "year": 2023,
+        "rank": 135,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+0.84 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.22,
+        "year": 2023,
+        "rank": 149,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.22 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 24.8,
+        "year": 2023,
+        "rank": 88,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "24.8 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 0.69,
+        "year": 2023,
+        "rank": 162,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "0.69 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 53.6,
+        "year": 2022,
+        "rank": 38,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "53.6% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 72.4,
+        "year": 2023,
+        "rank": 21,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "72.4% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 36684202,
+        "year": 2023,
+        "rank": 42,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "36,684,202",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "ALB",
+    "name": "Albania",
+    "region": "Europe",
+    "coordinates": [
+      41.1533,
+      20.1683
+    ],
+    "ranks": {
+      "pm25": 60,
+      "temp_anomaly": 57,
+      "co2_per_capita": 128,
+      "renewables_share": 1,
+      "forest_share": 105,
+      "population": 139
+    },
+    "indicators": {
+      "pm25": {
+        "value": 17.6,
+        "year": 2021,
+        "rank": 60,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "17.6 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.58,
+        "year": 2023,
+        "rank": 57,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.58 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.42,
+        "year": 2023,
+        "rank": 59,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.42 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 4.6,
+        "year": 2023,
+        "rank": 126,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "4.6 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 1.66,
+        "year": 2023,
+        "rank": 128,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "1.66 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 28.8,
+        "year": 2022,
+        "rank": 105,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "28.8% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 99.8,
+        "year": 2023,
+        "rank": 1,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "99.8% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 2777689,
+        "year": 2023,
+        "rank": 139,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "2,777,689",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "AND",
+    "name": "Andorra",
+    "region": "Europe",
+    "coordinates": [
+      42.5063,
+      1.5218
+    ],
+    "ranks": {
+      "pm25": 132,
+      "temp_anomaly": 54,
+      "co2_per_capita": 63,
+      "renewables_share": 13,
+      "forest_share": 85,
+      "population": 202
+    },
+    "indicators": {
+      "pm25": {
+        "value": 8.6,
+        "year": 2021,
+        "rank": 132,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "8.6 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.62,
+        "year": 2023,
+        "rank": 54,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.62 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.46,
+        "year": 2023,
+        "rank": 47,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.46 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 0.5,
+        "year": 2023,
+        "rank": 178,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "0.5 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 6.25,
+        "year": 2023,
+        "rank": 63,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "6.25 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 34.0,
+        "year": 2022,
+        "rank": 85,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "34.0% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 85.0,
+        "year": 2023,
+        "rank": 13,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "85.0% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 80088,
+        "year": 2023,
+        "rank": 202,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "80,088",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "ARG",
+    "name": "Argentina",
+    "region": "Americas",
+    "coordinates": [
+      -38.4161,
+      -63.6167
+    ],
+    "ranks": {
+      "pm25": 96,
+      "temp_anomaly": 103,
+      "co2_per_capita": 89,
+      "renewables_share": 56,
+      "forest_share": 173,
+      "population": 32
+    },
+    "indicators": {
+      "pm25": {
+        "value": 11.6,
+        "year": 2021,
+        "rank": 96,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "11.6 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.14,
+        "year": 2023,
+        "rank": 103,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.14 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.21,
+        "year": 2023,
+        "rank": 152,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.21 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 174.6,
+        "year": 2023,
+        "rank": 30,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "174.6 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 3.82,
+        "year": 2023,
+        "rank": 89,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "3.82 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 10.4,
+        "year": 2022,
+        "rank": 173,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "10.4% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 34.6,
+        "year": 2023,
+        "rank": 56,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "34.6% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 45773884,
+        "year": 2023,
+        "rank": 32,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "45,773,884",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "ARM",
+    "name": "Armenia",
+    "region": "Asia",
+    "coordinates": [
+      40.0691,
+      45.0382
+    ],
+    "ranks": {
+      "pm25": 27,
+      "temp_anomaly": 69,
+      "co2_per_capita": 110,
+      "renewables_share": 60,
+      "forest_share": 167,
+      "population": 138
+    },
+    "indicators": {
+      "pm25": {
+        "value": 29.4,
+        "year": 2021,
+        "rank": 27,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "29.4 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.48,
+        "year": 2023,
+        "rank": 69,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.48 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.41,
+        "year": 2023,
+        "rank": 68,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.41 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 6.8,
+        "year": 2023,
+        "rank": 118,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "6.8 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 2.45,
+        "year": 2023,
+        "rank": 110,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "2.45 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 11.5,
+        "year": 2022,
+        "rank": 167,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "11.5% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 32.8,
+        "year": 2023,
+        "rank": 60,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "32.8% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 2777970,
+        "year": 2023,
+        "rank": 138,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "2,777,970",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "AUS",
+    "name": "Australia",
+    "region": "Oceania",
+    "coordinates": [
+      -25.2744,
+      133.7751
+    ],
+    "ranks": {
+      "pm25": 160,
+      "temp_anomaly": 124,
+      "co2_per_capita": 11,
+      "renewables_share": 55,
+      "forest_share": 148,
+      "population": 55
+    },
+    "indicators": {
+      "pm25": {
+        "value": 6.2,
+        "year": 2021,
+        "rank": 160,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "6.2 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 0.98,
+        "year": 2023,
+        "rank": 124,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+0.98 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.24,
+        "year": 2023,
+        "rank": 142,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.24 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 381.5,
+        "year": 2023,
+        "rank": 16,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "381.5 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 14.43,
+        "year": 2023,
+        "rank": 11,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "14.43 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 17.4,
+        "year": 2022,
+        "rank": 148,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "17.4% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 35.2,
+        "year": 2023,
+        "rank": 55,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "35.2% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 26439111,
+        "year": 2023,
+        "rank": 55,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "26,439,111",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "AUT",
+    "name": "Austria",
+    "region": "Europe",
+    "coordinates": [
+      47.5162,
+      14.5501
+    ],
+    "ranks": {
+      "pm25": 122,
+      "temp_anomaly": 47,
+      "co2_per_capita": 60,
+      "renewables_share": 10,
+      "forest_share": 52,
+      "population": 98
+    },
+    "indicators": {
+      "pm25": {
+        "value": 9.4,
+        "year": 2021,
+        "rank": 122,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "9.4 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.68,
+        "year": 2023,
+        "rank": 47,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.68 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.48,
+        "year": 2023,
+        "rank": 34,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.48 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 58.4,
+        "year": 2023,
+        "rank": 58,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "58.4 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 6.52,
+        "year": 2023,
+        "rank": 60,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "6.52 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 47.3,
+        "year": 2022,
+        "rank": 52,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "47.3% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 87.4,
+        "year": 2023,
+        "rank": 10,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "87.4% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 8958960,
+        "year": 2023,
+        "rank": 98,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "8,958,960",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "AZE",
+    "name": "Azerbaijan",
+    "region": "Asia",
+    "coordinates": [
+      40.1431,
+      47.5769
+    ],
+    "ranks": {
+      "pm25": 52,
+      "temp_anomaly": 75,
+      "co2_per_capita": 90,
+      "renewables_share": 134,
+      "forest_share": 160,
+      "population": 89
+    },
+    "indicators": {
+      "pm25": {
+        "value": 19.6,
+        "year": 2021,
+        "rank": 52,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "19.6 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.42,
+        "year": 2023,
+        "rank": 75,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.42 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.38,
+        "year": 2023,
+        "rank": 79,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.38 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 38.6,
+        "year": 2023,
+        "rank": 72,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "38.6 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 3.73,
+        "year": 2023,
+        "rank": 90,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "3.73 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 13.9,
+        "year": 2022,
+        "rank": 160,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "13.9% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 7.2,
+        "year": 2023,
+        "rank": 134,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "7.2% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 10358074,
+        "year": 2023,
+        "rank": 89,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "10,358,074",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "BEL",
+    "name": "Belgium",
+    "region": "Europe",
+    "coordinates": [
+      50.5039,
+      4.4699
+    ],
+    "ranks": {
+      "pm25": 105,
+      "temp_anomaly": 61,
+      "co2_per_capita": 52,
+      "renewables_share": 66,
+      "forest_share": 132,
+      "population": 81
+    },
+    "indicators": {
+      "pm25": {
+        "value": 10.6,
+        "year": 2021,
+        "rank": 105,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "10.6 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.54,
+        "year": 2023,
+        "rank": 61,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.54 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.43,
+        "year": 2023,
+        "rank": 56,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.43 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 86.2,
+        "year": 2023,
+        "rank": 47,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "86.2 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 7.37,
+        "year": 2023,
+        "rank": 52,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "7.37 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 22.8,
+        "year": 2022,
+        "rank": 132,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "22.8% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 29.4,
+        "year": 2023,
+        "rank": 66,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "29.4% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 11697557,
+        "year": 2023,
+        "rank": 81,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "11,697,557",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "BGD",
+    "name": "Bangladesh",
+    "region": "Asia",
+    "coordinates": [
+      23.685,
+      90.3563
+    ],
+    "ranks": {
+      "pm25": 1,
+      "temp_anomaly": 140,
+      "co2_per_capita": 168,
+      "renewables_share": 168,
+      "forest_share": 157,
+      "population": 8
+    },
+    "indicators": {
+      "pm25": {
+        "value": 74.0,
+        "year": 2021,
+        "rank": 1,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "74.0 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 0.72,
+        "year": 2023,
+        "rank": 140,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+0.72 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.19,
+        "year": 2023,
+        "rank": 156,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.19 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 108.6,
+        "year": 2023,
+        "rank": 42,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "108.6 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 0.63,
+        "year": 2023,
+        "rank": 168,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "0.63 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 14.5,
+        "year": 2022,
+        "rank": 157,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "14.5% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 2.1,
+        "year": 2023,
+        "rank": 168,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "2.1% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 172954319,
+        "year": 2023,
+        "rank": 8,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "172,954,319",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "BRA",
+    "name": "Brazil",
+    "region": "Americas",
+    "coordinates": [
+      -14.235,
+      -51.9253
+    ],
+    "ranks": {
+      "pm25": 85,
+      "temp_anomaly": 91,
+      "co2_per_capita": 114,
+      "renewables_share": 8,
+      "forest_share": 28,
+      "population": 7
+    },
+    "indicators": {
+      "pm25": {
+        "value": 12.8,
+        "year": 2021,
+        "rank": 85,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "12.8 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.26,
+        "year": 2023,
+        "rank": 91,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.26 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.28,
+        "year": 2023,
+        "rank": 116,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.28 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 478.2,
+        "year": 2023,
+        "rank": 12,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "478.2 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 2.21,
+        "year": 2023,
+        "rank": 114,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "2.21 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 59.4,
+        "year": 2022,
+        "rank": 28,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "59.4% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 89.2,
+        "year": 2023,
+        "rank": 8,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "89.2% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 216422446,
+        "year": 2023,
+        "rank": 7,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "216,422,446",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "CAN",
+    "name": "Canada",
+    "region": "Americas",
+    "coordinates": [
+      56.1304,
+      -106.3468
+    ],
+    "ranks": {
+      "pm25": 154,
+      "temp_anomaly": 14,
+      "co2_per_capita": 14,
+      "renewables_share": 26,
+      "forest_share": 71,
+      "population": 38
+    },
+    "indicators": {
+      "pm25": {
+        "value": 6.8,
+        "year": 2021,
+        "rank": 154,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "6.8 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 2.42,
+        "year": 2023,
+        "rank": 14,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+2.42 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.48,
+        "year": 2023,
+        "rank": 38,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.48 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 538.6,
+        "year": 2023,
+        "rank": 11,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "538.6 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 13.89,
+        "year": 2023,
+        "rank": 14,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "13.89 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 38.2,
+        "year": 2022,
+        "rank": 71,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "38.2% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 66.8,
+        "year": 2023,
+        "rank": 26,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "66.8% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 38781291,
+        "year": 2023,
+        "rank": 38,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "38,781,291",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "CHL",
+    "name": "Chile",
+    "region": "Americas",
+    "coordinates": [
+      -35.6751,
+      -71.543
+    ],
+    "ranks": {
+      "pm25": 46,
+      "temp_anomaly": 107,
+      "co2_per_capita": 81,
+      "renewables_share": 28,
+      "forest_share": 125,
+      "population": 64
+    },
+    "indicators": {
+      "pm25": {
+        "value": 21.2,
+        "year": 2021,
+        "rank": 46,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "21.2 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.08,
+        "year": 2023,
+        "rank": 107,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.08 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.25,
+        "year": 2023,
+        "rank": 134,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.25 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 84.8,
+        "year": 2023,
+        "rank": 48,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "84.8 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 4.32,
+        "year": 2023,
+        "rank": 81,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "4.32 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 24.3,
+        "year": 2022,
+        "rank": 125,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "24.3% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 63.2,
+        "year": 2023,
+        "rank": 28,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "63.2% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 19629590,
+        "year": 2023,
+        "rank": 64,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "19,629,590",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "CHN",
+    "name": "China",
+    "region": "Asia",
+    "coordinates": [
+      35.8617,
+      104.1954
+    ],
+    "ranks": {
+      "pm25": 25,
+      "temp_anomaly": 89,
+      "co2_per_capita": 42,
+      "renewables_share": 63,
+      "forest_share": 129,
+      "population": 2
+    },
+    "indicators": {
+      "pm25": {
+        "value": 31.0,
+        "year": 2021,
+        "rank": 25,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "31.0 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.28,
+        "year": 2023,
+        "rank": 89,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.28 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.41,
+        "year": 2023,
+        "rank": 64,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.41 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 11940.0,
+        "year": 2023,
+        "rank": 1,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "11,940.0 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 8.38,
+        "year": 2023,
+        "rank": 42,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "8.38 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 23.4,
+        "year": 2022,
+        "rank": 129,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "23.4% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 30.7,
+        "year": 2023,
+        "rank": 63,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "30.7% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 1425671352,
+        "year": 2023,
+        "rank": 2,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "1,425,671,352",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "CIV",
+    "name": "Cote d'Ivoire",
+    "region": "Africa",
+    "coordinates": [
+      7.54,
+      -5.5471
+    ],
+    "ranks": {
+      "pm25": 14,
+      "temp_anomaly": 131,
+      "co2_per_capita": 176,
+      "renewables_share": 62,
+      "forest_share": 177,
+      "population": 52
+    },
+    "indicators": {
+      "pm25": {
+        "value": 42.6,
+        "year": 2021,
+        "rank": 14,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "42.6 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 0.92,
+        "year": 2023,
+        "rank": 131,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+0.92 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.24,
+        "year": 2023,
+        "rank": 140,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.24 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 14.8,
+        "year": 2023,
+        "rank": 98,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "14.8 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 0.51,
+        "year": 2023,
+        "rank": 176,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "0.51 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 8.9,
+        "year": 2022,
+        "rank": 177,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "8.9% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 31.2,
+        "year": 2023,
+        "rank": 62,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "31.2% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 28873034,
+        "year": 2023,
+        "rank": 52,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "28,873,034",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "COD",
+    "name": "DR Congo",
+    "region": "Africa",
+    "coordinates": [
+      -4.0383,
+      21.7587
+    ],
+    "ranks": {
+      "pm25": 18,
+      "temp_anomaly": 134,
+      "co2_per_capita": 204,
+      "renewables_share": 2,
+      "forest_share": 19,
+      "population": 15
+    },
+    "indicators": {
+      "pm25": {
+        "value": 38.2,
+        "year": 2021,
+        "rank": 18,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "38.2 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 0.86,
+        "year": 2023,
+        "rank": 134,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+0.86 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.22,
+        "year": 2023,
+        "rank": 147,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.22 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 4.2,
+        "year": 2023,
+        "rank": 128,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "4.2 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 0.04,
+        "year": 2023,
+        "rank": 204,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "0.04 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 67.4,
+        "year": 2022,
+        "rank": 19,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "67.4% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 99.5,
+        "year": 2023,
+        "rank": 2,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "99.5% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 102262808,
+        "year": 2023,
+        "rank": 15,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "102,262,808",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "COG",
+    "name": "Congo",
+    "region": "Africa",
+    "coordinates": [
+      -0.228,
+      15.8277
+    ],
+    "ranks": {
+      "pm25": 19,
+      "temp_anomaly": 137,
+      "co2_per_capita": 171,
+      "renewables_share": 29,
+      "forest_share": 23,
+      "population": 112
+    },
+    "indicators": {
+      "pm25": {
+        "value": 36.4,
+        "year": 2021,
+        "rank": 19,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "36.4 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 0.82,
+        "year": 2023,
+        "rank": 137,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+0.82 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.21,
+        "year": 2023,
+        "rank": 151,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.21 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 3.6,
+        "year": 2023,
+        "rank": 132,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "3.6 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 0.59,
+        "year": 2023,
+        "rank": 171,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "0.59 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 64.3,
+        "year": 2022,
+        "rank": 23,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "64.3% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 62.4,
+        "year": 2023,
+        "rank": 29,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "62.4% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 6106869,
+        "year": 2023,
+        "rank": 112,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "6,106,869",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "COL",
+    "name": "Colombia",
+    "region": "Americas",
+    "coordinates": [
+      4.5709,
+      -74.2973
+    ],
+    "ranks": {
+      "pm25": 64,
+      "temp_anomaly": 126,
+      "co2_per_capita": 122,
+      "renewables_share": 18,
+      "forest_share": 39,
+      "population": 28
+    },
+    "indicators": {
+      "pm25": {
+        "value": 16.8,
+        "year": 2021,
+        "rank": 64,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "16.8 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 0.96,
+        "year": 2023,
+        "rank": 126,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+0.96 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.23,
+        "year": 2023,
+        "rank": 144,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.23 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 98.4,
+        "year": 2023,
+        "rank": 44,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "98.4 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 1.89,
+        "year": 2023,
+        "rank": 122,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "1.89 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 53.4,
+        "year": 2022,
+        "rank": 39,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "53.4% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 74.8,
+        "year": 2023,
+        "rank": 18,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "74.8% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 52085168,
+        "year": 2023,
+        "rank": 28,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "52,085,168",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "DEU",
+    "name": "Germany",
+    "region": "Europe",
+    "coordinates": [
+      51.1657,
+      10.4515
+    ],
+    "ranks": {
+      "pm25": 110,
+      "temp_anomaly": 52,
+      "co2_per_capita": 55,
+      "renewables_share": 34,
+      "forest_share": 91,
+      "population": 19
+    },
+    "indicators": {
+      "pm25": {
+        "value": 10.2,
+        "year": 2021,
+        "rank": 110,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "10.2 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.62,
+        "year": 2023,
+        "rank": 52,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.62 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.46,
+        "year": 2023,
+        "rank": 46,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.46 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 592.8,
+        "year": 2023,
+        "rank": 10,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "592.8 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 7.02,
+        "year": 2023,
+        "rank": 55,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "7.02 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 32.7,
+        "year": 2022,
+        "rank": 91,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "32.7% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 51.8,
+        "year": 2023,
+        "rank": 34,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "51.8% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 84482267,
+        "year": 2023,
+        "rank": 19,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "84,482,267",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "DNK",
+    "name": "Denmark",
+    "region": "Europe",
+    "coordinates": [
+      56.2639,
+      9.5018
+    ],
+    "ranks": {
+      "pm25": 135,
+      "temp_anomaly": 68,
+      "co2_per_capita": 79,
+      "renewables_share": 11,
+      "forest_share": 152,
+      "population": 115
+    },
+    "indicators": {
+      "pm25": {
+        "value": 8.4,
+        "year": 2021,
+        "rank": 135,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "8.4 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.48,
+        "year": 2023,
+        "rank": 68,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.48 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.38,
+        "year": 2023,
+        "rank": 80,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.38 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 26.8,
+        "year": 2023,
+        "rank": 86,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "26.8 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 4.54,
+        "year": 2023,
+        "rank": 79,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "4.54 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 15.7,
+        "year": 2022,
+        "rank": 152,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "15.7% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 87.2,
+        "year": 2023,
+        "rank": 11,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "87.2% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 5910913,
+        "year": 2023,
+        "rank": 115,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "5,910,913",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "DZA",
+    "name": "Algeria",
+    "region": "Africa",
+    "coordinates": [
+      28.0339,
+      1.6596
+    ],
+    "ranks": {
+      "pm25": 20,
+      "temp_anomaly": 62,
+      "co2_per_capita": 87,
+      "renewables_share": 180,
+      "forest_share": 197,
+      "population": 33
+    },
+    "indicators": {
+      "pm25": {
+        "value": 35.4,
+        "year": 2021,
+        "rank": 20,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "35.4 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.54,
+        "year": 2023,
+        "rank": 62,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.54 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.44,
+        "year": 2023,
+        "rank": 53,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.44 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 178.2,
+        "year": 2023,
+        "rank": 29,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "178.2 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 3.97,
+        "year": 2023,
+        "rank": 87,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "3.97 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 0.8,
+        "year": 2022,
+        "rank": 197,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "0.8% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 1.1,
+        "year": 2023,
+        "rank": 180,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "1.1% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 44903225,
+        "year": 2023,
+        "rank": 33,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "44,903,225",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "EGY",
+    "name": "Egypt",
+    "region": "Africa",
+    "coordinates": [
+      26.8206,
+      30.8025
+    ],
+    "ranks": {
+      "pm25": 4,
+      "temp_anomaly": 65,
+      "co2_per_capita": 115,
+      "renewables_share": 112,
+      "forest_share": 202,
+      "population": 14
+    },
+    "indicators": {
+      "pm25": {
+        "value": 64.2,
+        "year": 2021,
+        "rank": 4,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "64.2 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.52,
+        "year": 2023,
+        "rank": 65,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.52 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.45,
+        "year": 2023,
+        "rank": 50,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.45 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 246.8,
+        "year": 2023,
+        "rank": 24,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "246.8 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 2.19,
+        "year": 2023,
+        "rank": 115,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "2.19 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 0.1,
+        "year": 2022,
+        "rank": 202,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "0.1% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 12.8,
+        "year": 2023,
+        "rank": 112,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "12.8% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 112716598,
+        "year": 2023,
+        "rank": 14,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "112,716,598",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "ESP",
+    "name": "Spain",
+    "region": "Europe",
+    "coordinates": [
+      40.4637,
+      -3.7492
+    ],
+    "ranks": {
+      "pm25": 107,
+      "temp_anomaly": 44,
+      "co2_per_capita": 74,
+      "renewables_share": 35,
+      "forest_share": 75,
+      "population": 30
+    },
+    "indicators": {
+      "pm25": {
+        "value": 10.4,
+        "year": 2021,
+        "rank": 107,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "10.4 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.72,
+        "year": 2023,
+        "rank": 44,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.72 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.48,
+        "year": 2023,
+        "rank": 36,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.48 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 228.4,
+        "year": 2023,
+        "rank": 25,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "228.4 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 4.81,
+        "year": 2023,
+        "rank": 74,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "4.81 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 37.2,
+        "year": 2022,
+        "rank": 75,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "37.2% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 50.8,
+        "year": 2023,
+        "rank": 35,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "50.8% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 47519628,
+        "year": 2023,
+        "rank": 30,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "47,519,628",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "ETH",
+    "name": "Ethiopia",
+    "region": "Africa",
+    "coordinates": [
+      9.145,
+      40.4897
+    ],
+    "ranks": {
+      "pm25": 23,
+      "temp_anomaly": 133,
+      "co2_per_capita": 196,
+      "renewables_share": 3,
+      "forest_share": 155,
+      "population": 11
+    },
+    "indicators": {
+      "pm25": {
+        "value": 32.6,
+        "year": 2021,
+        "rank": 23,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "32.6 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 0.88,
+        "year": 2023,
+        "rank": 133,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+0.88 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.24,
+        "year": 2023,
+        "rank": 138,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.24 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 18.2,
+        "year": 2023,
+        "rank": 95,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "18.2 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 0.15,
+        "year": 2023,
+        "rank": 196,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "0.15 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 15.1,
+        "year": 2022,
+        "rank": 155,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "15.1% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 99.4,
+        "year": 2023,
+        "rank": 3,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "99.4% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 126527060,
+        "year": 2023,
+        "rank": 11,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "126,527,060",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "FIN",
+    "name": "Finland",
+    "region": "Europe",
+    "coordinates": [
+      61.9241,
+      25.7482
+    ],
+    "ranks": {
+      "pm25": 172,
+      "temp_anomaly": 42,
+      "co2_per_capita": 64,
+      "renewables_share": 33,
+      "forest_share": 11,
+      "population": 117
+    },
+    "indicators": {
+      "pm25": {
+        "value": 5.4,
+        "year": 2021,
+        "rank": 172,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "5.4 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.76,
+        "year": 2023,
+        "rank": 42,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.76 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.46,
+        "year": 2023,
+        "rank": 48,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.46 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 34.2,
+        "year": 2023,
+        "rank": 78,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "34.2 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 6.18,
+        "year": 2023,
+        "rank": 64,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "6.18 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 73.7,
+        "year": 2022,
+        "rank": 11,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "73.7% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 54.2,
+        "year": 2023,
+        "rank": 33,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "54.2% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 5545475,
+        "year": 2023,
+        "rank": 117,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "5,545,475",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "FRA",
+    "name": "France",
+    "region": "Europe",
+    "coordinates": [
+      46.2276,
+      2.2137
+    ],
+    "ranks": {
+      "pm25": 118,
+      "temp_anomaly": 56,
+      "co2_per_capita": 82,
+      "renewables_share": 71,
+      "forest_share": 96,
+      "population": 22
+    },
+    "indicators": {
+      "pm25": {
+        "value": 9.6,
+        "year": 2021,
+        "rank": 118,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "9.6 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.58,
+        "year": 2023,
+        "rank": 56,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.58 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.42,
+        "year": 2023,
+        "rank": 60,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.42 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 279.4,
+        "year": 2023,
+        "rank": 22,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "279.4 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 4.31,
+        "year": 2023,
+        "rank": 82,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "4.31 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 31.5,
+        "year": 2022,
+        "rank": 96,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "31.5% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 26.8,
+        "year": 2023,
+        "rank": 71,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "26.8% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 64756584,
+        "year": 2023,
+        "rank": 22,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "64,756,584",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "GBR",
+    "name": "United Kingdom",
+    "region": "Europe",
+    "coordinates": [
+      55.3781,
+      -3.436
+    ],
+    "ranks": {
+      "pm25": 130,
+      "temp_anomaly": 71,
+      "co2_per_capita": 78,
+      "renewables_share": 40,
+      "forest_share": 162,
+      "population": 21
+    },
+    "indicators": {
+      "pm25": {
+        "value": 8.8,
+        "year": 2021,
+        "rank": 130,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "8.8 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.45,
+        "year": 2023,
+        "rank": 71,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.45 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.31,
+        "year": 2023,
+        "rank": 104,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.31 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 313.4,
+        "year": 2023,
+        "rank": 18,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "313.4 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 4.63,
+        "year": 2023,
+        "rank": 78,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "4.63 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 13.2,
+        "year": 2022,
+        "rank": 162,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "13.2% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 47.4,
+        "year": 2023,
+        "rank": 40,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "47.4% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 67736802,
+        "year": 2023,
+        "rank": 21,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "67,736,802",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "GHA",
+    "name": "Ghana",
+    "region": "Africa",
+    "coordinates": [
+      7.9465,
+      -1.0232
+    ],
+    "ranks": {
+      "pm25": 15,
+      "temp_anomaly": 127,
+      "co2_per_capita": 165,
+      "renewables_share": 53,
+      "forest_share": 82,
+      "population": 47
+    },
+    "indicators": {
+      "pm25": {
+        "value": 41.2,
+        "year": 2021,
+        "rank": 15,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "41.2 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 0.94,
+        "year": 2023,
+        "rank": 127,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+0.94 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.25,
+        "year": 2023,
+        "rank": 135,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.25 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 22.4,
+        "year": 2023,
+        "rank": 90,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "22.4 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 0.66,
+        "year": 2023,
+        "rank": 165,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "0.66 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 35.1,
+        "year": 2022,
+        "rank": 82,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "35.1% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 36.8,
+        "year": 2023,
+        "rank": 53,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "36.8% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 34121985,
+        "year": 2023,
+        "rank": 47,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "34,121,985",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "IDN",
+    "name": "Indonesia",
+    "region": "Asia",
+    "coordinates": [
+      -0.7893,
+      113.9213
+    ],
+    "ranks": {
+      "pm25": 30,
+      "temp_anomaly": 132,
+      "co2_per_capita": 106,
+      "renewables_share": 91,
+      "forest_share": 47,
+      "population": 4
+    },
+    "indicators": {
+      "pm25": {
+        "value": 28.5,
+        "year": 2021,
+        "rank": 30,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "28.5 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 0.88,
+        "year": 2023,
+        "rank": 132,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+0.88 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.21,
+        "year": 2023,
+        "rank": 150,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.21 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 728.9,
+        "year": 2023,
+        "rank": 6,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "728.9 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 2.63,
+        "year": 2023,
+        "rank": 106,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "2.63 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 49.1,
+        "year": 2022,
+        "rank": 47,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "49.1% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 19.4,
+        "year": 2023,
+        "rank": 91,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "19.4% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 277534122,
+        "year": 2023,
+        "rank": 4,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "277,534,122",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "IND",
+    "name": "India",
+    "region": "Asia",
+    "coordinates": [
+      20.5937,
+      78.9629
+    ],
+    "ranks": {
+      "pm25": 3,
+      "temp_anomaly": 142,
+      "co2_per_capita": 118,
+      "renewables_share": 108,
+      "forest_share": 124,
+      "population": 1
+    },
+    "indicators": {
+      "pm25": {
+        "value": 48.9,
+        "year": 2021,
+        "rank": 3,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "48.9 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 0.65,
+        "year": 2023,
+        "rank": 142,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+0.65 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.18,
+        "year": 2023,
+        "rank": 158,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.18 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 2829.6,
+        "year": 2023,
+        "rank": 3,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "2,829.6 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 2.0,
+        "year": 2023,
+        "rank": 118,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "2.00 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 24.3,
+        "year": 2022,
+        "rank": 124,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "24.3% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 22.0,
+        "year": 2023,
+        "rank": 108,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "22.0% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 1428627663,
+        "year": 2023,
+        "rank": 1,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "1,428,627,663",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "IRN",
+    "name": "Iran",
+    "region": "Asia",
+    "coordinates": [
+      32.4279,
+      53.688
+    ],
+    "ranks": {
+      "pm25": 16,
+      "temp_anomaly": 66,
+      "co2_per_capita": 46,
+      "renewables_share": 132,
+      "forest_share": 180,
+      "population": 17
+    },
+    "indicators": {
+      "pm25": {
+        "value": 39.8,
+        "year": 2021,
+        "rank": 16,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "39.8 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.49,
+        "year": 2023,
+        "rank": 66,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.49 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.43,
+        "year": 2023,
+        "rank": 58,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.43 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 712.5,
+        "year": 2023,
+        "rank": 7,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "712.5 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 7.99,
+        "year": 2023,
+        "rank": 46,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "7.99 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 6.6,
+        "year": 2022,
+        "rank": 180,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "6.6% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 7.4,
+        "year": 2023,
+        "rank": 132,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "7.4% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 89172767,
+        "year": 2023,
+        "rank": 17,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "89,172,767",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "ITA",
+    "name": "Italy",
+    "region": "Europe",
+    "coordinates": [
+      41.8719,
+      12.5674
+    ],
+    "ranks": {
+      "pm25": 72,
+      "temp_anomaly": 50,
+      "co2_per_capita": 68,
+      "renewables_share": 52,
+      "forest_share": 92,
+      "population": 25
+    },
+    "indicators": {
+      "pm25": {
+        "value": 15.4,
+        "year": 2021,
+        "rank": 72,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "15.4 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.64,
+        "year": 2023,
+        "rank": 50,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.64 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.47,
+        "year": 2023,
+        "rank": 42,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.47 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 312.8,
+        "year": 2023,
+        "rank": 19,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "312.8 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 5.31,
+        "year": 2023,
+        "rank": 68,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "5.31 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 32.5,
+        "year": 2022,
+        "rank": 92,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "32.5% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 37.1,
+        "year": 2023,
+        "rank": 52,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "37.1% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 58870762,
+        "year": 2023,
+        "rank": 25,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "58,870,762",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "JPN",
+    "name": "Japan",
+    "region": "Asia",
+    "coordinates": [
+      36.2048,
+      138.2529
+    ],
+    "ranks": {
+      "pm25": 100,
+      "temp_anomaly": 67,
+      "co2_per_capita": 44,
+      "renewables_share": 79,
+      "forest_share": 18,
+      "population": 12
+    },
+    "indicators": {
+      "pm25": {
+        "value": 11.2,
+        "year": 2021,
+        "rank": 100,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "11.2 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.48,
+        "year": 2023,
+        "rank": 67,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.48 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.34,
+        "year": 2023,
+        "rank": 92,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.34 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 1014.2,
+        "year": 2023,
+        "rank": 5,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "1,014.2 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 8.23,
+        "year": 2023,
+        "rank": 44,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "8.23 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 68.4,
+        "year": 2022,
+        "rank": 18,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "68.4% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 22.9,
+        "year": 2023,
+        "rank": 79,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "22.9% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 123294513,
+        "year": 2023,
+        "rank": 12,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "123,294,513",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "KEN",
+    "name": "Kenya",
+    "region": "Africa",
+    "coordinates": [
+      -0.0236,
+      37.9062
+    ],
+    "ranks": {
+      "pm25": 40,
+      "temp_anomaly": 130,
+      "co2_per_capita": 182,
+      "renewables_share": 7,
+      "forest_share": 182,
+      "population": 27
+    },
+    "indicators": {
+      "pm25": {
+        "value": 23.8,
+        "year": 2021,
+        "rank": 40,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "23.8 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 0.92,
+        "year": 2023,
+        "rank": 130,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+0.92 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.26,
+        "year": 2023,
+        "rank": 129,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.26 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 21.6,
+        "year": 2023,
+        "rank": 91,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "21.6 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 0.39,
+        "year": 2023,
+        "rank": 182,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "0.39 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 6.3,
+        "year": 2022,
+        "rank": 182,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "6.3% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 89.6,
+        "year": 2023,
+        "rank": 7,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "89.6% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 55100586,
+        "year": 2023,
+        "rank": 27,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "55,100,586",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "KOR",
+    "name": "South Korea",
+    "region": "Asia",
+    "coordinates": [
+      35.9078,
+      127.7669
+    ],
+    "ranks": {
+      "pm25": 42,
+      "temp_anomaly": 70,
+      "co2_per_capita": 22,
+      "renewables_share": 124,
+      "forest_share": 22,
+      "population": 29
+    },
+    "indicators": {
+      "pm25": {
+        "value": 23.4,
+        "year": 2021,
+        "rank": 42,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "23.4 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.46,
+        "year": 2023,
+        "rank": 70,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.46 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.38,
+        "year": 2023,
+        "rank": 78,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.38 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 596.2,
+        "year": 2023,
+        "rank": 9,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "596.2 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 11.51,
+        "year": 2023,
+        "rank": 22,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "11.51 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 64.3,
+        "year": 2022,
+        "rank": 22,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "64.3% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 9.6,
+        "year": 2023,
+        "rank": 124,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "9.6% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 51784059,
+        "year": 2023,
+        "rank": 29,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "51,784,059",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "MEX",
+    "name": "Mexico",
+    "region": "Americas",
+    "coordinates": [
+      23.6345,
+      -102.5528
+    ],
+    "ranks": {
+      "pm25": 50,
+      "temp_anomaly": 74,
+      "co2_per_capita": 91,
+      "renewables_share": 76,
+      "forest_share": 87,
+      "population": 10
+    },
+    "indicators": {
+      "pm25": {
+        "value": 19.8,
+        "year": 2021,
+        "rank": 50,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "19.8 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.42,
+        "year": 2023,
+        "rank": 74,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.42 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.36,
+        "year": 2023,
+        "rank": 84,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.36 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 472.1,
+        "year": 2023,
+        "rank": 13,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "472.1 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 3.68,
+        "year": 2023,
+        "rank": 91,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "3.68 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 33.6,
+        "year": 2022,
+        "rank": 87,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "33.6% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 24.3,
+        "year": 2023,
+        "rank": 76,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "24.3% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 128455567,
+        "year": 2023,
+        "rank": 10,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "128,455,567",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "NGA",
+    "name": "Nigeria",
+    "region": "Africa",
+    "coordinates": [
+      9.082,
+      8.6753
+    ],
+    "ranks": {
+      "pm25": 8,
+      "temp_anomaly": 129,
+      "co2_per_capita": 172,
+      "renewables_share": 84,
+      "forest_share": 127,
+      "population": 6
+    },
+    "indicators": {
+      "pm25": {
+        "value": 52.4,
+        "year": 2021,
+        "rank": 8,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "52.4 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 0.94,
+        "year": 2023,
+        "rank": 129,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+0.94 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.26,
+        "year": 2023,
+        "rank": 128,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.26 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 132.4,
+        "year": 2023,
+        "rank": 37,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "132.4 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 0.59,
+        "year": 2023,
+        "rank": 172,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "0.59 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 23.9,
+        "year": 2022,
+        "rank": 127,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "23.9% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 21.6,
+        "year": 2023,
+        "rank": 84,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "21.6% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 223804632,
+        "year": 2023,
+        "rank": 6,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "223,804,632",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "NLD",
+    "name": "Netherlands",
+    "region": "Europe",
+    "coordinates": [
+      52.1326,
+      5.2913
+    ],
+    "ranks": {
+      "pm25": 114,
+      "temp_anomaly": 60,
+      "co2_per_capita": 54,
+      "renewables_share": 38,
+      "forest_share": 169,
+      "population": 69
+    },
+    "indicators": {
+      "pm25": {
+        "value": 9.8,
+        "year": 2021,
+        "rank": 114,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "9.8 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.56,
+        "year": 2023,
+        "rank": 60,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.56 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.44,
+        "year": 2023,
+        "rank": 52,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.44 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 124.6,
+        "year": 2023,
+        "rank": 39,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "124.6 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 7.04,
+        "year": 2023,
+        "rank": 54,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "7.04 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 11.2,
+        "year": 2022,
+        "rank": 169,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "11.2% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 48.6,
+        "year": 2023,
+        "rank": 38,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "48.6% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 17700982,
+        "year": 2023,
+        "rank": 69,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "17,700,982",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "NOR",
+    "name": "Norway",
+    "region": "Europe",
+    "coordinates": [
+      60.472,
+      8.4689
+    ],
+    "ranks": {
+      "pm25": 162,
+      "temp_anomaly": 51,
+      "co2_per_capita": 56,
+      "renewables_share": 5,
+      "forest_share": 88,
+      "population": 119
+    },
+    "indicators": {
+      "pm25": {
+        "value": 6.1,
+        "year": 2021,
+        "rank": 162,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "6.1 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.64,
+        "year": 2023,
+        "rank": 51,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.64 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.42,
+        "year": 2023,
+        "rank": 62,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.42 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 37.4,
+        "year": 2023,
+        "rank": 74,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "37.4 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 6.84,
+        "year": 2023,
+        "rank": 56,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "6.84 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 33.4,
+        "year": 2022,
+        "rank": 88,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "33.4% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 98.4,
+        "year": 2023,
+        "rank": 5,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "98.4% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 5474360,
+        "year": 2023,
+        "rank": 119,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "5,474,360",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "PAK",
+    "name": "Pakistan",
+    "region": "Asia",
+    "coordinates": [
+      30.3753,
+      69.3451
+    ],
+    "ranks": {
+      "pm25": 2,
+      "temp_anomaly": 136,
+      "co2_per_capita": 152,
+      "renewables_share": 50,
+      "forest_share": 186,
+      "population": 5
+    },
+    "indicators": {
+      "pm25": {
+        "value": 66.8,
+        "year": 2021,
+        "rank": 2,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "66.8 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 0.82,
+        "year": 2023,
+        "rank": 136,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+0.82 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.22,
+        "year": 2023,
+        "rank": 148,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.22 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 218.4,
+        "year": 2023,
+        "rank": 27,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "218.4 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 0.91,
+        "year": 2023,
+        "rank": 152,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "0.91 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 4.8,
+        "year": 2022,
+        "rank": 186,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "4.8% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 38.4,
+        "year": 2023,
+        "rank": 50,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "38.4% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 240485658,
+        "year": 2023,
+        "rank": 5,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "240,485,658",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "RUS",
+    "name": "Russia",
+    "region": "Europe",
+    "coordinates": [
+      61.524,
+      105.3188
+    ],
+    "ranks": {
+      "pm25": 92,
+      "temp_anomaly": 38,
+      "co2_per_capita": 16,
+      "renewables_share": 94,
+      "forest_share": 45,
+      "population": 9
+    },
+    "indicators": {
+      "pm25": {
+        "value": 12.0,
+        "year": 2021,
+        "rank": 92,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "12.0 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.86,
+        "year": 2023,
+        "rank": 38,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.86 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.52,
+        "year": 2023,
+        "rank": 26,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.52 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 1908.4,
+        "year": 2023,
+        "rank": 4,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "1,908.4 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 13.21,
+        "year": 2023,
+        "rank": 16,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "13.21 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 49.8,
+        "year": 2022,
+        "rank": 45,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "49.8% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 18.2,
+        "year": 2023,
+        "rank": 94,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "18.2% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 144444359,
+        "year": 2023,
+        "rank": 9,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "144,444,359",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "SAU",
+    "name": "Saudi Arabia",
+    "region": "Asia",
+    "coordinates": [
+      23.8859,
+      45.0792
+    ],
+    "ranks": {
+      "pm25": 5,
+      "temp_anomaly": 59,
+      "co2_per_capita": 7,
+      "renewables_share": 178,
+      "forest_share": 198,
+      "population": 41
+    },
+    "indicators": {
+      "pm25": {
+        "value": 58.6,
+        "year": 2021,
+        "rank": 5,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "58.6 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.56,
+        "year": 2023,
+        "rank": 59,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.56 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.44,
+        "year": 2023,
+        "rank": 54,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.44 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 662.4,
+        "year": 2023,
+        "rank": 8,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "662.4 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 17.93,
+        "year": 2023,
+        "rank": 7,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "17.93 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 0.5,
+        "year": 2022,
+        "rank": 198,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "0.5% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 1.2,
+        "year": 2023,
+        "rank": 178,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "1.2% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 36947025,
+        "year": 2023,
+        "rank": 41,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "36,947,025",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "SWE",
+    "name": "Sweden",
+    "region": "Europe",
+    "coordinates": [
+      60.1282,
+      18.6435
+    ],
+    "ranks": {
+      "pm25": 165,
+      "temp_anomaly": 53,
+      "co2_per_capita": 95,
+      "renewables_share": 24,
+      "forest_share": 17,
+      "population": 87
+    },
+    "indicators": {
+      "pm25": {
+        "value": 5.8,
+        "year": 2021,
+        "rank": 165,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "5.8 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.62,
+        "year": 2023,
+        "rank": 53,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.62 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.44,
+        "year": 2023,
+        "rank": 55,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.44 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 36.2,
+        "year": 2023,
+        "rank": 75,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "36.2 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 3.44,
+        "year": 2023,
+        "rank": 95,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "3.44 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 68.7,
+        "year": 2022,
+        "rank": 17,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "68.7% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 69.1,
+        "year": 2023,
+        "rank": 24,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "69.1% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 10536338,
+        "year": 2023,
+        "rank": 87,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "10,536,338",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "TUR",
+    "name": "Turkiye",
+    "region": "Asia",
+    "coordinates": [
+      38.9637,
+      35.2433
+    ],
+    "ranks": {
+      "pm25": 33,
+      "temp_anomaly": 72,
+      "co2_per_capita": 72,
+      "renewables_share": 46,
+      "forest_share": 103,
+      "population": 18
+    },
+    "indicators": {
+      "pm25": {
+        "value": 27.2,
+        "year": 2021,
+        "rank": 33,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "27.2 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.44,
+        "year": 2023,
+        "rank": 72,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.44 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.39,
+        "year": 2023,
+        "rank": 74,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.39 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 432.8,
+        "year": 2023,
+        "rank": 14,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "432.8 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 5.04,
+        "year": 2023,
+        "rank": 72,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "5.04 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 29.3,
+        "year": 2022,
+        "rank": 103,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "29.3% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 42.4,
+        "year": 2023,
+        "rank": 46,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "42.4% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 85816199,
+        "year": 2023,
+        "rank": 18,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "85,816,199",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "USA",
+    "name": "United States",
+    "region": "Americas",
+    "coordinates": [
+      37.0902,
+      -95.7129
+    ],
+    "ranks": {
+      "pm25": 142,
+      "temp_anomaly": 84,
+      "co2_per_capita": 12,
+      "renewables_share": 81,
+      "forest_share": 86,
+      "population": 3
+    },
+    "indicators": {
+      "pm25": {
+        "value": 7.8,
+        "year": 2021,
+        "rank": 142,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "7.8 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.32,
+        "year": 2023,
+        "rank": 84,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.32 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.33,
+        "year": 2023,
+        "rank": 96,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.33 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 4853.8,
+        "year": 2023,
+        "rank": 2,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "4,853.8 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 14.28,
+        "year": 2023,
+        "rank": 12,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "14.28 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 33.9,
+        "year": 2022,
+        "rank": 86,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "33.9% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 22.4,
+        "year": 2023,
+        "rank": 81,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "22.4% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 339996563,
+        "year": 2023,
+        "rank": 3,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "339,996,563",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "VNM",
+    "name": "Vietnam",
+    "region": "Asia",
+    "coordinates": [
+      14.0583,
+      108.2772
+    ],
+    "ranks": {
+      "pm25": 36,
+      "temp_anomaly": 98,
+      "co2_per_capita": 94,
+      "renewables_share": 44,
+      "forest_share": 53,
+      "population": 16
+    },
+    "indicators": {
+      "pm25": {
+        "value": 25.8,
+        "year": 2021,
+        "rank": 36,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "25.8 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.18,
+        "year": 2023,
+        "rank": 98,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.18 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.27,
+        "year": 2023,
+        "rank": 120,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.27 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 344.2,
+        "year": 2023,
+        "rank": 17,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "344.2 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 3.48,
+        "year": 2023,
+        "rank": 94,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "3.48 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 47.2,
+        "year": 2022,
+        "rank": 53,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "47.2% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 43.6,
+        "year": 2023,
+        "rank": 44,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "43.6% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 98858950,
+        "year": 2023,
+        "rank": 16,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "98,858,950",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  {
+    "iso3": "ZAF",
+    "name": "South Africa",
+    "region": "Africa",
+    "coordinates": [
+      -30.5595,
+      22.9375
+    ],
+    "ranks": {
+      "pm25": 38,
+      "temp_anomaly": 104,
+      "co2_per_capita": 59,
+      "renewables_share": 102,
+      "forest_share": 159,
+      "population": 24
+    },
+    "indicators": {
+      "pm25": {
+        "value": 24.6,
+        "year": 2021,
+        "rank": 38,
+        "total_ranked": 204,
+        "unit": "\u00b5g/m\u00b3",
+        "formatted": "24.6 \u00b5g/m\u00b3",
+        "source": "Health Effects Institute & IHME",
+        "license": "CC BY 4.0"
+      },
+      "temp_anomaly": {
+        "value": 1.12,
+        "year": 2023,
+        "rank": 104,
+        "total_ranked": 240,
+        "unit": "\u00b0C",
+        "formatted": "+1.12 \u00b0C",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "temp_trend": {
+        "value": 0.29,
+        "year": 2023,
+        "rank": 112,
+        "total_ranked": 240,
+        "unit": "\u00b0C / decade",
+        "formatted": "+0.29 \u00b0C / decade",
+        "source": "Berkeley Earth",
+        "license": "CC BY 4.0"
+      },
+      "co2_total": {
+        "value": 398.2,
+        "year": 2023,
+        "rank": 15,
+        "total_ranked": 210,
+        "unit": "Mt CO2 / year",
+        "formatted": "398.2 Mt CO2 / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "co2_per_capita": {
+        "value": 6.59,
+        "year": 2023,
+        "rank": 59,
+        "total_ranked": 210,
+        "unit": "tonnes CO2 / person / year",
+        "formatted": "6.59 t CO2 / person / yr",
+        "source": "Global Carbon Project",
+        "license": "CC BY 4.0"
+      },
+      "forest_share": {
+        "value": 14.1,
+        "year": 2022,
+        "rank": 159,
+        "total_ranked": 206,
+        "unit": "% of land area",
+        "formatted": "14.1% of land area",
+        "source": "Food and Agriculture Organization (FAO)",
+        "license": "CC BY 4.0 IGO"
+      },
+      "renewables_share": {
+        "value": 15.6,
+        "year": 2023,
+        "rank": 102,
+        "total_ranked": 215,
+        "unit": "% of electricity generation",
+        "formatted": "15.6% of generation",
+        "source": "Ember",
+        "license": "CC BY 4.0"
+      },
+      "population": {
+        "value": 60414495,
+        "year": 2023,
+        "rank": 24,
+        "total_ranked": 237,
+        "unit": "people",
+        "formatted": "60,414,495",
+        "source": "United Nations Population Division",
+        "license": "CC BY 3.0 IGO"
+      }
+    }
+  }
+]
