@@ -114,8 +114,7 @@
             <ul class="se-editorial-nav-list">
               <li><a href="index.html" class="se-editorial-nav-link">Globe</a></li>
               <li><a href="rankings.html" class="se-editorial-nav-link" style="color: var(--se-teal-live); font-weight: 600;">Rankings</a></li>
-              <li><a href="compare.html" class="se-editorial-nav-link">Compare</a></li>
-              <li><a href="data.html" class="se-editorial-nav-link">Data</a></li>
+              <li><a href="sources.html" class="se-editorial-nav-link">Data</a></li>
               <li><a href="methodology.html" class="se-editorial-nav-link">Methodology</a></li>
               <li><a href="about.html" class="se-editorial-nav-link">About</a></li>
             </ul>
@@ -152,7 +151,7 @@
         </div>
         <h1 class="se-country-h1">Planetary Environmental Rankings</h1>
         <p class="se-country-dek">
-          Contemporaneous sovereign leaderboards across annual mean PM2.5 exposure, surface warming anomalies, fossil CO2 emissions, and clean power generation.
+          Open country leaderboards across the Yale EPI 2026 benchmark, annual mean PM2.5 particulate exposure, fossil CO2 emissions, renewable electricity, and forest cover.
         </p>
       </div>
     </section>
@@ -164,13 +163,12 @@
           <div class="se-rank-filter-group">
             <label for="metric-select" style="font-family: var(--se-font-mono); font-size: 0.75rem; text-transform: uppercase; color: var(--se-text-muted); font-weight: 600;">Metric:</label>
             <select id="metric-select" class="se-rank-select" aria-label="Select ranking indicator">
-              <option value="pm25" selected>Annual Mean PM2.5 Exposure (µg/m³)</option>
-              <option value="temp_anomaly">Surface Temperature Anomaly (°C)</option>
-              <option value="temp_trend">30-Year Warming Trend Rate (°C / decade)</option>
+              <option value="epi_score" selected>Yale Environmental Performance Index (2026)</option>
+              <option value="pm25">Annual Mean PM2.5 Exposure (µg/m³)</option>
               <option value="co2_total">Total Territorial Fossil CO2 (Mt CO2)</option>
               <option value="co2_per_capita">Per Capita Fossil CO2 (t CO2 / person)</option>
-              <option value="forest_share">Forest Cover Share (% of land)</option>
               <option value="renewables_share">Renewable Electricity Share (%)</option>
+              <option value="forest_share">Forest Cover Fraction (% of land)</option>
               <option value="population">Resident Population</option>
             </select>
           </div>
@@ -298,17 +296,17 @@
             <a href="methodology.html" class="se-link">Methodology</a> &middot;
             <a href="sources.html" class="se-link">Data Sources</a> &middot;
             <a href="corrections.html" class="se-link">Corrections Log</a> &middot;
-            <a href="known-problems.html" class="se-link">Known Problems</a> &middot;
+            <a href="countries/index.html" class="se-link">All Countries</a> &middot;
             <a href="numbers_ledger.csv" class="se-link" download>Numbers Ledger (CSV)</a> &middot;
             <a href="https://github.com/avnish36singh-arch/signal-earth-portal" class="se-link" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </div>
         <div>
           <div style="font-size: 0.8rem; font-family: var(--se-font-mono); text-transform: uppercase; color: var(--se-text-muted); margin-bottom: 0.5rem;">
-            Attribution &amp; Hosting
+            Open Data Attribution
           </div>
           <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.5rem;">
-            Contains modified Copernicus Climate Change Service information [2026]. Content licensed under CC BY 4.0; code licensed under MIT.
+            Public indicators compiled from World Bank Open Data, Global Carbon Project, Ember Climate, FAO, and Yale CIESIN. Code licensed under MIT.
           </p>
           <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-muted); margin: 0;">
             Hosted on Netlify. Static build with zero cookies, zero trackers, and zero server-side state.
@@ -316,7 +314,7 @@
         </div>
       </div>
       <div class="se-editorial-footer-bottom">
-        <div>&copy; 2026 Signal Earth. Open-access empirical environmental telemetry.</div>
+        <div>&copy; 2026 Signal Earth. Open-access empirical environmental indicators.</div>
         <div><a href="privacy.html" class="se-link">Privacy Policy</a> &middot; <a href="terms.html" class="se-link">Terms of Use</a> &middot; <a href="licenses.html" class="se-link">Licenses</a></div>
       </div>
     </div>
@@ -338,14 +336,13 @@
       var activeRegion = 'all';
 
       var ANCHOR_YEARS = {
-        pm25: 2021,
-        temp_anomaly: 2023,
-        temp_trend: 2023,
-        co2_total: 2023,
-        co2_per_capita: 2023,
-        forest_share: 2022,
-        renewables_share: 2023,
-        population: 2023
+        epi_score: 2026,
+        pm25: 2023,
+        co2_total: 2024,
+        co2_per_capita: 2024,
+        renewables_share: 2024,
+        forest_share: 2024,
+        population: 2024
       };
 
       // Load countries index

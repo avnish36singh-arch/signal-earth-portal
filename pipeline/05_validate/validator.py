@@ -16,13 +16,10 @@ DATA_COUNTRY_DIR = os.path.join(WORKSPACE_ROOT, "data", "country")
 # Physical plausibility bounds
 BOUNDS = {
     "pm25": {"min": 0.0, "max": 250.0, "unit": "µg/m³"},
-    "temp_anomaly": {"min": -5.0, "max": 8.0, "unit": "°C"},
-    "temp_trend": {"min": -1.0, "max": 3.0, "unit": "°C / decade"},
     "co2_total": {"min": 0.0, "max": 15000.0, "unit": "Mt CO2 / year"},
     "co2_per_capita": {"min": 0.0, "max": 80.0, "unit": "tonnes CO2 / person / year"},
     "forest_share": {"min": 0.0, "max": 100.0, "unit": "% of land area"},
     "renewables_share": {"min": 0.0, "max": 100.0, "unit": "% of electricity generation"},
-    "population": {"min": 500, "max": 2000000000, "unit": "people"}
 }
 
 VALID_MISSING_REASONS = {"NOT_REPORTED", "TERRITORY_EXCLUDED", "INSUFFICIENT_QUORUM"}
@@ -61,6 +58,17 @@ def validate_all():
         else:
             seen_iso3.add(iso3)
 
+        # Yale EPI 2026 check
+        epi = cdata.get("yale_epi_2026", {})
+        if epi:
+            epi_score = epi.get("score")
+            if epi_score is not None:
+                if not (0.0 <= epi_score <= 100.0):
+                    errors.append(f"EPI score out of bounds in {iso3}: {epi_score}")
+                epi_rank = epi.get("rank")
+                if epi_rank is not None and not (1 <= epi_rank <= 177):
+                    errors.append(f"EPI rank out of bounds in {iso3}: {epi_rank}")
+
         # Indicator checks
         indicators = cdata.get("indicators", {})
         for ind_key, bound in BOUNDS.items():
@@ -70,24 +78,23 @@ def validate_all():
                 continue
 
             val = ind.get("value")
-            latest_val = ind.get("latest_value", val)
             missing_reason = ind.get("missing_reason")
 
             # Null check: If null, must have missing_reason or be valid null
-            if latest_val is None:
+            if val is None:
                 if missing_reason and missing_reason not in VALID_MISSING_REASONS:
                     errors.append(f"Invalid missing_reason '{missing_reason}' in {iso3} for {ind_key}")
                 continue
 
             # Physical plausibility
             try:
-                numeric_val = float(latest_val)
+                numeric_val = float(val)
                 if numeric_val < bound["min"] or numeric_val > bound["max"]:
                     errors.append(
                         f"Plausibility failure in {iso3} ({name}) for {ind_key}: {numeric_val} outside [{bound['min']}, {bound['max']}]"
                     )
             except (ValueError, TypeError):
-                errors.append(f"Non-numeric value in {iso3} for {ind_key}: {latest_val}")
+                errors.append(f"Non-numeric value in {iso3} for {ind_key}: {val}")
 
             # Staleness check
             year = ind.get("year")

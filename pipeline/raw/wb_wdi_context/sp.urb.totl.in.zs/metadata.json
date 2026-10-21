@@ -1,0 +1,15 @@
+{
+  "indicator_code": "SP.URB.TOTL.IN.ZS",
+  "indicator_name": "Urban population (% of total)",
+  "exact_url": "https://api.worldbank.org/v2/en/indicator/SP.URB.TOTL.IN.ZS?downloadformat=csv",
+  "download_timestamp_utc": "2026-10-21T09:30:02.711695+00:00",
+  "archive_sha256": "de0f8ec9e8824ac9997a5634721d64af6253ff4f3ec66d5b8076034dee60a819",
+  "archive_size_bytes": 160129,
+  "primary_data_file": "API_SP.URB.TOTL.IN.ZS_DS2_en_csv_v2_3467.csv",
+  "unpacked_files": [
+    "Metadata_Indicator_API_SP.URB.TOTL.IN.ZS_DS2_en_csv_v2_3467.csv",
+    "API_SP.URB.TOTL.IN.ZS_DS2_en_csv_v2_3467.csv",
+    "Metadata_Country_API_SP.URB.TOTL.IN.ZS_DS2_en_csv_v2_3467.csv"
+  ],
+  "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+}

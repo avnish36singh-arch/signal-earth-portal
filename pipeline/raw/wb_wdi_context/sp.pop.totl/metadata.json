@@ -1,0 +1,15 @@
+{
+  "indicator_code": "SP.POP.TOTL",
+  "indicator_name": "Population, total",
+  "exact_url": "https://api.worldbank.org/v2/en/indicator/SP.POP.TOTL?downloadformat=csv",
+  "download_timestamp_utc": "2026-10-21T09:30:01.743126+00:00",
+  "archive_sha256": "9c8a27460bb951b2b6e18fe9c01fac3938c78fd6b8862a84240d01f218b649b0",
+  "archive_size_bytes": 90332,
+  "primary_data_file": "API_SP.POP.TOTL_DS2_en_csv_v2_5254.csv",
+  "unpacked_files": [
+    "Metadata_Indicator_API_SP.POP.TOTL_DS2_en_csv_v2_5254.csv",
+    "API_SP.POP.TOTL_DS2_en_csv_v2_5254.csv",
+    "Metadata_Country_API_SP.POP.TOTL_DS2_en_csv_v2_5254.csv"
+  ],
+  "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+}

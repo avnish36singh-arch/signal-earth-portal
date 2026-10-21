@@ -1,0 +1,15 @@
+{
+  "indicator_code": "EN.POP.DNST",
+  "indicator_name": "Population density (people per sq. km)",
+  "exact_url": "https://api.worldbank.org/v2/en/indicator/EN.POP.DNST?downloadformat=csv",
+  "download_timestamp_utc": "2026-10-21T09:30:01.937610+00:00",
+  "archive_sha256": "af817213a49f47d76e12adefe7a86c43edf0ca3f43659f3b02396809305a047b",
+  "archive_size_bytes": 142521,
+  "primary_data_file": "API_EN.POP.DNST_DS2_en_csv_v2_7671.csv",
+  "unpacked_files": [
+    "Metadata_Indicator_API_EN.POP.DNST_DS2_en_csv_v2_7671.csv",
+    "API_EN.POP.DNST_DS2_en_csv_v2_7671.csv",
+    "Metadata_Country_API_EN.POP.DNST_DS2_en_csv_v2_7671.csv"
+  ],
+  "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+}

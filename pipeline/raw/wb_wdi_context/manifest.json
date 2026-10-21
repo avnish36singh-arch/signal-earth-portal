@@ -1,0 +1,77 @@
+[
+  {
+    "indicator_code": "SP.POP.TOTL",
+    "indicator_name": "Population, total",
+    "exact_url": "https://api.worldbank.org/v2/en/indicator/SP.POP.TOTL?downloadformat=csv",
+    "download_timestamp_utc": "2026-10-21T09:30:01.743126+00:00",
+    "archive_sha256": "9c8a27460bb951b2b6e18fe9c01fac3938c78fd6b8862a84240d01f218b649b0",
+    "archive_size_bytes": 90332,
+    "primary_data_file": "API_SP.POP.TOTL_DS2_en_csv_v2_5254.csv",
+    "unpacked_files": [
+      "Metadata_Indicator_API_SP.POP.TOTL_DS2_en_csv_v2_5254.csv",
+      "API_SP.POP.TOTL_DS2_en_csv_v2_5254.csv",
+      "Metadata_Country_API_SP.POP.TOTL_DS2_en_csv_v2_5254.csv"
+    ],
+    "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+  },
+  {
+    "indicator_code": "EN.POP.DNST",
+    "indicator_name": "Population density (people per sq. km)",
+    "exact_url": "https://api.worldbank.org/v2/en/indicator/EN.POP.DNST?downloadformat=csv",
+    "download_timestamp_utc": "2026-10-21T09:30:01.937610+00:00",
+    "archive_sha256": "af817213a49f47d76e12adefe7a86c43edf0ca3f43659f3b02396809305a047b",
+    "archive_size_bytes": 142521,
+    "primary_data_file": "API_EN.POP.DNST_DS2_en_csv_v2_7671.csv",
+    "unpacked_files": [
+      "Metadata_Indicator_API_EN.POP.DNST_DS2_en_csv_v2_7671.csv",
+      "API_EN.POP.DNST_DS2_en_csv_v2_7671.csv",
+      "Metadata_Country_API_EN.POP.DNST_DS2_en_csv_v2_7671.csv"
+    ],
+    "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+  },
+  {
+    "indicator_code": "SP.URB.TOTL.IN.ZS",
+    "indicator_name": "Urban population (% of total)",
+    "exact_url": "https://api.worldbank.org/v2/en/indicator/SP.URB.TOTL.IN.ZS?downloadformat=csv",
+    "download_timestamp_utc": "2026-10-21T09:30:02.711695+00:00",
+    "archive_sha256": "de0f8ec9e8824ac9997a5634721d64af6253ff4f3ec66d5b8076034dee60a819",
+    "archive_size_bytes": 160129,
+    "primary_data_file": "API_SP.URB.TOTL.IN.ZS_DS2_en_csv_v2_3467.csv",
+    "unpacked_files": [
+      "Metadata_Indicator_API_SP.URB.TOTL.IN.ZS_DS2_en_csv_v2_3467.csv",
+      "API_SP.URB.TOTL.IN.ZS_DS2_en_csv_v2_3467.csv",
+      "Metadata_Country_API_SP.URB.TOTL.IN.ZS_DS2_en_csv_v2_3467.csv"
+    ],
+    "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+  },
+  {
+    "indicator_code": "NY.GDP.PCAP.CD",
+    "indicator_name": "GDP per capita (current US$)",
+    "exact_url": "https://api.worldbank.org/v2/en/indicator/NY.GDP.PCAP.CD?downloadformat=csv",
+    "download_timestamp_utc": "2026-10-21T09:30:02.892359+00:00",
+    "archive_sha256": "cbbff0498eb1f82ed3704e95388a402b6d6796c2f398de2cc9631ead7a0cac57",
+    "archive_size_bytes": 147658,
+    "primary_data_file": "API_NY.GDP.PCAP.CD_DS2_en_csv_v2_1529.csv",
+    "unpacked_files": [
+      "Metadata_Indicator_API_NY.GDP.PCAP.CD_DS2_en_csv_v2_1529.csv",
+      "API_NY.GDP.PCAP.CD_DS2_en_csv_v2_1529.csv",
+      "Metadata_Country_API_NY.GDP.PCAP.CD_DS2_en_csv_v2_1529.csv"
+    ],
+    "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+  },
+  {
+    "indicator_code": "AG.LND.TOTL.K2",
+    "indicator_name": "Land area (sq. km)",
+    "exact_url": "https://api.worldbank.org/v2/en/indicator/AG.LND.TOTL.K2?downloadformat=csv",
+    "download_timestamp_utc": "2026-10-21T09:30:05.721018+00:00",
+    "archive_sha256": "99741e783cfe6af48f98c9056bfb70856272aa45e5d115154556d86f18108d8d",
+    "archive_size_bytes": 24700,
+    "primary_data_file": "API_AG.LND.TOTL.K2_DS2_en_csv_v2_2282.csv",
+    "unpacked_files": [
+      "Metadata_Indicator_API_AG.LND.TOTL.K2_DS2_en_csv_v2_2282.csv",
+      "API_AG.LND.TOTL.K2_DS2_en_csv_v2_2282.csv",
+      "Metadata_Country_API_AG.LND.TOTL.K2_DS2_en_csv_v2_2282.csv"
+    ],
+    "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+  }
+]

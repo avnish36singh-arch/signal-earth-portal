@@ -74,6 +74,35 @@
 
     <div class="se-contact-stack">
       
+      <!-- Revision 21 October 2026: Multi-Country Data Layer & Globe Visualization -->
+      <article class="se-card-panel">
+        <span class="section-kicker">Correction : 21 October 2026 (Global Open Data Layer &amp; Globe Reconstruction)</span>
+        <h2 class="editorial-headline se-terms-h2">Multi-Country Data Layer Completion &amp; 3D Globe Polygon Coloring Fix</h2>
+        <p class="se-content-p">
+          Fixed the initial portal state where only India displayed evaluated metrics while the other 47 canonical countries displayed "Unranked" and the 3D planetary globe rendered without country polygon fills:
+        </p>
+        <ul class="se-list-bullet-clean">
+          <li>
+            <strong>Real Multi-Country Open Data Pipeline:</strong> Ingested, cleaned, and synthesized primary indicator series for all 48 canonical countries from official upstream releases: World Bank PM2.5 (State of Global Air 2024 / GBD 2023, CC BY 4.0), Global Carbon Project (Global Carbon Budget 2025 / ESSD, CC BY 4.0), Ember Climate (Global Electricity Review, CC BY 4.0), FAO Forest Resources Assessment / World Bank (CC BY 4.0), Yale Environmental Performance Index 2026 scorecard (CC BY-NC-SA 4.0), and World Bank World Development Indicators (WDI, CC BY 4.0).
+          </li>
+          <li>
+            <strong>Strict Null Governance:</strong> Missing country data points are stored strictly as <code>null</code> with explicit reason codes (e.g. <code>TERRITORY_EXCLUDED</code>, <code>NOT_REPORTED</code>) and displayed as "No data", never zero and never synthetic.
+          </li>
+          <li>
+            <strong>Globe Visualization &amp; Colourblind-Safe Scale:</strong> Rebuilt <code>assets/globe-country.js</code> to colour country polygons by the active metric using a perceptually uniform, colourblind-safe sequential scale (Cividis). Countries with no data are assigned a distinct neutral fill (<code>#2A2F3D</code>). The globe defaults to the Yale EPI 2026 score layer. Added flat 2D fallback map for environments without WebGL acceleration.
+          </li>
+          <li>
+            <strong>Homepage Top 10 Panel &amp; Multi-Year Anchor:</strong> Replaced the homepage country table with a compact Top 10 panel showing rank, country, value, and year with a Highest/Lowest toggle. Whenever ranked values span differing observation years, an explicit multi-year anchor note is displayed.
+          </li>
+          <li>
+            <strong>Standalone Accessible Directory:</strong> Relocated the complete alphabetical 48-country directory to <a href="countries/index.html" class="se-link"><strong>/countries/</strong></a>, accessible to screen readers, keyboard navigation, and search engines.
+          </li>
+          <li>
+            <strong>Temperature Layer &amp; Copernicus Attribution Removal:</strong> Completely eliminated the temperature anomaly layer and Copernicus attribution.
+          </li>
+        </ul>
+      </article>
+
       <!-- Revision October 2026 Comprehensive Scientific Audit -->
       <article class="se-card-panel">
         <span class="section-kicker">Revision : October 2026 (Phase 1 Rigorous Audit)</span>
@@ -189,24 +218,24 @@
             Signal Earth
           </div>
           <p style="font-size: 0.9rem; line-height: 1.6; color: var(--se-text-secondary); max-width: 50ch; margin: 0 0 1rem;">
-            Avnish Singh &middot; Civil Engineering undergraduate, HBTU Kanpur, focusing on environmental engineering &middot; Contact: <a href="mailto:avnish36singh@gmail.com" class="se-link">avnish36singh@gmail.com</a>
+            Avnish Singh &middot; Undergraduate civil engineering student at HBTU Kanpur &middot; Contact: <a href="mailto:avnish36singh@gmail.com" class="se-link">avnish36singh@gmail.com</a>
           </p>
           <div style="font-size: 0.85rem;">
             <a href="credits.html" class="se-link">How to cite</a> &middot;
             <a href="methodology.html" class="se-link">Methodology</a> &middot;
             <a href="sources.html" class="se-link">Data Sources</a> &middot;
             <a href="corrections.html" class="se-link">Corrections Log</a> &middot;
-            <a href="known-problems.html" class="se-link">Known Problems</a> &middot;
+            <a href="countries/index.html" class="se-link">All Countries</a> &middot;
             <a href="numbers_ledger.csv" class="se-link" download>Numbers Ledger (CSV)</a> &middot;
             <a href="https://github.com/avnish36singh-arch/signal-earth-portal" class="se-link" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </div>
         <div>
           <div style="font-size: 0.8rem; font-family: var(--se-font-mono); text-transform: uppercase; color: var(--se-text-muted); margin-bottom: 0.5rem;">
-            Attribution &amp; Hosting
+            Open Data Attribution
           </div>
           <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-secondary); margin: 0 0 0.5rem;">
-            Contains modified Copernicus Climate Change Service information [2026]. Content licensed under CC BY 4.0; code licensed under MIT.
+            Public indicators compiled from World Bank Open Data, Global Carbon Project, Ember Climate, FAO, and Yale CIESIN. Code licensed under MIT.
           </p>
           <p style="font-size: 0.82rem; line-height: 1.5; color: var(--se-text-muted); margin: 0;">
             Hosted on Netlify. Static build with zero cookies, zero trackers, and zero server-side state.
@@ -214,7 +243,7 @@
         </div>
       </div>
       <div class="se-editorial-footer-bottom">
-        <div>&copy; 2026 Signal Earth. Open-access empirical environmental telemetry.</div>
+        <div>&copy; 2026 Signal Earth. Open-access empirical environmental indicators.</div>
         <div><a href="privacy.html" class="se-link">Privacy Policy</a> &middot; <a href="terms.html" class="se-link">Terms of Use</a> &middot; <a href="licenses.html" class="se-link">Licenses</a></div>
       </div>
     </div>

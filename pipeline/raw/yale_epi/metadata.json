@@ -1,0 +1,15 @@
+{
+  "source_id": "yale_epi_2026",
+  "name": "Yale Environmental Performance Index (EPI 2026)",
+  "custodial_agency": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+  "exact_url": "https://epi.yale.edu/",
+  "technical_appendix_url": "https://epi.yale.edu/",
+  "download_timestamp_utc": "2026-10-21T09:30:00Z",
+  "primary_data_file": "yale_epi_2026_scorecard.csv",
+  "licence": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+  "commercial_restriction": true,
+  "sharealike_requirement": true,
+  "redistribution_policy": "Approved summary scorecard extract only. Do not redistribute full raw dataset. Do not merge across historical editions.",
+  "total_ranked_countries": 177,
+  "methodology_disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+}

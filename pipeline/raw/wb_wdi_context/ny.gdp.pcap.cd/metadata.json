@@ -1,0 +1,15 @@
+{
+  "indicator_code": "NY.GDP.PCAP.CD",
+  "indicator_name": "GDP per capita (current US$)",
+  "exact_url": "https://api.worldbank.org/v2/en/indicator/NY.GDP.PCAP.CD?downloadformat=csv",
+  "download_timestamp_utc": "2026-10-21T09:30:02.892359+00:00",
+  "archive_sha256": "cbbff0498eb1f82ed3704e95388a402b6d6796c2f398de2cc9631ead7a0cac57",
+  "archive_size_bytes": 147658,
+  "primary_data_file": "API_NY.GDP.PCAP.CD_DS2_en_csv_v2_1529.csv",
+  "unpacked_files": [
+    "Metadata_Indicator_API_NY.GDP.PCAP.CD_DS2_en_csv_v2_1529.csv",
+    "API_NY.GDP.PCAP.CD_DS2_en_csv_v2_1529.csv",
+    "Metadata_Country_API_NY.GDP.PCAP.CD_DS2_en_csv_v2_1529.csv"
+  ],
+  "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+}

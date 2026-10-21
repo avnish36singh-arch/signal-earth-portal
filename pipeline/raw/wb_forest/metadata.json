@@ -1,0 +1,15 @@
+{
+  "source_id": "wb_forest",
+  "name": "World Bank Forest Area Share of Land Area (AG.LND.FRST.ZS)",
+  "exact_url": "https://api.worldbank.org/v2/en/indicator/AG.LND.FRST.ZS?downloadformat=csv",
+  "download_timestamp_utc": "2026-10-21T09:09:23.095544+00:00",
+  "archive_filename": "downloaded_archive.zip",
+  "archive_sha256": "bfbb0a800f30f9651f6cf1d587ad88fbb0e6acd9c69011552e02b19686b98ac0",
+  "archive_size_bytes": 77176,
+  "unpacked_files": [
+    "Metadata_Indicator_API_AG.LND.FRST.ZS_DS2_en_csv_v2_811.csv",
+    "API_AG.LND.FRST.ZS_DS2_en_csv_v2_811.csv",
+    "Metadata_Country_API_AG.LND.FRST.ZS_DS2_en_csv_v2_811.csv"
+  ],
+  "primary_data_file": "Metadata_Indicator_API_AG.LND.FRST.ZS_DS2_en_csv_v2_811.csv"
+}

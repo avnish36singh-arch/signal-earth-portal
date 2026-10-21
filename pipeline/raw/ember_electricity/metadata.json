@@ -1,0 +1,10 @@
+{
+  "source_id": "ember_electricity",
+  "name": "Ember Yearly Electricity Data",
+  "exact_url": "https://files.ember-energy.org/public-downloads/yearly_full_release_long_format.csv",
+  "download_timestamp_utc": "2026-10-21T09:09:22.844771+00:00",
+  "primary_data_file": "yearly_full_release_long_format.csv",
+  "sha256": "259e1095ee8ffeaf0aff37ad557916ae1823a2da13312da50ba4cec6b4574c3b",
+  "size_bytes": 49079981,
+  "codebook": null
+}

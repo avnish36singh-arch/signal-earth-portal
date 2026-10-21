@@ -1,0 +1,7850 @@
+{
+  "ABW": {
+    "iso3": "ABW",
+    "country_name": "Aruba",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 108785.0,
+      "formatted_value": "108,785",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 599.972222222222,
+      "formatted_value": "600.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 61.7485249229588,
+      "formatted_value": "61.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 38590.5650288641,
+      "formatted_value": "$38,591",
+      "year": 2024,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 180.0,
+      "formatted_value": "180",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "AFG": {
+    "iso3": "AFG",
+    "country_name": "Afghanistan",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 43844111.0,
+      "formatted_value": "43,844,111",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 65.3871977676586,
+      "formatted_value": "65.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 25.9401644699898,
+      "formatted_value": "25.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 416.871146273728,
+      "formatted_value": "$417",
+      "year": 2024,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 652230.0,
+      "formatted_value": "652,230",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "AGO": {
+    "iso3": "AGO",
+    "country_name": "Angola",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 39040039.0,
+      "formatted_value": "39,040,039",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 30.3889059116066,
+      "formatted_value": "30.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 71.4615915176085,
+      "formatted_value": "71.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 3129.47662331063,
+      "formatted_value": "$3,129",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 1246700.0,
+      "formatted_value": "1,246,700",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "ALB": {
+    "iso3": "ALB",
+    "country_name": "Albania",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 2349580.0,
+      "formatted_value": "2,349,580",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 86.756496350365,
+      "formatted_value": "86.8 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 58.871474331067,
+      "formatted_value": "58.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 12998.147869552,
+      "formatted_value": "$12,998",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 27400.0,
+      "formatted_value": "27,400",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "AND": {
+    "iso3": "AND",
+    "country_name": "Andorra",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 82904.0,
+      "formatted_value": "82,904",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 175.081196581197,
+      "formatted_value": "175.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 88.9492672283129,
+      "formatted_value": "88.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 54291.5026031052,
+      "formatted_value": "$54,292",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 468.0,
+      "formatted_value": "468",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "ARE": {
+    "iso3": "ARE",
+    "country_name": "United Arab Emirates",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 11513149.0,
+      "formatted_value": "11,513,149",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 154.694452266967,
+      "formatted_value": "154.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 85.9617641324017,
+      "formatted_value": "86.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 50273.5126243239,
+      "formatted_value": "$50,274",
+      "year": 2024,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 71020.0,
+      "formatted_value": "71,020",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "ARG": {
+    "iso3": "ARG",
+    "country_name": "Argentina",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 45851378.0,
+      "formatted_value": "45,851,378",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 16.6976014820824,
+      "formatted_value": "16.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 92.3519221615173,
+      "formatted_value": "92.4%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 14898.0885943842,
+      "formatted_value": "$14,898",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 2736690.0,
+      "formatted_value": "2,736,690",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "ARM": {
+    "iso3": "ARM",
+    "country_name": "Armenia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 3086700.0,
+      "formatted_value": "3,086,700",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 107.573210777534,
+      "formatted_value": "107.6 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 65.9287015589872,
+      "formatted_value": "65.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 9474.01849300368,
+      "formatted_value": "$9,474",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 28199.4,
+      "formatted_value": "28,199",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "ASM": {
+    "iso3": "ASM",
+    "country_name": "American Samoa",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 46029.0,
+      "formatted_value": "46,029",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 235.0,
+      "formatted_value": "235.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 80.5123508239818,
+      "formatted_value": "80.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 18017.4589383973,
+      "formatted_value": "$18,017",
+      "year": 2022,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 199.0,
+      "formatted_value": "199",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "ATG": {
+    "iso3": "ATG",
+    "country_name": "Antigua and Barbuda",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 94209.0,
+      "formatted_value": "94,209",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 212.973940376745,
+      "formatted_value": "213.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 24.3334834700661,
+      "formatted_value": "24.3%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 24819.2454680158,
+      "formatted_value": "$24,819",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 440.298,
+      "formatted_value": "440",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "AUS": {
+    "iso3": "AUS",
+    "country_name": "Australia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 27614411.0,
+      "formatted_value": "27,614,411",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 3.53710598992988,
+      "formatted_value": "3.5 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 87.7192672666333,
+      "formatted_value": "87.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 65129.7227990563,
+      "formatted_value": "$65,130",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 7688287.0,
+      "formatted_value": "7,688,287",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "AUT": {
+    "iso3": "AUT",
+    "country_name": "Austria",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 9208163.0,
+      "formatted_value": "9,208,163",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 111.221303926321,
+      "formatted_value": "111.2 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 69.7152152366353,
+      "formatted_value": "69.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 62930.0351324599,
+      "formatted_value": "$62,930",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 82520.0,
+      "formatted_value": "82,520",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "AZE": {
+    "iso3": "AZE",
+    "country_name": "Azerbaijan",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 10246996.0,
+      "formatted_value": "10,246,996",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 123.446218995765,
+      "formatted_value": "123.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 58.6371024281175,
+      "formatted_value": "58.6%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 7410.72281660142,
+      "formatted_value": "$7,411",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 82650.0,
+      "formatted_value": "82,650",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "BDI": {
+    "iso3": "BDI",
+    "country_name": "Burundi",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 14390003.0,
+      "formatted_value": "14,390,003",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 547.032165109034,
+      "formatted_value": "547.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 25.6870184681663,
+      "formatted_value": "25.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 233.823013385395,
+      "formatted_value": "$234",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 25680.0,
+      "formatted_value": "25,680",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "BEL": {
+    "iso3": "BEL",
+    "country_name": "Belgium",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 11941781.0,
+      "formatted_value": "11,941,781",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 388.880581303604,
+      "formatted_value": "388.9 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 87.6726083114649,
+      "formatted_value": "87.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 60750.2735864647,
+      "formatted_value": "$60,750",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 30494.22,
+      "formatted_value": "30,494",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "BEN": {
+    "iso3": "BEN",
+    "country_name": "Benin",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 14814460.0,
+      "formatted_value": "14,814,460",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 128.261120964881,
+      "formatted_value": "128.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 53.3620073968188,
+      "formatted_value": "53.4%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 1658.27312662991,
+      "formatted_value": "$1,658",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 112760.0,
+      "formatted_value": "112,760",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "BFA": {
+    "iso3": "BFA",
+    "country_name": "Burkina Faso",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 24074580.0,
+      "formatted_value": "24,074,580",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 86.070105994152,
+      "formatted_value": "86.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 28.9226360719085,
+      "formatted_value": "28.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 1147.57131635601,
+      "formatted_value": "$1,148",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 273600.0,
+      "formatted_value": "273,600",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "BGD": {
+    "iso3": "BGD",
+    "country_name": "Bangladesh",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 175686899.0,
+      "formatted_value": "175,686,899",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 1333.35149419989,
+      "formatted_value": "1333.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 33.2395847043975,
+      "formatted_value": "33.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 2597.34352335275,
+      "formatted_value": "$2,597",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 130170.0,
+      "formatted_value": "130,170",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "BGR": {
+    "iso3": "BGR",
+    "country_name": "Bulgaria",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 6433302.0,
+      "formatted_value": "6,433,302",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 59.3351234340457,
+      "formatted_value": "59.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 74.1727501848475,
+      "formatted_value": "74.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 20328.1667065538,
+      "formatted_value": "$20,328",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 108560.0,
+      "formatted_value": "108,560",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "BHR": {
+    "iso3": "BHR",
+    "country_name": "Bahrain",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 1600366.0,
+      "formatted_value": "1,600,366",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 1985.8375,
+      "formatted_value": "1985.8 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 100.0,
+      "formatted_value": "100.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 30596.5794898885,
+      "formatted_value": "$30,597",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 800.0,
+      "formatted_value": "800",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "BHS": {
+    "iso3": "BHS",
+    "country_name": "Bahamas, The",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 403033.0,
+      "formatted_value": "403,033",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 40.0882117882118,
+      "formatted_value": "40.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 81.3309172016028,
+      "formatted_value": "81.3%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 39455.4466548546,
+      "formatted_value": "$39,455",
+      "year": 2024,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 10010.0,
+      "formatted_value": "10,010",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "BIH": {
+    "iso3": "BIH",
+    "country_name": "Bosnia and Herzegovina",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 3140095.0,
+      "formatted_value": "3,140,095",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 61.80181640625,
+      "formatted_value": "61.8 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 52.6915440779561,
+      "formatted_value": "52.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 10381.8460703874,
+      "formatted_value": "$10,382",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 51200.0,
+      "formatted_value": "51,200",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "BLR": {
+    "iso3": "BLR",
+    "country_name": "Belarus",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 9085991.0,
+      "formatted_value": "9,085,991",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 44.9936396421252,
+      "formatted_value": "45.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 79.4945820380127,
+      "formatted_value": "79.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 10279.2547190723,
+      "formatted_value": "$10,279",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 202976.0,
+      "formatted_value": "202,976",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "BLZ": {
+    "iso3": "BLZ",
+    "country_name": "Belize",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 422924.0,
+      "formatted_value": "422,924",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 18.2846120122753,
+      "formatted_value": "18.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 41.5621435428272,
+      "formatted_value": "41.6%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 7865.47937690933,
+      "formatted_value": "$7,865",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 22810.0,
+      "formatted_value": "22,810",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "BMU": {
+    "iso3": "BMU",
+    "country_name": "Bermuda",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 64555.0,
+      "formatted_value": "64,555",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 1196.96296296296,
+      "formatted_value": "1197.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 100.0,
+      "formatted_value": "100.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 142250.433195123,
+      "formatted_value": "$142,250",
+      "year": 2024,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 54.0,
+      "formatted_value": "54",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "BOL": {
+    "iso3": "BOL",
+    "country_name": "Bolivia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 12581843.0,
+      "formatted_value": "12,581,843",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 11.4097266273871,
+      "formatted_value": "11.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 71.5631037265869,
+      "formatted_value": "71.6%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 5147.81081955367,
+      "formatted_value": "$5,148",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 1087959.02,
+      "formatted_value": "1,087,959",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "BRA": {
+    "iso3": "BRA",
+    "country_name": "Brazil",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 212812405.0,
+      "formatted_value": "212,812,405",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 25.3643242396035,
+      "formatted_value": "25.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 88.1772996487898,
+      "formatted_value": "88.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 10713.2856869511,
+      "formatted_value": "$10,713",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 8358140.0,
+      "formatted_value": "8,358,140",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "BRB": {
+    "iso3": "BRB",
+    "country_name": "Barbados",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 282623.0,
+      "formatted_value": "282,623",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 655.375870069606,
+      "formatted_value": "655.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 59.6996239887007,
+      "formatted_value": "59.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 28364.8181499736,
+      "formatted_value": "$28,365",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 431.0,
+      "formatted_value": "431",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "BRN": {
+    "iso3": "BRN",
+    "country_name": "Brunei Darussalam",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 466330.0,
+      "formatted_value": "466,330",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 87.8028462998102,
+      "formatted_value": "87.8 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 75.0109886586819,
+      "formatted_value": "75.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 32234.6428368582,
+      "formatted_value": "$32,235",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 5270.0,
+      "formatted_value": "5,270",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "BTN": {
+    "iso3": "BTN",
+    "country_name": "Bhutan",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 796682.0,
+      "formatted_value": "796,682",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 20.7531200839014,
+      "formatted_value": "20.8 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 43.4301832473753,
+      "formatted_value": "43.4%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 4492.78400306618,
+      "formatted_value": "$4,493",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 38140.0,
+      "formatted_value": "38,140",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "BWA": {
+    "iso3": "BWA",
+    "country_name": "Botswana",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 2562122.0,
+      "formatted_value": "2,562,122",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 4.44857163022956,
+      "formatted_value": "4.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 67.9559561532102,
+      "formatted_value": "68.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 7778.1151090571,
+      "formatted_value": "$7,778",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 566730.0,
+      "formatted_value": "566,730",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "CAF": {
+    "iso3": "CAF",
+    "country_name": "Central African Republic",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 5513282.0,
+      "formatted_value": "5,513,282",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 8.55675944653119,
+      "formatted_value": "8.6 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 44.5532156681816,
+      "formatted_value": "44.6%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 556.131398031455,
+      "formatted_value": "$556",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 622980.0,
+      "formatted_value": "622,980",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "CAN": {
+    "iso3": "CAN",
+    "country_name": "Canada",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 41651653.0,
+      "formatted_value": "41,651,653",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 4.69492973932436,
+      "formatted_value": "4.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 82.8757020253886,
+      "formatted_value": "82.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 55697.6639660837,
+      "formatted_value": "$55,698",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 8788700.0,
+      "formatted_value": "8,788,700",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "CHE": {
+    "iso3": "CHE",
+    "country_name": "Switzerland",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 9092436.0,
+      "formatted_value": "9,092,436",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 227.933848026418,
+      "formatted_value": "227.9 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 85.7272157802756,
+      "formatted_value": "85.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 114769.012314293,
+      "formatted_value": "$114,769",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 39509.63,
+      "formatted_value": "39,510",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "CHI": {
+    "iso3": "CHI",
+    "country_name": "Channel Islands",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 168466.0,
+      "formatted_value": "168,466",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 842.126262626263,
+      "formatted_value": "842.1 people / km\u00b2",
+      "year": 2021,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 32.6430856346098,
+      "formatted_value": "32.6%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 74585.5224096294,
+      "formatted_value": "$74,586",
+      "year": 2023,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 198.0,
+      "formatted_value": "198",
+      "year": 2021,
+      "unit": "km\u00b2"
+    }
+  },
+  "CHL": {
+    "iso3": "CHL",
+    "country_name": "Chile",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 19859921.0,
+      "formatted_value": "19,859,921",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 26.6360096771031,
+      "formatted_value": "26.6 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 89.1772830019223,
+      "formatted_value": "89.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 17994.5911957485,
+      "formatted_value": "$17,995",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 742031.98,
+      "formatted_value": "742,032",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "CHN": {
+    "iso3": "CHN",
+    "country_name": "China",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 1406585000.0,
+      "formatted_value": "1,406,585,000",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 150.079195075526,
+      "formatted_value": "150.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 66.3429910348272,
+      "formatted_value": "66.3%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 13861.970224368,
+      "formatted_value": "$13,862",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 9388210.0,
+      "formatted_value": "9,388,210",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "CIV": {
+    "iso3": "CIV",
+    "country_name": "Cote d'Ivoire",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 32711547.0,
+      "formatted_value": "32,711,547",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 100.422106918239,
+      "formatted_value": "100.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 54.5489501450761,
+      "formatted_value": "54.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 3050.10202257321,
+      "formatted_value": "$3,050",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 318000.0,
+      "formatted_value": "318,000",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "CMR": {
+    "iso3": "CMR",
+    "country_name": "Cameroon",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 29879337.0,
+      "formatted_value": "29,879,337",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 61.6101711408686,
+      "formatted_value": "61.6 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 55.6692041661323,
+      "formatted_value": "55.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 1972.3815800786,
+      "formatted_value": "$1,972",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 472710.0,
+      "formatted_value": "472,710",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "COD": {
+    "iso3": "COD",
+    "country_name": "Congo, Dem. Rep.",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 112832473.0,
+      "formatted_value": "112,832,473",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 48.2019651088419,
+      "formatted_value": "48.2 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 45.1135633042151,
+      "formatted_value": "45.1%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 806.776000708534,
+      "formatted_value": "$807",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 2267050.0,
+      "formatted_value": "2,267,050",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "COG": {
+    "iso3": "COG",
+    "country_name": "Congo, Rep.",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 6484437.0,
+      "formatted_value": "6,484,437",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 18.544541727672,
+      "formatted_value": "18.5 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 64.1236534817412,
+      "formatted_value": "64.1%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 2514.73393584747,
+      "formatted_value": "$2,515",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 341500.0,
+      "formatted_value": "341,500",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "COL": {
+    "iso3": "COL",
+    "country_name": "Colombia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 53425635.0,
+      "formatted_value": "53,425,635",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 47.6668436232537,
+      "formatted_value": "47.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 78.7827914751151,
+      "formatted_value": "78.8%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 8561.62091854449,
+      "formatted_value": "$8,562",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 1109500.0,
+      "formatted_value": "1,109,500",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "COM": {
+    "iso3": "COM",
+    "country_name": "Comoros",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 882847.0,
+      "formatted_value": "882,847",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 463.511793335829,
+      "formatted_value": "463.5 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 33.941547481361,
+      "formatted_value": "33.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 2055.75921566281,
+      "formatted_value": "$2,056",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 1869.7,
+      "formatted_value": "1,870",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "CPV": {
+    "iso3": "CPV",
+    "country_name": "Cabo Verde",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 527326.0,
+      "formatted_value": "527,326",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 130.242431761787,
+      "formatted_value": "130.2 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 77.6300668010068,
+      "formatted_value": "77.6%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 5796.47207860911,
+      "formatted_value": "$5,796",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 4030.0,
+      "formatted_value": "4,030",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "CRI": {
+    "iso3": "CRI",
+    "country_name": "Costa Rica",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 5152950.0,
+      "formatted_value": "5,152,950",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 101.461827531646,
+      "formatted_value": "101.5 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 79.7268137993004,
+      "formatted_value": "79.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 19970.0989059622,
+      "formatted_value": "$19,970",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 50560.0,
+      "formatted_value": "50,560",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "CUB": {
+    "iso3": "CUB",
+    "country_name": "Cuba",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 10937203.0,
+      "formatted_value": "10,937,203",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 105.778256262042,
+      "formatted_value": "105.8 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 77.2270774821152,
+      "formatted_value": "77.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 9605.27914559614,
+      "formatted_value": "$9,605",
+      "year": 2020,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 103800.0,
+      "formatted_value": "103,800",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "CUW": {
+    "iso3": "CUW",
+    "country_name": "Curacao",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 156263.0,
+      "formatted_value": "156,263",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 351.277027027027,
+      "formatted_value": "351.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 91.4727714986125,
+      "formatted_value": "91.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 22832.895498987,
+      "formatted_value": "$22,833",
+      "year": 2024,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 444.0,
+      "formatted_value": "444",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "CYM": {
+    "iso3": "CYM",
+    "country_name": "Cayman Islands",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 75844.0,
+      "formatted_value": "75,844",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 310.2375,
+      "formatted_value": "310.2 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 100.0,
+      "formatted_value": "100.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 104292.900672109,
+      "formatted_value": "$104,293",
+      "year": 2024,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 240.0,
+      "formatted_value": "240",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "CYP": {
+    "iso3": "CYP",
+    "country_name": "Cyprus",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 1370754.0,
+      "formatted_value": "1,370,754",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 147.000216450216,
+      "formatted_value": "147.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 66.6950270703775,
+      "formatted_value": "66.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 41783.08984375,
+      "formatted_value": "$41,783",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 9240.0,
+      "formatted_value": "9,240",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "CZE": {
+    "iso3": "CZE",
+    "country_name": "Czechia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 10886878.0,
+      "formatted_value": "10,886,878",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 141.338237020958,
+      "formatted_value": "141.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 72.8754367116112,
+      "formatted_value": "72.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 35917.2724081665,
+      "formatted_value": "$35,917",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 77155.54,
+      "formatted_value": "77,156",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "DEU": {
+    "iso3": "DEU",
+    "country_name": "Germany",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 83491249.0,
+      "formatted_value": "83,491,249",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 239.008078871305,
+      "formatted_value": "239.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 82.13822205362,
+      "formatted_value": "82.1%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 60496.4350820414,
+      "formatted_value": "$60,496",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 349430.0,
+      "formatted_value": "349,430",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "DJI": {
+    "iso3": "DJI",
+    "country_name": "Djibouti",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 1184076.0,
+      "formatted_value": "1,184,076",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 50.4194132873167,
+      "formatted_value": "50.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 72.9758660686475,
+      "formatted_value": "73.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 3905.604954681,
+      "formatted_value": "$3,906",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 23180.0,
+      "formatted_value": "23,180",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "DMA": {
+    "iso3": "DMA",
+    "country_name": "Dominica",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 65871.0,
+      "formatted_value": "65,871",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 88.155792276964,
+      "formatted_value": "88.2 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 73.9861616678942,
+      "formatted_value": "74.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 10989.0431185083,
+      "formatted_value": "$10,989",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 751.0,
+      "formatted_value": "751",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "DNK": {
+    "iso3": "DNK",
+    "country_name": "Denmark",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 6009169.0,
+      "formatted_value": "6,009,169",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 149.4248,
+      "formatted_value": "149.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 88.8458435892689,
+      "formatted_value": "88.8%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 76970.1535217919,
+      "formatted_value": "$76,970",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 40000.0,
+      "formatted_value": "40,000",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "DOM": {
+    "iso3": "DOM",
+    "country_name": "Dominican Republic",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 11520487.0,
+      "formatted_value": "11,520,487",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 237.095984440855,
+      "formatted_value": "237.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 72.517694062591,
+      "formatted_value": "72.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 11059.2081531834,
+      "formatted_value": "$11,059",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 48198.02,
+      "formatted_value": "48,198",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "DZA": {
+    "iso3": "DZA",
+    "country_name": "Algeria",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 47435312.0,
+      "formatted_value": "47,435,312",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 19.6555073181791,
+      "formatted_value": "19.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 75.8187358069877,
+      "formatted_value": "75.8%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 6051.00322704182,
+      "formatted_value": "$6,051",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 2381740.0,
+      "formatted_value": "2,381,740",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "ECU": {
+    "iso3": "ECU",
+    "country_name": "Ecuador",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 18289896.0,
+      "formatted_value": "18,289,896",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 73.020929296183,
+      "formatted_value": "73.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 63.3918189058262,
+      "formatted_value": "63.4%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 7125.27618527738,
+      "formatted_value": "$7,125",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 248360.0,
+      "formatted_value": "248,360",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "EGY": {
+    "iso3": "EGY",
+    "country_name": "Egypt, Arab Rep.",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 118365995.0,
+      "formatted_value": "118,365,995",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 117.070930734844,
+      "formatted_value": "117.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 42.9043204925248,
+      "formatted_value": "42.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 3085.80712036204,
+      "formatted_value": "$3,086",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 995450.0,
+      "formatted_value": "995,450",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "ERI": {
+    "iso3": "ERI",
+    "country_name": "Eritrea",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 3607003.0,
+      "formatted_value": "3,607,003",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 29.2682367549669,
+      "formatted_value": "29.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 34.5404504255216,
+      "formatted_value": "34.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 688.68165957684,
+      "formatted_value": "$689",
+      "year": 2011,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 120800.0,
+      "formatted_value": "120,800",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "ESP": {
+    "iso3": "ESP",
+    "country_name": "Spain",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 49355143.0,
+      "formatted_value": "49,355,143",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 97.7591687574834,
+      "formatted_value": "97.8 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 80.5149251039138,
+      "formatted_value": "80.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 38627.2472148623,
+      "formatted_value": "$38,627",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 499685.509,
+      "formatted_value": "499,686",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "EST": {
+    "iso3": "EST",
+    "country_name": "Estonia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 1366475.0,
+      "formatted_value": "1,366,475",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 32.1165691551603,
+      "formatted_value": "32.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 70.7208526598129,
+      "formatted_value": "70.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 34417.6320815138,
+      "formatted_value": "$34,418",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 42730.0,
+      "formatted_value": "42,730",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "ETH": {
+    "iso3": "ETH",
+    "country_name": "Ethiopia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 135472051.0,
+      "formatted_value": "135,472,051",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 117.686187969574,
+      "formatted_value": "117.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 24.1096952088946,
+      "formatted_value": "24.1%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 932.729352775179,
+      "formatted_value": "$933",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 1122134.8,
+      "formatted_value": "1,122,135",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "FIN": {
+    "iso3": "FIN",
+    "country_name": "Finland",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 5646436.0,
+      "formatted_value": "5,646,436",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 18.4865493421053,
+      "formatted_value": "18.5 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 74.5247844319848,
+      "formatted_value": "74.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 56148.580949046,
+      "formatted_value": "$56,149",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 304000.0,
+      "formatted_value": "304,000",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "FJI": {
+    "iso3": "FJI",
+    "country_name": "Fiji",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 933154.0,
+      "formatted_value": "933,154",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 50.6618665793924,
+      "formatted_value": "50.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 59.5444551836369,
+      "formatted_value": "59.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 6642.00449450523,
+      "formatted_value": "$6,642",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 18333.0,
+      "formatted_value": "18,333",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "FRA": {
+    "iso3": "FRA",
+    "country_name": "France",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 68720337.0,
+      "formatted_value": "68,720,337",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 127.194828833844,
+      "formatted_value": "127.2 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 78.8449650563584,
+      "formatted_value": "78.8%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 48985.7307807924,
+      "formatted_value": "$48,986",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 538950.0,
+      "formatted_value": "538,950",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "FRO": {
+    "iso3": "FRO",
+    "country_name": "Faroe Islands",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 54900.0,
+      "formatted_value": "54,900",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 39.8832116788321,
+      "formatted_value": "39.9 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 39.643321785446,
+      "formatted_value": "39.6%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 74175.2776311377,
+      "formatted_value": "$74,175",
+      "year": 2024,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 1370.0,
+      "formatted_value": "1,370",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "FSM": {
+    "iso3": "FSM",
+    "country_name": "Micronesia, Fed. Sts.",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 113683.0,
+      "formatted_value": "113,683",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 161.426533523538,
+      "formatted_value": "161.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 22.4809290622703,
+      "formatted_value": "22.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 4414.00737137479,
+      "formatted_value": "$4,414",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 701.0,
+      "formatted_value": "701",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "GAB": {
+    "iso3": "GAB",
+    "country_name": "Gabon",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 2593130.0,
+      "formatted_value": "2,593,130",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 9.8535025420111,
+      "formatted_value": "9.9 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 92.0876666682068,
+      "formatted_value": "92.1%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 8263.03321595,
+      "formatted_value": "$8,263",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 257670.0,
+      "formatted_value": "257,670",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "GBR": {
+    "iso3": "GBR",
+    "country_name": "United Kingdom",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 69487000.0,
+      "formatted_value": "69,487,000",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 286.367957673707,
+      "formatted_value": "286.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 83.323608078271,
+      "formatted_value": "83.3%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 57601.9621201954,
+      "formatted_value": "$57,602",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 241930.0,
+      "formatted_value": "241,930",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "GEO": {
+    "iso3": "GEO",
+    "country_name": "Georgia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 3935766.0,
+      "formatted_value": "3,935,766",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 66.70138913188,
+      "formatted_value": "66.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 61.1781364090406,
+      "formatted_value": "61.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 9691.53472415196,
+      "formatted_value": "$9,692",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 69490.0,
+      "formatted_value": "69,490",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "GHA": {
+    "iso3": "GHA",
+    "country_name": "Ghana",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 35064272.0,
+      "formatted_value": "35,064,272",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 151.30734442916,
+      "formatted_value": "151.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 58.9246861473125,
+      "formatted_value": "58.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 3257.1588903576,
+      "formatted_value": "$3,257",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 227533.0,
+      "formatted_value": "227,533",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "GIB": {
+    "iso3": "GIB",
+    "country_name": "Gibraltar",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 40126.0,
+      "formatted_value": "40,126",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 3932.9,
+      "formatted_value": "3932.9 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 100.0,
+      "formatted_value": "100.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": null,
+      "formatted_value": "No data",
+      "year": null,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 10.0,
+      "formatted_value": "10",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "GIN": {
+    "iso3": "GIN",
+    "country_name": "Guinea",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 15099727.0,
+      "formatted_value": "15,099,727",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 60.0471471593684,
+      "formatted_value": "60.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 38.5165334466562,
+      "formatted_value": "38.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 1877.2541220972,
+      "formatted_value": "$1,877",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 245720.0,
+      "formatted_value": "245,720",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "GMB": {
+    "iso3": "GMB",
+    "country_name": "Gambia, The",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 2822093.0,
+      "formatted_value": "2,822,093",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 272.726086956522,
+      "formatted_value": "272.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 64.9884861325581,
+      "formatted_value": "65.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 919.060423427951,
+      "formatted_value": "$919",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 10120.0,
+      "formatted_value": "10,120",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "GNB": {
+    "iso3": "GNB",
+    "country_name": "Guinea-Bissau",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 2249515.0,
+      "formatted_value": "2,249,515",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 78.2842105263158,
+      "formatted_value": "78.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 46.6510315281292,
+      "formatted_value": "46.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 1123.76679992349,
+      "formatted_value": "$1,124",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 28120.0,
+      "formatted_value": "28,120",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "GNQ": {
+    "iso3": "GNQ",
+    "country_name": "Equatorial Guinea",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 1938431.0,
+      "formatted_value": "1,938,431",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 67.4657683189847,
+      "formatted_value": "67.5 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 71.5761028458697,
+      "formatted_value": "71.6%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 6615.25245207167,
+      "formatted_value": "$6,615",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 28051.5,
+      "formatted_value": "28,052",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "GRC": {
+    "iso3": "GRC",
+    "country_name": "Greece",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 10413962.0,
+      "formatted_value": "10,413,962",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 80.7225290923196,
+      "formatted_value": "80.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 79.2246082848537,
+      "formatted_value": "79.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 26948.0070432791,
+      "formatted_value": "$26,948",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 128900.0,
+      "formatted_value": "128,900",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "GRD": {
+    "iso3": "GRD",
+    "country_name": "Grenada",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 117303.0,
+      "formatted_value": "117,303",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 340.718023255814,
+      "formatted_value": "340.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 36.6708064336827,
+      "formatted_value": "36.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 12106.8790105068,
+      "formatted_value": "$12,107",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 344.0,
+      "formatted_value": "344",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "GRL": {
+    "iso3": "GRL",
+    "country_name": "Greenland",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 56831.0,
+      "formatted_value": "56,831",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 0.13847274570044,
+      "formatted_value": "0.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 88.5740108655152,
+      "formatted_value": "88.6%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 58498.9707973609,
+      "formatted_value": "$58,499",
+      "year": 2023,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 410449.0,
+      "formatted_value": "410,449",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "GTM": {
+    "iso3": "GTM",
+    "country_name": "Guatemala",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 18687881.0,
+      "formatted_value": "18,687,881",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 171.765201567749,
+      "formatted_value": "171.8 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 56.2972033013999,
+      "formatted_value": "56.3%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 6598.18032988711,
+      "formatted_value": "$6,598",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 107160.0,
+      "formatted_value": "107,160",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "GUM": {
+    "iso3": "GUM",
+    "country_name": "Guam",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 168999.0,
+      "formatted_value": "168,999",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 310.123844731978,
+      "formatted_value": "310.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 94.2197463433641,
+      "formatted_value": "94.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 41833.1517132825,
+      "formatted_value": "$41,833",
+      "year": 2022,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 541.0,
+      "formatted_value": "541",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "GUY": {
+    "iso3": "GUY",
+    "country_name": "Guyana",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 835986.0,
+      "formatted_value": "835,986",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 3.93618925831202,
+      "formatted_value": "3.9 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 26.4913876548981,
+      "formatted_value": "26.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 32413.7930757518,
+      "formatted_value": "$32,414",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 211140.0,
+      "formatted_value": "211,140",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "HKG": {
+    "iso3": "HKG",
+    "country_name": "Hong Kong SAR, China",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 7498900.0,
+      "formatted_value": "7,498,900",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 7165.80952380952,
+      "formatted_value": "7165.8 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 100.0,
+      "formatted_value": "100.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 56983.0663059906,
+      "formatted_value": "$56,983",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 1050.0,
+      "formatted_value": "1,050",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "HND": {
+    "iso3": "HND",
+    "country_name": "Honduras",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 11005850.0,
+      "formatted_value": "11,005,850",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 96.7530878541425,
+      "formatted_value": "96.8 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 59.2517075900659,
+      "formatted_value": "59.3%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 3598.21450440452,
+      "formatted_value": "$3,598",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 111890.0,
+      "formatted_value": "111,890",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "HRV": {
+    "iso3": "HRV",
+    "country_name": "Croatia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 3876200.0,
+      "formatted_value": "3,876,200",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 69.0886347390994,
+      "formatted_value": "69.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 57.8144543604143,
+      "formatted_value": "57.8%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 27103.9116109268,
+      "formatted_value": "$27,104",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 55960.0,
+      "formatted_value": "55,960",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "HTI": {
+    "iso3": "HTI",
+    "country_name": "Haiti",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 11906095.0,
+      "formatted_value": "11,906,095",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 427.160994194485,
+      "formatted_value": "427.2 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 55.6148855859942,
+      "formatted_value": "55.6%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 2694.18969101404,
+      "formatted_value": "$2,694",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 27560.0,
+      "formatted_value": "27,560",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "HUN": {
+    "iso3": "HUN",
+    "country_name": "Hungary",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 9514251.0,
+      "formatted_value": "9,514,251",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 104.778270874425,
+      "formatted_value": "104.8 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 70.6936831786278,
+      "formatted_value": "70.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 25907.4743259406,
+      "formatted_value": "$25,907",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 91260.0,
+      "formatted_value": "91,260",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "IDN": {
+    "iso3": "IDN",
+    "country_name": "Indonesia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 285721236.0,
+      "formatted_value": "285,721,236",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 149.802588244483,
+      "formatted_value": "149.8 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 59.3929063969984,
+      "formatted_value": "59.4%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 5059.62596411213,
+      "formatted_value": "$5,060",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 1892410.1,
+      "formatted_value": "1,892,410",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "IMN": {
+    "iso3": "IMN",
+    "country_name": "Isle of Man",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 84118.0,
+      "formatted_value": "84,118",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 147.033388249558,
+      "formatted_value": "147.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 52.1358064010515,
+      "formatted_value": "52.1%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 90015.2074234398,
+      "formatted_value": "$90,015",
+      "year": 2023,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 572.387,
+      "formatted_value": "572",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "IND": {
+    "iso3": "IND",
+    "country_name": "India",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 1463865525.0,
+      "formatted_value": "1,463,865,525",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 488.006414322664,
+      "formatted_value": "488.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 35.689155772396,
+      "formatted_value": "35.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 2702.47987141553,
+      "formatted_value": "$2,702",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 2973190.0,
+      "formatted_value": "2,973,190",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "INX": {
+    "iso3": "INX",
+    "country_name": "Not classified",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": null,
+      "formatted_value": "No data",
+      "year": null,
+      "unit": "people"
+    },
+    "density": {
+      "value": null,
+      "formatted_value": "No data",
+      "year": null,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": null,
+      "formatted_value": "No data",
+      "year": null,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": null,
+      "formatted_value": "No data",
+      "year": null,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": null,
+      "formatted_value": "No data",
+      "year": null,
+      "unit": "km\u00b2"
+    }
+  },
+  "IRL": {
+    "iso3": "IRL",
+    "country_name": "Ireland",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 5484367.0,
+      "formatted_value": "5,484,367",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 78.3247205690231,
+      "formatted_value": "78.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 64.5875793756168,
+      "formatted_value": "64.6%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 131592.462547877,
+      "formatted_value": "$131,592",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 68890.0,
+      "formatted_value": "68,890",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "IRN": {
+    "iso3": "IRN",
+    "country_name": "Iran, Islamic Rep.",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 92417681.0,
+      "formatted_value": "92,417,681",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 56.4362021571649,
+      "formatted_value": "56.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 77.3761530941751,
+      "formatted_value": "77.4%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 3924.38017821898,
+      "formatted_value": "$3,924",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 1622500.0,
+      "formatted_value": "1,622,500",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "IRQ": {
+    "iso3": "IRQ",
+    "country_name": "Iraq",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 47020774.0,
+      "formatted_value": "47,020,774",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 106.055824292263,
+      "formatted_value": "106.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 69.9396739468105,
+      "formatted_value": "69.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 5409.67899716967,
+      "formatted_value": "$5,410",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 434130.0,
+      "formatted_value": "434,130",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "ISL": {
+    "iso3": "ISL",
+    "country_name": "Iceland",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 392404.0,
+      "formatted_value": "392,404",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 3.83324407418427,
+      "formatted_value": "3.8 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 94.2179320191117,
+      "formatted_value": "94.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 98323.4849517418,
+      "formatted_value": "$98,323",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 100830.0,
+      "formatted_value": "100,830",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "ISR": {
+    "iso3": "ISR",
+    "country_name": "Israel",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 10122800.0,
+      "formatted_value": "10,122,800",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 462.20887245841,
+      "formatted_value": "462.2 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 91.5783060866328,
+      "formatted_value": "91.6%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 60336.8477964194,
+      "formatted_value": "$60,337",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 21640.0,
+      "formatted_value": "21,640",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "ITA": {
+    "iso3": "ITA",
+    "country_name": "Italy",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 58915656.0,
+      "formatted_value": "58,915,656",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 199.353117814149,
+      "formatted_value": "199.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 69.680861801678,
+      "formatted_value": "69.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 43308.6403060733,
+      "formatted_value": "$43,309",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 295720.0,
+      "formatted_value": "295,720",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "JAM": {
+    "iso3": "JAM",
+    "country_name": "Jamaica",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 2837077.0,
+      "formatted_value": "2,837,077",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 262.158356417359,
+      "formatted_value": "262.2 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 59.4254051751628,
+      "formatted_value": "59.4%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 8002.92104076242,
+      "formatted_value": "$8,003",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 10830.0,
+      "formatted_value": "10,830",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "JOR": {
+    "iso3": "JOR",
+    "country_name": "Jordan",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 11520684.0,
+      "formatted_value": "11,520,684",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 130.108746086447,
+      "formatted_value": "130.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 93.2085150119551,
+      "formatted_value": "93.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 5347.77731384797,
+      "formatted_value": "$5,348",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 88794.0,
+      "formatted_value": "88,794",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "JPN": {
+    "iso3": "JPN",
+    "country_name": "Japan",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 123366734.0,
+      "formatted_value": "123,366,734",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 340.124474622771,
+      "formatted_value": "340.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 92.3001449420786,
+      "formatted_value": "92.3%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 35951.0449549304,
+      "formatted_value": "$35,951",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 364500.0,
+      "formatted_value": "364,500",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "KAZ": {
+    "iso3": "KAZ",
+    "country_name": "Kazakhstan",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 20843754.0,
+      "formatted_value": "20,843,754",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 7.62772567322295,
+      "formatted_value": "7.6 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 62.3855569507987,
+      "formatted_value": "62.4%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 14692.1331757237,
+      "formatted_value": "$14,692",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 2699700.0,
+      "formatted_value": "2,699,700",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "KEN": {
+    "iso3": "KEN",
+    "country_name": "Kenya",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 57532493.0,
+      "formatted_value": "57,532,493",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 97.1507781297342,
+      "formatted_value": "97.2 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 32.2121192871745,
+      "formatted_value": "32.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 2362.86091198611,
+      "formatted_value": "$2,363",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 580880.0,
+      "formatted_value": "580,880",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "KGZ": {
+    "iso3": "KGZ",
+    "country_name": "Kyrgyz Republic",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 7343064.0,
+      "formatted_value": "7,343,064",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 37.653117831074,
+      "formatted_value": "37.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 34.7463537261057,
+      "formatted_value": "34.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 3080.96893823359,
+      "formatted_value": "$3,081",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 191800.0,
+      "formatted_value": "191,800",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "KHM": {
+    "iso3": "KHM",
+    "country_name": "Cambodia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 17847982.0,
+      "formatted_value": "17,847,982",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 99.9252266032178,
+      "formatted_value": "99.9 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 41.10561939401,
+      "formatted_value": "41.1%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 2872.42926639909,
+      "formatted_value": "$2,872",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 176520.0,
+      "formatted_value": "176,520",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "KIR": {
+    "iso3": "KIR",
+    "country_name": "Kiribati",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 136488.0,
+      "formatted_value": "136,488",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 165.86683107275,
+      "formatted_value": "165.9 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 63.3850857782871,
+      "formatted_value": "63.4%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 2558.66636011102,
+      "formatted_value": "$2,559",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 811.0,
+      "formatted_value": "811",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "KNA": {
+    "iso3": "KNA",
+    "country_name": "St. Kitts and Nevis",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 46922.0,
+      "formatted_value": "46,922",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 179.475095785441,
+      "formatted_value": "179.5 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 31.8987713138283,
+      "formatted_value": "31.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 25223.0257622185,
+      "formatted_value": "$25,223",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 261.0,
+      "formatted_value": "261",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "KOR": {
+    "iso3": "KOR",
+    "country_name": "Korea, Rep.",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 51684564.0,
+      "formatted_value": "51,684,564",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 530.236321721311,
+      "formatted_value": "530.2 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 81.1740263306674,
+      "formatted_value": "81.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 36226.9663637512,
+      "formatted_value": "$36,227",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 97600.0,
+      "formatted_value": "97,600",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "KWT": {
+    "iso3": "KWT",
+    "country_name": "Kuwait",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 4865298.0,
+      "formatted_value": "4,865,298",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 274.81835016835,
+      "formatted_value": "274.8 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 100.0,
+      "formatted_value": "100.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 32312.3119953634,
+      "formatted_value": "$32,312",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 17820.0,
+      "formatted_value": "17,820",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "LAO": {
+    "iso3": "LAO",
+    "country_name": "Lao PDR",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 7873046.0,
+      "formatted_value": "7,873,046",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 33.6647270363951,
+      "formatted_value": "33.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 40.3129835040701,
+      "formatted_value": "40.3%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 2324.76353098791,
+      "formatted_value": "$2,325",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 230800.0,
+      "formatted_value": "230,800",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "LBN": {
+    "iso3": "LBN",
+    "country_name": "Lebanon",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 5849421.0,
+      "formatted_value": "5,849,421",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 567.542717497556,
+      "formatted_value": "567.5 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 90.9602314263044,
+      "formatted_value": "91.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 4473.27134441128,
+      "formatted_value": "$4,473",
+      "year": 2024,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 10230.0,
+      "formatted_value": "10,230",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "LBR": {
+    "iso3": "LBR",
+    "country_name": "Liberia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 5731206.0,
+      "formatted_value": "5,731,206",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 58.272601744186,
+      "formatted_value": "58.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 56.0819747159338,
+      "formatted_value": "56.1%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 915.328972645548,
+      "formatted_value": "$915",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 96320.0,
+      "formatted_value": "96,320",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "LBY": {
+    "iso3": "LBY",
+    "country_name": "Libya",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 7458555.0,
+      "formatted_value": "7,458,555",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 4.1948594519022,
+      "formatted_value": "4.2 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 87.9112413015221,
+      "formatted_value": "87.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 6448.82415074121,
+      "formatted_value": "$6,449",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 1759540.0,
+      "formatted_value": "1,759,540",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "LCA": {
+    "iso3": "LCA",
+    "country_name": "St. Lucia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 180149.0,
+      "formatted_value": "180,149",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 294.662295081967,
+      "formatted_value": "294.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 29.096571131107,
+      "formatted_value": "29.1%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 14745.8184305461,
+      "formatted_value": "$14,746",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 610.0,
+      "formatted_value": "610",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "LIE": {
+    "iso3": "LIE",
+    "country_name": "Liechtenstein",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 41024.0,
+      "formatted_value": "41,024",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 252.8125,
+      "formatted_value": "252.8 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 14.6298998993293,
+      "formatted_value": "14.6%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 220167.225473557,
+      "formatted_value": "$220,167",
+      "year": 2024,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 160.0,
+      "formatted_value": "160",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "LKA": {
+    "iso3": "LKA",
+    "country_name": "Sri Lanka",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 21756000.0,
+      "formatted_value": "21,756,000",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 354.283866795991,
+      "formatted_value": "354.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 20.4501355167937,
+      "formatted_value": "20.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 5002.07904353724,
+      "formatted_value": "$5,002",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 61860.0,
+      "formatted_value": "61,860",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "LSO": {
+    "iso3": "LSO",
+    "country_name": "Lesotho",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 2363325.0,
+      "formatted_value": "2,363,325",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 76.9902173913043,
+      "formatted_value": "77.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 44.6695855817109,
+      "formatted_value": "44.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 1088.96276223185,
+      "formatted_value": "$1,089",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 30360.0,
+      "formatted_value": "30,360",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "LTU": {
+    "iso3": "LTU",
+    "country_name": "Lithuania",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 2888774.0,
+      "formatted_value": "2,888,774",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 46.145997763221,
+      "formatted_value": "46.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 69.0816381352764,
+      "formatted_value": "69.1%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 32958.6706396386,
+      "formatted_value": "$32,959",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 62590.0,
+      "formatted_value": "62,590",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "LUX": {
+    "iso3": "LUX",
+    "country_name": "Luxembourg",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 686970.0,
+      "formatted_value": "686,970",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 262.972429169612,
+      "formatted_value": "263.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 94.8841729598587,
+      "formatted_value": "94.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 147252.179121515,
+      "formatted_value": "$147,252",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 2574.46,
+      "formatted_value": "2,574",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "LVA": {
+    "iso3": "LVA",
+    "country_name": "Latvia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 1847785.0,
+      "formatted_value": "1,847,785",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 29.9875301301623,
+      "formatted_value": "30.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 68.6325719753517,
+      "formatted_value": "68.6%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 26311.9730706362,
+      "formatted_value": "$26,312",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 62230.0,
+      "formatted_value": "62,230",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "MAC": {
+    "iso3": "MAC",
+    "country_name": "Macao SAR, China",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 685900.0,
+      "formatted_value": "685,900",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 20630.6306306306,
+      "formatted_value": "20630.6 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 100.0,
+      "formatted_value": "100.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 75901.7461294198,
+      "formatted_value": "$75,902",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 33.3,
+      "formatted_value": "33",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "MAF": {
+    "iso3": "MAF",
+    "country_name": "St. Martin (French part)",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 24941.0,
+      "formatted_value": "24,941",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 493.0,
+      "formatted_value": "493.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 100.0,
+      "formatted_value": "100.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 21668.3776525323,
+      "formatted_value": "$21,668",
+      "year": 2021,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 53.0,
+      "formatted_value": "53",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "MAR": {
+    "iso3": "MAR",
+    "country_name": "Morocco",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 38430770.0,
+      "formatted_value": "38,430,770",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 85.3264015236388,
+      "formatted_value": "85.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 63.1278612260269,
+      "formatted_value": "63.1%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 4672.46826171875,
+      "formatted_value": "$4,672",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 446300.0,
+      "formatted_value": "446,300",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "MCO": {
+    "iso3": "MCO",
+    "country_name": "Monaco",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 38341.0,
+      "formatted_value": "38,341",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 18536.9481765835,
+      "formatted_value": "18536.9 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 100.0,
+      "formatted_value": "100.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 288001.574856495,
+      "formatted_value": "$288,002",
+      "year": 2024,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 2.084,
+      "formatted_value": "2",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "MDA": {
+    "iso3": "MDA",
+    "country_name": "Moldova",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 2360527.0,
+      "formatted_value": "2,360,527",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 83.5090902770536,
+      "formatted_value": "83.5 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 43.7336240404545,
+      "formatted_value": "43.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 8621.71721623786,
+      "formatted_value": "$8,622",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 32930.0,
+      "formatted_value": "32,930",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "MDG": {
+    "iso3": "MDG",
+    "country_name": "Madagascar",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 32740678.0,
+      "formatted_value": "32,740,678",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 54.9414850464077,
+      "formatted_value": "54.9 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 32.9017070836898,
+      "formatted_value": "32.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 599.265294255357,
+      "formatted_value": "$599",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 581800.0,
+      "formatted_value": "581,800",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "MDV": {
+    "iso3": "MDV",
+    "country_name": "Maldives",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 529676.0,
+      "formatted_value": "529,676",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 1771.13758389262,
+      "formatted_value": "1771.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 42.5061567995467,
+      "formatted_value": "42.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 14614.7208116541,
+      "formatted_value": "$14,615",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 298.0,
+      "formatted_value": "298",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "MEX": {
+    "iso3": "MEX",
+    "country_name": "Mexico",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 131946900.0,
+      "formatted_value": "131,946,900",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 67.3170642249029,
+      "formatted_value": "67.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 80.0408930629723,
+      "formatted_value": "80.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 13889.2339628708,
+      "formatted_value": "$13,889",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 1943950.0,
+      "formatted_value": "1,943,950",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "MHL": {
+    "iso3": "MHL",
+    "country_name": "Marshall Islands",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 36282.0,
+      "formatted_value": "36,282",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 207.447513812155,
+      "formatted_value": "207.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 79.105503091452,
+      "formatted_value": "79.1%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 8489.05793506422,
+      "formatted_value": "$8,489",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 181.0,
+      "formatted_value": "181",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "MKD": {
+    "iso3": "MKD",
+    "country_name": "North Macedonia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 1820909.0,
+      "formatted_value": "1,820,909",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 72.3377874702617,
+      "formatted_value": "72.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 62.8909857826036,
+      "formatted_value": "62.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 10489.9255355525,
+      "formatted_value": "$10,490",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 25220.0,
+      "formatted_value": "25,220",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "MLI": {
+    "iso3": "MLI",
+    "country_name": "Mali",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 25198821.0,
+      "formatted_value": "25,198,821",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 20.0612978306657,
+      "formatted_value": "20.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 32.2127137183989,
+      "formatted_value": "32.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 1193.27601004701,
+      "formatted_value": "$1,193",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 1220190.0,
+      "formatted_value": "1,220,190",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "MLT": {
+    "iso3": "MLT",
+    "country_name": "Malta",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 579704.0,
+      "formatted_value": "579,704",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 1805.00396636522,
+      "formatted_value": "1805.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 95.6805856649593,
+      "formatted_value": "95.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 47906.9000057635,
+      "formatted_value": "$47,907",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 315.15,
+      "formatted_value": "315",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "MMR": {
+    "iso3": "MMR",
+    "country_name": "Myanmar",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 54850648.0,
+      "formatted_value": "54,850,648",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 83.5032880322368,
+      "formatted_value": "83.5 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 30.5836915476767,
+      "formatted_value": "30.6%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 1488.87527836542,
+      "formatted_value": "$1,489",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 652670.0,
+      "formatted_value": "652,670",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "MNE": {
+    "iso3": "MNE",
+    "country_name": "Montenegro",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 623129.0,
+      "formatted_value": "623,129",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 46.3587360594796,
+      "formatted_value": "46.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 65.6085083521036,
+      "formatted_value": "65.6%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 14816.8380299947,
+      "formatted_value": "$14,817",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 13450.0,
+      "formatted_value": "13,450",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "MNG": {
+    "iso3": "MNG",
+    "country_name": "Mongolia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 3568978.0,
+      "formatted_value": "3,568,978",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 2.26165292694361,
+      "formatted_value": "2.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 71.1450719126123,
+      "formatted_value": "71.1%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 7108.22743246244,
+      "formatted_value": "$7,108",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 1558500.846,
+      "formatted_value": "1,558,501",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "MNP": {
+    "iso3": "MNP",
+    "country_name": "Northern Mariana Islands",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 43541.0,
+      "formatted_value": "43,541",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 96.8884026258206,
+      "formatted_value": "96.9 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 92.1765383642716,
+      "formatted_value": "92.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 23785.754590043,
+      "formatted_value": "$23,786",
+      "year": 2022,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 457.0,
+      "formatted_value": "457",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "MOZ": {
+    "iso3": "MOZ",
+    "country_name": "Mozambique",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 35631653.0,
+      "formatted_value": "35,631,653",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 44.0394796408861,
+      "formatted_value": "44.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 37.2077944927189,
+      "formatted_value": "37.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 626.914419215727,
+      "formatted_value": "$627",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 786380.0,
+      "formatted_value": "786,380",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "MRT": {
+    "iso3": "MRT",
+    "country_name": "Mauritania",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 5315065.0,
+      "formatted_value": "5,315,065",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 5.01542155816435,
+      "formatted_value": "5.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 61.4888190537696,
+      "formatted_value": "61.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 2197.51046251309,
+      "formatted_value": "$2,198",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 1030700.0,
+      "formatted_value": "1,030,700",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "MUS": {
+    "iso3": "MUS",
+    "country_name": "Mauritius",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 1243741.0,
+      "formatted_value": "1,243,741",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 622.8895,
+      "formatted_value": "622.9 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 39.0369663368524,
+      "formatted_value": "39.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 12991.2935987166,
+      "formatted_value": "$12,991",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 2000.0,
+      "formatted_value": "2,000",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "MWI": {
+    "iso3": "MWI",
+    "country_name": "Malawi",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 22216120.0,
+      "formatted_value": "22,216,120",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 229.691196436148,
+      "formatted_value": "229.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 17.5949868386317,
+      "formatted_value": "17.6%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 671.506847203876,
+      "formatted_value": "$672",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 94280.0,
+      "formatted_value": "94,280",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "MYS": {
+    "iso3": "MYS",
+    "country_name": "Malaysia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 35977838.0,
+      "formatted_value": "35,977,838",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 108.226063004109,
+      "formatted_value": "108.2 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 77.3948812296229,
+      "formatted_value": "77.4%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 13124.5554178269,
+      "formatted_value": "$13,125",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 328550.0,
+      "formatted_value": "328,550",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "NAM": {
+    "iso3": "NAM",
+    "country_name": "Namibia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 3092816.0,
+      "formatted_value": "3,092,816",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 3.68051476393494,
+      "formatted_value": "3.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 50.8666984399326,
+      "formatted_value": "50.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 4875.92558158247,
+      "formatted_value": "$4,876",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 823290.0,
+      "formatted_value": "823,290",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "NCL": {
+    "iso3": "NCL",
+    "country_name": "New Caledonia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 295333.0,
+      "formatted_value": "295,333",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 15.7536068044789,
+      "formatted_value": "15.8 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 68.1717888335577,
+      "formatted_value": "68.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 29213.1923192946,
+      "formatted_value": "$29,213",
+      "year": 2024,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 18576.0,
+      "formatted_value": "18,576",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "NER": {
+    "iso3": "NER",
+    "country_name": "Niger",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 27917831.0,
+      "formatted_value": "27,917,831",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 21.340816294308,
+      "formatted_value": "21.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 18.3740697195469,
+      "formatted_value": "18.4%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 775.353622143879,
+      "formatted_value": "$775",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 1266700.0,
+      "formatted_value": "1,266,700",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "NGA": {
+    "iso3": "NGA",
+    "country_name": "Nigeria",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 237527782.0,
+      "formatted_value": "237,527,782",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 255.47556243618,
+      "formatted_value": "255.5 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 63.7754180467872,
+      "formatted_value": "63.8%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 1224.25410237743,
+      "formatted_value": "$1,224",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 910770.0,
+      "formatted_value": "910,770",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "NIC": {
+    "iso3": "NIC",
+    "country_name": "Nicaragua",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 7007502.0,
+      "formatted_value": "7,007,502",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 56.702783779292,
+      "formatted_value": "56.7 people / km\u00b2",
+      "year": 2023,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 59.4435892957332,
+      "formatted_value": "59.4%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 3173.33724815085,
+      "formatted_value": "$3,173",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 120340.0,
+      "formatted_value": "120,340",
+      "year": 2023,
+      "unit": "km\u00b2"
+    }
+  },
+  "NLD": {
+    "iso3": "NLD",
+    "country_name": "Netherlands",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 18087633.0,
+      "formatted_value": "18,087,633",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 534.407038907039,
+      "formatted_value": "534.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 95.9385903481191,
+      "formatted_value": "95.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 73683.917132794,
+      "formatted_value": "$73,684",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 33670.0,
+      "formatted_value": "33,670",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "NOR": {
+    "iso3": "NOR",
+    "country_name": "Norway",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 5610870.0,
+      "formatted_value": "5,610,870",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 15.2971120322837,
+      "formatted_value": "15.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 83.5705787708326,
+      "formatted_value": "83.6%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 94594.1929573987,
+      "formatted_value": "$94,594",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 364270.0,
+      "formatted_value": "364,270",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "NPL": {
+    "iso3": "NPL",
+    "country_name": "Nepal",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 29618118.0,
+      "formatted_value": "29,618,118",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 206.843767003837,
+      "formatted_value": "206.8 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 66.999424884859,
+      "formatted_value": "67.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 1535.87781246307,
+      "formatted_value": "$1,536",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 143350.0,
+      "formatted_value": "143,350",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "NRU": {
+    "iso3": "NRU",
+    "country_name": "Naoero",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 12025.0,
+      "formatted_value": "12,025",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 568.904761904762,
+      "formatted_value": "568.9 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 100.0,
+      "formatted_value": "100.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 14639.5046929186,
+      "formatted_value": "$14,640",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 21.0,
+      "formatted_value": "21",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "NZL": {
+    "iso3": "NZL",
+    "country_name": "New Zealand",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 5324700.0,
+      "formatted_value": "5,324,700",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 20.0903877558771,
+      "formatted_value": "20.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 83.9978515774731,
+      "formatted_value": "84.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 49591.0405731713,
+      "formatted_value": "$49,591",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 263310.0,
+      "formatted_value": "263,310",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "OMN": {
+    "iso3": "OMN",
+    "country_name": "Oman",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 5494691.0,
+      "formatted_value": "5,494,691",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 17.0647431340872,
+      "formatted_value": "17.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 79.4781383307689,
+      "formatted_value": "79.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 19947.3966227092,
+      "formatted_value": "$19,947",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 309500.0,
+      "formatted_value": "309,500",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "PAK": {
+    "iso3": "PAK",
+    "country_name": "Pakistan",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 255219554.0,
+      "formatted_value": "255,219,554",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 325.951074097136,
+      "formatted_value": "326.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 39.5256010979606,
+      "formatted_value": "39.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 1595.90912252837,
+      "formatted_value": "$1,596",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 770880.0,
+      "formatted_value": "770,880",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "PAN": {
+    "iso3": "PAN",
+    "country_name": "Panama",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 4571189.0,
+      "formatted_value": "4,571,189",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 60.873240765705,
+      "formatted_value": "60.9 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 66.1500999418126,
+      "formatted_value": "66.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 19789.7308555826,
+      "formatted_value": "$19,790",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 74180.0,
+      "formatted_value": "74,180",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "PER": {
+    "iso3": "PER",
+    "country_name": "Peru",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 34576665.0,
+      "formatted_value": "34,576,665",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 26.73269375,
+      "formatted_value": "26.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 85.5963484845463,
+      "formatted_value": "85.6%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 9684.41170314988,
+      "formatted_value": "$9,684",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 1280000.0,
+      "formatted_value": "1,280,000",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "PHL": {
+    "iso3": "PHL",
+    "country_name": "Philippines",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 116786962.0,
+      "formatted_value": "116,786,962",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 388.515511285508,
+      "formatted_value": "388.5 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 55.7732907605332,
+      "formatted_value": "55.8%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 4170.72347271451,
+      "formatted_value": "$4,171",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 298170.0,
+      "formatted_value": "298,170",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "PLW": {
+    "iso3": "PLW",
+    "country_name": "Palau",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 17663.0,
+      "formatted_value": "17,663",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 38.4673913043478,
+      "formatted_value": "38.5 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 79.2835934246556,
+      "formatted_value": "79.3%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 19532.3557719527,
+      "formatted_value": "$19,532",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 460.0,
+      "formatted_value": "460",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "PNG": {
+    "iso3": "PNG",
+    "country_name": "Papua New Guinea",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 10762817.0,
+      "formatted_value": "10,762,817",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 23.3549043854613,
+      "formatted_value": "23.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 15.7797448680276,
+      "formatted_value": "15.8%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 3019.5309140573,
+      "formatted_value": "$3,020",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 452860.0,
+      "formatted_value": "452,860",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "POL": {
+    "iso3": "POL",
+    "country_name": "Poland",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 36435861.0,
+      "formatted_value": "36,435,861",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 119.447293102885,
+      "formatted_value": "119.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 60.0853330309371,
+      "formatted_value": "60.1%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 28419.5777395638,
+      "formatted_value": "$28,420",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 306070.0,
+      "formatted_value": "306,070",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "PRI": {
+    "iso3": "PRI",
+    "country_name": "Puerto Rico (US)",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 3184835.0,
+      "formatted_value": "3,184,835",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 361.050845546787,
+      "formatted_value": "361.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 94.3404836598892,
+      "formatted_value": "94.3%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 40620.1526923687,
+      "formatted_value": "$40,620",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 8870.0,
+      "formatted_value": "8,870",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "PRK": {
+    "iso3": "PRK",
+    "country_name": "Korea, Dem. People's Rep.",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 26571036.0,
+      "formatted_value": "26,571,036",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 220.071613653351,
+      "formatted_value": "220.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 64.1897858311258,
+      "formatted_value": "64.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": null,
+      "formatted_value": "No data",
+      "year": null,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 120410.0,
+      "formatted_value": "120,410",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "PRT": {
+    "iso3": "PRT",
+    "country_name": "Portugal",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 10804871.0,
+      "formatted_value": "10,804,871",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 116.747022016121,
+      "formatted_value": "116.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 61.4953199318985,
+      "formatted_value": "61.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 32081.8106150292,
+      "formatted_value": "$32,082",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 91605.6,
+      "formatted_value": "91,606",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "PRY": {
+    "iso3": "PRY",
+    "country_name": "Paraguay",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 7013078.0,
+      "formatted_value": "7,013,078",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 17.4973295634479,
+      "formatted_value": "17.5 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 70.3897639855864,
+      "formatted_value": "70.4%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 7026.61906146401,
+      "formatted_value": "$7,027",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 396012.03,
+      "formatted_value": "396,012",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "PSE": {
+    "iso3": "PSE",
+    "country_name": "West Bank and Gaza",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 5413596.0,
+      "formatted_value": "5,413,596",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 877.86755186722,
+      "formatted_value": "877.9 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 87.3818962963393,
+      "formatted_value": "87.4%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 3171.10844621579,
+      "formatted_value": "$3,171",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 6025.0,
+      "formatted_value": "6,025",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "PYF": {
+    "iso3": "PYF",
+    "country_name": "French Polynesia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 282465.0,
+      "formatted_value": "282,465",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 80.0360692984948,
+      "formatted_value": "80.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 61.7583766473831,
+      "formatted_value": "61.8%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 22439.8838746025,
+      "formatted_value": "$22,440",
+      "year": 2024,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 3521.0,
+      "formatted_value": "3,521",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "QAT": {
+    "iso3": "QAT",
+    "country_name": "Qatar",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 2972215.0,
+      "formatted_value": "2,972,215",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 248.722541340296,
+      "formatted_value": "248.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 99.3593427696312,
+      "formatted_value": "99.4%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 72524.9066385222,
+      "formatted_value": "$72,525",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 11490.0,
+      "formatted_value": "11,490",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "ROU": {
+    "iso3": "ROU",
+    "country_name": "Romania",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 19020271.0,
+      "formatted_value": "19,020,271",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 82.805128650904,
+      "formatted_value": "82.8 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 52.1728885041698,
+      "formatted_value": "52.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 22537.9532108047,
+      "formatted_value": "$22,538",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 230080.0,
+      "formatted_value": "230,080",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "RUS": {
+    "iso3": "RUS",
+    "country_name": "Russian Federation",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 143513328.0,
+      "formatted_value": "143,513,328",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 8.77271713092917,
+      "formatted_value": "8.8 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 75.2506636608215,
+      "formatted_value": "75.3%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 17546.609375,
+      "formatted_value": "$17,547",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 16376870.0,
+      "formatted_value": "16,376,870",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "RWA": {
+    "iso3": "RWA",
+    "country_name": "Rwanda",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 14569341.0,
+      "formatted_value": "14,569,341",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 599.948415578041,
+      "formatted_value": "599.9 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 30.9133840928162,
+      "formatted_value": "30.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 1123.73874633225,
+      "formatted_value": "$1,124",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 23762.988,
+      "formatted_value": "23,763",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "SAU": {
+    "iso3": "SAU",
+    "country_name": "Saudi Arabia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 36973555.0,
+      "formatted_value": "36,973,555",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 16.421102577581,
+      "formatted_value": "16.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 84.6123121062185,
+      "formatted_value": "84.6%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 34536.6555456551,
+      "formatted_value": "$34,537",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 2149690.0,
+      "formatted_value": "2,149,690",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "SDN": {
+    "iso3": "SDN",
+    "country_name": "Sudan",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 51662147.0,
+      "formatted_value": "51,662,147",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 27.0069395074946,
+      "formatted_value": "27.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 34.9349444966605,
+      "formatted_value": "34.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 1164.53991699219,
+      "formatted_value": "$1,165",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 1868000.0,
+      "formatted_value": "1,868,000",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "SEN": {
+    "iso3": "SEN",
+    "country_name": "Senegal",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 18931966.0,
+      "formatted_value": "18,931,966",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 96.0992260946346,
+      "formatted_value": "96.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 55.7672494455246,
+      "formatted_value": "55.8%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 1954.71174194867,
+      "formatted_value": "$1,955",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 192530.0,
+      "formatted_value": "192,530",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "SGP": {
+    "iso3": "SGP",
+    "country_name": "Singapore",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 6111175.0,
+      "formatted_value": "6,111,175",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 8329.00110375276,
+      "formatted_value": "8329.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 100.0,
+      "formatted_value": "100.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 98813.9788172877,
+      "formatted_value": "$98,814",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 724.8,
+      "formatted_value": "725",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "SLB": {
+    "iso3": "SLB",
+    "country_name": "Solomon Islands",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 838645.0,
+      "formatted_value": "838,645",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 29.2675241157556,
+      "formatted_value": "29.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 31.3093190325418,
+      "formatted_value": "31.3%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 2086.18955928928,
+      "formatted_value": "$2,086",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 27990.0,
+      "formatted_value": "27,990",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "SLE": {
+    "iso3": "SLE",
+    "country_name": "Sierra Leone",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 8819794.0,
+      "formatted_value": "8,819,794",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 119.728761429759,
+      "formatted_value": "119.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 45.9267781356681,
+      "formatted_value": "45.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 846.296172499617,
+      "formatted_value": "$846",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 72180.0,
+      "formatted_value": "72,180",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "SLV": {
+    "iso3": "SLV",
+    "country_name": "El Salvador",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 6365503.0,
+      "formatted_value": "6,365,503",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 305.897345559846,
+      "formatted_value": "305.9 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 75.5237123209951,
+      "formatted_value": "75.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 5766.72574029107,
+      "formatted_value": "$5,767",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 20720.0,
+      "formatted_value": "20,720",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "SMR": {
+    "iso3": "SMR",
+    "country_name": "San Marino",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 34109.0,
+      "formatted_value": "34,109",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 555.179738562092,
+      "formatted_value": "555.2 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 97.1870254171573,
+      "formatted_value": "97.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 59871.3288101478,
+      "formatted_value": "$59,871",
+      "year": 2023,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 61.2,
+      "formatted_value": "61",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "SOM": {
+    "iso3": "SOM",
+    "country_name": "Somalia, Fed. Rep.",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 19654739.0,
+      "formatted_value": "19,654,739",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 30.3011939299264,
+      "formatted_value": "30.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 55.1399062872976,
+      "formatted_value": "55.1%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 661.173877723116,
+      "formatted_value": "$661",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 627340.0,
+      "formatted_value": "627,340",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "SRB": {
+    "iso3": "SRB",
+    "country_name": "Serbia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 6549143.0,
+      "formatted_value": "6,549,143",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 75.1977823623367,
+      "formatted_value": "75.2 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 62.6379872799333,
+      "formatted_value": "62.6%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 15262.0464193413,
+      "formatted_value": "$15,262",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 87588.7,
+      "formatted_value": "87,589",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "SSD": {
+    "iso3": "SSD",
+    "country_name": "South Sudan",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 12188788.0,
+      "formatted_value": "12,188,788",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 18.8998908106911,
+      "formatted_value": "18.9 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 21.6843599017401,
+      "formatted_value": "21.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 1080.14718624765,
+      "formatted_value": "$1,080",
+      "year": 2015,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 631930.0,
+      "formatted_value": "631,930",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "STP": {
+    "iso3": "STP",
+    "country_name": "Sao Tome and Principe",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 240254.0,
+      "formatted_value": "240,254",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 245.35,
+      "formatted_value": "245.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 69.1721865415984,
+      "formatted_value": "69.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 4084.40062145233,
+      "formatted_value": "$4,084",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 960.0,
+      "formatted_value": "960",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "SUR": {
+    "iso3": "SUR",
+    "country_name": "Suriname",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 639850.0,
+      "formatted_value": "639,850",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 3.95265370906713,
+      "formatted_value": "4.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 65.7886836406706,
+      "formatted_value": "65.8%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 7069.87230892274,
+      "formatted_value": "$7,070",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 160507.61,
+      "formatted_value": "160,508",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "SVK": {
+    "iso3": "SVK",
+    "country_name": "Slovak Republic",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 5413813.0,
+      "formatted_value": "5,413,813",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 112.771817803661,
+      "formatted_value": "112.8 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 53.1940341971169,
+      "formatted_value": "53.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 28543.6653439813,
+      "formatted_value": "$28,544",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 48080.0,
+      "formatted_value": "48,080",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "SVN": {
+    "iso3": "SVN",
+    "country_name": "Slovenia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 2130986.0,
+      "formatted_value": "2,130,986",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 105.659440264223,
+      "formatted_value": "105.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 55.9906997845822,
+      "formatted_value": "56.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 37376.2216079138,
+      "formatted_value": "$37,376",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 20134.5,
+      "formatted_value": "20,134",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "SWE": {
+    "iso3": "SWE",
+    "country_name": "Sweden",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 10596620.0,
+      "formatted_value": "10,596,620",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 25.9525842806983,
+      "formatted_value": "26.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 89.0778677789555,
+      "formatted_value": "89.1%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 63133.2126736715,
+      "formatted_value": "$63,133",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 407270.0,
+      "formatted_value": "407,270",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "SWZ": {
+    "iso3": "SWZ",
+    "country_name": "Eswatini",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 1256174.0,
+      "formatted_value": "1,256,174",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 72.2570930232558,
+      "formatted_value": "72.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 26.7213709706525,
+      "formatted_value": "26.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 4108.25221093363,
+      "formatted_value": "$4,108",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 17200.0,
+      "formatted_value": "17,200",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "SXM": {
+    "iso3": "SXM",
+    "country_name": "Sint Maarten (Dutch part)",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 43923.0,
+      "formatted_value": "43,923",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 1275.0,
+      "formatted_value": "1275.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 100.0,
+      "formatted_value": "100.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 42978.1317407037,
+      "formatted_value": "$42,978",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 34.0,
+      "formatted_value": "34",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "SYC": {
+    "iso3": "SYC",
+    "country_name": "Seychelles",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 122730.0,
+      "formatted_value": "122,730",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 265.544857768053,
+      "formatted_value": "265.5 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 45.4828390704609,
+      "formatted_value": "45.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 19449.3836346926,
+      "formatted_value": "$19,449",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 457.0,
+      "formatted_value": "457",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "SYR": {
+    "iso3": "SYR",
+    "country_name": "Syrian Arab Republic",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 25620427.0,
+      "formatted_value": "25,620,427",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 134.361269944998,
+      "formatted_value": "134.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 72.0836286208518,
+      "formatted_value": "72.1%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 1056.78264718197,
+      "formatted_value": "$1,057",
+      "year": 2022,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 183630.0,
+      "formatted_value": "183,630",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "TCA": {
+    "iso3": "TCA",
+    "country_name": "Turks and Caicos Islands",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 46855.0,
+      "formatted_value": "46,855",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 49.07564620398,
+      "formatted_value": "49.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 94.3959450720822,
+      "formatted_value": "94.4%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 37506.7798431288,
+      "formatted_value": "$37,507",
+      "year": 2024,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 948.23,
+      "formatted_value": "948",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "TCD": {
+    "iso3": "TCD",
+    "country_name": "Chad",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 21003705.0,
+      "formatted_value": "21,003,705",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 16.1206504129606,
+      "formatted_value": "16.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 27.5658786336865,
+      "formatted_value": "27.6%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 1022.33559390754,
+      "formatted_value": "$1,022",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 1259200.0,
+      "formatted_value": "1,259,200",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "TGO": {
+    "iso3": "TGO",
+    "country_name": "Togo",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 8591626.0,
+      "formatted_value": "8,591,626",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 154.560728075014,
+      "formatted_value": "154.6 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 44.3949892074399,
+      "formatted_value": "44.4%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 1383.89974929887,
+      "formatted_value": "$1,384",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 54390.0,
+      "formatted_value": "54,390",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "THA": {
+    "iso3": "THA",
+    "country_name": "Thailand",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 71619863.0,
+      "formatted_value": "71,619,863",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 140.280708175928,
+      "formatted_value": "140.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 62.7993377136296,
+      "formatted_value": "62.8%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 8056.56359761558,
+      "formatted_value": "$8,057",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 510890.0,
+      "formatted_value": "510,890",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "TJK": {
+    "iso3": "TJK",
+    "country_name": "Tajikistan",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 10786734.0,
+      "formatted_value": "10,786,734",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 76.3090064125658,
+      "formatted_value": "76.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 26.16476270853,
+      "formatted_value": "26.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 1637.2542942547,
+      "formatted_value": "$1,637",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 138790.0,
+      "formatted_value": "138,790",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "TKM": {
+    "iso3": "TKM",
+    "country_name": "Turkmenistan",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 7618847.0,
+      "formatted_value": "7,618,847",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 15.9481156768029,
+      "formatted_value": "15.9 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 47.1053608253747,
+      "formatted_value": "47.1%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 6540.17876401136,
+      "formatted_value": "$6,540",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 469930.0,
+      "formatted_value": "469,930",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "TLS": {
+    "iso3": "TLS",
+    "country_name": "Timor-Leste",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 1418517.0,
+      "formatted_value": "1,418,517",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 94.1921990585071,
+      "formatted_value": "94.2 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 28.7864318960935,
+      "formatted_value": "28.8%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 1340.9640193437,
+      "formatted_value": "$1,341",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 14870.0,
+      "formatted_value": "14,870",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "TON": {
+    "iso3": "TON",
+    "country_name": "Tonga",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 103742.0,
+      "formatted_value": "103,742",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 144.6875,
+      "formatted_value": "144.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 21.1561406217448,
+      "formatted_value": "21.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 6547.18646814228,
+      "formatted_value": "$6,547",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 720.0,
+      "formatted_value": "720",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "TTO": {
+    "iso3": "TTO",
+    "country_name": "Trinidad and Tobago",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 1367764.0,
+      "formatted_value": "1,367,764",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 266.835608424337,
+      "formatted_value": "266.8 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 53.9696087417106,
+      "formatted_value": "54.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 18967.2704636681,
+      "formatted_value": "$18,967",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 5128.0,
+      "formatted_value": "5,128",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "TUN": {
+    "iso3": "TUN",
+    "country_name": "Tunisia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 12348573.0,
+      "formatted_value": "12,348,573",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 79.0236161174047,
+      "formatted_value": "79.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 70.7029326009864,
+      "formatted_value": "70.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 4656.63818386852,
+      "formatted_value": "$4,657",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 155360.0,
+      "formatted_value": "155,360",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "TUR": {
+    "iso3": "TUR",
+    "country_name": "Turkiye",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 85878556.0,
+      "formatted_value": "85,878,556",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 111.116589789899,
+      "formatted_value": "111.1 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 89.494060002186,
+      "formatted_value": "89.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 18599.4420922378,
+      "formatted_value": "$18,599",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 769630.0,
+      "formatted_value": "769,630",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "TUV": {
+    "iso3": "TUV",
+    "country_name": "Tuvalu",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 9492.0,
+      "formatted_value": "9,492",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 371.0,
+      "formatted_value": "371.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 65.4480709525093,
+      "formatted_value": "65.4%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 6041.44908591428,
+      "formatted_value": "$6,041",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 26.0,
+      "formatted_value": "26",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "TZA": {
+    "iso3": "TZA",
+    "country_name": "Tanzania",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 70545865.0,
+      "formatted_value": "70,545,865",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 77.5567386877828,
+      "formatted_value": "77.6 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 36.8833115936643,
+      "formatted_value": "36.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 1318.81921386719,
+      "formatted_value": "$1,319",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 884000.0,
+      "formatted_value": "884,000",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "UGA": {
+    "iso3": "UGA",
+    "country_name": "Uganda",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 51384894.0,
+      "formatted_value": "51,384,894",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 249.426949930182,
+      "formatted_value": "249.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 31.9399557536617,
+      "formatted_value": "31.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 1206.30450825002,
+      "formatted_value": "$1,206",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 200520.0,
+      "formatted_value": "200,520",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "UKR": {
+    "iso3": "UKR",
+    "country_name": "Ukraine",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 38980376.0,
+      "formatted_value": "38,980,376",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 65.343840179496,
+      "formatted_value": "65.3 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 69.5954924645764,
+      "formatted_value": "69.6%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 5865.884765625,
+      "formatted_value": "$5,866",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 579400.0,
+      "formatted_value": "579,400",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "URY": {
+    "iso3": "URY",
+    "country_name": "Uruguay",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 3384688.0,
+      "formatted_value": "3,384,688",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 19.3501622708781,
+      "formatted_value": "19.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 95.6537192104085,
+      "formatted_value": "95.7%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 25215.8238152781,
+      "formatted_value": "$25,216",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 175016.0,
+      "formatted_value": "175,016",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "USA": {
+    "iso3": "USA",
+    "country_name": "United States",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 341784857.0,
+      "formatted_value": "341,784,857",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 37.1693654604249,
+      "formatted_value": "37.2 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 80.1921733027869,
+      "formatted_value": "80.2%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 90026.5163005744,
+      "formatted_value": "$90,027",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 9147420.0,
+      "formatted_value": "9,147,420",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "UZB": {
+    "iso3": "UZB",
+    "country_name": "Uzbekistan",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 37053428.0,
+      "formatted_value": "37,053,428",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 82.9213906182299,
+      "formatted_value": "82.9 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 51.0173495084299,
+      "formatted_value": "51.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 3968.2720079072,
+      "formatted_value": "$3,968",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 438510.0,
+      "formatted_value": "438,510",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "VCT": {
+    "iso3": "VCT",
+    "country_name": "St. Vincent and the Grenadines",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 99924.0,
+      "formatted_value": "99,924",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 258.652956298201,
+      "formatted_value": "258.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 47.9810480381821,
+      "formatted_value": "48.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 12561.769166789,
+      "formatted_value": "$12,562",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 389.0,
+      "formatted_value": "389",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "VEN": {
+    "iso3": "VEN",
+    "country_name": "Venezuela, RB",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 28516896.0,
+      "formatted_value": "28,516,896",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 32.2040054418684,
+      "formatted_value": "32.2 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 89.3219112298988,
+      "formatted_value": "89.3%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 3494.8138870244,
+      "formatted_value": "$3,495",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 882050.0,
+      "formatted_value": "882,050",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "VGB": {
+    "iso3": "VGB",
+    "country_name": "British Virgin Islands",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 39732.0,
+      "formatted_value": "39,732",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 261.397350993377,
+      "formatted_value": "261.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 57.3951909813643,
+      "formatted_value": "57.4%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": null,
+      "formatted_value": "No data",
+      "year": null,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 151.0,
+      "formatted_value": "151",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "VIR": {
+    "iso3": "VIR",
+    "country_name": "Virgin Islands (U.S.)",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 103792.0,
+      "formatted_value": "103,792",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 299.933908045977,
+      "formatted_value": "299.9 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 95.388579075538,
+      "formatted_value": "95.4%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 44320.909185774,
+      "formatted_value": "$44,321",
+      "year": 2022,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 348.0,
+      "formatted_value": "348",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "VNM": {
+    "iso3": "VNM",
+    "country_name": "Viet Nam",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 101598527.0,
+      "formatted_value": "101,598,527",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 322.202750862237,
+      "formatted_value": "322.2 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 38.8299160351294,
+      "formatted_value": "38.8%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 5065.99091899299,
+      "formatted_value": "$5,066",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 313429.0,
+      "formatted_value": "313,429",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "VUT": {
+    "iso3": "VUT",
+    "country_name": "Vanuatu",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 335169.0,
+      "formatted_value": "335,169",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 26.8912133891213,
+      "formatted_value": "26.9 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 22.3219888836722,
+      "formatted_value": "22.3%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 4038.73520713411,
+      "formatted_value": "$4,039",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 12189.0,
+      "formatted_value": "12,189",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "WSM": {
+    "iso3": "WSM",
+    "country_name": "Samoa",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 219306.0,
+      "formatted_value": "219,306",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 78.4241007194245,
+      "formatted_value": "78.4 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 17.5063874123422,
+      "formatted_value": "17.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 5872.78333308796,
+      "formatted_value": "$5,873",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 2780.0,
+      "formatted_value": "2,780",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "XKX": {
+    "iso3": "XKX",
+    "country_name": "Kosovo",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 1576876.0,
+      "formatted_value": "1,576,876",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": null,
+      "formatted_value": "No data",
+      "year": null,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 50.9260971650398,
+      "formatted_value": "50.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 7899.41841135202,
+      "formatted_value": "$7,899",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": null,
+      "formatted_value": "No data",
+      "year": null,
+      "unit": "km\u00b2"
+    }
+  },
+  "YEM": {
+    "iso3": "YEM",
+    "country_name": "Yemen, Rep.",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 41773878.0,
+      "formatted_value": "41,773,878",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 76.866711618886,
+      "formatted_value": "76.9 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 37.0336664607078,
+      "formatted_value": "37.0%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 633.887202451545,
+      "formatted_value": "$634",
+      "year": 2018,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 527968.0,
+      "formatted_value": "527,968",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "ZAF": {
+    "iso3": "ZAF",
+    "country_name": "South Africa",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 64747319.0,
+      "formatted_value": "64,747,319",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 52.7637578415451,
+      "formatted_value": "52.8 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 63.8154011002522,
+      "formatted_value": "63.8%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 6597.71450918774,
+      "formatted_value": "$6,598",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 1213090.0,
+      "formatted_value": "1,213,090",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "ZMB": {
+    "iso3": "ZMB",
+    "country_name": "Zambia",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 21913874.0,
+      "formatted_value": "21,913,874",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 28.6726428926943,
+      "formatted_value": "28.7 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 45.9171510161461,
+      "formatted_value": "45.9%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 1317.87771619597,
+      "formatted_value": "$1,318",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 743390.0,
+      "formatted_value": "743,390",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  },
+  "ZWE": {
+    "iso3": "ZWE",
+    "country_name": "Zimbabwe",
+    "source": "World Bank World Development Indicators",
+    "license": "CC BY 4.0",
+    "population": {
+      "value": 16950795.0,
+      "formatted_value": "16,950,795",
+      "year": 2025,
+      "unit": "people"
+    },
+    "density": {
+      "value": 42.9995424583172,
+      "formatted_value": "43.0 people / km\u00b2",
+      "year": 2024,
+      "unit": "people / km\u00b2"
+    },
+    "urban_share": {
+      "value": 40.4951287431452,
+      "formatted_value": "40.5%",
+      "year": 2025,
+      "unit": "% of total population"
+    },
+    "gdp_per_capita": {
+      "value": 3021.43019873632,
+      "formatted_value": "$3,021",
+      "year": 2025,
+      "unit": "current US$"
+    },
+    "land_area": {
+      "value": 386850.0,
+      "formatted_value": "386,850",
+      "year": 2024,
+      "unit": "km\u00b2"
+    }
+  }
+}
