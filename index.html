@@ -352,6 +352,45 @@
         max-height: 180px;
         overflow-y: auto;
       }
+    /* Minimalist Scroll Cue */
+    .se-globe-scroll-cue {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.45rem 0.95rem;
+      background: rgba(9, 11, 15, 0.88);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 9999px;
+      color: #A1A1AA;
+      font-family: var(--se-font-mono);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    .se-globe-scroll-cue:hover {
+      color: #FFFFFF;
+      border-color: rgba(255, 255, 255, 0.35);
+      background: rgba(18, 22, 30, 0.95);
+      transform: translateX(-50%) translateY(2px);
+    }
+    .se-scroll-chevron {
+      animation: seFloatDown 2.2s infinite ease-in-out;
+    }
+    @keyframes seFloatDown {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(3px); }
+    }
+
     /* Below-the-Globe Original Analyses Strip */
     .se-strip-section {
       background: var(--se-bg-page);
@@ -363,7 +402,19 @@
       margin: 0 auto;
     }
     .se-strip-header {
-      margin-bottom: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 2rem;
+      align-items: center;
+      margin-bottom: 2.25rem;
+      padding-bottom: 1.75rem;
+      border-bottom: 1px solid var(--se-border-subtle);
+    }
+    @media (max-width: 860px) {
+      .se-strip-header {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
     }
     .se-strip-kicker {
       font-family: var(--se-font-mono);
@@ -378,8 +429,42 @@
       font-family: var(--se-font-serif);
       font-size: 1.75rem;
       font-weight: 700;
-      margin: 0;
+      margin: 0 0 0.5rem;
       color: var(--se-text-primary);
+    }
+    .se-strip-dek {
+      font-size: 0.92rem;
+      line-height: 1.55;
+      color: var(--se-text-secondary);
+      margin: 0;
+      max-width: 58ch;
+    }
+    .se-strip-photo-wrap {
+      background: var(--se-bg-surface);
+      border: 1px solid var(--se-border);
+      border-radius: var(--se-radius-sm);
+      overflow: hidden;
+    }
+    .se-strip-photo-img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .se-strip-photo-wrap:hover .se-strip-photo-img {
+      transform: scale(1.02);
+    }
+    .se-strip-photo-caption {
+      padding: 0.55rem 0.75rem;
+      font-family: var(--se-font-mono);
+      font-size: 0.72rem;
+      color: var(--se-text-muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--se-border-subtle);
+      background: var(--se-bg-card);
     }
     .se-analyses-strip {
       display: grid;
@@ -611,14 +696,34 @@
       <div class="se-hud-bottom-right se-hud-card" id="globe-legend" aria-label="Metric color scale legend">
         <!-- Dynamically rendered by assets/globe-country.js -->
       </div>
+
+      <!-- Minimalist Scroll Cue -->
+      <a href="#original-analyses" class="se-globe-scroll-cue" aria-label="Explore Original Analyses below the globe">
+        <span>Original Analyses</span>
+        <svg class="se-scroll-chevron" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </a>
     </div>
 
     <!-- Original analyses strip: four cards reading from data/numbers_ledger.json -->
     <section class="se-strip-section" id="original-analyses" aria-label="Original analyses">
       <div class="se-strip-container">
         <div class="se-strip-header">
-          <span class="se-strip-kicker">Original analyses</span>
-          <h2 class="se-strip-title">Empirical Local Air Quality and Thermal Investigations</h2>
+          <div>
+            <span class="se-strip-kicker">Original analyses</span>
+            <h2 class="se-strip-title">Empirical Local Air Quality and Thermal Investigations</h2>
+            <p class="se-strip-dek">
+              Ground-level regulatory monitoring paired with NASA Earth observation radiometry across the Indo-Gangetic Plain.
+            </p>
+          </div>
+          <div class="se-strip-photo-wrap">
+            <img src="assets/hero_indo_gangetic_smoke_20211105.jpg" alt="NASA Terra MODIS true-color satellite capture of regional aerosol blanket over Northern India" class="se-strip-photo-img" width="380" height="140" loading="lazy">
+            <div class="se-strip-photo-caption">
+              <span>NASA Terra / MODIS</span>
+              <span>Indo-Gangetic Basin</span>
+            </div>
+          </div>
         </div>
 
         <div class="se-analyses-strip" id="analyses-cards-grid">
