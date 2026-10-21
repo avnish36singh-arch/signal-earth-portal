@@ -48,6 +48,9 @@
 
   function getRelPath(relPath) {
     var p = relPath.replace(/^\/+/, '');
+    if (window.location.protocol === 'file:') {
+      return './' + p;
+    }
     var isGhPages = window.location.pathname.indexOf('/signal-earth-portal') === 0;
     return (isGhPages ? '/signal-earth-portal/' : '/') + p;
   }
@@ -183,10 +186,11 @@
     }
   }
 
-  // Load countries index and boundaries
+  // Load countries index and boundaries with cache-buster
+  var CACHE_KEY = '20261021c';
   Promise.all([
-    fetch(getRelPath('data/countries.json')).then(function (r) { return r.json(); }),
-    fetch(getRelPath('data/world-110m.geojson')).then(function (r) { return r.json(); })
+    fetch(getRelPath('data/countries.json?v=' + CACHE_KEY)).then(function (r) { return r.json(); }),
+    fetch(getRelPath('data/world-110m.geojson?v=' + CACHE_KEY)).then(function (r) { return r.json(); })
   ])
   .then(function (results) {
     var indexData = results[0];
