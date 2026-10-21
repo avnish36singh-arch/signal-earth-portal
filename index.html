@@ -352,6 +352,8 @@
         max-height: 180px;
         overflow-y: auto;
       }
+    }
+
     /* Minimalist Scroll Cue */
     .se-globe-scroll-cue {
       position: absolute;
@@ -402,19 +404,7 @@
       margin: 0 auto;
     }
     .se-strip-header {
-      display: grid;
-      grid-template-columns: 1fr 380px;
-      gap: 2rem;
-      align-items: center;
-      margin-bottom: 2.25rem;
-      padding-bottom: 1.75rem;
-      border-bottom: 1px solid var(--se-border-subtle);
-    }
-    @media (max-width: 860px) {
-      .se-strip-header {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-      }
+      margin-bottom: 2rem;
     }
     .se-strip-kicker {
       font-family: var(--se-font-mono);
@@ -437,35 +427,10 @@
       line-height: 1.55;
       color: var(--se-text-secondary);
       margin: 0;
-      max-width: 58ch;
+      max-width: 68ch;
     }
-    .se-strip-photo-wrap {
-      background: var(--se-bg-surface);
-      border: 1px solid var(--se-border);
-      border-radius: var(--se-radius-sm);
-      overflow: hidden;
-    }
-    .se-strip-photo-img {
-      width: 100%;
-      height: 140px;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.3s ease;
-    }
-    .se-strip-photo-wrap:hover .se-strip-photo-img {
-      transform: scale(1.02);
-    }
-    .se-strip-photo-caption {
-      padding: 0.55rem 0.75rem;
-      font-family: var(--se-font-mono);
-      font-size: 0.72rem;
-      color: var(--se-text-muted);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-top: 1px solid var(--se-border-subtle);
-      background: var(--se-bg-card);
-    }
+
+    /* 4 Investigation Cards: Equal-sized, Uniform Length */
     .se-analyses-strip {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -477,7 +442,7 @@
         grid-template-columns: repeat(2, 1fr);
       }
     }
-    @media (max-width: 640px) {
+    @media (max-width: 600px) {
       .se-analyses-strip {
         grid-template-columns: 1fr;
       }
@@ -486,37 +451,120 @@
       background: var(--se-bg-surface);
       border: 1px solid var(--se-border);
       border-radius: var(--se-radius-md);
-      padding: 1.35rem 1.25rem;
+      padding: 1.5rem 1.35rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      transition: border-color 0.15s ease, transform 0.15s ease;
+      min-height: 380px;
+      box-sizing: border-box;
+      transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
     }
     .se-strip-card:hover {
       border-color: var(--se-text-primary);
       transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
     }
     .se-card-heading {
       font-family: var(--se-font-serif);
       font-size: 1.15rem;
       font-weight: 700;
-      margin: 0 0 0.5rem;
+      margin: 0 0 0.65rem;
       color: var(--se-text-primary);
-      line-height: 1.35;
+      line-height: 1.3;
     }
     .se-card-finding-text {
-      font-size: 0.86rem;
+      font-size: 0.85rem;
       line-height: 1.55;
       color: var(--se-text-secondary);
       margin: 0 0 1rem;
     }
     .se-card-meta-block {
-      font-size: 0.78rem;
+      font-size: 0.76rem;
       line-height: 1.5;
       color: var(--se-text-muted);
       border-top: 1px solid var(--se-border-subtle);
       padding-top: 0.75rem;
-      margin-bottom: 1.1rem;
+      margin-bottom: 1rem;
+      margin-top: auto;
+    }
+    .se-card-meta-row {
+      margin-bottom: 0.35rem;
+    }
+    .se-card-meta-row strong {
+      color: var(--se-text-primary);
+      font-family: var(--se-font-mono);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+    }
+    .se-card-action-link {
+      font-family: var(--se-font-mono);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--se-teal-live);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: color 0.15s ease, gap 0.15s ease;
+    }
+    .se-card-action-link:hover {
+      color: #FFFFFF;
+      gap: 0.55rem;
+    }
+
+    /* Full-Width Rectangular Satellite Photo Banner */
+    .se-strip-banner-wrap {
+      margin-bottom: 2rem;
+      border: 1px solid var(--se-border);
+      border-radius: var(--se-radius-md);
+      overflow: hidden;
+      background: var(--se-bg-surface);
+    }
+    .se-strip-banner-figure {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .se-strip-banner-img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      object-position: center 30%;
+      display: block;
+    }
+    .se-strip-banner-caption {
+      padding: 0.85rem 1.25rem;
+      background: var(--se-bg-surface);
+      border-top: 1px solid var(--se-border-subtle);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.8rem;
+    }
+    .se-banner-caption-left {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+    .se-banner-title {
+      font-family: var(--se-font-serif);
+      font-weight: 700;
+      color: var(--se-text-primary);
+      font-size: 0.95rem;
+    }
+    .se-banner-sub {
+      font-size: 0.78rem;
+      color: var(--se-text-secondary);
+      line-height: 1.4;
+    }
+    .se-banner-source {
+      font-family: var(--se-font-mono);
+      font-size: 0.72rem;
+      color: var(--se-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
     }
     .se-card-meta-row {
       margin-bottom: 0.35rem;
@@ -710,20 +758,11 @@
     <section class="se-strip-section" id="original-analyses" aria-label="Original analyses">
       <div class="se-strip-container">
         <div class="se-strip-header">
-          <div>
-            <span class="se-strip-kicker">Original analyses</span>
-            <h2 class="se-strip-title">Empirical Local Air Quality and Thermal Investigations</h2>
-            <p class="se-strip-dek">
-              Ground-level regulatory monitoring paired with NASA Earth observation radiometry across the Indo-Gangetic Plain.
-            </p>
-          </div>
-          <div class="se-strip-photo-wrap">
-            <img src="assets/hero_indo_gangetic_smoke_20211105.jpg" alt="NASA Terra MODIS true-color satellite capture of regional aerosol blanket over Northern India" class="se-strip-photo-img" width="380" height="140" loading="lazy">
-            <div class="se-strip-photo-caption">
-              <span>NASA Terra / MODIS</span>
-              <span>Indo-Gangetic Basin</span>
-            </div>
-          </div>
+          <span class="se-strip-kicker">Original analyses</span>
+          <h2 class="se-strip-title">Empirical Local Air Quality and Thermal Investigations</h2>
+          <p class="se-strip-dek">
+            Continuous ground-level regulatory telemetry paired with satellite radiometric observations across the Indo-Gangetic Plain.
+          </p>
         </div>
 
         <div class="se-analyses-strip" id="analyses-cards-grid">
@@ -790,6 +829,22 @@
             </div>
             <a href="analyses/kanpur-uhi/index.html" class="se-card-action-link">Read analysis &rarr;</a>
           </article>
+        </div>
+
+        <!-- Full-Width Panoramic Satellite Photo Banner below the four square cards -->
+        <div class="se-strip-banner-wrap">
+          <figure class="se-strip-banner-figure">
+            <img src="assets/hero_indo_gangetic_smoke_20211105.jpg" alt="NASA Terra MODIS true-color satellite capture of regional aerosol blanket over Northern India banked against the Himalayas" class="se-strip-banner-img" width="1240" height="280" loading="lazy">
+            <figcaption class="se-strip-banner-caption">
+              <div class="se-banner-caption-left">
+                <span class="se-banner-title">Indo-Gangetic Basin Aerosol Blanket</span>
+                <span class="se-banner-sub">True-color satellite radiometry capturing post-monsoon winter haze banked along the Himalayan foothills</span>
+              </div>
+              <div class="se-banner-caption-right">
+                <span class="se-banner-source">NASA Terra / MODIS &middot; Public Domain</span>
+              </div>
+            </figcaption>
+          </figure>
         </div>
 
         <!-- Single Latest Note line -->
