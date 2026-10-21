@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Signal Earth | Open Environmental Indicators &amp; Planetary Globe</title>
-  <meta name="description" content="Interactive planetary globe tracking open environmental indicators and Yale EPI 2026 performance scores across 48 countries.">
+  <meta name="description" content="Interactive planetary globe tracking open environmental indicators and Yale EPI 2026 performance scores across global countries.">
   <link rel="canonical" href="https://signalearth.netlify.app/">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="assets/tokens.css?v=20261021c">
-  <link rel="stylesheet" href="style.css?v=20261021c">
+  <link rel="stylesheet" href="assets/tokens.css?v=20261021d">
+  <link rel="stylesheet" href="style.css?v=20261021d">
   <script src="assets/theme.js"></script>
 
   <!-- Pinned Three.js and Globe.gl libraries with local vendor + CDN fallback -->
@@ -25,7 +25,7 @@
       document.write('<script src="https://unpkg.com/globe.gl@2.32.2/dist/globe.gl.min.js"><\/script>');
     }
   </script>
-  <script src="assets/globe-country.js?v=20261021c" defer></script>
+  <script src="assets/globe-country.js?v=20261021d" defer></script>
 
   <style>
     /* Full-Viewport Clean Stage */
@@ -33,16 +33,16 @@
       margin: 0;
       padding: 0;
       overflow-x: hidden;
-      background: var(--se-bg-page);
+      background: #000000;
       color: var(--se-text-primary);
       font-family: var(--se-font-sans);
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Minimal 5-Link Editorial Header */
+    /* Minimal 5-Link Editorial Header (Consistent Dark Stage) */
     .se-editorial-header {
-      border-bottom: 1px solid var(--se-border);
-      background: var(--se-bg-page);
+      background: #090B0F;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
       position: relative;
       z-index: 30;
       height: 54px;
@@ -60,7 +60,7 @@
       font-family: var(--se-font-serif);
       font-size: 1.25rem;
       font-weight: 700;
-      color: var(--se-text-primary);
+      color: #FFFFFF;
       text-decoration: none;
       letter-spacing: -0.01em;
     }
@@ -74,18 +74,18 @@
     }
     .se-editorial-nav-link {
       font-size: 0.88rem;
-      color: var(--se-text-secondary);
+      color: #94A3B8;
       text-decoration: none;
       font-weight: 500;
       transition: color 0.1s ease;
     }
     .se-editorial-nav-link:hover {
-      color: var(--se-text-primary);
+      color: #FFFFFF;
     }
     .se-editorial-nav-link.active {
-      color: var(--se-text-primary);
+      color: #FFFFFF;
       font-weight: 700;
-      border-bottom: 2px solid var(--se-text-primary);
+      border-bottom: 2px solid #FFFFFF;
       padding-bottom: 2px;
     }
 
@@ -352,9 +352,148 @@
         max-height: 180px;
         overflow-y: auto;
       }
-      .se-hud-bottom-right {
-        display: none;
+    /* Below-the-Globe Original Analyses Strip */
+    .se-strip-section {
+      background: var(--se-bg-page);
+      border-top: 1px solid var(--se-border);
+      padding: 3.5rem 1.5rem 4rem;
+    }
+    .se-strip-container {
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+    .se-strip-header {
+      margin-bottom: 2rem;
+    }
+    .se-strip-kicker {
+      font-family: var(--se-font-mono);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--se-text-muted);
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+    .se-strip-title {
+      font-family: var(--se-font-serif);
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin: 0;
+      color: var(--se-text-primary);
+    }
+    .se-analyses-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    @media (max-width: 1080px) {
+      .se-analyses-strip {
+        grid-template-columns: repeat(2, 1fr);
       }
+    }
+    @media (max-width: 640px) {
+      .se-analyses-strip {
+        grid-template-columns: 1fr;
+      }
+    }
+    .se-strip-card {
+      background: var(--se-bg-surface);
+      border: 1px solid var(--se-border);
+      border-radius: var(--se-radius-md);
+      padding: 1.35rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.15s ease, transform 0.15s ease;
+    }
+    .se-strip-card:hover {
+      border-color: var(--se-text-primary);
+      transform: translateY(-2px);
+    }
+    .se-card-heading {
+      font-family: var(--se-font-serif);
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin: 0 0 0.5rem;
+      color: var(--se-text-primary);
+      line-height: 1.35;
+    }
+    .se-card-finding-text {
+      font-size: 0.86rem;
+      line-height: 1.55;
+      color: var(--se-text-secondary);
+      margin: 0 0 1rem;
+    }
+    .se-card-meta-block {
+      font-size: 0.78rem;
+      line-height: 1.5;
+      color: var(--se-text-muted);
+      border-top: 1px solid var(--se-border-subtle);
+      padding-top: 0.75rem;
+      margin-bottom: 1.1rem;
+    }
+    .se-card-meta-row {
+      margin-bottom: 0.35rem;
+    }
+    .se-card-meta-row strong {
+      color: var(--se-text-primary);
+      font-family: var(--se-font-mono);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+    }
+    .se-card-action-link {
+      font-family: var(--se-font-mono);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--se-text-primary);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .se-card-action-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Latest Note Line */
+    .se-latest-note-strip {
+      background: var(--se-bg-surface);
+      border: 1px solid var(--se-border);
+      border-radius: var(--se-radius-sm);
+      padding: 0.85rem 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      font-size: 0.88rem;
+      flex-wrap: wrap;
+    }
+    .se-latest-note-badge {
+      font-family: var(--se-font-mono);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      background: var(--se-text-primary);
+      color: var(--se-bg-page);
+      padding: 0.2rem 0.5rem;
+      border-radius: 2px;
+      font-weight: 700;
+    }
+    .se-latest-note-text {
+      color: var(--se-text-primary);
+    }
+    .se-latest-note-link {
+      color: var(--se-text-primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .se-latest-note-link:hover {
+      text-decoration: underline;
+    }
+    .se-latest-note-date {
+      color: var(--se-text-muted);
+      font-family: var(--se-font-mono);
+      font-size: 0.8rem;
     }
   </style>
 </head>
@@ -401,7 +540,7 @@
       <div class="se-hud-top-left se-hud-card">
         <h1 class="se-hud-title">Planetary Environmental Explorer</h1>
         <p class="se-hud-desc">
-          Open environmental indicators and performance benchmarks compiled from verified public sources across 48 countries.
+          Open environmental indicators and performance benchmarks compiled from open official sources across <span id="hero-country-count">177</span> countries.
         </p>
 
         <!-- Metric Layer Selector (Default: Yale EPI 2026 Score) -->
@@ -464,7 +603,7 @@
           <span>Reset</span>
         </button>
         <a href="countries/index.html" class="se-hud-btn" style="text-decoration: none;">
-          <span>All Countries (48) &rarr;</span>
+          <span>All Countries (<span id="btn-country-count">177</span>) &rarr;</span>
         </a>
       </div>
 
@@ -473,6 +612,93 @@
         <!-- Dynamically rendered by assets/globe-country.js -->
       </div>
     </div>
+
+    <!-- Original analyses strip: four cards reading from data/numbers_ledger.json -->
+    <section class="se-strip-section" id="original-analyses" aria-label="Original analyses">
+      <div class="se-strip-container">
+        <div class="se-strip-header">
+          <span class="se-strip-kicker">Original analyses</span>
+          <h2 class="se-strip-title">Empirical Local Air Quality and Thermal Investigations</h2>
+        </div>
+
+        <div class="se-analyses-strip" id="analyses-cards-grid">
+          <!-- Card 1: Kanpur Particulate Dynamics -->
+          <article class="se-strip-card" id="card-kanpur">
+            <div>
+              <h3 class="se-card-heading">Kanpur Particulate Dynamics</h3>
+              <p class="se-card-finding-text" id="card-finding-kanpur">
+                Winter PM2.5 averaged 2.40x monsoon levels across both observation windows (61.41 vs 25.61 ug/m3 across 1,628 station-days).
+              </p>
+              <div class="se-card-meta-block">
+                <div class="se-card-meta-row"><strong>Period:</strong> <span id="card-period-kanpur">July 2021 to October 2022 and February 2025 to August 2026</span></div>
+                <div class="se-card-meta-row"><strong>Source:</strong> <span id="card-source-kanpur">CPCB CAAQMS (Kalyanpur and Nehru Nagar)</span></div>
+                <div class="se-card-meta-row"><strong>Limitation:</strong> <span id="card-limitation-kanpur">855-day operational monitoring gap between observation windows; spatial coverage restricted to two urban monitors.</span></div>
+              </div>
+            </div>
+            <a href="analyses/kanpur/index.html" class="se-card-action-link">Read analysis &rarr;</a>
+          </article>
+
+          <!-- Card 2: Delhi NAQI -->
+          <article class="se-strip-card" id="card-delhi">
+            <div>
+              <h3 class="se-card-heading">Delhi Five-Year NAQI Dynamics</h3>
+              <p class="se-card-finding-text" id="card-finding-delhi">
+                Particulate matter governed official AQI on 95.3% of valid days (PM2.5 on 51.8%, PM10 on 43.4%), with a 5.75x peak haze multiplier.
+              </p>
+              <div class="se-card-meta-block">
+                <div class="se-card-meta-row"><strong>Period:</strong> <span id="card-period-delhi">2017 to 2023 (1,137 days satisfying CPCB minimum reporting quorum)</span></div>
+                <div class="se-card-meta-row"><strong>Source:</strong> <span id="card-source-delhi">DPCC / CPCB (Alipur monitoring station)</span></div>
+                <div class="se-card-meta-row"><strong>Limitation:</strong> <span id="card-limitation-delhi">731-day operational hiatus during station refurbishment (2019-2020); single peripheral monitoring station.</span></div>
+              </div>
+            </div>
+            <a href="analyses/delhi/index.html" class="se-card-action-link">Read analysis &rarr;</a>
+          </article>
+
+          <!-- Card 3: Kanpur Temperature & Particulate Association -->
+          <article class="se-strip-card" id="card-kanpur-lst">
+            <div>
+              <h3 class="se-card-heading">Kanpur Skin Temperature &amp; Particulate Association</h3>
+              <p class="se-card-finding-text" id="card-finding-kanpur-lst">
+                Daily surface skin temperature exhibits a moderate negative seasonal correlation with PM2.5 (r = -0.455 across 308 concurrent pairs).
+              </p>
+              <div class="se-card-meta-block">
+                <div class="se-card-meta-row"><strong>Period:</strong> <span id="card-period-kanpur-lst">July 9, 2021 to October 16, 2022 (overlap window; 2017-2023 overall)</span></div>
+                <div class="se-card-meta-row"><strong>Source:</strong> <span id="card-source-kanpur-lst">NASA POWER (GMAO MERRA-2 daily skin temperature TS)</span></div>
+                <div class="se-card-meta-row"><strong>Limitation:</strong> <span id="card-limitation-kanpur-lst">Coarse regional reanalysis grid cell (0.5 deg x 0.625 deg, ~55 x 60 km) cannot resolve intra-urban heat islands.</span></div>
+              </div>
+            </div>
+            <a href="analyses/kanpur-lst/index.html" class="se-card-action-link">Read analysis &rarr;</a>
+          </article>
+
+          <!-- Card 4: Kanpur Landsat 30 m Thermal -->
+          <article class="se-strip-card" id="card-kanpur-uhi">
+            <div>
+              <h3 class="se-card-heading">Kanpur Landsat 30 m Thermal Infrared</h3>
+              <p class="se-card-finding-text" id="card-finding-kanpur-uhi">
+                Landsat 8/9 TIRS-2 radiometric snapshot observed an empirical urban-rural thermal delta of 1.0 to 2.3 K across winter clear-sky overpasses.
+              </p>
+              <div class="se-card-meta-block">
+                <div class="se-card-meta-row"><strong>Period:</strong> <span id="card-period-kanpur-uhi">Winter 2022 daytime satellite overpasses</span></div>
+                <div class="se-card-meta-row"><strong>Source:</strong> <span id="card-source-kanpur-uhi">USGS Landsat 8/9 TIRS-2 Band 10 (30 m resampled)</span></div>
+                <div class="se-card-meta-row"><strong>Limitation:</strong> <span id="card-limitation-kanpur-uhi">Instantaneous clear-sky daytime snapshot observation; requires vertical atmospheric soundings to confirm inversion dynamics.</span></div>
+              </div>
+            </div>
+            <a href="analyses/kanpur-uhi/index.html" class="se-card-action-link">Read analysis &rarr;</a>
+          </article>
+        </div>
+
+        <!-- Single Latest Note line -->
+        <div class="se-latest-note-strip" id="latest-note-strip">
+          <span class="se-latest-note-badge">Latest note</span>
+          <span class="se-latest-note-text">
+            <span class="se-latest-note-date" id="home-latest-note-date">October 18, 2026</span> &middot;
+            <a href="notes/kanpur-winter-pm25-ratio-2026.html" class="se-latest-note-link" id="home-latest-note-link">
+              <span id="home-latest-note-title">Empirical Ratio of Winter to Monsoon PM2.5 in Kanpur (2021-2026)</span> &rarr;
+            </a>
+          </span>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Minimal Editorial Footer -->
@@ -484,12 +710,15 @@
             Signal Earth
           </div>
           <p style="font-size: 0.88rem; line-height: 1.6; color: var(--se-text-secondary); max-width: 52ch; margin: 0 0 1rem;">
-            Avnish Singh &middot; Undergraduate civil engineering student at HBTU Kanpur &middot; Contact: <a href="mailto:avnish36singh@gmail.com" class="se-link" style="color: var(--se-text-primary); text-decoration: underline;">avnish36singh@gmail.com</a>
+            Avnish Singh &middot; Undergraduate civil engineering student at HBTU Kanpur (personal research project; not affiliated with or endorsed by HBTU Kanpur) &middot; Contact: <a href="mailto:avnish36singh@gmail.com" class="se-link" style="color: var(--se-text-primary); text-decoration: underline;">avnish36singh@gmail.com</a>
           </p>
           <div style="font-size: 0.82rem; color: var(--se-text-muted);">
             <a href="credits.html" class="se-link">How to cite</a> &middot;
             <a href="methodology.html" class="se-link">Methodology</a> &middot;
             <a href="sources.html" class="se-link">Data Sources</a> &middot;
+            <a href="analyses/index.html" class="se-link">Analyses</a> &middot;
+            <a href="notes/index.html" class="se-link">Notes</a> &middot;
+            <a href="notes/feed.xml" class="se-link">RSS Feed</a> &middot;
             <a href="corrections.html" class="se-link">Corrections Log</a> &middot;
             <a href="countries/index.html" class="se-link">All Countries</a> &middot;
             <a href="numbers_ledger.csv" class="se-link" download>Numbers Ledger (CSV)</a> &middot;
@@ -514,5 +743,76 @@
       </div>
     </div>
   </footer>
+
+  <!-- Single Numbers Ledger and Notes Dynamic Synchronization -->
+  <script>
+    (function() {
+      // Sync case study cards with numbers ledger JSON
+      fetch('data/numbers_ledger.json')
+        .then(function(res) { return res.json(); })
+        .then(function(ledger) {
+          if (!ledger || !ledger.case_studies) return;
+          var cs = ledger.case_studies;
+          if (cs.kanpur_particulate) {
+            var f1 = document.getElementById('card-finding-kanpur');
+            if (f1) f1.textContent = cs.kanpur_particulate.finding;
+            var p1 = document.getElementById('card-period-kanpur');
+            if (p1) p1.textContent = cs.kanpur_particulate.period;
+            var s1 = document.getElementById('card-source-kanpur');
+            if (s1) s1.textContent = cs.kanpur_particulate.source;
+            var l1 = document.getElementById('card-limitation-kanpur');
+            if (l1) l1.textContent = cs.kanpur_particulate.limitation;
+          }
+          if (cs.delhi_naqi) {
+            var f2 = document.getElementById('card-finding-delhi');
+            if (f2) f2.textContent = cs.delhi_naqi.finding;
+            var p2 = document.getElementById('card-period-delhi');
+            if (p2) p2.textContent = cs.delhi_naqi.period;
+            var s2 = document.getElementById('card-source-delhi');
+            if (s2) s2.textContent = cs.delhi_naqi.source;
+            var l2 = document.getElementById('card-limitation-delhi');
+            if (l2) l2.textContent = cs.delhi_naqi.limitation;
+          }
+          if (cs.kanpur_temperature) {
+            var f3 = document.getElementById('card-finding-kanpur-lst');
+            if (f3) f3.textContent = cs.kanpur_temperature.finding;
+            var p3 = document.getElementById('card-period-kanpur-lst');
+            if (p3) p3.textContent = cs.kanpur_temperature.period;
+            var s3 = document.getElementById('card-source-kanpur-lst');
+            if (s3) s3.textContent = cs.kanpur_temperature.source;
+            var l3 = document.getElementById('card-limitation-kanpur-lst');
+            if (l3) l3.textContent = cs.kanpur_temperature.limitation;
+          }
+          if (cs.kanpur_landsat) {
+            var f4 = document.getElementById('card-finding-kanpur-uhi');
+            if (f4) f4.textContent = cs.kanpur_landsat.finding;
+            var p4 = document.getElementById('card-period-kanpur-uhi');
+            if (p4) p4.textContent = cs.kanpur_landsat.period;
+            var s4 = document.getElementById('card-source-kanpur-uhi');
+            if (s4) s4.textContent = cs.kanpur_landsat.source;
+            var l4 = document.getElementById('card-limitation-kanpur-uhi');
+            if (l4) l4.textContent = cs.kanpur_landsat.limitation;
+          }
+        })
+        .catch(function(e) { console.warn('Ledger sync note:', e); });
+
+      // Sync latest note line with notes.json
+      fetch('data/notes.json')
+        .then(function(res) { return res.json(); })
+        .then(function(notes) {
+          if (!notes || notes.length === 0) return;
+          var latest = notes[0];
+          var link = document.getElementById('home-latest-note-link');
+          var title = document.getElementById('home-latest-note-title');
+          var date = document.getElementById('home-latest-note-date');
+          if (link && title && date) {
+            link.href = latest.url;
+            title.textContent = latest.title;
+            date.textContent = latest.formatted_date;
+          }
+        })
+        .catch(function(e) { console.warn('Notes sync note:', e); });
+    })();
+  </script>
 </body>
 </html>

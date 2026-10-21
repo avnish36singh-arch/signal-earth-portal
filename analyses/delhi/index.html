@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delhi Five-Year NAQI Analysis | Signal Earth</title>
+  <meta name="description" content="Investigation of multi-year air quality records at Delhi Alipur, calculating official CPCB NAQI sub-indices, seasonal dynamics, and machine learning forecast models.">
+  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/analyses/delhi/">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+  <link rel="manifest" href="../../site.webmanifest">
+  <meta property="og:title" content="Delhi Five-Year NAQI Analysis | Signal Earth">
+  <meta property="og:description" content="CPCB NAQI sub-indices, seasonal regimes, and operational gap accounting at Delhi Alipur.">
+  <meta property="og:url" content="https://avnish36singh-arch.github.io/signal-earth-portal/analyses/delhi/">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://avnish36singh-arch.github.io/signal-earth-portal/assets/delhi/03_seasonal_aqi_dynamics.png">
+  <link rel="stylesheet" href="../../style.css">
+  <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
+  <script src="../../assets/theme.js"></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+
+  <!-- Navigation -->
+  <header>
+    <nav class="se-nav" aria-label="Main Navigation">
+      <div class="se-nav-inner">
+        <a href="../../index.html" class="se-brand">
+          <span class="se-brand-name">Signal Earth</span>
+          <span class="se-brand-sub">Independent Research</span>
+        </a>
+
+        <ul class="se-nav-links">
+          <li><a href="../../research.html" class="active">Research</a></li>
+          <li><a href="../../briefs/index.html">Briefs</a></li>
+          <li><a href="../../explained/index.html">Explained</a></li>
+          <li><a href="../../data.html">Data &amp; Code</a></li>
+          <li><a href="../../about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero Block with Figure Header -->
+    <div class="se-investigation-hero">
+      <div class="se-container-narrow">
+        <span class="section-kicker">Analysis 02 : Multi-Year Observation</span>
+        <h1 class="editorial-headline se-investigation-title">
+          Delhi Five-Year NAQI Analysis and Seasonal Atmospheric Regimes
+        </h1>
+
+        <div class="se-investigation-meta">
+          <span>By <strong>Avnish Singh</strong>, undergraduate civil engineering student at HBTU Kanpur (personal research project; not affiliated with or endorsed by HBTU Kanpur)</span>
+          <span>Last updated: October 2026</span>
+          <span>Reading time: 9 min read</span>
+        </div>
+
+        <!-- 3-Sentence Summary -->
+        <div class="se-summary-box">
+          This investigation analyzes 1,825 daily records from the Alipur continuous monitoring station on Delhi's northern peripheral boundary between 2017 and 2023. An operational refurbishment created an unmonitored gap of 731 days across 2019 and 2020, leaving 1,137 days that satisfy CPCB quorum requirements for official AQI calculation (1,133 days with valid PM2.5 observations). Particulate matter (PM2.5 or PM10) drove the official daily AQI on 95.3% of valid days (PM2.5 on 51.8% and PM10 on 43.4%), with peak haze concentrations (November to January) averaging 5.75 times the core monsoon baseline (July to September).
+        </div>
+
+        <div class="se-card-img-wrap se-img-bordered">
+          <img src="../../assets/delhi/03_seasonal_aqi_dynamics.png" alt="Seasonal AQI and particulate progression at Delhi Alipur showing steep November escalation" width="900" height="450" fetchpriority="high">
+        </div>
+        <div class="se-image-credit">
+          Image: Avnish Singh, using CPCB / DPCC records, October 2026. Recorded in <a href="../../credits.html">credits.json</a>.
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content Body -->
+    <div class="se-container-narrow se-page-content">
+
+      <!-- Data Accounting Notice -->
+      <section class="se-alert-warning">
+        <h2 class="se-alert-warning-title">Operational Hiatus and Quorum Accounting</h2>
+        <p class="se-alert-warning-text">
+          Between January 1, 2017 and December 31, 2023 (2,556 total calendar days), the Alipur station was inactive for <strong>731 consecutive days from January 1, 2019 to December 31, 2020</strong> due to station refurbishment. Across the 1,825 recorded rows, exactly 1,137 days meet the CPCB 3-pollutant + PM quorum rule (1,133 days with valid PM2.5 observations), 1 day is indicative, and 687 days are partial or missing. No artificial imputation was used across the two-year gap.
+        </p>
+      </section>
+
+      <!-- Section 1 -->
+      <section class="se-investigation-section">
+        <span class="section-kicker">01 : Timeseries Dynamics</span>
+        <h2 class="editorial-headline se-section-heading">Multi-Year National Air Quality Index Trajectory</h2>
+        <p class="se-section-intro">
+          Evaluating 1,137 official days under CPCB guidelines reveals recurring November spikes reaching the Severe category (AQI &gt; 400). Annual mean PM2.5 stands at 112.4 µg/m³ (across 1,133 valid PM2.5 days), exceeding the national annual ambient standard of 40 µg/m³ by a factor of 2.8.
+        </p>
+
+        <div class="se-figure">
+          <div class="se-figure-header">
+            <div class="se-figure-title">Figure 1: Five-Year Daily AQI Timeline at Alipur, Delhi</div>
+            <div class="se-figure-meta">Data Source: CPCB / DPCC Site 204 | Period: 2017 to 2023 | n = 1,137 official days | Units: AQI Points</div>
+          </div>
+          <img src="../../assets/delhi/01_aqi_time_series.png" alt="Timeseries of daily CPCB NAQI at Delhi Alipur showing November spikes and the 2019 to 2020 gap" class="se-figure-img" width="900" height="450" loading="lazy">
+          <div class="se-figure-caption">
+            <strong>Caption:</strong> Continuous AQI time series showing the 731-day unmonitored gap. This figure does not interpolate or bridge unrecorded days.
+          </div>
+          <div class="se-image-credit se-figure-credit-surface">
+            Image: Avnish Singh, using CPCB / DPCC records, October 2026. <a href="../../credits.html">Credits entry</a>.
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Interactive Plotly Chart -->
+      <section class="se-investigation-section">
+        <span class="section-kicker">02 : Interactive Exploration</span>
+        <h2 class="editorial-headline se-section-heading">Interactive Daily Observation Explorer</h2>
+        <p class="se-section-intro">
+          Examine daily observed pollutant concentrations and calculated sub-indices directly in your browser. Pan, zoom, and hover to view specific values.
+        </p>
+
+        <div id="delhi-timeseries-plot" class="se-plot-container"></div>
+        <div class="se-image-credit se-image-credit-mb">
+          Interactive Chart: Rendered with Plotly.js from <code>delhi_daily_gapfixed.json</code> (1,825 rows). Flat styling, no animations.
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="se-investigation-section">
+        <span class="section-kicker">03 : Seasonal Progression</span>
+        <h2 class="editorial-headline se-section-heading">Seasonal Particulate Regimes and the Post-Monsoon Surge</h2>
+        <p class="se-section-intro">
+          Comparing monthly distributions confirms that particulate concentrations drop to an annual minimum during July and August (monsoon mean PM2.5 = 34.3 µg/m³), before escalating dramatically in November (winter mean PM2.5 = 197.5 µg/m³), generating a 5.75-fold seasonal surge multiplier.
+        </p>
+
+        <div class="se-figure">
+          <div class="se-figure-header">
+            <div class="se-figure-title">Figure 2: Monthly Seasonal AQI and Particulate Dynamics</div>
+            <div class="se-figure-meta">Data Source: CPCB Alipur raw data | Period: 2017 to 2023 | Units: AQI points and µg/m³</div>
+          </div>
+          <img src="../../assets/delhi/03_seasonal_aqi_dynamics.png" alt="Seasonal AQI and particulate progression at Delhi Alipur showing steep November escalation" class="se-figure-img" width="900" height="450" loading="lazy">
+          <div class="se-figure-caption">
+            <strong>Caption:</strong> Delhi (Alipur) seasonal particulate dynamics showing steep post-monsoon escalation in November. This figure reflects records from a single monitoring station and does not capture citywide spatial variability across Delhi.
+          </div>
+          <div class="se-image-credit se-figure-credit-surface">
+            Image: Avnish Singh, using CPCB / DPCC records, October 2026. <a href="../../credits.html">Credits entry</a>.
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="se-investigation-section">
+        <span class="section-kicker">04 : Dominant Criteria Pollutants</span>
+        <h2 class="editorial-headline se-section-heading">Dominant Sub-Index Criteria Pollutants</h2>
+        <p class="se-section-intro">
+          In accordance with CPCB NAQI methodology, the reported daily AQI equals the maximum sub-index among all qualifying parameters. At Alipur, particulate matter (PM2.5 or PM10) drove the official AQI on 95.3% of valid days (1,083 out of 1,137 official days). Fine particulate matter (PM2.5) was the dominant driver on 51.8% of days (589 days), coarse particulate matter (PM10) on 43.4% of days (494 days), carbon monoxide (CO) on 4.4% of days (50 days), and ozone on 0.4% of days (4 days).
+        </p>
+
+        <div class="se-figure">
+          <div class="se-figure-header">
+            <div class="se-figure-title">Figure 3: Frequency Distribution of Dominant Criteria Pollutants</div>
+            <div class="se-figure-meta">Data Source: CPCB Alipur official calculations | Period: 2017 to 2023 | n = 1,137 days | Units: Count and %</div>
+          </div>
+          <img src="../../assets/delhi/04_dominant_pollutants.png" alt="Bar chart of dominant criteria pollutants at Alipur showing particulate matter responsible for 95.3 percent of days" class="se-figure-img" width="900" height="450" loading="lazy">
+          <div class="se-figure-caption">
+            <strong>Caption:</strong> Relative frequency of dominant criteria pollutants determining the daily CPCB AQI. Particulate matter (PM2.5 and PM10 combined) governs 95.3% of all valid days, indicating that particulate mitigation is the central regulatory challenge at this monitoring location.
+          </div>
+          <div class="se-image-credit se-figure-credit-surface">
+            Image: Avnish Singh, using CPCB / DPCC records, October 2026. <a href="../../credits.html">Credits entry</a>.
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="se-investigation-section-last">
+        <span class="section-kicker">05 : Particulate Ratios and VOC Tracers</span>
+        <h2 class="editorial-headline se-section-heading">Fine-to-Coarse Particulate Ratio and Vehicular VOC Tracers</h2>
+        <p class="se-section-intro">
+          The ratio of fine-to-coarse particulate matter (PM2.5 / PM10) climbs from 0.42 during the pre-monsoon dust season to 0.67 in November, indicating the dominance of secondary aerosol formation and fine combustion products. The mean Toluene to Benzene ratio at Alipur is 2.18, characteristic of traffic and heavy commercial diesel freight along National Highway 44.
+        </p>
+
+        <div class="se-figure">
+          <div class="se-figure-header">
+            <div class="se-figure-title">Figure 4: Seasonal Progression of PM2.5 / PM10 Ratio and VOC Tracers</div>
+            <div class="se-figure-meta">Data Source: CPCB Alipur valid pairs | Period: 2017 to 2023 | Units: Dimensionless concentration ratios</div>
+          </div>
+          <img src="../../assets/delhi/05_pm_and_btex_dynamics.png" alt="Timeseries and boxplots of PM2.5 to PM10 ratio and Toluene to Benzene ratio at Delhi Alipur" class="se-figure-img" width="900" height="450" loading="lazy">
+          <div class="se-figure-caption">
+            <strong>Caption:</strong> Fine-to-coarse ratio and VOC indicators. Ratios provide screening diagnostics for combustion dominance, but do not replace chemical mass balance (CMB) receptor modeling.
+          </div>
+          <div class="se-image-credit se-figure-credit-surface">
+            Image: Avnish Singh, using CPCB / DPCC records, October 2026. <a href="../../credits.html">Credits entry</a>.
+          </div>
+        </div>
+      </section>
+
+      <!-- Required Editorial End Sections (NASA / Nat Geo Standard) -->
+
+      <!-- 1. What this cannot show -->
+      <section class="se-panel-alt">
+        <span class="section-kicker">Analytical Boundaries</span>
+        <h2 class="editorial-headline se-panel-heading">What This Cannot Show</h2>
+        <ul class="se-list-spaced">
+          <li>This analysis is based on a single monitoring station (Site 204) at Delhi's northern peripheral boundary on National Highway 44. It cannot represent population-weighted exposure across central, southern, or eastern Delhi.</li>
+          <li>It cannot provide continuous trend metrics across 2019 and 2020 because the monitor was unoperational for 731 consecutive days during equipment overhaul.</li>
+          <li>VOC ratios (Toluene / Benzene = 2.18) provide general evidence of vehicular exhaust, but cannot quantify the precise share of regional crop stubble burning versus local Delhi traffic without isotopically resolved chemical filter analysis.</li>
+        </ul>
+      </section>
+
+      <!-- 2. Data and code -->
+      <section class="se-panel-box">
+        <span class="section-kicker">Reproducibility</span>
+        <h2 class="editorial-headline se-panel-heading">Data and Code</h2>
+        <p class="se-lead-paragraph">
+          The Python pipeline for cleaning, sub-index piecewise interpolation, gap accounting, and machine learning forecasting is published under the MIT License:
+        </p>
+        <div class="se-btn-group">
+          <a href="https://github.com/avnish36singh-arch/delhi-air_qaulity_cpcb" target="_blank" rel="noopener noreferrer" class="se-btn">View pipeline repository on GitHub</a>
+          <a href="../../data.html" class="se-btn se-btn-outline">Data provenance registry</a>
+        </div>
+      </section>
+
+      <!-- 3. Cite this page -->
+      <section class="se-panel-box">
+        <span class="section-kicker">Citation</span>
+        <h2 class="editorial-headline se-panel-heading">Cite This Page</h2>
+        <p class="se-lead-paragraph-sm">
+          Recommended academic citation format:
+        </p>
+        <blockquote class="se-quote-citation">
+          Singh, A. (2026). Delhi Five-Year NAQI Analysis and Seasonal Atmospheric Regimes. Signal Earth: Public Environmental Data Investigations. https://avnish36singh-arch.github.io/signal-earth-portal/analyses/delhi/
+        </blockquote>
+      </section>
+
+      <!-- 4. Report a problem -->
+      <section class="se-panel-box-last">
+        <span class="section-kicker">Feedback and Corrections</span>
+        <h2 class="editorial-headline se-panel-heading">Report a Problem</h2>
+        <p class="se-lead-paragraph">
+          If you identify an error in data handling, a formula discrepancy, or an unsupported assertion, please file a ticket on GitHub:
+        </p>
+        <div class="se-btn-group">
+          <a href="https://github.com/avnish36singh-arch/signal-earth-portal/issues" target="_blank" rel="noopener noreferrer" class="se-link">Open GitHub issue</a>
+          <a href="../../corrections.html" class="se-link se-link-secondary">View Corrections Log</a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="se-footer">
+    <div class="se-container">
+      <div class="se-footer-inner">
+        <div class="se-footer-brand-col">
+          <div class="se-footer-brand-title">Signal Earth</div>
+          <p class="se-footer-brand-desc">
+            Independent independent research project analyzing Earth observation records, satellite records, and public monitoring data.
+          </p>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Analyses</h5>
+          <ul>
+            <li><a href="../kanpur/index.html">Kanpur Particulate Dynamics</a></li>
+            <li><a href="../delhi/index.html">Delhi NAQI Analysis</a></li>
+            <li><a href="../kanpur-lst/index.html">Kanpur Reanalysis Temperature</a></li>
+            <li><a href="../../compare.html">Regional Airshed Comparison</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Method and Data</h5>
+          <ul>
+            <li><a href="../../index.html#explained">Explained Pieces</a></li>
+            <li><a href="../../methodology.html">Methodology and Limits</a></li>
+            <li><a href="../../data.html">Data and Code</a></li>
+            <li><a href="../../about.html">About Signal Earth</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="../../privacy.html">Privacy Policy</a></li>
+            <li><a href="../../terms.html">Terms of Use</a></li>
+            <li><a href="../../licenses.html">Licenses and Terms</a></li>
+            <li><a href="../../credits.html">Image Credits</a></li>
+            <li><a href="../../corrections.html">Corrections Log</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/company/signalearth/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="../../contact.html">Contact Information</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mandatory Affiliation Disclaimer -->
+      <div class="se-footer-disclaimer">
+        Signal Earth is an independent project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, UPPCB, DPCC, or any agency named on this site.
+      </div>
+
+      <div class="se-footer-bottom">
+        <div>Signal Earth &middot; Open Science under MIT License</div>
+        <div>Page last updated: October 2026</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="delhi.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 /**
  * Signal Earth : Interactive 3D Planetary Country Globe (assets/globe-country.js)
- * Full-viewport WebGL 3D Earth visualization tracking 48 canonical countries.
+ * Full-viewport WebGL 3D Earth visualization tracking global country profiles.
  * Colourblind-safe sequential scale (Cividis), Top 10 panel with Highest/Lowest toggle,
  * type-ahead search with aliases and diacritic support, and flat 2D fallback map.
  * Strict typography: ZERO EM DASHES.
@@ -187,7 +187,7 @@
   }
 
   // Load countries index and boundaries with cache-buster
-  var CACHE_KEY = '20261021c';
+  var CACHE_KEY = '20261021d';
   Promise.all([
     fetch(getRelPath('data/countries.json?v=' + CACHE_KEY)).then(function (r) { return r.json(); }),
     fetch(getRelPath('data/world-110m.geojson?v=' + CACHE_KEY)).then(function (r) { return r.json(); })
@@ -200,6 +200,11 @@
     indexData.forEach(function (c) {
       countriesIndex[c.iso3.toUpperCase()] = c;
     });
+
+    var countSpan = document.getElementById('btn-country-count');
+    if (countSpan) countSpan.textContent = allCountriesList.length;
+    var heroCountSpan = document.getElementById('hero-country-count');
+    if (heroCountSpan) heroCountSpan.textContent = allCountriesList.length;
 
     if (isWebGLAvailable()) {
       initGlobe(geoData);
@@ -274,7 +279,10 @@
       .atmosphereAltitude(0.12)
       .width(width)
       .height(height)
-      .polygonsData(geoData.features)
+      .polygonsData(geoData.features.filter(function (f) {
+        var iso = getIso3(f);
+        return iso !== 'ATA' && iso !== 'ATF';
+      }))
       .polygonAltitude(function (d) {
         return d === hoverD ? 0.045 : 0.007;
       })
@@ -361,6 +369,20 @@
 
     // Center camera on Indian Ocean / South Asia
     myGlobe.pointOfView({ lat: 20.0, lng: 77.0, altitude: 2.1 }, 1000);
+
+    myGlobe.onGlobeReady(function () {
+      var mat = myGlobe.globeMaterial();
+      if (mat && mat.map) {
+        if (typeof THREE !== 'undefined') {
+          mat.map.wrapS = THREE.RepeatWrapping;
+          mat.map.wrapT = THREE.ClampToEdgeWrapping;
+        } else {
+          mat.map.wrapS = 1000;
+          mat.map.wrapT = 1001;
+        }
+        mat.map.needsUpdate = true;
+      }
+    });
 
     var renderer = myGlobe.renderer();
     if (renderer) {
@@ -492,6 +514,12 @@
       var ind = c.indicators && c.indicators[currentMetric];
       return ind && ind.value !== null && ind.value !== undefined;
     });
+
+    var headingEl = document.getElementById('top10-heading');
+    if (headingEl) {
+      var orderLabel = top10Order === 'highest' ? 'Highest' : 'Lowest';
+      headingEl.textContent = 'Top 10 Countries (' + orderLabel + ', N = ' + validCountries.length + ')';
+    }
 
     validCountries.sort(function (a, b) {
       var va = a.indicators[currentMetric].value;

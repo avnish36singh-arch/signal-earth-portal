@@ -39,8 +39,8 @@
       "formatted_value": "24.2",
       "unit": "score (0-100)",
       "year": 2026,
-      "rank": 42,
-      "total_ranked": 47,
+      "rank": 160,
+      "total_ranked": 166,
       "global_yale_rank": 165,
       "global_yale_total": 177,
       "mixed_years_flag": false,
@@ -63,8 +63,8 @@
       "formatted_value": "36.5 µg/m³",
       "unit": "µg/m³",
       "year": 2023,
-      "rank": 9,
-      "total_ranked": 48,
+      "rank": 28,
+      "total_ranked": 169,
       "mixed_years_flag": false,
       "years_spanned": [
         2023
@@ -120,8 +120,8 @@
       "formatted_value": "8.8 Mt CO2 / yr",
       "unit": "Mt CO2 / year",
       "year": 2024,
-      "rank": 44,
-      "total_ranked": 48,
+      "rank": 110,
+      "total_ranked": 171,
       "mixed_years_flag": false,
       "years_spanned": [
         2024
@@ -178,8 +178,8 @@
       "formatted_value": "1.40 t CO2 / person / yr",
       "unit": "tonnes CO2 / person / year",
       "year": 2024,
-      "rank": 38,
-      "total_ranked": 48,
+      "rank": 111,
+      "total_ranked": 170,
       "mixed_years_flag": false,
       "years_spanned": [
         2024
@@ -236,10 +236,13 @@
       "formatted_value": "20.9% of generation",
       "unit": "% of electricity generation",
       "year": 2024,
-      "rank": 36,
-      "total_ranked": 46,
+      "rank": 116,
+      "total_ranked": 171,
       "mixed_years_flag": true,
       "years_spanned": [
+        2009,
+        2022,
+        2023,
         2024,
         2025
       ],
@@ -285,10 +288,11 @@
       "formatted_value": "64.0% of land area",
       "unit": "% of land area",
       "year": 2024,
-      "rank": 5,
-      "total_ranked": 48,
-      "mixed_years_flag": false,
+      "rank": 19,
+      "total_ranked": 170,
+      "mixed_years_flag": true,
       "years_spanned": [
+        2023,
         2024
       ],
       "direction": "highest_best",
@@ -343,8 +347,8 @@
       "formatted_value": "6,332,969",
       "unit": "people",
       "year": 2024,
-      "rank": 42,
-      "total_ranked": 48,
+      "rank": 112,
+      "total_ranked": 170,
       "mixed_years_flag": false,
       "years_spanned": [
         2024

@@ -2,97 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Intra-Urban 30m Landsat Thermal Zoning  -  Signal Earth</title>
-  <meta name="description" content="High-resolution Landsat 8/9 TIRS-2 Band 10 thermal radiometry resolving +3.60K intra-urban heat island microclimates and riparian cooling buffers across Kanpur.">
-  <link rel="canonical" href="https://signalearth.netlify.app/investigations/landsat-uhi.html">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="stylesheet" href="../assets/tokens.css">
-  <link rel="stylesheet" href="../style.css">
-  <script src="../assets/theme.js"></script>
+  <meta http-equiv="refresh" content="0; url=../analyses/kanpur-uhi/">
+  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/analyses/kanpur-uhi/">
+  <title>Redirecting to Kanpur Landsat 30 m Thermal Infrared...</title>
+  <script>window.location.replace("../analyses/kanpur-uhi/");</script>
 </head>
-<body class="se-editorial-page">
-  <a href="#main" class="skip-link">Skip to content</a>
-
-  <header class="se-editorial-header" id="se-header">
-    <div class="se-editorial-container">
-      <div class="se-editorial-header-inner">
-        <div class="se-editorial-wordmark-wrap">
-          <a href="../index.html" class="se-editorial-wordmark">Signal Earth</a>
-          <span class="se-wordmark-badge">Investigation 02</span>
-        </div>
-        <div class="se-editorial-header-right">
-          <nav class="se-editorial-nav">
-            <ul class="se-editorial-nav-list">
-              <li><a href="../index.html" class="se-editorial-nav-link">Home</a></li>
-              <li><a href="../research.html" class="se-editorial-nav-link active">Research</a></li>
-              <li><a href="../data.html" class="se-editorial-nav-link">Data &amp; Maps</a></li>
-              <li><a href="../reports.html" class="se-editorial-nav-link">Reports</a></li>
-              <li><a href="../about.html" class="se-editorial-nav-link">About</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main id="main" style="padding: 3rem 0 5rem;">
-    <div class="se-editorial-container" style="max-width: 860px;">
-      <span class="se-stream-card-tag" style="color: var(--se-teal-live);">Land Surface Temperature &middot; Satellite Radiometry</span>
-      <h1 style="font-family: var(--se-font-serif); font-size: 2.8rem; line-height: 1.15; margin: 0.5rem 0 1.25rem;">
-        Intra-Urban 30 m Landsat Thermal Zoning
-      </h1>
-
-      <div style="font-family: var(--se-font-mono); font-size: 0.8rem; color: var(--se-text-muted); margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--se-border);">
-        Sensor: USGS Landsat 8/9 TIRS-2 &middot; Status: Published &middot; Last updated: October 2026
-      </div>
-
-      <figure style="margin: 0 0 2rem; border-radius: var(--se-radius-md); overflow: hidden; border: 1px solid var(--se-border);">
-        <img src="../assets/kanpur-uhi/kanpur-uhi-30m.png" alt="USGS Landsat 30m thermal radiometry map over Kanpur urban core" width="860" height="480" style="width: 100%; height: auto; display: block;">
-        <figcaption style="font-family: var(--se-font-mono); font-size: 0.72rem; padding: 0.75rem 1rem; background: var(--se-bg-surface); color: var(--se-text-secondary); border-top: 1px solid var(--se-border);">
-          USGS Landsat 8/9 TIRS-2 Band 10 calibrated surface temperature map resolving 30m urban microclimates vs riparian corridors.
-        </figcaption>
-      </figure>
-
-      <div style="font-family: var(--se-font-sans); font-size: 1.05rem; line-height: 1.7; color: var(--se-text-primary);">
-        <h3 style="font-family: var(--se-font-serif); font-size: 1.5rem; margin-top: 1.5rem;">Abstract</h3>
-        <p>
-          While coarse 10 km global reanalysis models wash out localized metropolitan temperature gradients, 30 m resampled thermal infrared radiometry from USGS Landsat 8/9 TIRS-2 resolves a <strong>+3.60 K</strong> peak Urban Heat Island anomaly over dense commercial and industrial precincts, contrasted with a <strong>-2.15 K</strong> riparian cooling corridor along the Ganga.
-        </p>
-
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2rem 0; padding: 1.25rem; background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md);">
-          <div>
-            <div style="font-family: var(--se-font-mono); font-size: 1.4rem; font-weight: 700; color: var(--se-red-hot);">+3.60K</div>
-            <div style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-text-muted); text-transform: uppercase;">Peak Urban Delta</div>
-          </div>
-          <div>
-            <div style="font-family: var(--se-font-mono); font-size: 1.4rem; font-weight: 700; color: var(--se-blue-cold);">-2.15K</div>
-            <div style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-text-muted); text-transform: uppercase;">Riparian Buffer</div>
-          </div>
-          <div>
-            <div style="font-family: var(--se-font-mono); font-size: 1.4rem; font-weight: 700; color: var(--se-teal-live);">30m</div>
-            <div style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-text-muted); text-transform: uppercase;">Pixel Resolution</div>
-          </div>
-        </div>
-
-        <p>
-          Access the full investigation report, calibration equations, Planck inversion python scripts, and GeoTIFF rasters below:
-        </p>
-
-        <div style="margin: 2rem 0; display: flex; gap: 1rem; flex-wrap: wrap;">
-          <a href="kanpur-uhi.html" class="se-editorial-btn-primary">Read Complete Full Investigation &rarr;</a>
-          <a href="../data.html" class="se-editorial-btn-secondary">Download Thermal GeoTIFF Rasters</a>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <footer class="se-editorial-footer">
-    <div class="se-editorial-container">
-      <div class="se-editorial-footer-bottom">
-        <div>Signal Earth &middot; Open environmental science. Hosted on Netlify &amp; GitHub Pages.</div>
-      </div>
-    </div>
-  </footer>
+<body style="font-family: sans-serif; padding: 2rem; text-align: center;">
+  <p>This report has moved to <a href="../analyses/kanpur-uhi/">Kanpur Landsat 30 m Thermal Infrared</a>.</p>
 </body>
 </html>

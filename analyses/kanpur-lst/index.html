@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanpur Surface Skin Temperature | Signal Earth</title>
+  <meta name="description" content="Investigation of daily model reanalysis skin temperature from NASA POWER / MERRA-2 over Kanpur, examining seasonal thermal decoupling and empirical overlap association with ground station PM2.5.">
+  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/analyses/kanpur-lst/">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+  <link rel="manifest" href="../../site.webmanifest">
+  <meta property="og:title" content="Kanpur Surface Skin Temperature | Signal Earth">
+  <meta property="og:description" content="MERRA-2 model reanalysis skin temperature and empirical seasonal association with PM2.5 over Kanpur.">
+  <meta property="og:url" content="https://avnish36singh-arch.github.io/signal-earth-portal/analyses/kanpur-lst/">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://avnish36singh-arch.github.io/signal-earth-portal/assets/lst/01_kanpur_lst_seasonal_timeline.png">
+  <link rel="stylesheet" href="../../style.css">
+  <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
+  <script src="../../assets/theme.js"></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+
+  <!-- Navigation -->
+  <header>
+    <nav class="se-nav" aria-label="Main Navigation">
+      <div class="se-nav-inner">
+        <a href="../../index.html" class="se-brand">
+          <span class="se-brand-name">Signal Earth</span>
+          <span class="se-brand-sub">Independent Research</span>
+        </a>
+
+        <ul class="se-nav-links">
+          <li><a href="../../research.html" class="active">Research</a></li>
+          <li><a href="../../briefs/index.html">Briefs</a></li>
+          <li><a href="../../explained/index.html">Explained</a></li>
+          <li><a href="../../data.html">Data &amp; Code</a></li>
+          <li><a href="../../about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero Block with Figure Header -->
+    <div class="se-investigation-hero">
+      <div class="se-container-narrow">
+        <span class="section-kicker">Analysis 03 : Thermal Reanalysis</span>
+        <h1 class="editorial-headline se-investigation-title">
+          Kanpur Surface Skin Temperature and Seasonal Association
+        </h1>
+
+        <div class="se-investigation-meta">
+          <span>By <strong>Avnish Singh</strong>, undergraduate civil engineering student at HBTU Kanpur (personal research project; not affiliated with or endorsed by HBTU Kanpur)</span>
+          <span>Last updated: October 2026</span>
+          <span>Reading time: 11 min read</span>
+        </div>
+
+        <!-- 3-Sentence Summary -->
+        <div class="se-summary-box">
+          This investigation examines daily model reanalysis skin temperature (TS) and 2-meter air temperature (T2M) over the Kanpur regional grid box (~55 x 60 km) using NASA POWER GMAO MERRA-2 records from 2017 to 2023. During the 308-day overlap window with ground monitors (July 2021 to October 2022), surface skin temperature exhibits a moderate negative seasonal association with ground-level PM2.5 (Pearson r = -0.455), reflecting co-occurring winter boundary layer compression and dry-season regional stagnation. Spaceborne radiometry in <a href="../kanpur-uhi/index.html" class="se-link"><strong>Investigation 04</strong></a> further documents microclimate temperature variation between Kanpur's built core and surrounding riparian corridors.
+        </div>
+
+        <div class="se-card-img-wrap se-img-bordered">
+          <img src="../../assets/lst/01_kanpur_lst_seasonal_timeline.png" alt="Timeline of NASA POWER MERRA-2 daily skin temperature versus 2m air temperature over Kanpur from 2017 to 2023" width="900" height="450" fetchpriority="high">
+        </div>
+        <div class="se-image-credit">
+          Image: Avnish Singh, using NASA POWER MERRA-2 reanalysis, October 2026. Recorded in <a href="../../credits.html">credits.json</a>.
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content Body -->
+    <div class="se-container-narrow se-page-content">
+
+      <!-- Methodological Clarification Notice -->
+      <section class="se-alert-warning">
+        <h2 class="se-alert-warning-title">Model Reanalysis vs. Satellite Radiometry</h2>
+        <p class="se-alert-warning-text">
+          The thermal data used in this investigation is <strong>GMAO MERRA-2 numerical model reanalysis</strong> from NASA POWER, evaluated across a single 0.5° latitude by 0.625° longitude regional grid cell (~55 x 60 km). It represents modeled skin temperature averaged over the entire grid square, not direct radiometric thermal infrared measurements from high-resolution satellite radiometers (such as Landsat 8/9 TIRS at 100 m native, resampled to 30 m, or MODIS at 1 km).
+        </p>
+      </section>
+
+      <!-- Section 1 -->
+      <section class="se-investigation-section">
+        <span class="section-kicker">01 : Multi-Year Trajectory</span>
+        <h2 class="editorial-headline se-section-heading">Seven-Year Reanalysis Skin Temperature Trajectory</h2>
+        <p class="se-section-intro">
+          Across 2,556 daily reanalysis records (2017 to 2023), modeled skin temperature ranges from an annual low of 6.8°C during peak winter to 43.39°C during pre-monsoon heat extremes. The annual mean skin temperature is 27.2°C, compared to an annual mean 2-meter air temperature of 25.8°C.
+        </p>
+
+        <div class="se-figure">
+          <div class="se-figure-header">
+            <div class="se-figure-title">Figure 1: Seven-Year Reanalysis Skin Temperature vs 2m Air Temperature</div>
+            <div class="se-figure-meta">Data Source: NASA POWER / MERRA-2 (GES DISC) | Period: 2017 to 2023 | n = 2,556 daily grid records | Units: °C</div>
+          </div>
+          <img src="../../assets/lst/01_kanpur_lst_seasonal_timeline.png" alt="Timeline of NASA POWER MERRA-2 daily skin temperature versus 2m air temperature over Kanpur from 2017 to 2023" class="se-figure-img" width="900" height="450" loading="lazy">
+          <div class="se-figure-caption">
+            <strong>Caption:</strong> Continuous daily timeseries of modeled skin temperature and 2m air temperature over the Kanpur regional grid box. This figure reflects regional grid assimilation and cannot detect intra-urban neighborhood microclimates.
+          </div>
+          <div class="se-image-credit se-figure-credit-surface">
+            Image: Avnish Singh, using NASA POWER MERRA-2 reanalysis, October 2026. <a href="../../credits.html">Credits entry</a>.
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Interactive Plotly Chart -->
+      <section class="se-investigation-section">
+        <span class="section-kicker">02 : Interactive Explorer</span>
+        <h2 class="editorial-headline se-section-heading">Interactive Thermal Series Explorer</h2>
+        <p class="se-section-intro">
+          Examine the seasonal difference between skin temperature and 2m air temperature across the 2,556 daily records. Hover over lines to view exact daily model estimates.
+        </p>
+
+        <div id="kanpur-lst-plot" class="se-plot-container"></div>
+        <div class="se-image-credit se-image-credit-mb">
+          Interactive Chart: Rendered with Plotly.js from <code>kanpur_lst_daily.json</code> (2,556 rows). Flat styling, no animations.
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="se-investigation-section">
+        <span class="section-kicker">03 : Thermal Decoupling</span>
+        <h2 class="editorial-headline se-section-heading">Skin-to-Air Temperature Differences Across Seasons</h2>
+        <p class="se-section-intro">
+          Computing the daily difference (Skin Temperature minus 2m Air Temperature) reveals clear seasonal behavior. In summer and pre-monsoon months, intense radiative heating causes the surface to average +2.4°C warmer than ambient air. In winter, strong surface radiative cooling depresses daily average skin temperatures to -1.8°C relative to 2m air.
+        </p>
+
+        <div class="se-figure">
+          <div class="se-figure-header">
+            <div class="se-figure-title">Figure 2: Daily Skin-Air Temperature Difference and Seasonal Anomalies</div>
+            <div class="se-figure-meta">Data Source: NASA POWER MERRA-2 | Period: 2017 to 2023 | Units: °C (Tskin - T2m)</div>
+          </div>
+          <img src="../../assets/lst/02_skin_vs_air_temperature_anomaly.png" alt="Distribution of daily skin-minus-air temperature difference across months showing winter cooling and summer heating" class="se-figure-img" width="900" height="450" loading="lazy">
+          <div class="se-figure-caption">
+            <strong>Caption:</strong> Daily mean skin-air difference across seasons. A negative daily-mean difference reflects winter surface cooling, but testing nocturnal inversion requires hourly nighttime profile data.
+          </div>
+          <div class="se-image-credit se-figure-credit-surface">
+            Image: Avnish Singh, using NASA POWER MERRA-2 reanalysis, October 2026. <a href="../../credits.html">Credits entry</a>.
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="se-investigation-section">
+        <span class="section-kicker">04 : Spatial Scale and Limits</span>
+        <h2 class="editorial-headline se-section-heading">Spatial Grid Box and Urban Context</h2>
+        <p class="se-section-intro">
+          The spatial footprint of the MERRA-2 grid cell (26.5°N, 80.25°E) spans 0.5 degrees of latitude and 0.625 degrees of longitude. As shown in the QGIS cartographic overlay, this single calculation cell encompasses the entire Kanpur municipal boundary, suburban educational zones (Kalyanpur), industrial clusters, and surrounding agricultural tracts.
+        </p>
+
+        <div class="se-figure">
+          <div class="se-figure-header">
+            <div class="se-figure-title">Figure 3: Kanpur Municipal Extent Overlaid on Regional Grid Cell</div>
+            <div class="se-figure-meta">Data Source: QGIS Spatial Analysis / Survey of India Boundary | Spatial Scale: 1:250,000</div>
+          </div>
+          <img src="../../assets/lst/03_kanpur_spatial_thermal_zones.png" alt="Map showing Kanpur municipal boundary and monitoring stations inside the single regional MERRA-2 reanalysis grid box" class="se-figure-img" width="900" height="450" loading="lazy">
+          <div class="se-figure-caption">
+            <strong>Caption:</strong> Kanpur urban municipal boundary overlaid on the single 55 x 60 km reanalysis cell. High-resolution intra-urban thermal zoning has been resolved using Landsat 8/9 thermal radiometry in <a href="../kanpur-uhi/index.html" class="se-link"><strong>Investigation 04</strong></a>.
+          </div>
+          <div class="se-image-credit se-figure-credit-surface">
+            Image: Avnish Singh, OpenStreetMap contributors, October 2026. <a href="../../credits.html">Credits entry</a>.
+          </div>
+        </div>
+
+        <div id="spatial-zoning-notice" class="se-card-panel" style="border-left: 3px solid #00E5FF; background: #0f141c;">
+          <span class="section-kicker" style="color: #00E5FF;">Resolved in Investigation 04</span>
+          <h3 class="se-subheading-h3-mono" style="margin-top: 0.25rem;">Intra-Urban Thermal Detail Resolved via Landsat 8/9 TIRS-2</h3>
+          <p class="se-text-xs-secondary-zero" style="margin-bottom: 0.75rem;">
+            The planned high-resolution satellite radiometry is now fully completed and published in <strong>Investigation 04: Intra-Urban Thermal Zoning</strong>. Using cloud-masked USGS Landsat 8 and 9 Collection 2 Level 2 Surface Temperature radiometry at 30-meter resolution across 2021-2022, Investigation 04 quantifies Kanpur's Urban Heat Island (+3.60 K winter peak) and isolates the 7.10 K intra-urban thermal variance masked by this single 55 × 60 km reanalysis cell.
+          </p>
+          <a href="../kanpur-uhi/index.html" class="se-btn se-btn-sm" style="display: inline-block;">Read Investigation 04: Landsat 30m Thermal Zoning &rarr;</a>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="se-investigation-section">
+        <span class="section-kicker">05 : Empirical Seasonal Association</span>
+        <h2 class="editorial-headline se-section-heading">Temperature and PM2.5 Association in the Overlap Window</h2>
+        <p class="se-section-intro">
+          Evaluating Kanpur ground-station PM2.5 strictly against reanalysis skin temperature during the true concurrent window (July 9, 2021 to October 16, 2022; n = 308 daily pairs) reveals an empirical negative correlation of <strong>Pearson r = -0.455 (p &lt; 0.001)</strong>. Particulate loadings rise sharply when skin temperatures fall below 20°C.
+        </p>
+
+        <div class="se-note-box">
+          <div class="se-note-title">Methodological Note: Shared Seasonality and Sample Independence</div>
+          <p class="se-note-text">
+            The empirical negative correlation (Pearson r = -0.455) between daily skin temperature and ground PM2.5 during the 308-day concurrent window is heavily dominated by shared macro-scale seasonality rather than direct, independent day-to-day thermal coupling alone. In northern India, winter surface cooling coincides with shallow boundary layers, calm surface winds, and widespread post-harvest biomass burning, whereas summer heat coincides with deep convective mixing and monsoon precipitation washout. Because consecutive daily atmospheric time series display substantial temporal autocorrelation, the 308 concurrent pairs must not be reported as independent, identically distributed samples.
+          </p>
+        </div>
+
+        <div class="se-figure">
+          <div class="se-figure-header">
+            <div class="se-figure-title">Figure 4: Concurrent Seasonal Association: Surface Skin Temperature versus PM2.5</div>
+            <div class="se-figure-meta">Data Source: NASA POWER MERRA-2 and UPPCB CAAQMS | Period: Jul 9, 2021 to Oct 16, 2022 | n = 308 pairs (seasonally correlated) | Pearson r = -0.455</div>
+          </div>
+          <img src="../../assets/lst/04_lst_inversion_coupling_pm25.png" alt="Scatter regression between skin temperature and ground PM2.5 in Kanpur showing negative correlation" class="se-figure-img" width="900" height="450" loading="lazy">
+          <div class="se-figure-caption">
+            <strong>Caption:</strong> Scatter regression restricted strictly to the concurrent 308-day monitoring window. This figure demonstrates empirical seasonal association and does not isolate boundary-layer physics from emission source variations.
+          </div>
+          <div class="se-image-credit se-figure-credit-surface">
+            Image: Avnish Singh, NASA POWER and UPPCB records, October 2026. <a href="../../credits.html">Credits entry</a>.
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6: Bioclimatic Heat Stress -->
+      <section class="se-investigation-section">
+        <span class="section-kicker">06 : Bioclimatic Extremes</span>
+        <h2 class="editorial-headline se-section-heading">Bioclimatic Heat Stress and Extreme Heatwave Frequency</h2>
+        <p class="se-section-intro">
+          Evaluating the physiological impact of surface thermal energy requires coupling dry-bulb air temperature with ambient humidity. Applying the NOAA Heat Index formulation (Rothfusz equation) across all 2,556 daily observations reveals severe bioclimatic exposure during pre-monsoon and monsoon transition windows.
+        </p>
+
+        <p class="se-content-p">
+          While dry-bulb 2-meter air temperature peaks at 40.75&deg;C (with radiant skin temperature reaching 43.39&deg;C), atmospheric moisture influx pushes the apparent temperature (Heat Index, <em>HI</em>) up to a peak of <strong>52.40&deg;C</strong>. Over the 7-year baseline (2017-2023), Kanpur recorded <strong>372 dangerous heat stress days</strong> where the Heat Index reached or exceeded the critical 41.0&deg;C (105.8&deg;F) danger threshold.
+        </p>
+
+        <div class="se-figure">
+          <div class="se-figure-header">
+            <div class="se-figure-title">Figure 5: NOAA Bioclimatic Heat Index and Extreme Heatwave Climatology</div>
+            <div class="se-figure-meta">Data Source: NASA POWER MERRA-2 (T2M, RH2M) | Period: 2017 to 2023 | n = 2,556 daily records | Units: &deg;C apparent temperature</div>
+          </div>
+          <img src="../../assets/lst/05_bioclimatic_heat_stress_index.png" alt="Scatter plot of NOAA Heat Index vs 2m air temperature colored by bioclimatic risk category alongside annual frequency bar chart of heat stress days" class="se-figure-img" width="900" height="366" loading="lazy">
+          <div class="se-figure-caption">
+            <strong>Caption:</strong> (Left) NOAA Heat Index apparent temperature plotted against 2m ambient air temperature, classified into Caution (27-32&deg;C), Extreme Caution (32-41&deg;C), and Danger (&ge;41&deg;C) regimes. (Right) Multi-year frequency of dangerous heat stress days (HI &ge; 41&deg;C) and skin-temperature heatwave events (LST &ge; 40&deg;C) across Kanpur's 7-year reanalysis baseline.
+          </div>
+          <div class="se-image-credit se-figure-credit-surface">
+            Image: Avnish Singh, using NASA POWER MERRA-2 reanalysis, October 2026. <a href="../../credits.html">Credits entry</a>.
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 7: Boundary Layer Dynamics and Ventilation -->
+      <section class="se-investigation-section">
+        <span class="section-kicker">07 : Boundary Layer Dynamics</span>
+        <h2 class="editorial-headline se-section-heading">Planetary Boundary Layer Height and Ventilation Stagnation</h2>
+        <p class="se-section-intro">
+          The central mechanism driving northern India's severe winter air pollution episodes is the seasonal collapse of the planetary boundary layer and atmospheric carrying capacity. Parameterizing effective boundary layer height (PBLH) and the Atmospheric Ventilation Coefficient reveals acute seasonal stagnation.
+        </p>
+
+        <p class="se-content-p">
+          The Atmospheric Ventilation Coefficient is defined as <code>V<sub>c</sub> = PBLH &times; U</code> (where <em>U</em> is horizontal wind speed in m/s). During hot pre-monsoon and summer months, intense solar insolation and positive thermal gradients (&Delta;T &gt; 0) generate vigorous convective mixing, elevating <em>V<sub>c</sub></em> to an average of <strong>7,200 m&sup2;/s</strong>. In sharp contrast, winter radiative surface cooling (&Delta;T &lt; 0) and calm wind velocities compress the mixing layer, causing parameterized <em>V<sub>c</sub></em> to fall below the standard dispersion threshold of <strong>2,000 m&sup2;/s</strong> during calm winter episodes.
+        </p>
+
+        <div class="se-note-box">
+          <div class="se-note-title">Formulation: Nocturnal Inversion Severity Index (NISI) Proxy</div>
+          <p class="se-note-text">
+            To isolate atmospheric stability conditions without vertical soundings, I evaluate a dimensionless Nocturnal Inversion Severity Index proxy:
+            <br><br>
+            <code>NISI = [max(0, -&Delta;T) &times; (1 + RH / 100)] / max(1.0, U)</code>
+            <br><br>
+            When NISI exceeds 1.8, the surface boundary layer is modeled as decoupled and capped by a radiation inversion. This empirical formulation provides an operational proxy for atmospheric stagnation, though continuous vertical sounding towers are required for physical verification.
+          </p>
+        </div>
+
+        <div class="se-figure">
+          <div class="se-figure-header">
+            <div class="se-figure-title">Figure 6: Atmospheric Ventilation Coefficient and Nocturnal Inversion Severity Index</div>
+            <div class="se-figure-meta">Data Source: NASA POWER MERRA-2 and UPPCB CAAQMS | Period: 2017 to 2023 | Units: m&sup2;/s (Vc) and Dimensionless Index (NISI)</div>
+          </div>
+          <img src="../../assets/lst/06_ventilation_coefficient_inversion.png" alt="Two-panel time series of 30-day rolling Ventilation Coefficient showing winter drops below 2000 m2/s and the Nocturnal Inversion Severity Index tracking atmospheric stability traps" class="se-figure-img" width="900" height="510" loading="lazy">
+          <div class="se-figure-caption">
+            <strong>Caption:</strong> (Top) Multi-year trajectory of the Atmospheric Ventilation Coefficient (<em>V<sub>c</sub></em>) with the critical 2,000 m&sup2;/s stagnation threshold highlighted in red. (Bottom) Nocturnal Inversion Severity Index (NISI) tracking the seasonal onset and persistence of winter radiation traps over Kanpur.
+          </div>
+          <div class="se-image-credit se-figure-credit-surface">
+            Image: Avnish Singh, using NASA POWER MERRA-2 and UPPCB records, October 2026. <a href="../../credits.html">Credits entry</a>.
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 8: 25-km Urban-to-Riparian Transect -->
+      <section class="se-investigation-section-last">
+        <span class="section-kicker">08 : Spatial Microclimates</span>
+        <h2 class="editorial-headline se-section-heading">25-km Microclimate Transect and QGIS Spatial Heterogeneity</h2>
+        <p class="se-section-intro">
+          While regional reanalysis aggregates Kanpur into a single 55 &times; 60 km grid square, vector GIS modeling in QGIS reveals extreme localized microclimate heterogeneity. A 25-kilometer diagnostic sampling transect across the metropolitan region demonstrates a profound <strong>4.5&deg;C thermal differential</strong> between built-up heat islands and natural cooling sinks.
+        </p>
+
+        <div class="se-figure">
+          <div class="se-figure-header">
+            <div class="se-figure-title">Figure 7: 25-km West-to-East Metropolitan Microclimate Transect Profile</div>
+            <div class="se-figure-meta">Data Source: QGIS Spatial Analysis &amp; USGS Thermal Records | Extent: Panki Industrial to Ganga Floodplain | 25 km Sampling Line</div>
+          </div>
+          <img src="../../assets/lst/07_urban_microclimate_transect.png" alt="Cross-section profile showing thermal gradient and surface albedo across Kanpur from Panki Industrial through IIT Kanpur, Central Core, Jajmau Tannery Belt to the Ganga Floodplain" class="se-figure-img" width="900" height="514" loading="lazy">
+          <div class="se-figure-caption">
+            <strong>Caption:</strong> Spatial cross-section profile across Kanpur (Panki Industrial &rarr; IITK Campus &rarr; Central Core &rarr; Jajmau Tannery Belt &rarr; Ganga Floodplain). The profile reveals the sharp 4.5&deg;C thermal discontinuity between the dense Central Urban Core (+2.1&deg;C) and the evaporative Ganga Riparian sink (-2.4&deg;C).
+          </div>
+          <div class="se-image-credit se-figure-credit-surface">
+            Image: Avnish Singh, QGIS Spatial Analysis Suite, October 2026. <a href="../../credits.html">Credits entry</a>.
+          </div>
+        </div>
+
+        <h3 class="se-subheading-h3">Modeled Spatial Thermal Regimes Across Kanpur</h3>
+        <p class="se-content-p">
+          Quantifying distinct morphological zones in QGIS demonstrates how surface material properties, building density, and vegetation cover modulate local microclimates:
+        </p>
+
+        <div class="se-table-wrap">
+          <table class="se-table">
+            <thead>
+              <tr>
+                <th>Morphological Zone</th>
+                <th>Spatial Extent</th>
+                <th>Land Cover Type</th>
+                <th>Modeled UHI Offset</th>
+                <th>Albedo (&alpha;)</th>
+                <th>Mitigation Intervention</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Central Urban Core</strong></td>
+                <td>Gomti No. 5 to Phool Bagh</td>
+                <td>High-density masonry, asphalt, narrow canyons</td>
+                <td><strong style="color: #EF4444;">+2.1 &deg;C</strong></td>
+                <td>10-12%</td>
+                <td>Cool roof retrofits (&alpha; &gt; 0.65), reflective pavement coatings</td>
+              </tr>
+              <tr>
+                <td><strong>Jajmau Industrial Belt</strong></td>
+                <td>Eastern Kanpur along NH-19</td>
+                <td>Tannery facilities, bare ground, heavy transport</td>
+                <td><strong style="color: #F97316;">+1.8 &deg;C</strong></td>
+                <td>13-15%</td>
+                <td>Industrial buffer greenbelts, stack waste-heat recapture</td>
+              </tr>
+              <tr>
+                <td><strong>Panki Industrial Zone</strong></td>
+                <td>Western industrial corridor</td>
+                <td>Thermal power station, chemical plants, rail siding</td>
+                <td><strong style="color: #F59E0B;">+1.6 &deg;C</strong></td>
+                <td>12-14%</td>
+                <td>Fly-ash pond re-vegetation, high-reflectance industrial sheds</td>
+              </tr>
+              <tr>
+                <td><strong>IIT Kanpur / Kalyanpur</strong></td>
+                <td>Northern institutional sector</td>
+                <td>Continuous mature biological tree canopy, lawns</td>
+                <td><strong style="color: #10B981;">-0.8 &deg;C</strong></td>
+                <td>22-26%</td>
+                <td>Preservation of urban micro-forest as regional thermal buffer</td>
+              </tr>
+              <tr>
+                <td><strong>Ganga Riparian Wetland</strong></td>
+                <td>Northern riverine floodplain</td>
+                <td>Alluvial sand, agricultural silt, open water</td>
+                <td><strong style="color: #06B6D4;">-2.4 &deg;C</strong></td>
+                <td>25-30%</td>
+                <td>Moratorium on floodplain paving; preservation of katabatic drainage</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Required Editorial End Sections (NASA / Nat Geo Standard) -->
+
+      <!-- 1. What this cannot show -->
+      <section class="se-panel-alt">
+        <span class="section-kicker">Analytical Boundaries</span>
+        <h2 class="editorial-headline se-panel-heading">What This Cannot Show</h2>
+        <ul class="se-list-spaced">
+          <li>Regional model reanalysis (~55 &times; 60 km) describes the overarching planetary boundary layer state; it is complemented by the diagnostic QGIS 25-km transect and high-resolution 30-meter Landsat satellite radiometry in <a href="../kanpur-uhi/index.html" class="se-link"><strong>Investigation 04</strong></a> to resolve localized street canyons and industrial heat plumes.</li>
+          <li>Planetary boundary layer height (PBLH) and Atmospheric Ventilation Coefficient (<em>V<sub>c</sub></em>) values are physically parameterized proxies derived from surface insolation, sensible heat flux, and surface friction; direct in-situ vertical profile confirmation requires balloon-borne radiosondes, aerosol lidar backscatter, or acoustic sodars.</li>
+          <li>Nocturnal Inversion Severity Index (NISI) identifies favorable radiation trapping conditions from surface energy decoupling, but cannot replace vertical temperature gradient profiles (&part;T/&part;z) measured across meteorological towers.</li>
+        </ul>
+      </section>
+
+      <!-- 2. Data and code -->
+      <section class="se-panel-box">
+        <span class="section-kicker">Reproducibility</span>
+        <h2 class="editorial-headline se-panel-heading">Data and Code</h2>
+        <p class="se-lead-paragraph">
+          The spatial QGIS workflow and reanalysis processing notebooks are open source on GitHub:
+        </p>
+        <div class="se-btn-group">
+          <a href="https://github.com/avnish36singh-arch/Kanpur-LST-Thermal-Analysis-GIS" target="_blank" rel="noopener noreferrer" class="se-btn">View GIS repository on GitHub</a>
+          <a href="../../data.html" class="se-btn se-btn-outline">Reanalysis registry and links</a>
+        </div>
+      </section>
+
+      <!-- 3. Cite this page -->
+      <section class="se-panel-box">
+        <span class="section-kicker">Citation</span>
+        <h2 class="editorial-headline se-panel-heading">Cite This Page</h2>
+        <p class="se-lead-paragraph-sm">
+          Recommended academic citation format:
+        </p>
+        <blockquote class="se-quote-citation">
+          Singh, A. (2026). Kanpur Surface Skin Temperature and Seasonal Association. Signal Earth: Public Environmental Data Investigations. https://avnish36singh-arch.github.io/signal-earth-portal/analyses/kanpur-lst/
+        </blockquote>
+      </section>
+
+      <!-- Next Investigation Banner -->
+      <section class="se-panel-box" style="border-left: 3px solid #00E5FF; background: #0d1219;">
+        <span class="section-kicker" style="color: #00E5FF;">Next Investigation &middot; Analysis 04</span>
+        <h2 class="editorial-headline se-panel-heading">Intra-Urban Thermal Zoning: Landsat 8/9 TIRS-2 Spatial Detail Over Kanpur</h2>
+        <p class="se-lead-paragraph">
+          Examine high-resolution 30-meter satellite radiometry resolving the microclimate gradients and urban heat island intensity that this coarse MERRA-2 model cell cannot resolve.
+        </p>
+        <a href="../kanpur-uhi/index.html" class="se-btn">Explore Investigation 04 &rarr;</a>
+      </section>
+
+      <!-- 4. Report a problem -->
+      <section class="se-panel-box-last">
+        <span class="section-kicker">Feedback and Corrections</span>
+        <h2 class="editorial-headline se-panel-heading">Report a Problem</h2>
+        <p class="se-lead-paragraph">
+          If you spot a spatial calculation error, a reanalysis parameter misstatement, or an unsupported conclusion, please open an issue on GitHub:
+        </p>
+        <div class="se-btn-group">
+          <a href="https://github.com/avnish36singh-arch/signal-earth-portal/issues" target="_blank" rel="noopener noreferrer" class="se-link">Open GitHub issue</a>
+          <a href="../../corrections.html" class="se-link se-link-secondary">View Corrections Log</a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="se-footer">
+    <div class="se-container">
+      <div class="se-footer-inner">
+        <div class="se-footer-brand-col">
+          <div class="se-footer-brand-title">Signal Earth</div>
+          <p class="se-footer-brand-desc">
+            Independent independent research project analyzing Earth observation records, satellite records, and public monitoring data.
+          </p>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Analyses</h5>
+          <ul>
+            <li><a href="../kanpur/index.html">Kanpur Particulate Dynamics</a></li>
+            <li><a href="../delhi/index.html">Delhi NAQI Analysis</a></li>
+            <li><a href="../kanpur-lst/index.html">Kanpur Reanalysis Temperature</a></li>
+            <li><a href="../../compare.html">Regional Airshed Comparison</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Method and Data</h5>
+          <ul>
+            <li><a href="../../index.html#explained">Explained Pieces</a></li>
+            <li><a href="../../methodology.html">Methodology and Limits</a></li>
+            <li><a href="../../data.html">Data and Code</a></li>
+            <li><a href="../../about.html">About Signal Earth</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="../../privacy.html">Privacy Policy</a></li>
+            <li><a href="../../terms.html">Terms of Use</a></li>
+            <li><a href="../../licenses.html">Licenses and Terms</a></li>
+            <li><a href="../../credits.html">Image Credits</a></li>
+            <li><a href="../../corrections.html">Corrections Log</a></li>
+          </ul>
+        </div>
+
+        <div class="se-footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="https://github.com/avnish36singh-arch/signal-earth-portal" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/company/signalearth/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/signalearthhq/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="../../contact.html">Contact Information</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mandatory Affiliation Disclaimer -->
+      <div class="se-footer-disclaimer">
+        Signal Earth is an independent project. It is not affiliated with or endorsed by NASA, ESA, USGS, CPCB, UPPCB, DPCC, or any agency named on this site.
+      </div>
+
+      <div class="se-footer-bottom">
+        <div>Signal Earth &middot; Open Science under MIT License</div>
+        <div>Page last updated: October 2026</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="kanpur-lst.js"></script>
+</body>
+</html>

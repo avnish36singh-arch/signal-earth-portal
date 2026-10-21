@@ -323,7 +323,7 @@ def build_accessible_directory(countries_data):
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All Countries Directory | Signal Earth</title>
-  <meta name="description" content="Complete alphabetical directory of 48 countries tracked on Signal Earth, with open environmental indicators and performance benchmarks.">
+  <meta name="description" content="Complete alphabetical directory of {len(sorted_countries)} countries tracked on Signal Earth, with open environmental indicators and performance benchmarks.">
   <link rel="canonical" href="https://signalearth.netlify.app/countries/">
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../assets/tokens.css">
@@ -366,7 +366,7 @@ def build_accessible_directory(countries_data):
         All Countries ({len(sorted_countries)})
       </h1>
       <p style="font-size: 1rem; color: var(--se-text-secondary); max-width: 70ch; margin: 0;">
-        Complete, keyboard-accessible alphabetical directory of all 48 countries evaluated across the open data pipeline. Select any country to view its complete indicator profile.
+        Complete, keyboard-accessible alphabetical directory of all {len(sorted_countries)} countries evaluated across the open data pipeline. Select any country to view its complete indicator profile.
       </p>
     </div>
 
@@ -608,7 +608,7 @@ def build_all_countries():
 
         # Page metadata
         page_title = f"{name}: Environmental Indicators & Yale EPI Profile | Signal Earth"
-        meta_desc = f"Open environmental profile for {name} ({iso3.upper()}): Yale EPI 2026 score, annual mean PM2.5 exposure, CO2 emissions, renewable electricity, and forest cover with verified open data sources."
+        meta_desc = f"Open environmental profile for {name} ({iso3.upper()}): Yale EPI 2026 score, annual mean PM2.5 exposure, CO2 emissions, renewable electricity, and forest cover with open official sources."
         canonical_url = f"https://signalearth.netlify.app/country/{iso3}/"
 
         # Replace template placeholders

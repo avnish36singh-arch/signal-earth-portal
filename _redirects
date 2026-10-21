@@ -1,0 +1,21 @@
+# Signal Earth Static Redirects
+/docs/* /404.html 404!
+/investigations/* /analyses/ 301!
+/investigations/kanpur.html /analyses/kanpur/ 301!
+/investigations/kanpur /analyses/kanpur/ 301!
+/investigations/kanpur-particulates.html /analyses/kanpur/ 301!
+/investigations/kanpur-particulates /analyses/kanpur/ 301!
+/investigations/delhi.html /analyses/delhi/ 301!
+/investigations/delhi /analyses/delhi/ 301!
+/investigations/delhi-naqi.html /analyses/delhi/ 301!
+/investigations/delhi-naqi /analyses/delhi/ 301!
+/investigations/kanpur-lst.html /analyses/kanpur-lst/ 301!
+/investigations/kanpur-lst /analyses/kanpur-lst/ 301!
+/investigations/inversion-dynamics.html /analyses/kanpur-lst/ 301!
+/investigations/inversion-dynamics /analyses/kanpur-lst/ 301!
+/investigations/kanpur-uhi.html /analyses/kanpur-uhi/ 301!
+/investigations/kanpur-uhi /analyses/kanpur-uhi/ 301!
+/investigations/landsat-uhi.html /analyses/kanpur-uhi/ 301!
+/investigations/landsat-uhi /analyses/kanpur-uhi/ 301!
+/investigations/comparison.html /compare.html 301!
+/investigations/comparison /compare.html 301!

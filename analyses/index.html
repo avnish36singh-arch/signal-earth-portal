@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Original Analyses | Signal Earth</title>
+  <meta name="description" content="Empirical local air quality, reanalysis temperature, and high-resolution satellite thermal investigations.">
+  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/analyses/">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .se-analyses-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 3.5rem 1.5rem 5rem;
+    }
+    .se-analyses-header {
+      margin-bottom: 3rem;
+      border-bottom: 1px solid var(--se-border);
+      padding-bottom: 1.75rem;
+    }
+    .se-analyses-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    @media (max-width: 800px) {
+      .se-analyses-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .se-analysis-card {
+      background: var(--se-bg-surface);
+      border: 1px solid var(--se-border);
+      border-radius: var(--se-radius-md);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.15s ease, transform 0.15s ease;
+    }
+    .se-analysis-card:hover {
+      border-color: var(--se-text-primary);
+      transform: translateY(-2px);
+    }
+    .se-card-kicker {
+      font-family: var(--se-font-mono);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--se-text-muted);
+      margin-bottom: 0.5rem;
+    }
+    .se-card-title {
+      font-family: var(--se-font-serif);
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin: 0 0 1rem;
+      color: var(--se-text-primary);
+    }
+    .se-card-metric-badge {
+      display: inline-block;
+      background: var(--se-bg-subtle);
+      border: 1px solid var(--se-border-subtle);
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--se-radius-sm);
+      font-family: var(--se-font-mono);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--se-text-primary);
+      margin-bottom: 1rem;
+    }
+    .se-card-finding {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--se-text-secondary);
+      margin: 0 0 1.25rem;
+    }
+    .se-card-meta-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.5rem;
+      font-size: 0.82rem;
+      line-height: 1.6;
+      border-top: 1px solid var(--se-border-subtle);
+      padding-top: 0.75rem;
+    }
+    .se-card-meta-list li {
+      margin-bottom: 0.4rem;
+      color: var(--se-text-muted);
+    }
+    .se-card-meta-list strong {
+      color: var(--se-text-primary);
+      font-family: var(--se-font-mono);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+    }
+    .se-card-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--se-text-primary);
+      color: var(--se-bg-page);
+      font-family: var(--se-font-mono);
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 0.65rem 1.25rem;
+      border-radius: var(--se-radius-sm);
+      text-decoration: none;
+      align-self: flex-start;
+      transition: opacity 0.15s ease;
+    }
+    .se-card-btn:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <header class="se-editorial-header">
+    <div class="se-editorial-header-inner">
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <a href="../index.html" class="se-editorial-wordmark">Signal Earth</a>
+        <span style="font-size: 0.75rem; font-family: var(--se-font-mono); color: var(--se-text-muted); text-transform: uppercase;">/ Analyses</span>
+      </div>
+      <nav aria-label="Main Navigation">
+        <ul class="se-editorial-nav-list">
+          <li><a href="../index.html" class="se-editorial-nav-link">Globe</a></li>
+          <li><a href="../analyses/index.html" class="se-editorial-nav-link active">Analyses</a></li>
+          <li><a href="../notes/index.html" class="se-editorial-nav-link">Notes</a></li>
+          <li><a href="../data.html" class="se-editorial-nav-link">Data</a></li>
+          <li><a href="../about.html" class="se-editorial-nav-link">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="se-analyses-container">
+      <header class="se-analyses-header">
+        <h1 style="font-family: var(--se-font-serif); font-size: 2.25rem; margin: 0 0 0.5rem; color: var(--se-text-primary);">Original Analyses</h1>
+        <p style="font-size: 1rem; color: var(--se-text-secondary); margin: 0; line-height: 1.6; max-width: 72ch;">
+          Four empirical investigations examining urban atmospheric dynamics, continuous ambient monitoring networks, satellite thermal radiometry, and surface meteorology across northern India.
+        </p>
+      </header>
+
+      <div class="se-analyses-grid">
+        <!-- Card 1: Kanpur Particulate Dynamics -->
+        <article class="se-analysis-card">
+          <div>
+            <span class="se-card-kicker">Analysis 01 &middot; Ground Air Quality</span>
+            <h2 class="se-card-title">Kanpur Particulate Dynamics</h2>
+            <div class="se-card-metric-badge">2.40x Winter Ratio</div>
+            <p class="se-card-finding">
+              Winter PM2.5 averaged 2.40x monsoon levels across both observation windows (61.41 vs 25.61 ug/m3 across 1,628 station-days).
+            </p>
+            <ul class="se-card-meta-list">
+              <li><strong>Period:</strong> July 2021 to October 2022 and February 2025 to August 2026</li>
+              <li><strong>Source:</strong> CPCB CAAQMS (Kalyanpur and Nehru Nagar)</li>
+              <li><strong>Limitation:</strong> 855-day operational monitoring gap between observation windows; spatial coverage restricted to two urban monitors.</li>
+            </ul>
+          </div>
+          <a href="kanpur/index.html" class="se-card-btn">Read full analysis &rarr;</a>
+        </article>
+
+        <!-- Card 2: Delhi NAQI -->
+        <article class="se-analysis-card">
+          <div>
+            <span class="se-card-kicker">Analysis 02 &middot; Urban Air Quality Index</span>
+            <h2 class="se-card-title">Delhi Five-Year NAQI Dynamics</h2>
+            <div class="se-card-metric-badge">95.3% Particulate Governed</div>
+            <p class="se-card-finding">
+              Particulate matter governed official AQI on 95.3% of valid days (PM2.5 on 51.8%, PM10 on 43.4%), with a 5.75x peak haze multiplier.
+            </p>
+            <ul class="se-card-meta-list">
+              <li><strong>Period:</strong> 2017 to 2023 (1,137 days satisfying CPCB minimum reporting quorum)</li>
+              <li><strong>Source:</strong> DPCC / CPCB (Alipur monitoring station)</li>
+              <li><strong>Limitation:</strong> 731-day operational hiatus during station refurbishment (2019-2020); single peripheral monitoring station.</li>
+            </ul>
+          </div>
+          <a href="delhi/index.html" class="se-card-btn">Read full analysis &rarr;</a>
+        </article>
+
+        <!-- Card 3: Kanpur Temperature & Particulate Association -->
+        <article class="se-analysis-card">
+          <div>
+            <span class="se-card-kicker">Analysis 03 &middot; Atmospheric Reanalysis</span>
+            <h2 class="se-card-title">Kanpur Skin Temperature &amp; Particulate Association</h2>
+            <div class="se-card-metric-badge">r = -0.455 Correlation</div>
+            <p class="se-card-finding">
+              Daily surface skin temperature exhibits a moderate negative seasonal correlation with PM2.5 (r = -0.455 across 308 concurrent pairs).
+            </p>
+            <ul class="se-card-meta-list">
+              <li><strong>Period:</strong> July 9, 2021 to October 16, 2022 (overlap window; 2017-2023 overall)</li>
+              <li><strong>Source:</strong> NASA POWER (GMAO MERRA-2 daily skin temperature TS)</li>
+              <li><strong>Limitation:</strong> Coarse regional reanalysis grid cell (0.5 deg x 0.625 deg, ~55 x 60 km) cannot resolve intra-urban heat islands.</li>
+            </ul>
+          </div>
+          <a href="kanpur-lst/index.html" class="se-card-btn">Read full analysis &rarr;</a>
+        </article>
+
+        <!-- Card 4: Kanpur Landsat 30 m Thermal -->
+        <article class="se-analysis-card">
+          <div>
+            <span class="se-card-kicker">Analysis 04 &middot; Satellite Radiometry</span>
+            <h2 class="se-card-title">Kanpur Landsat 30 m Thermal Infrared</h2>
+            <div class="se-card-metric-badge">1.0 to 2.3 K Surface Delta</div>
+            <p class="se-card-finding">
+              Landsat 8/9 TIRS-2 radiometric snapshot observed an empirical urban-rural thermal delta of 1.0 to 2.3 K across winter clear-sky overpasses.
+            </p>
+            <ul class="se-card-meta-list">
+              <li><strong>Period:</strong> Winter 2022 daytime satellite overpasses</li>
+              <li><strong>Source:</strong> USGS Landsat 8/9 TIRS-2 Band 10 (30 m resampled)</li>
+              <li><strong>Limitation:</strong> Instantaneous clear-sky daytime snapshot observation; requires vertical atmospheric soundings to confirm inversion dynamics.</li>
+            </ul>
+          </div>
+          <a href="kanpur-uhi/index.html" class="se-card-btn">Read full analysis &rarr;</a>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="se-editorial-footer" style="background: var(--se-bg-page); border-top: 1px solid var(--se-border); padding: 2.5rem 1.5rem 2rem;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: var(--se-text-muted); flex-wrap: wrap; gap: 1rem;">
+      <div>&copy; 2026 Signal Earth. Maintained by Avnish Singh. No institutional affiliation with HBTU Kanpur.</div>
+      <div>
+        <a href="../notes/feed.xml" class="se-link">RSS Feed</a> &middot;
+        <a href="../corrections.html" class="se-link">Corrections</a> &middot;
+        <a href="../privacy.html" class="se-link">Privacy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

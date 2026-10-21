@@ -2,101 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kanpur Particulates &amp; Winter Multipliers  -  Signal Earth</title>
-  <meta name="description" content="Multi-year PM2.5 evaluation across continuous regulatory monitoring windows in Kanpur: 2.40× to 3.56× seasonal winter multipliers (depending on season definition), atmospheric stagnation, and 855-day station hiatus.">
-  <link rel="canonical" href="https://signalearth.netlify.app/investigations/kanpur-particulates.html">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="stylesheet" href="../assets/tokens.css">
-  <link rel="stylesheet" href="../style.css">
-  <script src="../assets/theme.js"></script>
+  <meta http-equiv="refresh" content="0; url=../analyses/kanpur/">
+  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/analyses/kanpur/">
+  <title>Redirecting to Kanpur Particulate Dynamics...</title>
+  <script>window.location.replace("../analyses/kanpur/");</script>
 </head>
-<body class="se-editorial-page">
-  <a href="#main" class="skip-link">Skip to content</a>
-
-  <header class="se-editorial-header" id="se-header">
-    <div class="se-editorial-container">
-      <div class="se-editorial-header-inner">
-        <div class="se-editorial-wordmark-wrap">
-          <a href="../index.html" class="se-editorial-wordmark">Signal Earth</a>
-          <span class="se-wordmark-badge">Investigation 01</span>
-        </div>
-        <div class="se-editorial-header-right">
-          <nav class="se-editorial-nav">
-            <ul class="se-editorial-nav-list">
-              <li><a href="../index.html" class="se-editorial-nav-link">Home</a></li>
-              <li><a href="../research.html" class="se-editorial-nav-link active">Research</a></li>
-              <li><a href="../data.html" class="se-editorial-nav-link">Data &amp; Maps</a></li>
-              <li><a href="../reports.html" class="se-editorial-nav-link">Reports</a></li>
-              <li><a href="../about.html" class="se-editorial-nav-link">About</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main id="main" style="padding: 3rem 0 5rem;">
-    <div class="se-editorial-container" style="max-width: 860px;">
-      <span class="se-stream-card-tag" style="color: var(--se-teal-live);">Air Quality &middot; Regulatory Telemetry Audit</span>
-      <h1 style="font-family: var(--se-font-serif); font-size: 2.8rem; line-height: 1.15; margin: 0.5rem 0 1.25rem;">
-        Kanpur Particulate Dynamics &amp; Winter Multipliers
-      </h1>
-
-      <div style="font-family: var(--se-font-mono); font-size: 0.8rem; color: var(--se-text-muted); margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--se-border);">
-        Lead Author: Avnish Singh &middot; Status: Published &middot; Last updated: October 2026
-      </div>
-
-      <figure style="margin: 0 0 2rem; border-radius: var(--se-radius-md); overflow: hidden; border: 1px solid var(--se-border);">
-        <img src="../assets/satellite_view_kanpur_haze_20211111.jpg" alt="NASA Aqua MODIS satellite observation of atmospheric haze over central Ganga valley" width="860" height="480" style="width: 100%; height: auto; display: block;">
-        <figcaption style="font-family: var(--se-font-mono); font-size: 0.72rem; padding: 0.75rem 1rem; background: var(--se-bg-surface); color: var(--se-text-secondary); border-top: 1px solid var(--se-border);">
-          NASA Aqua MODIS satellite observation of regional smoke and aerosol stagnation over Kanpur (26.45°N, 80.33°E).
-        </figcaption>
-      </figure>
-
-      <div style="font-family: var(--se-font-sans); font-size: 1.05rem; line-height: 1.7; color: var(--se-text-primary);">
-        <h3 style="font-family: var(--se-font-serif); font-size: 1.5rem; margin-top: 1.5rem;">Abstract</h3>
-        <p>
-          Continuous regulatory PM2.5 evaluation across two multi-year monitoring windows (2021-2022 and 2025-2026) in Kanpur, Uttar Pradesh, documents extreme seasonal aerosol ratios. Under standard meteorological bounds (Dec-Feb ÷ Jun-Sep), winter PM2.5 averages <strong>2.40×</strong> the monsoon baseline; under peak inversion bounds (Nov-Jan ÷ Jul-Sep), the ratio reaches <strong>3.56×</strong>. The dataset explicitly discloses an unmonitored <strong>855-day station hiatus</strong>, strictly rejecting synthetic infilling to maintain reproducible empirical truth.
-        </p>
-
-        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin: 2rem 0; padding: 1.25rem; background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md);">
-          <div>
-            <div style="font-family: var(--se-font-mono); font-size: 1.4rem; font-weight: 700; color: var(--se-amber-warm);">2.40×</div>
-            <div style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-text-muted); text-transform: uppercase;">Dec-Feb ÷ Jun-Sep</div>
-          </div>
-          <div>
-            <div style="font-family: var(--se-font-mono); font-size: 1.4rem; font-weight: 700; color: var(--se-amber-warm);">3.56×</div>
-            <div style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-text-muted); text-transform: uppercase;">Nov-Jan ÷ Jul-Sep</div>
-          </div>
-          <div>
-            <div style="font-family: var(--se-font-mono); font-size: 1.4rem; font-weight: 700; color: var(--se-red-hot);">855d</div>
-            <div style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-text-muted); text-transform: uppercase;">Hiatus Disclosed</div>
-          </div>
-          <div>
-            <div style="font-family: var(--se-font-mono); font-size: 1.4rem; font-weight: 700; color: var(--se-teal-live);">0.00%</div>
-            <div style="font-family: var(--se-font-mono); font-size: 0.72rem; color: var(--se-text-muted); text-transform: uppercase;">Synthetic Infill</div>
-          </div>
-        </div>
-
-        <p>
-          To inspect the complete multi-year timeseries, station break calibrations, and statistical distributions, proceed to the primary investigation report:
-        </p>
-
-        <div style="margin: 2rem 0; display: flex; gap: 1rem; flex-wrap: wrap;">
-          <a href="kanpur.html" class="se-editorial-btn-primary">Read Complete Full Investigation &rarr;</a>
-          <a href="../numbers_ledger.csv" class="se-editorial-btn-secondary" download>Download Numbers Ledger (CSV)</a>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <footer class="se-editorial-footer">
-    <div class="se-editorial-container">
-      <div class="se-editorial-footer-bottom">
-        <div>Signal Earth &middot; Open environmental science. Hosted on Netlify &amp; GitHub Pages.</div>
-      </div>
-    </div>
-  </footer>
+<body style="font-family: sans-serif; padding: 2rem; text-align: center;">
+  <p>This report has moved to <a href="../analyses/kanpur/">Kanpur Particulate Dynamics</a>.</p>
 </body>
 </html>

@@ -358,7 +358,7 @@
     });
   }
 
-  // Render Quick-Select Region Pills — click centres globe then opens location page
+  // Render Quick-Select Region Pills  -  click centres globe then opens location page
   function renderRegionPills(regions) {
     var pillsContainer = document.getElementById('globe-regions-pills');
     if (!pillsContainer) return;
@@ -561,7 +561,7 @@
     }
   }
 
-  // Select Region — centres globe, rings beacon, then navigates to dedicated location profile page
+  // Select Region  -  centres globe, rings beacon, then navigates to dedicated location profile page
   function selectRegion(region) {
     if (!region) return;
     activeRegion = region;
@@ -642,7 +642,7 @@
     }
   }
 
-  // Handle URL Hash deep linking — redirect to location page
+  // Handle URL Hash deep linking  -  redirect to location page
   function handleUrlHash() {
     var hash = window.location.hash;
     if (hash && hash.indexOf('#region=') === 0) {
@@ -665,7 +665,7 @@
     return false;
   }
 
-  // Accessible Keyboard Region Table — rows link directly to location profile pages
+  // Accessible Keyboard Region Table  -  rows link directly to location profile pages
   function populateKeyboardList(regions) {
     var tableBody = document.getElementById('globe-keyboard-tbody');
     if (!tableBody) return;
@@ -687,7 +687,7 @@
     });
   }
 
-  // Wire UI Controls: Filters only (drawer removed — detail opens on location.html)
+  // Wire UI Controls: Filters only (drawer removed  -  detail opens on location.html)
   function initGlobeControls() {
     // Filter tags
     var filterBtns = document.querySelectorAll('.se-globe-filter-btn');

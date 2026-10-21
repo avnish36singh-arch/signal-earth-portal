@@ -65,7 +65,7 @@
       sub: 'Svalbard & Barents Sea · Polar Margins',
       lat: 78.2232,
       lon: 15.6469,
-      elev: '0–450m AMSL',
+      elev: '0-450m AMSL',
       platform: 'Polar Orbit Earth Observation',
       status: 'Seasonal Pack Fracturing & Melt',
       url: 'research.html',
@@ -430,7 +430,7 @@
     }
 
     if (hudTarget) {
-      hudTarget.textContent = loc.name + ' — ' + loc.sub;
+      hudTarget.textContent = loc.name + '  -  ' + loc.sub;
     }
 
     if (hudSensor) {

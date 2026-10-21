@@ -1,0 +1,35 @@
+[
+  {
+    "slug": "kanpur-winter-pm25-ratio-2026",
+    "title": "Empirical Ratio of Winter to Monsoon PM2.5 in Kanpur (2021-2026)",
+    "date": "2026-10-18",
+    "formatted_date": "October 18, 2026",
+    "author": "Avnish Singh",
+    "sources": "CPCB CAAQMS (Kalyanpur and Nehru Nagar stations)",
+    "data_link": "/data/kanpur/daily_aggregated.csv",
+    "excerpt": "> **DRAFT RESEARCH NOTE - PENDING PEER REVIEW**",
+    "url": "notes/kanpur-winter-pm25-ratio-2026.html"
+  },
+  {
+    "slug": "delhi-naqi-particulate-dominance",
+    "title": "Particulate Governance Frequency Across 1,137 Days of Delhi NAQI",
+    "date": "2026-10-14",
+    "formatted_date": "October 14, 2026",
+    "author": "Avnish Singh",
+    "sources": "DPCC / CPCB (Alipur monitoring station)",
+    "data_link": "/data/cleaned.json",
+    "excerpt": "> **DRAFT RESEARCH NOTE - PENDING PEER REVIEW**",
+    "url": "notes/delhi-naqi-particulate-dominance.html"
+  },
+  {
+    "slug": "kanpur-merra2-skin-temp-association",
+    "title": "Seasonal Association of MERRA-2 Skin Temperature with Ground PM2.5 in Kanpur",
+    "date": "2026-10-09",
+    "formatted_date": "October 09, 2026",
+    "author": "Avnish Singh",
+    "sources": "NASA POWER (GMAO MERRA-2 daily skin temperature TS) and CPCB CAAQMS",
+    "data_link": "/data/numbers_ledger.json",
+    "excerpt": "> **DRAFT RESEARCH NOTE - PENDING PEER REVIEW**",
+    "url": "notes/kanpur-merra2-skin-temp-association.html"
+  }
+]

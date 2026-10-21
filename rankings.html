@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Global Environmental Rankings & Leaderboards | Signal Earth</title>
-  <meta name="description" content="Authoritative sovereign rankings across annual mean PM2.5 exposure, surface temperature anomalies, per capita CO2 emissions, and clean electricity shares.">
+  <meta name="description" content="Authoritative country rankings across annual mean PM2.5 exposure, surface temperature anomalies, per capita CO2 emissions, and clean electricity shares.">
   <link rel="canonical" href="https://signalearth.netlify.app/rankings.html">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="assets/tokens.css">
@@ -192,7 +192,7 @@
 
         <!-- Tally Bar & Staleness Disclosure -->
         <div class="se-tally-bar">
-          <div id="tally-count">Loading sovereign rankings...</div>
+          <div id="tally-count">Loading country rankings...</div>
           <div>Note: [*] indicates reporting lag exceeding 1 year from the contemporaneous anchor.</div>
         </div>
 
@@ -228,7 +228,7 @@
             <h2 class="se-section-h2">In-Situ Regulatory Air Quality Monitoring Stations</h2>
           </div>
           <div class="se-section-header-note">
-            Station-specific particulate metrics evaluated across verified monitoring station-days
+            Station-specific particulate metrics evaluated across empirical monitoring station-days
           </div>
         </div>
 
@@ -255,7 +255,7 @@
                 <td style="font-family: monospace; font-weight: 700;">112.4 µg/m³</td>
                 <td style="font-family: monospace;">1,137 official days</td>
                 <td style="font-family: monospace; color: #D97706;">731 days (2019-2020)</td>
-                <td style="text-align: right;"><a href="investigations/delhi-naqi.html" class="se-link" style="font-weight: 600;">Delhi NAQI &rarr;</a></td>
+                <td style="text-align: right;"><a href="analyses/delhi/index.html" class="se-link" style="font-weight: 600;">Delhi NAQI &rarr;</a></td>
               </tr>
               <tr>
                 <td><strong>Nehru Nagar, Kanpur (Site 5662)</strong></td>
@@ -263,7 +263,7 @@
                 <td style="font-family: monospace; font-weight: 700;">58.7 µg/m³</td>
                 <td style="font-family: monospace;">813 station-days</td>
                 <td style="font-family: monospace; color: #D97706;">855 days (2022-2025)</td>
-                <td style="text-align: right;"><a href="investigations/kanpur-particulates.html" class="se-link" style="font-weight: 600;">Kanpur PM2.5 &rarr;</a></td>
+                <td style="text-align: right;"><a href="analyses/kanpur/index.html" class="se-link" style="font-weight: 600;">Kanpur PM2.5 &rarr;</a></td>
               </tr>
               <tr>
                 <td><strong>NSI Kalyanpur, Kanpur (Site 229252)</strong></td>
@@ -271,7 +271,7 @@
                 <td style="font-family: monospace; font-weight: 700;">55.4 µg/m³</td>
                 <td style="font-family: monospace;">815 station-days</td>
                 <td style="font-family: monospace; color: #D97706;">855 days (2022-2025)</td>
-                <td style="text-align: right;"><a href="investigations/kanpur-particulates.html" class="se-link" style="font-weight: 600;">Kanpur PM2.5 &rarr;</a></td>
+                <td style="text-align: right;"><a href="analyses/kanpur/index.html" class="se-link" style="font-weight: 600;">Kanpur PM2.5 &rarr;</a></td>
               </tr>
             </tbody>
           </table>
@@ -442,7 +442,7 @@
         });
 
         if (unranked.length > 0) {
-          html += '<tr class="se-unranked-row"><td colspan="8" style="padding: 0.85rem; font-weight: 700; border-top: 2px solid var(--se-border);">Unranked Sovereign Nations (No Statutory Data Reported)</td></tr>';
+          html += '<tr class="se-unranked-row"><td colspan="8" style="padding: 0.85rem; font-weight: 700; border-top: 2px solid var(--se-border);">Unranked Countries (No Statutory Data Reported)</td></tr>';
           unranked.forEach(function (p) {
             html += '<tr class="se-unranked-row">' +
               '<td style="font-family: monospace;">-</td>' +
@@ -451,7 +451,7 @@
               '<td>' + p.region + '</td>' +
               '<td>No data</td>' +
               '<td>Unreported</td>' +
-              '<td><div class="se-percentile-wrap"><div class="se-percentile-track"></div></div></td>' +
+              '<td><div class="se-percentile-track"><div class="se-percentile-fill"></div></div></td>' +
               '<td style="text-align: right;"><a href="country/' + p.iso3.toLowerCase() + '/" class="se-link">Dossier &rarr;</a></td>' +
               '</tr>';
           });
@@ -479,7 +479,7 @@
           var metricKey = metricSelect.value;
           var lines = [
             '# Signal Earth: Independent Planetary Environmental Database',
-            '# Dataset: Global Sovereign Rankings Ledger (' + metricKey + ')',
+            '# Dataset: Global Country Rankings Ledger (' + metricKey + ')',
             '# Extracted on: ' + new Date().toISOString().split('T')[0] + ' | Source: https://signalearth.netlify.app/rankings.html',
             '# License: Creative Commons Attribution 4.0 International (CC BY 4.0)',
             'iso3,country_name,region,indicator_id,value,unit,observation_year,global_rank,total_ranked,staleness_flag,license'

@@ -13,17 +13,17 @@
   "summary": "National profile for Belgium (BEL) with a GDP per capita of $60,750. Evaluates ambient particulate exposure, territorial fossil emissions, renewable electricity generation, and forest cover fractions from public databases.",
   "data_as_of": 2025,
   "yale_epi_2026": {
-    "score": 63.45,
-    "rank": 15,
+    "score": 60.08,
+    "rank": 23,
     "total_ranked": 177,
     "ten_year_change": 4.8,
-    "regional_rank": 12,
+    "regional_rank": 21,
     "year": 2026,
     "label": "Yale EPI 2026, not a Signal Earth ranking",
     "categories": {
-      "environmental_health": 82.4,
-      "ecosystem_vitality": 54.1,
-      "climate_change": 53.8
+      "environmental_health": 79.5,
+      "ecosystem_vitality": 52.4,
+      "climate_change": 48.3
     },
     "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
     "source_url": "https://epi.yale.edu/",
@@ -35,20 +35,20 @@
     "epi_score": {
       "key": "epi_score",
       "name": "Yale Environmental Performance Index",
-      "value": 63.45,
-      "formatted_value": "63.5",
+      "value": 60.08,
+      "formatted_value": "60.1",
       "unit": "score (0-100)",
       "year": 2026,
-      "rank": 11,
-      "total_ranked": 47,
-      "global_yale_rank": 15,
+      "rank": 37,
+      "total_ranked": 166,
+      "global_yale_rank": 23,
       "global_yale_total": 177,
       "mixed_years_flag": false,
       "years_spanned": [
         2026
       ],
       "direction": "highest_best",
-      "context": "Rank 15 of 177 globally; 10-year change: +4.8.",
+      "context": "Rank 23 of 177 globally; 10-year change: +4.8.",
       "missing_reason": null,
       "timeseries": {},
       "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
@@ -63,8 +63,8 @@
       "formatted_value": "8.4 µg/m³",
       "unit": "µg/m³",
       "year": 2023,
-      "rank": 40,
-      "total_ranked": 48,
+      "rank": 149,
+      "total_ranked": 169,
       "mixed_years_flag": false,
       "years_spanned": [
         2023
@@ -120,8 +120,8 @@
       "formatted_value": "85.5 Mt CO2 / yr",
       "unit": "Mt CO2 / year",
       "year": 2024,
-      "rank": 30,
-      "total_ranked": 48,
+      "rank": 43,
+      "total_ranked": 171,
       "mixed_years_flag": false,
       "years_spanned": [
         2024
@@ -178,8 +178,8 @@
       "formatted_value": "7.28 t CO2 / person / yr",
       "unit": "tonnes CO2 / person / year",
       "year": 2024,
-      "rank": 10,
-      "total_ranked": 48,
+      "rank": 27,
+      "total_ranked": 170,
       "mixed_years_flag": false,
       "years_spanned": [
         2024
@@ -236,10 +236,13 @@
       "formatted_value": "43.8% of generation",
       "unit": "% of electricity generation",
       "year": 2025,
-      "rank": 22,
-      "total_ranked": 46,
+      "rank": 75,
+      "total_ranked": 171,
       "mixed_years_flag": true,
       "years_spanned": [
+        2009,
+        2022,
+        2023,
         2024,
         2025
       ],
@@ -286,10 +289,11 @@
       "formatted_value": "22.0% of land area",
       "unit": "% of land area",
       "year": 2024,
-      "rank": 30,
-      "total_ranked": 48,
-      "mixed_years_flag": false,
+      "rank": 107,
+      "total_ranked": 170,
+      "mixed_years_flag": true,
       "years_spanned": [
+        2023,
         2024
       ],
       "direction": "highest_best",
@@ -334,8 +338,8 @@
       "formatted_value": "11,738,761",
       "unit": "people",
       "year": 2024,
-      "rank": 38,
-      "total_ranked": 48,
+      "rank": 83,
+      "total_ranked": 170,
       "mixed_years_flag": false,
       "years_spanned": [
         2024

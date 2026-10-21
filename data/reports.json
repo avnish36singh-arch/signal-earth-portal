@@ -7,8 +7,8 @@
       "title": "1.5°C Global Temperature Threshold Tracker",
       "organization": "Copernicus Climate Change Service (C3S) / WMO",
       "year": 2026,
-      "summary": "Evaluation of multi-year global temperature anomalies relative to the pre-industrial baseline (1850–1900 reference period).",
-      "key_finding": "2025 was +1.47°C above pre-industrial, while the 3-year running mean (2023–2025) crossed +1.52°C for the first time in recorded history.",
+      "summary": "Evaluation of multi-year global temperature anomalies relative to the pre-industrial baseline (1850-1900 reference period).",
+      "key_finding": "2025 was +1.47°C above pre-industrial, while the 3-year running mean (2023-2025) crossed +1.52°C for the first time in recorded history.",
       "metrics": [
         { "label": "2025 Full-Year Anomaly", "value": "+1.47°C", "source": "C3S / ERA5 Reanalysis", "url": "https://climate.copernicus.eu", "retrieved_on": "2026-10-16" },
         { "label": "3-Year Running Mean", "value": "+1.52°C", "source": "Copernicus ERA5 Climate Data", "url": "https://climate.copernicus.eu", "retrieved_on": "2026-10-16" },

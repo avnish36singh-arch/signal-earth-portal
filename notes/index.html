@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytical Field Notes | Signal Earth</title>
+  <meta name="description" content="Technical, empirical, and computational field notes on air quality dynamics, thermal radiometry, and planetary indicators.">
+  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/notes/">
+  <link rel="alternate" type="application/rss+xml" title="Signal Earth Notes RSS Feed" href="feed.xml">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .se-notes-index-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 3.5rem 1.5rem 5rem;
+    }
+    .se-notes-page-header {
+      margin-bottom: 3rem;
+      border-bottom: 1px solid var(--se-border);
+      padding-bottom: 1.5rem;
+    }
+    .se-notes-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .se-note-card {
+      background: var(--se-bg-surface);
+      border: 1px solid var(--se-border);
+      border-radius: var(--se-radius-md);
+      padding: 1.75rem 2rem;
+      transition: border-color 0.15s ease;
+    }
+    .se-note-card:hover {
+      border-color: var(--se-text-primary);
+    }
+    .se-note-card-meta {
+      font-family: var(--se-font-mono);
+      font-size: 0.78rem;
+      color: var(--se-text-muted);
+      margin-bottom: 0.65rem;
+    }
+    .se-note-card-title {
+      font-family: var(--se-font-serif);
+      font-size: 1.45rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin: 0 0 0.75rem;
+    }
+    .se-note-card-title a {
+      color: var(--se-text-primary);
+      text-decoration: none;
+    }
+    .se-note-card-title a:hover {
+      text-decoration: underline;
+    }
+    .se-note-card-excerpt {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--se-text-secondary);
+      margin: 0 0 1.25rem;
+    }
+    .se-note-card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.82rem;
+      font-family: var(--se-font-mono);
+      border-top: 1px solid var(--se-border-subtle);
+      padding-top: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="se-editorial-header">
+    <div class="se-editorial-header-inner">
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <a href="../index.html" class="se-editorial-wordmark">Signal Earth</a>
+        <span style="font-size: 0.75rem; font-family: var(--se-font-mono); color: var(--se-text-muted); text-transform: uppercase;">/ Notes</span>
+      </div>
+      <nav aria-label="Main Navigation">
+        <ul class="se-editorial-nav-list">
+          <li><a href="../index.html" class="se-editorial-nav-link">Globe</a></li>
+          <li><a href="../analyses/index.html" class="se-editorial-nav-link">Analyses</a></li>
+          <li><a href="../notes/index.html" class="se-editorial-nav-link active">Notes</a></li>
+          <li><a href="../data.html" class="se-editorial-nav-link">Data</a></li>
+          <li><a href="../about.html" class="se-editorial-nav-link">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="se-notes-index-wrap">
+      <div class="se-notes-page-header">
+        <h1 style="font-family: var(--se-font-serif); font-size: 2.2rem; margin: 0 0 0.5rem; color: var(--se-text-primary);">Analytical Field Notes</h1>
+        <p style="font-size: 0.95rem; color: var(--se-text-secondary); margin: 0; line-height: 1.6;">
+          Continuous technical notes, statistical calculations, and empirical audits. Every note requires an underlying site dataset, documented methodology, and open corrections link.
+        </p>
+      </div>
+
+      <div class="se-notes-list">
+        <article class="se-note-card">
+          <div class="se-note-card-meta">
+            <span>October 18, 2026</span> &middot;
+            <span>CPCB CAAQMS (Kalyanpur and Nehru Nagar stations)</span> <span style="font-size: 0.7rem; font-family: var(--se-font-mono); background: rgba(234, 179, 8, 0.2); color: #eab308; padding: 0.15rem 0.45rem; border-radius: 3px; text-transform: uppercase; font-weight: 600;">Draft</span>
+          </div>
+          <h2 class="se-note-card-title">
+            <a href="kanpur-winter-pm25-ratio-2026.html">Empirical Ratio of Winter to Monsoon PM2.5 in Kanpur (2021-2026)</a>
+          </h2>
+          <p class="se-note-card-excerpt">
+            &gt; **DRAFT RESEARCH NOTE - PENDING PEER REVIEW**
+          </p>
+          <div class="se-note-card-footer">
+            <span>By Avnish Singh</span>
+            <a href="kanpur-winter-pm25-ratio-2026.html" class="se-link">Read note &rarr;</a>
+          </div>
+        </article>
+        <article class="se-note-card">
+          <div class="se-note-card-meta">
+            <span>October 14, 2026</span> &middot;
+            <span>DPCC / CPCB (Alipur monitoring station)</span> <span style="font-size: 0.7rem; font-family: var(--se-font-mono); background: rgba(234, 179, 8, 0.2); color: #eab308; padding: 0.15rem 0.45rem; border-radius: 3px; text-transform: uppercase; font-weight: 600;">Draft</span>
+          </div>
+          <h2 class="se-note-card-title">
+            <a href="delhi-naqi-particulate-dominance.html">Particulate Governance Frequency Across 1,137 Days of Delhi NAQI</a>
+          </h2>
+          <p class="se-note-card-excerpt">
+            &gt; **DRAFT RESEARCH NOTE - PENDING PEER REVIEW**
+          </p>
+          <div class="se-note-card-footer">
+            <span>By Avnish Singh</span>
+            <a href="delhi-naqi-particulate-dominance.html" class="se-link">Read note &rarr;</a>
+          </div>
+        </article>
+        <article class="se-note-card">
+          <div class="se-note-card-meta">
+            <span>October 09, 2026</span> &middot;
+            <span>NASA POWER (GMAO MERRA-2 daily skin temperature TS) and CPCB CAAQMS</span> <span style="font-size: 0.7rem; font-family: var(--se-font-mono); background: rgba(234, 179, 8, 0.2); color: #eab308; padding: 0.15rem 0.45rem; border-radius: 3px; text-transform: uppercase; font-weight: 600;">Draft</span>
+          </div>
+          <h2 class="se-note-card-title">
+            <a href="kanpur-merra2-skin-temp-association.html">Seasonal Association of MERRA-2 Skin Temperature with Ground PM2.5 in Kanpur</a>
+          </h2>
+          <p class="se-note-card-excerpt">
+            &gt; **DRAFT RESEARCH NOTE - PENDING PEER REVIEW**
+          </p>
+          <div class="se-note-card-footer">
+            <span>By Avnish Singh</span>
+            <a href="kanpur-merra2-skin-temp-association.html" class="se-link">Read note &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="se-editorial-footer" style="background: var(--se-bg-page); border-top: 1px solid var(--se-border); padding: 2.5rem 1.5rem 2rem;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: var(--se-text-muted); flex-wrap: wrap; gap: 1rem;">
+      <div>&copy; 2026 Signal Earth. Maintained by Avnish Singh. No institutional affiliation with HBTU Kanpur.</div>
+      <div>
+        <a href="feed.xml" class="se-link">RSS Feed</a> &middot;
+        <a href="../corrections.html" class="se-link">Corrections</a> &middot;
+        <a href="../privacy.html" class="se-link">Privacy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

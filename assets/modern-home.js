@@ -18,7 +18,7 @@
       src: "https://images.unsplash.com/photo-1494806812796-244fe51b774d?q=80&w=3534&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       category: "Orographic Trap · Cryosphere",
       coords: "30.15°N · 78.40°E · Himalayan Front",
-      elevation: "3,800m – 8,848m AMSL",
+      elevation: "3,800m - 8,848m AMSL",
       satellite: "NASA Terra MODIS & Sentinel-2",
       metricName: "AOD Contrast",
       metricVal: "1.45 vs 0.12",

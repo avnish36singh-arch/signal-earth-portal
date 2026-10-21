@@ -62,13 +62,13 @@
         <span class="se-section-badge" style="color: #F87171;">HTTP 404 Error</span>
         <h1 class="se-country-h1" style="font-size: 2.5rem; margin-top: 0.25rem;">Resource Not Found</h1>
         <p class="se-country-dek" style="margin-bottom: 2rem;">
-          The requested path does not exist on Signal Earth. If you were searching for a sovereign environmental dossier, search below or return to the planetary globe.
+          The requested path does not exist on Signal Earth. If you were searching for a country environmental dossier, search below or return to the planetary globe.
         </p>
 
         <!-- Instant Country Search Box -->
         <div style="background: var(--se-bg-surface); border: 1px solid var(--se-border); border-radius: var(--se-radius-md); padding: 1.5rem; margin-bottom: 2rem;">
           <label for="country-search-input" style="display: block; font-family: var(--se-font-mono); font-size: 0.75rem; text-transform: uppercase; color: var(--se-text-muted); margin-bottom: 0.5rem; font-weight: 600;">
-            Search Sovereign Country Dossiers
+            Search Country Dossiers
           </label>
           <input type="text" id="country-search-input" placeholder="Type country name or ISO code (e.g. India, Germany, USA)..." style="width: 100%; padding: 0.65rem 0.85rem; font-size: 0.95rem; border: 1px solid var(--se-border); border-radius: var(--se-radius-sm); background: var(--se-bg-page); color: var(--se-text-primary); outline: none;">
           <div id="country-search-results" style="margin-top: 0.75rem; display: flex; flex-direction: column; gap: 0.4rem;"></div>
@@ -150,7 +150,7 @@
         }).slice(0, 6);
 
         if (!matches.length) {
-          results.innerHTML = '<div style="font-size: 0.8rem; color: var(--se-text-muted); padding: 0.4rem 0;">No sovereign nation found.</div>';
+          results.innerHTML = '<div style="font-size: 0.8rem; color: var(--se-text-muted); padding: 0.4rem 0;">No country found.</div>';
           return;
         }
 

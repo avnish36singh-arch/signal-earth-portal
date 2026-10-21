@@ -2,7 +2,7 @@
   "metadata": {
     "version": "1.0",
     "standard": "ISO 3166-1 alpha-3",
-    "total_canonical": 48
+    "total_canonical": 178
   },
   "countries": {
     "AFG": {
@@ -748,6 +748,1956 @@
       ],
       "aliases": [
         "South Africa"
+      ]
+    },
+    "ARE": {
+      "iso3": "ARE",
+      "iso2": "AR",
+      "name": "United Arab Emirates",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "capital": "United Arab Emirates",
+      "coords": [
+        24.2,
+        54.24
+      ],
+      "aliases": [
+        "United Arab Emirates"
+      ]
+    },
+    "ATA": {
+      "iso3": "ATA",
+      "iso2": "AT",
+      "name": "Antarctica",
+      "region": "Antarctica",
+      "subregion": "Antarctica",
+      "capital": "Antarctica",
+      "coords": [
+        -73.38,
+        -16.66
+      ],
+      "aliases": [
+        "Antarctica"
+      ]
+    },
+    "ATF": {
+      "iso3": "ATF",
+      "iso2": "AT",
+      "name": "Fr. S. Antarctic Lands",
+      "region": "Seven seas (open ocean)",
+      "subregion": "Seven seas (open ocean)",
+      "capital": "Fr. S. Antarctic Lands",
+      "coords": [
+        -49.12,
+        69.46
+      ],
+      "aliases": [
+        "Fr. S. Antarctic Lands"
+      ]
+    },
+    "BDI": {
+      "iso3": "BDI",
+      "iso2": "BD",
+      "name": "Burundi",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "capital": "Burundi",
+      "coords": [
+        -3.39,
+        29.96
+      ],
+      "aliases": [
+        "Burundi"
+      ]
+    },
+    "BEN": {
+      "iso3": "BEN",
+      "iso2": "BE",
+      "name": "Benin",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "capital": "Benin",
+      "coords": [
+        9.81,
+        2.33
+      ],
+      "aliases": [
+        "Benin"
+      ]
+    },
+    "BFA": {
+      "iso3": "BFA",
+      "iso2": "BF",
+      "name": "Burkina Faso",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "capital": "Burkina Faso",
+      "coords": [
+        12.15,
+        -1.72
+      ],
+      "aliases": [
+        "Burkina Faso"
+      ]
+    },
+    "BGR": {
+      "iso3": "BGR",
+      "iso2": "BG",
+      "name": "Bulgaria",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "capital": "Bulgaria",
+      "coords": [
+        42.89,
+        24.69
+      ],
+      "aliases": [
+        "Bulgaria"
+      ]
+    },
+    "BHS": {
+      "iso3": "BHS",
+      "iso2": "BH",
+      "name": "Bahamas",
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "capital": "Bahamas",
+      "coords": [
+        25.74,
+        -77.82
+      ],
+      "aliases": [
+        "Bahamas"
+      ]
+    },
+    "BIH": {
+      "iso3": "BIH",
+      "iso2": "BI",
+      "name": "Bosnia and Herz.",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "capital": "Bosnia and Herz.",
+      "coords": [
+        44.28,
+        17.96
+      ],
+      "aliases": [
+        "Bosnia and Herz."
+      ]
+    },
+    "BLR": {
+      "iso3": "BLR",
+      "iso2": "BL",
+      "name": "Belarus",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "capital": "Belarus",
+      "coords": [
+        53.3,
+        28.2
+      ],
+      "aliases": [
+        "Belarus"
+      ]
+    },
+    "BLZ": {
+      "iso3": "BLZ",
+      "iso2": "BL",
+      "name": "Belize",
+      "region": "Americas",
+      "subregion": "Central America",
+      "capital": "Belize",
+      "coords": [
+        17.42,
+        -88.63
+      ],
+      "aliases": [
+        "Belize"
+      ]
+    },
+    "BOL": {
+      "iso3": "BOL",
+      "iso2": "BO",
+      "name": "Bolivia",
+      "region": "Americas",
+      "subregion": "South America",
+      "capital": "Bolivia",
+      "coords": [
+        -16.52,
+        -64.02
+      ],
+      "aliases": [
+        "Bolivia"
+      ]
+    },
+    "BRN": {
+      "iso3": "BRN",
+      "iso2": "BR",
+      "name": "Brunei",
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "capital": "Brunei",
+      "coords": [
+        4.63,
+        114.84
+      ],
+      "aliases": [
+        "Brunei"
+      ]
+    },
+    "BTN": {
+      "iso3": "BTN",
+      "iso2": "BT",
+      "name": "Bhutan",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "capital": "Bhutan",
+      "coords": [
+        27.47,
+        90.62
+      ],
+      "aliases": [
+        "Bhutan"
+      ]
+    },
+    "BWA": {
+      "iso3": "BWA",
+      "iso2": "BW",
+      "name": "Botswana",
+      "region": "Africa",
+      "subregion": "Southern Africa",
+      "capital": "Botswana",
+      "coords": [
+        -22.48,
+        24.47
+      ],
+      "aliases": [
+        "Botswana"
+      ]
+    },
+    "CAF": {
+      "iso3": "CAF",
+      "iso2": "CA",
+      "name": "Central African Rep.",
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "capital": "Central African Rep.",
+      "coords": [
+        6.33,
+        20.51
+      ],
+      "aliases": [
+        "Central African Rep."
+      ]
+    },
+    "CHE": {
+      "iso3": "CHE",
+      "iso2": "CH",
+      "name": "Switzerland",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "capital": "Switzerland",
+      "coords": [
+        46.8,
+        8.31
+      ],
+      "aliases": [
+        "Switzerland"
+      ]
+    },
+    "CMR": {
+      "iso3": "CMR",
+      "iso2": "CM",
+      "name": "Cameroon",
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "capital": "Cameroon",
+      "coords": [
+        6.82,
+        13.18
+      ],
+      "aliases": [
+        "Cameroon"
+      ]
+    },
+    "CRI": {
+      "iso3": "CRI",
+      "iso2": "CR",
+      "name": "Costa Rica",
+      "region": "Americas",
+      "subregion": "Central America",
+      "capital": "Costa Rica",
+      "coords": [
+        9.78,
+        -84.17
+      ],
+      "aliases": [
+        "Costa Rica"
+      ]
+    },
+    "CUB": {
+      "iso3": "CUB",
+      "iso2": "CU",
+      "name": "Cuba",
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "capital": "Cuba",
+      "coords": [
+        21.72,
+        -79.73
+      ],
+      "aliases": [
+        "Cuba"
+      ]
+    },
+    "CYN": {
+      "iso3": "CYN",
+      "iso2": "CY",
+      "name": "N. Cyprus",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "capital": "N. Cyprus",
+      "coords": [
+        35.18,
+        33.43
+      ],
+      "aliases": [
+        "N. Cyprus"
+      ]
+    },
+    "CYP": {
+      "iso3": "CYP",
+      "iso2": "CY",
+      "name": "Cyprus",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "capital": "Cyprus",
+      "coords": [
+        35.02,
+        33.24
+      ],
+      "aliases": [
+        "Cyprus"
+      ]
+    },
+    "CZE": {
+      "iso3": "CZE",
+      "iso2": "CZ",
+      "name": "Czechia",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "capital": "Czechia",
+      "coords": [
+        49.71,
+        15.9
+      ],
+      "aliases": [
+        "Czechia"
+      ]
+    },
+    "DJI": {
+      "iso3": "DJI",
+      "iso2": "DJ",
+      "name": "Djibouti",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "capital": "Djibouti",
+      "coords": [
+        11.81,
+        42.57
+      ],
+      "aliases": [
+        "Djibouti"
+      ]
+    },
+    "DOM": {
+      "iso3": "DOM",
+      "iso2": "DO",
+      "name": "Dominican Rep.",
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "capital": "Dominican Rep.",
+      "coords": [
+        18.79,
+        -70.49
+      ],
+      "aliases": [
+        "Dominican Rep."
+      ]
+    },
+    "ECU": {
+      "iso3": "ECU",
+      "iso2": "EC",
+      "name": "Ecuador",
+      "region": "Americas",
+      "subregion": "South America",
+      "capital": "Ecuador",
+      "coords": [
+        -1.59,
+        -78.81
+      ],
+      "aliases": [
+        "Ecuador"
+      ]
+    },
+    "ERI": {
+      "iso3": "ERI",
+      "iso2": "ER",
+      "name": "Eritrea",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "capital": "Eritrea",
+      "coords": [
+        14.65,
+        39.83
+      ],
+      "aliases": [
+        "Eritrea"
+      ]
+    },
+    "EST": {
+      "iso3": "EST",
+      "iso2": "ES",
+      "name": "Estonia",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "capital": "Estonia",
+      "coords": [
+        58.61,
+        25.95
+      ],
+      "aliases": [
+        "Estonia"
+      ]
+    },
+    "FJI": {
+      "iso3": "FJI",
+      "iso2": "FJ",
+      "name": "Fiji",
+      "region": "Oceania",
+      "subregion": "Melanesia",
+      "capital": "Fiji",
+      "coords": [
+        -16.99,
+        97.15
+      ],
+      "aliases": [
+        "Fiji"
+      ]
+    },
+    "FLK": {
+      "iso3": "FLK",
+      "iso2": "FL",
+      "name": "Falkland Is.",
+      "region": "Americas",
+      "subregion": "South America",
+      "capital": "Falkland Is.",
+      "coords": [
+        -51.73,
+        -59.59
+      ],
+      "aliases": [
+        "Falkland Is."
+      ]
+    },
+    "GAB": {
+      "iso3": "GAB",
+      "iso2": "GA",
+      "name": "Gabon",
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "capital": "Gabon",
+      "coords": [
+        -0.34,
+        11.89
+      ],
+      "aliases": [
+        "Gabon"
+      ]
+    },
+    "GEO": {
+      "iso3": "GEO",
+      "iso2": "GE",
+      "name": "Georgia",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "capital": "Georgia",
+      "coords": [
+        42.17,
+        43.57
+      ],
+      "aliases": [
+        "Georgia"
+      ]
+    },
+    "GIN": {
+      "iso3": "GIN",
+      "iso2": "GI",
+      "name": "Guinea",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "capital": "Guinea",
+      "coords": [
+        10.38,
+        -10.9
+      ],
+      "aliases": [
+        "Guinea"
+      ]
+    },
+    "GMB": {
+      "iso3": "GMB",
+      "iso2": "GM",
+      "name": "Gambia",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "capital": "Gambia",
+      "coords": [
+        13.47,
+        -15.3
+      ],
+      "aliases": [
+        "Gambia"
+      ]
+    },
+    "GNB": {
+      "iso3": "GNB",
+      "iso2": "GN",
+      "name": "Guinea-Bissau",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "capital": "Guinea-Bissau",
+      "coords": [
+        11.99,
+        -15.06
+      ],
+      "aliases": [
+        "Guinea-Bissau"
+      ]
+    },
+    "GNQ": {
+      "iso3": "GNQ",
+      "iso2": "GN",
+      "name": "Eq. Guinea",
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "capital": "Eq. Guinea",
+      "coords": [
+        1.59,
+        10.07
+      ],
+      "aliases": [
+        "Eq. Guinea"
+      ]
+    },
+    "GRC": {
+      "iso3": "GRC",
+      "iso2": "GR",
+      "name": "Greece",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "capital": "Greece",
+      "coords": [
+        38.85,
+        23.44
+      ],
+      "aliases": [
+        "Greece"
+      ]
+    },
+    "GRL": {
+      "iso3": "GRL",
+      "iso2": "GR",
+      "name": "Greenland",
+      "region": "Americas",
+      "subregion": "Northern America",
+      "capital": "Greenland",
+      "coords": [
+        74.15,
+        -41.03
+      ],
+      "aliases": [
+        "Greenland"
+      ]
+    },
+    "GTM": {
+      "iso3": "GTM",
+      "iso2": "GT",
+      "name": "Guatemala",
+      "region": "Americas",
+      "subregion": "Central America",
+      "capital": "Guatemala",
+      "coords": [
+        15.62,
+        -90.18
+      ],
+      "aliases": [
+        "Guatemala"
+      ]
+    },
+    "GUY": {
+      "iso3": "GUY",
+      "iso2": "GU",
+      "name": "Guyana",
+      "region": "Americas",
+      "subregion": "South America",
+      "capital": "Guyana",
+      "coords": [
+        4.48,
+        -58.9
+      ],
+      "aliases": [
+        "Guyana"
+      ]
+    },
+    "HND": {
+      "iso3": "HND",
+      "iso2": "HN",
+      "name": "Honduras",
+      "region": "Americas",
+      "subregion": "Central America",
+      "capital": "Honduras",
+      "coords": [
+        14.74,
+        -86.42
+      ],
+      "aliases": [
+        "Honduras"
+      ]
+    },
+    "HRV": {
+      "iso3": "HRV",
+      "iso2": "HR",
+      "name": "Croatia",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "capital": "Croatia",
+      "coords": [
+        44.81,
+        16.49
+      ],
+      "aliases": [
+        "Croatia"
+      ]
+    },
+    "HTI": {
+      "iso3": "HTI",
+      "iso2": "HT",
+      "name": "Haiti",
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "capital": "Haiti",
+      "coords": [
+        18.84,
+        -72.7
+      ],
+      "aliases": [
+        "Haiti"
+      ]
+    },
+    "HUN": {
+      "iso3": "HUN",
+      "iso2": "HU",
+      "name": "Hungary",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "capital": "Hungary",
+      "coords": [
+        47.37,
+        19.05
+      ],
+      "aliases": [
+        "Hungary"
+      ]
+    },
+    "IRL": {
+      "iso3": "IRL",
+      "iso2": "IR",
+      "name": "Ireland",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "capital": "Ireland",
+      "coords": [
+        53.63,
+        -7.83
+      ],
+      "aliases": [
+        "Ireland"
+      ]
+    },
+    "IRQ": {
+      "iso3": "IRQ",
+      "iso2": "IR",
+      "name": "Iraq",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "capital": "Iraq",
+      "coords": [
+        33.61,
+        44.58
+      ],
+      "aliases": [
+        "Iraq"
+      ]
+    },
+    "ISL": {
+      "iso3": "ISL",
+      "iso2": "IS",
+      "name": "Iceland",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "capital": "Iceland",
+      "coords": [
+        65.28,
+        -19.27
+      ],
+      "aliases": [
+        "Iceland"
+      ]
+    },
+    "ISR": {
+      "iso3": "ISR",
+      "iso2": "IS",
+      "name": "Israel",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "capital": "Israel",
+      "coords": [
+        31.88,
+        35.08
+      ],
+      "aliases": [
+        "Israel"
+      ]
+    },
+    "JAM": {
+      "iso3": "JAM",
+      "iso2": "JA",
+      "name": "Jamaica",
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "capital": "Jamaica",
+      "coords": [
+        18.19,
+        -77.35
+      ],
+      "aliases": [
+        "Jamaica"
+      ]
+    },
+    "JOR": {
+      "iso3": "JOR",
+      "iso2": "JO",
+      "name": "Jordan",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "capital": "Jordan",
+      "coords": [
+        31.18,
+        36.82
+      ],
+      "aliases": [
+        "Jordan"
+      ]
+    },
+    "KAZ": {
+      "iso3": "KAZ",
+      "iso2": "KA",
+      "name": "Kazakhstan",
+      "region": "Asia",
+      "subregion": "Central Asia",
+      "capital": "Kazakhstan",
+      "coords": [
+        47.26,
+        65.25
+      ],
+      "aliases": [
+        "Kazakhstan"
+      ]
+    },
+    "KGZ": {
+      "iso3": "KGZ",
+      "iso2": "KG",
+      "name": "Kyrgyzstan",
+      "region": "Asia",
+      "subregion": "Central Asia",
+      "capital": "Kyrgyzstan",
+      "coords": [
+        41.37,
+        74.24
+      ],
+      "aliases": [
+        "Kyrgyzstan"
+      ]
+    },
+    "KHM": {
+      "iso3": "KHM",
+      "iso2": "KH",
+      "name": "Cambodia",
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "capital": "Cambodia",
+      "coords": [
+        12.64,
+        104.9
+      ],
+      "aliases": [
+        "Cambodia"
+      ]
+    },
+    "KOS": {
+      "iso3": "KOS",
+      "iso2": "KO",
+      "name": "Kosovo",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "capital": "Kosovo",
+      "coords": [
+        42.55,
+        20.96
+      ],
+      "aliases": [
+        "Kosovo"
+      ]
+    },
+    "KWT": {
+      "iso3": "KWT",
+      "iso2": "KW",
+      "name": "Kuwait",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "capital": "Kuwait",
+      "coords": [
+        29.24,
+        47.59
+      ],
+      "aliases": [
+        "Kuwait"
+      ]
+    },
+    "LAO": {
+      "iso3": "LAO",
+      "iso2": "LA",
+      "name": "Laos",
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "capital": "Laos",
+      "coords": [
+        18.48,
+        103.53
+      ],
+      "aliases": [
+        "Laos"
+      ]
+    },
+    "LBN": {
+      "iso3": "LBN",
+      "iso2": "LB",
+      "name": "Lebanon",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "capital": "Lebanon",
+      "coords": [
+        33.8,
+        35.85
+      ],
+      "aliases": [
+        "Lebanon"
+      ]
+    },
+    "LBR": {
+      "iso3": "LBR",
+      "iso2": "LB",
+      "name": "Liberia",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "capital": "Liberia",
+      "coords": [
+        6.75,
+        -9.14
+      ],
+      "aliases": [
+        "Liberia"
+      ]
+    },
+    "LBY": {
+      "iso3": "LBY",
+      "iso2": "LB",
+      "name": "Libya",
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "capital": "Libya",
+      "coords": [
+        28.5,
+        16.41
+      ],
+      "aliases": [
+        "Libya"
+      ]
+    },
+    "LKA": {
+      "iso3": "LKA",
+      "iso2": "LK",
+      "name": "Sri Lanka",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "capital": "Sri Lanka",
+      "coords": [
+        7.63,
+        80.86
+      ],
+      "aliases": [
+        "Sri Lanka"
+      ]
+    },
+    "LSO": {
+      "iso3": "LSO",
+      "iso2": "LS",
+      "name": "Lesotho",
+      "region": "Africa",
+      "subregion": "Southern Africa",
+      "capital": "Lesotho",
+      "coords": [
+        -29.58,
+        28.37
+      ],
+      "aliases": [
+        "Lesotho"
+      ]
+    },
+    "LTU": {
+      "iso3": "LTU",
+      "iso2": "LT",
+      "name": "Lithuania",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "capital": "Lithuania",
+      "coords": [
+        55.2,
+        24.02
+      ],
+      "aliases": [
+        "Lithuania"
+      ]
+    },
+    "LUX": {
+      "iso3": "LUX",
+      "iso2": "LU",
+      "name": "Luxembourg",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "capital": "Luxembourg",
+      "coords": [
+        49.73,
+        5.93
+      ],
+      "aliases": [
+        "Luxembourg"
+      ]
+    },
+    "LVA": {
+      "iso3": "LVA",
+      "iso2": "LV",
+      "name": "Latvia",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "capital": "Latvia",
+      "coords": [
+        56.8,
+        24.98
+      ],
+      "aliases": [
+        "Latvia"
+      ]
+    },
+    "MAR": {
+      "iso3": "MAR",
+      "iso2": "MA",
+      "name": "Morocco",
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "capital": "Morocco",
+      "coords": [
+        28.77,
+        -9.43
+      ],
+      "aliases": [
+        "Morocco"
+      ]
+    },
+    "MDA": {
+      "iso3": "MDA",
+      "iso2": "MD",
+      "name": "Moldova",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "capital": "Moldova",
+      "coords": [
+        47.05,
+        28.47
+      ],
+      "aliases": [
+        "Moldova"
+      ]
+    },
+    "MDG": {
+      "iso3": "MDG",
+      "iso2": "MD",
+      "name": "Madagascar",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "capital": "Madagascar",
+      "coords": [
+        -17.97,
+        46.99
+      ],
+      "aliases": [
+        "Madagascar"
+      ]
+    },
+    "MKD": {
+      "iso3": "MKD",
+      "iso2": "MK",
+      "name": "Macedonia",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "capital": "Macedonia",
+      "coords": [
+        41.6,
+        21.55
+      ],
+      "aliases": [
+        "Macedonia"
+      ]
+    },
+    "MLI": {
+      "iso3": "MLI",
+      "iso2": "ML",
+      "name": "Mali",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "capital": "Mali",
+      "coords": [
+        14.11,
+        -5.65
+      ],
+      "aliases": [
+        "Mali"
+      ]
+    },
+    "MMR": {
+      "iso3": "MMR",
+      "iso2": "MM",
+      "name": "Myanmar",
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "capital": "Myanmar",
+      "coords": [
+        20.0,
+        97.04
+      ],
+      "aliases": [
+        "Myanmar"
+      ]
+    },
+    "MNE": {
+      "iso3": "MNE",
+      "iso2": "MN",
+      "name": "Montenegro",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "capital": "Montenegro",
+      "coords": [
+        42.74,
+        19.45
+      ],
+      "aliases": [
+        "Montenegro"
+      ]
+    },
+    "MNG": {
+      "iso3": "MNG",
+      "iso2": "MN",
+      "name": "Mongolia",
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "capital": "Mongolia",
+      "coords": [
+        47.21,
+        104.97
+      ],
+      "aliases": [
+        "Mongolia"
+      ]
+    },
+    "MOZ": {
+      "iso3": "MOZ",
+      "iso2": "MO",
+      "name": "Mozambique",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "capital": "Mozambique",
+      "coords": [
+        -17.72,
+        35.0
+      ],
+      "aliases": [
+        "Mozambique"
+      ]
+    },
+    "MRT": {
+      "iso3": "MRT",
+      "iso2": "MR",
+      "name": "Mauritania",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "capital": "Mauritania",
+      "coords": [
+        19.0,
+        -12.21
+      ],
+      "aliases": [
+        "Mauritania"
+      ]
+    },
+    "MWI": {
+      "iso3": "MWI",
+      "iso2": "MW",
+      "name": "Malawi",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "capital": "Malawi",
+      "coords": [
+        -13.0,
+        34.13
+      ],
+      "aliases": [
+        "Malawi"
+      ]
+    },
+    "MYS": {
+      "iso3": "MYS",
+      "iso2": "MY",
+      "name": "Malaysia",
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "capital": "Malaysia",
+      "coords": [
+        3.95,
+        109.62
+      ],
+      "aliases": [
+        "Malaysia"
+      ]
+    },
+    "NAM": {
+      "iso3": "NAM",
+      "iso2": "NA",
+      "name": "Namibia",
+      "region": "Africa",
+      "subregion": "Southern Africa",
+      "capital": "Namibia",
+      "coords": [
+        -21.39,
+        17.74
+      ],
+      "aliases": [
+        "Namibia"
+      ]
+    },
+    "NCL": {
+      "iso3": "NCL",
+      "iso2": "NC",
+      "name": "New Caledonia",
+      "region": "Oceania",
+      "subregion": "Melanesia",
+      "capital": "New Caledonia",
+      "coords": [
+        -21.18,
+        165.51
+      ],
+      "aliases": [
+        "New Caledonia"
+      ]
+    },
+    "NER": {
+      "iso3": "NER",
+      "iso2": "NE",
+      "name": "Niger",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "capital": "Niger",
+      "coords": [
+        15.29,
+        8.54
+      ],
+      "aliases": [
+        "Niger"
+      ]
+    },
+    "NIC": {
+      "iso3": "NIC",
+      "iso2": "NI",
+      "name": "Nicaragua",
+      "region": "Americas",
+      "subregion": "Central America",
+      "capital": "Nicaragua",
+      "coords": [
+        13.08,
+        -84.98
+      ],
+      "aliases": [
+        "Nicaragua"
+      ]
+    },
+    "NPL": {
+      "iso3": "NPL",
+      "iso2": "NP",
+      "name": "Nepal",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "capital": "Nepal",
+      "coords": [
+        28.31,
+        84.25
+      ],
+      "aliases": [
+        "Nepal"
+      ]
+    },
+    "NZL": {
+      "iso3": "NZL",
+      "iso2": "NZ",
+      "name": "New Zealand",
+      "region": "Oceania",
+      "subregion": "Australia and New Zealand",
+      "capital": "New Zealand",
+      "coords": [
+        -40.53,
+        173.45
+      ],
+      "aliases": [
+        "New Zealand"
+      ]
+    },
+    "OMN": {
+      "iso3": "OMN",
+      "iso2": "OM",
+      "name": "Oman",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "capital": "Oman",
+      "coords": [
+        21.52,
+        56.53
+      ],
+      "aliases": [
+        "Oman"
+      ]
+    },
+    "PAN": {
+      "iso3": "PAN",
+      "iso2": "PA",
+      "name": "Panama",
+      "region": "Americas",
+      "subregion": "Central America",
+      "capital": "Panama",
+      "coords": [
+        8.5,
+        -80.32
+      ],
+      "aliases": [
+        "Panama"
+      ]
+    },
+    "PER": {
+      "iso3": "PER",
+      "iso2": "PE",
+      "name": "Peru",
+      "region": "Americas",
+      "subregion": "South America",
+      "capital": "Peru",
+      "coords": [
+        -7.84,
+        -74.08
+      ],
+      "aliases": [
+        "Peru"
+      ]
+    },
+    "PHL": {
+      "iso3": "PHL",
+      "iso2": "PH",
+      "name": "Philippines",
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "capital": "Philippines",
+      "coords": [
+        11.5,
+        122.81
+      ],
+      "aliases": [
+        "Philippines"
+      ]
+    },
+    "PNG": {
+      "iso3": "PNG",
+      "iso2": "PN",
+      "name": "Papua New Guinea",
+      "region": "Oceania",
+      "subregion": "Melanesia",
+      "capital": "Papua New Guinea",
+      "coords": [
+        -6.24,
+        149.68
+      ],
+      "aliases": [
+        "Papua New Guinea"
+      ]
+    },
+    "POL": {
+      "iso3": "POL",
+      "iso2": "PO",
+      "name": "Poland",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "capital": "Poland",
+      "coords": [
+        51.74,
+        19.48
+      ],
+      "aliases": [
+        "Poland"
+      ]
+    },
+    "PRI": {
+      "iso3": "PRI",
+      "iso2": "PR",
+      "name": "Puerto Rico",
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "capital": "Puerto Rico",
+      "coords": [
+        18.28,
+        -66.43
+      ],
+      "aliases": [
+        "Puerto Rico"
+      ]
+    },
+    "PRK": {
+      "iso3": "PRK",
+      "iso2": "PR",
+      "name": "North Korea",
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "capital": "North Korea",
+      "coords": [
+        40.08,
+        127.55
+      ],
+      "aliases": [
+        "North Korea"
+      ]
+    },
+    "PRT": {
+      "iso3": "PRT",
+      "iso2": "PR",
+      "name": "Portugal",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "capital": "Portugal",
+      "coords": [
+        39.76,
+        -8.04
+      ],
+      "aliases": [
+        "Portugal"
+      ]
+    },
+    "PRY": {
+      "iso3": "PRY",
+      "iso2": "PR",
+      "name": "Paraguay",
+      "region": "Americas",
+      "subregion": "South America",
+      "capital": "Paraguay",
+      "coords": [
+        -23.47,
+        -57.46
+      ],
+      "aliases": [
+        "Paraguay"
+      ]
+    },
+    "PSE": {
+      "iso3": "PSE",
+      "iso2": "PS",
+      "name": "Palestine",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "capital": "Palestine",
+      "coords": [
+        31.81,
+        35.24
+      ],
+      "aliases": [
+        "Palestine"
+      ]
+    },
+    "QAT": {
+      "iso3": "QAT",
+      "iso2": "QA",
+      "name": "Qatar",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "capital": "Qatar",
+      "coords": [
+        25.26,
+        51.15
+      ],
+      "aliases": [
+        "Qatar"
+      ]
+    },
+    "ROU": {
+      "iso3": "ROU",
+      "iso2": "RO",
+      "name": "Romania",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "capital": "Romania",
+      "coords": [
+        45.82,
+        25.2
+      ],
+      "aliases": [
+        "Romania"
+      ]
+    },
+    "RWA": {
+      "iso3": "RWA",
+      "iso2": "RW",
+      "name": "Rwanda",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "capital": "Rwanda",
+      "coords": [
+        -2.1,
+        29.93
+      ],
+      "aliases": [
+        "Rwanda"
+      ]
+    },
+    "ESH": {
+      "iso3": "ESH",
+      "iso2": "ES",
+      "name": "W. Sahara",
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "capital": "W. Sahara",
+      "coords": [
+        24.78,
+        -12.03
+      ],
+      "aliases": [
+        "W. Sahara"
+      ]
+    },
+    "SDN": {
+      "iso3": "SDN",
+      "iso2": "SD",
+      "name": "Sudan",
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "capital": "Sudan",
+      "coords": [
+        12.81,
+        29.34
+      ],
+      "aliases": [
+        "Sudan"
+      ]
+    },
+    "SSD": {
+      "iso3": "SSD",
+      "iso2": "SS",
+      "name": "S. Sudan",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "capital": "S. Sudan",
+      "coords": [
+        8.04,
+        30.04
+      ],
+      "aliases": [
+        "S. Sudan"
+      ]
+    },
+    "SEN": {
+      "iso3": "SEN",
+      "iso2": "SE",
+      "name": "Senegal",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "capital": "Senegal",
+      "coords": [
+        13.85,
+        -14.47
+      ],
+      "aliases": [
+        "Senegal"
+      ]
+    },
+    "SLB": {
+      "iso3": "SLB",
+      "iso2": "SL",
+      "name": "Solomon Is.",
+      "region": "Oceania",
+      "subregion": "Melanesia",
+      "capital": "Solomon Is.",
+      "coords": [
+        -8.79,
+        159.85
+      ],
+      "aliases": [
+        "Solomon Is."
+      ]
+    },
+    "SLE": {
+      "iso3": "SLE",
+      "iso2": "SL",
+      "name": "Sierra Leone",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "capital": "Sierra Leone",
+      "coords": [
+        8.6,
+        -11.7
+      ],
+      "aliases": [
+        "Sierra Leone"
+      ]
+    },
+    "SLV": {
+      "iso3": "SLV",
+      "iso2": "SL",
+      "name": "El Salvador",
+      "region": "Americas",
+      "subregion": "Central America",
+      "capital": "El Salvador",
+      "coords": [
+        13.82,
+        -88.96
+      ],
+      "aliases": [
+        "El Salvador"
+      ]
+    },
+    "SOL": {
+      "iso3": "SOL",
+      "iso2": "SO",
+      "name": "Somaliland",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "capital": "Somaliland",
+      "coords": [
+        10.45,
+        46.11
+      ],
+      "aliases": [
+        "Somaliland"
+      ]
+    },
+    "SOM": {
+      "iso3": "SOM",
+      "iso2": "SO",
+      "name": "Somalia",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "capital": "Somalia",
+      "coords": [
+        6.71,
+        46.9
+      ],
+      "aliases": [
+        "Somalia"
+      ]
+    },
+    "SRB": {
+      "iso3": "SRB",
+      "iso2": "SR",
+      "name": "Serbia",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "capital": "Serbia",
+      "coords": [
+        43.86,
+        20.94
+      ],
+      "aliases": [
+        "Serbia"
+      ]
+    },
+    "SUR": {
+      "iso3": "SUR",
+      "iso2": "SU",
+      "name": "Suriname",
+      "region": "Americas",
+      "subregion": "South America",
+      "capital": "Suriname",
+      "coords": [
+        3.7,
+        -55.87
+      ],
+      "aliases": [
+        "Suriname"
+      ]
+    },
+    "SVK": {
+      "iso3": "SVK",
+      "iso2": "SV",
+      "name": "Slovakia",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "capital": "Slovakia",
+      "coords": [
+        48.73,
+        19.18
+      ],
+      "aliases": [
+        "Slovakia"
+      ]
+    },
+    "SVN": {
+      "iso3": "SVN",
+      "iso2": "SV",
+      "name": "Slovenia",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "capital": "Slovenia",
+      "coords": [
+        46.11,
+        15.0
+      ],
+      "aliases": [
+        "Slovenia"
+      ]
+    },
+    "SWZ": {
+      "iso3": "SWZ",
+      "iso2": "SW",
+      "name": "Swaziland",
+      "region": "Africa",
+      "subregion": "Southern Africa",
+      "capital": "Swaziland",
+      "coords": [
+        -26.34,
+        31.42
+      ],
+      "aliases": [
+        "Swaziland"
+      ]
+    },
+    "SYR": {
+      "iso3": "SYR",
+      "iso2": "SY",
+      "name": "Syria",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "capital": "Syria",
+      "coords": [
+        35.31,
+        38.2
+      ],
+      "aliases": [
+        "Syria"
+      ]
+    },
+    "TCD": {
+      "iso3": "TCD",
+      "iso2": "TC",
+      "name": "Chad",
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "capital": "Chad",
+      "coords": [
+        12.85,
+        17.98
+      ],
+      "aliases": [
+        "Chad"
+      ]
+    },
+    "TGO": {
+      "iso3": "TGO",
+      "iso2": "TG",
+      "name": "Togo",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "capital": "Togo",
+      "coords": [
+        8.88,
+        0.87
+      ],
+      "aliases": [
+        "Togo"
+      ]
+    },
+    "THA": {
+      "iso3": "THA",
+      "iso2": "TH",
+      "name": "Thailand",
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "capital": "Thailand",
+      "coords": [
+        13.18,
+        100.66
+      ],
+      "aliases": [
+        "Thailand"
+      ]
+    },
+    "TJK": {
+      "iso3": "TJK",
+      "iso2": "TJ",
+      "name": "Tajikistan",
+      "region": "Asia",
+      "subregion": "Central Asia",
+      "capital": "Tajikistan",
+      "coords": [
+        38.52,
+        70.96
+      ],
+      "aliases": [
+        "Tajikistan"
+      ]
+    },
+    "TKM": {
+      "iso3": "TKM",
+      "iso2": "TK",
+      "name": "Turkmenistan",
+      "region": "Asia",
+      "subregion": "Central Asia",
+      "capital": "Turkmenistan",
+      "coords": [
+        39.25,
+        58.72
+      ],
+      "aliases": [
+        "Turkmenistan"
+      ]
+    },
+    "TLS": {
+      "iso3": "TLS",
+      "iso2": "TL",
+      "name": "Timor-Leste",
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "capital": "Timor-Leste",
+      "coords": [
+        -8.79,
+        125.92
+      ],
+      "aliases": [
+        "Timor-Leste"
+      ]
+    },
+    "TTO": {
+      "iso3": "TTO",
+      "iso2": "TT",
+      "name": "Trinidad and Tobago",
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "capital": "Trinidad and Tobago",
+      "coords": [
+        10.48,
+        -61.46
+      ],
+      "aliases": [
+        "Trinidad and Tobago"
+      ]
+    },
+    "TUN": {
+      "iso3": "TUN",
+      "iso2": "TU",
+      "name": "Tunisia",
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "capital": "Tunisia",
+      "coords": [
+        34.02,
+        9.84
+      ],
+      "aliases": [
+        "Tunisia"
+      ]
+    },
+    "TWN": {
+      "iso3": "TWN",
+      "iso2": "TW",
+      "name": "Taiwan",
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "capital": "Taiwan",
+      "coords": [
+        23.86,
+        121.11
+      ],
+      "aliases": [
+        "Taiwan"
+      ]
+    },
+    "TZA": {
+      "iso3": "TZA",
+      "iso2": "TZ",
+      "name": "Tanzania",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "capital": "Tanzania",
+      "coords": [
+        -6.61,
+        34.23
+      ],
+      "aliases": [
+        "Tanzania"
+      ]
+    },
+    "UGA": {
+      "iso3": "UGA",
+      "iso2": "UG",
+      "name": "Uganda",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "capital": "Uganda",
+      "coords": [
+        1.32,
+        31.8
+      ],
+      "aliases": [
+        "Uganda"
+      ]
+    },
+    "UKR": {
+      "iso3": "UKR",
+      "iso2": "UK",
+      "name": "Ukraine",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "capital": "Ukraine",
+      "coords": [
+        48.68,
+        30.36
+      ],
+      "aliases": [
+        "Ukraine"
+      ]
+    },
+    "URY": {
+      "iso3": "URY",
+      "iso2": "UR",
+      "name": "Uruguay",
+      "region": "Americas",
+      "subregion": "South America",
+      "capital": "Uruguay",
+      "coords": [
+        -32.87,
+        -56.18
+      ],
+      "aliases": [
+        "Uruguay"
+      ]
+    },
+    "UZB": {
+      "iso3": "UZB",
+      "iso2": "UZ",
+      "name": "Uzbekistan",
+      "region": "Asia",
+      "subregion": "Central Asia",
+      "capital": "Uzbekistan",
+      "coords": [
+        41.08,
+        65.51
+      ],
+      "aliases": [
+        "Uzbekistan"
+      ]
+    },
+    "VEN": {
+      "iso3": "VEN",
+      "iso2": "VE",
+      "name": "Venezuela",
+      "region": "Americas",
+      "subregion": "South America",
+      "capital": "Venezuela",
+      "coords": [
+        7.21,
+        -66.85
+      ],
+      "aliases": [
+        "Venezuela"
+      ]
+    },
+    "VUT": {
+      "iso3": "VUT",
+      "iso2": "VU",
+      "name": "Vanuatu",
+      "region": "Oceania",
+      "subregion": "Melanesia",
+      "capital": "Vanuatu",
+      "coords": [
+        -15.71,
+        167.18
+      ],
+      "aliases": [
+        "Vanuatu"
+      ]
+    },
+    "YEM": {
+      "iso3": "YEM",
+      "iso2": "YE",
+      "name": "Yemen",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "capital": "Yemen",
+      "coords": [
+        15.51,
+        46.47
+      ],
+      "aliases": [
+        "Yemen"
+      ]
+    },
+    "ZMB": {
+      "iso3": "ZMB",
+      "iso2": "ZM",
+      "name": "Zambia",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "capital": "Zambia",
+      "coords": [
+        -12.99,
+        27.85
+      ],
+      "aliases": [
+        "Zambia"
+      ]
+    },
+    "ZWE": {
+      "iso3": "ZWE",
+      "iso2": "ZW",
+      "name": "Zimbabwe",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "capital": "Zimbabwe",
+      "coords": [
+        -18.87,
+        29.61
+      ],
+      "aliases": [
+        "Zimbabwe"
       ]
     }
   },

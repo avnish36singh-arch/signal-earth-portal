@@ -39,8 +39,8 @@
       "formatted_value": "22.5",
       "unit": "score (0-100)",
       "year": 2026,
-      "rank": 47,
-      "total_ranked": 47,
+      "rank": 165,
+      "total_ranked": 166,
       "global_yale_rank": 176,
       "global_yale_total": 177,
       "mixed_years_flag": false,
@@ -63,8 +63,8 @@
       "formatted_value": "54.0 µg/m³",
       "unit": "µg/m³",
       "year": 2023,
-      "rank": 5,
-      "total_ranked": 48,
+      "rank": 10,
+      "total_ranked": 169,
       "mixed_years_flag": false,
       "years_spanned": [
         2023
@@ -121,7 +121,7 @@
       "unit": "Mt CO2 / year",
       "year": 2024,
       "rank": 3,
-      "total_ranked": 48,
+      "total_ranked": 171,
       "mixed_years_flag": false,
       "years_spanned": [
         2024
@@ -178,8 +178,8 @@
       "formatted_value": "2.20 t CO2 / person / yr",
       "unit": "tonnes CO2 / person / year",
       "year": 2024,
-      "rank": 35,
-      "total_ranked": 48,
+      "rank": 96,
+      "total_ranked": 170,
       "mixed_years_flag": false,
       "years_spanned": [
         2024
@@ -236,10 +236,13 @@
       "formatted_value": "24.1% of generation",
       "unit": "% of electricity generation",
       "year": 2025,
-      "rank": 33,
-      "total_ranked": 46,
+      "rank": 106,
+      "total_ranked": 171,
       "mixed_years_flag": true,
       "years_spanned": [
+        2009,
+        2022,
+        2023,
         2024,
         2025
       ],
@@ -286,10 +289,11 @@
       "formatted_value": "24.4% of land area",
       "unit": "% of land area",
       "year": 2024,
-      "rank": 27,
-      "total_ranked": 48,
-      "mixed_years_flag": false,
+      "rank": 101,
+      "total_ranked": 170,
+      "mixed_years_flag": true,
       "years_spanned": [
+        2023,
         2024
       ],
       "direction": "highest_best",
@@ -345,7 +349,7 @@
       "unit": "people",
       "year": 2024,
       "rank": 1,
-      "total_ranked": 48,
+      "total_ranked": 170,
       "mixed_years_flag": false,
       "years_spanned": [
         2024

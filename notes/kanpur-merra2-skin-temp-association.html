@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seasonal Association of MERRA-2 Skin Temperature with Ground PM2.5 in Kanpur | Signal Earth Notes</title>
+  <meta name="description" content="&gt; **DRAFT RESEARCH NOTE - PENDING PEER REVIEW**">
+  <link rel="canonical" href="https://avnish36singh-arch.github.io/signal-earth-portal/notes/kanpur-merra2-skin-temp-association.html">
+  <link rel="alternate" type="application/rss+xml" title="Signal Earth Notes RSS Feed" href="../notes/feed.xml">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .se-note-container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+    .se-note-header {
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--se-border);
+      padding-bottom: 1.5rem;
+    }
+    .se-note-kicker {
+      font-family: var(--se-font-mono);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--se-text-muted);
+      margin-bottom: 0.75rem;
+      display: inline-block;
+    }
+    .se-note-title {
+      font-family: var(--se-font-serif);
+      font-size: 2.1rem;
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--se-text-primary);
+      margin: 0 0 1.25rem;
+    }
+    .se-note-meta-box {
+      background: var(--se-bg-surface);
+      border: 1px solid var(--se-border);
+      border-radius: var(--se-radius-sm);
+      padding: 1rem 1.25rem;
+      font-size: 0.85rem;
+      line-height: 1.6;
+      color: var(--se-text-secondary);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem 1.5rem;
+    }
+    @media (max-width: 600px) {
+      .se-note-meta-box {
+        grid-template-columns: 1fr;
+      }
+    }
+    .se-note-meta-item strong {
+      color: var(--se-text-primary);
+      font-weight: 600;
+      font-family: var(--se-font-mono);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+    .se-note-body {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--se-text-primary);
+    }
+    .se-note-body h2 {
+      font-family: var(--se-font-serif);
+      font-size: 1.45rem;
+      margin: 2.25rem 0 1rem;
+      border-bottom: 1px solid var(--se-border-subtle);
+      padding-bottom: 0.4rem;
+    }
+    .se-note-body p {
+      margin: 0 0 1.25rem;
+    }
+    .se-note-body ul {
+      margin: 0 0 1.5rem 1.5rem;
+      padding: 0;
+    }
+    .se-note-body li {
+      margin-bottom: 0.5rem;
+    }
+    .se-note-footer-nav {
+      margin-top: 3.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--se-border);
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.88rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="se-editorial-header">
+    <div class="se-editorial-header-inner">
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <a href="../index.html" class="se-editorial-wordmark">Signal Earth</a>
+        <span style="font-size: 0.75rem; font-family: var(--se-font-mono); color: var(--se-text-muted); text-transform: uppercase;">/ Notes</span>
+      </div>
+      <nav aria-label="Main Navigation">
+        <ul class="se-editorial-nav-list">
+          <li><a href="../index.html" class="se-editorial-nav-link">Globe</a></li>
+          <li><a href="../analyses/index.html" class="se-editorial-nav-link">Analyses</a></li>
+          <li><a href="../notes/index.html" class="se-editorial-nav-link active">Notes</a></li>
+          <li><a href="../data.html" class="se-editorial-nav-link">Data</a></li>
+          <li><a href="../about.html" class="se-editorial-nav-link">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="se-note-container">
+      <header class="se-note-header">
+        <span class="se-note-kicker">Empirical Field Note &middot; 2026-10-09</span>
+        <h1 class="se-note-title">Seasonal Association of MERRA-2 Skin Temperature with Ground PM2.5 in Kanpur</h1>
+        
+        <div class="se-note-meta-box">
+          <div class="se-note-meta-item">
+            <strong>Author</strong>
+            <span>Avnish Singh</span>
+          </div>
+          <div class="se-note-meta-item">
+            <strong>Published Date</strong>
+            <span>October 09, 2026</span>
+          </div>
+          <div class="se-note-meta-item">
+            <strong>Data Source</strong>
+            <span>NASA POWER (GMAO MERRA-2 daily skin temperature TS) and CPCB CAAQMS</span>
+          </div>
+          <div class="se-note-meta-item">
+            <strong>Underlying Dataset</strong>
+            <a href="../data/numbers_ledger.json" class="se-link" download>Download Raw Dataset &rarr;</a>
+          </div>
+        </div>
+      </header>
+
+            <aside class="se-draft-banner" style="background: rgba(234, 179, 8, 0.12); border: 1px solid rgba(234, 179, 8, 0.4); border-radius: var(--se-radius-sm); padding: 0.85rem 1.25rem; margin-bottom: 2rem; font-size: 0.88rem; color: #eab308; display: flex; align-items: center; gap: 0.75rem;">
+        <span style="font-weight: 700; text-transform: uppercase; font-family: var(--se-font-mono); font-size: 0.75rem; background: #eab308; color: #000; padding: 0.15rem 0.4rem; border-radius: 2px;">Draft</span>
+        <span>This analytical field note is currently undergoing verification and review. It is withheld from official RSS syndication.</span>
+      </aside>
+
+      <div class="se-note-body">
+<p>> **DRAFT RESEARCH NOTE - PENDING PEER REVIEW**</p>
+<p>> This analytical field note is currently undergoing scientific verification. It is withheld from official syndication.</p>
+<h2>Summary of Computation</h2>
+<p>Surface skin temperature measurements derived from the NASA POWER GMAO MERRA-2 assimilation model were paired with daily continuous ground PM2.5 observations from the CPCB monitoring station in Kalyanpur, Kanpur across 308 concurrent calendar dates between July 9, 2021 and October 16, 2022.</p>
+<p>The two variables exhibit a moderate negative Pearson correlation coefficient:</p>
+<p>r = -0.455 across the 308 concurrent pairs.</p>
+<p>Because consecutive daily atmospheric observations exhibit strong temporal autocorrelation, reporting an unadjusted classical p-value would be statistically misleading. The effective sample size is significantly smaller than the nominal count of 308 daily pairs. This negative correlation reflects shared regional seasonal cycles rather than a simple unlagged linear causal relationship.</p>
+<h2>Empirical Dataset</h2>
+<ul>
+  <li>Concurrent paired dates: 308 calendar dates.</li>
+  <li>Total MERRA-2 reanalysis days processed: 2,556 days (2017 to 2023).</li>
+  <li>Pearson correlation coefficient (r): -0.455.</li>
+  <li>Statistical caveat: Autocorrelated time series; classical p-values omitted to avoid pseudoreplication.</li>
+  <li>Underlying data: <a href="/data/numbers_ledger.json" class="se-link">numbers_ledger.json</a>.</li>
+</ul>
+<h2>Key Observational Limitations</h2>
+<p>The MERRA-2 reanalysis grid cell is 0.5 degrees latitude by 0.625 degrees longitude (approximately 55 km by 60 km). This coarse regional resolution averages regional boundary layer heat flux and cannot resolve intra-urban microclimate gradients. Nocturnal temperature inversions cannot be proven without vertical atmospheric soundings.</p>
+<h2>Corrections and Reproducibility</h2>
+<p>Signal Earth maintains an open corrections policy. Please report errors or suggestions in our <a href="/corrections.html" class="se-link">corrections log</a>.</p>
+      </div>
+
+      <div class="se-note-footer-nav">
+        <a href="../notes/index.html" class="se-link">&larr; Back to all notes</a>
+        <a href="../corrections.html" class="se-link">Submit a correction</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="se-editorial-footer" style="background: var(--se-bg-page); border-top: 1px solid var(--se-border); padding: 2.5rem 1.5rem 2rem;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: var(--se-text-muted); flex-wrap: wrap; gap: 1rem;">
+      <div>&copy; 2026 Signal Earth. Maintained by Avnish Singh. No institutional affiliation with HBTU Kanpur.</div>
+      <div>
+        <a href="../notes/feed.xml" class="se-link">RSS Feed</a> &middot;
+        <a href="../corrections.html" class="se-link">Corrections</a> &middot;
+        <a href="../privacy.html" class="se-link">Privacy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -96,7 +96,7 @@ def merge_all():
     for src_name, dataset in [("pm25", pm25_data), ("co2", co2_data), ("ember", ember_data), ("forest", forest_data), ("wdi", wdi_data)]:
         for iso_code in dataset.keys():
             if iso_code not in canonical_countries:
-                unmatched_records.append(f"[{src_name}] ISO {iso_code} not in canonical 48 countries registry.")
+                unmatched_records.append(f"[{src_name}] ISO {iso_code} not in canonical country registry.")
     with open(unmatched_log, "w", encoding="utf-8") as f:
         f.write("\n".join(unmatched_records) + "\n")
     print(f"[*] Logged {len(unmatched_records)} non-canonical entities to {unmatched_log}")

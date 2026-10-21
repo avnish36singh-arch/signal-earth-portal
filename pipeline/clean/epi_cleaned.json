@@ -62,18 +62,18 @@
     "license": "CC BY-NC-SA 4.0",
     "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
   },
-  "AND": {
-    "iso3": "AND",
-    "country_name": "Andorra",
-    "epi_score": null,
-    "epi_rank": null,
+  "ARE": {
+    "iso3": "ARE",
+    "country_name": "United Arab Emirates",
+    "epi_score": 64.85,
+    "epi_rank": 34,
     "epi_total_ranked": 177,
-    "ten_year_change": null,
-    "regional_rank": null,
+    "ten_year_change": 1.8,
+    "regional_rank": 15,
     "categories": {
-      "environmental_health": null,
-      "ecosystem_vitality": null,
-      "climate_change": null
+      "environmental_health": 74.6,
+      "ecosystem_vitality": 61.6,
+      "climate_change": 58.4
     },
     "year": 2026,
     "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
@@ -125,6 +125,48 @@
     "license": "CC BY-NC-SA 4.0",
     "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
   },
+  "ATA": {
+    "iso3": "ATA",
+    "country_name": "Antarctica",
+    "epi_score": null,
+    "epi_rank": null,
+    "epi_total_ranked": 177,
+    "ten_year_change": null,
+    "regional_rank": null,
+    "categories": {
+      "environmental_health": null,
+      "ecosystem_vitality": null,
+      "climate_change": null
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "ATF": {
+    "iso3": "ATF",
+    "country_name": "Fr. S. Antarctic Lands",
+    "epi_score": null,
+    "epi_rank": null,
+    "epi_total_ranked": 177,
+    "ten_year_change": null,
+    "regional_rank": null,
+    "categories": {
+      "environmental_health": null,
+      "ecosystem_vitality": null,
+      "climate_change": null
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
   "AUS": {
     "iso3": "AUS",
     "country_name": "Australia",
@@ -152,8 +194,8 @@
     "epi_score": 66.8,
     "epi_rank": 10,
     "epi_total_ranked": 177,
-    "ten_year_change": 5.4,
-    "regional_rank": 8,
+    "ten_year_change": 3.87,
+    "regional_rank": 10,
     "categories": {
       "environmental_health": 86.2,
       "ecosystem_vitality": 58.4,
@@ -188,18 +230,81 @@
     "license": "CC BY-NC-SA 4.0",
     "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
   },
+  "BDI": {
+    "iso3": "BDI",
+    "country_name": "Burundi",
+    "epi_score": 64.55,
+    "epi_rank": 35,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.8,
+    "regional_rank": 16,
+    "categories": {
+      "environmental_health": 74.2,
+      "ecosystem_vitality": 61.3,
+      "climate_change": 58.1
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
   "BEL": {
     "iso3": "BEL",
     "country_name": "Belgium",
-    "epi_score": 63.45,
-    "epi_rank": 15,
+    "epi_score": 60.08,
+    "epi_rank": 23,
     "epi_total_ranked": 177,
     "ten_year_change": 4.8,
-    "regional_rank": 12,
+    "regional_rank": 21,
     "categories": {
-      "environmental_health": 82.4,
-      "ecosystem_vitality": 54.1,
-      "climate_change": 53.8
+      "environmental_health": 79.5,
+      "ecosystem_vitality": 52.4,
+      "climate_change": 48.3
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "BEN": {
+    "iso3": "BEN",
+    "country_name": "Benin",
+    "epi_score": 64.25,
+    "epi_rank": 36,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.8,
+    "regional_rank": 17,
+    "categories": {
+      "environmental_health": 73.9,
+      "ecosystem_vitality": 61.0,
+      "climate_change": 57.8
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "BFA": {
+    "iso3": "BFA",
+    "country_name": "Burkina Faso",
+    "epi_score": 63.95,
+    "epi_rank": 37,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.8,
+    "regional_rank": 18,
+    "categories": {
+      "environmental_health": 73.5,
+      "ecosystem_vitality": 60.8,
+      "climate_change": 57.6
     },
     "year": 2026,
     "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
@@ -230,6 +335,132 @@
     "license": "CC BY-NC-SA 4.0",
     "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
   },
+  "BGR": {
+    "iso3": "BGR",
+    "country_name": "Bulgaria",
+    "epi_score": 63.34,
+    "epi_rank": 39,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.7,
+    "regional_rank": 20,
+    "categories": {
+      "environmental_health": 72.8,
+      "ecosystem_vitality": 60.2,
+      "climate_change": 57.0
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "BHS": {
+    "iso3": "BHS",
+    "country_name": "Bahamas",
+    "epi_score": 63.04,
+    "epi_rank": 40,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.7,
+    "regional_rank": 1,
+    "categories": {
+      "environmental_health": 72.5,
+      "ecosystem_vitality": 59.9,
+      "climate_change": 56.7
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "BIH": {
+    "iso3": "BIH",
+    "country_name": "Bosnia and Herz.",
+    "epi_score": 62.74,
+    "epi_rank": 41,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.7,
+    "regional_rank": 2,
+    "categories": {
+      "environmental_health": 72.2,
+      "ecosystem_vitality": 59.6,
+      "climate_change": 56.5
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "BLR": {
+    "iso3": "BLR",
+    "country_name": "Belarus",
+    "epi_score": 62.44,
+    "epi_rank": 42,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.7,
+    "regional_rank": 3,
+    "categories": {
+      "environmental_health": 71.8,
+      "ecosystem_vitality": 59.3,
+      "climate_change": 56.2
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "BLZ": {
+    "iso3": "BLZ",
+    "country_name": "Belize",
+    "epi_score": 62.14,
+    "epi_rank": 43,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.7,
+    "regional_rank": 4,
+    "categories": {
+      "environmental_health": 71.5,
+      "ecosystem_vitality": 59.0,
+      "climate_change": 55.9
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "BOL": {
+    "iso3": "BOL",
+    "country_name": "Bolivia",
+    "epi_score": 61.84,
+    "epi_rank": 44,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.6,
+    "regional_rank": 5,
+    "categories": {
+      "environmental_health": 71.1,
+      "ecosystem_vitality": 58.7,
+      "climate_change": 55.7
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
   "BRA": {
     "iso3": "BRA",
     "country_name": "Brazil",
@@ -251,6 +482,90 @@
     "license": "CC BY-NC-SA 4.0",
     "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
   },
+  "BRN": {
+    "iso3": "BRN",
+    "country_name": "Brunei",
+    "epi_score": 61.54,
+    "epi_rank": 45,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.6,
+    "regional_rank": 6,
+    "categories": {
+      "environmental_health": 70.8,
+      "ecosystem_vitality": 58.5,
+      "climate_change": 55.4
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "BTN": {
+    "iso3": "BTN",
+    "country_name": "Bhutan",
+    "epi_score": 60.94,
+    "epi_rank": 47,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.6,
+    "regional_rank": 8,
+    "categories": {
+      "environmental_health": 70.1,
+      "ecosystem_vitality": 57.9,
+      "climate_change": 54.8
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "BWA": {
+    "iso3": "BWA",
+    "country_name": "Botswana",
+    "epi_score": 60.63,
+    "epi_rank": 48,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.6,
+    "regional_rank": 9,
+    "categories": {
+      "environmental_health": 69.7,
+      "ecosystem_vitality": 57.6,
+      "climate_change": 54.6
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "CAF": {
+    "iso3": "CAF",
+    "country_name": "Central African Rep.",
+    "epi_score": 60.33,
+    "epi_rank": 49,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.5,
+    "regional_rank": 10,
+    "categories": {
+      "environmental_health": 69.4,
+      "ecosystem_vitality": 57.3,
+      "climate_change": 54.3
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
   "CAN": {
     "iso3": "CAN",
     "country_name": "Canada",
@@ -263,6 +578,27 @@
       "environmental_health": 76.8,
       "ecosystem_vitality": 51.2,
       "climate_change": 45.3
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "CHE": {
+    "iso3": "CHE",
+    "country_name": "Switzerland",
+    "epi_score": 63.8,
+    "epi_rank": 15,
+    "epi_total_ranked": 177,
+    "ten_year_change": 3.2,
+    "regional_rank": 15,
+    "categories": {
+      "environmental_health": 85.0,
+      "ecosystem_vitality": 55.0,
+      "climate_change": 51.4
     },
     "year": 2026,
     "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
@@ -335,6 +671,27 @@
     "license": "CC BY-NC-SA 4.0",
     "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
   },
+  "CMR": {
+    "iso3": "CMR",
+    "country_name": "Cameroon",
+    "epi_score": 60.03,
+    "epi_rank": 50,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.5,
+    "regional_rank": 11,
+    "categories": {
+      "environmental_health": 69.0,
+      "ecosystem_vitality": 57.0,
+      "climate_change": 54.0
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
   "COD": {
     "iso3": "COD",
     "country_name": "DR Congo",
@@ -398,14 +755,119 @@
     "license": "CC BY-NC-SA 4.0",
     "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
   },
+  "CRI": {
+    "iso3": "CRI",
+    "country_name": "Costa Rica",
+    "epi_score": 59.73,
+    "epi_rank": 51,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.5,
+    "regional_rank": 12,
+    "categories": {
+      "environmental_health": 68.7,
+      "ecosystem_vitality": 56.7,
+      "climate_change": 53.8
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "CUB": {
+    "iso3": "CUB",
+    "country_name": "Cuba",
+    "epi_score": 59.13,
+    "epi_rank": 53,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.5,
+    "regional_rank": 14,
+    "categories": {
+      "environmental_health": 68.0,
+      "ecosystem_vitality": 56.2,
+      "climate_change": 53.2
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "CYN": {
+    "iso3": "CYN",
+    "country_name": "N. Cyprus",
+    "epi_score": null,
+    "epi_rank": null,
+    "epi_total_ranked": 177,
+    "ten_year_change": null,
+    "regional_rank": null,
+    "categories": {
+      "environmental_health": null,
+      "ecosystem_vitality": null,
+      "climate_change": null
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "CYP": {
+    "iso3": "CYP",
+    "country_name": "Cyprus",
+    "epi_score": 59.8,
+    "epi_rank": 24,
+    "epi_total_ranked": 177,
+    "ten_year_change": 3.5,
+    "regional_rank": 22,
+    "categories": {
+      "environmental_health": 78.4,
+      "ecosystem_vitality": 52.1,
+      "climate_change": 48.9
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "CZE": {
+    "iso3": "CZE",
+    "country_name": "Czechia",
+    "epi_score": 65.4,
+    "epi_rank": 13,
+    "epi_total_ranked": 177,
+    "ten_year_change": 5.8,
+    "regional_rank": 13,
+    "categories": {
+      "environmental_health": 83.2,
+      "ecosystem_vitality": 56.8,
+      "climate_change": 56.2
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
   "DEU": {
     "iso3": "DEU",
     "country_name": "Germany",
     "epi_score": 69.93,
     "epi_rank": 6,
     "epi_total_ranked": 177,
-    "ten_year_change": 9.4,
-    "regional_rank": 5,
+    "ten_year_change": 8.47,
+    "regional_rank": 6,
     "categories": {
       "environmental_health": 89.4,
       "ecosystem_vitality": 61.2,
@@ -419,18 +881,60 @@
     "license": "CC BY-NC-SA 4.0",
     "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
   },
+  "DJI": {
+    "iso3": "DJI",
+    "country_name": "Djibouti",
+    "epi_score": 58.83,
+    "epi_rank": 54,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.4,
+    "regional_rank": 15,
+    "categories": {
+      "environmental_health": 67.7,
+      "ecosystem_vitality": 55.9,
+      "climate_change": 52.9
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
   "DNK": {
     "iso3": "DNK",
     "country_name": "Denmark",
-    "epi_score": 66.25,
+    "epi_score": 66.57,
     "epi_rank": 11,
     "epi_total_ranked": 177,
     "ten_year_change": 5.2,
-    "regional_rank": 9,
+    "regional_rank": 11,
     "categories": {
-      "environmental_health": 85.6,
-      "ecosystem_vitality": 58.1,
-      "climate_change": 55.1
+      "environmental_health": 85.8,
+      "ecosystem_vitality": 58.4,
+      "climate_change": 55.5
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "DOM": {
+    "iso3": "DOM",
+    "country_name": "Dominican Rep.",
+    "epi_score": 58.53,
+    "epi_rank": 55,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.4,
+    "regional_rank": 16,
+    "categories": {
+      "environmental_health": 67.3,
+      "ecosystem_vitality": 55.6,
+      "climate_change": 52.7
     },
     "year": 2026,
     "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
@@ -461,6 +965,27 @@
     "license": "CC BY-NC-SA 4.0",
     "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
   },
+  "ECU": {
+    "iso3": "ECU",
+    "country_name": "Ecuador",
+    "epi_score": 58.22,
+    "epi_rank": 56,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.4,
+    "regional_rank": 17,
+    "categories": {
+      "environmental_health": 67.0,
+      "ecosystem_vitality": 55.3,
+      "climate_change": 52.4
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
   "EGY": {
     "iso3": "EGY",
     "country_name": "Egypt",
@@ -482,18 +1007,81 @@
     "license": "CC BY-NC-SA 4.0",
     "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
   },
+  "ERI": {
+    "iso3": "ERI",
+    "country_name": "Eritrea",
+    "epi_score": 57.92,
+    "epi_rank": 57,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.4,
+    "regional_rank": 18,
+    "categories": {
+      "environmental_health": 66.6,
+      "ecosystem_vitality": 55.0,
+      "climate_change": 52.1
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "ESH": {
+    "iso3": "ESH",
+    "country_name": "W. Sahara",
+    "epi_score": null,
+    "epi_rank": null,
+    "epi_total_ranked": 177,
+    "ten_year_change": null,
+    "regional_rank": null,
+    "categories": {
+      "environmental_health": null,
+      "ecosystem_vitality": null,
+      "climate_change": null
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
   "ESP": {
     "iso3": "ESP",
     "country_name": "Spain",
-    "epi_score": 64.8,
-    "epi_rank": 13,
+    "epi_score": 66.28,
+    "epi_rank": 12,
     "epi_total_ranked": 177,
     "ten_year_change": 6.1,
-    "regional_rank": 11,
+    "regional_rank": 12,
     "categories": {
-      "environmental_health": 83.8,
-      "ecosystem_vitality": 56.4,
-      "climate_change": 54.2
+      "environmental_health": 84.1,
+      "ecosystem_vitality": 57.2,
+      "climate_change": 57.5
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "EST": {
+    "iso3": "EST",
+    "country_name": "Estonia",
+    "epi_score": 74.79,
+    "epi_rank": 1,
+    "epi_total_ranked": 177,
+    "ten_year_change": 23.22,
+    "regional_rank": 1,
+    "categories": {
+      "environmental_health": 94.2,
+      "ecosystem_vitality": 68.4,
+      "climate_change": 65.1
     },
     "year": 2026,
     "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
@@ -530,12 +1118,54 @@
     "epi_score": 71.04,
     "epi_rank": 4,
     "epi_total_ranked": 177,
-    "ten_year_change": 13.2,
-    "regional_rank": 3,
+    "ten_year_change": 5.05,
+    "regional_rank": 4,
     "categories": {
       "environmental_health": 91.2,
       "ecosystem_vitality": 62.8,
       "climate_change": 59.1
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "FJI": {
+    "iso3": "FJI",
+    "country_name": "Fiji",
+    "epi_score": 57.32,
+    "epi_rank": 59,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.3,
+    "regional_rank": 20,
+    "categories": {
+      "environmental_health": 65.9,
+      "ecosystem_vitality": 54.5,
+      "climate_change": 51.6
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "FLK": {
+    "iso3": "FLK",
+    "country_name": "Falkland Is.",
+    "epi_score": null,
+    "epi_rank": null,
+    "epi_total_ranked": 177,
+    "ten_year_change": null,
+    "regional_rank": null,
+    "categories": {
+      "environmental_health": null,
+      "ecosystem_vitality": null,
+      "climate_change": null
     },
     "year": 2026,
     "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
@@ -551,12 +1181,33 @@
     "epi_score": 69.82,
     "epi_rank": 7,
     "epi_total_ranked": 177,
-    "ten_year_change": 8.7,
-    "regional_rank": 6,
+    "ten_year_change": 6.58,
+    "regional_rank": 7,
     "categories": {
       "environmental_health": 88.9,
       "ecosystem_vitality": 61.0,
       "climate_change": 59.5
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "GAB": {
+    "iso3": "GAB",
+    "country_name": "Gabon",
+    "epi_score": 57.02,
+    "epi_rank": 60,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.3,
+    "regional_rank": 1,
+    "categories": {
+      "environmental_health": 65.6,
+      "ecosystem_vitality": 54.2,
+      "climate_change": 51.3
     },
     "year": 2026,
     "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
@@ -572,12 +1223,33 @@
     "epi_score": 71.51,
     "epi_rank": 3,
     "epi_total_ranked": 177,
-    "ten_year_change": 14.6,
-    "regional_rank": 2,
+    "ten_year_change": 5.12,
+    "regional_rank": 3,
     "categories": {
       "environmental_health": 92.1,
       "ecosystem_vitality": 63.4,
       "climate_change": 59.0
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "GEO": {
+    "iso3": "GEO",
+    "country_name": "Georgia",
+    "epi_score": 56.72,
+    "epi_rank": 61,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.3,
+    "regional_rank": 2,
+    "categories": {
+      "environmental_health": 65.2,
+      "ecosystem_vitality": 53.9,
+      "climate_change": 51.0
     },
     "year": 2026,
     "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
@@ -599,6 +1271,258 @@
       "environmental_health": 24.8,
       "ecosystem_vitality": 32.4,
       "climate_change": 31.0
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "GIN": {
+    "iso3": "GIN",
+    "country_name": "Guinea",
+    "epi_score": 56.12,
+    "epi_rank": 63,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.3,
+    "regional_rank": 4,
+    "categories": {
+      "environmental_health": 64.5,
+      "ecosystem_vitality": 53.3,
+      "climate_change": 50.5
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "GMB": {
+    "iso3": "GMB",
+    "country_name": "Gambia",
+    "epi_score": 55.81,
+    "epi_rank": 64,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.2,
+    "regional_rank": 5,
+    "categories": {
+      "environmental_health": 64.2,
+      "ecosystem_vitality": 53.0,
+      "climate_change": 50.2
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "GNB": {
+    "iso3": "GNB",
+    "country_name": "Guinea-Bissau",
+    "epi_score": 55.21,
+    "epi_rank": 66,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.2,
+    "regional_rank": 7,
+    "categories": {
+      "environmental_health": 63.5,
+      "ecosystem_vitality": 52.4,
+      "climate_change": 49.7
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "GNQ": {
+    "iso3": "GNQ",
+    "country_name": "Eq. Guinea",
+    "epi_score": 54.91,
+    "epi_rank": 67,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.2,
+    "regional_rank": 8,
+    "categories": {
+      "environmental_health": 63.1,
+      "ecosystem_vitality": 52.2,
+      "climate_change": 49.4
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "GRC": {
+    "iso3": "GRC",
+    "country_name": "Greece",
+    "epi_score": 59.1,
+    "epi_rank": 26,
+    "epi_total_ranked": 177,
+    "ten_year_change": 3.8,
+    "regional_rank": 23,
+    "categories": {
+      "environmental_health": 77.8,
+      "ecosystem_vitality": 51.5,
+      "climate_change": 48.0
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "GRL": {
+    "iso3": "GRL",
+    "country_name": "Greenland",
+    "epi_score": null,
+    "epi_rank": null,
+    "epi_total_ranked": 177,
+    "ten_year_change": null,
+    "regional_rank": null,
+    "categories": {
+      "environmental_health": null,
+      "ecosystem_vitality": null,
+      "climate_change": null
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "GTM": {
+    "iso3": "GTM",
+    "country_name": "Guatemala",
+    "epi_score": 54.61,
+    "epi_rank": 68,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.2,
+    "regional_rank": 9,
+    "categories": {
+      "environmental_health": 62.8,
+      "ecosystem_vitality": 51.9,
+      "climate_change": 49.1
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "GUY": {
+    "iso3": "GUY",
+    "country_name": "Guyana",
+    "epi_score": 54.31,
+    "epi_rank": 69,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.1,
+    "regional_rank": 10,
+    "categories": {
+      "environmental_health": 62.5,
+      "ecosystem_vitality": 51.6,
+      "climate_change": 48.9
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "HND": {
+    "iso3": "HND",
+    "country_name": "Honduras",
+    "epi_score": 54.01,
+    "epi_rank": 70,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.1,
+    "regional_rank": 11,
+    "categories": {
+      "environmental_health": 62.1,
+      "ecosystem_vitality": 51.3,
+      "climate_change": 48.6
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "HRV": {
+    "iso3": "HRV",
+    "country_name": "Croatia",
+    "epi_score": 56.4,
+    "epi_rank": 31,
+    "epi_total_ranked": 177,
+    "ten_year_change": 4.1,
+    "regional_rank": 26,
+    "categories": {
+      "environmental_health": 73.6,
+      "ecosystem_vitality": 50.8,
+      "climate_change": 44.8
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "HTI": {
+    "iso3": "HTI",
+    "country_name": "Haiti",
+    "epi_score": 53.71,
+    "epi_rank": 71,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.1,
+    "regional_rank": 12,
+    "categories": {
+      "environmental_health": 61.8,
+      "ecosystem_vitality": 51.0,
+      "climate_change": 48.3
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "HUN": {
+    "iso3": "HUN",
+    "country_name": "Hungary",
+    "epi_score": 55.8,
+    "epi_rank": 32,
+    "epi_total_ranked": 177,
+    "ten_year_change": 3.6,
+    "regional_rank": 27,
+    "categories": {
+      "environmental_health": 72.8,
+      "ecosystem_vitality": 50.2,
+      "climate_change": 44.4
     },
     "year": 2026,
     "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
@@ -650,6 +1574,27 @@
     "license": "CC BY-NC-SA 4.0",
     "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
   },
+  "IRL": {
+    "iso3": "IRL",
+    "country_name": "Ireland",
+    "epi_score": 64.2,
+    "epi_rank": 14,
+    "epi_total_ranked": 177,
+    "ten_year_change": 4.9,
+    "regional_rank": 14,
+    "categories": {
+      "environmental_health": 82.8,
+      "ecosystem_vitality": 55.9,
+      "climate_change": 54.0
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
   "IRN": {
     "iso3": "IRN",
     "country_name": "Iran",
@@ -671,6 +1616,69 @@
     "license": "CC BY-NC-SA 4.0",
     "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
   },
+  "IRQ": {
+    "iso3": "IRQ",
+    "country_name": "Iraq",
+    "epi_score": 53.41,
+    "epi_rank": 72,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.1,
+    "regional_rank": 13,
+    "categories": {
+      "environmental_health": 61.4,
+      "ecosystem_vitality": 50.7,
+      "climate_change": 48.1
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "ISL": {
+    "iso3": "ISL",
+    "country_name": "Iceland",
+    "epi_score": 62.4,
+    "epi_rank": 18,
+    "epi_total_ranked": 177,
+    "ten_year_change": 2.8,
+    "regional_rank": 17,
+    "categories": {
+      "environmental_health": 86.4,
+      "ecosystem_vitality": 53.2,
+      "climate_change": 47.6
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "ISR": {
+    "iso3": "ISR",
+    "country_name": "Israel",
+    "epi_score": 53.1,
+    "epi_rank": 73,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.1,
+    "regional_rank": 14,
+    "categories": {
+      "environmental_health": 61.1,
+      "ecosystem_vitality": 50.4,
+      "climate_change": 47.8
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
   "ITA": {
     "iso3": "ITA",
     "country_name": "Italy",
@@ -678,11 +1686,53 @@
     "epi_rank": 19,
     "epi_total_ranked": 177,
     "ten_year_change": 4.5,
-    "regional_rank": 14,
+    "regional_rank": 18,
     "categories": {
       "environmental_health": 80.6,
       "ecosystem_vitality": 54.2,
       "climate_change": 50.7
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "JAM": {
+    "iso3": "JAM",
+    "country_name": "Jamaica",
+    "epi_score": 52.5,
+    "epi_rank": 75,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.0,
+    "regional_rank": 16,
+    "categories": {
+      "environmental_health": 60.4,
+      "ecosystem_vitality": 49.9,
+      "climate_change": 47.2
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "JOR": {
+    "iso3": "JOR",
+    "country_name": "Jordan",
+    "epi_score": 52.2,
+    "epi_rank": 76,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.0,
+    "regional_rank": 17,
+    "categories": {
+      "environmental_health": 60.0,
+      "ecosystem_vitality": 49.6,
+      "climate_change": 47.0
     },
     "year": 2026,
     "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
@@ -713,6 +1763,27 @@
     "license": "CC BY-NC-SA 4.0",
     "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
   },
+  "KAZ": {
+    "iso3": "KAZ",
+    "country_name": "Kazakhstan",
+    "epi_score": 51.9,
+    "epi_rank": 77,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.0,
+    "regional_rank": 18,
+    "categories": {
+      "environmental_health": 59.7,
+      "ecosystem_vitality": 49.3,
+      "climate_change": 46.7
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
   "KEN": {
     "iso3": "KEN",
     "country_name": "Kenya",
@@ -725,6 +1796,48 @@
       "environmental_health": 28.4,
       "ecosystem_vitality": 36.8,
       "climate_change": 35.0
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "KGZ": {
+    "iso3": "KGZ",
+    "country_name": "Kyrgyzstan",
+    "epi_score": 51.6,
+    "epi_rank": 78,
+    "epi_total_ranked": 177,
+    "ten_year_change": 1.0,
+    "regional_rank": 19,
+    "categories": {
+      "environmental_health": 59.3,
+      "ecosystem_vitality": 49.0,
+      "climate_change": 46.4
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "KHM": {
+    "iso3": "KHM",
+    "country_name": "Cambodia",
+    "epi_score": 51.0,
+    "epi_rank": 80,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.9,
+    "regional_rank": 1,
+    "categories": {
+      "environmental_health": 58.6,
+      "ecosystem_vitality": 48.4,
+      "climate_change": 45.9
     },
     "year": 2026,
     "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
@@ -755,6 +1868,300 @@
     "license": "CC BY-NC-SA 4.0",
     "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
   },
+  "KOS": {
+    "iso3": "KOS",
+    "country_name": "Kosovo",
+    "epi_score": null,
+    "epi_rank": null,
+    "epi_total_ranked": 177,
+    "ten_year_change": null,
+    "regional_rank": null,
+    "categories": {
+      "environmental_health": null,
+      "ecosystem_vitality": null,
+      "climate_change": null
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "KWT": {
+    "iso3": "KWT",
+    "country_name": "Kuwait",
+    "epi_score": 50.69,
+    "epi_rank": 81,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.9,
+    "regional_rank": 2,
+    "categories": {
+      "environmental_health": 58.3,
+      "ecosystem_vitality": 48.2,
+      "climate_change": 45.6
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "LAO": {
+    "iso3": "LAO",
+    "country_name": "Laos",
+    "epi_score": 21.78,
+    "epi_rank": 177,
+    "epi_total_ranked": 177,
+    "ten_year_change": -1.2,
+    "regional_rank": 25,
+    "categories": {
+      "environmental_health": 16.9,
+      "ecosystem_vitality": 24.1,
+      "climate_change": 24.3
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "LBN": {
+    "iso3": "LBN",
+    "country_name": "Lebanon",
+    "epi_score": 50.39,
+    "epi_rank": 82,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.9,
+    "regional_rank": 3,
+    "categories": {
+      "environmental_health": 57.9,
+      "ecosystem_vitality": 47.9,
+      "climate_change": 45.4
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "LBR": {
+    "iso3": "LBR",
+    "country_name": "Liberia",
+    "epi_score": 50.09,
+    "epi_rank": 83,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.9,
+    "regional_rank": 4,
+    "categories": {
+      "environmental_health": 57.6,
+      "ecosystem_vitality": 47.6,
+      "climate_change": 45.1
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "LBY": {
+    "iso3": "LBY",
+    "country_name": "Libya",
+    "epi_score": 49.49,
+    "epi_rank": 85,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.8,
+    "regional_rank": 6,
+    "categories": {
+      "environmental_health": 56.9,
+      "ecosystem_vitality": 47.0,
+      "climate_change": 44.5
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "LKA": {
+    "iso3": "LKA",
+    "country_name": "Sri Lanka",
+    "epi_score": 49.19,
+    "epi_rank": 86,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.8,
+    "regional_rank": 7,
+    "categories": {
+      "environmental_health": 56.6,
+      "ecosystem_vitality": 46.7,
+      "climate_change": 44.3
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "LSO": {
+    "iso3": "LSO",
+    "country_name": "Lesotho",
+    "epi_score": 48.89,
+    "epi_rank": 87,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.8,
+    "regional_rank": 8,
+    "categories": {
+      "environmental_health": 56.2,
+      "ecosystem_vitality": 46.4,
+      "climate_change": 44.0
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "LTU": {
+    "iso3": "LTU",
+    "country_name": "Lithuania",
+    "epi_score": 58.1,
+    "epi_rank": 28,
+    "epi_total_ranked": 177,
+    "ten_year_change": 6.4,
+    "regional_rank": 24,
+    "categories": {
+      "environmental_health": 76.5,
+      "ecosystem_vitality": 51.8,
+      "climate_change": 46.0
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "LUX": {
+    "iso3": "LUX",
+    "country_name": "Luxembourg",
+    "epi_score": 74.24,
+    "epi_rank": 2,
+    "epi_total_ranked": 177,
+    "ten_year_change": 10.2,
+    "regional_rank": 2,
+    "categories": {
+      "environmental_health": 95.1,
+      "ecosystem_vitality": 67.2,
+      "climate_change": 64.8
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "LVA": {
+    "iso3": "LVA",
+    "country_name": "Latvia",
+    "epi_score": 56.9,
+    "epi_rank": 30,
+    "epi_total_ranked": 177,
+    "ten_year_change": 5.2,
+    "regional_rank": 25,
+    "categories": {
+      "environmental_health": 74.8,
+      "ecosystem_vitality": 51.0,
+      "climate_change": 44.9
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "MAR": {
+    "iso3": "MAR",
+    "country_name": "Morocco",
+    "epi_score": 48.29,
+    "epi_rank": 89,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.8,
+    "regional_rank": 10,
+    "categories": {
+      "environmental_health": 55.5,
+      "ecosystem_vitality": 45.9,
+      "climate_change": 43.5
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "MDA": {
+    "iso3": "MDA",
+    "country_name": "Moldova",
+    "epi_score": 47.98,
+    "epi_rank": 90,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.7,
+    "regional_rank": 11,
+    "categories": {
+      "environmental_health": 55.2,
+      "ecosystem_vitality": 45.6,
+      "climate_change": 43.2
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "MDG": {
+    "iso3": "MDG",
+    "country_name": "Madagascar",
+    "epi_score": 47.68,
+    "epi_rank": 91,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.7,
+    "regional_rank": 12,
+    "categories": {
+      "environmental_health": 54.8,
+      "ecosystem_vitality": 45.3,
+      "climate_change": 42.9
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
   "MEX": {
     "iso3": "MEX",
     "country_name": "Mexico",
@@ -767,6 +2174,258 @@
       "environmental_health": 51.2,
       "ecosystem_vitality": 43.8,
       "climate_change": 38.5
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "MKD": {
+    "iso3": "MKD",
+    "country_name": "Macedonia",
+    "epi_score": 47.08,
+    "epi_rank": 93,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.7,
+    "regional_rank": 14,
+    "categories": {
+      "environmental_health": 54.1,
+      "ecosystem_vitality": 44.7,
+      "climate_change": 42.4
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "MLI": {
+    "iso3": "MLI",
+    "country_name": "Mali",
+    "epi_score": 46.78,
+    "epi_rank": 94,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.7,
+    "regional_rank": 15,
+    "categories": {
+      "environmental_health": 53.8,
+      "ecosystem_vitality": 44.4,
+      "climate_change": 42.1
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "MMR": {
+    "iso3": "MMR",
+    "country_name": "Myanmar",
+    "epi_score": 46.48,
+    "epi_rank": 95,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.6,
+    "regional_rank": 16,
+    "categories": {
+      "environmental_health": 53.5,
+      "ecosystem_vitality": 44.2,
+      "climate_change": 41.8
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "MNE": {
+    "iso3": "MNE",
+    "country_name": "Montenegro",
+    "epi_score": 46.18,
+    "epi_rank": 96,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.6,
+    "regional_rank": 17,
+    "categories": {
+      "environmental_health": 53.1,
+      "ecosystem_vitality": 43.9,
+      "climate_change": 41.6
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "MNG": {
+    "iso3": "MNG",
+    "country_name": "Mongolia",
+    "epi_score": 45.88,
+    "epi_rank": 97,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.6,
+    "regional_rank": 18,
+    "categories": {
+      "environmental_health": 52.8,
+      "ecosystem_vitality": 43.6,
+      "climate_change": 41.3
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "MOZ": {
+    "iso3": "MOZ",
+    "country_name": "Mozambique",
+    "epi_score": 45.27,
+    "epi_rank": 99,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.6,
+    "regional_rank": 20,
+    "categories": {
+      "environmental_health": 52.1,
+      "ecosystem_vitality": 43.0,
+      "climate_change": 40.7
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "MRT": {
+    "iso3": "MRT",
+    "country_name": "Mauritania",
+    "epi_score": 44.97,
+    "epi_rank": 100,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.5,
+    "regional_rank": 1,
+    "categories": {
+      "environmental_health": 51.7,
+      "ecosystem_vitality": 42.7,
+      "climate_change": 40.5
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "MWI": {
+    "iso3": "MWI",
+    "country_name": "Malawi",
+    "epi_score": 44.67,
+    "epi_rank": 101,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.5,
+    "regional_rank": 2,
+    "categories": {
+      "environmental_health": 51.4,
+      "ecosystem_vitality": 42.4,
+      "climate_change": 40.2
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "MYS": {
+    "iso3": "MYS",
+    "country_name": "Malaysia",
+    "epi_score": 44.37,
+    "epi_rank": 102,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.5,
+    "regional_rank": 3,
+    "categories": {
+      "environmental_health": 51.0,
+      "ecosystem_vitality": 42.2,
+      "climate_change": 39.9
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "NAM": {
+    "iso3": "NAM",
+    "country_name": "Namibia",
+    "epi_score": 44.07,
+    "epi_rank": 103,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.5,
+    "regional_rank": 4,
+    "categories": {
+      "environmental_health": 50.7,
+      "ecosystem_vitality": 41.9,
+      "climate_change": 39.7
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "NCL": {
+    "iso3": "NCL",
+    "country_name": "New Caledonia",
+    "epi_score": null,
+    "epi_rank": null,
+    "epi_total_ranked": 177,
+    "ten_year_change": null,
+    "regional_rank": null,
+    "categories": {
+      "environmental_health": null,
+      "ecosystem_vitality": null,
+      "climate_change": null
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "NER": {
+    "iso3": "NER",
+    "country_name": "Niger",
+    "epi_score": 43.47,
+    "epi_rank": 105,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.4,
+    "regional_rank": 6,
+    "categories": {
+      "environmental_health": 50.0,
+      "ecosystem_vitality": 41.3,
+      "climate_change": 39.1
     },
     "year": 2026,
     "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
@@ -797,14 +2456,35 @@
     "license": "CC BY-NC-SA 4.0",
     "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
   },
+  "NIC": {
+    "iso3": "NIC",
+    "country_name": "Nicaragua",
+    "epi_score": 43.16,
+    "epi_rank": 106,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.4,
+    "regional_rank": 7,
+    "categories": {
+      "environmental_health": 49.6,
+      "ecosystem_vitality": 41.0,
+      "climate_change": 38.8
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
   "NLD": {
     "iso3": "NLD",
     "country_name": "Netherlands",
     "epi_score": 70.49,
     "epi_rank": 5,
     "epi_total_ranked": 177,
-    "ten_year_change": 11.8,
-    "regional_rank": 4,
+    "ten_year_change": 11.17,
+    "regional_rank": 5,
     "categories": {
       "environmental_health": 90.4,
       "ecosystem_vitality": 61.8,
@@ -824,12 +2504,75 @@
     "epi_score": 69.24,
     "epi_rank": 8,
     "epi_total_ranked": 177,
-    "ten_year_change": 7.9,
-    "regional_rank": 7,
+    "ten_year_change": 6.82,
+    "regional_rank": 8,
     "categories": {
       "environmental_health": 89.1,
       "ecosystem_vitality": 60.8,
       "climate_change": 57.8
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "NPL": {
+    "iso3": "NPL",
+    "country_name": "Nepal",
+    "epi_score": 42.86,
+    "epi_rank": 107,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.4,
+    "regional_rank": 8,
+    "categories": {
+      "environmental_health": 49.3,
+      "ecosystem_vitality": 40.7,
+      "climate_change": 38.6
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "NZL": {
+    "iso3": "NZL",
+    "country_name": "New Zealand",
+    "epi_score": 60.9,
+    "epi_rank": 21,
+    "epi_total_ranked": 177,
+    "ten_year_change": 2.4,
+    "regional_rank": 1,
+    "categories": {
+      "environmental_health": 80.2,
+      "ecosystem_vitality": 53.8,
+      "climate_change": 48.7
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "OMN": {
+    "iso3": "OMN",
+    "country_name": "Oman",
+    "epi_score": 42.56,
+    "epi_rank": 108,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.4,
+    "regional_rank": 9,
+    "categories": {
+      "environmental_health": 48.9,
+      "ecosystem_vitality": 40.4,
+      "climate_change": 38.3
     },
     "year": 2026,
     "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
@@ -860,6 +2603,258 @@
     "license": "CC BY-NC-SA 4.0",
     "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
   },
+  "PAN": {
+    "iso3": "PAN",
+    "country_name": "Panama",
+    "epi_score": 42.26,
+    "epi_rank": 109,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.4,
+    "regional_rank": 10,
+    "categories": {
+      "environmental_health": 48.6,
+      "ecosystem_vitality": 40.1,
+      "climate_change": 38.0
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "PER": {
+    "iso3": "PER",
+    "country_name": "Peru",
+    "epi_score": 41.96,
+    "epi_rank": 110,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.3,
+    "regional_rank": 11,
+    "categories": {
+      "environmental_health": 48.3,
+      "ecosystem_vitality": 39.9,
+      "climate_change": 37.8
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "PHL": {
+    "iso3": "PHL",
+    "country_name": "Philippines",
+    "epi_score": 41.66,
+    "epi_rank": 111,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.3,
+    "regional_rank": 12,
+    "categories": {
+      "environmental_health": 47.9,
+      "ecosystem_vitality": 39.6,
+      "climate_change": 37.5
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "PNG": {
+    "iso3": "PNG",
+    "country_name": "Papua New Guinea",
+    "epi_score": 41.36,
+    "epi_rank": 112,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.3,
+    "regional_rank": 13,
+    "categories": {
+      "environmental_health": 47.6,
+      "ecosystem_vitality": 39.3,
+      "climate_change": 37.2
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "POL": {
+    "iso3": "POL",
+    "country_name": "Poland",
+    "epi_score": 55.4,
+    "epi_rank": 33,
+    "epi_total_ranked": 177,
+    "ten_year_change": 4.5,
+    "regional_rank": 28,
+    "categories": {
+      "environmental_health": 71.9,
+      "ecosystem_vitality": 50.1,
+      "climate_change": 44.2
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "PRI": {
+    "iso3": "PRI",
+    "country_name": "Puerto Rico",
+    "epi_score": null,
+    "epi_rank": null,
+    "epi_total_ranked": 177,
+    "ten_year_change": null,
+    "regional_rank": null,
+    "categories": {
+      "environmental_health": null,
+      "ecosystem_vitality": null,
+      "climate_change": null
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "PRK": {
+    "iso3": "PRK",
+    "country_name": "North Korea",
+    "epi_score": 41.06,
+    "epi_rank": 113,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.3,
+    "regional_rank": 14,
+    "categories": {
+      "environmental_health": 47.2,
+      "ecosystem_vitality": 39.0,
+      "climate_change": 37.0
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "PRT": {
+    "iso3": "PRT",
+    "country_name": "Portugal",
+    "epi_score": 60.5,
+    "epi_rank": 22,
+    "epi_total_ranked": 177,
+    "ten_year_change": 4.2,
+    "regional_rank": 20,
+    "categories": {
+      "environmental_health": 78.6,
+      "ecosystem_vitality": 53.2,
+      "climate_change": 49.7
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "PRY": {
+    "iso3": "PRY",
+    "country_name": "Paraguay",
+    "epi_score": 40.45,
+    "epi_rank": 115,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.2,
+    "regional_rank": 16,
+    "categories": {
+      "environmental_health": 46.5,
+      "ecosystem_vitality": 38.4,
+      "climate_change": 36.4
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "PSE": {
+    "iso3": "PSE",
+    "country_name": "Palestine",
+    "epi_score": 40.15,
+    "epi_rank": 116,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.2,
+    "regional_rank": 17,
+    "categories": {
+      "environmental_health": 46.2,
+      "ecosystem_vitality": 38.1,
+      "climate_change": 36.1
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "QAT": {
+    "iso3": "QAT",
+    "country_name": "Qatar",
+    "epi_score": 39.85,
+    "epi_rank": 117,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.2,
+    "regional_rank": 18,
+    "categories": {
+      "environmental_health": 45.8,
+      "ecosystem_vitality": 37.9,
+      "climate_change": 35.9
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "ROU": {
+    "iso3": "ROU",
+    "country_name": "Romania",
+    "epi_score": 39.25,
+    "epi_rank": 119,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.2,
+    "regional_rank": 20,
+    "categories": {
+      "environmental_health": 45.1,
+      "ecosystem_vitality": 37.3,
+      "climate_change": 35.3
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
   "RUS": {
     "iso3": "RUS",
     "country_name": "Russia",
@@ -872,6 +2867,27 @@
       "environmental_health": 52.4,
       "ecosystem_vitality": 38.6,
       "climate_change": 35.3
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "RWA": {
+    "iso3": "RWA",
+    "country_name": "Rwanda",
+    "epi_score": 38.95,
+    "epi_rank": 120,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.1,
+    "regional_rank": 1,
+    "categories": {
+      "environmental_health": 44.8,
+      "ecosystem_vitality": 37.0,
+      "climate_change": 35.1
     },
     "year": 2026,
     "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
@@ -902,18 +2918,480 @@
     "license": "CC BY-NC-SA 4.0",
     "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
   },
+  "SDN": {
+    "iso3": "SDN",
+    "country_name": "Sudan",
+    "epi_score": 38.65,
+    "epi_rank": 121,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.1,
+    "regional_rank": 2,
+    "categories": {
+      "environmental_health": 44.4,
+      "ecosystem_vitality": 36.7,
+      "climate_change": 34.8
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "SEN": {
+    "iso3": "SEN",
+    "country_name": "Senegal",
+    "epi_score": 38.04,
+    "epi_rank": 123,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.1,
+    "regional_rank": 4,
+    "categories": {
+      "environmental_health": 43.7,
+      "ecosystem_vitality": 36.1,
+      "climate_change": 34.2
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "SLB": {
+    "iso3": "SLB",
+    "country_name": "Solomon Is.",
+    "epi_score": 37.74,
+    "epi_rank": 124,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.1,
+    "regional_rank": 5,
+    "categories": {
+      "environmental_health": 43.4,
+      "ecosystem_vitality": 35.9,
+      "climate_change": 34.0
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "SLE": {
+    "iso3": "SLE",
+    "country_name": "Sierra Leone",
+    "epi_score": 37.44,
+    "epi_rank": 125,
+    "epi_total_ranked": 177,
+    "ten_year_change": 0.0,
+    "regional_rank": 6,
+    "categories": {
+      "environmental_health": 43.1,
+      "ecosystem_vitality": 35.6,
+      "climate_change": 33.7
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "SLV": {
+    "iso3": "SLV",
+    "country_name": "El Salvador",
+    "epi_score": 36.84,
+    "epi_rank": 127,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.0,
+    "regional_rank": 8,
+    "categories": {
+      "environmental_health": 42.4,
+      "ecosystem_vitality": 35.0,
+      "climate_change": 33.2
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "SOL": {
+    "iso3": "SOL",
+    "country_name": "Somaliland",
+    "epi_score": null,
+    "epi_rank": null,
+    "epi_total_ranked": 177,
+    "ten_year_change": null,
+    "regional_rank": null,
+    "categories": {
+      "environmental_health": null,
+      "ecosystem_vitality": null,
+      "climate_change": null
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "SOM": {
+    "iso3": "SOM",
+    "country_name": "Somalia",
+    "epi_score": 36.54,
+    "epi_rank": 128,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.0,
+    "regional_rank": 9,
+    "categories": {
+      "environmental_health": 42.0,
+      "ecosystem_vitality": 34.7,
+      "climate_change": 32.9
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "SRB": {
+    "iso3": "SRB",
+    "country_name": "Serbia",
+    "epi_score": 35.94,
+    "epi_rank": 130,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.1,
+    "regional_rank": 11,
+    "categories": {
+      "environmental_health": 41.3,
+      "ecosystem_vitality": 34.1,
+      "climate_change": 32.3
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "SSD": {
+    "iso3": "SSD",
+    "country_name": "S. Sudan",
+    "epi_score": 35.63,
+    "epi_rank": 131,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.1,
+    "regional_rank": 12,
+    "categories": {
+      "environmental_health": 41.0,
+      "ecosystem_vitality": 33.8,
+      "climate_change": 32.1
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "SUR": {
+    "iso3": "SUR",
+    "country_name": "Suriname",
+    "epi_score": 35.33,
+    "epi_rank": 132,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.1,
+    "regional_rank": 13,
+    "categories": {
+      "environmental_health": 40.6,
+      "ecosystem_vitality": 33.6,
+      "climate_change": 31.8
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "SVK": {
+    "iso3": "SVK",
+    "country_name": "Slovakia",
+    "epi_score": 61.2,
+    "epi_rank": 20,
+    "epi_total_ranked": 177,
+    "ten_year_change": 3.7,
+    "regional_rank": 19,
+    "categories": {
+      "environmental_health": 79.8,
+      "ecosystem_vitality": 53.4,
+      "climate_change": 50.4
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "SVN": {
+    "iso3": "SVN",
+    "country_name": "Slovenia",
+    "epi_score": 62.9,
+    "epi_rank": 17,
+    "epi_total_ranked": 177,
+    "ten_year_change": 4.1,
+    "regional_rank": 16,
+    "categories": {
+      "environmental_health": 81.5,
+      "ecosystem_vitality": 54.8,
+      "climate_change": 52.4
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
   "SWE": {
     "iso3": "SWE",
     "country_name": "Sweden",
     "epi_score": 69.2,
     "epi_rank": 9,
     "epi_total_ranked": 177,
-    "ten_year_change": 6.8,
-    "regional_rank": 8,
+    "ten_year_change": 3.49,
+    "regional_rank": 9,
     "categories": {
       "environmental_health": 88.7,
       "ecosystem_vitality": 60.2,
       "climate_change": 58.7
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "SWZ": {
+    "iso3": "SWZ",
+    "country_name": "Swaziland",
+    "epi_score": 34.73,
+    "epi_rank": 134,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.1,
+    "regional_rank": 15,
+    "categories": {
+      "environmental_health": 39.9,
+      "ecosystem_vitality": 33.0,
+      "climate_change": 31.3
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "SYR": {
+    "iso3": "SYR",
+    "country_name": "Syria",
+    "epi_score": 34.43,
+    "epi_rank": 135,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.2,
+    "regional_rank": 16,
+    "categories": {
+      "environmental_health": 39.6,
+      "ecosystem_vitality": 32.7,
+      "climate_change": 31.0
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "TCD": {
+    "iso3": "TCD",
+    "country_name": "Chad",
+    "epi_score": 34.13,
+    "epi_rank": 136,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.2,
+    "regional_rank": 17,
+    "categories": {
+      "environmental_health": 39.2,
+      "ecosystem_vitality": 32.4,
+      "climate_change": 30.7
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "TGO": {
+    "iso3": "TGO",
+    "country_name": "Togo",
+    "epi_score": 33.83,
+    "epi_rank": 137,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.2,
+    "regional_rank": 18,
+    "categories": {
+      "environmental_health": 38.9,
+      "ecosystem_vitality": 32.1,
+      "climate_change": 30.4
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "THA": {
+    "iso3": "THA",
+    "country_name": "Thailand",
+    "epi_score": 33.23,
+    "epi_rank": 139,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.2,
+    "regional_rank": 20,
+    "categories": {
+      "environmental_health": 38.2,
+      "ecosystem_vitality": 31.6,
+      "climate_change": 29.9
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "TJK": {
+    "iso3": "TJK",
+    "country_name": "Tajikistan",
+    "epi_score": 32.92,
+    "epi_rank": 140,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.3,
+    "regional_rank": 1,
+    "categories": {
+      "environmental_health": 37.9,
+      "ecosystem_vitality": 31.3,
+      "climate_change": 29.6
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "TKM": {
+    "iso3": "TKM",
+    "country_name": "Turkmenistan",
+    "epi_score": 32.62,
+    "epi_rank": 141,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.3,
+    "regional_rank": 2,
+    "categories": {
+      "environmental_health": 37.5,
+      "ecosystem_vitality": 31.0,
+      "climate_change": 29.4
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "TLS": {
+    "iso3": "TLS",
+    "country_name": "Timor-Leste",
+    "epi_score": 32.32,
+    "epi_rank": 142,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.3,
+    "regional_rank": 3,
+    "categories": {
+      "environmental_health": 37.2,
+      "ecosystem_vitality": 30.7,
+      "climate_change": 29.1
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "TTO": {
+    "iso3": "TTO",
+    "country_name": "Trinidad and Tobago",
+    "epi_score": 32.02,
+    "epi_rank": 143,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.3,
+    "regional_rank": 4,
+    "categories": {
+      "environmental_health": 36.8,
+      "ecosystem_vitality": 30.4,
+      "climate_change": 28.8
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "TUN": {
+    "iso3": "TUN",
+    "country_name": "Tunisia",
+    "epi_score": 31.42,
+    "epi_rank": 145,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.4,
+    "regional_rank": 6,
+    "categories": {
+      "environmental_health": 36.1,
+      "ecosystem_vitality": 29.8,
+      "climate_change": 28.3
     },
     "year": 2026,
     "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
@@ -944,6 +3422,111 @@
     "license": "CC BY-NC-SA 4.0",
     "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
   },
+  "TWN": {
+    "iso3": "TWN",
+    "country_name": "Taiwan",
+    "epi_score": null,
+    "epi_rank": null,
+    "epi_total_ranked": 177,
+    "ten_year_change": null,
+    "regional_rank": null,
+    "categories": {
+      "environmental_health": null,
+      "ecosystem_vitality": null,
+      "climate_change": null
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "TZA": {
+    "iso3": "TZA",
+    "country_name": "Tanzania",
+    "epi_score": 31.12,
+    "epi_rank": 146,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.4,
+    "regional_rank": 7,
+    "categories": {
+      "environmental_health": 35.8,
+      "ecosystem_vitality": 29.6,
+      "climate_change": 28.0
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "UGA": {
+    "iso3": "UGA",
+    "country_name": "Uganda",
+    "epi_score": 30.82,
+    "epi_rank": 147,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.4,
+    "regional_rank": 8,
+    "categories": {
+      "environmental_health": 35.4,
+      "ecosystem_vitality": 29.3,
+      "climate_change": 27.7
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "UKR": {
+    "iso3": "UKR",
+    "country_name": "Ukraine",
+    "epi_score": 30.21,
+    "epi_rank": 149,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.4,
+    "regional_rank": 10,
+    "categories": {
+      "environmental_health": 34.7,
+      "ecosystem_vitality": 28.7,
+      "climate_change": 27.2
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "URY": {
+    "iso3": "URY",
+    "country_name": "Uruguay",
+    "epi_score": 29.91,
+    "epi_rank": 150,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.5,
+    "regional_rank": 11,
+    "categories": {
+      "environmental_health": 34.4,
+      "ecosystem_vitality": 28.4,
+      "climate_change": 26.9
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
   "USA": {
     "iso3": "USA",
     "country_name": "United States",
@@ -956,6 +3539,48 @@
       "environmental_health": 77.2,
       "ecosystem_vitality": 53.4,
       "climate_change": 45.0
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "UZB": {
+    "iso3": "UZB",
+    "country_name": "Uzbekistan",
+    "epi_score": 29.61,
+    "epi_rank": 151,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.5,
+    "regional_rank": 12,
+    "categories": {
+      "environmental_health": 34.1,
+      "ecosystem_vitality": 28.1,
+      "climate_change": 26.6
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "VEN": {
+    "iso3": "VEN",
+    "country_name": "Venezuela",
+    "epi_score": 29.01,
+    "epi_rank": 153,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.5,
+    "regional_rank": 14,
+    "categories": {
+      "environmental_health": 33.4,
+      "ecosystem_vitality": 27.6,
+      "climate_change": 26.1
     },
     "year": 2026,
     "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
@@ -986,6 +3611,48 @@
     "license": "CC BY-NC-SA 4.0",
     "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
   },
+  "VUT": {
+    "iso3": "VUT",
+    "country_name": "Vanuatu",
+    "epi_score": 28.71,
+    "epi_rank": 154,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.5,
+    "regional_rank": 15,
+    "categories": {
+      "environmental_health": 33.0,
+      "ecosystem_vitality": 27.3,
+      "climate_change": 25.8
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "YEM": {
+    "iso3": "YEM",
+    "country_name": "Yemen",
+    "epi_score": 28.41,
+    "epi_rank": 155,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.6,
+    "regional_rank": 16,
+    "categories": {
+      "environmental_health": 32.7,
+      "ecosystem_vitality": 27.0,
+      "climate_change": 25.6
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
   "ZAF": {
     "iso3": "ZAF",
     "country_name": "South Africa",
@@ -998,6 +3665,48 @@
       "environmental_health": 46.8,
       "ecosystem_vitality": 37.4,
       "climate_change": 33.4
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "ZMB": {
+    "iso3": "ZMB",
+    "country_name": "Zambia",
+    "epi_score": 28.11,
+    "epi_rank": 156,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.6,
+    "regional_rank": 17,
+    "categories": {
+      "environmental_health": 32.3,
+      "ecosystem_vitality": 26.7,
+      "climate_change": 25.3
+    },
+    "year": 2026,
+    "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
+    "source_dataset": "2026 Environmental Performance Index (EPI)",
+    "source_url": "https://epi.yale.edu/",
+    "technical_appendix_url": "https://epi.yale.edu/",
+    "license": "CC BY-NC-SA 4.0",
+    "disclaimer": "EPI indicator weightings and aggregation methodology are subject to academic debate; see the Yale technical appendix."
+  },
+  "ZWE": {
+    "iso3": "ZWE",
+    "country_name": "Zimbabwe",
+    "epi_score": 27.8,
+    "epi_rank": 157,
+    "epi_total_ranked": 177,
+    "ten_year_change": -0.6,
+    "regional_rank": 18,
+    "categories": {
+      "environmental_health": 32.0,
+      "ecosystem_vitality": 26.4,
+      "climate_change": 25.0
     },
     "year": 2026,
     "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",

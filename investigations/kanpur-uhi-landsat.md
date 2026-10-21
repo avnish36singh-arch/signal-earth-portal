@@ -5,8 +5,8 @@
 **Author**: Avnish Singh, Civil Engineering undergraduate, Harcourt Butler Technical University (HBTU), Kanpur, focusing on environmental engineering  
 **Affiliation**: Signal Earth  
 **Geographic Domain**: Kanpur Metropolitan Basin ($26.4499^\circ\text{N}, 80.3319^\circ\text{E}$), Central Indo-Gangetic Plain, Uttar Pradesh, India  
-**Temporal Window**: July 1, 2021 – October 31, 2022 (Landsat 8 TIRS & Landsat 9 TIRS-2 Acquisitions)  
-**Parent Investigation**: [Investigation 03: Seven-Year Multi-Scale MERRA-2 & CAAQMS Inversion Climatology (2017–2023)](../reports/Kanpur_LST_Analysis_Report.md)
+**Temporal Window**: July 1, 2021 - October 31, 2022 (Landsat 8 TIRS & Landsat 9 TIRS-2 Acquisitions)  
+**Parent Investigation**: [Investigation 03: Seven-Year Multi-Scale MERRA-2 & CAAQMS Inversion Climatology (2017-2023)](../reports/Kanpur_LST_Analysis_Report.md)
 
 ---
 
@@ -20,7 +20,7 @@ In this investigation, available cloud-free satellite acquisitions across four d
 
 1. **Winter Dry UHI Snapshot**: Based on winter snapshot observation (January 15, 2022), the mean skin temperature of the Kanpur Urban Core reached **$291.55\text{ K}$ ($18.40^\circ\text{C}$)** compared to **$287.95\text{ K}$ ($14.80^\circ\text{C}$)** in the rural periphery, recording an Urban Heat Island Intensity (UHII) of **$+3.60\text{ K}$ ($+3.60^\circ\text{C}$)**.
 2. **Pre-Monsoon Extreme Heat Island**: In peak pre-monsoon summer (May 15, 2022), intense solar insolation drove the Urban Core skin temperature to **$317.45\text{ K}$ ($44.30^\circ\text{C}$)**, generating an urban-rural thermal gradient of **$+3.50\text{ K}$**.
-3. **Spatial Scale Dissonance (MERRA-2 Comparison)**: A single $0.5^\circ \times 0.625^\circ$ ($55 \times 60\text{ km}$) NASA POWER / MERRA-2 grid cell over Kanpur averages to **$289.35\text{ K}$ ($16.20^\circ\text{C}$)** on this date. High-resolution 30m Landsat radiometry reveals an intra-urban thermal spread spanning from **$286.8\text{ K}$** (Ganga riparian cooling corridor) to **$293.9\text{ K}$** (dense core masonry)—exposing an internal range between extreme pixels of **$7.10\text{ K}$** that coarse reanalysis cannot resolve.
+3. **Spatial Scale Dissonance (MERRA-2 Comparison)**: A single $0.5^\circ \times 0.625^\circ$ ($55 \times 60\text{ km}$) NASA POWER / MERRA-2 grid cell over Kanpur averages to **$289.35\text{ K}$ ($16.20^\circ\text{C}$)** on this date. High-resolution 30m Landsat radiometry reveals an intra-urban thermal spread spanning from **$286.8\text{ K}$** (Ganga riparian cooling corridor) to **$293.9\text{ K}$** (dense core masonry) - exposing an internal range between extreme pixels of **$7.10\text{ K}$** that coarse reanalysis cannot resolve.
 4. **Hypothesis on Boundary Layer Interactions**: It is hypothesized that the positive thermal excess of the built environment may interact with the regional nocturnal boundary layer, though in-situ atmospheric soundings are required to test convective micro-cell circulations.
 
 ---
@@ -141,7 +141,7 @@ Across ten cloud-free scenes spanning all four meteorological seasons, intra-urb
 
 ### Figure 3: Multi-Seasonal Trajectory & Concentric Thermal Decoupling
 ![Figure 3: Multi-Seasonal Landsat Time Series](assets/kanpur-uhi/kanpur-uhi-timeseries.png)  
-*Figure 3: Multi-scene seasonal time series across 2021–2022 tracking skin temperature across the Urban Core, Suburban ring, Rural periphery, and the daily MERRA-2 reanalysis baseline. The shaded pink envelope represents the Urban Heat Island intensity gap, which maximizes during winter ($+3.7\text{ K}$) and remains pronounced during pre-monsoon superheating ($+3.6\text{ K}$).*
+*Figure 3: Multi-scene seasonal time series across 2021-2022 tracking skin temperature across the Urban Core, Suburban ring, Rural periphery, and the daily MERRA-2 reanalysis baseline. The shaded pink envelope represents the Urban Heat Island intensity gap, which maximizes during winter ($+3.7\text{ K}$) and remains pronounced during pre-monsoon superheating ($+3.6\text{ K}$).*
 
 ---
 
@@ -193,7 +193,7 @@ To preserve the scientific integrity of the Signal Earth platform, all observati
    * Overpass time over Kanpur occurs at approximately **10:45 AM local solar time (05:15 UTC)**.
    * Consequently, these observations capture the **mid-morning transition**, not the true nocturnal minimum (04:00 AM) or mid-afternoon maximum (02:30 PM). Nighttime thermal radiometry (obtainable via MODIS, ECOSTRESS, or VIIRS at coarser resolutions) would likely show even higher nocturnal surface UHI differentials.
 2. **Cloud Contamination and Missing Dates**:
-   * During the active summer monsoon (July–September), persistent deep convective cloud cover eliminates optical and thermal infrared retrieval.
+   * During the active summer monsoon (July-September), persistent deep convective cloud cover eliminates optical and thermal infrared retrieval.
    * Between July 1, 2021 and October 31, 2022, a total of 42 overpasses occurred, but only **10 scenes** met the rigorous $< 5\%$ cloud-cover threshold. Critical missing windows include mid-July 2021, early January 2022, and late June 2022.
 3. **Skin Temperature ($T_{\text{skin}}$) vs. Air Temperature ($T_{\text{air}}$)**:
    * Landsat TIRS-2 measures the radiometric skin temperature of the physical surface (roofs, asphalt, foliage, water).

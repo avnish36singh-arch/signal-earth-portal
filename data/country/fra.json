@@ -16,8 +16,8 @@
     "score": 69.82,
     "rank": 7,
     "total_ranked": 177,
-    "ten_year_change": 8.7,
-    "regional_rank": 6,
+    "ten_year_change": 6.58,
+    "regional_rank": 7,
     "year": 2026,
     "label": "Yale EPI 2026, not a Signal Earth ranking",
     "categories": {
@@ -39,8 +39,8 @@
       "formatted_value": "69.8",
       "unit": "score (0-100)",
       "year": 2026,
-      "rank": 5,
-      "total_ranked": 47,
+      "rank": 7,
+      "total_ranked": 166,
       "global_yale_rank": 7,
       "global_yale_total": 177,
       "mixed_years_flag": false,
@@ -48,7 +48,7 @@
         2026
       ],
       "direction": "highest_best",
-      "context": "Rank 7 of 177 globally; 10-year change: +8.7.",
+      "context": "Rank 7 of 177 globally; 10-year change: +6.6.",
       "missing_reason": null,
       "timeseries": {},
       "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
@@ -63,8 +63,8 @@
       "formatted_value": "8.2 µg/m³",
       "unit": "µg/m³",
       "year": 2023,
-      "rank": 41,
-      "total_ranked": 48,
+      "rank": 151,
+      "total_ranked": 169,
       "mixed_years_flag": false,
       "years_spanned": [
         2023
@@ -120,8 +120,8 @@
       "formatted_value": "264.2 Mt CO2 / yr",
       "unit": "Mt CO2 / year",
       "year": 2024,
-      "rank": 20,
-      "total_ranked": 48,
+      "rank": 24,
+      "total_ranked": 171,
       "mixed_years_flag": false,
       "years_spanned": [
         2024
@@ -178,8 +178,8 @@
       "formatted_value": "3.97 t CO2 / person / yr",
       "unit": "tonnes CO2 / person / year",
       "year": 2024,
-      "rank": 25,
-      "total_ranked": 48,
+      "rank": 63,
+      "total_ranked": 170,
       "mixed_years_flag": false,
       "years_spanned": [
         2024
@@ -236,10 +236,13 @@
       "formatted_value": "26.1% of generation",
       "unit": "% of electricity generation",
       "year": 2025,
-      "rank": 31,
-      "total_ranked": 46,
+      "rank": 103,
+      "total_ranked": 171,
       "mixed_years_flag": true,
       "years_spanned": [
+        2009,
+        2022,
+        2023,
         2024,
         2025
       ],
@@ -286,10 +289,11 @@
       "formatted_value": "32.9% of land area",
       "unit": "% of land area",
       "year": 2024,
-      "rank": 21,
-      "total_ranked": 48,
-      "mixed_years_flag": false,
+      "rank": 86,
+      "total_ranked": 170,
+      "mixed_years_flag": true,
       "years_spanned": [
+        2023,
         2024
       ],
       "direction": "highest_best",
@@ -344,8 +348,8 @@
       "formatted_value": "66,548,532",
       "unit": "people",
       "year": 2024,
-      "rank": 20,
-      "total_ranked": 48,
+      "rank": 23,
+      "total_ranked": 170,
       "mixed_years_flag": false,
       "years_spanned": [
         2024

@@ -14,10 +14,10 @@
       "gibs_layer": "MODIS_Terra_CorrectedReflectance_TrueColor",
       "summary": "Dense urban and industrial core situated in the central Ganga valley subject to acute winter boundary layer entrapment.",
       "why_it_matters": "Meteorological inversions and geographic containment multiply particulate concentrations severalfold, causing severe cardiopulmonary morbidity.",
-      "signal_shows": "Ground telemetry documents seasonal winter PM2.5 ratios of 2.40× (Dec–Feb ÷ Jun–Sep) to 3.56× (Nov–Jan ÷ Jul–Sep) alongside an 855-day unmonitored regulatory hiatus.",
+      "signal_shows": "Ground telemetry documents seasonal winter PM2.5 ratios of 2.40× (Dec-Feb ÷ Jun-Sep) to 3.56× (Nov-Jan ÷ Jul-Sep) alongside an 855-day unmonitored regulatory hiatus.",
       "metrics": [
-        { "name": "Winter Ratio (Dec–Feb ÷ Jun–Sep)", "value": "2.40×", "source": "CPCB CAAQMS / Signal Earth Audit", "url": "https://signalearth.org/investigations/kanpur.html", "year": 2026, "retrieved_on": "2026-10-16" },
-        { "name": "Peak Inversion Ratio (Nov–Jan ÷ Jul–Sep)", "value": "3.56×", "source": "CPCB CAAQMS / Signal Earth Audit", "url": "https://signalearth.org/investigations/kanpur.html", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Winter Ratio (Dec-Feb ÷ Jun-Sep)", "value": "2.40×", "source": "CPCB CAAQMS / Signal Earth Audit", "url": "https://signalearth.org/investigations/kanpur.html", "year": 2026, "retrieved_on": "2026-10-16" },
+        { "name": "Peak Inversion Ratio (Nov-Jan ÷ Jul-Sep)", "value": "3.56×", "source": "CPCB CAAQMS / Signal Earth Audit", "url": "https://signalearth.org/investigations/kanpur.html", "year": 2026, "retrieved_on": "2026-10-16" },
         { "name": "Documented Hiatus", "value": "855 Days", "source": "Statutory Telemetry Audit", "url": "https://signalearth.org/known-problems.html", "year": 2026, "retrieved_on": "2026-10-16" },
         { "name": "Urban Heat Delta", "value": "+3.60K", "source": "Landsat 8/9 TIRS-2 Band 10", "url": "https://signalearth.org/investigations/kanpur-uhi.html", "year": 2026, "retrieved_on": "2026-10-16" }
       ],

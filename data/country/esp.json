@@ -13,17 +13,17 @@
   "summary": "National profile for Spain (ESP) with a GDP per capita of $38,627. Evaluates ambient particulate exposure, territorial fossil emissions, renewable electricity generation, and forest cover fractions from public databases.",
   "data_as_of": 2025,
   "yale_epi_2026": {
-    "score": 64.8,
-    "rank": 13,
+    "score": 66.28,
+    "rank": 12,
     "total_ranked": 177,
     "ten_year_change": 6.1,
-    "regional_rank": 11,
+    "regional_rank": 12,
     "year": 2026,
     "label": "Yale EPI 2026, not a Signal Earth ranking",
     "categories": {
-      "environmental_health": 83.8,
-      "ecosystem_vitality": 56.4,
-      "climate_change": 54.2
+      "environmental_health": 84.1,
+      "ecosystem_vitality": 57.2,
+      "climate_change": 57.5
     },
     "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
     "source_url": "https://epi.yale.edu/",
@@ -35,20 +35,20 @@
     "epi_score": {
       "key": "epi_score",
       "name": "Yale Environmental Performance Index",
-      "value": 64.8,
-      "formatted_value": "64.8",
+      "value": 66.28,
+      "formatted_value": "66.3",
       "unit": "score (0-100)",
       "year": 2026,
-      "rank": 10,
-      "total_ranked": 47,
-      "global_yale_rank": 13,
+      "rank": 12,
+      "total_ranked": 166,
+      "global_yale_rank": 12,
       "global_yale_total": 177,
       "mixed_years_flag": false,
       "years_spanned": [
         2026
       ],
       "direction": "highest_best",
-      "context": "Rank 13 of 177 globally; 10-year change: +6.1.",
+      "context": "Rank 12 of 177 globally; 10-year change: +6.1.",
       "missing_reason": null,
       "timeseries": {},
       "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
@@ -63,8 +63,8 @@
       "formatted_value": "10.1 µg/m³",
       "unit": "µg/m³",
       "year": 2023,
-      "rank": 34,
-      "total_ranked": 48,
+      "rank": 140,
+      "total_ranked": 169,
       "mixed_years_flag": false,
       "years_spanned": [
         2023
@@ -120,8 +120,8 @@
       "formatted_value": "220.3 Mt CO2 / yr",
       "unit": "Mt CO2 / year",
       "year": 2024,
-      "rank": 22,
-      "total_ranked": 48,
+      "rank": 29,
+      "total_ranked": 171,
       "mixed_years_flag": false,
       "years_spanned": [
         2024
@@ -178,8 +178,8 @@
       "formatted_value": "4.60 t CO2 / person / yr",
       "unit": "tonnes CO2 / person / year",
       "year": 2024,
-      "rank": 21,
-      "total_ranked": 48,
+      "rank": 56,
+      "total_ranked": 170,
       "mixed_years_flag": false,
       "years_spanned": [
         2024
@@ -236,10 +236,13 @@
       "formatted_value": "55.9% of generation",
       "unit": "% of electricity generation",
       "year": 2025,
-      "rank": 16,
-      "total_ranked": 46,
+      "rank": 60,
+      "total_ranked": 171,
       "mixed_years_flag": true,
       "years_spanned": [
+        2009,
+        2022,
+        2023,
         2024,
         2025
       ],
@@ -286,10 +289,11 @@
       "formatted_value": "38.2% of land area",
       "unit": "% of land area",
       "year": 2024,
-      "rank": 16,
-      "total_ranked": 48,
-      "mixed_years_flag": false,
+      "rank": 67,
+      "total_ranked": 170,
+      "mixed_years_flag": true,
       "years_spanned": [
+        2023,
         2024
       ],
       "direction": "highest_best",
@@ -344,8 +348,8 @@
       "formatted_value": "47,910,533",
       "unit": "people",
       "year": 2024,
-      "rank": 26,
-      "total_ranked": 48,
+      "rank": 32,
+      "total_ranked": 170,
       "mixed_years_flag": false,
       "years_spanned": [
         2024

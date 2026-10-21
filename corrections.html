@@ -74,16 +74,42 @@
 
     <div class="se-contact-stack">
       
+      <!-- Revision 21 October 2026: Comprehensive Errata and Metric Reconciliation -->
+      <article class="se-card-panel">
+        <span class="section-kicker">Correction : 21 October 2026 (Scientific Reconciliation &amp; Ledger Synchronization)</span>
+        <h2 class="editorial-headline se-terms-h2">Empirical Metric Reconciliation &amp; Rigorous Data Ledger Alignment</h2>
+        <p class="se-content-p">
+          To eliminate all residual divergence between drafted narrative text and canonical computation pipelines, the following five metrics were harmonized site-wide against the Numbers Ledger (data/numbers_ledger.json):
+        </p>
+        <ul class="se-list-bullet-clean">
+          <li>
+            <strong>Kanpur Winter-to-Monsoon Ratio Reconciliation:</strong> Harmonized all Kanpur seasonal ratios to the canonical <strong>2.40x</strong> multiplier (meteorological winter Dec-Feb vs monsoon Jun-Sep across 1,628 station-days; Kalyanpur: 815 days, Nehru Nagar: 813 days). In peak haze months (Nov-Jan vs Jul-Sep), the ratio is <strong>3.56x</strong>, with a single-month extreme of <strong>4.76x</strong>. Preliminary draft figures (4.99x, 2.76x, 3.25x) have been fully superseded.
+          </li>
+          <li>
+            <strong>Delhi NAQI Particulate Governance Frequency:</strong> Corrected the pollutant distribution across 1,137 valid monitoring days at Alipur (2017-2023). Particulate matter governed official AQI on <strong>95.3%</strong> of days (1,083 of 1,137 days), with PM2.5 governing on <strong>51.8%</strong> (589 days) and PM10 on <strong>43.4%</strong> (494 days). Gaseous pollutants governed on 4.7% of days (CO: 4.4%, Ozone: 0.4%). The legacy draft claim of 88.4% / 11.2% / 0.4% has been purged.
+          </li>
+          <li>
+            <strong>Delhi Seasonal Peak Haze Multiplier:</strong> Explicitly defined the <strong>5.75x</strong> multiplier as peak winter haze (Nov-Jan AQI 197.51) versus core monsoon baseline (Jul-Sep AQI 34.32). Standard meteorological winter (Dec-Feb AQI 166.61) vs monsoon (Jun-Sep AQI 39.17) is <strong>4.25x</strong>.
+          </li>
+          <li>
+            <strong>Kanpur Landsat 8/9 Thermal Radiometry:</strong> Established the empirical urban-rural surface temperature difference as <strong>1.0 to 2.3 K</strong> across cloud-free winter scenes. The <strong>7.10 K</strong> value is documented exclusively as the extreme single-pixel dynamic range, and the unsubstantiated "+3.8 &deg;C" claim was eliminated.
+          </li>
+          <li>
+            <strong>Kanpur Skin Temperature &amp; Particulate Correlation:</strong> Replaced the atmospheric inversion claim with a documented seasonal association (Pearson r = -0.455 across 308 concurrent pairs). Classical p-values were withheld due to strong temporal autocorrelation, which violates independence assumptions in daily time series.
+          </li>
+        </ul>
+      </article>
+
       <!-- Revision 21 October 2026: Multi-Country Data Layer & Globe Visualization -->
       <article class="se-card-panel">
         <span class="section-kicker">Correction : 21 October 2026 (Global Open Data Layer &amp; Globe Reconstruction)</span>
         <h2 class="editorial-headline se-terms-h2">Multi-Country Data Layer Completion &amp; 3D Globe Polygon Coloring Fix</h2>
         <p class="se-content-p">
-          Fixed the initial portal state where only India displayed evaluated metrics while the other 47 canonical countries displayed "Unranked" and the 3D planetary globe rendered without country polygon fills:
+          Fixed the initial portal state where only India displayed evaluated metrics while other canonical countries displayed "Unranked" and the 3D planetary globe rendered without country polygon fills:
         </p>
         <ul class="se-list-bullet-clean">
           <li>
-            <strong>Real Multi-Country Open Data Pipeline:</strong> Ingested, cleaned, and synthesized primary indicator series for all 48 canonical countries from official upstream releases: World Bank PM2.5 (State of Global Air 2024 / GBD 2023, CC BY 4.0), Global Carbon Project (Global Carbon Budget 2025 / ESSD, CC BY 4.0), Ember Climate (Global Electricity Review, CC BY 4.0), FAO Forest Resources Assessment / World Bank (CC BY 4.0), Yale Environmental Performance Index 2026 scorecard (CC BY-NC-SA 4.0), and World Bank World Development Indicators (WDI, CC BY 4.0).
+            <strong>Real Multi-Country Open Data Pipeline:</strong> Ingested, cleaned, and synthesized primary indicator series for all canonical countries from official upstream releases: World Bank PM2.5 (State of Global Air 2024 / GBD 2023, CC BY 4.0), Global Carbon Project (Global Carbon Budget 2025 / ESSD, CC BY 4.0), Ember Climate (Global Electricity Review, CC BY 4.0), FAO Forest Resources Assessment / World Bank (CC BY 4.0), Yale Environmental Performance Index 2026 scorecard (CC BY-NC-SA 4.0), and World Bank World Development Indicators (WDI, CC BY 4.0).
           </li>
           <li>
             <strong>Strict Null Governance:</strong> Missing country data points are stored strictly as <code>null</code> with explicit reason codes (e.g. <code>TERRITORY_EXCLUDED</code>, <code>NOT_REPORTED</code>) and displayed as "No data", never zero and never synthetic.
@@ -95,7 +121,7 @@
             <strong>Homepage Top 10 Panel &amp; Multi-Year Anchor:</strong> Replaced the homepage country table with a compact Top 10 panel showing rank, country, value, and year with a Highest/Lowest toggle. Whenever ranked values span differing observation years, an explicit multi-year anchor note is displayed.
           </li>
           <li>
-            <strong>Standalone Accessible Directory:</strong> Relocated the complete alphabetical 48-country directory to <a href="countries/index.html" class="se-link"><strong>/countries/</strong></a>, accessible to screen readers, keyboard navigation, and search engines.
+            <strong>Standalone Accessible Directory:</strong> Relocated the complete alphabetical country directory to <a href="countries/index.html" class="se-link"><strong>/countries/</strong></a>, accessible to screen readers, keyboard navigation, and search engines.
           </li>
           <li>
             <strong>Temperature Layer &amp; Copernicus Attribution Removal:</strong> Completely eliminated the temperature anomaly layer and Copernicus attribution.
@@ -112,20 +138,20 @@
         </p>
         <ul class="se-list-bullet-clean">
           <li>
-            <strong>Seasonal Winter Multiplier Correction (4.2x Phantom Removed):</strong> Deleted all references to an unverified blanket "4.2x" winter surge in Kanpur. Verified seasonal winter-to-monsoon ratios across the empirical records are strictly:
+            <strong>Seasonal Winter Multiplier Correction (4.2x Phantom Removed):</strong> Deleted all references to an unsubstantiated blanket "4.2x" winter surge in Kanpur. Empirical seasonal winter-to-monsoon ratios across the observed records are strictly:
             <ul style="margin: 0.5rem 0 0.5rem 1.25rem; list-style-type: disc;">
               <li><strong>Kanpur:</strong> Meteorological winter (Dec-Feb, 114.7 µg/m³) vs monsoon (Jun-Sep, 47.8 µg/m³) = <strong>2.40x</strong>. Peak inversion window (Nov-Jan, 150.3 µg/m³) vs core monsoon (Jul-Sep, 42.2 µg/m³) = <strong>3.56x</strong>. Single-month extreme (November mean 188.4 µg/m³ vs August mean 39.6 µg/m³) = <strong>4.76x</strong>.</li>
               <li><strong>Delhi (Alipur Site 204):</strong> Meteorological winter (Dec-Feb, 166.6 µg/m³) vs monsoon (Jun-Sep, 39.2 µg/m³) = <strong>4.25x</strong>. Peak inversion window (Nov-Jan, 197.5 µg/m³) vs core monsoon (Jul-Sep, 34.3 µg/m³) = <strong>5.75x</strong>.</li>
             </ul>
           </li>
           <li>
-            <strong>Country AQI Elimination:</strong> Clarified across all country profiles that an "AQI" is an instantaneous, sub-daily urban construct based on maximum sub-indices. It cannot be mathematically or conceptually averaged across an entire country over a 365-day year. Sovereign exposure is measured strictly as population-weighted annual mean PM2.5 in µg/m³, benchmarked against the WHO air quality guideline (5.0 µg/m³).
+            <strong>Country AQI Elimination:</strong> Clarified across all country profiles that an "AQI" is an instantaneous, sub-daily urban construct based on maximum sub-indices. It cannot be mathematically or conceptually averaged across an entire country over a 365-day year. National exposure is measured strictly as population-weighted annual mean PM2.5 in µg/m³, benchmarked against the WHO air quality guideline (5.0 µg/m³).
           </li>
           <li>
-            <strong>Landsat 8/9 Thermal Radiometry vs MERRA-2 Delta (3.8 K Claim Removed):</strong> Removed the unsubstantiated "+3.8 °C" uniform microclimate claim. Verified Landsat 8/9 overpass radiometry (at-sensor brightness temperature) shows an empirical urban-core minus rural-baseline delta of <strong>1.0 to 2.3 K</strong> across validated cloud-free winter scenes.
+            <strong>Landsat 8/9 Thermal Radiometry vs MERRA-2 Delta (3.8 K Claim Removed):</strong> Removed the unsubstantiated "+3.8 °C" uniform microclimate claim. Empirical Landsat 8/9 overpass radiometry (at-sensor brightness temperature) shows an empirical urban-core minus rural-baseline delta of <strong>1.0 to 2.3 K</strong> across validated cloud-free winter scenes.
           </li>
           <li>
-            <strong>Kanpur Ground Monitoring Record Count Reconciliation (Doubling Error Fixed):</strong> Corrected the historical record count from 3,256 down to the verified pooled count of <strong>1,628 station-days</strong> (NSI Kalyanpur Site 229252 = 815 station-days; Nehru Nagar Site 5662 = 813 station-days). The previous figure was an arithmetic doubling error in preliminary aggregation.
+            <strong>Kanpur Ground Monitoring Record Count Reconciliation (Doubling Error Fixed):</strong> Corrected the historical record count from 3,256 down to the reconciled pooled count of <strong>1,628 station-days</strong> (NSI Kalyanpur Site 229252 = 815 station-days; Nehru Nagar Site 5662 = 813 station-days). The previous figure was an arithmetic doubling error in preliminary aggregation.
           </li>
           <li>
             <strong>Delhi Predictive Model Out-of-Time Test Split Correction:</strong> Corrected the published test error metrics for day-ahead AQI forecasting. The previously cited MAE of 38.65 AQI points was an in-sample training artifact. The true out-of-time evaluation on unobserved 2023 calendar records yields: <strong>Test MAE = 39.69 AQI points, RMSE = 54.98 AQI points, R² = 0.769</strong>.
@@ -145,7 +171,7 @@
         </p>
         <ul class="se-list-bullet-clean">
           <li>
-            <strong>Delhi NAQI Dominant Pollutant Correction:</strong> Replaced the drafted assertion that PM2.5 drove the official AQI on "88.4% of days (1,005 out of 1,137)" with verified pipeline results: Particulate matter (PM2.5 or PM10) drove the official score on <strong>95.3% of valid days (1,083 out of 1,137 days)</strong>. Specifically, PM2.5 was the dominant sub-index on 51.8% of days (589 days), PM10 on 43.4% of days (494 days), CO on 4.4% of days (50 days), and Ozone on 0.4% of days (4 days).
+            <strong>Delhi NAQI Dominant Pollutant Correction:</strong> Replaced the drafted assertion that PM2.5 drove the official AQI on "88.4% of days (1,005 out of 1,137)" with reconciled pipeline results: Particulate matter (PM2.5 or PM10) drove the official score on <strong>95.3% of valid days (1,083 out of 1,137 days)</strong>. Specifically, PM2.5 was the dominant sub-index on 51.8% of days (589 days), PM10 on 43.4% of days (494 days), CO on 4.4% of days (50 days), and Ozone on 0.4% of days (4 days).
           </li>
           <li>
             <strong>Kanpur Ventilation Coefficient Correction:</strong> Removed the claim of "218 severe stagnation days" in Kanpur, which was identified as cross-contamination from Delhi's 218 severe winter AQI days.
@@ -169,7 +195,7 @@
 
         <ul class="se-list-bullet-clean">
           <li>
-            <strong>Reanalysis Classification (NASA POWER / MERRA-2):</strong> Corrected descriptions across all pages, citations, and metadata. Identified MERRA-2 as a numerical assimilation model reanalysis product on a 0.5° x 0.625° grid (~55 x 60 km), not an in-situ satellite observation or radiometric satellite LST. Removed "derived from thermal infrared radiance" and replaced with "model reanalysis skin temperature". Standardized satellite thermal sensor description to Landsat TIRS at "100 m native, resampled to 30 m". Max skin temperature verified at 43.39°C.
+            <strong>Reanalysis Classification (NASA POWER / MERRA-2):</strong> Corrected descriptions across all pages, citations, and metadata. Identified MERRA-2 as a numerical assimilation model reanalysis product on a 0.5° x 0.625° grid (~55 x 60 km), not an in-situ satellite observation or radiometric satellite LST. Removed "derived from thermal infrared radiance" and replaced with "model reanalysis skin temperature". Standardized satellite thermal sensor description to Landsat TIRS at "100 m native, resampled to 30 m". Max skin temperature recorded at 43.39°C.
           </li>
           <li>
             <strong>Kanpur Spatial Thermal Offsets:</strong> Deleted the ungrounded microclimate offset table (+2.1°C, +1.8°C, +1.6°C, -0.8°C, -2.4°C) because intra-urban gradients cannot originate from a single 55 x 60 km reanalysis cell. Replaced with an explicit notice that spatial zoning requires high-resolution satellite radiometry (Landsat / MODIS). Stripped temperature values from the downloadable GeoJSON layer to retain only morphological zone outlines.

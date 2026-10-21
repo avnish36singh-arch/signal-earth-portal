@@ -39,8 +39,8 @@
       "formatted_value": "37.8",
       "unit": "score (0-100)",
       "year": 2026,
-      "rank": 29,
-      "total_ranked": 47,
+      "rank": 120,
+      "total_ranked": 166,
       "global_yale_rank": 104,
       "global_yale_total": 177,
       "mixed_years_flag": false,
@@ -63,8 +63,8 @@
       "formatted_value": "73.5 µg/m³",
       "unit": "µg/m³",
       "year": 2023,
-      "rank": 1,
-      "total_ranked": 48,
+      "rank": 2,
+      "total_ranked": 169,
       "mixed_years_flag": false,
       "years_spanned": [
         2023
@@ -121,7 +121,7 @@
       "unit": "Mt CO2 / year",
       "year": 2024,
       "rank": 8,
-      "total_ranked": 48,
+      "total_ranked": 171,
       "mixed_years_flag": false,
       "years_spanned": [
         2024
@@ -178,8 +178,8 @@
       "formatted_value": "20.38 t CO2 / person / yr",
       "unit": "tonnes CO2 / person / year",
       "year": 2024,
-      "rank": 1,
-      "total_ranked": 48,
+      "rank": 5,
+      "total_ranked": 170,
       "mixed_years_flag": false,
       "years_spanned": [
         2024
@@ -236,10 +236,13 @@
       "formatted_value": "2.2% of generation",
       "unit": "% of electricity generation",
       "year": 2024,
-      "rank": 44,
-      "total_ranked": 46,
+      "rank": 155,
+      "total_ranked": 171,
       "mixed_years_flag": true,
       "years_spanned": [
+        2009,
+        2022,
+        2023,
         2024,
         2025
       ],
@@ -285,10 +288,11 @@
       "formatted_value": "1.3% of land area",
       "unit": "% of land area",
       "year": 2024,
-      "rank": 46,
-      "total_ranked": 48,
-      "mixed_years_flag": false,
+      "rank": 156,
+      "total_ranked": 170,
+      "mixed_years_flag": true,
       "years_spanned": [
+        2023,
         2024
       ],
       "direction": "highest_best",
@@ -343,8 +347,8 @@
       "formatted_value": "33,962,751",
       "unit": "people",
       "year": 2024,
-      "rank": 33,
-      "total_ranked": 48,
+      "rank": 48,
+      "total_ranked": 170,
       "mixed_years_flag": false,
       "years_spanned": [
         2024

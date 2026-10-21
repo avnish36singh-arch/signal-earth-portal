@@ -13,17 +13,17 @@
   "summary": "National profile for Denmark (DNK) with a GDP per capita of $76,970. Evaluates ambient particulate exposure, territorial fossil emissions, renewable electricity generation, and forest cover fractions from public databases.",
   "data_as_of": 2025,
   "yale_epi_2026": {
-    "score": 66.25,
+    "score": 66.57,
     "rank": 11,
     "total_ranked": 177,
     "ten_year_change": 5.2,
-    "regional_rank": 9,
+    "regional_rank": 11,
     "year": 2026,
     "label": "Yale EPI 2026, not a Signal Earth ranking",
     "categories": {
-      "environmental_health": 85.6,
-      "ecosystem_vitality": 58.1,
-      "climate_change": 55.1
+      "environmental_health": 85.8,
+      "ecosystem_vitality": 58.4,
+      "climate_change": 55.5
     },
     "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
     "source_url": "https://epi.yale.edu/",
@@ -35,12 +35,12 @@
     "epi_score": {
       "key": "epi_score",
       "name": "Yale Environmental Performance Index",
-      "value": 66.25,
-      "formatted_value": "66.2",
+      "value": 66.57,
+      "formatted_value": "66.6",
       "unit": "score (0-100)",
       "year": 2026,
-      "rank": 9,
-      "total_ranked": 47,
+      "rank": 11,
+      "total_ranked": 166,
       "global_yale_rank": 11,
       "global_yale_total": 177,
       "mixed_years_flag": false,
@@ -63,8 +63,8 @@
       "formatted_value": "7.5 µg/m³",
       "unit": "µg/m³",
       "year": 2023,
-      "rank": 42,
-      "total_ranked": 48,
+      "rank": 155,
+      "total_ranked": 169,
       "mixed_years_flag": false,
       "years_spanned": [
         2023
@@ -120,8 +120,8 @@
       "formatted_value": "28.4 Mt CO2 / yr",
       "unit": "Mt CO2 / year",
       "year": 2024,
-      "rank": 37,
-      "total_ranked": 48,
+      "rank": 77,
+      "total_ranked": 171,
       "mixed_years_flag": false,
       "years_spanned": [
         2024
@@ -178,8 +178,8 @@
       "formatted_value": "4.75 t CO2 / person / yr",
       "unit": "tonnes CO2 / person / year",
       "year": 2024,
-      "rank": 20,
-      "total_ranked": 48,
+      "rank": 53,
+      "total_ranked": 170,
       "mixed_years_flag": false,
       "years_spanned": [
         2024
@@ -236,10 +236,13 @@
       "formatted_value": "94.2% of generation",
       "unit": "% of electricity generation",
       "year": 2025,
-      "rank": 4,
-      "total_ranked": 46,
+      "rank": 16,
+      "total_ranked": 171,
       "mixed_years_flag": true,
       "years_spanned": [
+        2009,
+        2022,
+        2023,
         2024,
         2025
       ],
@@ -286,10 +289,11 @@
       "formatted_value": "16.0% of land area",
       "unit": "% of land area",
       "year": 2024,
-      "rank": 35,
-      "total_ranked": 48,
-      "mixed_years_flag": false,
+      "rank": 117,
+      "total_ranked": 170,
+      "mixed_years_flag": true,
       "years_spanned": [
+        2023,
         2024
       ],
       "direction": "highest_best",
@@ -344,8 +348,8 @@
       "formatted_value": "5,977,417",
       "unit": "people",
       "year": 2024,
-      "rank": 43,
-      "total_ranked": 48,
+      "rank": 113,
+      "total_ranked": 170,
       "mixed_years_flag": false,
       "years_spanned": [
         2024

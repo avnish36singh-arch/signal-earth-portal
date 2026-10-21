@@ -21,3 +21,8 @@ enviornment_rajivgangulaly/
 kanpur_air_quality/
 signal-earth-portal/
 *.code-workspace
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class

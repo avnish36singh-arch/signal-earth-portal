@@ -20,11 +20,7 @@
     "regional_rank": null,
     "year": 2026,
     "label": "Yale EPI 2026, not a Signal Earth ranking",
-    "categories": {
-      "environmental_health": null,
-      "ecosystem_vitality": null,
-      "climate_change": null
-    },
+    "categories": {},
     "source_name": "Yale Center for Environmental Law & Policy & CIESIN Columbia University",
     "source_url": "https://epi.yale.edu/",
     "technical_appendix_url": "https://epi.yale.edu/",
@@ -63,8 +59,8 @@
       "formatted_value": "8.9 µg/m³",
       "unit": "µg/m³",
       "year": 2023,
-      "rank": 37,
-      "total_ranked": 48,
+      "rank": 145,
+      "total_ranked": 169,
       "mixed_years_flag": false,
       "years_spanned": [
         2023
@@ -120,8 +116,8 @@
       "formatted_value": "0.4 Mt CO2 / yr",
       "unit": "Mt CO2 / year",
       "year": 2024,
-      "rank": 48,
-      "total_ranked": 48,
+      "rank": 166,
+      "total_ranked": 171,
       "mixed_years_flag": false,
       "years_spanned": [
         2024
@@ -178,8 +174,8 @@
       "formatted_value": "5.18 t CO2 / person / yr",
       "unit": "tonnes CO2 / person / year",
       "year": 2024,
-      "rank": 18,
-      "total_ranked": 48,
+      "rank": 49,
+      "total_ranked": 170,
       "mixed_years_flag": false,
       "years_spanned": [
         2024
@@ -256,10 +252,11 @@
       "formatted_value": "38.9% of land area",
       "unit": "% of land area",
       "year": 2024,
-      "rank": 15,
-      "total_ranked": 48,
-      "mixed_years_flag": false,
+      "rank": 63,
+      "total_ranked": 170,
+      "mixed_years_flag": true,
       "years_spanned": [
+        2023,
         2024
       ],
       "direction": "highest_best",
@@ -314,8 +311,8 @@
       "formatted_value": "81,955",
       "unit": "people",
       "year": 2024,
-      "rank": 48,
-      "total_ranked": 48,
+      "rank": 169,
+      "total_ranked": 170,
       "mixed_years_flag": false,
       "years_spanned": [
         2024
